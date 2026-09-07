@@ -3,141 +3,398 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JEE Mock Test Engine</title>
-<style>
-  body { font-family: system-ui, -apple-system, sans-serif; margin: 0; padding: 0; display: flex; flex-direction: column; height: 100vh; background: #f8f9fa; }
-  
-  /* Dashboard Styles */
-  #dashboard { padding: 30px 20px; text-align: center; height: 100vh; overflow-y: auto; }
-  .dash-title { color: #1a73e8; font-size: 2rem; margin-bottom: 30px; }
-  .test-list { display: flex; flex-direction: column; gap: 15px; max-width: 500px; margin: 0 auto; }
-  .test-btn { background: white; border: 2px solid #e0e0e0; padding: 20px; border-radius: 10px; font-size: 1.1rem; font-weight: bold; color: #202124; cursor: pointer; text-align: left; box-shadow: 0 2px 4px rgba(0,0,0,0.05); transition: 0.2s; display: flex; justify-content: space-between; align-items: center;}
-  .test-btn:active { background: #e8f0fe; border-color: #1a73e8; }
-  .play-icon { background: #1a73e8; color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.9rem; }
-
-  /* Test Screen Styles */
-  #test-screen { display: none; flex-direction: column; height: 100vh; }
-  .header { background: #1a73e8; color: white; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; font-weight: bold; font-size: 1.2rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1); z-index: 10; }
-  #test-title-display { font-size: 1rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 50%; }
-  #timer { background: #d93025; padding: 5px 15px; border-radius: 20px; font-family: monospace; font-size: 1.2rem; }
-  .main { display: flex; flex: 1; overflow: hidden; flex-direction: row; }
-  .content { flex: 1; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; }
-  .palette { width: 300px; background: white; padding: 15px; overflow-y: auto; border-left: 1px solid #e0e0e0; box-shadow: -2px 0 5px rgba(0,0,0,0.02); }
-  .tabs { display: flex; gap: 10px; margin-bottom: 20px; border-bottom: 2px solid #e0e0e0; padding-bottom: 10px; }
-  .tabs button { padding: 10px 20px; border: none; background: transparent; cursor: pointer; font-size: 1rem; color: #5f6368; font-weight: bold; border-radius: 4px; }
-  .tabs button.active { background: #e8f0fe; color: #1a73e8; }
-  .question-container { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); flex: 1; }
-  .question-text { font-size: 1.2rem; margin-bottom: 25px; color: #202124; line-height: 1.5; }
-  .options div { margin: 12px 0; padding: 12px; border: 1px solid #dadce0; border-radius: 6px; cursor: pointer; transition: background 0.2s; }
-  .options div:hover { background: #f8f9fa; }
-  .options input { margin-right: 15px; transform: scale(1.2); }
-  .actions { margin-top: 25px; display: flex; gap: 10px; flex-wrap: wrap; }
-  .actions button { padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; color: white; flex: 1; min-width: 120px; }
-  .btn-save { background: #1e8e3e; }
-  .btn-mark { background: #f29900; }
-  .btn-clear { background: #5f6368; }
-  .btn-submit { background: #d93025; width: 100%; margin-top: 20px; padding: 15px; font-size: 1.1rem; }
-  .palette-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-top: 15px; }
-  .btn-palette { aspect-ratio: 1; border-radius: 50%; border: none; cursor: pointer; font-weight: bold; font-size: 1rem; color: white; display: flex; align-items: center; justify-content: center; box-shadow: 0 1px 3px rgba(0,0,0,0.2); }
-  .not-visited { background: #e0e0e0; color: #3c4043; }
-  .answered { background: #1e8e3e; }
-  .marked { background: #f29900; }
-  
-  /* Mobile Responsiveness */
-  @media (max-width: 768px) {
-    .main { flex-direction: column; }
-    .palette { width: auto; border-left: none; border-top: 1px solid #e0e0e0; max-height: 250px; }
-    .actions { flex-direction: column; }
-    .tabs { overflow-x: auto; white-space: nowrap; }
-  }
-</style>
-  <!-- KaTeX Math Renderer CDN -->
+<title>Vortex JEE — Next-Gen Exam Engine</title>
+<!-- Google Fonts: Outfit for futuristic clean UI -->
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!-- KaTeX for pristine math rendering -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+
+<style>
+  :root {
+    --bg-base: #030712;
+    --bg-card: rgba(17, 24, 39, 0.75);
+    --border-glass: rgba(255, 255, 255, 0.08);
+    --primary: #6366f1;
+    --primary-glow: rgba(99, 102, 241, 0.4);
+    --accent: #ec4899;
+    --text-main: #f9fafb;
+    --text-muted: #9ca3af;
+    --success: #10b981;
+    --danger: #ef4444;
+    --warning: #f59e0b;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Outfit', sans-serif; }
+  body { background-color: var(--bg-base); color: var(--text-main); height: 100vh; overflow: hidden; display: flex; flex-direction: column; background-image: radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.12) 0%, transparent 40%), radial-gradient(circle at 90% 80%, rgba(236, 72, 153, 0.08) 0%, transparent 40%); }
+
+  /* SCROLLBAR */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 10px; }
+
+  /* DASHBOARD UI */
+  #dashboard { padding: 30px 20px; height: 100vh; overflow-y: auto; max-width: 1200px; margin: 0 auto; width: 100%; }
+  .nav-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; }
+  .logo { font-size: 1.6rem; font-weight: 700; background: linear-gradient(135deg, #818cf8, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: flex; align-items: center; gap: 8px; }
+  .badge-beta { background: rgba(99, 102, 241, 0.15); color: #818cf8; font-size: 0.75rem; padding: 4px 10px; border-radius: 20px; border: 1px solid rgba(99, 102, 241, 0.3); }
+
+  /* STATS CARDS */
+  .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 15px; margin-bottom: 30px; }
+  .stat-card { background: var(--bg-card); border: 1px solid var(--border-glass); backdrop-filter: blur(16px); padding: 20px; border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.3); position: relative; overflow: hidden; }
+  .stat-card::before { content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--primary); }
+  .stat-title { color: var(--text-muted); font-size: 0.85rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em; }
+  .stat-value { font-size: 1.8rem; font-weight: 700; margin-top: 5px; color: #fff; }
+
+  /* SEARCH & CONTROLS */
+  .control-panel { display: flex; gap: 12px; margin-bottom: 25px; flex-wrap: wrap; }
+  .search-box { flex: 1; min-width: 260px; background: var(--bg-card); border: 1px solid var(--border-glass); border-radius: 12px; padding: 12px 18px; color: white; font-size: 1rem; outline: none; transition: 0.3s; }
+  .search-box:focus { border-color: var(--primary); box-shadow: 0 0 15px var(--primary-glow); }
+
+  /* TEST LIST CONTAINER */
+  .section-title { font-size: 1.2rem; font-weight: 600; margin-bottom: 15px; color: #e5e7eb; display: flex; justify-content: space-between; align-items: center; }
+  .test-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 15px; }
+  .test-card { background: var(--bg-card); border: 1px solid var(--border-glass); backdrop-filter: blur(12px); border-radius: 16px; padding: 20px; cursor: pointer; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); display: flex; flex-direction: column; justify-content: space-between; }
+  .test-card:hover { transform: translateY(-4px); border-color: rgba(99, 102, 241, 0.4); box-shadow: 0 12px 40px rgba(99, 102, 241, 0.15); }
+  .test-card-title { font-size: 1.1rem; font-weight: 600; margin-bottom: 12px; line-height: 1.4; }
+  .test-card-footer { display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; color: var(--text-muted); }
+  .start-badge { background: var(--primary); color: white; padding: 6px 14px; border-radius: 8px; font-weight: 600; transition: 0.2s; box-shadow: 0 4px 12px var(--primary-glow); }
+  .test-card:hover .start-badge { background: #4f46e5; }
+
+  /* FUTURE MODULES PLACEHOLDER */
+  .future-modules { margin-top: 40px; border-top: 1px solid var(--border-glass); padding-top: 25px; }
+  .modules-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; }
+  .module-card { background: rgba(255,255,255,0.02); border: 1px dashed var(--border-glass); border-radius: 12px; padding: 15px; text-align: center; color: var(--text-muted); font-size: 0.9rem; }
+
+  /* TEST TAKING INTERFACE */
+  #test-screen { display: none; flex-direction: column; height: 100vh; background: var(--bg-base); }
+  .test-header { background: rgba(17, 24, 39, 0.9); border-bottom: 1px solid var(--border-glass); backdrop-filter: blur(10px); padding: 15px 25px; display: flex; justify-content: space-between; align-items: center; z-index: 10; }
+  .test-title-display { font-weight: 600; font-size: 1.05rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 50%; }
+  .timer-pill { background: rgba(239, 68, 68, 0.15); border: 1px solid rgba(239, 68, 68, 0.3); color: #fca5a5; padding: 6px 16px; border-radius: 30px; font-family: monospace; font-size: 1.2rem; font-weight: 600; }
   
+  .test-body { display: flex; flex: 1; overflow: hidden; }
+  .question-area { flex: 1; padding: 30px; overflow-y: auto; display: flex; flex-direction: column; }
+  .tabs-container { display: flex; gap: 10px; margin-bottom: 25px; border-bottom: 1px solid var(--border-glass); padding-bottom: 12px; }
+  .subject-tab { background: transparent; border: none; color: var(--text-muted); font-size: 1rem; font-weight: 600; padding: 8px 18px; border-radius: 8px; cursor: pointer; transition: 0.2s; }
+  .subject-tab.active { background: rgba(99, 102, 241, 0.15); color: #818cf8; border: 1px solid rgba(99, 102, 241, 0.3); }
+
+  .q-card { background: var(--bg-card); border: 1px solid var(--border-glass); backdrop-filter: blur(16px); border-radius: 20px; padding: 30px; flex: 1; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 16px 40px rgba(0,0,0,0.4); }
+  .q-text { font-size: 1.25rem; line-height: 1.6; margin-bottom: 25px; color: #f3f4f6; }
+  
+  .options-stack { display: flex; flex-direction: column; gap: 12px; }
+  .option-item { background: rgba(255,255,255,0.02); border: 1px solid var(--border-glass); padding: 15px 20px; border-radius: 12px; cursor: pointer; display: flex; align-items: center; gap: 15px; transition: 0.2s; }
+  .option-item:hover { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.2); }
+  .option-item input { accent-color: var(--primary); transform: scale(1.2); }
+  
+  .q-actions { display: flex; gap: 12px; margin-top: 30px; flex-wrap: wrap; }
+  .btn { padding: 12px 24px; border-radius: 12px; font-weight: 600; border: none; cursor: pointer; transition: 0.2s; font-size: 0.95rem; }
+  .btn-save { background: var(--success); color: white; box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3); }
+  .btn-mark { background: var(--warning); color: #111827; }
+  .btn-clear { background: rgba(255,255,255,0.08); color: var(--text-muted); border: 1px solid var(--border-glass); }
+  .btn:hover { opacity: 0.9; transform: translateY(-1px); }
+
+  /* PALETTE SIDEBAR */
+  .palette-sidebar { width: 320px; background: rgba(17, 24, 39, 0.85); border-left: 1px solid var(--border-glass); backdrop-filter: blur(16px); padding: 25px; display: flex; flex-direction: column; justify-content: space-between; }
+  .palette-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-top: 15px; overflow-y: auto; max-height: 45vh; padding-right: 5px; }
+  .palette-btn { aspect-ratio: 1; border-radius: 10px; border: 1px solid var(--border-glass); font-weight: 600; font-size: 0.9rem; cursor: pointer; background: rgba(255,255,255,0.03); color: var(--text-muted); transition: 0.2s; display: flex; align-items: center; justify-content: center; }
+  .palette-btn.not-visited { background: rgba(255,255,255,0.03); color: var(--text-muted); }
+  .palette-btn.answered { background: rgba(16, 185, 129, 0.2); border-color: rgba(16, 185, 129, 0.4); color: var(--success); }
+  .palette-btn.marked { background: rgba(245, 158, 11, 0.2); border-color: rgba(245, 158, 11, 0.4); color: var(--warning); }
+  .palette-btn.current { border-color: var(--primary); box-shadow: 0 0 10px var(--primary-glow); }
+  
+  .btn-submit-final { background: var(--danger); color: white; width: 100%; padding: 15px; border-radius: 12px; font-weight: 700; border: none; cursor: pointer; box-shadow: 0 4px 20px rgba(239, 68, 68, 0.4); transition: 0.2s; }
+  .btn-submit-final:hover { opacity: 0.9; }
+
+  /* MOBILE RESPONSIVENESS */
+  @media(max-width: 768px) {
+    .test-body { flex-direction: column; }
+    .palette-sidebar { width: 100%; max-height: 250px; border-left: none; border-top: 1px solid var(--border-glass); }
+    .palette-grid { max-height: 120px; }
+  }
+</style>
 </head>
 <body>
 
-<!-- DASHBOARD SCREEN -->
+<!-- FUTURISTIC DASHBOARD -->
 <div id="dashboard">
-  <h1 class="dash-title">JEE Practice Portal</h1>
-  <div class="test-list" id="dynamic-test-list">
-    <!-- Buttons will be injected here automatically by Javascript -->
-    <p>Loading tests...</p>
+  <div class="nav-header">
+    <div class="logo">⚡ VORTEX <span style="font-weight: 300; color: #fff;">JEE</span></div>
+    <div class="badge-beta">2026 Core Engine v3.0</div>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-title">Platform Engine</div>
+      <div class="stat-value">Cloud Synced</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-title">Scoring Scheme</div>
+      <div class="stat-value">+4 / -1 NTA</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-title">Math Renderer</div>
+      <div class="stat-value">KaTeX Active</div>
+    </div>
+  </div>
+
+  <div class="control-panel">
+    <input type="text" id="search-input" class="search-box" placeholder="Search shifts (e.g. 2024, Jan, Shift)..." oninput="filterTests()">
+  </div>
+
+  <div class="section-title">
+    <span>Available Mock Tests</span>
+    <span id="test-count" style="font-size:0.85rem; color:var(--text-muted);">Loading catalog...</span>
+  </div>
+
+  <div class="test-grid" id="test-list-container">
+    <!-- Dynamically loaded from test_index.json -->
+  </div>
+
+  <div class="future-modules">
+    <div class="section-title" style="margin-bottom: 12px; font-size: 1rem;">Future Scalable Modules (Coming Soon)</div>
+    <div class="modules-grid">
+      <div class="module-card">📈 AI Deep Analytics & Heatmaps</div>
+      <div class="module-card">🔖 Cloud Revision Bookmark Sync</div>
+      <div class="module-card">👥 All-India Rank Predictor</div>
+    </div>
   </div>
 </div>
 
-    <!-- ADD NEW TESTS HERE -->
-    <button class="test-btn" onclick="startTest('questions.json', 'Demo Test (Local)')">
-      <span>Demo Test (Local)</span> <span class="play-icon">Start</span>
-    </button>
-    
-    <button class="test-btn" onclick="startTest('2024_jan_shift1.json', 'JEE Mains 2024 - Jan Shift 1')">
-      <span>JEE Mains 2024 - Jan Shift 1</span> <span class="play-icon">Start</span>
-    </button>
-
-    <button class="test-btn" onclick="startTest('2023_apr_shift2.json', 'JEE Mains 2023 - Apr Shift 2')">
-      <span>JEE Mains 2023 - Apr Shift 2</span> <span class="play-icon">Start</span>
-    </button>
-  </div>
-</div>
-
-<!-- TEST SCREEN (Hidden by default) -->
+<!-- IMMERSIVE TEST TAKING INTERFACE -->
 <div id="test-screen">
-  <div class="header">
-    <div id="test-title-display">Loading...</div>
-    <div id="timer">180:00</div>
+  <div class="test-header">
+    <div class="test-title-display" id="test-title-display">Loading Session...</div>
+    <div class="timer-pill" id="timer">180:00</div>
   </div>
-  <div class="main">
-    <div class="content">
-      <div class="tabs" id="subject-tabs"></div>
-      <div class="question-container">
-        <div class="question-text" id="q-text">Loading question data...</div>
-        <div class="options" id="q-options"></div>
-        <div class="actions">
-          <button class="btn-save" onclick="saveAndNext()">Save & Next</button>
-          <button class="btn-mark" onclick="markForReview()">Mark for Review</button>
-          <button class="btn-clear" onclick="clearResponse()">Clear Response</button>
+  <div class="test-body">
+    <div class="question-area">
+      <div class="tabs-container" id="subject-tabs"></div>
+      <div class="q-card">
+        <div>
+          <div class="q-text" id="q-text">Initializing question container...</div>
+          <div class="options-stack" id="q-options"></div>
+        </div>
+        <div class="q-actions">
+          <button class="btn btn-save" onclick="saveAndNext()">Save & Next</button>
+          <button class="btn btn-mark" onclick="markForReview()">Mark for Review</button>
+          <button class="btn btn-clear" onclick="clearResponse()">Clear Response</button>
         </div>
       </div>
     </div>
-    <div class="palette">
-      <h3 id="palette-title" style="margin-top:0; color: #202124;">Palette</h3>
-      <div class="palette-grid" id="q-palette"></div>
-      <button class="btn-submit" onclick="submitTest()">Submit Final Test</button>
+    
+    <div class="palette-sidebar">
+      <div>
+        <h4 id="palette-title" style="font-size: 0.95rem; font-weight: 600; color: #d1d5db;">Question Palette</h4>
+        <div class="palette-grid" id="q-palette"></div>
+      </div>
+      <button class="btn-submit-final" onclick="submitTest()">Submit Assessment</button>
     </div>
   </div>
 </div>
 
 <script>
+  let testCatalog = [];
   let questions = {};
   let currentSubject = '';
   let currentIndex = 0;
   let responses = {};
-  let timeLeft = 180 * 60; // 3 hours
+  let timeLeft = 180 * 60;
   let timerInterval;
 
-    // Automatically load the tests from test_index.json
+  // Fetch Index Catalog on Load
   fetch('test_index.json')
     .then(res => res.json())
     .then(data => {
-      const list = document.getElementById('dynamic-test-list');
-      list.innerHTML = '';
-      data.forEach(test => {
-        list.innerHTML += `
-          <button class="test-btn" onclick="startTest('${test.file}', '${test.title}')">
-            <span>${test.title}</span> <span class="play-icon">Start</span>
-          </button>`;
-      });
+      testCatalog = data;
+      renderTestCards(testCatalog);
     })
-    .catch(err => {
-      document.getElementById('dynamic-test-list').innerHTML = `<p style="color:red;">Error loading tests. Make sure test_index.json is uploaded.</p>`;
+    .catch(() => {
+      document.getElementById('test-list-container').innerHTML = `
+        <div style="grid-column: 1/-1; background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.3); padding: 20px; border-radius: 12px; color: #fca5a5;">
+          ⚠️ <b>test_index.json not found.</b> Make sure it is uploaded in your GitHub repository alongside your JSON test files.
+        </div>`;
+      document.getElementById('test-count').innerText = "0 shifts found";
     });
-  
-  function startTest(jsonFileName, testTitle) {
+
+  function renderTestCards(tests) {
+    const container = document.getElementById('test-list-container');
+    container.innerHTML = '';
+    document.getElementById('test-count').innerText = `${tests.length} shift(s) available`;
+    
+    if(tests.length === 0) {
+      container.innerHTML = `<div style="color:var(--text-muted); grid-column:1/-1;">No matching tests found.</div>`;
+      return;
+    }
+
+    tests.forEach(test => {
+      container.innerHTML += `
+        <div class="test-card" onclick="startTest('${test.file}', '${test.title}')">
+          <div class="test-card-title">${test.title}</div>
+          <div class="test-card-footer">
+            <span>90 Qs • 3 Hours</span>
+            <div class="start-badge">Launch Test</div>
+          </div>
+        </div>`;
+    });
+  }
+
+  function filterTests() {
+    const query = document.getElementById('search-input').value.toLowerCase();
+    const filtered = testCatalog.filter(t => t.title.toLowerCase().includes(query));
+    renderTestCards(filtered);
+  }
+
+  function startTest(jsonFile, title) {
     document.getElementById('dashboard').style.display = 'none';
     document.getElementById('test-screen').style.display = 'flex';
-    document.getElementById('test-title-display').innerText = testTitle;
+    document.getElementById('test-title-display').innerText = title;
+    
+    responses = {};
+    timeLeft = 180 * 60;
+
+    fetch(jsonFile)
+      .then(res => {
+        if(!res.ok) throw new Error("File missing");
+        return res.json();
+      })
+      .then(data => {
+        questions = data;
+        Object.keys(data).forEach(subj => responses[subj] = new Array(data[subj].length).fill(null));
+        currentSubject = Object.keys(data)[0];
+        renderTabs();
+        loadSubject(currentSubject);
+        
+        timerInterval = setInterval(() => {
+          if (timeLeft <= 0) { clearInterval(timerInterval); submitTest(); return; }
+          timeLeft--;
+          let h = Math.floor(timeLeft / 3600);
+          let m = Math.floor((timeLeft % 3600) / 60);
+          let s = timeLeft % 60;
+          document.getElementById('timer').innerText = `${h}:${m < 10 ? '0' : ''}${m}:${s < 10 ? '0' : ''}${s}`;
+        }, 1000);
+      })
+      .catch(() => {
+        document.querySelector('.question-area').innerHTML = `
+          <div style="background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.3); padding: 30px; border-radius: 16px; color: #fca5a5; text-align: center;">
+            <h3>Error Loading Test File</h3>
+            <p style="margin-top: 10px;">Could not fetch <b>${jsonFile}</b>. Verify that this file is uploaded on GitHub.</p>
+            <button onclick="location.reload()" style="margin-top: 20px; padding: 10px 20px; background: var(--primary); color: white; border: none; border-radius: 8px; cursor: pointer;">Return to Dashboard</button>
+          </div>`;
+      });
+  }
+
+  function renderTabs() {
+    const container = document.getElementById('subject-tabs');
+    container.innerHTML = '';
+    Object.keys(questions).forEach(subj => {
+      container.innerHTML += `<button class="subject-tab ${subj === currentSubject ? 'active' : ''}" onclick="loadSubject('${subj}')">${subj}</button>`;
+    });
+  }
+
+  function loadSubject(subj) {
+    currentSubject = subj;
+    currentIndex = 0;
+    renderTabs();
+    renderQuestion();
+    renderPalette();
+  }
+
+  function renderQuestion() {
+    const q = questions[currentSubject][currentIndex];
+    const qDiv = document.getElementById('q-text');
+    qDiv.innerHTML = `<b>Q${currentIndex + 1}.</b> ${q.text}`;
+    
+    const optionsContainer = document.getElementById('q-options');
+    optionsContainer.innerHTML = '';
+    
+    q.options.forEach((opt, i) => {
+      const isChecked = responses[currentSubject][currentIndex]?.ans === i ? 'checked' : '';
+      optionsContainer.innerHTML += `
+        <label class="option-item" onclick="document.getElementById('opt-${i}').checked = true">
+          <input type="radio" name="jee-opt" id="opt-${i}" value="${i}" ${isChecked}>
+          <span>${opt}</span>
+        </label>`;
+    });
+
+    // Trigger KaTeX rendering on the updated DOM content
+    if(window.renderMathInElement) {
+      renderMathInElement(qDiv);
+      document.querySelectorAll('.option-item span').forEach(el => renderMathInElement(el));
+    }
+  }
+
+  function renderPalette() {
+    document.getElementById('palette-title').innerText = `${currentSubject} Palette`;
+    const grid = document.getElementById('q-palette');
+    grid.innerHTML = '';
+    
+    questions[currentSubject].forEach((_, i) => {
+      const st = responses[currentSubject][i]?.state || 'not-visited';
+      const isCurr = i === currentIndex ? 'current' : '';
+      grid.innerHTML += `<button class="palette-btn ${st} ${isCurr}" onclick="jumpToQuestion(${i})">${i + 1}</button>`;
+    });
+  }
+
+  function jumpToQuestion(i) {
+    currentIndex = i;
+    renderQuestion();
+    renderPalette();
+  }
+
+  function saveResponse(state) {
+    const selected = document.querySelector('input[name="jee-opt"]:checked');
+    if (selected) {
+      responses[currentSubject][currentIndex] = { ans: parseInt(selected.value), state: state };
+    } else if (state === 'marked') {
+      responses[currentSubject][currentIndex] = { ans: null, state: 'marked' };
+    }
+  }
+
+  function saveAndNext() {
+    saveResponse('answered');
+    if (currentIndex < questions[currentSubject].length - 1) {
+      currentIndex++;
+      renderQuestion();
+      renderPalette();
+    }
+  }
+
+  function markForReview() {
+    saveResponse('marked');
+    if (currentIndex < questions[currentSubject].length - 1) {
+      currentIndex++;
+      renderQuestion();
+      renderPalette();
+    }
+  }
+
+  function clearResponse() {
+    responses[currentSubject][currentIndex] = null;
+    renderQuestion();
+    renderPalette();
+  }
+
+  function submitTest() {
+    clearInterval(timerInterval);
+    let score = 0, correct = 0, wrong = 0, unattempted = 0;
+    
+    Object.keys(questions).forEach(subj => {
+      questions[subj].forEach((q, i) => {
+        const res = responses[subj][i];
+        if (res && res.ans !== null) {
+          if (res.ans === q.correct) { score += 4; correct++; }
+          else { score -= 1; wrong++; }
+        } else {
+          unattempted++;
+        }
+      });
+    });
+
+    document.getElementById('test-screen').innerHTML = `
+      <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; height:100vh; padding:20px; text-align:center;">
+        <div style="background:var(--bg-card); border:1px solid var(--border-glass); backdrop-filter:blur(20px); padding:40px; border-radius:24px; max-width:450px; width:100%; box-shadow: 0 20px 50px rgba(0,0,0,0.5);">
+          <h1 style="font-size:2rem; margin-bottom:10px; background:linear-gradient(135deg,#818cf8,#ec4899); -webkit-background-clip:text; -webkit-text-fill-col    document.getElementById('test-title-display').innerText = testTitle;
     document.getElementById('q-text').innerText = "Loading " + jsonFileName + "...";
     
     // Reset variables in case they take multiple tests
