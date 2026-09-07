@@ -252,11 +252,14 @@
     renderPalette();
   }
 
-  function renderQuestion() {
+    function renderQuestion() {
     const q = questions[currentSubject][currentIndex];
     const qDiv = document.getElementById('q-text');
+    
+    // Insert question text
     qDiv.innerHTML = `<b>Q${currentIndex + 1}.</b> ${q.text}`;
     
+    // Insert options
     const optionsContainer = document.getElementById('q-options');
     optionsContainer.innerHTML = '';
     
@@ -265,9 +268,36 @@
       optionsContainer.innerHTML += `
         <label class="option-item" onclick="document.getElementById('opt-${i}').checked = true">
           <input type="radio" name="jee-opt" id="opt-${i}" value="${i}" ${isChecked}>
-          <span>${opt}</span>
+          <span class="opt-text">${opt}</span>
         </label>`;
     });
+
+    // FORCE KATEX TO RENDER MATH EVERY TIME
+    setTimeout(() => {
+      if (window.renderMathInElement) {
+        renderMathInElement(qDiv, {
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: '\\(', right: '\\)', display: false},
+            {left: '\\[', right: '\\]', display: true}
+          ],
+          throwOnError: false
+        });
+        
+        document.querySelectorAll('.opt-text').forEach(el => {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false}
+            ],
+            throwOnError: false
+          });
+        });
+      }
+    }, 50); // Small 50ms delay ensures DOM is ready
+  }
+
 
     if(window.renderMathInElement) {
       renderMathInElement(qDiv);
