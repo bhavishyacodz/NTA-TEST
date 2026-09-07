@@ -252,7 +252,7 @@
     renderPalette();
   }
 
-    function renderQuestion() {
+      function renderQuestion() {
     const q = questions[currentSubject][currentIndex];
     const qDiv = document.getElementById('q-text');
     
@@ -271,6 +271,31 @@
           <span class="opt-text">${opt}</span>
         </label>`;
     });
+
+    // FORCE KATEX TO RENDER MATH IMMEDIATELY
+    if (window.renderMathInElement) {
+      renderMathInElement(qDiv, {
+        delimiters: [
+          {left: '$$', right: '$$', display: true},
+          {left: '$', right: '$', display: false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ],
+        throwOnError: false
+      });
+      
+      document.querySelectorAll('.opt-text').forEach(el => {
+        renderMathInElement(el, {
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false}
+          ],
+          throwOnError: false
+        });
+      });
+    }
+  }
+
 
     // FORCE KATEX TO RENDER MATH EVERY TIME
     setTimeout(() => {
