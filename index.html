@@ -57,7 +57,12 @@
 <!-- DASHBOARD SCREEN -->
 <div id="dashboard">
   <h1 class="dash-title">JEE Practice Portal</h1>
-  <div class="test-list">
+  <div class="test-list" id="dynamic-test-list">
+    <!-- Buttons will be injected here automatically by Javascript -->
+    <p>Loading tests...</p>
+  </div>
+</div>
+
     <!-- ADD NEW TESTS HERE -->
     <button class="test-btn" onclick="startTest('questions.json', 'Demo Test (Local)')">
       <span>Demo Test (Local)</span> <span class="play-icon">Start</span>
