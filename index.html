@@ -3,148 +3,137 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vortex JEE — Next-Gen Exam Engine</title>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<title>Vortex JEE — NTA Official Interface</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<!-- KaTeX Math Renderer -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
 
 <style>
-  :root {
-    --bg-base: #030712;
-    --bg-card: rgba(17, 24, 39, 0.75);
-    --border-glass: rgba(255, 255, 255, 0.08);
-    --primary: #6366f1;
-    --primary-glow: rgba(99, 102, 241, 0.4);
-    --accent: #ec4899;
-    --text-main: #f9fafb;
-    --text-muted: #9ca3af;
-    --success: #10b981;
-    --danger: #ef4444;
-    --warning: #f59e0b;
-  }
+  * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Roboto', sans-serif; }
+  body { background-color: #f0f2f5; color: #333; height: 100vh; overflow: hidden; display: flex; flex-direction: column; }
 
-  * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Outfit', sans-serif; }
-  body { background-color: var(--bg-base); color: var(--text-main); height: 100vh; overflow: hidden; display: flex; flex-direction: column; background-image: radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.12) 0%, transparent 40%), radial-gradient(circle at 90% 80%, rgba(236, 72, 153, 0.08) 0%, transparent 40%); }
-
-  ::-webkit-scrollbar { width: 6px; }
-  ::-webkit-scrollbar-track { background: transparent; }
-  ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 10px; }
-
-  /* DASHBOARD UI */
-  #dashboard { padding: 30px 20px; height: 100vh; overflow-y: auto; max-width: 1000px; margin: 0 auto; width: 100%; }
-  .nav-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; }
-  .logo { font-size: 1.6rem; font-weight: 700; background: linear-gradient(135deg, #818cf8, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: flex; align-items: center; gap: 8px; }
-  .badge-beta { background: rgba(99, 102, 241, 0.15); color: #818cf8; font-size: 0.75rem; padding: 4px 10px; border-radius: 20px; border: 1px solid rgba(99, 102, 241, 0.3); }
-
-  .section-title { font-size: 1.1rem; font-weight: 600; margin-bottom: 15px; color: #e5e7eb; display: flex; justify-content: space-between; align-items: center; }
+  /* DASHBOARD STYLES */
+  #dashboard { padding: 40px 20px; height: 100vh; overflow-y: auto; max-width: 900px; margin: 0 auto; width: 100%; }
+  .dash-header { background: #1a237e; color: white; padding: 25px; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+  .dash-header h1 { font-size: 1.8rem; margin-bottom: 5px; }
+  .dash-header p { font-size: 0.95rem; opacity: 0.8; }
   
-  /* ACCORDION / FOLDER STYLE LIST */
-  .catalog-container { display: flex; flex-direction: column; gap: 12px; margin-bottom: 30px; }
-  .folder-card { background: var(--bg-card); border: 1px solid var(--border-glass); backdrop-filter: blur(12px); border-radius: 14px; overflow: hidden; transition: 0.2s; }
-  .folder-header { padding: 18px 20px; font-size: 1.1rem; font-weight: 600; display: flex; justify-content: space-between; align-items: center; cursor: pointer; background: rgba(255,255,255,0.01); }
-  .folder-header:hover { background: rgba(255,255,255,0.03); }
-  .folder-content { display: none; padding: 15px 20px; border-top: 1px solid var(--border-glass); display: flex; flex-direction: column; gap: 10px; background: rgba(0,0,0,0.2); }
-  .folder-content.open { display: flex; }
+  .section-title { font-size: 1.1rem; font-weight: 700; color: #1a237e; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .catalog-box { background: white; border: 1px solid #dcdcdc; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.02); overflow: hidden; margin-bottom: 20px; }
+  .folder-top { background: #f5f5f5; padding: 15px 20px; font-weight: 700; border-bottom: 1px solid #dcdcdc; color: #333; }
+  .shift-row { padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; transition: 0.15s; }
+  .shift-row:last-child { border-bottom: none; }
+  .shift-row:hover { background: #fafafa; }
+  .nta-launch-btn { background: #2e7d32; color: white; border: none; padding: 8px 18px; border-radius: 4px; font-weight: 500; cursor: pointer; font-size: 0.9rem; }
+  .nta-launch-btn:hover { background: #1b5e20; }
 
-  .shift-item { background: rgba(255,255,255,0.03); border: 1px solid var(--border-glass); padding: 14px 18px; border-radius: 10px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; transition: 0.2s; }
-  .shift-item:hover { background: rgba(99, 102, 241, 0.1); border-color: rgba(99, 102, 241, 0.3); transform: translateX(4px); }
-  .shift-title { font-weight: 500; font-size: 0.95rem; }
-  .launch-btn { background: var(--primary); color: white; padding: 6px 14px; border-radius: 8px; font-size: 0.85rem; font-weight: 600; box-shadow: 0 4px 12px var(--primary-glow); }
+  /* NTA OFFICIAL TEST INTERFACE */
+  #test-screen { display: none; flex-direction: column; height: 100vh; background: #fff; }
+  
+  /* NTA Header Bar */
+  .nta-top-bar { background: #1a237e; color: white; padding: 12px 25px; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid #ffb300; }
+  .nta-brand { font-size: 1.1rem; font-weight: 700; }
+  .nta-timer-box { background: #fff; color: #d32f2f; padding: 6px 15px; border-radius: 4px; font-family: monospace; font-size: 1.1rem; font-weight: 700; border: 1px solid #ccc; }
 
-  /* TEST TAKING INTERFACE */
-  #test-screen { display: none; flex-direction: column; height: 100vh; background: var(--bg-base); }
-  .test-header { background: rgba(17, 24, 39, 0.9); border-bottom: 1px solid var(--border-glass); backdrop-filter: blur(10px); padding: 15px 25px; display: flex; justify-content: space-between; align-items: center; z-index: 10; }
-  .test-title-display { font-weight: 600; font-size: 1.05rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 50%; }
-  .timer-pill { background: rgba(239, 68, 68, 0.15); border: 1px solid rgba(239, 68, 68, 0.3); color: #fca5a5; padding: 6px 16px; border-radius: 30px; font-family: monospace; font-size: 1.2rem; font-weight: 600; }
+  /* Main Exam Workspace */
+  .nta-workspace { display: flex; flex: 1; overflow: hidden; }
+  .nta-question-pane { flex: 1; padding: 25px; overflow-y: auto; display: flex; flex-direction: column; border-right: 1px solid #dcdcdc; background: #fff; }
   
-  .test-body { display: flex; flex: 1; overflow: hidden; }
-  .question-area { flex: 1; padding: 30px; overflow-y: auto; display: flex; flex-direction: column; }
-  .tabs-container { display: flex; gap: 10px; margin-bottom: 25px; border-bottom: 1px solid var(--border-glass); padding-bottom: 12px; }
-  .subject-tab { background: transparent; border: none; color: var(--text-muted); font-size: 1rem; font-weight: 600; padding: 8px 18px; border-radius: 8px; cursor: pointer; transition: 0.2s; }
-  .subject-tab.active { background: rgba(99, 102, 241, 0.15); color: #818cf8; border: 1px solid rgba(99, 102, 241, 0.3); }
+  /* Subject Tabs */
+  .nta-tabs { display: flex; gap: 5px; margin-bottom: 20px; border-bottom: 2px solid #1a237e; padding-bottom: 0; }
+  .nta-tab { background: #e0e0e0; border: none; padding: 10px 20px; font-weight: 700; color: #555; cursor: pointer; border-top-left-radius: 4px; border-top-right-radius: 4px; font-size: 0.95rem; }
+  .nta-tab.active { background: #1a237e; color: white; }
 
-  .q-card { background: var(--bg-card); border: 1px solid var(--border-glass); backdrop-filter: blur(16px); border-radius: 20px; padding: 30px; flex: 1; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 16px 40px rgba(0,0,0,0.4); }
-  .q-text { font-size: 1.25rem; line-height: 1.6; margin-bottom: 25px; color: #f3f4f6; }
+  /* Question Box */
+  .nta-q-container { background: #fff; border: 1px solid #dcdcdc; border-radius: 4px; padding: 20px; flex: 1; display: flex; flex-direction: column; justify-content: space-between; box-shadow: inset 0 1px 3px rgba(0,0,0,0.02); }
+  .nta-q-text { font-size: 1.1rem; line-height: 1.6; color: #222; margin-bottom: 25px; }
   
-  .options-stack { display: flex; flex-direction: column; gap: 12px; }
-  .option-item { background: rgba(255,255,255,0.02); border: 1px solid var(--border-glass); padding: 15px 20px; border-radius: 12px; cursor: pointer; display: flex; align-items: center; gap: 15px; transition: 0.2s; }
-  .option-item:hover { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.2); }
-  .option-item input { accent-color: var(--primary); transform: scale(1.2); }
-  
-  .q-actions { display: flex; gap: 12px; margin-top: 30px; flex-wrap: wrap; }
-  .btn { padding: 12px 24px; border-radius: 12px; font-weight: 600; border: none; cursor: pointer; transition: 0.2s; font-size: 0.95rem; }
-  .btn-save { background: var(--success); color: white; box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3); }
-  .btn-mark { background: var(--warning); color: #111827; }
-  .btn-clear { background: rgba(255,255,255,0.08); color: var(--text-muted); border: 1px solid var(--border-glass); }
-  .btn:hover { opacity: 0.9; transform: translateY(-1px); }
+  .nta-options-list { display: flex; flex-direction: column; gap: 12px; }
+  .nta-opt-label { display: flex; align-items: center; gap: 12px; padding: 12px 15px; border: 1px solid #dcdcdc; border-radius: 4px; cursor: pointer; background: #fafafa; transition: 0.1s; }
+  .nta-opt-label:hover { background: #f0f4f8; border-color: #90caf9; }
+  .nta-opt-label input { transform: scale(1.2); accent-color: #1a237e; }
 
-  /* PALETTE SIDEBAR */
-  .palette-sidebar { width: 320px; background: rgba(17, 24, 39, 0.85); border-left: 1px solid var(--border-glass); backdrop-filter: blur(16px); padding: 25px; display: flex; flex-direction: column; justify-content: space-between; }
-  .palette-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-top: 15px; overflow-y: auto; max-height: 45vh; padding-right: 5px; }
-  .palette-btn { aspect-ratio: 1; border-radius: 10px; border: 1px solid var(--border-glass); font-weight: 600; font-size: 0.9rem; cursor: pointer; background: rgba(255,255,255,0.03); color: var(--text-muted); transition: 0.2s; display: flex; align-items: center; justify-content: center; }
-  .palette-btn.not-visited { background: rgba(255,255,255,0.03); color: var(--text-muted); }
-  .palette-btn.answered { background: rgba(16, 185, 129, 0.2); border-color: rgba(16, 185, 129, 0.4); color: var(--success); }
-  .palette-btn.marked { background: rgba(245, 158, 11, 0.2); border-color: rgba(245, 158, 11, 0.4); color: var(--warning); }
-  .palette-btn.current { border-color: var(--primary); box-shadow: 0 0 10px var(--primary-glow); }
+  /* Bottom Action Bar inside Question Pane */
+  .nta-action-bar { margin-top: 25px; display: flex; gap: 10px; flex-wrap: wrap; padding-top: 15px; border-top: 1px solid #eee; }
+  .nta-btn { padding: 10px 18px; font-weight: 500; border: none; border-radius: 4px; cursor: pointer; font-size: 0.9rem; }
+  .nta-btn-save { background: #2e7d32; color: white; }
+  .nta-btn-mark { background: #ff8f00; color: white; }
+  .nta-btn-clear { background: #757575; color: white; }
+
+  /* NTA Palette Sidebar */
+  .nta-palette-pane { width: 320px; background: #f5f5f5; display: flex; flex-direction: column; justify-content: space-between; border-left: 1px solid #dcdcdc; }
+  .palette-header { background: #e0e0e0; padding: 12px 15px; font-weight: 700; font-size: 0.95rem; color: #333; border-bottom: 1px solid #ccc; }
+  .palette-grid-area { padding: 15px; overflow-y: auto; flex: 1; }
+  .palette-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; }
   
-  .btn-submit-final { background: var(--danger); color: white; width: 100%; padding: 15px; border-radius: 12px; font-weight: 700; border: none; cursor: pointer; box-shadow: 0 4px 20px rgba(239, 68, 68, 0.4); transition: 0.2s; }
-  .btn-submit-final:hover { opacity: 0.9; }
+  /* Official NTA Status Shapes */
+  .nta-p-btn { aspect-ratio: 1; font-weight: 700; font-size: 0.85rem; border: 1px solid #ccc; cursor: pointer; display: flex; align-items: center; justify-content: center; background: #fff; color: #333; border-radius: 4px; }
+  .nta-p-btn.not-visited { background: #fff; color: #333; }
+  .nta-p-btn.answered { background: #4caf50; color: white; border-color: #388e3c; }
+  .nta-p-btn.marked { background: #ab47bc; color: white; border-color: #8e24aa; border-radius: 50%; } /* NTA review style circle */
+  .nta-p-btn.current { border: 2px dashed #1a237e; }
+
+  .palette-footer { padding: 15px; background: #e0e0e0; border-top: 1px solid #ccc; }
+  .nta-submit-btn { background: #d32f2f; color: white; width: 100%; padding: 12px; font-weight: 700; border: none; border-radius: 4px; cursor: pointer; font-size: 1rem; }
+  .nta-submit-btn:hover { background: #b71c1c; }
 
   @media(max-width: 768px) {
-    .test-body { flex-direction: column; }
-    .palette-sidebar { width: 100%; max-height: 250px; border-left: none; border-top: 1px solid var(--border-glass); }
-    .palette-grid { max-height: 120px; }
+    .nta-workspace { flex-direction: column; }
+    .nta-palette-pane { width: 100%; max-height: 220px; }
   }
 </style>
 </head>
 <body>
 
-<!-- DASHBOARD MENU (NO SEARCH REQUIRED) -->
+<!-- DASHBOARD (NTA Portal Style) -->
 <div id="dashboard">
-  <div class="nav-header">
-    <div class="logo">⚡ VORTEX <span style="font-weight: 300; color: #fff;">JEE</span></div>
-    <div class="badge-beta">Select Paper</div>
+  <div class="dash-header">
+    <h1>JEE Main Mock Test Portal</h1>
+    <p>Official NTA CBT Test Environment with KaTeX Math Engine</p>
   </div>
 
-  <div class="section-title">
-    <span>Available Question Papers</span>
-    <span id="test-count" style="font-size:0.85rem; color:var(--text-muted);">Loading...</span>
-  </div>
-
-  <div class="catalog-container" id="catalog-list">
-    <!-- Folders and shifts injected automatically -->
+  <div class="section-title">Select Question Paper</div>
+  <div class="catalog-box">
+    <div class="folder-top">📁 Previous Year Question Papers (PYQ Shifts)</div>
+    <div id="shift-list-container">
+      <div style="padding: 20px; text-align: color: #666;">Loading test catalog...</div>
+    </div>
   </div>
 </div>
 
-<!-- TEST TAKING INTERFACE -->
+<!-- NTA EXAM SCREEN -->
 <div id="test-screen">
-  <div class="test-header">
-    <div class="test-title-display" id="test-title-display">Loading Session...</div>
-    <div class="timer-pill" id="timer">180:00</div>
+  <div class="nta-top-bar">
+    <div class="nta-brand" id="test-title-display">JEE Main Assessment</div>
+    <div class="nta-timer-box" id="timer">180:00</div>
   </div>
-  <div class="test-body">
-    <div class="question-area">
-      <div class="tabs-container" id="subject-tabs"></div>
-      <div class="q-card">
+  
+  <div class="nta-workspace">
+    <div class="nta-question-pane">
+      <div class="nta-tabs" id="subject-tabs"></div>
+      <div class="nta-q-container">
         <div>
-          <div class="q-text" id="q-text">Initializing question container...</div>
-          <div class="options-stack" id="q-options"></div>
+          <div class="nta-q-text" id="q-text">Loading question...</div>
+          <div class="nta-options-list" id="q-options"></div>
         </div>
-        <div class="q-actions">
-          <button class="btn btn-save" onclick="saveAndNext()">Save & Next</button>
-          <button class="btn btn-mark" onclick="markForReview()">Mark for Review</button>
-          <button class="btn btn-clear" onclick="clearResponse()">Clear Response</button>
+        <div class="nta-action-bar">
+          <button class="nta-btn nta-btn-save" onclick="saveAndNext()">Save & Next</button>
+          <button class="nta-btn nta-btn-mark" onclick="markForReview()">Mark for Review & Next</button>
+          <button class="nta-btn nta-btn-clear" onclick="clearResponse()">Clear Response</button>
         </div>
       </div>
     </div>
     
-    <div class="palette-sidebar">
-      <div>
-        <h4 id="palette-title" style="font-size: 0.95rem; font-weight: 600; color: #d1d5db;">Question Palette</h4>
+    <div class="nta-palette-pane">
+      <div class="palette-header" id="palette-title">Question Palette</div>
+      <div class="palette-grid-area">
         <div class="palette-grid" id="q-palette"></div>
       </div>
-      <button class="btn-submit-final" onclick="submitTest()">Submit Assessment</button>
+      <div class="palette-footer">
+        <button class="nta-submit-btn" onclick="submitTest()">Submit Test</button>
+      </div>
     </div>
   </div>
 </div>
@@ -157,45 +146,24 @@
   let timeLeft = 180 * 60;
   let timerInterval;
 
-  // Fetch Index and Group by Year/Session automatically
+  // Fetch test index catalog automatically
   fetch('test_index.json')
     .then(res => res.json())
     .then(data => {
-      document.getElementById('test-count').innerText = `${data.length} test(s) loaded`;
-      const container = document.getElementById('catalog-list');
+      const container = document.getElementById('shift-list-container');
       container.innerHTML = '';
-
-      // Group tests into a default "JEE Mains PYQ Papers" folder if no explicit grouping is provided
-      container.innerHTML = `
-        <div class="folder-card">
-          <div class="folder-header" onclick="toggleFolder(this)">
-            <span>📚 JEE Mains Previous Year Papers</span>
-            <span style="font-size: 0.85rem; color: var(--text-muted);">▼</span>
-          </div>
-          <div class="folder-content open" id="folder-shifts"></div>
-        </div>`;
-
-      const shiftContainer = document.getElementById('folder-shifts');
       data.forEach(test => {
-        shiftContainer.innerHTML += `
-          <div class="shift-item" onclick="startTest('${test.file}', '${test.title}')">
-            <span class="shift-title">${test.title}</span>
-            <span class="launch-btn">Start Test</span>
+        container.innerHTML += `
+          <div class="shift-row">
+            <span style="font-weight: 500;">${test.title}</span>
+            <button class="nta-launch-btn" onclick="startTest('${test.file}', '${test.title}')">Start Test</button>
           </div>`;
       });
     })
     .catch(() => {
-      document.getElementById('catalog-list').innerHTML = `
-        <div style="background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.3); padding: 20px; border-radius: 12px; color: #fca5a5;">
-          ⚠️ <b>test_index.json not found.</b> Make sure it is uploaded in your GitHub repository.
-        </div>`;
-      document.getElementById('test-count').innerText = "0 tests";
+      document.getElementById('shift-list-container').innerHTML = `
+        <div style="padding: 20px; color: #d32f2f;">⚠️ <b>test_index.json not found.</b> Make sure it is uploaded to your repository.</div>`;
     });
-
-  function toggleFolder(header) {
-    const content = header.nextElementSibling;
-    content.classList.toggle('open');
-  }
 
   function startTest(jsonFile, title) {
     document.getElementById('dashboard').style.display = 'none';
@@ -206,10 +174,7 @@
     timeLeft = 180 * 60;
 
     fetch(jsonFile)
-      .then(res => {
-        if(!res.ok) throw new Error("File missing");
-        return res.json();
-      })
+      .then(res => res.json())
       .then(data => {
         questions = data;
         Object.keys(data).forEach(subj => responses[subj] = new Array(data[subj].length).fill(null));
@@ -227,12 +192,8 @@
         }, 1000);
       })
       .catch(() => {
-        document.querySelector('.question-area').innerHTML = `
-          <div style="background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.3); padding: 30px; border-radius: 16px; color: #fca5a5; text-align: center;">
-            <h3>Error Loading Test File</h3>
-            <p style="margin-top: 10px;">Could not fetch <b>${jsonFile}</b>. Verify that this file is uploaded on GitHub.</p>
-            <button onclick="location.reload()" style="margin-top: 20px; padding: 10px 20px; background: var(--primary); color: white; border: none; border-radius: 8px; cursor: pointer;">Return to Dashboard</button>
-          </div>`;
+        alert("Error loading JSON file. Check file name match.");
+        location.reload();
       });
   }
 
@@ -240,7 +201,7 @@
     const container = document.getElementById('subject-tabs');
     container.innerHTML = '';
     Object.keys(questions).forEach(subj => {
-      container.innerHTML += `<button class="subject-tab ${subj === currentSubject ? 'active' : ''}" onclick="loadSubject('${subj}')">${subj}</button>`;
+      container.innerHTML += `<button class="nta-tab ${subj === currentSubject ? 'active' : ''}" onclick="loadSubject('${subj}')">${subj}</button>`;
     });
   }
 
@@ -252,52 +213,24 @@
     renderPalette();
   }
 
-      function renderQuestion() {
+  function renderQuestion() {
     const q = questions[currentSubject][currentIndex];
     const qDiv = document.getElementById('q-text');
+    qDiv.innerHTML = `<b>Q.${currentIndex + 1}</b> &nbsp; ${q.text}`;
     
-    // Insert question text
-    qDiv.innerHTML = `<b>Q${currentIndex + 1}.</b> ${q.text}`;
-    
-    // Insert options
     const optionsContainer = document.getElementById('q-options');
     optionsContainer.innerHTML = '';
     
     q.options.forEach((opt, i) => {
       const isChecked = responses[currentSubject][currentIndex]?.ans === i ? 'checked' : '';
       optionsContainer.innerHTML += `
-        <label class="option-item" onclick="document.getElementById('opt-${i}').checked = true">
-          <input type="radio" name="jee-opt" id="opt-${i}" value="${i}" ${isChecked}>
+        <label class="nta-opt-label" onclick="document.getElementById('opt-${i}').checked = true">
+          <input type="radio" name="nta-opt" id="opt-${i}" value="${i}" ${isChecked}>
           <span class="opt-text">${opt}</span>
         </label>`;
     });
 
-    // FORCE KATEX TO RENDER MATH IMMEDIATELY
-    if (window.renderMathInElement) {
-      renderMathInElement(qDiv, {
-        delimiters: [
-          {left: '$$', right: '$$', display: true},
-          {left: '$', right: '$', display: false},
-          {left: '\\(', right: '\\)', display: false},
-          {left: '\\[', right: '\\]', display: true}
-        ],
-        throwOnError: false
-      });
-      
-      document.querySelectorAll('.opt-text').forEach(el => {
-        renderMathInElement(el, {
-          delimiters: [
-            {left: '$$', right: '$$', display: true},
-            {left: '$', right: '$', display: false}
-          ],
-          throwOnError: false
-        });
-      });
-    }
-  }
-
-
-    // FORCE KATEX TO RENDER MATH EVERY TIME
+    // TRIGGER KATEX RENDER ON EVERY LOAD TO FIX MATH EQUATIONS
     setTimeout(() => {
       if (window.renderMathInElement) {
         renderMathInElement(qDiv, {
@@ -309,7 +242,6 @@
           ],
           throwOnError: false
         });
-        
         document.querySelectorAll('.opt-text').forEach(el => {
           renderMathInElement(el, {
             delimiters: [
@@ -320,14 +252,7 @@
           });
         });
       }
-    }, 50); // Small 50ms delay ensures DOM is ready
-  }
-
-
-    if(window.renderMathInElement) {
-      renderMathInElement(qDiv);
-      document.querySelectorAll('.option-item span').forEach(el => renderMathInElement(el));
-    }
+    }, 30);
   }
 
   function renderPalette() {
@@ -338,18 +263,18 @@
     questions[currentSubject].forEach((_, i) => {
       const st = responses[currentSubject][i]?.state || 'not-visited';
       const isCurr = i === currentIndex ? 'current' : '';
-      grid.innerHTML += `<button class="palette-btn ${st} ${isCurr}" onclick="jumpToQuestion(${i})">${i + 1}</button>`;
+      grid.innerHTML += `<button class="nta-p-btn ${st} ${isCurr}" onclick="jumpTo(${i})">${i + 1}</button>`;
     });
   }
 
-  function jumpToQuestion(i) {
+  function jumpTo(i) {
     currentIndex = i;
     renderQuestion();
     renderPalette();
   }
 
   function saveResponse(state) {
-    const selected = document.querySelector('input[name="jee-opt"]:checked');
+    const selected = document.querySelector('input[name="nta-opt"]:checked');
     if (selected) {
       responses[currentSubject][currentIndex] = { ans: parseInt(selected.value), state: state };
     } else if (state === 'marked') {
@@ -398,20 +323,19 @@
     });
 
     document.getElementById('test-screen').innerHTML = `
-      <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; height:100vh; padding:20px; text-align:center;">
-        <div style="background:var(--bg-card); border:1px solid var(--border-glass); backdrop-filter:blur(20px); padding:40px; border-radius:24px; max-width:450px; width:100%; box-shadow: 0 20px 50px rgba(0,0,0,0.5);">
-          <h1 style="font-size:2rem; margin-bottom:10px; background:linear-gradient(135deg,#818cf8,#ec4899); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">Assessment Complete</h1>
-          <div style="font-size:3.5rem; font-weight:700; color:#fff; margin:20px 0;">${score} <span style="font-size:1.2rem; color:var(--text-muted);">/ 300</span></div>
-          <div style="display:flex; flex-direction:column; gap:10px; text-align:left; margin-bottom:30px; font-size:0.95rem; background:rgba(255,255,255,0.02); padding:15px; border-radius:12px; border:1px solid var(--border-glass);">
-            <div style="color:var(--success)">✅ Correct: ${correct} (+${correct * 4})</div>
-            <div style="color:var(--danger)">❌ Incorrect: ${wrong} (-${wrong})</div>
-            <div style="color:var(--text-muted)">⚪ Unattempted: ${unattempted}</div>
+      <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; height:100vh; background:#f0f2f5;">
+        <div style="background:white; padding:40px; border-radius:8px; border:1px solid #dcdcdc; max-width:400px; width:100%; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.05);">
+          <h2 style="color:#1a237e; margin-bottom:15px;">Test Submitted Successfully</h2>
+          <div style="font-size:2.5rem; font-weight:700; color:#2e7d32; margin-bottom:20px;">Score: ${score} / 300</div>
+          <div style="text-align:left; font-size:0.95rem; background:#fafafa; padding:15px; border-radius:4px; border:1px solid #eee; margin-bottom:20px;">
+            <p style="color:#2e7d32; margin-bottom:5px;">✔ Correct: ${correct}</p>
+            <p style="color:#d32f2f; margin-bottom:5px;">✖ Incorrect: ${wrong}</p>
+            <p style="color:#757575;">⚪ Unattempted: ${unattempted}</p>
           </div>
-          <button onclick="location.reload()" class="btn btn-save" style="width:100%;">Return to Command Center</button>
+          <button onclick="location.reload()" style="background:#1a237e; color:white; border:none; padding:12px; width:100%; font-weight:700; border-radius:4px; cursor:pointer;">Back to Dashboard</button>
         </div>
       </div>`;
   }
 </script>
 </body>
 </html>
-
