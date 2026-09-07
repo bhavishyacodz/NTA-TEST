@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vortex JEE — NTA Official Interface</title>
+<title>JEE Main Mock Test Engine — Official NTA Portal</title>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-<!-- KaTeX Math Renderer -->
+<!-- KaTeX Math Renderer for pristine equations and fractions -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
@@ -14,7 +14,7 @@
   * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Roboto', sans-serif; }
   body { background-color: #f0f2f5; color: #333; height: 100vh; overflow: hidden; display: flex; flex-direction: column; }
 
-  /* DASHBOARD STYLES */
+  /* DASHBOARD (NTA Portal Style) */
   #dashboard { padding: 40px 20px; height: 100vh; overflow-y: auto; max-width: 900px; margin: 0 auto; width: 100%; }
   .dash-header { background: #1a237e; color: white; padding: 25px; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
   .dash-header h1 { font-size: 1.8rem; margin-bottom: 5px; }
@@ -57,10 +57,10 @@
 
   /* Bottom Action Bar inside Question Pane */
   .nta-action-bar { margin-top: 25px; display: flex; gap: 10px; flex-wrap: wrap; padding-top: 15px; border-top: 1px solid #eee; }
-  .nta-btn { padding: 10px 18px; font-weight: 500; border: none; border-radius: 4px; cursor: pointer; font-size: 0.9rem; }
-  .nta-btn-save { background: #2e7d32; color: white; }
-  .nta-btn-mark { background: #ff8f00; color: white; }
-  .nta-btn-clear { background: #757575; color: white; }
+  .nta-btn { padding: 10px 18px; font-weight: 500; border: none; border-radius: 4px; cursor: pointer; font-size: 0.9rem; color: white; }
+  .nta-btn-save { background: #2e7d32; }
+  .nta-btn-mark { background: #ff8f00; }
+  .nta-btn-clear { background: #757575; }
 
   /* NTA Palette Sidebar */
   .nta-palette-pane { width: 320px; background: #f5f5f5; display: flex; flex-direction: column; justify-content: space-between; border-left: 1px solid #dcdcdc; }
@@ -72,7 +72,7 @@
   .nta-p-btn { aspect-ratio: 1; font-weight: 700; font-size: 0.85rem; border: 1px solid #ccc; cursor: pointer; display: flex; align-items: center; justify-content: center; background: #fff; color: #333; border-radius: 4px; }
   .nta-p-btn.not-visited { background: #fff; color: #333; }
   .nta-p-btn.answered { background: #4caf50; color: white; border-color: #388e3c; }
-  .nta-p-btn.marked { background: #ab47bc; color: white; border-color: #8e24aa; border-radius: 50%; } /* NTA review style circle */
+  .nta-p-btn.marked { background: #ab47bc; color: white; border-color: #8e24aa; border-radius: 50%; } 
   .nta-p-btn.current { border: 2px dashed #1a237e; }
 
   .palette-footer { padding: 15px; background: #e0e0e0; border-top: 1px solid #ccc; }
@@ -91,14 +91,14 @@
 <div id="dashboard">
   <div class="dash-header">
     <h1>JEE Main Mock Test Portal</h1>
-    <p>Official NTA CBT Test Environment with KaTeX Math Engine</p>
+    <p>Official NTA CBT Test Environment with Scoring & KaTeX Math Engine</p>
   </div>
 
   <div class="section-title">Select Question Paper</div>
   <div class="catalog-box">
     <div class="folder-top">📁 Previous Year Question Papers (PYQ Shifts)</div>
     <div id="shift-list-container">
-      <div style="padding: 20px; text-align: color: #666;">Loading test catalog...</div>
+      <div style="padding: 20px; color: #666;">Loading test catalog from test_index.json...</div>
     </div>
   </div>
 </div>
@@ -143,7 +143,7 @@
   let currentSubject = '';
   let currentIndex = 0;
   let responses = {};
-  let timeLeft = 180 * 60;
+  let timeLeft = 180 * 60; // 3 hours
   let timerInterval;
 
   // Fetch test index catalog automatically
@@ -182,6 +182,7 @@
         renderTabs();
         loadSubject(currentSubject);
         
+        // Start 3-hour timer
         timerInterval = setInterval(() => {
           if (timeLeft <= 0) { clearInterval(timerInterval); submitTest(); return; }
           timeLeft--;
@@ -192,7 +193,7 @@
         }, 1000);
       })
       .catch(() => {
-        alert("Error loading JSON file. Check file name match.");
+        alert("Error loading test JSON file. Make sure file name matches test_index.json.");
         location.reload();
       });
   }
@@ -230,7 +231,7 @@
         </label>`;
     });
 
-    // TRIGGER KATEX RENDER ON EVERY LOAD TO FIX MATH EQUATIONS
+    // TRIGGER KATEX RENDER TO FIX MATH EQUATIONS & FRACTIONS
     setTimeout(() => {
       if (window.renderMathInElement) {
         renderMathInElement(qDiv, {
@@ -326,13 +327,13 @@
       <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; height:100vh; background:#f0f2f5;">
         <div style="background:white; padding:40px; border-radius:8px; border:1px solid #dcdcdc; max-width:400px; width:100%; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.05);">
           <h2 style="color:#1a237e; margin-bottom:15px;">Test Submitted Successfully</h2>
-          <div style="font-size:2.5rem; font-weight:700; color:#2e7d32; margin-bottom:20px;">Score: ${score} / 300</div>
+          <div style="font-size:2.5rem; font-weight:700; color:#2e7d32; margin-bottom:20px;">Total Score: ${score} / 300</div>
           <div style="text-align:left; font-size:0.95rem; background:#fafafa; padding:15px; border-radius:4px; border:1px solid #eee; margin-bottom:20px;">
-            <p style="color:#2e7d32; margin-bottom:5px;">✔ Correct: ${correct}</p>
-            <p style="color:#d32f2f; margin-bottom:5px;">✖ Incorrect: ${wrong}</p>
+            <p style="color:#2e7d32; margin-bottom:5px;">✅ Correct Answers: ${correct} (+${correct * 4} marks)</p>
+            <p style="color:#d32f2f; margin-bottom:5px;">❌ Incorrect Answers: ${wrong} (-${wrong} marks)</p>
             <p style="color:#757575;">⚪ Unattempted: ${unattempted}</p>
           </div>
-          <button onclick="location.reload()" style="background:#1a237e; color:white; border:none; padding:12px; width:100%; font-weight:700; border-radius:4px; cursor:pointer;">Back to Dashboard</button>
+          <button onclick="location.reload()" style="background:#1a237e; color:white; border:none; padding:12px; width:100%; font-weight:700; border-radius:4px; cursor:pointer;">Return to Dashboard</button>
         </div>
       </div>`;
   }
