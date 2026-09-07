@@ -113,6 +113,23 @@
   let timeLeft = 180 * 60; // 3 hours
   let timerInterval;
 
+    // Automatically load the tests from test_index.json
+  fetch('test_index.json')
+    .then(res => res.json())
+    .then(data => {
+      const list = document.getElementById('dynamic-test-list');
+      list.innerHTML = '';
+      data.forEach(test => {
+        list.innerHTML += `
+          <button class="test-btn" onclick="startTest('${test.file}', '${test.title}')">
+            <span>${test.title}</span> <span class="play-icon">Start</span>
+          </button>`;
+      });
+    })
+    .catch(err => {
+      document.getElementById('dynamic-test-list').innerHTML = `<p style="color:red;">Error loading tests. Make sure test_index.json is uploaded.</p>`;
+    });
+  
   function startTest(jsonFileName, testTitle) {
     document.getElementById('dashboard').style.display = 'none';
     document.getElementById('test-screen').style.display = 'flex';
