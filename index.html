@@ -4,6 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vortex Exam Engine — Multi-Exam Portal</title>
+
+<!-- Mobile Developer Console (Eruda) -->
+<script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+<script>eruda.init();</script>
+
 <!-- KaTeX Math Renderer -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
@@ -18,12 +23,10 @@
   .dash-header h1 { margin: 0 0 8px 0; font-size: 1.8rem; }
   .dash-header p { margin: 0; opacity: 0.9; font-size: 0.95rem; }
 
-  /* Navigation Breadcrumbs */
   .breadcrumb-bar { display: flex; align-items: center; gap: 8px; margin-bottom: 20px; font-size: 0.95rem; color: #5f6368; flex-wrap: wrap; }
   .breadcrumb-btn { background: none; border: none; color: #1a73e8; font-weight: bold; cursor: pointer; padding: 0; font-size: 0.95rem; }
   .breadcrumb-btn:hover { text-decoration: underline; }
 
-  /* Card Grids */
   .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 15px; }
   .portal-card { background: white; border: 2px solid #e0e0e0; padding: 25px 20px; border-radius: 12px; cursor: pointer; transition: transform 0.15s, border-color 0.15s, box-shadow 0.15s; box-shadow: 0 2px 4px rgba(0,0,0,0.04); display: flex; flex-direction: column; justify-content: space-between; }
   .portal-card:hover { transform: translateY(-3px); border-color: #1a73e8; box-shadow: 0 6px 12px rgba(26,115,232,0.12); }
@@ -39,12 +42,12 @@
   .main { display: flex; flex: 1; overflow: hidden; }
   .content { flex: 1; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; }
   .palette { width: 320px; background: white; padding: 15px; overflow-y: auto; border-left: 1px solid #e0e0e0; }
-  .tabs { display: flex; gap: 10px; margin-bottom: 20px; border-bottom: 2px solid #e0e0e0; padding-bottom: 10px; }
+  .tabs { display: flex; gap: 10px; margin-bottom: 20px; border-bottom: 2px solid #e0e0e0; padding-bottom: 10px; flex-wrap: wrap; }
   .tabs button { padding: 10px 20px; border: none; background: transparent; cursor: pointer; font-size: 1rem; color: #5f6368; font-weight: bold; border-radius: 4px; }
   .tabs button.active { background: #e8f0fe; color: #1a73e8; }
   .question-container { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); flex: 1; display: flex; flex-direction: column; justify-content: space-between; }
   .question-text { font-size: 1.2rem; margin-bottom: 25px; color: #202124; line-height: 1.5; }
-  .options div { margin: 12px 0; padding: 12px; border: 1px solid #dadce0; border-radius: 6px; cursor: pointer; }
+  .options div { margin: 12px 0; padding: 12px; border: 1px solid #dadce0; border-radius: 6px; cursor: pointer; transition: background 0.2s; }
   .options div:hover { background: #f8f9fa; }
   .options input { margin-right: 15px; transform: scale(1.2); }
   .integer-input-box { margin-top: 15px; }
@@ -55,7 +58,7 @@
   .btn-save { background: #1e8e3e; }
   .btn-mark { background: #f29900; }
   .btn-clear { background: #5f6368; }
-  .btn-submit { background: #d93025; width: 100%; margin-top: 20px; padding: 15px; font-size: 1.1rem; }
+  .btn-submit { background: #d93025; width: 100%; margin-top: 20px; padding: 15px; font-size: 1.1rem; cursor: pointer; border: none; font-weight: bold; color: white; border-radius: 4px;}
   .palette-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-top: 15px; }
   .btn-palette { aspect-ratio: 1; border-radius: 50%; border: none; cursor: pointer; font-weight: bold; font-size: 1rem; color: white; display: flex; align-items: center; justify-content: center; box-shadow: 0 1px 3px rgba(0,0,0,0.2); }
   .not-visited { background: #e0e0e0; color: #3c4043; }
@@ -128,7 +131,7 @@
   let timeLeft = 180 * 60;
   let timerInterval;
 
-  // Resilient catalog loader with absolute/relative path fallbacks
+  // Resilient catalog loader
   async function loadCatalog() {
     const container = document.getElementById('cards-container');
     const paths = ['./test_index.json', 'test_index.json', '/NTA-TEST/test_index.json'];
@@ -141,9 +144,7 @@
           loadedData = await res.json();
           break;
         }
-      } catch (e) {
-        // Try next path
-      }
+      } catch (e) {}
     }
 
     if (loadedData && Object.keys(loadedData).length > 0) {
@@ -158,14 +159,11 @@
     }
   }
 
-  // Initialize catalog load on boot
   loadCatalog();
 
-  // Level 1: Render Available Exams
   function renderExamLevel() {
     currentExam = null;
     currentCategory = null;
-
     document.getElementById('breadcrumb-container').innerHTML = `<b>Exams Home</b>`;
     const container = document.getElementById('cards-container');
     container.innerHTML = '';
@@ -174,7 +172,6 @@
       const card = document.createElement('div');
       card.className = 'portal-card';
       card.onclick = () => renderCategoryLevel(examName);
-
       const categoryCount = Object.keys(rawCatalog[examName]).length;
       card.innerHTML = `
         <div>
@@ -190,17 +187,14 @@
     });
   }
 
-  // Level 2: Render Categories (e.g., Year / Exam Type)
   function renderCategoryLevel(examName) {
     currentExam = examName;
     currentCategory = null;
-
     document.getElementById('breadcrumb-container').innerHTML = `
       <button class="breadcrumb-btn" onclick="renderExamLevel()">Exams Home</button>
       <span>›</span>
       <b>${examName}</b>
     `;
-
     const container = document.getElementById('cards-container');
     container.innerHTML = '';
 
@@ -210,7 +204,6 @@
       const card = document.createElement('div');
       card.className = 'portal-card';
       card.onclick = () => renderTestListLevel(examName, catName);
-
       card.innerHTML = `
         <div>
           <div class="portal-card-title">${catName}</div>
@@ -225,11 +218,9 @@
     });
   }
 
-  // Level 3: Render Test Shifts/Papers in the Category
   function renderTestListLevel(examName, catName) {
     currentExam = examName;
     currentCategory = catName;
-
     document.getElementById('breadcrumb-container').innerHTML = `
       <button class="breadcrumb-btn" onclick="renderExamLevel()">Exams Home</button>
       <span>›</span>
@@ -237,7 +228,6 @@
       <span>›</span>
       <b>${catName}</b>
     `;
-
     const container = document.getElementById('cards-container');
     container.innerHTML = '';
 
@@ -246,7 +236,6 @@
       const card = document.createElement('div');
       card.className = 'portal-card';
       card.onclick = () => launchExamEngine(test.file, test.title);
-
       card.innerHTML = `
         <div>
           <div class="portal-card-title" style="font-size:1.1rem;">${test.title}</div>
@@ -261,7 +250,6 @@
     });
   }
 
-  // Launch Engine with Robust Path Fallbacks
   async function launchExamEngine(jsonFileName, testTitle) {
     document.getElementById('dashboard').style.display = 'none';
     document.getElementById('test-screen').style.display = 'flex';
@@ -269,7 +257,6 @@
 
     responses = {};
     timeLeft = 180 * 60;
-
     const paths = [jsonFileName, `./${jsonFileName}`, `/${jsonFileName}`];
     let data = null;
 
@@ -280,14 +267,11 @@
           data = await res.json();
           break;
         }
-      } catch (e) {
-        // Try next path
-      }
+      } catch (e) {}
     }
 
     if (data) {
       questions = data.questions ? data.questions : data;
-      
       Object.keys(questions).forEach(subj => responses[subj] = new Array(questions[subj].length).fill(null));
       currentSubject = Object.keys(questions)[0];
       renderTabs();
@@ -327,19 +311,26 @@
     renderPalette();
   }
 
-      function renderQuestion() {
+  function renderQuestion() {
     const q = questions[currentSubject][currentIndex];
     const qDiv = document.getElementById('q-text');
     
-    // Smart Diagram Handler: Handles both image files and AI text descriptions
+    // SMART DIAGRAM HANDLER & ON-SCREEN ERROR REPORTER
     let imageHtml = '';
     if (q.image && q.image.trim() !== '') {
-      if (q.image.includes('.png') || q.image.includes('.jpg') || q.image.includes('.jpeg')) {
-        // If it's a real image file, render the picture
-        imageHtml = `<div style="margin: 20px 0;"><img src="images/${q.image}" alt="Question Diagram" style="max-width: 100%; height: auto; border-radius: 6px; border: 1px solid #dadce0; background: #fff; padding: 5px;"></div>`;
+      const imgStr = q.image.trim();
+      // Check if string ends with an image extension
+      if (imgStr.toLowerCase().match(/\.(png|jpg|jpeg|webp|gif)$/)) {
+        imageHtml = `
+          <div style="margin: 20px 0;">
+            <img src="./images/${imgStr}" 
+                 alt="Question Diagram" 
+                 onerror="this.onerror=null; this.parentElement.innerHTML='<div style=\\'background:#fce8e6; padding:10px; border:1px solid red; border-radius:5px; color:red; font-size:0.9rem;\\'>⚠️ Image <b>${imgStr}</b> not found in the images folder. Verify it uploaded correctly to GitHub.</div>';"
+                 style="max-width: 100%; height: auto; border-radius: 6px; border: 1px solid #dadce0; padding: 5px; background: #fff;">
+          </div>`;
       } else {
-        // If Gemini wrote a descriptive text instead of a filename, render it as a clean Figure Note box
-        imageHtml = `<div style="margin: 15px 0; background: #f1f3f4; padding: 12px 15px; border-left: 4px solid #1a73e8; border-radius: 4px; font-style: italic; color: #3c4043; font-size: 1.05rem;">📍 <b>Figure Description:</b> ${q.image}</div>`;
+        // If Gemini wrote text instead of a filename, show it as a note
+        imageHtml = `<div style="margin: 15px 0; background: #f1f3f4; padding: 12px 15px; border-left: 4px solid #1a73e8; border-radius: 4px; font-style: italic; color: #3c4043; font-size: 1.05rem;">📍 <b>Diagram Description:</b> ${imgStr}</div>`;
       }
     }
 
@@ -347,7 +338,6 @@
 
     const opts = document.getElementById('q-options');
     opts.innerHTML = '';
-
     const currentResp = responses[currentSubject][currentIndex];
     const savedVal = (currentResp && currentResp.ans !== undefined && currentResp.ans !== null) ? currentResp.ans : '';
 
@@ -356,7 +346,7 @@
         <div style="background:#fff; border:none; padding:0;">
           <p style="margin-bottom: 10px; font-weight: 500; color: #5f6368;">Enter numerical value:</p>
           <div class="integer-input-box">
-            <input type="text" id="integer-ans-input" placeholder="Type answer (e.g. 25 or 4.5)" value="${savedVal}" oninput="saveIntegerResponse()">
+            <input type="text" id="integer-ans-input" placeholder="Type answer" value="${savedVal}" oninput="saveIntegerResponse()">
           </div>
         </div>`;
     } else {
@@ -374,15 +364,9 @@
 
     setTimeout(() => {
       if (window.renderMathInElement) {
-        renderMathInElement(qDiv, {
-          delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}],
-          throwOnError: false
-        });
+        renderMathInElement(qDiv, { delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}], throwOnError: false });
         document.querySelectorAll('.opt-text').forEach(el => {
-          renderMathInElement(el, {
-            delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}],
-            throwOnError: false
-          });
+          renderMathInElement(el, { delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}], throwOnError: false });
         });
       }
     }, 30);
@@ -422,19 +406,12 @@
 
   function saveAndNext() {
     const q = questions[currentSubject][currentIndex];
-    if (q.type === 'integer' || (!q.options || q.options.length === 0)) {
-      saveIntegerResponse();
-    } else {
+    if (q.type === 'integer' || (!q.options || q.options.length === 0)) saveIntegerResponse();
+    else {
       const selected = document.querySelector('input[name="opt"]:checked');
-      if (selected) {
-        responses[currentSubject][currentIndex] = { ans: parseInt(selected.value), state: 'answered' };
-      }
+      if (selected) responses[currentSubject][currentIndex] = { ans: parseInt(selected.value), state: 'answered' };
     }
-    if (currentIndex < questions[currentSubject].length - 1) {
-      currentIndex++;
-      renderQuestion();
-      renderPalette();
-    }
+    if (currentIndex < questions[currentSubject].length - 1) { currentIndex++; renderQuestion(); renderPalette(); }
   }
 
   function markForReview() {
@@ -446,11 +423,7 @@
       const selected = document.querySelector('input[name="opt"]:checked');
       responses[currentSubject][currentIndex] = { ans: selected ? parseInt(selected.value) : null, state: 'marked' };
     }
-    if (currentIndex < questions[currentSubject].length - 1) {
-      currentIndex++;
-      renderQuestion();
-      renderPalette();
-    }
+    if (currentIndex < questions[currentSubject].length - 1) { currentIndex++; renderQuestion(); renderPalette(); }
   }
 
   function clearResponse() {
@@ -473,18 +446,15 @@
           } else {
             if (parseInt(res.ans) === parseInt(q.correct)) isCorrect = true;
           }
-
           if (isCorrect) { score += 4; correct++; }
           else { score -= 1; wrong++; }
-        } else {
-          unattempted++;
-        }
+        } else unattempted++;
       });
     });
 
     document.getElementById('test-screen').innerHTML = `
       <div style="padding: 40px; text-align: center; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; background: #f8f9fa;">
-           <h1 style="color: #1a73e8; font-size: 2.8rem; margin-bottom: 10px;">Test Complete</h1>
+        <h1 style="color: #1a73e8; font-size: 2.8rem; margin-bottom: 10px;">Test Complete</h1>
         <h2 style="font-size: 2rem;">Score: <b>${score}</b></h2>
         <div style="text-align: left; background: white; padding: 25px; border-radius: 10px; margin-top: 20px; font-size: 1.1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.08); width: 100%; max-width: 400px; box-sizing: border-box;">
           <p style="color: #1e8e3e; margin: 8px 0;">✅ Correct: ${correct} (+${correct * 4})</p>
@@ -492,8 +462,7 @@
           <p style="color: #5f6368; margin: 8px 0;">⚪ Unattempted: ${unattempted}</p>
         </div>
         <button onclick="location.reload()" style="margin-top: 25px; padding: 12px 28px; background: #1a73e8; color: white; border: none; border-radius: 6px; font-size: 1rem; font-weight: bold; cursor: pointer;">Exit to Dashboard</button>
-      </div>
-    `;
+      </div>`;
   }
 </script>
 </body>
