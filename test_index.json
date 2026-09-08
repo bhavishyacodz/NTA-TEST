@@ -9,9 +9,16 @@
           "correctMark": 4,
           "wrongMark": -1
         }
+      },
+      {
+        "title": "30-JAN Shift 1",
+        "file": "JEEMAIN_2023_30-JAN_S1.json",
+        "pattern": {
+          "durationMinutes": 180,
+          "correctMark": 4,
+          "wrongMark": -1
+        }
       }
     ]
-  },
-  "JEE Advanced": {},
-  "BITSAT": {}
+  }
 }
