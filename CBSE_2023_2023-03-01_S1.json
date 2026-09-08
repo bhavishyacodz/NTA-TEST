@@ -1,0 +1,542 @@
+{
+  "metadata": {
+    "exam": "CBSE",
+    "year": 2023,
+    "date": "2023-03-01",
+    "shift": 1
+  },
+  "questions": {
+    "Physics": [],
+    "Chemistry": [
+      {
+        "text": "Which of the following curve represents the first order reaction ?",
+        "options": [
+          "(A) $t_{1/2}$ versus $[R]_0$ showing a linear increase from the origin",
+          "(B) $t_{1/2}$ versus $[R]_0$ showing a horizontal line independent of concentration",
+          "(C) Rate versus Concentration showing a horizontal line independent of concentration",
+          "(D) Rate versus Concentration showing a non-linear curve"
+        ],
+        "type": "mcq",
+        "correct": "(B)",
+        "has_diagram": true,
+        "diagram_page": 5,
+        "solution": "For a first order reaction, half-life period $t_{1/2} = \\frac{0.693}{k}$, which is independent of the initial concentration $[R]_0$. Therefore, the graph between $t_{1/2}$ and $[R]_0$ is a horizontal straight line parallel to the concentration axis.",
+        "chapter": "Chemical Kinetics",
+        "topic": "Order of Reaction",
+        "difficulty": "Easy",
+        "class_level": "12",
+        "question_id": "CBSE_2023_2023-03-01_S1-CHE-Q01",
+        "image": null
+      },
+      {
+        "text": "Which of the following solutions will have the lowest freezing point in water ?",
+        "options": [
+          "(A) 0.1 M Glucose",
+          "(B) 0.1 M $\\text{CaCl}_2$",
+          "(C) 0.1 M KCl",
+          "(D) 0.1 M Urea"
+        ],
+        "type": "mcq",
+        "correct": "(B)",
+        "has_diagram": false,
+        "solution": "Depression in freezing point $\\Delta T_f$ is a colligative property proportional to the van 't Hoff factor $i$. $\\text{CaCl}_2$ dissociates into 3 ions ($i = 3$), giving the maximum value of $i$ among all options. Hence, it causes maximum depression in freezing point, resulting in the lowest freezing point.",
+        "chapter": "Solutions",
+        "topic": "Colligative Properties",
+        "difficulty": "Easy",
+        "class_level": "12",
+        "question_id": "CBSE_2023_2023-03-01_S1-CHE-Q02",
+        "image": null
+      },
+      {
+        "text": "Which of the following is not a transition metal ?",
+        "options": [
+          "(A) Sc",
+          "(B) Ag",
+          "(C) Hg",
+          "(D) Cu"
+        ],
+        "type": "mcq",
+        "correct": "(C)",
+        "has_diagram": false,
+        "solution": "Mercury (Hg) has completely filled d-orbitals ($3d^{10}$) in its ground state as well as in its common oxidation states, hence it is not regarded as a transition metal.",
+        "chapter": "d- and f-Block Elements",
+        "topic": "Transition Elements",
+        "difficulty": "Easy",
+        "class_level": "12",
+        "question_id": "CBSE_2023_2023-03-01_S1-CHE-Q03",
+        "image": null
+      },
+      {
+        "text": "Which of the following represents the fraction of molecules with energies equal to or greater than $E_a$ ?",
+        "options": [
+          "(A) $+\\frac{E_a}{RT}$",
+          "(B) $e^{-E_a/RT}$",
+          "(C) $-\\frac{E_a}{RT}$",
+          "(D) $e^{+E_a/RT}$"
+        ],
+        "type": "mcq",
+        "correct": "(B)",
+        "has_diagram": false,
+        "solution": "According to the Boltzmann distribution and Arrhenius equation, the factor $e^{-E_a/RT}$ corresponds to the fraction of molecules that have kinetic energy equal to or greater than activation energy $E_a$.",
+        "chapter": "Chemical Kinetics",
+        "topic": "Arrhenius Equation",
+        "difficulty": "Easy",
+        "class_level": "12",
+        "question_id": "CBSE_2023_2023-03-01_S1-CHE-Q04",
+        "image": null
+      },
+      {
+        "text": "What will happen during the electrolysis of aqueous solution of $\\text{CuCl}_2$ by using platinum electrodes ?",
+        "options": [
+          "(A) Cu will deposit at Anode",
+          "(B) $\\text{H}_2$ gas will be released at cathode",
+          "(C) $\\text{O}_2$ gas will be released at anode",
+          "(D) $\\text{Cl}_2$ gas will be released at anode"
+        ],
+        "type": "mcq",
+        "correct": "(D)",
+        "has_diagram": false,
+        "solution": "At cathode, reduction of $\\text{Cu}^{2+}$ occurs in preference to $\\text{H}^+$ because $E^\\circ_{\\text{Cu}^{2+}/\\text{Cu}} = +0.34\\text{ V}$. At anode, oxidation of $\\text{Cl}^-$ occurs to produce $\\text{Cl}_2$ gas due to overpotential required for oxygen evolution.",
+        "chapter": "Electrochemistry",
+        "topic": "Electrolysis",
+        "difficulty": "Medium",
+        "class_level": "12",
+        "question_id": "CBSE_2023_2023-03-01_S1-CHE-Q05",
+        "image": null
+      },
+      {
+        "text": "Aspirin is obtained by acetylation of",
+        "options": [
+          "(A) Phenol",
+          "(B) Salicylaldehyde",
+          "(C) 2-Hydroxybenzoic acid",
+          "(D) Benzoic acid"
+        ],
+        "type": "mcq",
+        "correct": "(C)",
+        "has_diagram": false,
+        "solution": "Acetylation of 2-hydroxybenzoic acid (salicylic acid) with acetic anhydride in the presence of an acid catalyst yields acetylsalicylic acid (aspirin).",
+        "chapter": "Alcohols, Phenols and Ethers",
+        "topic": "Phenols",
+        "difficulty": "Easy",
+        "class_level": "12",
+        "question_id": "CBSE_2023_2023-03-01_S1-CHE-Q06",
+        "image": null
+      },
+      {
+        "text": "The secondary valency of Co in the complex $[\\text{Co}(\\text{NH}_3)_5(\\text{NO}_2)]^{2+}$ is",
+        "options": [
+          "(A) 5",
+          "(B) 1",
+          "(C) 4",
+          "(D) 6"
+        ],
+        "type": "mcq",
+        "correct": "(D)",
+        "has_diagram": false,
+        "solution": "Secondary valency represents the coordination number of the central metal ion. Here, five $\\text{NH}_3$ ligands and one monodentate $\\text{NO}_2^-$ ligand are attached to cobalt, making the coordination number 6.",
+        "chapter": "Coordination Compounds",
+        "topic": "Werner's Theory",
+        "difficulty": "Easy",
+        "class_level": "12",
+        "question_id": "CBSE_2023_2023-03-01_S1-CHE-Q07",
+        "image": null
+      },
+      {
+        "text": "At low temperature, phenol reacts with dil. $\\text{HNO}_3$ to yield",
+        "options": [
+          "(A) 2, 4, 6-Trinitrophenol",
+          "(B) o-Nitrophenol only",
+          "(C) p-Nitrophenol only",
+          "(D) ortho-and para-nitrophenol"
+        ],
+        "type": "mcq",
+        "correct": "(D)",
+        "has_diagram": false,
+        "solution": "Phenol reacts with dilute nitric acid at low temperature (298 K) to yield a mixture of o-nitrophenol and p-nitrophenol.",
+        "chapter": "Alcohols, Phenols and Ethers",
+        "topic": "Reactions of Phenols",
+        "difficulty": "Easy",
+        "class_level": "12",
+        "question_id": "CBSE_2023_2023-03-01_S1-CHE-Q08",
+        "image": null
+      },
+      {
+        "text": "Which of the following is 'not' true about enantiomers ?",
+        "options": [
+          "(A) They have the same chemical reactivity.",
+          "(B) They have the same specific rotation.",
+          "(C) They have the same melting or boiling point.",
+          "(D) They have the same refractive index."
+        ],
+        "type": "mcq",
+        "correct": "(B)",
+        "has_diagram": false,
+        "solution": "Enantiomers have equal magnitude of specific rotation, but opposite signs of optical rotation.",
+        "chapter": "Haloalkanes and Haloarenes",
+        "topic": "Stereochemistry",
+        "difficulty": "Medium",
+        "class_level": "12",
+        "question_id": "CBSE_2023_2023-03-01_S1-CHE-Q09",
+        "image": null
+      },
+      {
+        "text": "Aniline on direct nitration yields",
+        "options": [
+          "(A) 51%-ortho, 47%-para, 2%-meta derivatives",
+          "(B) 51%-meta, 47%-ortho, 2%-para derivatives",
+          "(C) 51%-para, 47%-meta, 2%-ortho derivatives",
+          "(D) 51%-ortho, 47%-meta, 2%-para derivatives"
+        ],
+        "type": "mcq",
+        "correct": "(C)",
+        "has_diagram": false,
+        "solution": "Direct nitration of aniline in strongly acidic medium leads to protonation of aniline forming anilinium ion, which is meta-directing. Hence, a significant amount of meta-nitroaniline (47%) along with para (51%) and ortho (2%) isomers is formed.",
+        "chapter": "Amines",
+        "topic": "Chemical Reactions of Aniline",
+        "difficulty": "Medium",
+        "class_level": "12",
+        "question_id": "CBSE_2023_2023-03-01_S1-CHE-Q10",
+        "image": null
+      },
+      {
+        "text": "Which of the following amines has lowest $\\text{pK}_b$ value ?",
+        "options": [
+          "(A) $\\text{C}_6\\text{H}_5 - \\text{N}(\\text{CH}_3)_2$",
+          "(B) $\\text{C}_6\\text{H}_5 - \\text{NH}(\\text{CH}_3)$",
+          "(C) $\\text{C}_6\\text{H}_5 - \\text{NH}_2$",
+          "(D) $\\text{O}_2\\text{N}-\\text{C}_6\\text{H}_4-\\text{NH}_2$"
+        ],
+        "type": "mcq",
+        "correct": "(A)",
+        "has_diagram": true,
+        "diagram_page": 7,
+        "solution": "Lowest $\\text{pK}_b$ corresponds to the strongest base. $\\text{C}_6\\text{H}_5-\\text{N}(\\text{CH}_3)_2$ has two electron-releasing methyl groups on nitrogen (+I effect), which increases the electron density on nitrogen and enhances basic strength compared to aniline and 4-nitroaniline.",
+        "chapter": "Amines",
+        "topic": "Basic Character of Amines",
+        "difficulty": "Medium",
+        "class_level": "12",
+        "question_id": "CBSE_2023_2023-03-01_S1-CHE-Q11",
+        "image": null
+      },
+      {
+        "text": "The deficiency of which of the following vitamins causes increased fragility of red blood cells and muscular weakness :",
+        "options": [
+          "(A) Vitamin A",
+          "(B) Vitamin K",
+          "(C) Vitamin E",
+          "(D) Vitamin D"
+        ],
+        "type": "mcq",
+        "correct": "(C)",
+        "has_diagram": false,
+        "solution": "Deficiency of Vitamin E causes increased fragility of RBCs and muscular weakness.",
+        "chapter": "Biomolecules",
+        "topic": "Vitamins",
+        "difficulty": "Easy",
+        "class_level": "12",
+        "question_id": "CBSE_2023_2023-03-01_S1-CHE-Q12",
+        "image": null
+      },
+      {
+        "text": "Assertion (A) : It is not possible to separate the components of an azeotrope by fractional distillation.\nReason (R) : Components of an azeotrope have the same composition in liquid and vapour phase and boil at a constant temperature.",
+        "options": [
+          "(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A).",
+          "(B) Both Assertion (A) and Reason (R) are true, but Reason (R) is not the correct explanation of the Assertion (A).",
+          "(C) Assertion (A) is true, but Reason (R) is false.",
+          "(D) Assertion (A) is false, but Reason (R) is true."
+        ],
+        "type": "mcq",
+        "correct": "(A)",
+        "has_diagram": false,
+        "solution": "Azeotropes are binary mixtures having the same composition in liquid and vapour phase and boil at a constant temperature. Hence, they cannot be separated by fractional distillation.",
+        "chapter": "Solutions",
+        "topic": "Azeotropes",
+        "difficulty": "Easy",
+        "class_level": "12",
+        "question_id": "CBSE_2023_2023-03-01_S1-CHE-Q13",
+        "image": null
+      },
+      {
+        "text": "Assertion (A) : The presence of –OH group in phenols directs the incoming group to meta position in the ring.\nReason (R) : –OH group in phenols activates the aromatic ring towards electrophilic substitution reaction.",
+        "options": [
+          "(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A).",
+          "(B) Both Assertion (A) and Reason (R) are true, but Reason (R) is not the correct explanation of the Assertion (A).",
+          "(C) Assertion (A) is true, but Reason (R) is false.",
+          "(D) Assertion (A) is false, but Reason (R) is true."
+        ],
+        "type": "mcq",
+        "correct": "(D)",
+        "has_diagram": false,
+        "solution": "Assertion is false because the -OH group in phenol increases electron density at ortho and para positions due to resonance (+M effect), making it ortho- and para-directing. Reason is true as the -OH group activates the ring towards electrophilic substitution.",
+        "chapter": "Alcohols, Phenols and Ethers",
+        "topic": "Electrophilic Substitution of Phenol",
+        "difficulty": "Easy",
+        "class_level": "12",
+        "question_id": "CBSE_2023_2023-03-01_S1-CHE-Q14",
+        "image": null
+      },
+      {
+        "text": "Assertion (A) : Actinoids show wide range of oxidation states.\nReason (R) : Actinoids are radioactive in nature.",
+        "options": [
+          "(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A).",
+          "(B) Both Assertion (A) and Reason (R) are true, but Reason (R) is not the correct explanation of the Assertion (A).",
+          "(C) Assertion (A) is true, but Reason (R) is false.",
+          "(D) Assertion (A) is false, but Reason (R) is true."
+        ],
+        "type": "mcq",
+        "correct": "(B)",
+        "has_diagram": false,
+        "solution": "Actinoids show a wide range of oxidation states because 5f, 6d and 7s levels are of comparable energies. It is also true that actinoids are radioactive, but radioactivity is not the cause for their variable oxidation states.",
+        "chapter": "d- and f-Block Elements",
+        "topic": "Actinoids",
+        "difficulty": "Easy",
+        "class_level": "12",
+        "question_id": "CBSE_2023_2023-03-01_S1-CHE-Q15",
+        "image": null
+      },
+      {
+        "text": "Assertion (A) : The pentaacetate of glucose does not react with $\\text{H}_2\\text{N} - \\text{OH}$.\nReason (R) : It indicates the presence of free – CHO group in glucose.",
+        "options": [
+          "(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A).",
+          "(B) Both Assertion (A) and Reason (R) are true, but Reason (R) is not the correct explanation of the Assertion (A).",
+          "(C) Assertion (A) is true, but Reason (R) is false.",
+          "(D) Assertion (A) is false, but Reason (R) is true."
+        ],
+        "type": "mcq",
+        "correct": "(C)",
+        "has_diagram": false,
+        "solution": "The pentaacetate of glucose does not react with hydroxylamine because it lacks a free -CHO group (it exists in a cyclic hemiacetal form). Thus Assertion is true, but Reason is false.",
+        "chapter": "Biomolecules",
+        "topic": "Carbohydrates",
+        "difficulty": "Medium",
+        "class_level": "12",
+        "question_id": "CBSE_2023_2023-03-01_S1-CHE-Q16",
+        "image": null
+      },
+      {
+        "text": "What type of deviation from Raoult's law is shown by a mixture of phenol and aniline ? Give reason.\nWhat will happen to the boiling point of the solution on mixing phenol and aniline ?",
+        "type": "subjective",
+        "correct": "Negative deviation from Raoult's law. Reason: The intermolecular hydrogen bonding between phenolic proton and lone pair of nitrogen atom in aniline is stronger than the solute-solute and solvent-solvent interactions.\nBoiling point of the solution will increase compared to individual components.",
+        "has_diagram": false,
+        "solution": "A mixture of phenol and aniline shows negative deviation from Raoult's law due to strong intermolecular hydrogen bonding between phenolic proton and the nitrogen atom of aniline ($A-B$ interaction > $A-A$ or $B-B$). Consequently, the vapour pressure decreases and the boiling point increases.",
+        "chapter": "Solutions",
+        "topic": "Non-ideal Solutions",
+        "difficulty": "Medium",
+        "class_level": "12",
+        "question_id": "CBSE_2023_2023-03-01_S1-CHE-Q17",
+        "image": null
+      },
+      {
+        "text": "Why are haloarenes less reactive towards nucleophilic substitution reaction ? Give two reasons.",
+        "type": "subjective",
+        "correct": "1. Resonance effect: C-X bond develops partial double bond character, making it shorter and stronger.\n2. Difference in hybridization: $sp^2$ hybridized carbon attached to halogen is more electronegative than $sp^3$ carbon, holding electron pair tightly.",
+        "has_diagram": false,
+        "solution": "Haloarenes are less reactive towards nucleophilic substitution due to:\n1. Resonance effect: Lone pair on halogen delocalizes with benzene ring giving C-X bond partial double bond character.\n2. Hybridization: Carbon attached to halogen is $sp^2$ hybridized, which has higher s-character and electronegativity, making bond cleavage difficult.",
+        "chapter": "Haloalkanes and Haloarenes",
+        "topic": "Haloarenes",
+        "difficulty": "Medium",
+        "class_level": "12",
+        "question_id": "CBSE_2023_2023-03-01_S1-CHE-Q18",
+        "image": null
+      },
+      {
+        "text": "(a) Write IUPAC names of the following coordination compounds :\n(i) $[\\text{Ag}(\\text{NH}_3)_2] [\\text{Ag}(\\text{CN})_2]$\n(ii) $\\text{K}_3[\\text{Fe}(\\text{C}_2\\text{O}_4)_3]$\nOR\n(b) (i) Give a chemical test to show that $[\\text{Co}(\\text{NH}_3)_5\\text{SO}_4]\\text{Cl}$ and $[\\text{Co}(\\text{NH}_3)_5\\text{Cl}]\\text{SO}_4$ are ionisation isomers.\n(ii) What is meant by the 'Chelate effect' ? Give an example.",
+        "type": "subjective",
+        "correct": "(a) (i) Diamminesilver(I) dicyanidoargentate(I)\n(ii) Potassium trioxalatoferrate(III)\nOR\n(b) (i) Solution of $[\\text{Co}(\\text{NH}_3)_5\\text{SO}_4]\\text{Cl}$ gives a white precipitate of $\\text{AgCl}$ with $\\text{AgNO}_3$, while $[\\text{Co}(\\text{NH}_3)_5\\text{Cl}]\\text{SO}_4$ gives a white precipitate of $\\text{BaSO}_4$ with $\\text{BaCl}_2$.\n(ii) Enhanced stability of complexes containing chelating (di- or polydentate) ligands compared to unidentate ligands. Example: $[\\text{Co}(\\text{en})_3]^{3+}$.",
+        "has_diagram": false,
+        "solution": "(a) (i) Diamminesilver(I) dicyanidoargentate(I)\n(ii) Potassium trioxalatoferrate(III)\nOR\n(b) (i) Treatment with $\\text{AgNO}_3$ produces white ppt with $[\\text{Co}(\\text{NH}_3)_5\\text{SO}_4]\\text{Cl}$, confirming free $\\text{Cl}^-$. Treatment with $\\text{BaCl}_2$ produces white ppt with $[\\text{Co}(\\text{NH}_3)_5\\text{Cl}]\\text{SO}_4$, confirming free $\\text{SO}_4^{2-}$.\n(ii) Chelate effect is the stabilization resulting from ring formation by di- or polydentate ligands with a central metal atom/ion. Example: Ethylene diamine in $[\\text{Co}(\\text{en})_3]^{3+}$.",
+        "chapter": "Coordination Compounds",
+        "topic": "IUPAC Nomenclature and Isomerism",
+        "difficulty": "Medium",
+        "class_level": "12",
+        "question_id": "CBSE_2023_2023-03-01_S1-CHE-Q19",
+        "image": null
+      },
+      {
+        "text": "Differentiate between the following :\n(i) Peptide linkage and Glycosidic linkage\n(ii) Essential amino acids and Non-essential amino acids",
+        "type": "subjective",
+        "correct": "(i) Peptide linkage is an amide bond (-CO-NH-) linking amino acid units in proteins. Glycosidic linkage is an ether bond (-O-) linking monosaccharide units in carbohydrates.\n(ii) Essential amino acids cannot be synthesized in the human body and must be obtained from diet. Non-essential amino acids can be synthesized in the body.",
+        "has_diagram": false,
+        "solution": "(i) Peptide bond (-CO-NH-) is formed by elimination of water between carboxyl group of one amino acid and amino group of another. Glycosidic bond (-O-) is formed between hydroxyl groups of two monosaccharide molecules.\n(ii) Essential amino acids (e.g. Valine, Leucine) cannot be synthesized by the body. Non-essential amino acids (e.g. Glycine, Alanine) can be synthesized in the body.",
+        "chapter": "Biomolecules",
+        "topic": "Amino Acids and Proteins",
+        "difficulty": "Easy",
+        "class_level": "12",
+        "question_id": "CBSE_2023_2023-03-01_S1-CHE-Q20",
+        "image": null
+      },
+      {
+        "text": "Following reaction takes place in one step :\n$$2\\text{A} + \\text{B} \\longrightarrow 2\\text{C}$$\nHow will the rate of above reaction change if the volume of the reaction vessel is decreased to one third of its original volume ? Will there be any change in the order of reaction with the reduced volume ?",
+        "type": "subjective",
+        "correct": "Rate increases by 27 times. There will be no change in the order of reaction.",
+        "has_diagram": false,
+        "solution": "For single-step reaction: $\\text{Rate} = k[\\text{A}]^2[\\text{B}]$.\nWhen volume is reduced to $\\frac{1}{3}$, concentration of each reactant becomes 3 times:\n$\\text{New Rate} = k[3\\text{A}]^2[3\\text{B}] = 27 k[\\text{A}]^2[\\text{B}] = 27 \\times \\text{Initial Rate}$.\nOrder of reaction depends on mechanism and does not change with volume.",
+        "chapter": "Chemical Kinetics",
+        "topic": "Rate Law",
+        "difficulty": "Medium",
+        "class_level": "12",
+        "question_id": "CBSE_2023_2023-03-01_S1-CHE-Q21",
+        "image": null
+      },
+      {
+        "text": "For the first order thermal decomposition reaction, following data was obtained :\n$$\\text{C}_2\\text{H}_5\\text{Cl}(g) \\longrightarrow \\text{C}_2\\text{H}_4(g) + \\text{HCl}(g)$$\n$$\\begin{array}{|c|c|c|}\n\\hline\n\\text{S. No.} & \\text{Time(s)} & \\text{Total Pressure (atm)} \\\\\n\\hline\n1 & 0 & 0.30 \\\\\n2 & 30 & 0.50 \\\\\n\\hline\n\\end{array}$$\nCalculate rate constant. [Given : $\\log 3 = 0.48$]",
+        "type": "subjective",
+        "correct": "$k = 0.0368\\text{ s}^{-1}$ (or $3.68 \\times 10^{-2}\\text{ s}^{-1}$)",
+        "has_diagram": false,
+        "solution": "At $t = 0$, $P_i = 0.30\\text{ atm}$.\nAt $t = 30\\text{ s}$, total pressure $P_t = P_i + p = 0.50\\text{ atm} \\implies p = 0.20\\text{ atm}$.\nPartial pressure of $\\text{C}_2\\text{H}_5\\text{Cl}$ at $t = 30\\text{ s}$ is $P_A = P_i - p = 0.30 - 0.20 = 0.10\\text{ atm}$.\n$k = \\frac{2.303}{t} \\log\\left(\\frac{P_i}{P_A}\\right) = \\frac{2.303}{30} \\log\\left(\\frac{0.30}{0.10}\\right) = \\frac{2.303}{30} \\log 3 = \\frac{2.303 \\times 0.48}{30} = 0.0368\\text{ s}^{-1}$.",
+        "chapter": "Chemical Kinetics",
+        "topic": "Integrated Rate Equation",
+        "difficulty": "Medium",
+        "class_level": "12",
+        "question_id": "CBSE_2023_2023-03-01_S1-CHE-Q22",
+        "image": null
+      },
+      {
+        "text": "(a) Answer the following :\n(i) Why is the Equilibrium Constant ($K_c$) related to $E^\\circ_{\\text{cell}}$ and not to $E_{\\text{cell}}$ ?\n(ii) Two metals 'A' and 'B' have standard electrode potential values of $-0.24\\text{ V}$ and $+0.80\\text{ V}$ respectively. Which of these will liberate hydrogen gas from dil. $\\text{H}_2\\text{SO}_4$ ?\n(iii) Write the cell reaction which occurs in lead storage battery when it is in charging.\nOR\n(b) What type of battery is Mercury cell ? Why it is more advantageous than dry cell ? Write overall reaction taking place in Mercury cell.",
+        "type": "subjective",
+        "correct": "(a) (i) At equilibrium, $E_{\\text{cell}} = 0$, whereas $E^\\circ_{\\text{cell}}$ is a constant at given temperature.\n(ii) Metal 'A' (having standard reduction potential $-0.24\\text{ V}$). \n(iii) Charging reaction: $2\\text{PbSO}_4(s) + 2\\text{H}_2\\text{O}(l) \\longrightarrow \\text{Pb}(s) + \\text{PbO}_2(s) + 2\\text{H}_2\\text{SO}_4(aq)$.\nOR\n(b) Primary battery. Its voltage remains constant ($\n\\approx 1.35\\text{ V}$) throughout its life because no gaseous/solute species are involved whose concentration changes. Overall reaction: $\\text{Zn(Hg)} + \\text{HgO}(s) \\longrightarrow \\text{ZnO}(s) + \\text{Hg}(l)$.",
+        "has_diagram": false,
+        "solution": "(a) (i) At equilibrium $\\Delta G = 0$, so $E_{\\text{cell}} = 0$. Hence $K_c$ is related to $E^\\circ_{\\text{cell}}$ via $\\Delta G^\\circ = -nFE^\\circ_{\\text{cell}} = -RT \\ln K_c$.\n(ii) Metal A has negative standard reduction potential relative to $\\text{H}^+/\\text{H}_2$ ($0.00\\text{ V}$), so it can reduce $\\text{H}^+$ to $\\text{H}_2$.\n(iii) $2\\text{PbSO}_4 + 2\\text{H}_2\\text{O} \\longrightarrow \\text{Pb} + \\text{PbO}_2 + 2\\text{H}_2\\text{SO}_4$.\nOR\n(b) Mercury cell is a primary cell. Advantage: Constant potential because total reaction doesn't change ionic concentrations. Reaction: $\\text{Zn(Hg)} + \\text{HgO}(s) \\longrightarrow \\text{ZnO}(s) + \\text{Hg}(l)$.",
+        "chapter": "Electrochemistry",
+        "topic": "Nernst Equation and Cells",
+        "difficulty": "Medium",
+        "class_level": "12",
+        "question_id": "CBSE_2023_2023-03-01_S1-CHE-Q23",
+        "image": null
+      },
+      {
+        "text": "Calculate the boiling point of a solution containing $0.61\\text{ g}$ of benzoic acid (Molar mass = $122\\text{ g mol}^{-1}$) in $5\\text{ g}$ of $\\text{CS}_2$ in which it dimerises to the extent of $88\\%$. The boiling point and $K_b$ of $\\text{CS}_2$ are $46.2^\\circ\\text{C}$ and $2.3\\text{ K kg mol}^{-1}$ respectively.",
+        "type": "subjective",
+        "correct": "Boiling point of solution = $47.488^\\circ\\text{C}$ (or $47.49^\\circ\\text{C}$)",
+        "has_diagram": false,
+        "solution": "Molar mass $M_B = 122\\text{ g mol}^{-1}$, mass of solute $w_B = 0.61\\text{ g}$, mass of solvent $w_A = 5\\text{ g}$.\nMolality $m = \\frac{0.61 / 122}{5 / 1000} = 1\\text{ m}$.\nDimerisation: $2\\text{C}_6\\text{H}_5\\text{COOH} \\rightleftharpoons (\\text{C}_6\\text{H}_5\\text{COOH})_2$.\nDegree of association $\\alpha = 0.88$.\n$i = 1 - \\alpha\\left(1 - \\frac{1}{n}\\right) = 1 - 0.88(1 - 0.5) = 1 - 0.44 = 0.56$.\n$\\Delta T_b = i K_b m = 0.56 \\times 2.3 \\times 1 = 1.288^\\circ\\text{C}$.\nBoiling point of solution $T_b = T_b^\\circ + \\Delta T_b = 46.2 + 1.288 = 47.488^\\circ\\text{C}$.",
+        "chapter": "Solutions",
+        "topic": "Colligative Properties and Van't Hoff Factor",
+        "difficulty": "Hard",
+        "class_level": "12",
+        "question_id": "CBSE_2023_2023-03-01_S1-CHE-Q24",
+        "image": null
+      },
+      {
+        "text": "Write the reactions of D-Glucose with the following :\n(a) HI\n(b) $\\text{Br}_2$ water\n(c) Conc. $\\text{HNO}_3$",
+        "type": "subjective",
+        "correct": "(a) $\\text{CHO-}(\\text{CHOH})_4-\\text{CH}_2\\text{OH} \\xrightarrow{\\text{HI, } \\Delta} \\text{CH}_3-\\text{CH}_2-\\text{CH}_2-\\text{CH}_2-\\text{CH}_2-\\text{CH}_3$ (n-hexane)\n(b) $\\text{CHO-}(\\text{CHOH})_4-\\text{CH}_2\\text{OH} \\xrightarrow{\\text{Br}_2/\\text{H}_2\\text{O}} \\text{COOH-}(\\text{CHOH})_4-\\text{CH}_2\\text{OH}$ (Gluconic acid)\n(c) $\\text{CHO-}(\\text{CHOH})_4-\\text{CH}_2\\text{OH} \\xrightarrow{\\text{Conc. HNO}_3} \\text{COOH-}(\\text{CHOH})_4-\\text{COOH}$ (Saccharic acid)",
+        "has_diagram": false,
+        "solution": "(a) Prolonged heating with HI reduces D-glucose to n-hexane, confirming a straight chain of six carbon atoms.\n(b) Mild oxidation with bromine water oxidizes aldehyde group to carboxylic acid giving gluconic acid.\n(c) Oxidation with nitric acid oxidizes both aldehyde group and primary alcohol group to give saccharic acid.",
+        "chapter": "Biomolecules",
+        "topic": "Reactions of Glucose",
+        "difficulty": "Medium",
+        "class_level": "12",
+        "question_id": "CBSE_2023_2023-03-01_S1-CHE-Q25",
+        "image": null
+      },
+      {
+        "text": "Give reasons for the following :\n(a) Carboxylic acids have higher boiling point than alcohols of comparable molecular masses.\n(b) Alpha ($\\alpha$) hydrogens of aldehydes and ketones are acidic in nature.\n(c) Nucleophilic addition of ammonia and its derivatives does not occur with carbonyl group in strongly acidic medium.",
+        "type": "subjective",
+        "correct": "(a) Carboxylic acids form extensive hydrogen bonding and exist as stable cyclic dimers.\n(b) Due to strong electron-withdrawing inductive and resonance effects of carbonyl group and stabilization of enolate anion.\n(c) In strongly acidic medium, ammonia and its derivatives get protonated to ammonium salts and lose nucleophilicity.",
+        "has_diagram": false,
+        "solution": "(a) Carboxylic acids form stronger intermolecular hydrogen bonds than alcohols and form cyclic dimers in liquid and vapour states.\n(b) Electron-withdrawing carbonyl group weakens C-H bond on alpha carbon, and enolate ion formed after loss of proton is stabilized by resonance.\n(c) In presence of excess acid, $\\text{NH}_2-\\text{Z} + \\text{H}^+ \\rightarrow \\text{NH}_3^+-\\text{Z}$, which lacks a lone pair and cannot act as a nucleophile.",
+        "chapter": "Aldehydes, Ketones and Carboxylic Acids",
+        "topic": "Properties of Carbonyl Compounds",
+        "difficulty": "Medium",
+        "class_level": "12",
+        "question_id": "CBSE_2023_2023-03-01_S1-CHE-Q26",
+        "image": null
+      },
+      {
+        "text": "Write the reaction involved in the following :\n(a) Reimer-Tiemann reaction\n(b) Kolbe's reaction\n(c) Friedal-Crafts acylation of anisole",
+        "type": "subjective",
+        "correct": "(a) Phenol treated with $\\text{CHCl}_3$ and $\\text{NaOH}$ gives salicylaldehyde.\n(b) Phenol treated with $\\text{NaOH}$ and $\\text{CO}_2$ followed by acidification gives salicylic acid.\n(c) Anisole reacts with $\\text{CH}_3\\text{COCl}$ in anhydrous $\\text{AlCl}_3$ to yield 4-methoxyacetophenone (major) and 2-methoxyacetophenone.",
+        "has_diagram": false,
+        "solution": "(a) $\\text{C}_6\\text{H}_5\\text{OH} + \\text{CHCl}_3 + 3\\text{NaOH} \\longrightarrow o-\\text{HO-C}_6\\text{H}_4-\\text{CHO} + 3\\text{NaCl} + 2\\text{H}_2\\text{O}$\n(b) $\\text{C}_6\\text{H}_5\\text{ONa} + \\text{CO}_2 \\xrightarrow{400\\text{K, 4-7 atm}} \\xrightarrow{\\text{H}^+} o-\\text{HO-C}_6\\text{H}_4-\\text{COOH}$\n(c) $\\text{C}_6\\text{H}_5\\text{OCH}_3 + \\text{CH}_3\\text{COCl} \\xrightarrow{\\text{Anhy. AlCl}_3} p-\\text{CH}_3\\text{O-C}_6\\text{H}_4-\\text{COCH}_3 + o-\\text{CH}_3\\text{O-C}_6\\text{H}_4-\\text{COCH}_3$",
+        "chapter": "Alcohols, Phenols and Ethers",
+        "topic": "Named Reactions",
+        "difficulty": "Medium",
+        "class_level": "12",
+        "question_id": "CBSE_2023_2023-03-01_S1-CHE-Q27",
+        "image": null
+      },
+      {
+        "text": "Compound 'X' with molecular formula $\\text{C}_4\\text{H}_9\\text{Br}$ reacts with aqueous KOH to give an alcohol. The rate of this reaction depends only on the concentration of the compound 'X'. When an optically active isomer 'Y' of the compound 'X' was treated with aqueous KOH solution, the rate of reaction was found to be dependent on concentration of compound 'Y' and aqueous KOH both.\n(a) Write down the structural formula of both 'X' and 'Y'.\n(b) Out of 'X' and 'Y', which one will undergo racemisation and why ?\n(c) Out of 'X' and 'Y', which one will form product with inversion of configuration and why ?",
+        "type": "subjective",
+        "correct": "(a) 'X': 2-bromo-2-methylpropane $((\\text{CH}_3)_3\\text{CBr})$, 'Y': 2-bromobutane $(\\text{CH}_3\\text{CH(Br)CH}_2\\text{CH}_3)$.\n(b) 'X' undergoes racemisation because it reacts via $\\text{S}_N1$ mechanism involving planar carbocation intermediate.\n(c) 'Y' forms product with inversion of configuration because it reacts via $\\text{S}_N2$ mechanism involving backside attack of nucleophile.",
+        "has_diagram": false,
+        "solution": "Unimolecular nucleophilic substitution ($\\text{S}_N1$) depends only on haloalkane concentration, favored by $3^\\circ$ halide $\\rightarrow$ 'X' is tert-butyl bromide $((\\text{CH}_3)_3\\text{CBr})$.\nBimolecular substitution ($\\text{S}_N2$) rate depends on both halide and KOH concentrations, favored by optically active secondary halide $\\rightarrow$ 'Y' is 2-bromobutane.\n$\\text{S}_N1$ goes through planar carbocation producing racemic mixture. $\\text{S}_N2$ undergoes direct backside attack resulting in inversion of configuration.",
+        "chapter": "Haloalkanes and Haloarenes",
+        "topic": "Nucleophilic Substitution Mechanisms",
+        "difficulty": "Hard",
+        "class_level": "12",
+        "question_id": "CBSE_2023_2023-03-01_S1-CHE-Q28",
+        "image": null
+      },
+      {
+        "text": "The reaction of amines with mineral acids to form ammonium salts shows that these are basic in nature. Aliphatic amines are stronger bases than ammonia whereas aromatic amines are weaker bases than ammonia. Aliphatic and aromatic primary and secondary amines react with acid chlorides, anhydrides and esters by nucleophilic substitution reaction. The main problem encountered during electrophilic substitution reactions of aromatic amines is that of their high reactivity. Substitution tends to occur at ortho-and para-positions. Hinsberg reagent is used for the identification and distinction between primary, secondary and tertiary amines. Aryldiazonium salts, usually obtained from arylamines, undergo replacement of the diazonium group with a variety of nucleophiles to provide advantageous methods for producing aryl halides, cyanides, phenols and arenes.\nAnswer the following questions :\n(a) (i) Why $\\text{CH}_3 - \\text{NH}_2$ is a stronger base than $(\\text{CH}_3)_3\\text{N}$ in aqueous solution ?\n(ii) Write structural formulae of the compound A and B :\n$$\\text{CH}_3\\text{CONH}_2 \\xrightarrow{\\text{NaOBr}} \\text{A} \\xrightarrow[\\text{Base}]{\\text{C}_6\\text{H}_5\\text{COCl}} \\text{B}$$\n(b) A compound 'X' with molecular formula $\\text{C}_3\\text{H}_9\\text{N}$ reacts with Hinsberg reagent to give a product insoluble in alkali. Identify 'X'.\nOR\n(b) How can you convert aniline to benzonitrile ?\n(c) Why is $-\\text{NH}_2$ group of aniline acetylated before carrying out nitration ?",
+        "type": "subjective",
+        "correct": "(a) (i) Hydration effect stabilizes conjugate acid $\\text{CH}_3\\text{NH}_3^+$ much more than $(\\text{CH}_3)_3\\text{NH}^+$.\n(ii) A = $\\text{CH}_3\\text{NH}_2$, B = $\\text{C}_6\\text{H}_5\\text{CONHCH}_3$.\n(b) 'X' is N-methylethanamine ($\\text{CH}_3\\text{NHCH}_2\\text{CH}_3$).\nOR\n(b) Aniline $\\xrightarrow{\\text{NaNO}_2 + \\text{HCl, 273-278K}} \\text{C}_6\\text{H}_5\\text{N}_2^+\\text{Cl}^- \\xrightarrow{\\text{CuCN/KCN}} \\text{C}_6\\text{H}_5\\text{CN}$.\n(c) To decrease activating power of $-\\text{NH}_2$ group by resonance and prevent formation of meta-derivative.",
+        "has_diagram": false,
+        "solution": "(a) (i) Conjugate acid of methylamine has 3 hydrogen atoms for H-bonding with water, giving high hydration energy and stabilization, overriding inductive effect.\n(ii) A is methylamine via Hoffmann bromamide reaction. B is N-methylbenzamide via Schotten-Baumann reaction.\n(b) Product insoluble in alkali indicates a secondary amine. $\\text{C}_3\\text{H}_9\\text{N}$ secondary amine is N-methylethanamine.\nOR\n(b) Aniline undergoes diazotisation to form benzene diazonium chloride, followed by Sandmeyer reaction with CuCN to form benzonitrile.\n(c) Acetylation converts $-\\text{NH}_2$ to $-\\text{NHCOCH}_3$, where lone pair delocalizes into carbonyl oxygen, controlling reactivity and preventing oxidation/meta-nitration.",
+        "chapter": "Amines",
+        "topic": "Properties and Reactions of Amines",
+        "difficulty": "Hard",
+        "class_level": "12",
+        "question_id": "CBSE_2023_2023-03-01_S1-CHE-Q29",
+        "image": null
+      },
+      {
+        "text": "The Valence Bond Theory (VBT) explains the formation, magnetic behaviour and geometry of coordination compounds. The Crystal Field Theory (CFT) of coordination compounds is based on the effect of different crystal fields (provided by the ligands taken as point charges), on the degeneracy of d-orbital energies of the central metal atom/ion. The splitting of the d-orbitals provides different electronic arrangements in strong and weak crystal fields.\nAnswer the following questions :\n(a) In octahedral crystal field, energies of which d-orbitals will be raised when ligands approach the central metal atom/ion ? Give reason in support of your answer.\n(b) Using crystal field theory, write the electronic configuration of central metal atom/ion of the following :\n(i) $[\\text{CoF}_6]^{3-}$\n(ii) $[\\text{Co}(\\text{NH}_3)_6]^{3+}$\n[At. No. : Co = 27]\n(c) $[\\text{NiCl}_4]^{2-}$ is paramagnetic while $[\\text{Ni}(\\text{CO})_4]$ is diamagnetic though both are tetrahedral. Why ? [Atomic No. : Ni = 28]\nOR\n(c) Write hybridization and magnetic behaviour of the complex $[\\text{Fe}(\\text{CN})_6]^{3-}$. [Atomic No. : Fe = 26]",
+        "type": "subjective",
+        "correct": "(a) $d_{x^2-y^2}$ and $d_{z^2}$ ($e_g$ orbitals). Reason: Their lobes lie directly along coordinate axes facing approaching ligands, experiencing stronger electrostatic repulsion.\n(b) (i) $t_{2g}^4 e_g^2$\n(ii) $t_{2g}^6 e_g^0$\n(c) In $[\\text{NiCl}_4]^{2-}$, $\\text{Ni}^{2+}$ ($3d^8$) with weak ligand $\\text{Cl}^-$ has 2 unpaired electrons ($sp^3$, paramagnetic). In $[\\text{Ni}(\\text{CO})_4]$, $\\text{Ni}(0)$ ($3d^8 4s^2$) with strong ligand $\\text{CO}$ pairs all electrons into $3d^{10}$ ($sp^3$, diamagnetic).\nOR\n(c) Hybridization: $d^2sp^3$, Magnetic behavior: Paramagnetic (1 unpaired electron).",
+        "has_diagram": false,
+        "solution": "(a) $e_g$ orbitals ($d_{x^2-y^2}, d_{z^2}$) experience greater repulsion because ligands approach along x, y, z axes.\n(b) $\\text{Co}^{3+}$ is a $d^6$ ion. (i) $\\text{F}^-$ is weak field ligand ($\\Delta_o < P$) $\\rightarrow t_{2g}^4 e_g^2$. (ii) $\\text{NH}_3$ is strong field ligand ($\\Delta_o > P$) $\\rightarrow t_{2g}^6 e_g^0$.\n(c) $[\\text{NiCl}_4]^{2-}$ has $3d^8$ configuration with 2 unpaired electrons ($sp^3$). $[\\text{Ni}(\\text{CO})_4]$ has strong ligand $\\text{CO}$ causing 4s electrons to pair in 3d, giving $3d^{10}$ (0 unpaired electrons).\nOR\n(c) $\\text{Fe}^{3+}$ is $3d^5$. $\\text{CN}^-$ causes pairing leaving 1 unpaired electron. Uses inner d-orbitals forming $d^2sp^3$ (octahedral, paramagnetic).",
+        "chapter": "Coordination Compounds",
+        "topic": "Crystal Field Theory and VBT",
+        "difficulty": "Hard",
+        "class_level": "12",
+        "question_id": "CBSE_2023_2023-03-01_S1-CHE-Q30",
+        "image": null
+      },
+      {
+        "text": "(a) (i) An organic compound (X) has the molecular formula $\\text{C}_5\\text{H}_{10}\\text{O}$. Draw structures for (X) if it :\n(I) does not give Tollen's test but gives a positive iodoform test.\n(II) does not give Tollen's test and iodoform test but undergoes Aldol condensation.\n(III) undergoes Cannizzaro's reaction.\n(ii) Show how each of the following compounds can be converted to benzoic acid :\n(I) Acetophenone\n(II) Ethyl benzene\nOR\n(b) Answer the following questions :\n(i) Draw structure of the 2, 4-dinitrophenyl hydrazone derivative of benzaldehyde.\n(ii) Arrange the following in increasing order of their reactivity towards HCN :\nDi-tert. butyl ketone, Acetaldehyde, Acetone\n(iii) Give a simple chemical test to distinguish between benzoic acid and ethyl benzoate.\n(iv) Write the name of the reagent to convert Ethanenitrile to Ethanal.\n(v) Draw the structure of 'X' in the following reaction :\n$$\\text{Cyclohexanol} \\xrightarrow{\\text{CrO}_3} \\text{'X'}$$",
+        "type": "subjective",
+        "correct": "(a) (i) (I) Pentan-2-one ($\\text{CH}_3\\text{COCH}_2\\text{CH}_2\\text{CH}_3$)\n(II) Pentan-3-one ($\\text{CH}_3\\text{CH}_2\\text{COCH}_2\\text{CH}_3$)\n(III) 2,2-Dimethylpropanal ($(\\text{CH}_3)_3\\text{C-CHO}$)\n(ii) (I) Reaction with $\\text{I}_2/\\text{NaOH}$ followed by $\\text{H}^+$.\n(II) Heating with alkaline $\\text{KMnO}_4$ followed by $\\text{H}_3\\text{O}^+$.\nOR\n(b) (i) $\\text{C}_6\\text{H}_5-\\text{CH}=\\text{N-NH-C}_6\\text{H}_3(\\text{NO}_2)_2$\n(ii) Di-tert. butyl ketone < Acetone < Acetaldehyde\n(iii) Sodium bicarbonate test: Benzoic acid gives effervescence of $\\text{CO}_2$, ethyl benzoate does not.\n(iv) DIBAL-H or $\\text{SnCl}_2 / \\text{HCl}$.\n(v) Cyclohexanone.",
+        "has_diagram": true,
+        "diagram_page": 21,
+        "solution": "(a) (i) (I) Methyl ketone gives positive iodoform test and doesn't reduce Tollen's reagent $\\rightarrow$ Pentan-2-one.\n(II) Ketone with $\\alpha$-hydrogens without methyl ketone group $\\rightarrow$ Pentan-3-one.\n(III) Aldehyde without $\\alpha$-hydrogen $\\rightarrow$ 2,2-dimethylpropanal.\n(ii) Acetophenone undergoes haloform oxidation to benzoic acid. Ethyl benzene undergoes side-chain oxidation with $\\text{KMnO}_4$.\nOR\n(b) (ii) Reactivity towards nucleophilic addition decreases with steric hindrance and +I effect of alkyl groups.\n(iii) $\\text{NaHCO}_3$ gives brisk effervescence with carboxylic acid.\n(iv) DIBAL-H reduces nitriles selectively to aldehydes.\n(v) $\\text{CrO}_3$ oxidizes secondary alcohol (cyclohexanol) to ketone (cyclohexanone).",
+        "chapter": "Aldehydes, Ketones and Carboxylic Acids",
+        "topic": "Reactions and Identification of Carbonyl Compounds",
+        "difficulty": "Hard",
+        "class_level": "12",
+        "question_id": "CBSE_2023_2023-03-01_S1-CHE-Q31",
+        "image": null
+      },
+      {
+        "text": "(a) (i) From the given data of $E^\\circ$ values, answer the following questions :\n$$\\begin{array}{|c|c|c|c|c|c|c|c|}\n\\hline\n & \\text{V} & \\text{Cr} & \\text{Mn} & \\text{Fe} & \\text{Co} & \\text{Ni} & \\text{Cu} \\\\\n\\hline\nE^\\circ_{\\text{M}^{2+}/\\text{M}} & -1.18 & -0.91 & -1.18 & -0.44 & -0.28 & -0.25 & +0.34 \\\\\n\\hline\n\\end{array}$$\n(I) Why $E^\\circ_{\\text{M}^{2+}/\\text{M}}$ show irregular trend in the above values ?\n(II) Why is $E^\\circ_{\\text{Cu}^{2+}/\\text{Cu}}$ value exceptionally positive ?\n(III) Why $E^\\circ_{\\text{Mn}^{2+}/\\text{Mn}}$ value is highly negative ?\n(ii) Write the ionic equations for the oxidising action of potassium permanganate for its reaction with $\\text{I}^-$ in both acidic and alkaline solutions.\nOR\n(b) Answer the following questions :\n(i) Name a member of the lanthanoid series\n(I) which exhibits +4 oxidation state\n(II) which exhibits +2 oxidation state.\n(ii) Why transition metals act as good catalyst ?\n(iii) Why Cr has higher melting point than Mn ?\n(iv) What happens when acidic solution of potassium permanganate is allowed to stand for sometime ? Give the equation involved. What is this type of reaction called ?",
+        "type": "subjective",
+        "correct": "(a) (i) (I) Irregular trend is due to irregular variations in ionization enthalpies ($IE_1+IE_2$) and sublimation enthalpies.\n(II) High enthalpy of atomization and ionization enthalpy of Cu are not compensated by its hydration enthalpy.\n(III) Due to stable half-filled $d^5$ configuration of $\\text{Mn}^{2+}$.\n(ii) Acidic: $2\\text{MnO}_4^- + 10\\text{I}^- + 16\\text{H}^+ \\longrightarrow 2\\text{Mn}^{2+} + 5\\text{I}_2 + 8\\text{H}_2\\text{O}$.\nAlkaline: $2\\text{MnO}_4^- + \\text{I}^- + \\text{H}_2\\text{O} \\longrightarrow 2\\text{MnO}_2 + \\text{IO}_3^- + 2\\text{OH}^-$.\nOR\n(b) (i) (I) Cerium (Ce), (II) Europium (Eu).\n(ii) Due to variable oxidation states and large surface area for adsorption.\n(iii) Cr has 6 unpaired electrons participating in strong metallic bonding compared to Mn.\n(iv) Decomposes slowly with evolution of oxygen: $4\\text{MnO}_4^- + 12\\text{H}^+ \\longrightarrow 4\\text{Mn}^{2+} + 3\\text{O}_2 + 6\\text{H}_2\\text{O}$. Auto-catalytic reaction.",
+        "has_diagram": false,
+        "solution": "(a) (i) Standard electrode potentials depend on enthalpy of atomization, ionization enthalpy, and hydration enthalpy.\n(ii) Permanganate oxidizes iodide to iodine in acidic medium, and to iodate in faintly alkaline medium.\nOR\n(b) (i) Ce exhibits +4 state ($4f^0$); Eu exhibits +2 state ($4f^7$).\n(ii) Transition elements provide reaction surface and form intermediate compounds using variable oxidation states.\n(iii) Cr ($3d^5 4s^1$) has maximum unpaired electrons leading to strong interatomic metallic bonding.\n(iv) Acidic $\\text{KMnO}_4$ solution is thermodynamically unstable and slowly decomposes releasing oxygen gas.",
+        "chapter": "d- and f-Block Elements",
+        "topic": "Electrode Potentials and Reactions of KMnO4",
+        "difficulty": "Hard",
+        "class_level": "12",
+        "question_id": "CBSE_2023_2023-03-01_S1-CHE-Q32",
+        "image": null
+      },
+      {
+        "text": "(a) Calculate emf and $\\Delta G$ for the following cell at $298\\text{ K}$ :\n$$\\text{Mg}(s) / \\text{Mg}^{2+}(0.01\\text{ M}) // \\text{Ag}^+(0.001\\text{ M}) / \\text{Ag}(s)$$\nGiven : $E^\\circ_{\\text{Mg}^{2+}/\\text{Mg}} = -2.37\\text{ V}$, $E^\\circ_{\\text{Ag}^+/\\text{Ag}} = +0.80\\text{ V}$\n[$1\\text{ F} = 96500\\text{ C mol}^{-1}$, $\\log 10 = 1$]\nOR\n(b) For the reaction :\n$$2\\text{AgCl}(s) + \\text{H}_2(g) (0.4\\text{ atm}) \\longrightarrow 2\\text{Ag}(s) + 2\\text{H}^+(0.1\\text{ M}) + 2\\text{Cl}^-(0.2\\text{ M})$$\nCalculate emf of the cell at $25^\\circ\\text{C}$.\nGiven : $\\Delta G^\\circ = -43500\\text{ J mol}^{-1}$\n[$\\log 10 = 1$, $1\\text{ F} = 96500\\text{ C mol}^{-1}$]",
+        "type": "subjective",
+        "correct": "(a) $E_{\\text{cell}} = 3.0518\\text{ V}$ (or $3.05\\text{ V}$), $\\Delta G = -589.0\\text{ kJ mol}^{-1}$ (or $-588997\\text{ J mol}^{-1}$).\nOR\n(b) $E_{\\text{cell}} = 0.314\\text{ V}$.",
+        "has_diagram": false,
+        "solution": "(a) $E^\\circ_{\\text{cell}} = 0.80 - (-2.37) = 3.17\\text{ V}$. $n = 2$.\n$E_{\\text{cell}} = 3.17 - \\frac{0.0591}{2} \\log\\left(\\frac{0.01}{(0.001)^2}\\right) = 3.17 - 0.02955 \\log(10^4) = 3.17 - 0.1182 = 3.0518\\text{ V}$.\n$\\Delta G = -nFE_{\\text{cell}} = -2 \\times 96500 \\times 3.0518 = -588997\\text{ J mol}^{-1} = -589\\text{ kJ mol}^{-1}$.\nOR\n(b) $E^\\circ_{\\text{cell}} = -\\frac{\\Delta G^\\circ}{nF} = \\frac{43500}{2 \\times 96500} = 0.2254\\text{ V}$.\n$Q = \\frac{[\\text{H}^+]^2[\\text{Cl}^-]^2}{P_{\\text{H}_2}} = \\frac{(0.1)^2 (0.2)^2}{0.4} = 10^{-3}$.\n$E_{\\text{cell}} = 0.2254 - \\frac{0.0591}{2} \\log(10^{-3}) = 0.2254 + 0.08865 = 0.314\\text{ V}$.",
+        "chapter": "Electrochemistry",
+        "topic": "Nernst Equation and Gibbs Energy",
+        "difficulty": "Hard",
+        "class_level": "12",
+        "question_id": "CBSE_2023_2023-03-01_S1-CHE-Q33",
+        "image": null
+      }
+    ],
+    "Mathematics": []
+  }
+}
