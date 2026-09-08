@@ -42,7 +42,7 @@
   .tabs { display: flex; gap: 10px; margin-bottom: 20px; border-bottom: 2px solid #e0e0e0; padding-bottom: 10px; }
   .tabs button { padding: 10px 20px; border: none; background: transparent; cursor: pointer; font-size: 1rem; color: #5f6368; font-weight: bold; border-radius: 4px; }
   .tabs button.active { background: #e8f0fe; color: #1a73e8; }
-  .question-container { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); flex: 1; }
+  .question-container { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); flex: 1; display: flex; flex-direction: column; justify-content: space-between; }
   .question-text { font-size: 1.2rem; margin-bottom: 25px; color: #202124; line-height: 1.5; }
   .options div { margin: 12px 0; padding: 12px; border: 1px solid #dadce0; border-radius: 6px; cursor: pointer; }
   .options div:hover { background: #f8f9fa; }
@@ -97,8 +97,10 @@
     <div class="content">
       <div class="tabs" id="subject-tabs"></div>
       <div class="question-container">
-        <div class="question-text" id="q-text">Loading question...</div>
-        <div class="options" id="q-options"></div>
+        <div>
+          <div class="question-text" id="q-text">Loading question...</div>
+          <div class="options" id="q-options"></div>
+        </div>
         <div class="actions">
           <button class="btn-save" onclick="saveAndNext()">Save & Next</button>
           <button class="btn-mark" onclick="markForReview()">Mark for Review</button>
@@ -126,15 +128,18 @@
   let timeLeft = 180 * 60;
   let timerInterval;
 
-  // Load catalog on page launch
-  fetch('test_index.json')
-    .then(res => res.json())
+  // Load catalog with cache buster
+  fetch('test_index.json?v=' + new Date().getTime())
+    .then(res => {
+      if(!res.ok) throw new Error("Index not found");
+      return res.json();
+    })
     .then(data => {
       rawCatalog = data;
       renderExamLevel();
     })
     .catch(() => {
-      document.getElementById('cards-container').innerHTML = `<p style="color:red;">Error loading test_index.json. Verify the file exists.</p>`;
+      document.getElementById('cards-container').innerHTML = `<p style="color:red; font-weight:bold;">Error loading test_index.json. Make sure your Python script has successfully pushed files to GitHub.</p>`;
     });
 
   // Level 1: Render Available Exams
@@ -166,7 +171,7 @@
     });
   }
 
-  // Level 2: Render Categories (e.g. Full PYQ vs Chapter-wise)
+  // Level 2: Render Categories (e.g., Year / Exam Type)
   function renderCategoryLevel(examName) {
     currentExam = examName;
     currentCategory = null;
@@ -237,7 +242,7 @@
     });
   }
 
-  // Launch Engine
+  // Launch Engine with Cache Buster
   function launchExamEngine(jsonFileName, testTitle) {
     document.getElementById('dashboard').style.display = 'none';
     document.getElementById('test-screen').style.display = 'flex';
@@ -246,15 +251,18 @@
     responses = {};
     timeLeft = 180 * 60;
 
-    fetch(jsonFileName)
+    // Append timestamp query parameter to bypass GitHub Pages file caching
+    fetch(jsonFileName + '?v=' + new Date().getTime())
       .then(res => {
         if(!res.ok) throw new Error("File Not Found");
         return res.json();
       })
       .then(data => {
-        questions = data;
-        Object.keys(data).forEach(subj => responses[subj] = new Array(data[subj].length).fill(null));
-        currentSubject = Object.keys(data)[0];
+        // Support both structural formats: { questions: { Physics: [...] } } or direct { Physics: [...] }
+        questions = data.questions ? data.questions : data;
+        
+        Object.keys(questions).forEach(subj => responses[subj] = new Array(questions[subj].length).fill(null));
+        currentSubject = Object.keys(questions)[0];
         renderTabs();
         loadSubject(currentSubject);
 
@@ -267,8 +275,9 @@
           document.getElementById('timer').innerText = `${h}:${m < 10 ? '0' : ''}${m}:${s < 10 ? '0' : ''}${s}`;
         }, 1000);
       })
-      .catch(() => {
-        document.getElementById('q-text').innerHTML = `<span style="color:red">Error loading <b>${jsonFileName}</b>. Make sure the file exists in your repository.</span>`;
+      .catch((err) => {
+        document.getElementById('q-text').innerHTML = `<span style="color:red">Error loading <b>${jsonFileName}</b>. Make sure the file exists in your repository root and GitHub Pages has finished publishing.</span>`;
+        document.getElementById('q-options').innerHTML = '';
       });
   }
 
@@ -300,8 +309,10 @@
     const opts = document.getElementById('q-options');
     opts.innerHTML = '';
 
+    const currentResp = responses[currentSubject][currentIndex];
+    const savedVal = (currentResp && currentResp.ans !== undefined && currentResp.ans !== null) ? currentResp.ans : '';
+
     if (q.type === 'integer' || (!q.options || q.options.length === 0)) {
-      const savedVal = responses[currentSubject][currentIndex]?.ans ?? '';
       opts.innerHTML = `
         <div style="background:#fff; border:none; padding:0;">
           <p style="margin-bottom: 10px; font-weight: 500; color: #5f6368;">Enter numerical value:</p>
@@ -311,7 +322,7 @@
         </div>`;
     } else {
       q.options.forEach((opt, i) => {
-        const isChecked = responses[currentSubject][currentIndex]?.ans === i ? 'checked' : '';
+        const isChecked = savedVal === i ? 'checked' : '';
         opts.innerHTML += `
           <div onclick="document.getElementById('opt${i}').checked = true; saveMcqResponse(${i})">
             <label style="cursor:pointer; display:flex; align-items:center;">
@@ -354,14 +365,16 @@
   }
 
   function saveMcqResponse(optionIndex) {
-    responses[currentSubject][currentIndex] = { ans: optionIndex, state: 'answered' };
+    const currentState = responses[currentSubject][currentIndex]?.state === 'marked' ? 'marked' : 'answered';
+    responses[currentSubject][currentIndex] = { ans: optionIndex, state: currentState };
     renderPalette();
   }
 
   function saveIntegerResponse() {
     const val = document.getElementById('integer-ans-input')?.value;
+    const currentState = responses[currentSubject][currentIndex]?.state === 'marked' ? 'marked' : 'answered';
     if (val !== undefined && val.trim() !== '') {
-      responses[currentSubject][currentIndex] = { ans: val.trim(), state: 'answered' };
+      responses[currentSubject][currentIndex] = { ans: val.trim(), state: currentState };
     } else {
       responses[currentSubject][currentIndex] = null;
     }
@@ -388,14 +401,11 @@
   function markForReview() {
     const q = questions[currentSubject][currentIndex];
     if (q.type === 'integer' || (!q.options || q.options.length === 0)) {
-      saveIntegerResponse();
+      const val = document.getElementById('integer-ans-input')?.value;
+      responses[currentSubject][currentIndex] = { ans: (val !== undefined && val.trim() !== '') ? val.trim() : null, state: 'marked' };
     } else {
       const selected = document.querySelector('input[name="opt"]:checked');
-      if (selected) {
-        responses[currentSubject][currentIndex] = { ans: parseInt(selected.value), state: 'marked' };
-      } else {
-        responses[currentSubject][currentIndex] = { ans: null, state: 'marked' };
-      }
+      responses[currentSubject][currentIndex] = { ans: selected ? parseInt(selected.value) : null, state: 'marked' };
     }
     if (currentIndex < questions[currentSubject].length - 1) {
       currentIndex++;
@@ -417,7 +427,7 @@
     Object.keys(questions).forEach(subj => {
       questions[subj].forEach((q, i) => {
         const res = responses[subj][i];
-        if (res && res.ans !== null && res.ans !== '') {
+        if (res && res.ans !== null && res.ans !== '' && res.ans !== undefined) {
           let isCorrect = false;
           if (q.type === 'integer' || (!q.options || q.options.length === 0)) {
             if (String(res.ans).trim() === String(q.correct).trim()) isCorrect = true;
@@ -441,13 +451,4 @@
           <p style="color: #1e8e3e; margin: 8px 0;">✅ Correct: ${correct} (+${correct * 4})</p>
           <p style="color: #d93025; margin: 8px 0;">❌ Incorrect: ${wrong} (-${wrong})</p>
           <p style="color: #5f6368; margin: 8px 0;">⚪ Unattempted: ${unattempted}</p>
-        </div>
-        <button onclick="location.reload()" style="margin-top: 25px; padding: 12px 28px; background: #1a73e8; color: white; border: none; border-radius: 6px; font-size: 1rem; font-weight: bold; cursor: pointer;">Exit to Dashboard</button>
-      </div>
-    `;
-  }
-</script>
-</body>
-</html>
-
-
+    
