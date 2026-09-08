@@ -327,10 +327,17 @@
     renderPalette();
   }
 
-  function renderQuestion() {
+    function renderQuestion() {
     const q = questions[currentSubject][currentIndex];
     const qDiv = document.getElementById('q-text');
-    qDiv.innerHTML = `<b>Q${currentIndex + 1}.</b> ${q.text}`;
+    
+    // Check if the question has a linked diagram/image
+    let imageHtml = '';
+    if (q.image && q.image.trim() !== '') {
+      imageHtml = `<div style="margin: 20px 0;"><img src="images/${q.image}" alt="Question Diagram" style="max-width: 100%; height: auto; border-radius: 6px; border: 1px solid #dadce0; background: #fff; padding: 5px;"></div>`;
+    }
+
+    qDiv.innerHTML = `<b>Q${currentIndex + 1}.</b> ${q.text} ${imageHtml}`;
 
     const opts = document.getElementById('q-options');
     opts.innerHTML = '';
