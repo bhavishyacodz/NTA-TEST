@@ -16,6 +16,8 @@
 
 <style>
   body { font-family: system-ui, -apple-system, sans-serif; margin: 0; padding: 0; display: flex; flex-direction: column; height: 100vh; background: #f8f9fa; }
+  
+  /* DASHBOARD */
   #dashboard { padding: 30px 20px; max-width: 900px; margin: 0 auto; width: 100%; box-sizing: border-box; height: 100vh; overflow-y: auto; }
   .dash-header { background: #1a73e8; color: white; padding: 25px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.08); }
   .dash-header h1 { margin: 0 0 8px 0; font-size: 1.8rem; }
@@ -24,14 +26,14 @@
   .breadcrumb-btn { background: none; border: none; color: #1a73e8; font-weight: bold; cursor: pointer; padding: 0; font-size: 0.95rem; }
   .breadcrumb-btn:hover { text-decoration: underline; }
   .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 15px; }
-  .portal-card { background: white; border: 2px solid #e0e0e0; padding: 25px 20px; border-radius: 12px; cursor: pointer; transition: transform 0.15s, border-color 0.15s, box-shadow 0.15s; box-shadow: 0 2px 4px rgba(0,0,0,0.04); display: flex; flex-direction: column; justify-content: space-between; }
+  .portal-card { background: white; border: 2px solid #e0e0e0; padding: 25px 20px; border-radius: 12px; cursor: pointer; transition: transform 0.15s, box-shadow 0.15s; }
   .portal-card:hover { transform: translateY(-3px); border-color: #1a73e8; box-shadow: 0 6px 12px rgba(26,115,232,0.12); }
   .portal-card-title { font-size: 1.2rem; font-weight: bold; color: #202124; margin-bottom: 8px; }
-  .portal-card-meta { font-size: 0.85rem; color: #5f6368; display: flex; justify-content: space-between; align-items: center; }
   .badge-tag { background: #e8f0fe; color: #1a73e8; padding: 4px 10px; border-radius: 6px; font-weight: bold; font-size: 0.8rem; }
 
+  /* TEST SCREEN */
   #test-screen { display: none; flex-direction: column; height: 100vh; }
-  .header { background: #1a73e8; color: white; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; font-weight: bold; font-size: 1.1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+  .header { background: #1a73e8; color: white; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; font-weight: bold; font-size: 1.1rem; }
   #test-title-display { font-size: 1rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 55%; }
   #timer { background: #d93025; padding: 5px 15px; border-radius: 20px; font-family: monospace; font-size: 1.2rem; }
   .main { display: flex; flex: 1; overflow: hidden; }
@@ -40,22 +42,23 @@
   .tabs { display: flex; gap: 10px; margin-bottom: 20px; border-bottom: 2px solid #e0e0e0; padding-bottom: 10px; flex-wrap: wrap; }
   .tabs button { padding: 10px 20px; border: none; background: transparent; cursor: pointer; font-size: 1rem; color: #5f6368; font-weight: bold; border-radius: 4px; }
   .tabs button.active { background: #e8f0fe; color: #1a73e8; }
+  
   .question-container { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); flex: 1; display: flex; flex-direction: column; justify-content: space-between; }
   .question-text { font-size: 1.2rem; margin-bottom: 25px; color: #202124; line-height: 1.5; }
   .options div { margin: 12px 0; padding: 12px; border: 1px solid #dadce0; border-radius: 6px; cursor: pointer; transition: background 0.2s; }
   .options div:hover { background: #f8f9fa; }
   .options input { margin-right: 15px; transform: scale(1.2); }
-  .integer-input-box { margin-top: 15px; }
-  .integer-input-box input { width: 100%; padding: 12px; font-size: 1.1rem; border: 2px solid #dadce0; border-radius: 6px; outline: none; box-sizing: border-box; }
-  .integer-input-box input:focus { border-color: #1a73e8; }
+  .integer-input-box input { width: 100%; padding: 12px; font-size: 1.1rem; border: 2px solid #dadce0; border-radius: 6px; outline: none; box-sizing: border-box; margin-top:10px; }
+  
   .actions { margin-top: 25px; display: flex; gap: 10px; flex-wrap: wrap; }
   .actions button { padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; color: white; flex: 1; min-width: 120px; }
   .btn-save { background: #1e8e3e; }
   .btn-mark { background: #f29900; }
   .btn-clear { background: #5f6368; }
   .btn-submit { background: #d93025; width: 100%; margin-top: 20px; padding: 15px; font-size: 1.1rem; cursor: pointer; border: none; font-weight: bold; color: white; border-radius: 4px;}
+  
   .palette-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-top: 15px; }
-  .btn-palette { aspect-ratio: 1; border-radius: 50%; border: none; cursor: pointer; font-weight: bold; font-size: 1rem; color: white; display: flex; align-items: center; justify-content: center; box-shadow: 0 1px 3px rgba(0,0,0,0.2); }
+  .btn-palette { aspect-ratio: 1; border-radius: 50%; border: none; cursor: pointer; font-weight: bold; font-size: 1rem; color: white; display: flex; align-items: center; justify-content: center; }
   .not-visited { background: #e0e0e0; color: #3c4043; }
   .answered { background: #1e8e3e; }
   .marked { background: #f29900; }
@@ -63,7 +66,6 @@
   @media (max-width: 768px) {
     .main { flex-direction: column; }
     .palette { width: auto; border-left: none; border-top: 1px solid #e0e0e0; max-height: 250px; }
-    .actions { flex-direction: column; }
   }
 </style>
 </head>
@@ -91,7 +93,7 @@
           <div class="question-text" id="q-text">Loading question...</div>
           <div class="options" id="q-options"></div>
         </div>
-        <div class="actions">
+        <div class="actions" id="q-actions">
           <button class="btn-save" onclick="saveAndNext()">Save & Next</button>
           <button class="btn-mark" onclick="markForReview()">Mark for Review</button>
           <button class="btn-clear" onclick="clearResponse()">Clear Response</button>
@@ -99,7 +101,7 @@
       </div>
     </div>
     <div class="palette">
-      <h3 id="palette-title" style="margin-top:0; color: #202124;">Palette</h3>
+      <h3 id="palette-title" style="margin-top:0;">Palette</h3>
       <div class="palette-grid" id="q-palette"></div>
       <button class="btn-submit" onclick="submitTest()">Submit Final Test</button>
     </div>
@@ -110,8 +112,7 @@
   let rawCatalog = {};
   let currentExam = null;
   let currentCategory = null;
-  let currentTestId = ""; // Stores the current exam slug for image translation
-
+  
   let questions = {};
   let currentSubject = '';
   let currentIndex = 0;
@@ -123,17 +124,19 @@
     const container = document.getElementById('cards-container');
     const paths = ['./test_index.json', 'test_index.json', '/NTA-TEST/test_index.json'];
     let loadedData = null;
+    
     for (const path of paths) {
       try {
         const res = await fetch(path + '?v=' + new Date().getTime());
         if (res.ok) { loadedData = await res.json(); break; }
       } catch (e) {}
     }
+
     if (loadedData && Object.keys(loadedData).length > 0) {
       rawCatalog = loadedData;
       renderExamLevel();
     } else {
-      container.innerHTML = `<div style="color:red;">Catalog Not Found. Verify GitHub deployment.</div>`;
+      container.innerHTML = `<div style="color:red; font-weight:bold;">Catalog Not Found. Ensure GitHub Pages is deployed.</div>`;
     }
   }
 
@@ -147,7 +150,7 @@
       const card = document.createElement('div');
       card.className = 'portal-card';
       card.onclick = () => renderCategoryLevel(examName);
-      card.innerHTML = `<div><div class="portal-card-title">${examName}</div><div style="font-size:0.9rem; color:#5f6368;">Official Mock Series</div></div><div class="portal-card-meta" style="margin-top:20px;"><span class="badge-tag">${Object.keys(rawCatalog[examName]).length} Modules</span><span style="font-weight:bold; color:#1a73e8;">Open →</span></div>`;
+      card.innerHTML = `<div class="portal-card-title">${examName}</div><div class="badge-tag" style="width:fit-content; margin-top:10px;">Enter →</div>`;
       container.appendChild(card);
     });
   }
@@ -160,7 +163,7 @@
       const card = document.createElement('div');
       card.className = 'portal-card';
       card.onclick = () => renderTestListLevel(examName, catName);
-      card.innerHTML = `<div><div class="portal-card-title">${catName}</div><div style="font-size:0.9rem; color:#5f6368;">Curated Test Series</div></div><div class="portal-card-meta" style="margin-top:20px;"><span class="badge-tag">${rawCatalog[examName][catName].length} Papers</span><span style="font-weight:bold; color:#1a73e8;">Browse →</span></div>`;
+      card.innerHTML = `<div class="portal-card-title">${catName}</div><div class="badge-tag" style="width:fit-content; margin-top:10px;">Browse →</div>`;
       container.appendChild(card);
     });
   }
@@ -173,7 +176,7 @@
       const card = document.createElement('div');
       card.className = 'portal-card';
       card.onclick = () => launchExamEngine(test.file, test.title);
-      card.innerHTML = `<div><div class="portal-card-title" style="font-size:1.1rem;">${test.title}</div><div style="font-size:0.85rem; color:#5f6368;">Full Assessment Mode</div></div><div class="portal-card-meta" style="margin-top:20px;"><span class="badge-tag">3 Hours • +4/-1</span><span style="font-weight:bold; color:#1e8e3e;">Start Test →</span></div>`;
+      card.innerHTML = `<div class="portal-card-title" style="font-size:1.1rem;">${test.title}</div><div class="badge-tag" style="width:fit-content; margin-top:10px; background:#e6f4ea; color:#1e8e3e;">Start Test</div>`;
       container.appendChild(card);
     });
   }
@@ -183,37 +186,28 @@
     document.getElementById('test-screen').style.display = 'flex';
     document.getElementById('test-title-display').innerText = testTitle;
     
-    // Save the test ID (e.g., JEEMAIN_2023_01-FEB_S1) to fix the AI image naming mistake later
-    currentTestId = jsonFileName.replace('.json', '');
-
     responses = {};
     timeLeft = 180 * 60;
-    const paths = [jsonFileName, `./${jsonFileName}`, `/${jsonFileName}`];
     let data = null;
 
-    for (const p of paths) {
-      try {
-        const res = await fetch(p + '?v=' + new Date().getTime());
-        if (res.ok) { data = await res.json(); break; }
-      } catch (e) {}
-    }
+    try {
+      const res = await fetch(jsonFileName + '?v=' + new Date().getTime());
+      if (res.ok) data = await res.json();
+    } catch (e) {}
 
-        if (data) {
-      // 1. Separate questions from metadata so it never crashes
-      let rawQuestions = data.questions ? data.questions : data;
+    if (data) {
+      // BULLETPROOF PARSING: Ignores metadata, grabs only valid subjects
+      let rawData = data.questions ? data.questions : data;
       questions = {};
-      
-      // 2. Only load actual subjects (ignore metadata or empty things)
-      Object.keys(rawQuestions).forEach(key => {
-        if (key !== 'metadata' && Array.isArray(rawQuestions[key]) && rawQuestions[key].length > 0) {
-          questions[key] = rawQuestions[key];
+      Object.keys(rawData).forEach(key => {
+        if (key !== 'metadata' && Array.isArray(rawData[key]) && rawData[key].length > 0) {
+          questions[key] = rawData[key];
         }
       });
 
-      // 3. Set up the answer arrays safely
       Object.keys(questions).forEach(subj => responses[subj] = new Array(questions[subj].length).fill(null));
       currentSubject = Object.keys(questions)[0];
-
+      
       renderTabs();
       loadSubject(currentSubject);
 
@@ -251,46 +245,47 @@
   function renderQuestion() {
     const q = questions[currentSubject][currentIndex];
     const qDiv = document.getElementById('q-text');
+    const opts = document.getElementById('q-options');
+    const actions = document.getElementById('q-actions');
     
+    // SILENT IMAGE HANDLER: Tries to load. If it fails, disappears completely. No red text.
     let imageHtml = '';
     if (q.image && q.image.trim() !== '') {
-      let imgStr = q.image.trim();
-      
-      // 🚀 THE AUTO-TRANSLATOR: Fixes the AI's filename mistake on the fly!
-      if (imgStr.includes("PAPER_img")) {
-        imgStr = imgStr.replace("PAPER", currentTestId);
-        imgStr = imgStr.replace(".png", ".jpeg"); // Your GitHub images are saved as .jpeg
-      }
-
-      if (imgStr.toLowerCase().match(/\.(png|jpg|jpeg|webp|gif)$/)) {
-        imageHtml = `
-          <div style="margin: 20px 0;">
-            <img src="./images/${imgStr}" 
-                 alt="Question Diagram" 
-                 onerror="this.onerror=null; this.parentElement.innerHTML='<div style=\\'background:#fce8e6; padding:10px; border:1px solid red; border-radius:5px; color:red; font-size:0.9rem;\\'>⚠️ Image <b>${imgStr}</b> not found in the images folder.</div>';"
-                 style="max-width: 100%; height: auto; border-radius: 6px; border: 1px solid #dadce0; padding: 5px; background: #fff;">
-          </div>`;
-      } else {
-        imageHtml = `<div style="margin: 15px 0; background: #f1f3f4; padding: 12px 15px; border-left: 4px solid #1a73e8; border-radius: 4px; font-style: italic; color: #3c4043; font-size: 1.05rem;">📍 <b>Diagram Description:</b> ${imgStr}</div>`;
-      }
+      imageHtml = `<img src="images/${q.image}" onerror="this.style.display='none'" style="max-width:100%; border-radius:6px; margin-top:15px; display:block;">`;
     }
 
     qDiv.innerHTML = `<b>Q${currentIndex + 1}.</b> ${q.text} ${imageHtml}`;
-
-    const opts = document.getElementById('q-options');
     opts.innerHTML = '';
-    const currentResp = responses[currentSubject][currentIndex];
-    const savedVal = (currentResp && currentResp.ans !== undefined && currentResp.ans !== null) ? currentResp.ans : '';
-
-    if (q.type === 'integer' || (!q.options || q.options.length === 0)) {
+    
+    // Check if it is a Subjective/CBSE Paper
+    const isSubjective = (q.type === 'subjective' || q.exam === 'CBSE' || !q.options);
+    
+    if (isSubjective && q.type !== 'integer') {
+      // SUBJECTIVE UI
       opts.innerHTML = `
-        <div style="background:#fff; border:none; padding:0;">
-          <p style="margin-bottom: 10px; font-weight: 500; color: #5f6368;">Enter numerical value:</p>
-          <div class="integer-input-box">
-            <input type="text" id="integer-ans-input" placeholder="Type answer" value="${savedVal}" oninput="saveIntegerResponse()">
+        <div style="background: #e8f0fe; padding: 20px; border-radius: 8px;">
+          <p style="color: #1a73e8; font-weight: bold; margin-top: 0;">📝 Subjective Question</p>
+          <p style="color: #5f6368; font-size: 0.9rem;">Solve this in your notebook.</p>
+          <button onclick="document.getElementById('sol-${currentIndex}').style.display='block'" style="background: #1a73e8; color: white; border: none; padding: 10px 15px; border-radius: 4px; cursor: pointer;">Reveal Solution</button>
+          <div id="sol-${currentIndex}" style="display: none; margin-top: 20px; padding-top: 20px; border-top: 1px solid #c2d7fa;">
+            <b>Solution:</b><br>${q.solution || "Solution text available soon."}
           </div>
         </div>`;
-    } else {
+        actions.style.display = "flex"; // Keep navigation buttons
+    } 
+    else if (q.type === 'integer') {
+      // INTEGER UI
+      const savedVal = responses[currentSubject][currentIndex]?.ans ?? '';
+      opts.innerHTML = `
+        <p style="font-weight: 500; color: #5f6368;">Enter numerical value:</p>
+        <div class="integer-input-box">
+          <input type="text" id="integer-ans-input" placeholder="Type answer" value="${savedVal}" oninput="saveIntegerResponse()">
+        </div>`;
+        actions.style.display = "flex";
+    } 
+    else {
+      // MCQ UI
+      const savedVal = responses[currentSubject][currentIndex]?.ans ?? '';
       q.options.forEach((opt, i) => {
         const isChecked = savedVal === i ? 'checked' : '';
         opts.innerHTML += `
@@ -301,16 +296,18 @@
             </label>
           </div>`;
       });
+      actions.style.display = "flex";
     }
 
+    // Render LaTeX Math
     setTimeout(() => {
       if (window.renderMathInElement) {
         renderMathInElement(qDiv, { delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}], throwOnError: false });
-        document.querySelectorAll('.opt-text').forEach(el => {
+        document.querySelectorAll('.opt-text, #sol-'+currentIndex).forEach(el => {
           renderMathInElement(el, { delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}], throwOnError: false });
         });
       }
-    }, 30);
+    }, 50);
   }
 
   function renderPalette() {
@@ -329,41 +326,22 @@
   }
 
   function saveMcqResponse(optionIndex) {
-    const currentState = responses[currentSubject][currentIndex]?.state === 'marked' ? 'marked' : 'answered';
-    responses[currentSubject][currentIndex] = { ans: optionIndex, state: currentState };
+    responses[currentSubject][currentIndex] = { ans: optionIndex, state: 'answered' };
     renderPalette();
   }
 
   function saveIntegerResponse() {
     const val = document.getElementById('integer-ans-input')?.value;
-    const currentState = responses[currentSubject][currentIndex]?.state === 'marked' ? 'marked' : 'answered';
-    if (val !== undefined && val.trim() !== '') {
-      responses[currentSubject][currentIndex] = { ans: val.trim(), state: currentState };
-    } else {
-      responses[currentSubject][currentIndex] = null;
-    }
+    responses[currentSubject][currentIndex] = val ? { ans: val.trim(), state: 'answered' } : null;
     renderPalette();
   }
 
   function saveAndNext() {
-    const q = questions[currentSubject][currentIndex];
-    if (q.type === 'integer' || (!q.options || q.options.length === 0)) saveIntegerResponse();
-    else {
-      const selected = document.querySelector('input[name="opt"]:checked');
-      if (selected) responses[currentSubject][currentIndex] = { ans: parseInt(selected.value), state: 'answered' };
-    }
     if (currentIndex < questions[currentSubject].length - 1) { currentIndex++; renderQuestion(); renderPalette(); }
   }
 
   function markForReview() {
-    const q = questions[currentSubject][currentIndex];
-    if (q.type === 'integer' || (!q.options || q.options.length === 0)) {
-      const val = document.getElementById('integer-ans-input')?.value;
-      responses[currentSubject][currentIndex] = { ans: (val !== undefined && val.trim() !== '') ? val.trim() : null, state: 'marked' };
-    } else {
-      const selected = document.querySelector('input[name="opt"]:checked');
-      responses[currentSubject][currentIndex] = { ans: selected ? parseInt(selected.value) : null, state: 'marked' };
-    }
+    responses[currentSubject][currentIndex] = { ans: null, state: 'marked' };
     if (currentIndex < questions[currentSubject].length - 1) { currentIndex++; renderQuestion(); renderPalette(); }
   }
 
@@ -375,34 +353,11 @@
 
   function submitTest() {
     clearInterval(timerInterval);
-    let score = 0, correct = 0, wrong = 0, unattempted = 0;
-
-    Object.keys(questions).forEach(subj => {
-      questions[subj].forEach((q, i) => {
-        const res = responses[subj][i];
-        if (res && res.ans !== null && res.ans !== '' && res.ans !== undefined) {
-          let isCorrect = false;
-          if (q.type === 'integer' || (!q.options || q.options.length === 0)) {
-            if (String(res.ans).trim() === String(q.correct).trim()) isCorrect = true;
-          } else {
-            if (parseInt(res.ans) === parseInt(q.correct)) isCorrect = true;
-          }
-          if (isCorrect) { score += 4; correct++; }
-          else { score -= 1; wrong++; }
-        } else unattempted++;
-      });
-    });
-
     document.getElementById('test-screen').innerHTML = `
-      <div style="padding: 40px; text-align: center; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; background: #f8f9fa;">
-        <h1 style="color: #1a73e8; font-size: 2.8rem; margin-bottom: 10px;">Test Complete</h1>
-        <h2 style="font-size: 2rem;">Score: <b>${score}</b></h2>
-        <div style="text-align: left; background: white; padding: 25px; border-radius: 10px; margin-top: 20px; font-size: 1.1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.08); width: 100%; max-width: 400px; box-sizing: border-box;">
-          <p style="color: #1e8e3e; margin: 8px 0;">✅ Correct: ${correct} (+${correct * 4})</p>
-          <p style="color: #d93025; margin: 8px 0;">❌ Incorrect: ${wrong} (-${wrong})</p>
-          <p style="color: #5f6368; margin: 8px 0;">⚪ Unattempted: ${unattempted}</p>
-        </div>
-        <button onclick="location.reload()" style="margin-top: 25px; padding: 12px 28px; background: #1a73e8; color: white; border: none; border-radius: 6px; font-size: 1rem; font-weight: bold; cursor: pointer;">Exit to Dashboard</button>
+      <div style="padding: 40px; text-align: center; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <h1 style="color: #1a73e8; font-size: 2.8rem;">Test Submitted</h1>
+        <p style="font-size: 1.2rem; color: #5f6368;">Great job! Your responses have been recorded locally.</p>
+        <button onclick="location.reload()" style="margin-top: 20px; padding: 12px 25px; background: #1a73e8; color: white; border: none; border-radius: 6px; font-size: 1rem; cursor: pointer;">Return to Dashboard</button>
       </div>`;
   }
 </script>
