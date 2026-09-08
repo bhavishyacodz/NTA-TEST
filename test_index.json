@@ -1,4 +1,17 @@
 {
+  "CBSE": {
+    "2023": [
+      {
+        "title": "01-MAR Shift 1",
+        "file": "CBSE_2023_01-MAR_S1.json",
+        "pattern": {
+          "durationMinutes": 180,
+          "correctMark": 4,
+          "wrongMark": -1
+        }
+      }
+    ]
+  },
   "JEE Main": {
     "2023": [
       {
@@ -13,6 +26,17 @@
       {
         "title": "30-JAN Shift 1",
         "file": "JEEMAIN_2023_30-JAN_S1.json",
+        "pattern": {
+          "durationMinutes": 180,
+          "correctMark": 4,
+          "wrongMark": -1
+        }
+      }
+    ],
+    "2024": [
+      {
+        "title": "30-JAN Shift 1",
+        "file": "JEEMAIN_2024_30-JAN_S1.json",
         "pattern": {
           "durationMinutes": 180,
           "correctMark": 4,
