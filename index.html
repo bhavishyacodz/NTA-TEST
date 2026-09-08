@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JEE Mock Test Engine</title>
+<title>Vortex Exam Engine — Multi-Exam Portal</title>
 <!-- KaTeX Math Renderer -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
@@ -11,37 +11,45 @@
 
 <style>
   body { font-family: system-ui, -apple-system, sans-serif; margin: 0; padding: 0; display: flex; flex-direction: column; height: 100vh; background: #f8f9fa; }
-  
-  /* Dashboard Styles */
-  #dashboard { padding: 30px 20px; text-align: center; height: 100vh; overflow-y: auto; }
-  .dash-title { color: #1a73e8; font-size: 2rem; margin-bottom: 30px; }
-  .test-list { display: flex; flex-direction: column; gap: 15px; max-width: 500px; margin: 0 auto; }
-  .test-btn { background: white; border: 2px solid #e0e0e0; padding: 20px; border-radius: 10px; font-size: 1.1rem; font-weight: bold; color: #202124; cursor: pointer; text-align: left; box-shadow: 0 2px 4px rgba(0,0,0,0.05); transition: 0.2s; display: flex; justify-content: space-between; align-items: center;}
-  .test-btn:active { background: #e8f0fe; border-color: #1a73e8; }
-  .play-icon { background: #1a73e8; color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.9rem; }
 
-  /* Test Screen Styles */
+  /* MULTI-TIER DASHBOARD */
+  #dashboard { padding: 30px 20px; max-width: 900px; margin: 0 auto; width: 100%; box-sizing: border-box; height: 100vh; overflow-y: auto; }
+  .dash-header { background: #1a73e8; color: white; padding: 25px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.08); }
+  .dash-header h1 { margin: 0 0 8px 0; font-size: 1.8rem; }
+  .dash-header p { margin: 0; opacity: 0.9; font-size: 0.95rem; }
+
+  /* Navigation Breadcrumbs */
+  .breadcrumb-bar { display: flex; align-items: center; gap: 8px; margin-bottom: 20px; font-size: 0.95rem; color: #5f6368; flex-wrap: wrap; }
+  .breadcrumb-btn { background: none; border: none; color: #1a73e8; font-weight: bold; cursor: pointer; padding: 0; font-size: 0.95rem; }
+  .breadcrumb-btn:hover { text-decoration: underline; }
+
+  /* Card Grids */
+  .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 15px; }
+  .portal-card { background: white; border: 2px solid #e0e0e0; padding: 25px 20px; border-radius: 12px; cursor: pointer; transition: transform 0.15s, border-color 0.15s, box-shadow 0.15s; box-shadow: 0 2px 4px rgba(0,0,0,0.04); display: flex; flex-direction: column; justify-content: space-between; }
+  .portal-card:hover { transform: translateY(-3px); border-color: #1a73e8; box-shadow: 0 6px 12px rgba(26,115,232,0.12); }
+  .portal-card-title { font-size: 1.2rem; font-weight: bold; color: #202124; margin-bottom: 8px; }
+  .portal-card-meta { font-size: 0.85rem; color: #5f6368; display: flex; justify-content: space-between; align-items: center; }
+  .badge-tag { background: #e8f0fe; color: #1a73e8; padding: 4px 10px; border-radius: 6px; font-weight: bold; font-size: 0.8rem; }
+
+  /* TEST SCREEN */
   #test-screen { display: none; flex-direction: column; height: 100vh; }
-  .header { background: #1a73e8; color: white; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; font-weight: bold; font-size: 1.2rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1); z-index: 10; }
-  #test-title-display { font-size: 1rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 50%; }
+  .header { background: #1a73e8; color: white; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; font-weight: bold; font-size: 1.1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+  #test-title-display { font-size: 1rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 55%; }
   #timer { background: #d93025; padding: 5px 15px; border-radius: 20px; font-family: monospace; font-size: 1.2rem; }
-  .main { display: flex; flex: 1; overflow: hidden; flex-direction: row; }
+  .main { display: flex; flex: 1; overflow: hidden; }
   .content { flex: 1; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; }
-  .palette { width: 300px; background: white; padding: 15px; overflow-y: auto; border-left: 1px solid #e0e0e0; box-shadow: -2px 0 5px rgba(0,0,0,0.02); }
+  .palette { width: 320px; background: white; padding: 15px; overflow-y: auto; border-left: 1px solid #e0e0e0; }
   .tabs { display: flex; gap: 10px; margin-bottom: 20px; border-bottom: 2px solid #e0e0e0; padding-bottom: 10px; }
   .tabs button { padding: 10px 20px; border: none; background: transparent; cursor: pointer; font-size: 1rem; color: #5f6368; font-weight: bold; border-radius: 4px; }
   .tabs button.active { background: #e8f0fe; color: #1a73e8; }
   .question-container { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); flex: 1; }
   .question-text { font-size: 1.2rem; margin-bottom: 25px; color: #202124; line-height: 1.5; }
-  .options div { margin: 12px 0; padding: 12px; border: 1px solid #dadce0; border-radius: 6px; cursor: pointer; transition: background 0.2s; }
+  .options div { margin: 12px 0; padding: 12px; border: 1px solid #dadce0; border-radius: 6px; cursor: pointer; }
   .options div:hover { background: #f8f9fa; }
   .options input { margin-right: 15px; transform: scale(1.2); }
-  
-  /* Integer Input Field Style */
   .integer-input-box { margin-top: 15px; }
-  .integer-input-box input { width: 100%; padding: 12px; font-size: 1.1rem; border: 2px solid #dadce0; border-radius: 6px; outline: none; }
+  .integer-input-box input { width: 100%; padding: 12px; font-size: 1.1rem; border: 2px solid #dadce0; border-radius: 6px; outline: none; box-sizing: border-box; }
   .integer-input-box input:focus { border-color: #1a73e8; }
-
   .actions { margin-top: 25px; display: flex; gap: 10px; flex-wrap: wrap; }
   .actions button { padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; color: white; flex: 1; min-width: 120px; }
   .btn-save { background: #1e8e3e; }
@@ -53,36 +61,43 @@
   .not-visited { background: #e0e0e0; color: #3c4043; }
   .answered { background: #1e8e3e; }
   .marked { background: #f29900; }
-  
+
   @media (max-width: 768px) {
     .main { flex-direction: column; }
     .palette { width: auto; border-left: none; border-top: 1px solid #e0e0e0; max-height: 250px; }
     .actions { flex-direction: column; }
-    .tabs { overflow-x: auto; white-space: nowrap; }
   }
 </style>
 </head>
 <body>
 
-<!-- DASHBOARD SCREEN -->
+<!-- MULTI-EXAM DASHBOARD -->
 <div id="dashboard">
-  <h1 class="dash-title">JEE Practice Portal</h1>
-  <div class="test-list" id="dynamic-test-list">
-    <p>Loading test catalog...</p>
+  <div class="dash-header">
+    <h1>All-India Exam Assessment Portal</h1>
+    <p>Select your examination target and practice with official interfaces.</p>
+  </div>
+
+  <div class="breadcrumb-bar" id="breadcrumb-container">
+    <span>Home</span>
+  </div>
+
+  <div class="grid-container" id="cards-container">
+    <p>Loading exam categories...</p>
   </div>
 </div>
 
-<!-- TEST SCREEN -->
+<!-- TEST INTERFACE -->
 <div id="test-screen">
   <div class="header">
-    <div id="test-title-display">Loading...</div>
+    <div id="test-title-display">Exam Session</div>
     <div id="timer">180:00</div>
   </div>
   <div class="main">
     <div class="content">
       <div class="tabs" id="subject-tabs"></div>
       <div class="question-container">
-        <div class="question-text" id="q-text">Loading question data...</div>
+        <div class="question-text" id="q-text">Loading question...</div>
         <div class="options" id="q-options"></div>
         <div class="actions">
           <button class="btn-save" onclick="saveAndNext()">Save & Next</button>
@@ -100,6 +115,10 @@
 </div>
 
 <script>
+  let rawCatalog = {};
+  let currentExam = null;
+  let currentCategory = null;
+
   let questions = {};
   let currentSubject = '';
   let currentIndex = 0;
@@ -107,33 +126,129 @@
   let timeLeft = 180 * 60;
   let timerInterval;
 
+  // Load catalog on page launch
   fetch('test_index.json')
     .then(res => res.json())
     .then(data => {
-      const list = document.getElementById('dynamic-test-list');
-      list.innerHTML = '';
-      data.forEach(test => {
-        list.innerHTML += `
-          <button class="test-btn" onclick="startTest('${test.file}', '${test.title}')">
-            <span>${test.title}</span> <span class="play-icon">Start</span>
-          </button>`;
-      });
+      rawCatalog = data;
+      renderExamLevel();
     })
     .catch(() => {
-      document.getElementById('dynamic-test-list').innerHTML = `<p style="color:red;">Error: Could not find test_index.json.</p>`;
+      document.getElementById('cards-container').innerHTML = `<p style="color:red;">Error loading test_index.json. Verify the file exists.</p>`;
     });
 
-  function startTest(jsonFileName, testTitle) {
+  // Level 1: Render Available Exams
+  function renderExamLevel() {
+    currentExam = null;
+    currentCategory = null;
+
+    document.getElementById('breadcrumb-container').innerHTML = `<b>Exams Home</b>`;
+    const container = document.getElementById('cards-container');
+    container.innerHTML = '';
+
+    Object.keys(rawCatalog).forEach(examName => {
+      const card = document.createElement('div');
+      card.className = 'portal-card';
+      card.onclick = () => renderCategoryLevel(examName);
+
+      const categoryCount = Object.keys(rawCatalog[examName]).length;
+      card.innerHTML = `
+        <div>
+          <div class="portal-card-title">${examName}</div>
+          <div style="font-size:0.9rem; color:#5f6368;">Official Mock Series</div>
+        </div>
+        <div class="portal-card-meta" style="margin-top:20px;">
+          <span class="badge-tag">${categoryCount} Modules</span>
+          <span style="font-weight:bold; color:#1a73e8;">Open →</span>
+        </div>
+      `;
+      container.appendChild(card);
+    });
+  }
+
+  // Level 2: Render Categories (e.g. Full PYQ vs Chapter-wise)
+  function renderCategoryLevel(examName) {
+    currentExam = examName;
+    currentCategory = null;
+
+    document.getElementById('breadcrumb-container').innerHTML = `
+      <button class="breadcrumb-btn" onclick="renderExamLevel()">Exams Home</button>
+      <span>›</span>
+      <b>${examName}</b>
+    `;
+
+    const container = document.getElementById('cards-container');
+    container.innerHTML = '';
+
+    const categories = rawCatalog[examName];
+    Object.keys(categories).forEach(catName => {
+      const tests = categories[catName];
+      const card = document.createElement('div');
+      card.className = 'portal-card';
+      card.onclick = () => renderTestListLevel(examName, catName);
+
+      card.innerHTML = `
+        <div>
+          <div class="portal-card-title">${catName}</div>
+          <div style="font-size:0.9rem; color:#5f6368;">Curated Test Series</div>
+        </div>
+        <div class="portal-card-meta" style="margin-top:20px;">
+          <span class="badge-tag">${tests.length} Papers</span>
+          <span style="font-weight:bold; color:#1a73e8;">Browse →</span>
+        </div>
+      `;
+      container.appendChild(card);
+    });
+  }
+
+  // Level 3: Render Test Shifts/Papers in the Category
+  function renderTestListLevel(examName, catName) {
+    currentExam = examName;
+    currentCategory = catName;
+
+    document.getElementById('breadcrumb-container').innerHTML = `
+      <button class="breadcrumb-btn" onclick="renderExamLevel()">Exams Home</button>
+      <span>›</span>
+      <button class="breadcrumb-btn" onclick="renderCategoryLevel('${examName}')">${examName}</button>
+      <span>›</span>
+      <b>${catName}</b>
+    `;
+
+    const container = document.getElementById('cards-container');
+    container.innerHTML = '';
+
+    const tests = rawCatalog[examName][catName];
+    tests.forEach(test => {
+      const card = document.createElement('div');
+      card.className = 'portal-card';
+      card.onclick = () => launchExamEngine(test.file, test.title);
+
+      card.innerHTML = `
+        <div>
+          <div class="portal-card-title" style="font-size:1.1rem;">${test.title}</div>
+          <div style="font-size:0.85rem; color:#5f6368;">Full Assessment Mode</div>
+        </div>
+        <div class="portal-card-meta" style="margin-top:20px;">
+          <span class="badge-tag">3 Hours • +4/-1</span>
+          <span style="font-weight:bold; color:#1e8e3e;">Start Test →</span>
+        </div>
+      `;
+      container.appendChild(card);
+    });
+  }
+
+  // Launch Engine
+  function launchExamEngine(jsonFileName, testTitle) {
     document.getElementById('dashboard').style.display = 'none';
     document.getElementById('test-screen').style.display = 'flex';
     document.getElementById('test-title-display').innerText = testTitle;
-    
+
     responses = {};
-    timeLeft = 180 * 60; 
-    
+    timeLeft = 180 * 60;
+
     fetch(jsonFileName)
       .then(res => {
-        if(!res.ok) throw new Error("File not found");
+        if(!res.ok) throw new Error("File Not Found");
         return res.json();
       })
       .then(data => {
@@ -142,7 +257,7 @@
         currentSubject = Object.keys(data)[0];
         renderTabs();
         loadSubject(currentSubject);
-        
+
         timerInterval = setInterval(() => {
           if (timeLeft <= 0) { clearInterval(timerInterval); submitTest(); return; }
           timeLeft--;
@@ -153,7 +268,7 @@
         }, 1000);
       })
       .catch(() => {
-        document.getElementById('q-text').innerHTML = `<span style="color:red">Error loading <b>${jsonFileName}</b>.</span>`;
+        document.getElementById('q-text').innerHTML = `<span style="color:red">Error loading <b>${jsonFileName}</b>. Make sure the file exists in your repository.</span>`;
       });
   }
 
@@ -181,16 +296,15 @@
     const q = questions[currentSubject][currentIndex];
     const qDiv = document.getElementById('q-text');
     qDiv.innerHTML = `<b>Q${currentIndex + 1}.</b> ${q.text}`;
-    
+
     const opts = document.getElementById('q-options');
     opts.innerHTML = '';
 
-    // Check if question is an Integer/Numerical type or Standard MCQ
     if (q.type === 'integer' || (!q.options || q.options.length === 0)) {
       const savedVal = responses[currentSubject][currentIndex]?.ans ?? '';
       opts.innerHTML = `
-        <div style="background:#fff; border:none;">
-          <p style="margin-bottom: 10px; font-weight: 500; color: #5f6368;">Enter your numerical/integer answer below:</p>
+        <div style="background:#fff; border:none; padding:0;">
+          <p style="margin-bottom: 10px; font-weight: 500; color: #5f6368;">Enter numerical value:</p>
           <div class="integer-input-box">
             <input type="text" id="integer-ans-input" placeholder="Type answer (e.g. 25 or 4.5)" value="${savedVal}" oninput="saveIntegerResponse()">
           </div>
@@ -208,7 +322,6 @@
       });
     }
 
-    // Render KaTeX Math Equations
     setTimeout(() => {
       if (window.renderMathInElement) {
         renderMathInElement(qDiv, {
@@ -233,7 +346,7 @@
       const state = responses[currentSubject][i]?.state || 'not-visited';
       let b = document.createElement('button');
       b.className = `btn-palette ${state}`;
-      if (i === currentIndex) b.style.border = "3px solid #000"; 
+      if (i === currentIndex) b.style.border = "3px solid #000";
       b.innerText = i + 1;
       b.onclick = () => { currentIndex = i; renderQuestion(); renderPalette(); };
       p.appendChild(b);
@@ -246,7 +359,7 @@
   }
 
   function saveIntegerResponse() {
-    const val = document.getElementById('integer-input-box') ? document.getElementById('integer-input-box').value : document.getElementById('integer-ans-input')?.value;
+    const val = document.getElementById('integer-ans-input')?.value;
     if (val !== undefined && val.trim() !== '') {
       responses[currentSubject][currentIndex] = { ans: val.trim(), state: 'answered' };
     } else {
@@ -265,7 +378,6 @@
         responses[currentSubject][currentIndex] = { ans: parseInt(selected.value), state: 'answered' };
       }
     }
-    
     if (currentIndex < questions[currentSubject].length - 1) {
       currentIndex++;
       renderQuestion();
@@ -285,7 +397,6 @@
         responses[currentSubject][currentIndex] = { ans: null, state: 'marked' };
       }
     }
-
     if (currentIndex < questions[currentSubject].length - 1) {
       currentIndex++;
       renderQuestion();
@@ -302,32 +413,20 @@
   function submitTest() {
     clearInterval(timerInterval);
     let score = 0, correct = 0, wrong = 0, unattempted = 0;
-    
+
     Object.keys(questions).forEach(subj => {
       questions[subj].forEach((q, i) => {
         const res = responses[subj][i];
         if (res && res.ans !== null && res.ans !== '') {
-          // Check correctness based on question type
           let isCorrect = false;
           if (q.type === 'integer' || (!q.options || q.options.length === 0)) {
-            // Compare string/numerical values loosely for integer answers
-            if (String(res.ans).trim() === String(q.correct).trim()) {
-              isCorrect = true;
-            }
+            if (String(res.ans).trim() === String(q.correct).trim()) isCorrect = true;
           } else {
-            // Standard MCQ index comparison
-            if (parseInt(res.ans) === parseInt(q.correct)) {
-              isCorrect = true;
-            }
+            if (parseInt(res.ans) === parseInt(q.correct)) isCorrect = true;
           }
 
-          if (isCorrect) {
-            score += 4;
-            correct++;
-          } else {
-            score -= 1;
-            wrong++;
-          }
+          if (isCorrect) { score += 4; correct++; }
+          else { score -= 1; wrong++; }
         } else {
           unattempted++;
         }
@@ -336,14 +435,14 @@
 
     document.getElementById('test-screen').innerHTML = `
       <div style="padding: 40px; text-align: center; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; background: #f8f9fa;">
-        <h1 style="color: #1a73e8; font-size: 3rem; margin-bottom: 10px;">Test Submitted!</h1>
-        <h2 style="font-size: 2rem;">Total Score: <b>${score}</b></h2>
-        <div style="text-align: left; background: white; padding: 30px; border-radius: 10px; margin-top: 20px; font-size: 1.2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); width: 100%; max-width: 400px;">
-          <p style="color: #1e8e3e;">✅ Correct Answers: ${correct} (+${correct * 4} marks)</p>
-          <p style="color: #d93025;">❌ Incorrect Answers: ${wrong} (-${wrong} marks)</p>
-          <p style="color: #5f6368;">⚪ Unattempted: ${unattempted}</p>
+        <h1 style="color: #1a73e8; font-size: 2.8rem; margin-bottom: 10px;">Test Complete</h1>
+        <h2 style="font-size: 2rem;">Score: <b>${score}</b></h2>
+        <div style="text-align: left; background: white; padding: 25px; border-radius: 10px; margin-top: 20px; font-size: 1.1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.08); width: 100%; max-width: 400px; box-sizing: border-box;">
+          <p style="color: #1e8e3e; margin: 8px 0;">✅ Correct: ${correct} (+${correct * 4})</p>
+          <p style="color: #d93025; margin: 8px 0;">❌ Incorrect: ${wrong} (-${wrong})</p>
+          <p style="color: #5f6368; margin: 8px 0;">⚪ Unattempted: ${unattempted}</p>
         </div>
-        <button onclick="location.reload()" style="margin-top: 30px; padding: 15px 30px; background: #1a73e8; color: white; border: none; border-radius: 5px; font-size: 1.1rem; cursor: pointer;">Return to Dashboard</button>
+        <button onclick="location.reload()" style="margin-top: 25px; padding: 12px 28px; background: #1a73e8; color: white; border: none; border-radius: 6px; font-size: 1rem; font-weight: bold; cursor: pointer;">Exit to Dashboard</button>
       </div>
     `;
   }
