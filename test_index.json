@@ -4,12 +4,24 @@
       {
         "title": "CBSE 2023 (2023-02-28 Shift 1)",
         "file": "CBSE_2023_2023-02-28_S1.json"
+      },
+      {
+        "title": "CBSE 2023 ( Shift 1)",
+        "file": "CBSE_2023__S1.json"
       }
     ],
     "2024": [
       {
         "title": "CBSE 2024 ( Shift 1)",
         "file": "CBSE_2024__S1.json"
+      }
+    ]
+  },
+  "JEE Main": {
+    "2024": [
+      {
+        "title": "JEE Main 2024 (2024-01-30 Shift 1)",
+        "file": "JEEMAIN_2024_2024-01-30_S1.json"
       }
     ]
   }
