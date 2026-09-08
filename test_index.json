@@ -1,105 +1,17 @@
 {
   "JEE Main": {
-    "Full Shift PYQs": [
+    "2023": [
       {
-        "title": "1st Feb Shift 1",
-        "file": "1st Feb Shift 1.json",
+        "title": "01-FEB Shift 1",
+        "file": "JEEMAIN_2023_01-FEB_S1.json",
         "pattern": {
           "durationMinutes": 180,
           "correctMark": 4,
-          "wrongMark": -1,
-          "sectionBLimit": 5
-        }
-      },
-      {
-        "title": "24th Jan Shift 1",
-        "file": "24th Jan Shift 1.json",
-        "pattern": {
-          "durationMinutes": 180,
-          "correctMark": 4,
-          "wrongMark": -1,
-          "sectionBLimit": 5
-        }
-      },
-      {
-        "title": "24th Jan Shift 2",
-        "file": "24th Jan Shift 2.json",
-        "pattern": {
-          "durationMinutes": 180,
-          "correctMark": 4,
-          "wrongMark": -1,
-          "sectionBLimit": 5
-        }
-      },
-      {
-        "title": "25th Jan Shift 1",
-        "file": "25th Jan Shift 1.json",
-        "pattern": {
-          "durationMinutes": 180,
-          "correctMark": 4,
-          "wrongMark": -1,
-          "sectionBLimit": 5
-        }
-      },
-      {
-        "title": "25th Jan Shift 2",
-        "file": "25th Jan Shift 2.json",
-        "pattern": {
-          "durationMinutes": 180,
-          "correctMark": 4,
-          "wrongMark": -1,
-          "sectionBLimit": 5
-        }
-      },
-      {
-        "title": "29th Jan Shift 1",
-        "file": "29th Jan Shift 1.json",
-        "pattern": {
-          "durationMinutes": 180,
-          "correctMark": 4,
-          "wrongMark": -1,
-          "sectionBLimit": 5
-        }
-      },
-      {
-        "title": "30th Jan Shift 1",
-        "file": "30th Jan Shift 1.json",
-        "pattern": {
-          "durationMinutes": 180,
-          "correctMark": 4,
-          "wrongMark": -1,
-          "sectionBLimit": 5
-        }
-      },
-      {
-        "title": "31st Jan Shift 2",
-        "file": "31st Jan Shift 2.json",
-        "pattern": {
-          "durationMinutes": 180,
-          "correctMark": 4,
-          "wrongMark": -1,
-          "sectionBLimit": 5
-        }
-      },
-      {
-        "title": "questions",
-        "file": "questions.json",
-        "pattern": {
-          "durationMinutes": 180,
-          "correctMark": 4,
-          "wrongMark": -1,
-          "sectionBLimit": 5
+          "wrongMark": -1
         }
       }
     ]
   },
-  "JEE Advanced": {
-    "Paper 1": []
-  },
-  "BITSAT": {
-    "Full Mock Tests": []
-  },
-  "VITBhubi Institute": {
-    "Model Papers": []
-  }
+  "JEE Advanced": {},
+  "BITSAT": {}
 }
