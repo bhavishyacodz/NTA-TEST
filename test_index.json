@@ -2,20 +2,94 @@
   "JEE Main": {
     "Full Shift PYQs": [
       {
+        "title": "1st Feb Shift 1",
+        "file": "1st Feb Shift 1.json",
+        "pattern": {
+          "durationMinutes": 180,
+          "correctMark": 4,
+          "wrongMark": -1,
+          "sectionBLimit": 5
+        }
+      },
+      {
+        "title": "24th Jan Shift 1",
+        "file": "24th Jan Shift 1.json",
+        "pattern": {
+          "durationMinutes": 180,
+          "correctMark": 4,
+          "wrongMark": -1,
+          "sectionBLimit": 5
+        }
+      },
+      {
+        "title": "24th Jan Shift 2",
+        "file": "24th Jan Shift 2.json",
+        "pattern": {
+          "durationMinutes": 180,
+          "correctMark": 4,
+          "wrongMark": -1,
+          "sectionBLimit": 5
+        }
+      },
+      {
+        "title": "25th Jan Shift 1",
+        "file": "25th Jan Shift 1.json",
+        "pattern": {
+          "durationMinutes": 180,
+          "correctMark": 4,
+          "wrongMark": -1,
+          "sectionBLimit": 5
+        }
+      },
+      {
         "title": "25th Jan Shift 2",
-        "file": "25th Jan Shift 2.json"
+        "file": "25th Jan Shift 2.json",
+        "pattern": {
+          "durationMinutes": 180,
+          "correctMark": 4,
+          "wrongMark": -1,
+          "sectionBLimit": 5
+        }
       },
       {
         "title": "29th Jan Shift 1",
-        "file": "29th Jan Shift 1.json"
+        "file": "29th Jan Shift 1.json",
+        "pattern": {
+          "durationMinutes": 180,
+          "correctMark": 4,
+          "wrongMark": -1,
+          "sectionBLimit": 5
+        }
+      },
+      {
+        "title": "30th Jan Shift 1",
+        "file": "30th Jan Shift 1.json",
+        "pattern": {
+          "durationMinutes": 180,
+          "correctMark": 4,
+          "wrongMark": -1,
+          "sectionBLimit": 5
+        }
       },
       {
         "title": "31st Jan Shift 2",
-        "file": "31st Jan Shift 2.json"
+        "file": "31st Jan Shift 2.json",
+        "pattern": {
+          "durationMinutes": 180,
+          "correctMark": 4,
+          "wrongMark": -1,
+          "sectionBLimit": 5
+        }
       },
       {
-        "title": "1st Feb Shift 1",
-        "file": "1st Feb Shift 1.json"
+        "title": "questions",
+        "file": "questions.json",
+        "pattern": {
+          "durationMinutes": 180,
+          "correctMark": 4,
+          "wrongMark": -1,
+          "sectionBLimit": 5
+        }
       }
     ]
   },
