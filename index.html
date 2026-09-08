@@ -327,14 +327,20 @@
     renderPalette();
   }
 
-    function renderQuestion() {
+      function renderQuestion() {
     const q = questions[currentSubject][currentIndex];
     const qDiv = document.getElementById('q-text');
     
-    // Check if the question has a linked diagram/image
+    // Smart Diagram Handler: Handles both image files and AI text descriptions
     let imageHtml = '';
     if (q.image && q.image.trim() !== '') {
-      imageHtml = `<div style="margin: 20px 0;"><img src="images/${q.image}" alt="Question Diagram" style="max-width: 100%; height: auto; border-radius: 6px; border: 1px solid #dadce0; background: #fff; padding: 5px;"></div>`;
+      if (q.image.includes('.png') || q.image.includes('.jpg') || q.image.includes('.jpeg')) {
+        // If it's a real image file, render the picture
+        imageHtml = `<div style="margin: 20px 0;"><img src="images/${q.image}" alt="Question Diagram" style="max-width: 100%; height: auto; border-radius: 6px; border: 1px solid #dadce0; background: #fff; padding: 5px;"></div>`;
+      } else {
+        // If Gemini wrote a descriptive text instead of a filename, render it as a clean Figure Note box
+        imageHtml = `<div style="margin: 15px 0; background: #f1f3f4; padding: 12px 15px; border-left: 4px solid #1a73e8; border-radius: 4px; font-style: italic; color: #3c4043; font-size: 1.05rem;">📍 <b>Figure Description:</b> ${q.image}</div>`;
+      }
     }
 
     qDiv.innerHTML = `<b>Q${currentIndex + 1}.</b> ${q.text} ${imageHtml}`;
