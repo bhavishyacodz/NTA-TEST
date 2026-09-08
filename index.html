@@ -112,7 +112,6 @@
   let rawCatalog = {};
   let currentExam = null;
   let currentCategory = null;
-  let currentTestId = ""; 
   
   let questions = {};
   let currentSubject = '';
@@ -187,9 +186,6 @@
     document.getElementById('test-screen').style.display = 'flex';
     document.getElementById('test-title-display').innerText = testTitle;
     
-    // Explicitly grab the test ID to build correct image names
-    currentTestId = jsonFileName.split('/').pop().replace('.json', '');
-
     responses = {};
     timeLeft = 180 * 60;
     let data = null;
@@ -252,22 +248,13 @@
     const opts = document.getElementById('q-options');
     const actions = document.getElementById('q-actions');
     
-    // SMART IMAGE EXTRACTOR: Finds the number and builds the correct filename
+    // 🚀 DETERMINISTIC IMAGE HANDLER (Directly loads filename guaranteed by backend manifest)
     let imageHtml = '';
     if (q.image && q.image.trim() !== '') {
-      let rawImgString = q.image.trim();
-      let finalImgName = rawImgString; 
-      
-      const numberMatch = rawImgString.match(/\d+/); 
-      if (numberMatch) {
-        const imgNumber = numberMatch[0];
-        finalImgName = `${currentTestId}_img${imgNumber}.jpeg`;
-      }
-
       imageHtml = `
         <div style="margin: 20px 0;">
-          <img src="images/${finalImgName}" 
-               onerror="this.onerror=null; this.parentElement.innerHTML='<div style=\\'background:#fce8e6; padding:10px; border:1px solid red; border-radius:5px; color:red; font-size:0.9rem;\\'>⚠️ Diagram missing: <b>${finalImgName}</b></div>';"
+          <img src="images/${q.image.trim()}" 
+               onerror="this.style.display='none'"
                style="max-width: 100%; border-radius: 6px; border: 1px solid #dadce0; padding: 5px; background: #fff;">
         </div>`;
     }
@@ -279,7 +266,7 @@
     const isSubjective = (q.type === 'subjective' || q.exam === 'CBSE' || !q.options);
     
     if (isSubjective && q.type !== 'integer') {
-      // SUBJECTIVE UI WITH PRE-WRAP FORMATTING
+      // SUBJECTIVE UI WITH PRE-WRAP FORMATTING FOR PERFECT LINE BREAKS
       opts.innerHTML = `
         <div style="background: #e8f0fe; padding: 20px; border-radius: 8px;">
           <p style="color: #1a73e8; font-weight: bold; margin-top: 0;">📝 Subjective Question</p>
