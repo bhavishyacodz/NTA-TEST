@@ -198,10 +198,22 @@
       } catch (e) {}
     }
 
-    if (data) {
-      questions = data.questions ? data.questions : data;
+        if (data) {
+      // 1. Separate questions from metadata so it never crashes
+      let rawQuestions = data.questions ? data.questions : data;
+      questions = {};
+      
+      // 2. Only load actual subjects (ignore metadata or empty things)
+      Object.keys(rawQuestions).forEach(key => {
+        if (key !== 'metadata' && Array.isArray(rawQuestions[key]) && rawQuestions[key].length > 0) {
+          questions[key] = rawQuestions[key];
+        }
+      });
+
+      // 3. Set up the answer arrays safely
       Object.keys(questions).forEach(subj => responses[subj] = new Array(questions[subj].length).fill(null));
       currentSubject = Object.keys(questions)[0];
+
       renderTabs();
       loadSubject(currentSubject);
 
