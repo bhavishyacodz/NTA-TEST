@@ -1,33 +1,31 @@
 {
   "JEE Main": {
     "Full Shift PYQs": [
-      { "title": "2024 - 29th Jan Shift 1", "file": "2024_29_jan_s1.json" },
-      { "title": "2024 - 25th Jan Shift 2", "file": "2024_25_jan_s2.json" },
-      { "title": "2024 - 1st Feb Shift 1", "file": "1st Feb Shift 1.json" },
-      { "title": "2024 - 31st Jan Shift 2", "file": "31st Jan Shift 2.json" }
-    ],
-    "Chapter-wise Tests": [
-      { "title": "Physics — Kinematics & Mechanics", "file": "chem_kinematics.json" },
-      { "title": "Chemistry — Thermodynamics", "file": "chem_thermo.json" },
-      { "title": "Maths — Matrices & Determinants", "file": "math_matrices.json" }
+      {
+        "title": "25th Jan Shift 2",
+        "file": "25th Jan Shift 2.json"
+      },
+      {
+        "title": "29th Jan Shift 1",
+        "file": "29th Jan Shift 1.json"
+      },
+      {
+        "title": "31st Jan Shift 2",
+        "file": "31st Jan Shift 2.json"
+      },
+      {
+        "title": "1st Feb Shift 1",
+        "file": "1st Feb Shift 1.json"
+      }
     ]
   },
   "JEE Advanced": {
-    "Paper 1": [
-      { "title": "2024 Paper 1 Full Mock", "file": "adv_2024_p1.json" }
-    ],
-    "Paper 2": [
-      { "title": "2024 Paper 2 Full Mock", "file": "adv_2024_p2.json" }
-    ]
+    "Paper 1": []
   },
   "BITSAT": {
-    "Full Mock Tests": [
-      { "title": "BITSAT 2024 Official Pattern Test 1", "file": "bitsat_test_1.json" }
-    ]
+    "Full Mock Tests": []
   },
   "VITEEE": {
-    "Model Papers": [
-      { "title": "VITEEE 2024 Practice Set 1", "file": "viteee_test_1.json" }
-    ]
+    "Model Papers": []
   }
 }
