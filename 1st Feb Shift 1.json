@@ -1,0 +1,848 @@
+{
+  "Physics": [
+    {
+      "text": "Given below are two statements:\nStatement I: Acceleration due to gravity is different at different places on the surface of earth.\nStatement II: Acceleration due to gravity increases as we go down below the earth's surface.\nIn the light of the above statements, choose the correct answer from the options given below",
+      "options": [
+        "Both Statement I and Statement II are false",
+        "Both Statement I and Statement II are true",
+        "Statement I is false but Statement II is true",
+        "Statement I is true but Statement II is false"
+      ],
+      "type": "mcq",
+      "correct": "3"
+    },
+    {
+      "text": "If earth has a mass nine times and radius twice to that of a planet P. Then $\\frac{v_e}{3}\\sqrt{x}\\text{ ms}^{-1}$ will be the minimum velocity required by a rocket to pull out of gravitational force of P, where $v_e$ is escape velocity on earth. The value of $x$ is",
+      "options": [
+        "18",
+        "3",
+        "2",
+        "1"
+      ],
+      "type": "mcq",
+      "correct": "2"
+    },
+    {
+      "text": "A block of mass $5\\text{ kg}$ is placed at rest on a table of rough surface. Now, if a force of $30\\text{ N}$ is applied in the direction parallel to surface of the table, the block slides through a distance of $50\\text{ m}$ in an interval of time $10\\text{ s}$. Coefficient of kinetic friction is (given, $g = 10\\text{ ms}^{-2}$):",
+      "options": [
+        "0.50",
+        "0.60",
+        "0.75",
+        "0.25"
+      ],
+      "type": "mcq",
+      "correct": "0"
+    },
+    {
+      "text": "A proton moving with one tenth of velocity of light has a certain de Broglie wavelength of $\\lambda$. An alpha particle having certain kinetic energy has the same de-Broglie wavelength $\\lambda$. The ratio of kinetic energy of proton and that of alpha particle is:",
+      "options": [
+        "4 : 1",
+        "1 : 4",
+        "1 : 2",
+        "2 : 1"
+      ],
+      "type": "mcq",
+      "correct": "0"
+    },
+    {
+      "text": "A steel wire with mass per unit length $7.0 \\times 10^{-3}\\text{ kg m}^{-1}$ is under tension of $70\\text{ N}$. The speed of transverse waves in the wire will be:",
+      "options": [
+        "100 m/s",
+        "50 m/s",
+        "10 m/s",
+        "200\\pi m/s"
+      ],
+      "type": "mcq",
+      "correct": "0"
+    },
+    {
+      "text": "The average kinetic energy of a molecule of the gas is",
+      "options": [
+        "proportional to absolute temperature",
+        "dependent on the nature of the gas",
+        "proportional to pressure",
+        "proportional to volume"
+      ],
+      "type": "mcq",
+      "correct": "0"
+    },
+    {
+      "text": "Match List I with List II:\nList I:\nA. Intrinsic semiconductor\nB. n-type semiconductor\nC. p-type semiconductor\nD. Metals\nList II:\nI. Fermi-level near the valence band\nII. Fermi-level in the middle of valence and conduction band\nIII. Fermi-level near the conduction band\nIV. Fermi-level inside the conduction band\nChoose the correct answer from the options given below:",
+      "options": [
+        "A-III, B-I, C-II, D-IV",
+        "A-I, B-II, C-III, D-IV",
+        "A-II, B-III, C-I, D-IV",
+        "A-II, B-I, C-III, D-IV"
+      ],
+      "type": "mcq",
+      "correct": "2"
+    },
+    {
+      "text": "A child stands on the edge of the cliff $10\\text{ m}$ above the ground and throws a stone horizontally with an initial speed of $5\\text{ ms}^{-1}$. Neglecting the air resistance, the speed with which the stone hits the ground will be ____ $\\text{ms}^{-1}$ (given, $g = 10\\text{ ms}^{-2}$).",
+      "options": [
+        "15",
+        "20",
+        "30",
+        "25"
+      ],
+      "type": "mcq",
+      "correct": "0"
+    },
+    {
+      "text": "Find the magnetic field at the point P in figure. The curved portion is a semicircle connected to two long straight wires.",
+      "options": [
+        "$\\frac{\\mu_0 i}{2r}\\left(\\frac{1}{2} + \\frac{1}{2\\pi}\\right)$",
+        "$\\frac{\\mu_0 i}{2r}\\left(1 + \\frac{1}{\\pi}\\right)$",
+        "$\\frac{\\mu_0 i}{2r}\\left(1 + \\frac{2}{\\pi}\\right)$",
+        "$\\frac{\\mu_0 i}{2r}\\left(\\frac{1}{2} + \\frac{1}{\\pi}\\right)$"
+      ],
+      "type": "mcq",
+      "correct": "0"
+    },
+    {
+      "text": "Which of the following frequencies does not belong to FM broadcast.",
+      "options": [
+        "106 MHz",
+        "64 MHz",
+        "89 MHz",
+        "99 MHz"
+      ],
+      "type": "mcq",
+      "correct": "1"
+    },
+    {
+      "text": "The equivalent resistance between A and B of the network shown in figure:",
+      "options": [
+        "14 R",
+        "$11\\frac{2}{3}\\text{ R}$",
+        "$\\frac{8}{3}\\text{ R}$",
+        "21 R"
+      ],
+      "type": "mcq",
+      "correct": "2"
+    },
+    {
+      "text": "A sample of gas at temperature $T$ is adiabatically expanded to double its volume. The work done by the gas in the process is (given, $\\gamma = \\frac{3}{2}$):",
+      "options": [
+        "$W = \\frac{T}{R}\\left[\\sqrt{2}-2\\right]$",
+        "$W = TR\\left[\\sqrt{2}-2\\right]$",
+        "$W = RT\\left[2-\\sqrt{2}\\right]$",
+        "$W = \\frac{R}{T}\\left[2-\\sqrt{2}\\right]$"
+      ],
+      "type": "mcq",
+      "correct": "2"
+    },
+    {
+      "text": "Match List I with List II:\nList I:\nA. AC generator\nB. Transformer\nC. Resonance phenomenon to occur\nD. Sharpness of resonance\nList II:\nI. Presence of both L and C\nII. Electromagnetic Induction\nIII. Quality factor\nIV. Mutual Induction\nChoose the correct answer from the options given below:",
+      "options": [
+        "A-IV, B-III, C-I, D-II",
+        "A-II, B-IV, C-I, D-III",
+        "A-IV, B-II, C-I, D-III",
+        "A-II, B-I, C-III, D-IV"
+      ],
+      "type": "mcq",
+      "correct": "1"
+    },
+    {
+      "text": "Let $\\sigma$ be the uniform surface charge density of two infinite thin plane sheets shown in figure. Then the electric fields in three different region $E_I, E_{II}$ and $E_{III}$ are:",
+      "options": [
+        "$\\vec{E}_I = -\\frac{2\\sigma}{\\epsilon_0}\\hat{n}, \\vec{E}_{II} = 0, \\vec{E}_{III} = \\frac{2\\sigma}{\\epsilon_0}\\hat{n}$",
+        "$\\vec{E}_I = 0, \\vec{E}_{II} = \\frac{\\sigma}{\\epsilon_0}\\hat{n}, \\vec{E}_{III} = 0$",
+        "$\\vec{E}_I = -\\frac{\\sigma}{\\epsilon_0}\\hat{n}, \\vec{E}_{II} = 0, \\vec{E}_{III} = \\frac{\\sigma}{\\epsilon_0}\\hat{n}$",
+        "$\\vec{E}_I = -\\frac{\\sigma}{2\\epsilon_0}\\hat{n}, \\vec{E}_{II} = 0, \\vec{E}_{III} = \\frac{\\sigma}{2\\epsilon_0}\\hat{n}$"
+      ],
+      "type": "mcq",
+      "correct": "2"
+    },
+    {
+      "text": "Match List I with List II:\nList I:\nA. Microwaves\nB. Gamma rays\nC. Radio waves\nD. X-rays\nList II:\nI. Radio active decay of the nucleus\nII. Rapid acceleration and deceleration of electron in aerials\nIII. Inner shell electrons\nIV. Klystron valve\nChoose the correct answer from the options given below:",
+      "options": [
+        "A-I, B-III, C-IV, D-II",
+        "A-IV, B-III, C-II, D-I",
+        "A-IV, B-I, C-II, D-III",
+        "A-I, B-II, C-III, D-IV"
+      ],
+      "type": "mcq",
+      "correct": "2"
+    },
+    {
+      "text": "$\\left(P + \\frac{a}{V^2}\\right)(V - b) = RT$ represents the equation of state of some gases. Where $P$ is the pressure, $V$ is the volume, $T$ is the temperature and $a, b, R$ are the constants. The physical quantity, which has dimensional formula as that of $\\frac{b^2}{a}$, will be:",
+      "options": [
+        "Bulk modulus",
+        "Modulus of rigidity",
+        "Energy density",
+        "Compressibility"
+      ],
+      "type": "mcq",
+      "correct": "3"
+    },
+    {
+      "text": "The mass of proton, neutron and helium nucleus are respectively $1.0073\\text{ u}$, $1.0087\\text{ u}$ and $4.0015\\text{ u}$. The binding energy of helium nucleus is:",
+      "options": [
+        "14.2 MeV",
+        "56.8 MeV",
+        "28.4 MeV",
+        "7.1 MeV"
+      ],
+      "type": "mcq",
+      "correct": "2"
+    },
+    {
+      "text": "A mercury drop of radius $10^{-3}\\text{ m}$ is broken into $125$ equal size droplets. Surface tension of mercury is $0.45\\text{ Nm}^{-1}$. The gain in surface energy is:",
+      "options": [
+        "$5 \\times 10^{-5}\\text{ J}$",
+        "$2.26 \\times 10^{-5}\\text{ J}$",
+        "$17.5 \\times 10^{-5}\\text{ J}$",
+        "$28 \\times 10^{-5}\\text{ J}$"
+      ],
+      "type": "mcq",
+      "correct": "1"
+    },
+    {
+      "text": "'$n$' polarizing sheets are arranged such that each makes an angle $45^\\circ$ with the preceding sheet. An unpolarized light of intensity $I$ is incident into this arrangement. The output intensity is found to be $I/64$. The value of $n$ will be:",
+      "options": [
+        "6",
+        "3",
+        "5",
+        "4"
+      ],
+      "type": "mcq",
+      "correct": "0"
+    },
+    {
+      "text": "An object moves with speed $v_1, v_2$ and $v_3$ along a line segment AB, BC and CD respectively as shown in figure. Where AB=BC and AD=3AB, then average speed of the object will be:",
+      "options": [
+        "$\\frac{v_1 v_2 v_3}{3(v_1 v_2 + v_2 v_3 + v_3 v_1)}$",
+        "$\\frac{3 v_1 v_2 v_3}{(v_1 v_2 + v_2 v_3 + v_3 v_1)}$",
+        "$\\frac{(v_1 + v_2 + v_3)}{3}$",
+        "$\\frac{(v_1 + v_2 + v_3)}{3 v_1 v_2 v_3}$"
+      ],
+      "type": "mcq",
+      "correct": "1"
+    },
+    {
+      "text": "In an experiment to find emf of a cell using potentiometer, the length of null point for a cell of emf $1.5\\text{ V}$ is found to be $60\\text{ cm}$. If this cell is replaced by another cell of emf $E$, the length-of null point increases by $40\\text{ cm}$. The value of $E$ is $\\frac{x}{10}\\text{ V}$. The value of $x$ is ________.",
+      "options": [],
+      "type": "integer",
+      "correct": "25"
+    },
+    {
+      "text": "A thin cylindrical rod of length $10\\text{ cm}$ is placed horizontally on the principle axis of a concave mirror of focal length $20\\text{ cm}$. The rod is placed in such a way that mid point of the rod is at $40\\text{ cm}$ from the pole of mirror. The length of the image formed by the mirror will be $\\frac{x}{3}\\text{ cm}$. The value of $x$ is ________.",
+      "options": [],
+      "type": "integer",
+      "correct": "32"
+    },
+    {
+      "text": "A certain pressure '$P$' is applied to $1\\text{ litre}$ of water and $2\\text{ litre}$ of a liquid separately. Water gets compressed to $0.01\\%$ whereas the liquid gets compressed to $0.03\\%$. The ratio of Bulk modulus of water to that of the liquid is $\\frac{3}{x}$. The value of $x$ is ________.",
+      "options": [],
+      "type": "integer",
+      "correct": "1"
+    },
+    {
+      "text": "A small particle moves to position $5\\hat{i} - 2\\hat{j} + \\hat{k}$ from its initial position $2\\hat{i} + 3\\hat{j} - 4\\hat{k}$ under the action of force $5\\hat{i} + 2\\hat{j} + 7\\hat{k}\\text{ N}$. The value of work done will be ________ $\\text{J}$.",
+      "options": [],
+      "type": "integer",
+      "correct": "40"
+    },
+    {
+      "text": "A solid cylinder is released from rest from the top of an inclined plane of inclination $30^\\circ$ and length $60\\text{ cm}$. If the cylinder rolls without slipping, its speed upon reaching the bottom of the inclined plane is ________ $\\text{ms}^{-1}$. (Given $g = 10\\text{ ms}^{-2}$)",
+      "options": [],
+      "type": "integer",
+      "correct": "2"
+    },
+    {
+      "text": "A light of energy $12.75\\text{ eV}$ is incident on a hydrogen atom in its ground state. The atom absorbs the radiation and reaches to one of its excited states. The angular momentum of the atom in the excited state is $\\frac{x}{\\pi} \\times 10^{-17}\\text{ eV s}$. The value of $x$ is ________.",
+      "options": [],
+      "type": "integer",
+      "correct": "828"
+    },
+    {
+      "text": "A charge particle of $2\\text{ }\\mu\\text{C}$ accelerated by a potential difference of $100\\text{ V}$ enters a region of uniform magnetic field of magnitude $4\\text{ mT}$ at right angle to the direction of field. The charge particle completes semicircle of radius $3\\text{ cm}$ inside magnetic field. The mass of the charge particle is ________ $\\times 10^{-18}\\text{ kg}$.",
+      "options": [],
+      "type": "integer",
+      "correct": "144"
+    },
+    {
+      "text": "A series LCR circuit is connected to an ac source of $220\\text{V}, 50\\text{Hz}$. The circuit contain a resistance $R = 100\\,\\Omega$ and an inductor of inductive reactance $X_L = 79.6\\,\\Omega$. The capacitance of the capacitor needed to maximize the average rate at which energy is supplied will be ________ $\\mu\\text{F}$.",
+      "options": [],
+      "type": "integer",
+      "correct": "40"
+    },
+    {
+      "text": "The amplitude of a particle executing SHM is $3\\text{ cm}$. The displacement at which its kinetic energy will be $25\\%$ more than the potential energy is: ________ $\\text{cm}$.",
+      "options": [],
+      "type": "integer",
+      "correct": "2"
+    },
+    {
+      "text": "Two equal positive point charges are separated by a distance $2a$. The distance of a point from the centre of the line joining two charges on the equatorial line (perpendicular bisector) at which force experienced by a test charge $q_0$ becomes maximum is $\\frac{a}{\\sqrt{x}}$. The value of $x$ is ________.",
+      "options": [],
+      "type": "integer",
+      "correct": "2"
+    }
+  ],
+  "Chemistry": [
+    {
+      "text": "Identify the incorrect option from the following:",
+      "options": [
+        "Chlorobenzene $+ \\text{H}_3\\text{C-C(=O)-Cl} \\xrightarrow{\\text{anhyd } \\text{AlCl}_3} 4\\text{-methylchlorobenzene} + \\text{HCl}$",
+        "Chlorobenzene $\\xrightarrow{\\text{(i) NaOH, 623 K, 300 atm; (ii) HCl}} \\text{Phenol}$",
+        "$\\text{CH}_3\\text{-CH}_2\\text{-Br} + \\text{KOH(aq)} \\rightarrow \\text{CH}_3\\text{-CH}_2\\text{-OH} + \\text{KBr}$",
+        "$\\text{CH}_3\\text{-CH}_2\\text{-Br} + \\text{KOH(alc)} \\rightarrow \\text{CH}_3\\text{-CH}_2\\text{-OH} + \\text{KBr}$"
+      ],
+      "type": "mcq",
+      "correct": "3"
+    },
+    {
+      "text": "Given below are two statements: one is labelled as Assertion A and the other is labelled as Reason R\nAssertion A: Hydrogen is an environment friendly fuel.\nReason R: Atomic number of hydrogen is 1 and it is a very light element.\nIn the light of the above statements, choose the correct answer from the options given below",
+      "options": [
+        "A is true but R is false",
+        "Both A and R are true and R is the correct explanation of A",
+        "A is false but R is true",
+        "Both A and R are true but R is NOT the correct explanation of A"
+      ],
+      "type": "mcq",
+      "correct": "3"
+    },
+    {
+      "text": "But-2-yne is reacted separately with one mole of Hydrogen as shown below:\n$\\text{B} \\xleftarrow{\\text{Na / liq NH}_3} \\text{CH}_3-\\text{C}\\equiv\\text{C}-\\text{CH}_3 \\xrightarrow[\\Delta]{\\text{Pd/C} + \\text{H}_2} \\text{A}$\nA. A is more soluble than B.\nB. The boiling point & melting point of A are higher and lower than B respectively.\nC. A is more polar than B because dipole moment of A is zero.\nD. $\\text{Br}_2$ adds easily to B than A.\nIdentify the incorrect statements from the options given below:",
+      "options": [
+        "A and B only",
+        "B, C & D only",
+        "A, C & D only",
+        "B and C only"
+      ],
+      "type": "mcq",
+      "correct": "1"
+    },
+    {
+      "text": "Which of the following are the example of double salt?\nA. $\\text{FeSO}_4 \\cdot (\\text{NH}_4)_2\\text{SO}_4 \\cdot 6\\text{H}_2\\text{O}$\nB. $\\text{CuSO}_4 \\cdot 4\\text{NH}_3 \\cdot \\text{H}_2\\text{O}$\nC. $\\text{K}_2\\text{SO}_4 \\cdot \\text{Al}_2(\\text{SO}_4)_3 \\cdot 24\\text{H}_2\\text{O}$\nD. $\\text{Fe(CN)}_2 \\cdot 4\\text{KCN}$\nChoose the correct answer",
+      "options": [
+        "A, B and D only",
+        "A and B only",
+        "B and D only",
+        "A and C only"
+      ],
+      "type": "mcq",
+      "correct": "3"
+    },
+    {
+      "text": "Given below are two statements:\nStatement I: Chlorine can easily combine with oxygen to form oxides; and the product has a tendency to explode.\nStatement II: Chemical reactivity of an element can be determined by its reaction with oxygen and halogens.\nIn the light of the above statements, choose the correct answer from the options given below",
+      "options": [
+        "Both the Statements I and II are false",
+        "Statement I is false but Statement II is true",
+        "Statement I is true but Statement II is false",
+        "Both the Statements I and II are true"
+      ],
+      "type": "mcq",
+      "correct": "3"
+    },
+    {
+      "text": "Given below are two statements: one is labelled as Assertion A and the other is labelled as Reason R\nAssertion A: In an Ellingham diagram, the oxidation of carbon to carbon monoxide shows a negative slope with respect to temperature.\nReason R: CO tends to get decomposed at higher temperature.\nIn the light of the above statements, choose the correct answer from the options given below",
+      "options": [
+        "A is not correct but R is correct",
+        "Both A and R are correct and R is the correct explanation of A",
+        "Both A and R are correct but R is NOT the correct explanation of A",
+        "A is correct but R is not correct"
+      ],
+      "type": "mcq",
+      "correct": "3"
+    },
+    {
+      "text": "Choose the correct statement(s):\nA. Beryllium oxide is purely acidic in nature.\nB. Beryllium carbonate is kept in the atmosphere of $\\text{CO}_2$.\nC. Beryllium sulphate is readily soluble in water.\nD. Beryllium shows anomalous behavior.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A, B and C only",
+        "B, C and D only",
+        "A and B only",
+        "A only"
+      ],
+      "type": "mcq",
+      "correct": "1"
+    },
+    {
+      "text": "Decreasing order of dehydration of the following alcohols is:\na = phenol/cyclohexanol derivative, b = allylic alcohol, c = cyclohex-3-en-1-ol, d = cyclohexanol",
+      "options": [
+        "$d > b > c > a$",
+        "$a > d > b > c$",
+        "$b > a > d > c$",
+        "$b > d > c > a$"
+      ],
+      "type": "mcq",
+      "correct": "3"
+    },
+    {
+      "text": "The correct representation in six membered pyranose form for the given sugar [X] (D-Glucose/Hexose derivative) is:",
+      "options": [
+        "Structure 1",
+        "Structure 2",
+        "Structure 3",
+        "Structure 4"
+      ],
+      "type": "mcq",
+      "correct": "2"
+    },
+    {
+      "text": "Which of the following complex will show largest splitting of d-orbitals?",
+      "options": [
+        "$[\\text{Fe(CN)}_6]^{3-}$",
+        "$[\\text{Fe(C}_2\\text{O}_4)_3]^{3-}$",
+        "$[\\text{FeF}_6]^{3-}$",
+        "$[\\text{Fe(NH}_3)_6]^{3+}$"
+      ],
+      "type": "mcq",
+      "correct": "0"
+    },
+    {
+      "text": "Given below are two statements: One is labelled as Assertion A and the other is labelled as Reason R\nAssertion A: Amongst He, Ne, Ar and Kr; 1g of activated charcoal adsorbs more of Kr.\nReason R: The critical volume $V_c\\text{ (cm}^3\\text{ mol}^{-1})$ and critical pressure $P_c\\text{ (atm)}$ is highest for Krypton but the compressibility factor at critical point $Z_c$ is lowest for Krypton.\nIn the light of the above statements, choose the correct answer from the options given below",
+      "options": [
+        "A is true but R is false",
+        "Both A and R are true and R is the correct explanation of A",
+        "Both A and R are true but R is NOT the correct explanation of A",
+        "A is false but R is true"
+      ],
+      "type": "mcq",
+      "correct": "0"
+    },
+    {
+      "text": "Resonance in carbonate ion ($\\text{CO}_3^{2-}$) is shown by three canonical structures. Which of the following is true?",
+      "options": [
+        "It is possible to identify each structure individually by some physical or chemical method.",
+        "All these structures are in dynamic equilibrium with each other.",
+        "$\\text{CO}_3^{2-}$ has a single structure i.e., resonance hybrid of the above three structures.",
+        "Each structure exists for equal amount of time."
+      ],
+      "type": "mcq",
+      "correct": "2"
+    },
+    {
+      "text": "How can photochemical smog be controlled?",
+      "options": [
+        "By using catalytic convertors in the automobiles/industry.",
+        "By using catalyst.",
+        "By using tall chimneys.",
+        "By complete combustion of fuel."
+      ],
+      "type": "mcq",
+      "correct": "0"
+    },
+    {
+      "text": "Match List I with List II:\nList I:\n(A) Tranquilizers\n(B) Aspirin\n(C) Antibiotic\n(D) Antiseptic\nList II:\n(I) Anti blood clotting\n(II) Salvarsan\n(III) Antidepressant drugs\n(IV) Soframicine\nChoose the correct answer from the options given below:",
+      "options": [
+        "(A) - III, (B) - I, (C) - II, (D) - IV",
+        "(A) - II, (B) - I, (C) - III, (D) - IV",
+        "(A) - II, (B) - IV, (C) - I, (D) - III",
+        "(A) - IV, (B) - II, (C) - I, (D) - III"
+      ],
+      "type": "mcq",
+      "correct": "0"
+    },
+    {
+      "text": "Highest oxidation state of Mn is exhibited in $\\text{Mn}_2\\text{O}_7$. The correct statements about $\\text{Mn}_2\\text{O}_7$ are:\n(A) Mn is tetrahedrally surrounded by oxygen atoms.\n(B) Mn is octahedrally surrounded by oxygen atoms.\n(C) Contains Mn-O-Mn bridge.\n(D) Contains Mn-Mn bond.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A and D only",
+        "A and C only",
+        "B and D only",
+        "B and C only"
+      ],
+      "type": "mcq",
+      "correct": "1"
+    },
+    {
+      "text": "Match List I with List II:\nList I (Test):\n(A) Molisch's Test\n(B) Biuret Test\n(C) Carbylamine Test\n(D) Schiff's Test\nList II (Functional group / Class of Compound):\n(I) Peptide\n(II) Carbohydrate\n(III) Primary amine\n(IV) Aldehyde\nChoose the correct answer from the options given below:",
+      "options": [
+        "(A) - I, (B) - II, (C) - III, (D) - IV",
+        "(A) - II, (B) - I, (C) - III, (D) - IV",
+        "(A) - III, (B) - IV, (C) - II, (D) - I",
+        "(A) - III, (B) - IV, (C) - I, (D) - II"
+      ],
+      "type": "mcq",
+      "correct": "1"
+    },
+    {
+      "text": "Which of the following represents the lattice structure of $\\text{A}_{0.95}\\text{O}$ containing $\\text{A}^{2+}$, $\\text{A}^{3+}$ and $\\text{O}^{2-}$ ions?",
+      "options": [
+        "A and B only",
+        "B and C only",
+        "B only",
+        "A only"
+      ],
+      "type": "mcq",
+      "correct": "2"
+    },
+    {
+      "text": "Match List I with List II:\nList I:\n(A) Slaked lime\n(B) Dead burnt plaster\n(C) Caustic soda\n(D) Washing soda\nList II:\n(I) NaOH\n(II) $\\text{Ca(OH)}_2$\n(III) $\\text{Na}_2\\text{CO}_3 \\cdot 10\\text{H}_2\\text{O}$\n(IV) $\\text{CaSO}_4$\nChoose the correct answer from the options given below:",
+      "options": [
+        "(A) - II, (B) - IV, (C) - I, (D) - III",
+        "(A) - III, (B) - II, (C) - IV, (D) - I",
+        "(A) - III, (B) - IV, (C) - II, (D) - I",
+        "(A) - I, (B) - IV, (C) - II, (D) - III"
+      ],
+      "type": "mcq",
+      "correct": "0"
+    },
+    {
+      "text": "In the following reaction, 'A' is:\n2-amino-propan-1-ol + diethyl carbonate $\\text{EtO-C(=O)-OEt} \\rightarrow \\text{'A' Major product}$",
+      "options": [
+        "Structure 1",
+        "Structure 2",
+        "Structure 3",
+        "Structure 4"
+      ],
+      "type": "mcq",
+      "correct": "2"
+    },
+    {
+      "text": "A solution of $\\text{FeCl}_3$ when treated with $\\text{K}_4[\\text{Fe(CN)}_6]$ gives a prussian blue precipitate due to the formation of",
+      "options": [
+        "$\\text{Fe}[\\text{Fe(CN)}_6]$",
+        "$\\text{Fe}_3[\\text{Fe(CN)}_6]_2$",
+        "$\\text{Fe}_4[\\text{Fe(CN)}_6]_3$",
+        "$\\text{K}[\\text{Fe}_2(\\text{CN})_6]$"
+      ],
+      "type": "mcq",
+      "correct": "2"
+    },
+    {
+      "text": "The total number of chiral compound/s from the given structures is ________.",
+      "options": [],
+      "type": "integer",
+      "correct": "2"
+    },
+    {
+      "text": "$25\\text{ mL}$ of an aqueous solution of $\\text{KCl}$ was found to require $20\\text{ mL}$ of $1\\text{ M}$ $\\text{AgNO}_3$ solution when titrated using $\\text{K}_2\\text{CrO}_4$ as an indicator. What is the depression in freezing point of $\\text{KCl}$ solution of the given concentration? ________ (Nearest integer).\n(Given: $K_f = 2.0\\text{ K kg mol}^{-1}$)\nAssume 1) $100\\%$ ionization and 2) density of the aqueous solution as $1\\text{ g mL}^{-1}$.",
+      "options": [],
+      "type": "integer",
+      "correct": "3"
+    },
+    {
+      "text": "Sum of oxidation states of bromine in bromic acid and perbromic acid is ________.",
+      "options": [],
+      "type": "integer",
+      "correct": "12"
+    },
+    {
+      "text": "The density of $3\\text{ M}$ solution of $\\text{NaCl}$ is $1.0\\text{ g mL}^{-1}$. Molality of the solution is ________ $\\times 10^{-2}\\text{ m}$ (Nearest integer).\nGiven: Molar mass of Na and Cl is $23$ and $35.5\\text{ g mol}^{-1}$ respectively.",
+      "options": [],
+      "type": "integer",
+      "correct": "364"
+    },
+    {
+      "text": "At $25^\\circ\\text{C}$, the enthalpy of the following processes are given:\n$\\text{H}_2(g) + \\text{O}_2(g) \\rightarrow 2\\text{OH}(g) \\quad \\Delta H^\\circ = 78\\text{ kJ mol}^{-1}$\n$\\text{H}_2(g) + \\frac{1}{2}\\text{O}_2(g) \\rightarrow \\text{H}_2\\text{O}(g) \\quad \\Delta H^\\circ = -242\\text{ kJ mol}^{-1}$\n$\\text{H}_2(g) \\rightarrow 2\\text{H}(g) \\quad \\Delta H^\\circ = 436\\text{ kJ mol}^{-1}$\n$\\frac{1}{2}\\text{O}_2(g) \\rightarrow \\text{O}(g) \\quad \\Delta H^\\circ = 249\\text{ kJ mol}^{-1}$\nWhat would be the value of $X$ for the following reaction? ________ (Nearest integer)\n$\\text{H}_2\\text{O}(g) \\rightarrow \\text{H}(g) + \\text{OH}(g) \\quad \\Delta H^\\circ = X\\text{ kJ mol}^{-1}$",
+      "options": [],
+      "type": "integer",
+      "correct": "499"
+    },
+    {
+      "text": "Electrons in a cathode ray tube have been emitted with a velocity of $1000\\text{ m s}^{-1}$. The number of following statements which is/are true about the emitted radiation is ________.\nGiven: $h = 6 \\times 10^{-34}\\text{ J s}$, $m_e = 9 \\times 10^{-31}\\text{ kg}$.\n(A) The deBroglie wavelength of the electron emitted is $666.67\\text{ nm}$.\n(B) The characteristic of electrons emitted depend upon the material of the electrodes of the cathode ray tube.\n(C) The cathode rays start from cathode and move towards anode.\n(D) The nature of the emitted electrons depends on the nature of the gas present in cathode ray tube.",
+      "options": [],
+      "type": "integer",
+      "correct": "2"
+    },
+    {
+      "text": "At what pH, given half cell $\\text{MnO}_4^-(0.1\\text{ M}) \\mid \\text{Mn}^{2+}(0.001\\text{ M})$ will have electrode potential of $1.282\\text{ V}$? ________ (Nearest Integer)\nGiven $E^\\circ_{\\text{MnO}_4^-/\\text{Mn}^{2+}} = 1.54\\text{V}$, $\\frac{2.303 RT}{F} = 0.059\\text{V}$.",
+      "options": [],
+      "type": "integer",
+      "correct": "3"
+    },
+    {
+      "text": "Number of isomeric compounds with molecular formula $\\text{C}_9\\text{H}_{10}\\text{O}$ which (i) do not dissolve in $\\text{NaOH}$ (ii) do not dissolve in $\\text{HCl}$ (iii) do not give orange precipitate with 2,4-DNP (iv) on hydrogenation give identical compound with molecular formula $\\text{C}_9\\text{H}_{12}\\text{O}$ is ________.",
+      "options": [],
+      "type": "integer",
+      "correct": "2"
+    },
+    {
+      "text": "A and B are two substances undergoing radioactive decay in a container. The half life of A is $15\\text{ min}$ and that of B is $5\\text{ min}$. If the initial concentration of B is $4$ times that of A and they both start decaying at the same time, how much time will it take for the concentration of both of them to be same? ________ $\\text{min}$.",
+      "options": [],
+      "type": "integer",
+      "correct": "15"
+    },
+    {
+      "text": "(i) $\\text{X}(g) \\rightleftharpoons \\text{Y}(g) + \\text{Z}(g) \\quad K_{p1} = 3$\n(ii) $\\text{A}(g) \\rightleftharpoons 2\\text{B}(g) \\quad K_{p2} = 1$\nIf the degree of dissociation and initial concentration of both the reactants $\\text{X}(g)$ and $\\text{A}(g)$ are equal, then the ratio of the total pressure at equilibrium $\\frac{P_1}{P_2}$ is equal to $x : 1$. The value of $x$ is ________ (Nearest integer).",
+      "options": [],
+      "type": "integer",
+      "correct": "12"
+    }
+  ],
+  "Mathematics": [
+    {
+      "text": "If the orthocentre of the triangle, whose vertices are $(1, 2)$, $(2, 3)$ and $(3, 1)$ is $(\\alpha, \\beta)$, then the quadratic equation whose roots are $\\alpha + 4\\beta$ and $4\\alpha + \\beta$, is",
+      "options": [
+        "$x^2 - 18x + 80 = 0$",
+        "$x^2 - 20x + 99 = 0$",
+        "$x^2 - 19x + 90 = 0$",
+        "$x^2 - 22x + 120 = 0$"
+      ],
+      "type": "mcq",
+      "correct": "1"
+    },
+    {
+      "text": "The shortest distance between the lines $\\frac{x-5}{1} = \\frac{y-2}{2} = \\frac{z-4}{-3}$ and $\\frac{x+3}{1} = \\frac{y+5}{4} = \\frac{z-1}{-5}$ is",
+      "options": [
+        "$4\\sqrt{3}$",
+        "$7\\sqrt{3}$",
+        "$5\\sqrt{3}$",
+        "$6\\sqrt{3}$"
+      ],
+      "type": "mcq",
+      "correct": "3"
+    },
+    {
+      "text": "Let $S = \\left\\{ x : x \\in \\mathbb{R} \\text{ and } (\\sqrt{3}+\\sqrt{2})^{x^2-4} + (\\sqrt{3}-\\sqrt{2})^{x^2-4} = 10 \\right\\}$. Then $n(S)$ is equal to",
+      "options": [
+        "4",
+        "0",
+        "6",
+        "2"
+      ],
+      "type": "mcq",
+      "correct": "0"
+    },
+    {
+      "text": "The area enclosed by the closed curve $C$ given by the differential equation $\\frac{dy}{dx} + \\frac{x+a}{y-2} = 0$, $y(1) = 0$ is $4\\pi$.\nLet $P$ and $Q$ be the points of intersection of the curve $C$ and the y-axis. If normals at $P$ and $Q$ on the curve $C$ intersect x-axis at points $R$ and $S$ respectively, then the length of the line segment RS is",
+      "options": [
+        "2",
+        "$\\frac{4\\sqrt{3}}{3}$",
+        "$2\\sqrt{3}$",
+        "$\\frac{2\\sqrt{3}}{3}$"
+      ],
+      "type": "mcq",
+      "correct": "1"
+    },
+    {
+      "text": "The negation of the expression $q \\lor ((\\sim q) \\land p)$ is equivalent to",
+      "options": [
+        "$p \\land (\\sim q)$",
+        "$(\\sim p) \\lor (\\sim q)$",
+        "$(\\sim p) \\lor q$",
+        "$(\\sim p) \\land (\\sim q)$"
+      ],
+      "type": "mcq",
+      "correct": "3"
+    },
+    {
+      "text": "The sum to $10$ terms of the series $\\frac{1}{1+1^2+1^4} + \\frac{2}{1+2^2+2^4} + \\frac{3}{1+3^2+3^4} + \\dots$ is",
+      "options": [
+        "$\\frac{56}{111}$",
+        "$\\frac{58}{111}$",
+        "$\\frac{55}{111}$",
+        "$\\frac{59}{111}$"
+      ],
+      "type": "mcq",
+      "correct": "2"
+    },
+    {
+      "text": "If $y=y(x)$ is the solution curve of the differential equation $\\frac{dy}{dx} + y\\tan x = x\\sec x$, $0 \\le x \\le \\frac{\\pi}{3}$, $y(0)=1$, then $y\\left(\\frac{\\pi}{6}\\right)$ is equal to",
+      "options": [
+        "$\\frac{\\pi}{12} - \\frac{\\sqrt{3}}{2} \\log_e \\left(\\frac{2}{e\\sqrt{3}}\\right)$",
+        "$\\frac{\\pi}{12} + \\frac{\\sqrt{3}}{2} \\log_e \\left(\\frac{2\\sqrt{3}}{e}\\right)$",
+        "$\\frac{\\pi}{12} + \\frac{\\sqrt{3}}{2} \\log_e \\left(\\frac{2}{e\\sqrt{3}}\\right)$",
+        "$\\frac{\\pi}{12} - \\frac{\\sqrt{3}}{2} \\log_e \\left(\\frac{2\\sqrt{3}}{e}\\right)$"
+      ],
+      "type": "mcq",
+      "correct": "0"
+    },
+    {
+      "text": "For a triangle $ABC$, the value of $\\cos 2A + \\cos 2B + \\cos 2C$ is least. If its inradius is $3$ and incentre is $M$, then which of the following is NOT correct?",
+      "options": [
+        "$\\vec{MA} \\cdot \\vec{MB} = -18$",
+        "$\\sin 2A + \\sin 2B + \\sin 2C = \\sin A + \\sin B + \\sin C$",
+        "$\\text{area of } \\Delta ABC \\text{ is } \\frac{27\\sqrt{3}}{2}$",
+        "$\\text{perimeter of } \\Delta ABC \\text{ is } 18\\sqrt{3}$"
+      ],
+      "type": "mcq",
+      "correct": "2"
+    },
+    {
+      "text": "Let the image of the point $P(2, -1, 3)$ in the plane $x + 2y - z = 0$ be $Q$. Then the distance of the plane $3x + 2y + z + 29 = 0$ from the point $Q$ is",
+      "options": [
+        "$\\frac{24\\sqrt{2}}{7}$",
+        "$3\\sqrt{14}$",
+        "$2\\sqrt{14}$",
+        "$\\frac{22\\sqrt{2}}{7}$"
+      ],
+      "type": "mcq",
+      "correct": "1"
+    },
+    {
+      "text": "The mean and variance of $5$ observations are $5$ and $8$ respectively. If $3$ observations are $1, 3, 5$, then the sum of cubes of the remaining two observations is",
+      "options": [
+        "1456",
+        "1792",
+        "1216",
+        "1072"
+      ],
+      "type": "mcq",
+      "correct": "3"
+    },
+    {
+      "text": "Let $R$ be a relation on $\\mathbb{R}$, given by $R = \\{ (a, b) : 3a - 3b + \\sqrt{7} \\text{ is an irrational number} \\}$. Then $R$ is",
+      "options": [
+        "an equivalence relation",
+        "reflexive and symmetric but not transitive",
+        "reflexive and transitive but not symmetric",
+        "reflexive but neither symmetric nor transitive"
+      ],
+      "type": "mcq",
+      "correct": "3"
+    },
+    {
+      "text": "Let $S$ be the set of all solutions of the equation $\\cos^{-1}(2x) - 2\\cos^{-1}\\left(\\sqrt{1-x^2}\\right) = \\pi$, $x \\in \\left[-\\frac{1}{2}, \\frac{1}{2}\\right]$. Then $\\sum_{x \\in S} 2\\sin^{-1}(x^2-1)$ is equal to",
+      "options": [
+        "$\\pi - \\sin^{-1}\\left(\\frac{\\sqrt{3}}{4}\\right)$",
+        "$\\pi - 2\\sin^{-1}\\left(\\frac{\\sqrt{3}}{4}\\right)$",
+        "$\\frac{-2\\pi}{3}$",
+        "0"
+      ],
+      "type": "mcq",
+      "correct": "2"
+    },
+    {
+      "text": "$\\lim_{n \\to \\infty} \\left[ \\frac{1}{1+n} + \\frac{1}{2+n} + \\frac{1}{3+n} + \\dots + \\frac{1}{2n} \\right]$ is equal to",
+      "options": [
+        "$\\log_e 2$",
+        "$\\log_e \\left(\\frac{3}{2}\\right)$",
+        "$\\log_e \\left(\\frac{2}{3}\\right)$",
+        "0"
+      ],
+      "type": "mcq",
+      "correct": "0"
+    },
+    {
+      "text": "If the center and radius of the circle $\\left|\\frac{z-2}{z-3}\\right| = 2$ are respectively $(\\alpha, \\beta)$ and $\\gamma$, then $3(\\alpha + \\beta + \\gamma)$ is equal to",
+      "options": [
+        "12",
+        "11",
+        "9",
+        "10"
+      ],
+      "type": "mcq",
+      "correct": "0"
+    },
+    {
+      "text": "Let $f(x) = \\begin{vmatrix} 1+\\sin^2 x & \\cos^2 x & \\sin 2x \\\\ \\sin^2 x & 1+\\cos^2 x & \\sin 2x \\\\ \\sin^2 x & \\cos^2 x & 1+\\sin 2x \\end{vmatrix}$, $x \\in \\left[\\frac{\\pi}{6}, \\frac{\\pi}{3}\\right]$. If $\\alpha$ and $\\beta$ respectively are the maximum and the minimum values of $f$, then",
+      "options": [
+        "$\\beta^2 + 2\\sqrt{\\alpha} = \\frac{19}{4}$",
+        "$\\beta^2 - 2\\sqrt{\\alpha} = \\frac{19}{4}$",
+        "$\\alpha^2 + \\beta^2 = \\frac{9}{2}$",
+        "$\\alpha^2 - \\beta^2 = 4\\sqrt{3}$"
+      ],
+      "type": "mcq",
+      "correct": "1"
+    },
+    {
+      "text": "The value of $\\frac{1}{1!50!} + \\frac{1}{3!48!} + \\frac{1}{5!46!} + \\dots + \\frac{1}{49!2!} + \\frac{1}{51!1!}$ is:",
+      "options": [
+        "$\\frac{2^{51}}{50!}$",
+        "$\\frac{2^{51}}{51!}$",
+        "$\\frac{2^{50}}{51!}$",
+        "$\\frac{2^{50}}{50!}$"
+      ],
+      "type": "mcq",
+      "correct": "2"
+    },
+    {
+      "text": "Let $f(x) = 2x + \\tan^{-1} x$ and $g(x) = \\log_e(\\sqrt{1+x^2} + x)$, $x \\in [0, 3]$. Then",
+      "options": [
+        "there exist $0 < x_1 < x_2 < 3$ such that $f(x) < g(x)$, $\\forall x \\in (x_1, x_2)$",
+        "there exists $\\hat{x} \\in [0, 3]$ such that $f'(\\hat{x}) < g'(\\hat{x})$",
+        "$\\max f(x) > \\max g(x)$",
+        "$\\min f'(x) = 1 + \\max g'(x)$"
+      ],
+      "type": "mcq",
+      "correct": "2"
+    },
+    {
+      "text": "Let $S$ denote the set of all real values of $\\lambda$ such that the system of equations\n$\\lambda x + y + z = 1$\n$x + \\lambda y + z = 1$\n$x + y + \\lambda z = 1$\nis inconsistent, then $\\sum_{\\lambda \\in S} (|\\lambda|^2 + |\\lambda|)$ is equal to",
+      "options": [
+        "12",
+        "2",
+        "6",
+        "4"
+      ],
+      "type": "mcq",
+      "correct": "2"
+    },
+    {
+      "text": "The combined equation of the two lines $ax+by+c=0$ and $a'x+b'y+c'=0$ can be written as $(ax+by+c)(a'x+b'y+c')=0$.\nThe equation of the angle bisectors of the lines represented by the equation $2x^2 + xy - 3y^2 = 0$ is",
+      "options": [
+        "$x^2 - y^2 - 10xy = 0$",
+        "$3x^2 + 5xy + 2y^2 = 0$",
+        "$x^2 - y^2 + 10xy = 0$",
+        "$3x^2 + xy - 2y^2 = 0$"
+      ],
+      "type": "mcq",
+      "correct": "0"
+    },
+    {
+      "text": "In a binomial distribution $B(n, p)$, the sum and the product of the mean and the variance are $5$ and $6$ respectively, then $6(n + p - q)$ is equal to",
+      "options": [
+        "50",
+        "52",
+        "53",
+        "51"
+      ],
+      "type": "mcq",
+      "correct": "1"
+    },
+    {
+      "text": "Let $A$ be the area bounded by the curve $y = x|x - 3|$, the x-axis and the ordinates $x = -1$ and $x = 2$. Then $12 A$ is equal to ________.",
+      "options": [],
+      "type": "integer",
+      "correct": "62"
+    },
+    {
+      "text": "Let $\\vec{v} = a\\hat{i} + 2\\hat{j} - 3\\hat{k}$, $\\vec{w} = 2a\\hat{i} + \\hat{j} - \\hat{k}$ and $\\vec{u}$ be a vector such that $|\\vec{u}| = a > 0$. If the minimum value of the scalar triple product $[\\vec{u}\\ \\vec{v}\\ \\vec{w}]$ is $-a\\sqrt{3401}$, and $|\\vec{u} \\cdot \\hat{i}|^2 = \\frac{m}{n}$ where $m$ and $n$ are coprime natural numbers, then $m+n$ is equal to ________.",
+      "options": [],
+      "type": "integer",
+      "correct": "3501"
+    },
+    {
+      "text": "The number of words, with or without meaning, that can be formed using all the letters of the word ASSASSINATION so that the vowels occur together, is ________.",
+      "options": [],
+      "type": "integer",
+      "correct": "50400"
+    },
+    {
+      "text": "The remainder, when $19^{200} + 23^{200}$ is divided by $49$, is ________.",
+      "options": [],
+      "type": "integer",
+      "correct": "29"
+    },
+    {
+      "text": "Let $a_1 = 8, a_2, a_3, \\dots, a_n$ be an A.P. If the sum of its first four terms is $50$ and the sum of its last four terms is $170$, then the product of its middle two terms is ________.",
+      "options": [],
+      "type": "integer",
+      "correct": "754"
+    },
+    {
+      "text": "If $f(x) = x^2 + g'(1)x + g''(2)$ and $g(x) = f(1)x^2 + x f'(x) + f''(x)$, then the value of $f(4) - g(4)$ is equal to ________.",
+      "options": [],
+      "type": "integer",
+      "correct": "14"
+    },
+    {
+      "text": "If $\\int_0^1 (x^{21} + x^{14} + x^7)(2x^{14} + 3x^7 + 6)^{1/7} dx = \\frac{1}{l}(11)^{m/n}$ where $l, m, n \\in \\mathbb{N}$, $m$ and $n$ are coprime then $l + m + n$ is equal to ________.",
+      "options": [],
+      "type": "integer",
+      "correct": "63"
+    },
+    {
+      "text": "The number of 3-digit numbers, that are divisible by either 2 or 3 but not divisible by 7, is ________.",
+      "options": [],
+      "type": "integer",
+      "correct": "514"
+    },
+    {
+      "text": "$A(2, 6, 2)$, $B(-4, 0, \\lambda)$, $C(2, 3, -1)$ and $D(4, 5, 0)$, $|\\lambda| \\le 5$ are the vertices of a quadrilateral $ABCD$. If its area is $18$ square units, then $5 - 6\\lambda$ is equal to ________.",
+      "options": [],
+      "type": "integer",
+      "correct": "11"
+    },
+    {
+      "text": "Let $f: \\mathbb{R} \\rightarrow \\mathbb{R}$ be a differentiable function such that $f'(x) + f(x) = \\int_0^2 f(t) dt$. If $f(0) = e^{-2}$, then $2 f(0) - f(2)$ is equal to ________.",
+      "options": [],
+      "type": "integer",
+      "correct": "1"
+    }
+  ]
+}
