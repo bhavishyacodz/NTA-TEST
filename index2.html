@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTA CBT Exam Simulator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        MathJax = {
+            tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']] },
+            svg: { fontCache: 'global' }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        .nta-header { background-color: #2b70af; color: white; }
+        .math-scroll { overflow-x: auto; overflow-y: hidden; }
+        /* Palette Colors mimicking NTA */
+        .q-not-visited { background-color: #e5e7eb; color: black; border-radius: 4px; }
+        .q-not-answered { background-color: #ef4444; color: white; border-radius: 4px 4px 50% 50%; }
+        .q-answered { background-color: #22c55e; color: white; border-radius: 50% 50% 4px 4px; }
+        .q-marked { background-color: #8b5cf6; color: white; border-radius: 50%; }
+        .q-answered-marked { background-color: #8b5cf6; color: white; border-radius: 50%; position: relative;}
+        .q-answered-marked::after { content: '✔'; color: #22c55e; font-size: 10px; position: absolute; bottom: 0; right: 2px;}
+    </style>
+</head>
+<body class="bg-gray-100 font-sans h-screen flex flex-col overflow-hidden">
+
+    <!-- CATALOG SCREEN -->
+    <div id="catalogScreen" class="h-full overflow-auto bg-white">
+        <div class="nta-header p-4 shadow-md flex justify-between items-center">
+            <h1 class="text-2xl font-bold">National Testing Agency Simulator</h1>
+        </div>
+        <div class="max-w-5xl mx-auto p-8">
+            <h2 class="text-3xl font-bold mb-6 text-gray-800">Available Mock Tests</h2>
+            <div id="catalogContainer" class="space-y-6">Loading...</div>
+        </div>
+    </div>
+
+    <!-- EXAM SCREEN -->
+    <div id="examScreen" class="hidden h-full flex flex-col">
+        <!-- Header -->
+        <div class="nta-header px-4 py-2 flex justify-between items-center shadow-md z-10">
+            <div class="text-lg font-bold" id="examHeaderTitle">JEE Main</div>
+            <div class="flex items-center space-x-6">
+                <div class="bg-white text-black px-4 py-1 rounded font-bold border-2 border-red-500">
+                    Time Left: <span id="timerDisplay">180:00</span>
+                </div>
+                <button onclick="submitExamConfirm()" class="bg-red-600 hover:bg-red-700 text-white px-4 py-1 rounded font-bold transition">SUBMIT</button>
+            </div>
+        </div>
+
+        <!-- Subject Tabs -->
+        <div id="subjectTabs" class="bg-gray-200 border-b border-gray-300 flex overflow-x-auto p-1"></div>
+
+        <!-- Main Workspace -->
+        <div class="flex flex-1 overflow-hidden">
+            <!-- Left: Question Area -->
+            <div class="flex-1 flex flex-col bg-white border-r">
+                <div class="bg-blue-50 p-2 font-bold text-blue-900 border-b flex justify-between">
+                    <span id="qNumberDisplay">Question No. 1</span>
+                </div>
+                <div class="p-6 overflow-y-auto flex-1 text-lg text-gray-800" id="questionContent">
+                    <!-- Dynamic Question Data -->
+                </div>
+                
+                <!-- Bottom Action Bar -->
+                <div class="bg-gray-100 p-3 border-t flex justify-between items-center">
+                    <div class="space-x-2">
+                        <button onclick="saveAndNext()" class="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700">Save & Next</button>
+                        <button onclick="clearResponse()" class="bg-gray-400 text-white px-4 py-2 rounded font-semibold hover:bg-gray-500">Clear Response</button>
+                        <button onclick="markAndNext()" class="bg-yellow-500 text-white px-4 py-2 rounded font-semibold hover:bg-yellow-600">Save & Mark for Review</button>
+                    </div>
+                    <div class="space-x-2">
+                        <button onclick="prevQuestion()" class="bg-gray-200 text-gray-700 px-4 py-2 border rounded font-semibold hover:bg-gray-300"><< Back</button>
+                        <button onclick="nextQuestion()" class="bg-gray-200 text-gray-700 px-4 py-2 border rounded font-semibold hover:bg-gray-300">Next >></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Palette Area -->
+            <div class="w-72 bg-blue-50 flex flex-col">
+                <div class="p-3 border-b flex items-center space-x-3 bg-white">
+                    <div class="h-12 w-12 bg-gray-300 rounded-full flex justify-center items-center font-bold text-gray-500">USER</div>
+                    <div>
+                        <div class="font-bold text-sm">Candidate Name</div>
+                        <div class="text-xs text-gray-500">Mock Test Student</div>
+                    </div>
+                </div>
+                <!-- Legend -->
+                <div class="p-3 grid grid-cols-2 gap-2 text-xs font-semibold bg-white border-b">
+                    <div class="flex items-center"><div class="w-6 h-6 q-not-visited flex justify-center items-center mr-1" id="c-nv">0</div> Not Visited</div>
+                    <div class="flex items-center"><div class="w-6 h-6 q-not-answered flex justify-center items-center mr-1" id="c-na">0</div> Not Answered</div>
+                    <div class="flex items-center"><div class="w-6 h-6 q-answered flex justify-center items-center mr-1" id="c-a">0</div> Answered</div>
+                    <div class="flex items-center"><div class="w-6 h-6 q-marked flex justify-center items-center mr-1" id="c-m">0</div> Marked for Review</div>
+                </div>
+                <!-- Palette Grid -->
+                <div class="p-3 bg-blue-100 font-bold text-sm text-center border-b">Question Palette</div>
+                <div class="p-4 flex-1 overflow-y-auto">
+                    <div id="questionPalette" class="grid grid-cols-4 gap-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RESULT SCREEN -->
+    <div id="resultScreen" class="hidden h-full overflow-auto bg-gray-50">
+        <div class="nta-header p-4 shadow-md flex justify-between items-center sticky top-0 z-50">
+            <h1 class="text-2xl font-bold">Exam Results & Solutions</h1>
+            <button onclick="window.location.reload()" class="bg-white text-blue-800 px-4 py-1 rounded font-bold">Go to Home</button>
+        </div>
+        <div class="max-w-5xl mx-auto p-8">
+            <div class="bg-white p-8 rounded shadow-lg text-center mb-8 border-t-4 border-blue-600">
+                <h2 class="text-4xl font-extrabold mb-2">Total Score: <span id="finalScore" class="text-blue-600">0</span></h2>
+                <div class="flex justify-center space-x-8 mt-4 text-lg">
+                    <div class="text-green-600 font-bold">Correct: <span id="r-correct">0</span></div>
+                    <div class="text-red-600 font-bold">Incorrect: <span id="r-incorrect">0</span></div>
+                    <div class="text-gray-500 font-bold">Unattempted: <span id="r-unattempted">0</span></div>
+                </div>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Detailed Solutions</h3>
+            <div id="solutionsContainer" class="space-y-6"></div>
+        </div>
+    </div>
+
+    <script>
+        let testData = [];
+        let globalQuestions = [];
+        let currentSubject = "";
+        let currentIndex = 0; // Index in globalQuestions
+        let timerInterval = null;
+        let timeLeft = 180 * 60; // 3 hours
+
+        // Status Map: 0: Not Visited, 1: Not Answered, 2: Answered, 3: Marked, 4: Answered & Marked
+        let qStatus = []; 
+        let userAnswers = []; 
+
+        window.onload = async () => {
+            try {
+                const res = await fetch('test_index.json');
+                const catalog = await res.json();
+                renderCatalog(catalog);
+            } catch (e) {
+                document.getElementById('catalogContainer').innerHTML = "<p class='text-red-500'>Error loading catalog.</p>";
+            }
+        };
+
+        function renderCatalog(catalog) {
+            const cont = document.getElementById('catalogContainer');
+            cont.innerHTML = '';
+            for (const [exam, years] of Object.entries(catalog)) {
+                for (const [year, papers] of Object.entries(years)) {
+                    let div = document.createElement('div');
+                    div.innerHTML = `<h3 class="text-xl font-bold text-gray-700 border-b pb-2 mb-4">${exam} ${year}</h3>`;
+                    let grid = document.createElement('div');
+                    grid.className = "grid grid-cols-1 md:grid-cols-2 gap-4 mb-8";
+                    papers.forEach(p => {
+                        let btn = document.createElement('button');
+                        btn.className = "p-4 bg-white border rounded shadow hover:border-blue-500 text-left font-bold text-blue-900 transition";
+                        btn.innerText = p.title;
+                        btn.onclick = () => startTest(p.file, p.title);
+                        grid.appendChild(btn);
+                    });
+                    div.appendChild(grid);
+                    cont.appendChild(div);
+                }
+            }
+        }
+
+        async function startTest(file, title) {
+            document.getElementById('catalogScreen').classList.add('hidden');
+            document.getElementById('examScreen').classList.remove('hidden');
+            document.getElementById('examHeaderTitle').innerText = title;
+            
+            const res = await fetch(file);
+            const data = await res.json();
+            globalQuestions = data.questions || [];
+            
+            qStatus = new Array(globalQuestions.length).fill(0);
+            userAnswers = new Array(globalQuestions.length).fill(null);
+            qStatus[0] = 1; // First is visited but not answered
+            
+            setupTabs();
+            startTimer();
+        }
+
+        function setupTabs() {
+            let subjects = [...new Set(globalQuestions.map(q => q.subject).filter(Boolean))];
+            if(subjects.length === 0) subjects = ["All Questions"];
+            
+            let tabs = document.getElementById('subjectTabs');
+            tabs.innerHTML = '';
+            
+            subjects.forEach((sub, i) => {
+                let btn = document.createElement('button');
+                btn.className = `px-6 py-2 font-bold rounded-t mx-1 ${i===0 ? 'bg-white text-blue-600 border-t-4 border-blue-600' : 'bg-gray-300 text-gray-700'}`;
+                btn.innerText = sub;
+                btn.onclick = (e) => {
+                    Array.from(tabs.children).forEach(c => c.className = 'px-6 py-2 font-bold rounded-t mx-1 bg-gray-300 text-gray-700');
+                    e.target.className = 'px-6 py-2 font-bold rounded-t mx-1 bg-white text-blue-600 border-t-4 border-blue-600';
+                    currentSubject = sub;
+                    // Jump to first question of this subject
+                    let subIdx = globalQuestions.findIndex(q => (q.subject || "All Questions") === sub);
+                    if(subIdx !== -1) loadQuestion(subIdx);
+                };
+                tabs.appendChild(btn);
+            });
+            currentSubject = subjects[0];
+            loadQuestion(0);
+        }
+
+        function persistCurrentAnswer() {
+            // Captures whatever is currently selected/typed for the question on screen
+            // without requiring the user to click "Save & Next" first.
+            if (document.getElementById('intAnswer') || document.querySelector('input[name="mcq"]')) {
+                let ans = getSelectedAnswer();
+                userAnswers[currentIndex] = ans;
+                let wasMarked = (qStatus[currentIndex] === 3 || qStatus[currentIndex] === 4);
+                qStatus[currentIndex] = wasMarked ? (ans !== null ? 4 : 3) : (ans !== null ? 2 : 1);
+            }
+        }
+
+        function loadQuestion(index) {
+            if (index !== currentIndex) persistCurrentAnswer();
+            currentIndex = index;
+            if(qStatus[currentIndex] === 0) qStatus[currentIndex] = 1; 
+            
+            let q = globalQuestions[currentIndex];
+
+            // Keep the subject tab highlighting in sync with whichever question is on screen
+            // (matters when jumping via the palette instead of the tabs themselves)
+            let subj = q.subject || "All Questions";
+            if (subj !== currentSubject) {
+                currentSubject = subj;
+                let tabs = document.getElementById('subjectTabs');
+                Array.from(tabs.children).forEach(tabBtn => {
+                    tabBtn.className = (tabBtn.innerText === subj)
+                        ? 'px-6 py-2 font-bold rounded-t mx-1 bg-white text-blue-600 border-t-4 border-blue-600'
+                        : 'px-6 py-2 font-bold rounded-t mx-1 bg-gray-300 text-gray-700';
+                });
+            }
+
+            document.getElementById('qNumberDisplay').innerText = `Question No. ${currentIndex + 1}`;
+            
+            let html = `<div class="math-scroll mb-4">${(q.text||'').replace(/\n/g, '<br>')}</div>`;
+            if (q.has_diagram && q.image) {
+                html += `<img src="images/${q.image}" class="max-w-full mb-6 border p-1 rounded">`;
+            }
+            
+            if (q.type === 'integer') {
+                html += `<input type="text" id="intAnswer" placeholder="Type answer here" class="border-2 border-gray-400 p-2 rounded w-64" value="${userAnswers[currentIndex] || ''}">`;
+            } else {
+                (q.options || []).forEach((opt, i) => {
+                    let checked = (userAnswers[currentIndex] === i) ? 'checked' : '';
+                    html += `
+                    <label class="flex items-start mb-3 p-3 border rounded hover:bg-gray-50 cursor-pointer">
+                        <input type="radio" name="mcq" value="${i}" ${checked} class="mt-1 mr-3 h-5 w-5">
+                        <span class="math-scroll">${opt.replace(/\n/g, '<br>')}</span>
+                    </label>`;
+                });
+            }
+            
+            document.getElementById('questionContent').innerHTML = html;
+            if(window.MathJax && window.MathJax.typesetPromise) MathJax.typesetPromise();
+            renderPalette();
+        }
+
+        function getSelectedAnswer() {
+            let q = globalQuestions[currentIndex];
+            if (q.type === 'integer') {
+                let val = document.getElementById('intAnswer').value.trim();
+                return val === '' ? null : val;
+            } else {
+                let sel = document.querySelector('input[name="mcq"]:checked');
+                return sel ? parseInt(sel.value) : null;
+            }
+        }
+
+        function saveAndNext() {
+            let ans = getSelectedAnswer();
+            userAnswers[currentIndex] = ans;
+            qStatus[currentIndex] = (ans !== null) ? 2 : 1;
+            nextQuestion();
+        }
+
+        function markAndNext() {
+            let ans = getSelectedAnswer();
+            userAnswers[currentIndex] = ans;
+            qStatus[currentIndex] = (ans !== null) ? 4 : 3;
+            nextQuestion();
+        }
+
+        function clearResponse() {
+            userAnswers[currentIndex] = null;
+            qStatus[currentIndex] = 1;
+            loadQuestion(currentIndex);
+        }
+
+        function nextQuestion() {
+            if (currentIndex < globalQuestions.length - 1) loadQuestion(currentIndex + 1);
+            else { persistCurrentAnswer(); renderPalette(); } // At last question: still save before refreshing UI
+        }
+        function prevQuestion() {
+            if (currentIndex > 0) loadQuestion(currentIndex - 1);
+        }
+
+        function renderPalette() {
+            let counts = [0,0,0,0,0];
+            let pal = document.getElementById('questionPalette');
+            pal.innerHTML = '';
+            
+            globalQuestions.forEach((q, i) => {
+                let st = qStatus[i];
+                counts[st]++;
+                
+                let btn = document.createElement('button');
+                btn.innerText = i + 1;
+                // Assign NTA Colors
+                if(st === 0) btn.className = "q-not-visited h-10 w-10 text-sm font-bold shadow-sm";
+                else if(st === 1) btn.className = "q-not-answered h-10 w-10 text-sm font-bold shadow-sm";
+                else if(st === 2) btn.className = "q-answered h-10 w-10 text-sm font-bold shadow-sm";
+                else if(st === 3) btn.className = "q-marked h-10 w-10 text-sm font-bold shadow-sm";
+                else if(st === 4) btn.className = "q-answered-marked h-10 w-10 text-sm font-bold shadow-sm";
+                
+                // Highlight current
+                if (i === currentIndex) btn.classList.add('ring-2', 'ring-black', 'ring-offset-1');
+                
+                btn.onclick = () => loadQuestion(i);
+                pal.appendChild(btn);
+            });
+            
+            document.getElementById('c-nv').innerText = counts[0];
+            document.getElementById('c-na').innerText = counts[1];
+            document.getElementById('c-a').innerText = counts[2] + counts[4];
+            document.getElementById('c-m').innerText = counts[3] + counts[4];
+        }
+
+        function startTimer() {
+            timerInterval = setInterval(() => {
+                timeLeft--;
+                let m = Math.floor(timeLeft / 60);
+                let s = timeLeft % 60;
+                document.getElementById('timerDisplay').innerText = `${m}:${s < 10 ? '0':''}${s}`;
+                if(timeLeft <= 0) { clearInterval(timerInterval); submitExam(); }
+            }, 1000);
+        }
+
+        function submitExamConfirm() {
+            if(confirm("Are you sure you want to submit the exam?")) {
+                clearInterval(timerInterval);
+                submitExam();
+            }
+        }
+
+        function submitExam() {
+            document.getElementById('examScreen').classList.add('hidden');
+            document.getElementById('resultScreen').classList.remove('hidden');
+            
+            let score = 0, correct = 0, incorrect = 0, unattempted = 0;
+            let solHtml = '';
+            
+            globalQuestions.forEach((q, i) => {
+                let uAns = userAnswers[i];
+                let isCorrect = false;
+                
+                if (uAns === null) {
+                    unattempted++;
+                } else {
+                    if (q.type === 'integer') {
+                        if(String(uAns).trim() === String(q.correct_integer).trim()) { score += 4; correct++; isCorrect = true; }
+                        else { incorrect++; } // Usually 0 or -1 for integer, assuming 0 negative for integer for now
+                    } else {
+                        if(uAns === q.correct_index) { score += 4; correct++; isCorrect = true; }
+                        else { score -= 1; incorrect++; }
+                    }
+                }
+                
+                // Build Solution Card
+                let bgColors = uAns === null ? 'border-gray-300' : (isCorrect ? 'border-green-500' : 'border-red-500');
+                
+                let imgHtml = (q.has_diagram && q.image) ? `<img src="images/${q.image}" class="max-w-full my-2 border">` : '';
+                
+                solHtml += `
+                <div class="bg-white p-6 border-l-4 ${bgColors} rounded shadow mb-4">
+                    <div class="font-bold text-lg mb-2">Q${i+1}: ${(isCorrect?'✅ Correct':(uAns===null?'⚪ Unattempted':'❌ Incorrect'))}</div>
+                    <div class="math-scroll text-gray-700">${(q.text||'').replace(/\n/g, '<br>')}</div>
+                    ${imgHtml}
+                    <div class="mt-4 bg-gray-50 p-4 rounded text-gray-800 math-scroll">
+                        <span class="font-bold">Correct Answer:</span> ${q.type === 'integer' ? q.correct_integer : ((q.options && q.correct_index !== undefined) ? q.options[q.correct_index] : 'N/A')}<br><br>
+                        <span class="font-bold">Solution:</span><br>
+                        ${(q.solution||'No solution.').replace(/\n/g, '<br>')}
+                    </div>
+                </div>`;
+            });
+            
+            document.getElementById('finalScore').innerText = score;
+            document.getElementById('r-correct').innerText = correct;
+            document.getElementById('r-incorrect').innerText = incorrect;
+            document.getElementById('r-unattempted').innerText = unattempted;
+            document.getElementById('solutionsContainer').innerHTML = solHtml;
+            if(window.MathJax && window.MathJax.typesetPromise) MathJax.typesetPromise();
+        }
+    </script>
+</body>
+</html>
