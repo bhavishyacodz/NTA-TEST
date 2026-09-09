@@ -1,0 +1,417 @@
+{
+  "questions": [
+    {
+      "question_number": 1,
+      "text": "Which of the following curve represents the first order reaction ?",
+      "options": [
+        "Graph (A): $t_{1/2}$ vs $[R]_0$ straight line passing through origin",
+        "Graph (B): $t_{1/2}$ vs $[R]_0$ horizontal straight line independent of $[R]_0$",
+        "Graph (C): Rate vs Concentration horizontal straight line",
+        "Graph (D): Rate vs Concentration hyperbolic curve"
+      ],
+      "solution": "(B)",
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 5,
+      "image": null,
+      "_image_warning": "No extracted diagram found on page 5"
+    },
+    {
+      "question_number": 2,
+      "text": "Which of the following solutions will have the lowest freezing point in water ?",
+      "options": [
+        "0.1 M Glucose",
+        "0.1 M $\\text{CaCl}_2$",
+        "0.1 M KCl",
+        "0.1 M Urea"
+      ],
+      "solution": "(B)",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 3,
+      "text": "Which of the following is not a transition metal ?",
+      "options": [
+        "Sc",
+        "Ag",
+        "Hg",
+        "Cu"
+      ],
+      "solution": "(C)",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 4,
+      "text": "Which of the following represents the fraction of molecules with energies equal to or greater than $E_a$ ?",
+      "options": [
+        "$+\\frac{E_a}{RT}$",
+        "$e^{-E_a/RT}$",
+        "$-\\frac{E_a}{RT}$",
+        "$e^{+E_a/RT}$"
+      ],
+      "solution": "(B)",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 5,
+      "text": "What will happen during the electrolysis of aqueous solution of $\\text{CuCl}_2$ by using platinum electrodes ?",
+      "options": [
+        "Cu will deposit at Anode",
+        "$\\text{H}_2$ gas will be released at cathode",
+        "$\\text{O}_2$ gas will be released at anode",
+        "$\\text{Cl}_2$ gas will be released at anode"
+      ],
+      "solution": "(D)",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 6,
+      "text": "Aspirin is obtained by acetylation of",
+      "options": [
+        "Phenol",
+        "Salicylaldehyde",
+        "2-Hydroxybenzoic acid",
+        "Benzoic acid"
+      ],
+      "solution": "(C)",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 7,
+      "text": "The secondary valency of Co in the complex $[\\text{Co}(\\text{NH}_3)_5(\\text{NO}_2)]^{2+}$ is",
+      "options": [
+        "5",
+        "1",
+        "4",
+        "6"
+      ],
+      "solution": "(D)",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 8,
+      "text": "At low temperature, phenol reacts with dil. $\\text{HNO}_3$ to yield",
+      "options": [
+        "2, 4, 6-Trinitrophenol",
+        "o-Nitrophenol only",
+        "p-Nitrophenol only",
+        "ortho-and para-nitrophenol"
+      ],
+      "solution": "(D)",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 9,
+      "text": "Which of the following is ‘not’ true about enantiomers ?",
+      "options": [
+        "They have the same chemical reactivity.",
+        "They have the same specific rotation.",
+        "They have the same melting or boiling point.",
+        "They have the same refractive index."
+      ],
+      "solution": "(B)",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 10,
+      "text": "Aniline on direct nitration yields",
+      "options": [
+        "51%-ortho, 47%-para, 2%-meta derivatives",
+        "51%-meta, 47%-ortho, 2%-para derivatives",
+        "51%-para, 47%-meta, 2%-ortho derivatives",
+        "51%-ortho, 47%-meta, 2%-para derivatives"
+      ],
+      "solution": "(C)",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 11,
+      "text": "Which of the following amines has lowest $\\text{p}K_b$ value ?",
+      "options": [
+        "$\\text{C}_6\\text{H}_5-\\text{N}(\\text{CH}_3)_2$",
+        "$\\text{C}_6\\text{H}_5-\\text{NH}(\\text{CH}_3)$",
+        "$\\text{C}_6\\text{H}_5-\\text{NH}_2$",
+        "$\\text{O}_2\\text{N}-\\text{C}_6\\text{H}_4-\\text{NH}_2$"
+      ],
+      "solution": "(B)",
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 7,
+      "image": null,
+      "_image_warning": "No extracted diagram found on page 7"
+    },
+    {
+      "question_number": 12,
+      "text": "The deficiency of which of the following vitamins causes increased fragility of red blood cells and muscular weakness :",
+      "options": [
+        "Vitamin A",
+        "Vitamin K",
+        "Vitamin E",
+        "Vitamin D"
+      ],
+      "solution": "(C)",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 13,
+      "text": "Assertion (A) : It is not possible to separate the components of an azeotrope by fractional distillation.\nReason (R) : Components of an azeotrope have the same composition in liquid and vapour phase and boil at a constant temperature.\n\nSelect the correct answer from the codes:\n(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A).\n(B) Both Assertion (A) and Reason (R) are true, but Reason (R) is not the correct explanation of the Assertion (A).\n(C) Assertion (A) is true, but Reason (R) is false.\n(D) Assertion (A) is false, but Reason (R) is true.",
+      "options": [
+        "Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A).",
+        "Both Assertion (A) and Reason (R) are true, but Reason (R) is not the correct explanation of the Assertion (A).",
+        "Assertion (A) is true, but Reason (R) is false.",
+        "Assertion (A) is false, but Reason (R) is true."
+      ],
+      "solution": "(A)",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 14,
+      "text": "Assertion (A) : The presence of –OH group in phenols directs the incoming group to meta position in the ring.\nReason (R) : –OH group in phenols activates the aromatic ring towards electrophilic substitution reaction.\n\nSelect the correct answer from the codes:\n(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A).\n(B) Both Assertion (A) and Reason (R) are true, but Reason (R) is not the correct explanation of the Assertion (A).\n(C) Assertion (A) is true, but Reason (R) is false.\n(D) Assertion (A) is false, but Reason (R) is true.",
+      "options": [
+        "Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A).",
+        "Both Assertion (A) and Reason (R) are true, but Reason (R) is not the correct explanation of the Assertion (A).",
+        "Assertion (A) is true, but Reason (R) is false.",
+        "Assertion (A) is false, but Reason (R) is true."
+      ],
+      "solution": "(D)",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 15,
+      "text": "Assertion (A) : Actinoids show wide range of oxidation states.\nReason (R) : Actinoids are radioactive in nature.\n\nSelect the correct answer from the codes:\n(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A).\n(B) Both Assertion (A) and Reason (R) are true, but Reason (R) is not the correct explanation of the Assertion (A).\n(C) Assertion (A) is true, but Reason (R) is false.\n(D) Assertion (A) is false, but Reason (R) is true.",
+      "options": [
+        "Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A).",
+        "Both Assertion (A) and Reason (R) are true, but Reason (R) is not the correct explanation of the Assertion (A).",
+        "Assertion (A) is true, but Reason (R) is false.",
+        "Assertion (A) is false, but Reason (R) is true."
+      ],
+      "solution": "(B)",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 16,
+      "text": "Assertion (A) : The pentaacetate of glucose does not react with $\\text{H}_2\\text{N} - \\text{OH}$.\nReason (R) : It indicates the presence of free – CHO group in glucose.\n\nSelect the correct answer from the codes:\n(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A).\n(B) Both Assertion (A) and Reason (R) are true, but Reason (R) is not the correct explanation of the Assertion (A).\n(C) Assertion (A) is true, but Reason (R) is false.\n(D) Assertion (A) is false, but Reason (R) is true.",
+      "options": [
+        "Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A).",
+        "Both Assertion (A) and Reason (R) are true, but Reason (R) is not the correct explanation of the Assertion (A).",
+        "Assertion (A) is true, but Reason (R) is false.",
+        "Assertion (A) is false, but Reason (R) is true."
+      ],
+      "solution": "(C)",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 17,
+      "text": "What type of deviation from Raoult’s law is shown by a mixture of phenol and aniline ? Give reason.\nWhat will happen to the boiling point of the solution on mixing phenol and aniline ?",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 18,
+      "text": "Why are haloarenes less reactive towards nucleophilic substitution reaction ? Give two reasons.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 19,
+      "text": "(a) Write IUPAC names of the following coordination compounds :\n(i) $[\\text{Ag}(\\text{NH}_3)_2] [\\text{Ag}(\\text{CN})_2]$\n(ii) $\\text{K}_3[\\text{Fe}(\\text{C}_2\\text{O}_4)_3]$\n\nOR\n\n(b) (i) Give a chemical test to show that $[\\text{Co}(\\text{NH}_3)_5\\text{SO}_4]\\text{Cl}$ and $[\\text{Co}(\\text{NH}_3)_5\\text{Cl}]\\text{SO}_4$ are ionisation isomers.\n(ii) What is meant by the ‘Chelate effect’ ? Give an example.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 20,
+      "text": "Differentiate between the following :\n(i) Peptide linkage and Glycosidic linkage\n(ii) Essential amino acids and Non-essential amino acids",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 21,
+      "text": "Following reaction takes place in one step :\n$$2\\text{A} + \\text{B} \\longrightarrow 2\\text{C}$$\nHow will the rate of above reaction change if the volume of the reaction vessel is decreased to one third of its original volume ? Will there be any change in the order of reaction with the reduced volume ?",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 22,
+      "text": "For the first order thermal decomposition reaction, following data was obtained :\n$$\\text{C}_2\\text{H}_5\\text{Cl}(g) \\longrightarrow \\text{C}_2\\text{H}_4(g) + \\text{HCl}(g)$$\n\n| S. No. | Time (s) | Total Pressure (atm) |\n|---|---|---|\n| 1 | 0 | 0.30 |\n| 2 | 30 | 0.50 |\n\nCalculate rate constant. [Given : $\\log 3 = 0.48$]",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 23,
+      "text": "(a) Answer the following :\n(i) Why is the Equilibrium Constant ($K_c$) related to $E^\\circ_{\\text{cell}}$ and not to $E_{\\text{cell}}$ ?\n(ii) Two metals ‘A’ and ‘B’ have standard electrode potential values of –0.24 V and +0.80 V respectively. Which of these will liberate hydrogen gas from dil. $\\text{H}_2\\text{SO}_4$ ?\n(iii) Write the cell reaction which occurs in lead storage battery when it is in charging.\n\nOR\n\n(b) What type of battery is Mercury cell ? Why it is more advantageous than dry cell ? Write overall reaction taking place in Mercury cell.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 24,
+      "text": "Calculate the boiling point of a solution containing $0.61\\text{ g}$ of benzoic acid (Molar mass = $122\\text{ g mol}^{-1}$) in $5\\text{ g}$ of $\\text{CS}_2$ in which it dimerises to the extent of 88%. The boiling point and $K_b$ of $\\text{CS}_2$ are $46.2\\ ^\\circ\\text{C}$ and $2.3\\text{ K kg mol}^{-1}$ respectively.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 25,
+      "text": "Write the reactions of D-Glucose with the following :\n(a) HI\n(b) $\\text{Br}_2$ water\n(c) Conc. $\\text{HNO}_3$",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 26,
+      "text": "Give reasons for the following :\n(a) Carboxylic acids have higher boiling point than alcohols of comparable molecular masses.\n(b) Alpha ($\\alpha$) hydrogens of aldehydes and ketones are acidic in nature.\n(c) Nucleophilic addition of ammonia and its derivatives does not occur with carbonyl group in strongly acidic medium.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 27,
+      "text": "Write the reaction involved in the following :\n(a) Reimer-Tiemann reaction\n(b) Kolbe’s reaction\n(c) Friedal-Crafts acylation of anisole",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 28,
+      "text": "Compound ‘X’ with molecular formula $\\text{C}_4\\text{H}_9\\text{Br}$ reacts with aqueous KOH to give an alcohol. The rate of this reaction depends only on the concentration of the compound ‘X’. When an optically active isomer ‘Y’ of the compound ‘X’ was treated with aqueous KOH solution, the rate of reaction was found to be dependent on concentration of compound ‘Y’ and aqueous KOH both.\n(a) Write down the structural formula of both ‘X’ and ‘Y’.\n(b) Out of ‘X’ and ‘Y’, which one will undergo racemisation and why ?\n(c) Out of ‘X’ and ‘Y’, which one will form product with inversion of configuration and why ?",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 29,
+      "text": "The reaction of amines with mineral acids to form ammonium salts shows that these are basic in nature. Aliphatic amines are stronger bases than ammonia whereas aromatic amines are weaker bases than ammonia. Aliphatic and aromatic primary and secondary amines react with acid chlorides, anhydrides and esters by nucleophilic substitution reaction. The main problem encountered during electrophilic substitution reactions of aromatic amines is that of their high reactivity. Substitution tends to occur at ortho-and para-positions. Hinsberg reagent is used for the identification and distinction between primary, secondary and tertiary amines. Aryldiazonium salts, usually obtained from arylamines, undergo replacement of the diazonium group with a variety of nucleophiles to provide advantageous methods for producing aryl halides, cyanides, phenols and arenes.\n\nAnswer the following questions :\n(a) (i) Why $\\text{CH}_3 - \\text{NH}_2$ is a stronger base than $(\\text{CH}_3)_3\\text{N}$ in aqueous solution ?\n(ii) Write structural formulae of the compound A and B :\n$$\\text{CH}_3\\text{CONH}_2 \\xrightarrow{\\text{NaOBr}} \\text{A} \\xrightarrow[\\text{Base}]{\\text{C}_6\\text{H}_5\\text{COCl}} \\text{B}$$\n(b) A compound ‘X’ with molecular formula $\\text{C}_3\\text{H}_9\\text{N}$ reacts with Hinsberg reagent to give a product insoluble in alkali. Identify ‘X’.\nOR\n(b) How can you convert aniline to benzonitrile ?\n(c) Why is $-\\text{NH}_2$ group of aniline acetylated before carrying out nitration ?",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 30,
+      "text": "The Valence Bond Theory (VBT) explains the formation, magnetic behaviour and geometry of coordination compounds. The Crystal Field Theory (CFT) of coordination compounds is based on the effect of different crystal fields (provided by the ligands taken as point charges), on the degeneracy of d-orbital energies of the central metal atom/ion. The splitting of the d-orbitals provides different electronic arrangements in strong and weak crystal fields.\n\nAnswer the following questions :\n(a) In octahedral crystal field, energies of which d-orbitals will be raised when ligands approach the central metal atom/ion ? Give reason in support of your answer.\n(b) Using crystal field theory, write the electronic configuration of central metal atom/ion of the following :\n(i) $[\\text{CoF}_6]^{3-}$\n(ii) $[\\text{Co}(\\text{NH}_3)_6]^{3+}$\n[At. No. : Co = 27]\n(c) $[\\text{NiCl}_4]^{2-}$ is paramagnetic while $[\\text{Ni}(\\text{CO})_4]$ is diamagnetic though both are tetrahedral. Why ? [Atomic No. : Ni = 28]\nOR\n(c) Write hybridization and magnetic behaviour of the complex $[\\text{Fe}(\\text{CN})_6]^{3-}$. [Atomic No. : Fe = 26]",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 31,
+      "text": "(a) (i) An organic compound (X) has the molecular formula $\\text{C}_5\\text{H}_{10}\\text{O}$. Draw structures for (X) if it :\n(I) does not give Tollen’s test but gives a positive iodoform test.\n(II) does not give Tollen’s test and iodoform test but undergoes Aldol condensation.\n(III) undergoes Cannizzaro’s reaction.\n(ii) Show how each of the following compounds can be converted to benzoic acid :\n(I) Acetophenone\n(II) Ethyl benzene\n\nOR\n\n(b) Answer the following questions :\n(i) Draw structure of the 2, 4-dinitrophenyl hydrazone derivative of benzaldehyde.\n(ii) Arrange the following in increasing order of their reactivity towards HCN :\nDi-tert. butyl ketone, Acetaldehyde, Acetone\n(iii) Give a simple chemical test to distinguish between benzoic acid and ethyl benzoate.\n(iv) Write the name of the reagent to convert Ethanenitrile to Ethanal.\n(v) Draw the structure of ‘X’ in the following reaction :\nCyclohexanol $\\xrightarrow{\\text{CrO}_3}$ ‘X’",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": true,
+      "diagram_page": 21,
+      "image": null,
+      "_image_warning": "No extracted diagram found on page 21"
+    },
+    {
+      "question_number": 32,
+      "text": "(a) (i) From the given data of $E^\\circ$ values, answer the following questions :\n\n| | V | Cr | Mn | Fe | Co | Ni | Cu |\n|---|---|---|---|---|---|---|---|\n| $E^\\circ_{M^{2+}/M}$ | –1.18 | –0.91 | –1.18 | –0.44 | –0.28 | –0.25 | +0.34 |\n\n(I) Why $E^\\circ_{M^{2+}/M}$ show irregular trend in the above values ?\n(II) Why is $E^\\circ_{\\text{Cu}^{2+}/\\text{Cu}}$ value exceptionally positive ?\n(III) Why $E^\\circ_{\\text{Mn}^{2+}/\\text{Mn}}$ value is highly negative ?\n(ii) Write the ionic equations for the oxidising action of potassium permanganate for its reaction with $\\text{I}^-$ in both acidic and alkaline solutions.\n\nOR\n\n(b) Answer the following questions :\n(i) Name a member of the lanthanoid series\n(I) which exhibits +4 oxidation state\n(II) which exhibits +2 oxidation state.\n(ii) Why transition metals act as good catalyst ?\n(iii) Why Cr has higher melting point than Mn ?\n(iv) What happens when acidic solution of potassium permanganate is allowed to stand for sometime ? Give the equation involved. What is this type of reaction called ?",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 33,
+      "text": "(a) Calculate emf and $\\Delta G$ for the following cell at 298 K :\n$$\\text{Mg}(s) / \\text{Mg}^{2+}(0.01\\text{ M}) // \\text{Ag}^+(0.001\\text{ M}) / \\text{Ag}(s)$$\nGiven : $E^\\circ_{\\text{Mg}^{2+}/\\text{Mg}} = -2.37\\text{ V}$, $E^\\circ_{\\text{Ag}^+/\\text{Ag}} = +0.80\\text{ V}$\n[$1\\text{ F} = 96500\\text{ C mol}^{-1}$, $\\log 10 = 1$]\n\nOR\n\n(b) For the reaction :\n$$2\\text{AgCl}(s) + \\text{H}_2(g) (0.4\\text{ atm}) \\longrightarrow 2\\text{Ag}(s) + 2\\text{H}^+(0.1\\text{ M}) + 2\\text{Cl}^-(0.2\\text{ M})$$\nCalculate emf of the cell at $25\\ ^\\circ\\text{C}$.\nGiven : $\\Delta G^\\circ = -43500\\text{ J mol}^{-1}$\n[$\\log 10 = 1$, $1\\text{ F} = 96500\\text{ C mol}^{-1}$]",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    }
+  ]
+}
