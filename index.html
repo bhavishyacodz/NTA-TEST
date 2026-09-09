@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NTA Mock Test Environment</title>
+    <title>NTA CBT Exam Simulator</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         window.MathJax = {
@@ -13,44 +13,34 @@
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <style>
-        body { background-color: #e5e5e5; min-width: 1024px; font-family: Arial, sans-serif; user-select: none; }
+        * { box-sizing: border-box; }
+        body { background-color: #f3f4f6; min-width: 1024px; font-family: Arial, sans-serif; user-select: none; margin: 0; padding: 0; }
         .nta-blue { background-color: #2b579a; }
         .nta-light-blue { background-color: #4f81bd; }
         .math-scroll { overflow-x: auto; overflow-y: hidden; }
-        
-        /* TCS iON / NTA Exact Palette Shapes */
-        .q-btn { width: 40px; height: 35px; margin: 4px; display: inline-flex; justify-content: center; align-items: center; font-weight: bold; font-size: 14px; cursor: pointer; color: black; position: relative; }
-        
-        /* 0: Not Visited (Silver Square) */
-        .status-0 { background: #e0e0e0; border: 1px solid #999; border-radius: 3px; }
-        
-        /* 1: Not Answered (Red Shield/Folder) */
-        .status-1 { background: #d9534f; color: white; border-radius: 4px 4px 15px 15px; border: 1px solid #d43f3a; }
-        
-        /* 2: Answered (Green Shield) */
-        .status-2 { background: #5cb85c; color: white; border-radius: 15px 15px 4px 4px; border: 1px solid #4cae4c; }
-        
-        /* 3: Marked for Review (Purple Circle) */
-        .status-3 { background: #5bc0de; color: white; border-radius: 50%; border: 1px solid #46b8da; background-color: #9b59b6; border-color: #8e44ad; }
-        
-        /* 4: Answered & Marked (Purple Circle with Green Tick/Dot) */
-        .status-4 { background: #9b59b6; color: white; border-radius: 50%; border: 1px solid #8e44ad; position: relative; }
-        .status-4::after { content: ''; position: absolute; bottom: -2px; right: -2px; width: 12px; height: 12px; background: #5cb85c; border-radius: 50%; border: 1px solid white; }
 
-        .active-q { border: 2px solid black !important; box-shadow: 0 0 5px black; }
-        
-        .tab-btn { background: #4f81bd; color: white; padding: 8px 20px; font-weight: bold; border-radius: 4px 4px 0 0; margin-right: 2px; }
+        /* Exact TCS iON / NTA Palette Shapes */
+        .q-btn { width: 38px; height: 34px; margin: 3px; display: inline-flex; justify-content: center; align-items: center; font-weight: bold; font-size: 13px; cursor: pointer; color: black; position: relative; }
+        .status-0 { background: #e0e0e0; border: 1px solid #999; border-radius: 3px; }
+        .status-1 { background: #d9534f; color: white; border-radius: 4px 4px 14px 14px; border: 1px solid #d43f3a; }
+        .status-2 { background: #5cb85c; color: white; border-radius: 14px 14px 4px 4px; border: 1px solid #4cae4c; }
+        .status-3 { background: #9b59b6; color: white; border-radius: 50%; border: 1px solid #8e44ad; }
+        .status-4 { background: #9b59b6; color: white; border-radius: 50%; border: 1px solid #8e44ad; position: relative; }
+        .status-4::after { content: ''; position: absolute; bottom: -2px; right: -2px; width: 11px; height: 11px; background: #5cb85c; border-radius: 50%; border: 1px solid white; }
+        .active-q { outline: 2px solid #000; outline-offset: 1px; }
+
+        .tab-btn { background: #4f81bd; color: white; padding: 8px 18px; font-weight: bold; font-size: 14px; border-radius: 4px 4px 0 0; margin-right: 2px; }
         .tab-btn.active { background: #ffffff; color: #2b579a; border-top: 3px solid #f39c12; }
     </style>
 </head>
-<body class="h-screen flex flex-col overflow-hidden">
+<body class="h-screen w-screen flex flex-col overflow-hidden">
 
     <!-- CATALOG SCREEN -->
-    <div id="catalogScreen" class="h-full overflow-auto bg-white flex flex-col">
+    <div id="catalogScreen" class="h-full overflow-y-auto bg-white flex flex-col">
         <div class="nta-blue text-white p-4 shadow flex justify-between items-center">
             <h1 class="text-2xl font-bold">NTA Mock Test Portal</h1>
         </div>
-        <div class="max-w-6xl mx-auto p-8 w-full">
+        <div class="max-w-5xl mx-auto p-8 w-full">
             <h2 class="text-2xl font-bold mb-6 text-gray-800 border-b pb-2">Select Your Test</h2>
             <div id="catalogContainer" class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div class="text-gray-500 py-10">Loading catalog...</div>
@@ -58,87 +48,81 @@
         </div>
     </div>
 
-    <!-- EXAM SCREEN -->
-    <div id="examScreen" class="hidden h-full flex flex-col">
+    <!-- EXAM SCREEN (Fixed Full-Height Grid) -->
+    <div id="examScreen" class="hidden h-full w-full flex flex-col">
         
-        <!-- Top Header -->
-        <div class="nta-blue text-white px-4 py-2 flex justify-between items-center">
-            <div class="text-xl font-bold" id="examTitleHeader">JEE Main CBT Format</div>
-            <div class="flex items-center space-x-6">
-                <div class="text-lg">Time Left : <span id="timerDisplay" class="font-bold font-mono">03:00:00</span></div>
-            </div>
+        <!-- 1. Header (Fixed Height) -->
+        <div class="nta-blue text-white px-4 h-12 flex-none flex justify-between items-center z-10 shadow">
+            <div class="text-lg font-bold truncate max-w-xl" id="examTitleHeader">JEE Main CBT Format</div>
+            <div class="text-base font-bold bg-white/10 px-3 py-1 rounded">Time Left: <span id="timerDisplay" class="font-mono text-yellow-300">03:00:00</span></div>
         </div>
 
-        <div class="flex flex-1 overflow-hidden">
+        <!-- 2. Workspace Body (Takes remaining space) -->
+        <div class="flex-1 flex flex-row overflow-hidden min-h-0">
             
-            <!-- Left Workspace -->
-            <div class="flex-1 flex flex-col bg-white border-r-2 border-gray-300">
+            <!-- Left Pane (Question + Navigation Bar) -->
+            <div class="flex-1 flex flex-col min-w-0 bg-white border-r border-gray-300">
                 
-                <!-- Info Bar & Tabs -->
-                <div class="bg-gray-100 px-2 pt-2 border-b flex justify-between items-end">
+                <!-- Subject Tabs (Fixed Height) -->
+                <div class="bg-gray-100 px-2 pt-2 border-b flex-none flex justify-between items-end">
                     <div id="subjectTabs" class="flex"></div>
-                    <div class="pb-1 pr-2 text-sm text-gray-600 font-bold">
-                        <span class="mr-2">View in:</span>
-                        <select class="border p-1 bg-white text-black"><option>English</option></select>
+                    <div class="pb-1 pr-2 text-xs text-gray-600 font-bold">
+                        View in: <select class="border p-0.5 bg-white"><option>English</option></select>
                     </div>
                 </div>
 
-                <!-- Question Header -->
-                <div class="flex justify-between items-center p-2 border-b bg-white text-sm font-bold">
-                    <span class="text-blue-700 text-lg" id="qNumberDisplay">Question No. 1</span>
-                    <div class="space-x-4 flex items-center">
-                        <span class="text-gray-500 cursor-pointer text-xl">🔽</span>
-                        <span class="text-gray-500 cursor-pointer text-xl">🔽</span>
-                    </div>
+                <!-- Question Header (Fixed Height) -->
+                <div class="h-10 px-4 border-b bg-gray-50 flex-none flex justify-between items-center font-bold text-sm">
+                    <span class="text-blue-700" id="qNumberDisplay">Question No. 1</span>
+                    <span class="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded" id="qTypeBadge">MCQ</span>
                 </div>
                 
-                <!-- Question Content -->
-                <div class="p-6 overflow-y-auto flex-1 text-base text-gray-800" id="questionContent"></div>
+                <!-- Question Scroll Container (Strict min-h-0 so buttons are never pushed out) -->
+                <div class="flex-1 overflow-y-auto p-6 min-h-0 text-base text-gray-800" id="questionContent"></div>
                 
-                <!-- Bottom Action Bar (Exact NTA Buttons) -->
-                <div class="bg-gray-100 p-3 border-t flex justify-between items-center">
+                <!-- 3. Bottom Action Bar (Fixed at the bottom with flex-none) -->
+                <div class="h-16 flex-none bg-gray-100 px-4 border-t-2 border-gray-300 flex justify-between items-center shadow-lg z-20">
                     <div class="flex space-x-2">
-                        <button onclick="saveAndNext()" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded text-sm font-bold border border-green-800 shadow-sm">Save & Next</button>
-                        <button onclick="clearResponse()" class="bg-white hover:bg-gray-100 text-gray-800 px-4 py-2 rounded text-sm font-bold border border-gray-400 shadow-sm">Clear Response</button>
-                        <button onclick="markForReview()" class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded text-sm font-bold border border-orange-700 shadow-sm">Save & Mark for Review</button>
-                        <button onclick="markAndNext()" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded text-sm font-bold border border-blue-700 shadow-sm">Mark for Review & Next</button>
+                        <button onclick="saveAndNext()" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded text-xs font-bold uppercase tracking-wide border border-green-800 shadow">Save & Next</button>
+                        <button onclick="clearResponse()" class="bg-white hover:bg-gray-100 text-gray-800 px-3 py-2 rounded text-xs font-bold uppercase tracking-wide border border-gray-400 shadow">Clear Response</button>
+                        <button onclick="markForReview()" class="bg-amber-500 hover:bg-amber-600 text-white px-3 py-2 rounded text-xs font-bold uppercase tracking-wide border border-amber-700 shadow">Save & Mark for Review</button>
+                        <button onclick="markAndNext()" class="bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 rounded text-xs font-bold uppercase tracking-wide border border-blue-800 shadow">Mark for Review & Next</button>
                     </div>
                     <div class="flex space-x-2">
-                        <button onclick="prevQuestion()" class="bg-gray-200 hover:bg-gray-300 text-gray-800 px-4 py-2 rounded text-sm font-bold border border-gray-400 shadow-sm"><< Back</button>
-                        <button onclick="nextQuestion()" class="bg-gray-200 hover:bg-gray-300 text-gray-800 px-4 py-2 rounded text-sm font-bold border border-gray-400 shadow-sm">Next >></button>
-                        <button onclick="submitExamConfirm()" class="bg-gray-400 hover:bg-gray-500 text-white px-6 py-2 rounded text-sm font-bold border border-gray-500 ml-4 shadow-sm">Submit</button>
+                        <button onclick="prevQuestion()" class="bg-gray-200 hover:bg-gray-300 text-gray-800 px-4 py-2 rounded text-xs font-bold border border-gray-400 shadow">&lt;&lt; Back</button>
+                        <button onclick="nextQuestion()" class="bg-gray-200 hover:bg-gray-300 text-gray-800 px-4 py-2 rounded text-xs font-bold border border-gray-400 shadow">Next &gt;&gt;</button>
+                        <button onclick="submitExamConfirm()" class="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded text-xs font-bold uppercase tracking-wide border border-red-800 ml-2 shadow">Submit</button>
                     </div>
                 </div>
             </div>
 
-            <!-- Right Profile & Palette -->
-            <div class="w-72 bg-blue-50 flex flex-col">
-                <!-- Profile -->
-                <div class="p-2 border-b flex items-center bg-white space-x-3">
-                    <img src="https://via.placeholder.com/60" alt="Profile" class="w-16 h-16 border border-gray-400 p-1">
-                    <div class="text-sm">
-                        <div class="text-gray-500">Candidate Name:</div>
-                        <div class="font-bold text-gray-800 text-base">John Doe</div>
-                        <div class="text-gray-500">Subject Name:</div>
-                        <div class="font-bold text-gray-800" id="profileSubject">B.E/B.Tech</div>
+            <!-- Right Pane (Profile & Palette) -->
+            <div class="w-80 flex-none bg-blue-50/60 flex flex-col overflow-hidden border-l border-gray-300">
+                
+                <!-- Profile Block (Fixed Height) -->
+                <div class="p-3 border-b flex items-center bg-white space-x-3 flex-none">
+                    <div class="w-12 h-12 bg-gray-200 border border-gray-400 rounded flex items-center justify-center font-bold text-gray-500 text-xs">CANDIDATE</div>
+                    <div class="text-xs">
+                        <div class="text-gray-500">Candidate: <span class="font-bold text-gray-800">Student</span></div>
+                        <div class="text-gray-500">Subject: <span class="font-bold text-gray-800" id="profileSubject">Physics</span></div>
                     </div>
                 </div>
                 
-                <!-- Legend -->
-                <div class="p-3 grid grid-cols-2 gap-y-2 gap-x-1 text-[11px] font-bold bg-white border-b text-gray-700">
-                    <div class="flex items-center"><div class="q-btn status-0 w-6 h-6 mr-1" id="c-0">0</div>Not Visited</div>
-                    <div class="flex items-center"><div class="q-btn status-1 w-6 h-6 mr-1" id="c-1">0</div>Not Answered</div>
-                    <div class="flex items-center"><div class="q-btn status-2 w-6 h-6 mr-1" id="c-2">0</div>Answered</div>
-                    <div class="flex items-center"><div class="q-btn status-3 w-6 h-6 mr-1" id="c-3">0</div>Marked</div>
-                    <div class="flex items-center col-span-2 mt-1"><div class="q-btn status-4 w-6 h-6 mr-1" id="c-4">0</div>Answered & Marked for Review</div>
+                <!-- Palette Legend (Fixed Height) -->
+                <div class="p-2 grid grid-cols-2 gap-y-1.5 gap-x-1 text-[11px] font-bold bg-white border-b text-gray-700 flex-none">
+                    <div class="flex items-center"><div class="q-btn status-0 w-5 h-5 mr-1 text-[10px]" id="c-0">0</div>Not Visited</div>
+                    <div class="flex items-center"><div class="q-btn status-1 w-5 h-5 mr-1 text-[10px]" id="c-1">0</div>Not Answered</div>
+                    <div class="flex items-center"><div class="q-btn status-2 w-5 h-5 mr-1 text-[10px]" id="c-2">0</div>Answered</div>
+                    <div class="flex items-center"><div class="q-btn status-3 w-5 h-5 mr-1 text-[10px]" id="c-3">0</div>Marked</div>
+                    <div class="flex items-center col-span-2"><div class="q-btn status-4 w-5 h-5 mr-1 text-[10px]" id="c-4">0</div>Answered & Marked</div>
                 </div>
 
-                <div class="nta-light-blue text-white px-3 py-1 text-sm font-bold flex justify-between items-center">
-                    <span id="paletteSubjectTitle">Physics</span>
+                <div class="nta-light-blue text-white px-3 py-1 text-xs font-bold uppercase tracking-wider flex-none" id="paletteSubjectTitle">
+                    Physics
                 </div>
                 
-                <!-- Palette Area -->
-                <div class="p-4 flex-1 overflow-y-auto bg-blue-50">
+                <!-- Palette Question Number Grid (Scrollable) -->
+                <div class="p-3 flex-1 overflow-y-auto min-h-0 bg-blue-50/40">
                     <div id="questionPalette" class="flex flex-wrap justify-start"></div>
                 </div>
             </div>
@@ -146,12 +130,12 @@
     </div>
 
     <!-- RESULT SCREEN -->
-    <div id="resultScreen" class="hidden h-full overflow-auto bg-gray-100 flex flex-col">
+    <div id="resultScreen" class="hidden h-full overflow-y-auto bg-gray-100 flex flex-col">
         <div class="nta-blue text-white p-4 shadow flex justify-between items-center sticky top-0 z-50">
             <h1 class="text-xl font-bold">Exam Result & Solutions</h1>
-            <button onclick="window.location.reload()" class="bg-white text-blue-900 px-4 py-2 rounded font-bold shadow hover:bg-gray-200 transition">Back to Home</button>
+            <button onclick="window.location.reload()" class="bg-white text-blue-900 px-4 py-2 rounded font-bold shadow hover:bg-gray-200">Back to Home</button>
         </div>
-        <div class="max-w-5xl mx-auto p-8 w-full flex-1">
+        <div class="max-w-4xl mx-auto p-8 w-full flex-1">
             <div class="bg-white p-8 rounded shadow-md text-center mb-8 border-t-8 border-blue-600">
                 <h2 class="text-4xl font-extrabold text-gray-900 mb-2">Final Score: <span id="finalScore" class="text-blue-600">0</span></h2>
                 <div class="flex justify-center space-x-10 mt-6 text-lg border-t pt-4">
@@ -169,7 +153,7 @@
         let subjectData = {};
         let subjectList = [];
         let currentSubject = "";
-        let currentIndex = 0; // Index relative to currentSubject (0 to 24)
+        let currentIndex = 0; 
         
         let timerInterval = null;
         let timeLeft = 180 * 60; 
@@ -191,10 +175,10 @@
                 for (const [year, papers] of Object.entries(years)) {
                     papers.forEach(p => {
                         let btn = document.createElement('button');
-                        btn.className = "p-4 bg-white border border-gray-300 rounded shadow hover:border-blue-500 text-left flex justify-between items-center group w-full";
+                        btn.className = "p-4 bg-white border border-gray-300 rounded shadow hover:border-blue-500 text-left flex justify-between items-center w-full";
                         btn.innerHTML = `
                             <div>
-                                <div class="font-bold text-gray-800 group-hover:text-blue-600 text-lg">${p.title}</div>
+                                <div class="font-bold text-gray-800 text-lg">${p.title}</div>
                                 <div class="text-sm text-gray-500 mt-1">${exam} | ${year}</div>
                             </div>
                             <span class="text-blue-500 font-bold text-2xl">&rarr;</span>
@@ -215,38 +199,31 @@
                 const res = await fetch(file + '?nocache=' + new Date().getTime());
                 const data = await res.json();
                 
-                // Group questions perfectly by Subject (Physics, Chemistry, Maths)
                 subjectData = {};
                 (data.questions || []).forEach(q => {
                     let sub = q.subject || "General";
                     if(!subjectData[sub]) subjectData[sub] = [];
-                    
-                    // Initialize NTA tracking data per question
-                    q.nta_status = 0; // 0:NV, 1:NA, 2:Ans, 3:Marked, 4:Ans+Marked
+                    q.nta_status = 0; 
                     q.nta_answer = null; 
-                    
                     subjectData[sub].push(q);
                 });
 
-                // Enforce classic JEE order if available
                 let tempOrder = ["Physics", "Chemistry", "Mathematics"];
                 subjectList = tempOrder.filter(s => subjectData[s]);
                 Object.keys(subjectData).forEach(s => { if(!subjectList.includes(s)) subjectList.push(s); });
                 
                 if (subjectList.length === 0) {
-                    alert("No questions found.");
+                    alert("No questions found in file.");
                     window.location.reload();
                     return;
                 }
             } catch (err) {
-                alert("Error loading paper JSON.");
+                alert("Error loading paper JSON file.");
                 window.location.reload();
                 return;
             }
             
-            // Mark first question of first subject as Not Answered (1)
             subjectData[subjectList[0]][0].nta_status = 1;
-            
             setupTabs();
             startTimer();
         }
@@ -276,31 +253,32 @@
             let currentQArr = subjectData[currentSubject];
             let q = currentQArr[currentIndex];
             
-            if(q.nta_status === 0) q.nta_status = 1; // Change to Not Answered if visiting for first time
+            if(q.nta_status === 0) q.nta_status = 1;
             
             document.getElementById('qNumberDisplay').innerText = `Question No. ${currentIndex + 1}`;
+            document.getElementById('qTypeBadge').innerText = (q.type || 'mcq').toUpperCase();
             document.getElementById('profileSubject').innerText = currentSubject;
             
-            let html = `<div class="math-scroll mb-4">${(q.text || '').replace(/\n/g, '<br>')}</div>`;
+            let html = `<div class="math-scroll mb-4 leading-relaxed">${(q.text || '').replace(/\n/g, '<br>')}</div>`;
             
             if (q.has_diagram && q.image) {
-                html += `<div class="my-4"><img src="images/${q.image}" class="max-w-full border p-1" alt="Diagram"></div>`;
+                html += `<div class="my-3"><img src="images/${q.image}" class="max-w-md border p-1 bg-white" alt="Question Diagram"></div>`;
             }
             
             if (q.type === 'integer' || q.type === 'numerical') {
                 html += `
                 <div class="mt-4 flex items-center">
-                    <input type="text" id="tempInput" placeholder="Type your answer..." class="border-2 border-gray-400 p-2 w-64 text-lg outline-none focus:border-blue-500" value="${q.nta_answer !== null ? q.nta_answer : ''}">
-                    <span class="ml-4 text-sm text-gray-500">*(Numerical Type)*</span>
+                    <input type="text" id="tempInput" placeholder="Enter integer answer..." class="border-2 border-gray-400 p-2 w-64 text-lg outline-none focus:border-blue-600 rounded" value="${q.nta_answer !== null ? q.nta_answer : ''}">
+                    <span class="ml-3 text-xs text-gray-500 font-bold">(Numerical Value Type)</span>
                 </div>`;
             } else {
-                html += `<div class="space-y-4 mt-6">`;
+                html += `<div class="space-y-3 mt-4">`;
                 (q.options || []).forEach((opt, i) => {
                     let checked = (q.nta_answer === i) ? 'checked' : '';
                     html += `
-                    <label class="flex items-start cursor-pointer hover:bg-gray-100 p-2 rounded">
-                        <input type="radio" name="tempRadio" value="${i}" ${checked} class="mt-1 mr-3 h-5 w-5">
-                        <span class="math-scroll text-base">${opt.replace(/\n/g, '<br>')}</span>
+                    <label class="flex items-start cursor-pointer hover:bg-blue-50 p-2.5 rounded border border-gray-200">
+                        <input type="radio" name="tempRadio" value="${i}" ${checked} class="mt-1 mr-3 h-4 w-4 text-blue-600">
+                        <span class="math-scroll text-sm leading-normal">${opt.replace(/\n/g, '<br>')}</span>
                     </label>`;
                 });
                 html += `</div>`;
@@ -330,26 +308,21 @@
             
             if (actionType === 'clear') {
                 q.nta_answer = null;
-                q.nta_status = 1; // Not Answered
+                q.nta_status = 1;
                 loadQuestion(currentIndex);
                 return;
             }
 
-            // Save the value
             q.nta_answer = inputVal;
 
             if (actionType === 'saveNext') {
                 q.nta_status = (inputVal !== null) ? 2 : 1; 
-            } 
-            else if (actionType === 'saveMark') {
+            } else if (actionType === 'saveMark') {
                 q.nta_status = (inputVal !== null) ? 4 : 3;
-            }
-            else if (actionType === 'markNext') {
-                // Classic NTA behaviour: Mark for Review & Next strictly sets status to Marked (3) if empty, or Answered & Marked (4) if filled.
+            } else if (actionType === 'markNext') {
                 q.nta_status = (inputVal !== null) ? 4 : 3;
             }
             
-            // Move to next question if available in current subject
             let currentQArr = subjectData[currentSubject];
             if (currentIndex < currentQArr.length - 1) {
                 loadQuestion(currentIndex + 1);
@@ -364,16 +337,14 @@
         function clearResponse() { processAction('clear'); }
         
         function nextQuestion() {
-            let inputVal = readCurrentInput();
-            subjectData[currentSubject][currentIndex].nta_answer = inputVal;
+            subjectData[currentSubject][currentIndex].nta_answer = readCurrentInput();
             let currentQArr = subjectData[currentSubject];
             if (currentIndex < currentQArr.length - 1) {
                 loadQuestion(currentIndex + 1);
             }
         }
         function prevQuestion() {
-            let inputVal = readCurrentInput();
-            subjectData[currentSubject][currentIndex].nta_answer = inputVal;
+            subjectData[currentSubject][currentIndex].nta_answer = readCurrentInput();
             if (currentIndex > 0) {
                 loadQuestion(currentIndex - 1);
             }
@@ -385,15 +356,12 @@
             pal.innerHTML = '';
             
             document.getElementById('paletteSubjectTitle').innerText = currentSubject;
-
             let currentQArr = subjectData[currentSubject];
             
-            // Update global counts for ALL subjects (NTA style usually shows active section, but legend shows all. We'll show global legend counts)
             subjectList.forEach(sub => {
                 subjectData[sub].forEach(q => counts[q.nta_status]++);
             });
 
-            // Draw palette for CURRENT subject only (exactly 25 buttons if 25 questions exist)
             currentQArr.forEach((q, i) => {
                 let btn = document.createElement('div');
                 btn.innerText = i + 1;
@@ -404,7 +372,6 @@
                 }
                 
                 btn.onclick = () => {
-                    // Save input before jumping
                     subjectData[currentSubject][currentIndex].nta_answer = readCurrentInput();
                     loadQuestion(i);
                 };
@@ -449,13 +416,11 @@
             document.getElementById('examScreen').classList.add('hidden');
             document.getElementById('resultScreen').classList.remove('hidden');
             
-            // Force save last active input
             let inputVal = readCurrentInput();
             subjectData[currentSubject][currentIndex].nta_answer = inputVal;
 
             let score = 0, correct = 0, incorrect = 0, unattempted = 0;
             let solHtml = '';
-            let globalQCount = 1;
 
             subjectList.forEach(sub => {
                 solHtml += `<h3 class="text-xl font-bold bg-gray-200 p-2 mt-6 mb-4">${sub} Section</h3>`;
@@ -464,8 +429,6 @@
                     let uAns = q.nta_answer;
                     let isCorrect = false;
                     
-                    // Note: In NTA, Marked for Review (without answer) is unattempted. 
-                    // Answered & Marked is evaluated. Our `uAns !== null` handles this perfectly.
                     if (uAns === null || uAns === "") {
                         unattempted++;
                     } else {
@@ -473,7 +436,7 @@
                             if (String(uAns).trim() === String(q.correct_integer).trim()) {
                                 score += 4; correct++; isCorrect = true;
                             } else {
-                                incorrect++; // standard JEE: 0 negative for integers, but adjust here if needed
+                                incorrect++;
                             }
                         } else {
                             if (uAns === q.correct_index) {
@@ -486,7 +449,6 @@
                     
                     let borderCol = (uAns === null || uAns === "") ? 'border-gray-400' : (isCorrect ? 'border-green-500' : 'border-red-500');
                     let statusText = (uAns === null || uAns === "") ? '⚪ Unattempted' : (isCorrect ? '✅ Correct (+4)' : '❌ Incorrect (-1)');
-                    
                     let imgHtml = (q.has_diagram && q.image) ? `<div class="my-3"><img src="images/${q.image}" class="max-w-md border bg-white p-1"></div>` : '';
                     let correctDisplay = (q.type === 'integer' || q.type === 'numerical') ? q.correct_integer : ((q.options && q.options[q.correct_index]) ? q.options[q.correct_index] : 'N/A');
 
@@ -503,7 +465,6 @@
                             <div class="mt-2"><strong class="text-blue-900">Solution:</strong><div class="math-scroll mt-1">${(q.solution || 'No solution provided.').replace(/\n/g, '<br>')}</div></div>
                         </div>
                     </div>`;
-                    globalQCount++;
                 });
             });
             
