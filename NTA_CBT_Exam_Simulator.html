@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NTA CBT Exam Simulator</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']]},svg:{fontCache:'global'}};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+body{min-width:1024px}.nta-header{background:#1a56db;color:#fff}.math-scroll{overflow-x:auto;overflow-y:hidden}
+.q-palette{display:flex;align-items:center;justify-content:center;font-weight:bold;font-size:13px;cursor:pointer;transition:transform .1s;width:38px;height:38px}
+.q-palette:hover{transform:scale(1.05)}.st-0{background:#e5e7eb;color:#374151;border:1px solid #d1d5db;border-radius:4px}
+.st-1{background:#ef4444;color:#fff;border-radius:4px 4px 18px 18px}.st-2{background:#22c55e;color:#fff;border-radius:18px 18px 4px 4px}
+.st-3{background:#9333ea;color:#fff;border-radius:50%}.st-4{background:#9333ea;color:#fff;border-radius:50%;position:relative}
+.st-4::after{content:'✔';position:absolute;bottom:-2px;right:-2px;background:#22c55e;color:#fff;font-size:10px;width:14px;height:14px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:1px solid white}
+.option-row{transition:background-color .15s,border-color .15s}.option-row:hover{background:#eff6ffb3}
+.timer-warning{animation:timerPulse 1s infinite}@keyframes timerPulse{0%,100%{opacity:1}50%{opacity:.65}}
+</style>
+</head>
+<body class="bg-gray-100 font-sans h-screen flex flex-col overflow-hidden select-none">
+
+<div id="catalogScreen" class="h-full overflow-auto bg-white flex flex-col">
+<div class="nta-header p-4 shadow-md flex justify-between items-center">
+<h1 class="text-2xl font-bold tracking-wide">National Testing Agency — CBT Portal</h1>
+<span class="text-sm bg-blue-700 px-3 py-1 rounded">Online Mock Test Engine</span>
+</div>
+<div class="max-w-5xl mx-auto p-8 flex-1 w-full">
+<h2 class="text-2xl font-extrabold mb-2 text-gray-800">Select Exam Paper</h2>
+<p class="text-gray-500 mb-6">Choose a test below to start your timed NTA simulation exam.</p>
+<div id="catalogContainer" class="space-y-6"><div class="text-gray-500 py-10 text-center">Loading available papers...</div></div>
+</div>
+</div>
+
+<div id="examScreen" class="hidden h-full flex flex-col">
+<div class="nta-header px-4 py-3 flex justify-between items-center shadow-md z-10">
+<div class="text-lg font-bold truncate max-w-xl" id="examHeaderTitle">JEE Main Simulation</div>
+<div class="flex items-center space-x-6">
+<div id="timerBox" class="bg-white text-gray-900 px-4 py-1.5 rounded font-mono font-bold border-2 border-red-500 shadow-inner">Time Left: <span id="timerDisplay" class="text-red-600">180:00</span></div>
+<button onclick="submitExamConfirm()" class="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded font-bold transition shadow">SUBMIT EXAM</button>
+</div>
+</div>
+
+<div id="subjectTabs" class="bg-gray-200 border-b border-gray-300 flex overflow-x-auto px-2 pt-2 space-x-1"></div>
+
+<div class="flex flex-1 overflow-hidden">
+<div class="flex-1 flex flex-col bg-white border-r">
+<div class="bg-blue-50 px-6 py-3 font-bold text-blue-900 border-b flex justify-between items-center">
+<span id="qNumberDisplay" class="text-lg">Question No. 1</span>
+<span class="text-xs uppercase bg-blue-200 text-blue-800 px-2.5 py-1 rounded font-semibold" id="qTypeBadge">MCQ</span>
+</div>
+<div class="p-8 overflow-y-auto flex-1 text-lg text-gray-800 space-y-6" id="questionContent"></div>
+<div class="bg-gray-50 p-4 border-t flex flex-wrap justify-between items-center gap-2">
+<div class="flex space-x-2">
+<button onclick="saveAndNext()" class="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded font-semibold shadow transition">Save & Next</button>
+<button onclick="clearResponse()" class="bg-gray-300 hover:bg-gray-400 text-gray-700 px-4 py-2 rounded font-semibold transition">Clear Response</button>
+<button onclick="markAndNext()" class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded font-semibold shadow transition">Save & Mark for Review</button>
+</div>
+<div class="flex space-x-2">
+<button onclick="prevQuestion()" class="bg-white hover:bg-gray-100 text-gray-700 border border-gray-300 px-4 py-2 rounded font-semibold shadow-sm">&larr; Back</button>
+<button onclick="nextQuestion()" class="bg-white hover:bg-gray-100 text-gray-700 border border-gray-300 px-4 py-2 rounded font-semibold shadow-sm">Next &rarr;</button>
+</div>
+</div>
+</div>
+
+<div class="w-80 bg-slate-50 flex flex-col border-l">
+<div class="p-3 border-b flex items-center space-x-3 bg-white shadow-sm">
+<div class="h-10 w-10 bg-blue-600 text-white rounded-full flex justify-center items-center font-bold text-sm">NTA</div>
+<div><div class="font-bold text-sm text-gray-800">Candidate</div><div class="text-xs text-green-600 font-medium">● Online Test Active</div></div>
+</div>
+<div class="p-3 grid grid-cols-2 gap-y-2 gap-x-1 text-[11px] font-medium bg-white border-b text-gray-700">
+<div class="flex items-center"><div class="q-palette st-0 mr-1.5 w-5 h-5 text-[10px]" id="c-nv">0</div>Not Visited</div>
+<div class="flex items-center"><div class="q-palette st-1 mr-1.5 w-5 h-5 text-[10px]" id="c-na">0</div>Not Answered</div>
+<div class="flex items-center"><div class="q-palette st-2 mr-1.5 w-5 h-5 text-[10px]" id="c-a">0</div>Answered</div>
+<div class="flex items-center"><div class="q-palette st-3 mr-1.5 w-5 h-5 text-[10px]" id="c-m">0</div>Marked</div>
+<div class="flex items-center col-span-2 mt-1"><div class="q-palette st-4 mr-1.5 w-5 h-5 text-[10px]" id="c-am">0</div>Answered & Marked for Review</div>
+</div>
+<div class="px-4 py-2.5 bg-blue-100 font-bold text-xs uppercase tracking-wider text-blue-900 border-b flex justify-between items-center">
+<span id="paletteSubjectTitle">Physics</span><span class="text-gray-500 font-normal text-[10px]">Section Palette</span>
+</div>
+<div class="p-4 flex-1 overflow-y-auto bg-slate-100"><div id="questionPalette" class="grid grid-cols-5 gap-2"></div></div>
+</div>
+</div>
+</div>
+
+<div id="resultScreen" class="hidden h-full overflow-auto bg-gray-50 flex flex-col">
+<div class="nta-header p-4 shadow-md flex justify-between items-center sticky top-0 z-50">
+<h1 class="text-xl font-bold">Exam Performance & Detailed Solutions</h1>
+<button onclick="window.location.reload()" class="bg-white text-blue-800 px-4 py-1.5 rounded font-bold shadow hover:bg-blue-50 transition">Back to Home</button>
+</div>
+<div class="max-w-4xl mx-auto p-8 w-full flex-1">
+<div class="bg-white p-8 rounded-xl shadow-md text-center mb-8 border-t-8 border-blue-600">
+<h2 class="text-4xl font-extrabold text-gray-900 mb-2">Final Score: <span id="finalScore" class="text-blue-600">0</span> / <span id="maxScore" class="text-gray-400">0</span></h2>
+<div class="flex justify-center space-x-10 mt-6 text-base border-t pt-4">
+<div class="text-green-600 font-bold">Correct: <span id="r-correct" class="text-xl block">0</span></div>
+<div class="text-red-600 font-bold">Incorrect: <span id="r-incorrect" class="text-xl block">0</span></div>
+<div class="text-gray-500 font-bold">Unattempted: <span id="r-unattempted" class="text-xl block">0</span></div>
+</div>
+</div>
+<h3 class="text-2xl font-bold mb-6 text-gray-800 border-b pb-2">Question-wise Analysis & Solutions</h3>
+<div id="solutionsContainer" class="space-y-6 pb-12"></div>
+</div>
+</div>
+
+<script>
+let globalQuestions=[],currentSubject="",currentIndex=0,timerInterval=null,timeLeft=180*60,qStatus=[],userAnswers=[],examSubmitted=false,subjectsList=[];
+
+window.onload=async()=>{
+try{const res=await fetch('test_index.json?nocache='+Date.now());if(!res.ok)throw Error();renderCatalog(await res.json())}
+catch(e){document.getElementById('catalogContainer').innerHTML="<p class='text-red-500 text-center font-bold py-10'>Error: Failed to load test_index.json. Ensure the file exists and the Python script ran successfully.</p>"}
+};
+
+function renderCatalog(catalog){
+const cont=document.getElementById('catalogContainer');cont.innerHTML='';
+for(const[exam,years]of Object.entries(catalog))for(const[year,papers]of Object.entries(years)){
+const div=document.createElement('div');div.innerHTML=`<h3 class="text-lg font-bold text-gray-700 border-b pb-2 mb-3">${escapeHtml(exam)} — ${escapeHtml(year)}</h3>`;
+const grid=document.createElement('div');grid.className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6";
+papers.forEach(p=>{const btn=document.createElement('button');btn.className="p-4 bg-white border border-gray-200 rounded-lg shadow-sm hover:border-blue-500 hover:shadow transition text-left flex justify-between items-center group";btn.innerHTML=`<div><div class="font-bold text-blue-900 group-hover:text-blue-600 text-base">${escapeHtml(p.title||'Untitled Paper')}</div><div class="text-xs text-gray-400 mt-1">Computer Based Test (CBT) Format</div></div><span class="text-blue-500 font-bold text-xl">&rarr;</span>`;btn.onclick=()=>startTest(p.file,p.title||'Mock Test');grid.appendChild(btn)});div.appendChild(grid);cont.appendChild(div)}
+}
+
+async function startTest(file,title){
+if(timerInterval)clearInterval(timerInterval);examSubmitted=false;currentIndex=0;timeLeft=180*60;
+document.getElementById('catalogScreen').classList.add('hidden');document.getElementById('examScreen').classList.remove('hidden');document.getElementById('resultScreen').classList.add('hidden');document.getElementById('examHeaderTitle').innerText=title;updateTimerDisplay();
+try{const res=await fetch(file+'?nocache='+Date.now());if(!res.ok)throw Error();const data=await res.json();globalQuestions=Array.isArray(data.questions)?data.questions:[];if(!globalQuestions.length)throw Error()}
+catch(e){alert("Error: Failed to load the question paper JSON file.");window.location.reload();return}
+qStatus=new Array(globalQuestions.length).fill(0);userAnswers=new Array(globalQuestions.length).fill(null);qStatus[0]=1;setupTabs();startTimer();
+}
+
+function setupTabs(){
+const available=[...new Set(globalQuestions.map(q=>q.subject).filter(Boolean))],preferred=["Physics","Chemistry","Mathematics"];
+subjectsList=preferred.filter(s=>available.includes(s));available.forEach(s=>{if(!subjectsList.includes(s))subjectsList.push(s)});if(!subjectsList.length)subjectsList=["General Section"];
+const tabs=document.getElementById('subjectTabs');tabs.innerHTML='';
+subjectsList.forEach((sub,i)=>{const btn=document.createElement('button');btn.dataset.subject=sub;btn.className=getTabClass(i===0);btn.innerText=sub;btn.onclick=()=>{saveCurrentAnswer(true);setActiveSubject(sub);const idx=globalQuestions.findIndex(q=>normalizeSubject(q)===sub);if(idx!==-1)loadQuestion(idx)};tabs.appendChild(btn)});
+currentSubject=subjectsList[0];loadQuestion(0);
+}
+function getTabClass(active){return active?'px-6 py-2.5 font-bold rounded-t-lg transition bg-white text-blue-700 border-t-4 border-blue-600 shadow-sm':'px-6 py-2.5 font-bold rounded-t-lg transition bg-gray-200 text-gray-600 hover:bg-gray-300'}
+function setActiveSubject(subject){currentSubject=subject;Array.from(document.getElementById('subjectTabs').children).forEach(t=>t.className=getTabClass(t.dataset.subject===subject))}
+
+function loadQuestion(index){
+if(index<0||index>=globalQuestions.length)return;
+if(index!==currentIndex)saveCurrentAnswer(true);
+currentIndex=index;if(qStatus[index]===0)qStatus[index]=1;const q=globalQuestions[index],subject=normalizeSubject(q);if(subject!==currentSubject)setActiveSubject(subject);
+document.getElementById('qNumberDisplay').innerText=`Question No. ${q.question_number||index+1} (${subject})`;document.getElementById('qTypeBadge').innerText=(q.type||'mcq').toUpperCase();
+let html=`<div class="math-scroll text-gray-800 text-lg leading-relaxed">${formatText(q.text||'')}</div>`;
+if(q.has_diagram&&q.image)html+=`<div class="my-4"><img src="images/${encodeURIComponent(q.image)}" class="max-w-md h-auto border rounded p-1 bg-white shadow-sm" alt="Question Diagram" onerror="this.style.display='none'"></div>`;
+if(q.type==='integer'||q.type==='numerical'){
+const value=userAnswers[index]!==null?escapeHtml(String(userAnswers[index])):'';
+html+=`<div class="mt-6"><label class="block text-sm font-bold text-gray-600 mb-2">Enter Numerical Answer:</label><input type="text" id="intAnswer" inputmode="decimal" autocomplete="off" placeholder="Type answer here..." class="border-2 border-gray-300 focus:border-blue-500 focus:outline-none p-3 rounded-lg w-72 text-lg font-medium" value="${value}"></div>`;
+}else{
+html+=`<div class="space-y-3 mt-6">`;(q.options||[]).forEach((opt,i)=>{const checked=userAnswers[index]===i?'checked':'';html+=`<label class="option-row flex items-start p-3.5 border border-gray-200 rounded-lg cursor-pointer transition"><input type="radio" name="mcq" value="${i}" ${checked} class="mt-1 mr-3.5 h-4 w-4 text-blue-600 focus:ring-blue-500"><span class="math-scroll text-base text-gray-700">${formatText(opt||'')}</span></label>`});html+=`</div>`}
+document.getElementById('questionContent').innerHTML=html;renderPalette();typesetMath();
+}
+
+function getSelectedAnswer(){
+const q=globalQuestions[currentIndex];
+if(q.type==='integer'||q.type==='numerical'){const el=document.getElementById('intAnswer');if(!el)return null;const v=el.value.trim();return v===''?null:v}
+const sel=document.querySelector('input[name="mcq"]:checked');return sel?parseInt(sel.value,10):null;
+}
+function saveCurrentAnswer(updateStatus=true){
+if(!globalQuestions.length)return;const ans=getSelectedAnswer();userAnswers[currentIndex]=ans;if(!updateStatus)return;
+if(qStatus[currentIndex]===3||qStatus[currentIndex]===4)qStatus[currentIndex]=ans!==null?4:3;else qStatus[currentIndex]=ans!==null?2:1;
+}
+function saveAndNext(){saveCurrentAnswer(true);nextQuestion()}
+function markAndNext(){const ans=getSelectedAnswer();userAnswers[currentIndex]=ans;qStatus[currentIndex]=ans!==null?4:3;nextQuestion()}
+function clearResponse(){userAnswers[currentIndex]=null;qStatus[currentIndex]=1;loadQuestion(currentIndex)}
+function nextQuestion(){saveCurrentAnswer(true);if(currentIndex<globalQuestions.length-1)loadQuestion(currentIndex+1);else renderPalette()}
+function prevQuestion(){saveCurrentAnswer(true);if(currentIndex>0)loadQuestion(currentIndex-1)}
+
+function renderPalette(){
+const pal=document.getElementById('questionPalette');pal.innerHTML='';document.getElementById('paletteSubjectTitle').innerText=currentSubject;const counts=[0,0,0,0,0];
+globalQuestions.map((q,i)=>({q,i})).filter(x=>normalizeSubject(x.q)===currentSubject).forEach(({q,i},n)=>{const st=Number(qStatus[i]||0);counts[st]++;const btn=document.createElement('button');btn.innerText=q.question_number||n+1;btn.className=`q-palette st-${st}`;if(i===currentIndex)btn.classList.add('ring-2','ring-blue-600','ring-offset-2');btn.onclick=()=>{saveCurrentAnswer(true);loadQuestion(i)};pal.appendChild(btn)});
+['c-nv','c-na','c-a','c-m','c-am'].forEach((id,i)=>document.getElementById(id).innerText=counts[i]);
+}
+
+function startTimer(){if(timerInterval)clearInterval(timerInterval);updateTimerDisplay();timerInterval=setInterval(()=>{if(examSubmitted)return;timeLeft--;updateTimerDisplay();if(timeLeft<=0){clearInterval(timerInterval);alert("Time is up! Your exam will be submitted automatically.");submitExam()}},1000)}
+function updateTimerDisplay(){const d=document.getElementById('timerDisplay'),box=document.getElementById('timerBox'),s=Math.max(0,timeLeft),h=Math.floor(s/3600),m=Math.floor(s%3600/60),sec=s%60;d.innerText=h>0?`${h}:${String(m).padStart(2,'0')}:${String(sec).padStart(2,'0')}`:`${m}:${String(sec).padStart(2,'0')}`;box.classList.toggle('timer-warning',timeLeft<=300)}
+function submitExamConfirm(){saveCurrentAnswer(true);const n=userAnswers.filter(a=>a===null).length;if(confirm(n?`You have ${n} unattempted question(s).\n\nAre you sure you want to submit your exam?`:"Are you sure you want to submit your exam?")){if(timerInterval)clearInterval(timerInterval);submitExam()}}
+
+function submitExam(){
+if(examSubmitted)return;examSubmitted=true;if(timerInterval)clearInterval(timerInterval);saveCurrentAnswer(true);
+document.getElementById('examScreen').classList.add('hidden');document.getElementById('resultScreen').classList.remove('hidden');
+let score=0,correct=0,incorrect=0,unattempted=0,solHtml='',maxPossible=globalQuestions.length*4;
+globalQuestions.forEach((q,i)=>{
+const u=userAnswers[i];let ok=false;
+if(u===null)unattempted++;
+else if(q.type==='integer'||q.type==='numerical'){if(normalizeNumericalAnswer(u)===normalizeNumericalAnswer(q.correct_integer)){score+=4;correct++;ok=true}else incorrect++}
+else{if(Number(u)===Number(q.correct_index)){score+=4;correct++;ok=true}else{score-=1;incorrect++}}
+const bc=u===null?'border-gray-300':ok?'border-green-500':'border-red-500',badge=u===null?'bg-gray-100 text-gray-600':ok?'bg-green-100 text-green-700':'bg-red-100 text-red-700',bt=u===null?'Unattempted':ok?'Correct (+4)':'Incorrect (-1)';
+let img=q.has_diagram&&q.image?`<div class="my-3"><img src="images/${encodeURIComponent(q.image)}" class="max-w-sm border rounded p-1 bg-white" alt="Question Diagram" onerror="this.style.display='none'"></div>`:'';
+let correctDisplay=(q.type==='integer'||q.type==='numerical')?(q.correct_integer??'N/A'):(q.options&&q.options[q.correct_index]!==undefined?q.options[q.correct_index]:'N/A');
+let userDisplay=u===null?'Not Attempted':(q.type==='integer'||q.type==='numerical'?escapeHtml(String(u)):(q.options&&q.options[u]!==undefined?formatText(q.options[u]):'Invalid'));
+solHtml+=`<div class="bg-white p-6 border-l-8 ${bc} rounded-lg shadow-sm space-y-4"><div class="flex justify-between items-center border-b pb-3"><span class="font-bold text-lg text-gray-950">[${escapeHtml(normalizeSubject(q))}] Question No. ${q.question_number||i+1}</span><span class="text-xs font-bold px-3 py-1 rounded-full ${badge}">${bt}</span></div><div class="math-scroll text-gray-800 text-base">${formatText(q.text||'')}</div>${img}<div class="bg-gray-50 p-3 rounded border text-sm"><strong>Your Answer:</strong> <span class="text-gray-700">${userDisplay}</span></div><div class="bg-blue-50/50 p-4 rounded-md border border-blue-100 text-sm space-y-3"><div><strong class="text-blue-900">Correct Answer:</strong> <span class="text-gray-700 font-medium">${formatText(String(correctDisplay))}</span></div><div><strong class="text-blue-900">Detailed Solution:</strong><div class="math-scroll mt-1 text-gray-700">${formatText(q.solution||'No detailed solution provided.')}</div></div></div></div>`;
+});
+document.getElementById('finalScore').innerText=score;document.getElementById('maxScore').innerText=maxPossible;document.getElementById('r-correct').innerText=correct;document.getElementById('r-incorrect').innerText=incorrect;document.getElementById('r-unattempted').innerText=unattempted;document.getElementById('solutionsContainer').innerHTML=solHtml;typesetMath();
+}
+
+function normalizeSubject(q){return q.subject||'General Section'}
+function normalizeNumericalAnswer(v){return v===null||v===undefined?'':String(v).trim().replace(/^\+/,'')}
+function formatText(t){return escapeHtml(String(t)).replace(/\n/g,'<br>')}
+function escapeHtml(v){return String(v).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#039;')}
+async function typesetMath(){if(window.MathJax&&MathJax.typesetPromise){try{await MathJax.typesetPromise()}catch(e){console.error('MathJax Error:',e)}}}
+window.addEventListener('beforeunload',e=>{if(!examSubmitted&&globalQuestions.length&&!document.getElementById('examScreen').classList.contains('hidden')){e.preventDefault();e.returnValue=''}})
+</script>
+</body>
+</html>
