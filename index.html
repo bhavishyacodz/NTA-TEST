@@ -1,384 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vortex Exam Engine — Multi-Exam Portal</title>
-
-<!-- Mobile Developer Console (Eruda) -->
-<script src="https://cdn.jsdelivr.net/npm/eruda"></script>
-<script>eruda.init();</script>
-
-<!-- KaTeX Math Renderer -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
-
-<style>
-  body { font-family: system-ui, -apple-system, sans-serif; margin: 0; padding: 0; display: flex; flex-direction: column; height: 100vh; background: #f8f9fa; }
-  
-  /* DASHBOARD */
-  #dashboard { padding: 30px 20px; max-width: 900px; margin: 0 auto; width: 100%; box-sizing: border-box; height: 100vh; overflow-y: auto; }
-  .dash-header { background: #1a73e8; color: white; padding: 25px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.08); }
-  .dash-header h1 { margin: 0 0 8px 0; font-size: 1.8rem; }
-  .dash-header p { margin: 0; opacity: 0.9; font-size: 0.95rem; }
-  .breadcrumb-bar { display: flex; align-items: center; gap: 8px; margin-bottom: 20px; font-size: 0.95rem; color: #5f6368; flex-wrap: wrap; }
-  .breadcrumb-btn { background: none; border: none; color: #1a73e8; font-weight: bold; cursor: pointer; padding: 0; font-size: 0.95rem; }
-  .breadcrumb-btn:hover { text-decoration: underline; }
-  .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 15px; }
-  .portal-card { background: white; border: 2px solid #e0e0e0; padding: 25px 20px; border-radius: 12px; cursor: pointer; transition: transform 0.15s, box-shadow 0.15s; }
-  .portal-card:hover { transform: translateY(-3px); border-color: #1a73e8; box-shadow: 0 6px 12px rgba(26,115,232,0.12); }
-  .portal-card-title { font-size: 1.2rem; font-weight: bold; color: #202124; margin-bottom: 8px; }
-  .badge-tag { background: #e8f0fe; color: #1a73e8; padding: 4px 10px; border-radius: 6px; font-weight: bold; font-size: 0.8rem; }
-
-  /* TEST SCREEN */
-  #test-screen { display: none; flex-direction: column; height: 100vh; }
-  .header { background: #1a73e8; color: white; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; font-weight: bold; font-size: 1.1rem; }
-  #test-title-display { font-size: 1rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 55%; }
-  #timer { background: #d93025; padding: 5px 15px; border-radius: 20px; font-family: monospace; font-size: 1.2rem; }
-  .main { display: flex; flex: 1; overflow: hidden; }
-  .content { flex: 1; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; }
-  .palette { width: 320px; background: white; padding: 15px; overflow-y: auto; border-left: 1px solid #e0e0e0; }
-  .tabs { display: flex; gap: 10px; margin-bottom: 20px; border-bottom: 2px solid #e0e0e0; padding-bottom: 10px; flex-wrap: wrap; }
-  .tabs button { padding: 10px 20px; border: none; background: transparent; cursor: pointer; font-size: 1rem; color: #5f6368; font-weight: bold; border-radius: 4px; }
-  .tabs button.active { background: #e8f0fe; color: #1a73e8; }
-  
-  .question-container { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); flex: 1; display: flex; flex-direction: column; justify-content: space-between; }
-  .question-text { font-size: 1.2rem; margin-bottom: 25px; color: #202124; line-height: 1.5; }
-  .options div { margin: 12px 0; padding: 12px; border: 1px solid #dadce0; border-radius: 6px; cursor: pointer; transition: background 0.2s; }
-  .options div:hover { background: #f8f9fa; }
-  .options input { margin-right: 15px; transform: scale(1.2); }
-  .integer-input-box input { width: 100%; padding: 12px; font-size: 1.1rem; border: 2px solid #dadce0; border-radius: 6px; outline: none; box-sizing: border-box; margin-top:10px; }
-  
-  .actions { margin-top: 25px; display: flex; gap: 10px; flex-wrap: wrap; }
-  .actions button { padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; color: white; flex: 1; min-width: 120px; }
-  .btn-save { background: #1e8e3e; }
-  .btn-mark { background: #f29900; }
-  .btn-clear { background: #5f6368; }
-  .btn-submit { background: #d93025; width: 100%; margin-top: 20px; padding: 15px; font-size: 1.1rem; cursor: pointer; border: none; font-weight: bold; color: white; border-radius: 4px;}
-  
-  .palette-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-top: 15px; }
-  .btn-palette { aspect-ratio: 1; border-radius: 50%; border: none; cursor: pointer; font-weight: bold; font-size: 1rem; color: white; display: flex; align-items: center; justify-content: center; }
-  .not-visited { background: #e0e0e0; color: #3c4043; }
-  .answered { background: #1e8e3e; }
-  .marked { background: #f29900; }
-
-  @media (max-width: 768px) {
-    .main { flex-direction: column; }
-    .palette { width: auto; border-left: none; border-top: 1px solid #e0e0e0; max-height: 250px; }
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTA Free Test Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            svg: { fontCache: 'global' }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        .hidden-solution { display: none; }
+        .visible-solution { display: block; animation: fadeIn 0.3s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        .math-scroll { overflow-x: auto; overflow-y: hidden; padding-bottom: 5px; }
+    </style>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800 font-sans min-h-screen">
 
-<div id="dashboard">
-  <div class="dash-header">
-    <h1>All-India Exam Assessment Portal</h1>
-    <p>Select your examination target and practice with official interfaces.</p>
-  </div>
-  <div class="breadcrumb-bar" id="breadcrumb-container"><span>Home</span></div>
-  <div class="grid-container" id="cards-container"><p>Loading exam categories...</p></div>
-</div>
-
-<div id="test-screen">
-  <div class="header">
-    <div id="test-title-display">Exam Session</div>
-    <div id="timer">180:00</div>
-  </div>
-  <div class="main">
-    <div class="content">
-      <div class="tabs" id="subject-tabs"></div>
-      <div class="question-container">
-        <div>
-          <div class="question-text" id="q-text">Loading question...</div>
-          <div class="options" id="q-options"></div>
+    <!-- Navbar -->
+    <nav class="bg-indigo-600 text-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between h-16 items-center">
+            <h1 class="text-xl font-bold tracking-wider cursor-pointer" onclick="showCatalog()">📝 Test Portal</h1>
+            <button id="backBtn" class="hidden bg-indigo-700 hover:bg-indigo-800 px-4 py-2 rounded text-sm transition" onclick="showCatalog()">
+                &larr; Back to Tests
+            </button>
         </div>
-        <div class="actions" id="q-actions">
-          <button class="btn-save" onclick="saveAndNext()">Save & Next</button>
-          <button class="btn-mark" onclick="markForReview()">Mark for Review</button>
-          <button class="btn-clear" onclick="clearResponse()">Clear Response</button>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        
+        <!-- Screen 1: Catalog -->
+        <div id="catalogScreen">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-extrabold text-gray-900">Available Tests</h2>
+                <p class="text-gray-500 mt-2">Select a paper below to begin.</p>
+            </div>
+            <div id="catalogContainer" class="space-y-8">
+                <!-- Dynamically populated by JS -->
+                <div class="text-center text-gray-500 py-10">Loading tests...</div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="palette">
-      <h3 id="palette-title" style="margin-top:0;">Palette</h3>
-      <div class="palette-grid" id="q-palette"></div>
-      <button class="btn-submit" onclick="submitTest()">Submit Final Test</button>
-    </div>
-  </div>
-</div>
 
-<script>
-  let rawCatalog = {};
-  let currentExam = null;
-  let currentCategory = null;
-  
-  let questions = {};
-  let currentSubject = '';
-  let currentIndex = 0;
-  let responses = {};
-  let timeLeft = 180 * 60;
-  let timerInterval;
+        <!-- Screen 2: Paper Viewer -->
+        <div id="paperScreen" class="hidden">
+            <div class="mb-6 border-b pb-4">
+                <h2 id="paperTitle" class="text-2xl font-bold text-gray-900">Paper Title</h2>
+            </div>
 
-  async function loadCatalog() {
-    const container = document.getElementById('cards-container');
-    const paths = ['./test_index.json', 'test_index.json', '/NTA-TEST/test_index.json'];
-    let loadedData = null;
-    
-    for (const path of paths) {
-      try {
-        const res = await fetch(path + '?v=' + new Date().getTime());
-        if (res.ok) { loadedData = await res.json(); break; }
-      } catch (e) {}
-    }
+            <!-- Subject Tabs -->
+            <div id="subjectTabs" class="flex space-x-2 border-b mb-6 overflow-x-auto">
+                <!-- Tabs injected here -->
+            </div>
 
-    if (loadedData && Object.keys(loadedData).length > 0) {
-      rawCatalog = loadedData;
-      renderExamLevel();
-    } else {
-      container.innerHTML = `<div style="color:red; font-weight:bold;">Catalog Not Found. Ensure GitHub Pages is deployed.</div>`;
-    }
-  }
+            <!-- Questions Container -->
+            <div id="questionsContainer" class="space-y-8">
+                <!-- Questions injected here -->
+            </div>
+        </div>
 
-  loadCatalog();
+    </main>
 
-  function renderExamLevel() {
-    document.getElementById('breadcrumb-container').innerHTML = `<b>Exams Home</b>`;
-    const container = document.getElementById('cards-container');
-    container.innerHTML = '';
-    Object.keys(rawCatalog).forEach(examName => {
-      const card = document.createElement('div');
-      card.className = 'portal-card';
-      card.onclick = () => renderCategoryLevel(examName);
-      card.innerHTML = `<div class="portal-card-title">${examName}</div><div class="badge-tag" style="width:fit-content; margin-top:10px;">Enter →</div>`;
-      container.appendChild(card);
-    });
-  }
+    <script>
+        let currentPaperData = null;
+        let currentSubject = null;
 
-  function renderCategoryLevel(examName) {
-    document.getElementById('breadcrumb-container').innerHTML = `<button class="breadcrumb-btn" onclick="renderExamLevel()">Exams Home</button><span>›</span><b>${examName}</b>`;
-    const container = document.getElementById('cards-container');
-    container.innerHTML = '';
-    Object.keys(rawCatalog[examName]).forEach(catName => {
-      const card = document.createElement('div');
-      card.className = 'portal-card';
-      card.onclick = () => renderTestListLevel(examName, catName);
-      card.innerHTML = `<div class="portal-card-title">${catName}</div><div class="badge-tag" style="width:fit-content; margin-top:10px;">Browse →</div>`;
-      container.appendChild(card);
-    });
-  }
-
-  function renderTestListLevel(examName, catName) {
-    document.getElementById('breadcrumb-container').innerHTML = `<button class="breadcrumb-btn" onclick="renderExamLevel()">Exams Home</button><span>›</span><button class="breadcrumb-btn" onclick="renderCategoryLevel('${examName}')">${examName}</button><span>›</span><b>${catName}</b>`;
-    const container = document.getElementById('cards-container');
-    container.innerHTML = '';
-    rawCatalog[examName][catName].forEach(test => {
-      const card = document.createElement('div');
-      card.className = 'portal-card';
-      card.onclick = () => launchExamEngine(test.file, test.title);
-      card.innerHTML = `<div class="portal-card-title" style="font-size:1.1rem;">${test.title}</div><div class="badge-tag" style="width:fit-content; margin-top:10px; background:#e6f4ea; color:#1e8e3e;">Start Test</div>`;
-      container.appendChild(card);
-    });
-  }
-
-  async function launchExamEngine(jsonFileName, testTitle) {
-    document.getElementById('dashboard').style.display = 'none';
-    document.getElementById('test-screen').style.display = 'flex';
-    document.getElementById('test-title-display').innerText = testTitle;
-    
-    responses = {};
-    timeLeft = 180 * 60;
-    let data = null;
-
-    try {
-      const res = await fetch(jsonFileName + '?v=' + new Date().getTime());
-      if (res.ok) data = await res.json();
-    } catch (e) {}
-
-    if (data) {
-      // BULLETPROOF PARSING: Ignores metadata, grabs only valid subjects
-      let rawData = data.questions ? data.questions : data;
-      questions = {};
-      Object.keys(rawData).forEach(key => {
-        if (key !== 'metadata' && Array.isArray(rawData[key]) && rawData[key].length > 0) {
-          questions[key] = rawData[key];
+        // 1. Fetch the Catalog
+        async function loadCatalog() {
+            try {
+                const res = await fetch('test_index.json');
+                const catalog = await res.json();
+                renderCatalog(catalog);
+            } catch (err) {
+                document.getElementById('catalogContainer').innerHTML = 
+                    `<div class="text-red-500 text-center">Failed to load catalog. Run your python script to generate tests.</div>`;
+            }
         }
-      });
 
-      Object.keys(questions).forEach(subj => responses[subj] = new Array(questions[subj].length).fill(null));
-      currentSubject = Object.keys(questions)[0];
-      
-      renderTabs();
-      loadSubject(currentSubject);
+        // 2. Render the Catalog UI
+        function renderCatalog(catalog) {
+            const container = document.getElementById('catalogContainer');
+            container.innerHTML = '';
 
-      timerInterval = setInterval(() => {
-        if (timeLeft <= 0) { clearInterval(timerInterval); submitTest(); return; }
-        timeLeft--;
-        let h = Math.floor(timeLeft / 3600);
-        let m = Math.floor((timeLeft % 3600) / 60);
-        let s = timeLeft % 60;
-        document.getElementById('timer').innerText = `${h}:${m < 10 ? '0' : ''}${m}:${s < 10 ? '0' : ''}${s}`;
-      }, 1000);
-    }
-  }
+            for (const [exam, years] of Object.entries(catalog)) {
+                const examSection = document.createElement('div');
+                examSection.innerHTML = `<h3 class="text-2xl font-bold text-indigo-600 mb-4 border-b-2 border-indigo-100 pb-2">${exam}</h3>`;
+                
+                for (const [year, papers] of Object.entries(years)) {
+                    const yearBlock = document.createElement('div');
+                    yearBlock.className = 'mb-6 pl-4 border-l-4 border-indigo-400';
+                    yearBlock.innerHTML = `<h4 class="text-lg font-semibold text-gray-700 mb-3">${year}</h4>`;
+                    
+                    const grid = document.createElement('div');
+                    grid.className = 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4';
+                    
+                    papers.forEach(p => {
+                        const card = document.createElement('div');
+                        card.className = 'bg-white p-4 rounded-lg shadow hover:shadow-md transition cursor-pointer border border-gray-100 flex items-center justify-between';
+                        card.innerHTML = `
+                            <span class="font-medium text-gray-800">${p.title}</span>
+                            <span class="text-indigo-500 text-xl">&rarr;</span>
+                        `;
+                        card.onclick = () => loadPaper(p.file, p.title);
+                        grid.appendChild(card);
+                    });
+                    
+                    yearBlock.appendChild(grid);
+                    examSection.appendChild(yearBlock);
+                }
+                container.appendChild(examSection);
+            }
+        }
 
-  function renderTabs() {
-    const tabs = document.getElementById('subject-tabs');
-    tabs.innerHTML = '';
-    Object.keys(questions).forEach(subj => {
-      let b = document.createElement('button');
-      b.innerText = subj;
-      b.className = subj === currentSubject ? 'active' : '';
-      b.onclick = () => loadSubject(subj);
-      tabs.appendChild(b);
-    });
-  }
+        // 3. Fetch a specific paper JSON
+        async function loadPaper(filename, title) {
+            document.getElementById('catalogScreen').classList.add('hidden');
+            document.getElementById('paperScreen').classList.remove('hidden');
+            document.getElementById('backBtn').classList.remove('hidden');
+            document.getElementById('paperTitle').innerText = `Loading...`;
+            document.getElementById('questionsContainer').innerHTML = `<div class="text-center py-10">Loading questions...</div>`;
+            document.getElementById('subjectTabs').innerHTML = '';
 
-  function loadSubject(subj) {
-    currentSubject = subj;
-    currentIndex = 0;
-    renderTabs();
-    renderQuestion();
-    renderPalette();
-  }
+            try {
+                const res = await fetch(filename);
+                currentPaperData = await res.json();
+                document.getElementById('paperTitle').innerText = title;
+                setupSubjectTabs();
+            } catch (err) {
+                document.getElementById('questionsContainer').innerHTML = `<div class="text-red-500 text-center">Failed to load paper data.</div>`;
+            }
+        }
 
-  function renderQuestion() {
-    const q = questions[currentSubject][currentIndex];
-    const qDiv = document.getElementById('q-text');
-    const opts = document.getElementById('q-options');
-    const actions = document.getElementById('q-actions');
-    
-    // 🚀 DETERMINISTIC IMAGE HANDLER (Directly loads filename guaranteed by backend manifest)
-    let imageHtml = '';
-    if (q.image && q.image.trim() !== '') {
-      imageHtml = `
-        <div style="margin: 20px 0;">
-          <img src="images/${q.image.trim()}" 
-               onerror="this.style.display='none'"
-               style="max-width: 100%; border-radius: 6px; border: 1px solid #dadce0; padding: 5px; background: #fff;">
-        </div>`;
-    }
+        // 4. Setup Tabs for Subjects
+        function setupSubjectTabs() {
+            const questions = currentPaperData.questions || [];
+            const subjects = [...new Set(questions.map(q => q.subject).filter(Boolean))];
+            
+            const tabsContainer = document.getElementById('subjectTabs');
+            tabsContainer.innerHTML = '';
 
-    qDiv.innerHTML = `<b>Q${currentIndex + 1}.</b> ${q.text} ${imageHtml}`;
-    opts.innerHTML = '';
-    
-    // Check if it is a Subjective/CBSE Paper
-    const isSubjective = (q.type === 'subjective' || q.exam === 'CBSE' || !q.options);
-    
-    if (isSubjective && q.type !== 'integer') {
-      // SUBJECTIVE UI WITH PRE-WRAP FORMATTING FOR PERFECT LINE BREAKS
-      opts.innerHTML = `
-        <div style="background: #e8f0fe; padding: 20px; border-radius: 8px;">
-          <p style="color: #1a73e8; font-weight: bold; margin-top: 0;">📝 Subjective Question</p>
-          <p style="color: #5f6368; font-size: 0.9rem;">Solve this in your notebook.</p>
-          <button onclick="document.getElementById('sol-${currentIndex}').style.display='block'" style="background: #1a73e8; color: white; border: none; padding: 10px 15px; border-radius: 4px; cursor: pointer; font-weight: bold;">Reveal Solution</button>
-          
-          <div id="sol-${currentIndex}" style="display: none; margin-top: 20px; padding-top: 20px; border-top: 1px solid #c2d7fa; font-family: inherit; white-space: pre-wrap; word-wrap: break-word; line-height: 1.6; color: #202124;">
-            <b>Solution:</b>\n${q.solution || "Solution text available soon."}
-          </div>
-        </div>`;
-        actions.style.display = "flex"; 
-    } 
-    else if (q.type === 'integer') {
-      // INTEGER UI
-      const savedVal = responses[currentSubject][currentIndex]?.ans ?? '';
-      opts.innerHTML = `
-        <p style="font-weight: 500; color: #5f6368;">Enter numerical value:</p>
-        <div class="integer-input-box">
-          <input type="text" id="integer-ans-input" placeholder="Type answer" value="${savedVal}" oninput="saveIntegerResponse()">
-        </div>`;
-        actions.style.display = "flex";
-    } 
-    else {
-      // MCQ UI
-      const savedVal = responses[currentSubject][currentIndex]?.ans ?? '';
-      q.options.forEach((opt, i) => {
-        const isChecked = savedVal === i ? 'checked' : '';
-        opts.innerHTML += `
-          <div onclick="document.getElementById('opt${i}').checked = true; saveMcqResponse(${i})">
-            <label style="cursor:pointer; display:flex; align-items:center;">
-              <input type="radio" name="opt" id="opt${i}" value="${i}" ${isChecked}>
-              <span class="opt-text">${opt}</span>
-            </label>
-          </div>`;
-      });
-      actions.style.display = "flex";
-    }
+            if (subjects.length === 0) {
+                currentSubject = "All";
+                renderQuestions(questions);
+                return;
+            }
 
-    // Render LaTeX Math
-    setTimeout(() => {
-      if (window.renderMathInElement) {
-        renderMathInElement(qDiv, { delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}], throwOnError: false });
-        document.querySelectorAll('.opt-text, #sol-'+currentIndex).forEach(el => {
-          renderMathInElement(el, { delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}], throwOnError: false });
-        });
-      }
-    }, 50);
-  }
+            currentSubject = subjects[0];
 
-  function renderPalette() {
-    document.getElementById('palette-title').innerText = `${currentSubject} Palette`;
-    const p = document.getElementById('q-palette');
-    p.innerHTML = '';
-    questions[currentSubject].forEach((_, i) => {
-      const state = responses[currentSubject][i]?.state || 'not-visited';
-      let b = document.createElement('button');
-      b.className = `btn-palette ${state}`;
-      if (i === currentIndex) b.style.border = "3px solid #000";
-      b.innerText = i + 1;
-      b.onclick = () => { currentIndex = i; renderQuestion(); renderPalette(); };
-      p.appendChild(b);
-    });
-  }
+            subjects.forEach(sub => {
+                const btn = document.createElement('button');
+                btn.className = `px-4 py-2 font-medium rounded-t-lg transition-colors focus:outline-none ${sub === currentSubject ? 'bg-indigo-600 text-white' : 'bg-gray-200 text-gray-600 hover:bg-gray-300'}`;
+                btn.innerText = sub;
+                btn.onclick = () => {
+                    currentSubject = sub;
+                    Array.from(tabsContainer.children).forEach(c => {
+                        c.className = `px-4 py-2 font-medium rounded-t-lg transition-colors focus:outline-none ${c.innerText === currentSubject ? 'bg-indigo-600 text-white' : 'bg-gray-200 text-gray-600 hover:bg-gray-300'}`;
+                    });
+                    renderQuestions(questions.filter(q => q.subject === sub));
+                };
+                tabsContainer.appendChild(btn);
+            });
 
-  function saveMcqResponse(optionIndex) {
-    responses[currentSubject][currentIndex] = { ans: optionIndex, state: 'answered' };
-    renderPalette();
-  }
+            renderQuestions(questions.filter(q => q.subject === currentSubject));
+        }
 
-  function saveIntegerResponse() {
-    const val = document.getElementById('integer-ans-input')?.value;
-    responses[currentSubject][currentIndex] = val ? { ans: val.trim(), state: 'answered' } : null;
-    renderPalette();
-  }
+        // 5. Render Questions
+        function renderQuestions(questions) {
+            const container = document.getElementById('questionsContainer');
+            container.innerHTML = '';
 
-  function saveAndNext() {
-    const q = questions[currentSubject][currentIndex];
-    if (q.type === 'integer' || (!q.options || q.options.length === 0)) saveIntegerResponse();
-    else {
-      const selected = document.querySelector('input[name="opt"]:checked');
-      if (selected) responses[currentSubject][currentIndex] = { ans: parseInt(selected.value), state: 'answered' };
-    }
-    if (currentIndex < questions[currentSubject].length - 1) { currentIndex++; renderQuestion(); renderPalette(); }
-  }
+            if (questions.length === 0) {
+                container.innerHTML = `<div class="text-gray-500 text-center py-5">No questions found for this section.</div>`;
+                return;
+            }
 
-  function markForReview() {
-    const q = questions[currentSubject][currentIndex];
-    if (q.type === 'integer' || (!q.options || q.options.length === 0)) {
-      const val = document.getElementById('integer-ans-input')?.value;
-      responses[currentSubject][currentIndex] = val ? { ans: val.trim(), state: 'marked' } : { ans: null, state: 'marked' };
-    } else {
-      const selected = document.querySelector('input[name="opt"]:checked');
-      responses[currentSubject][currentIndex] = selected ? { ans: parseInt(selected.value), state: 'marked' } : { ans: null, state: 'marked' };
-    }
-    if (currentIndex < questions[currentSubject].length - 1) { currentIndex++; renderQuestion(); renderPalette(); }
-  }
+            questions.forEach((q, idx) => {
+                const qNum = q.question_number || (idx + 1);
+                const qText = (q.text || '').replace(/\n/g, '<br>');
+                
+                let imgHtml = '';
+                if (q.has_diagram && q.image) {
+                    imgHtml = `<div class="my-4"><img src="images/${q.image}" class="max-w-full h-auto border rounded shadow-sm" alt="Diagram" loading="lazy"></div>`;
+                }
 
-  function clearResponse() {
-    responses[currentSubject][currentIndex] = null;
-    renderQuestion();
-    renderPalette();
-  }
+                let optionsHtml = '';
+                if (q.options && q.options.length > 0) {
+                    optionsHtml = '<div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4">';
+                    const labels = ['A', 'B', 'C', 'D'];
+                    q.options.forEach((opt, i) => {
+                        optionsHtml += `
+                            <div class="p-3 border rounded bg-gray-50 flex items-start">
+                                <span class="font-bold mr-3 text-indigo-600">${labels[i] || '•'}</span>
+                                <span class="math-scroll">${opt.replace(/\n/g, '<br>')}</span>
+                            </div>`;
+                    });
+                    optionsHtml += '</div>';
+                }
 
-  function submitTest() {
-    clearInterval(timerInterval);
-    document.getElementById('test-screen').innerHTML = `
-      <div style="padding: 40px; text-align: center; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-        <h1 style="color: #1a73e8; font-size: 2.8rem;">Test Submitted</h1>
-        <p style="font-size: 1.2rem; color: #5f6368;">Great job! Your responses have been recorded locally.</p>
-        <button onclick="location.reload()" style="margin-top: 20px; padding: 12px 25px; background: #1a73e8; color: white; border: none; border-radius: 6px; font-size: 1rem; cursor: pointer; font-weight: bold;">Return to Dashboard</button>
-      </div>`;
-  }
-</script>
+                const solId = `sol-${qNum}-${Math.random().toString(36).substr(2, 9)}`;
+                const solText = (q.solution || 'No solution provided.').replace(/\n/g, '<br>');
+
+                const card = document.createElement('div');
+                card.className = 'bg-white p-6 rounded-lg shadow-sm border border-gray-200';
+                card.innerHTML = `
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 bg-indigo-100 text-indigo-700 font-bold h-8 w-8 rounded-full flex items-center justify-center mr-4 mt-1">
+                            ${qNum}
+                        </div>
+                        <div class="flex-grow w-full overflow-hidden">
+                            <div class="text-gray-800 text-lg math-scroll">${qText}</div>
+                            ${imgHtml}
+                            ${optionsHtml}
+                            
+                            <div class="mt-6 border-t pt-4">
+                                <button onclick="toggleSolution('${solId}')" class="text-sm font-medium text-indigo-600 hover:text-indigo-800 focus:outline-none">
+                                    👁️ Show / Hide Solution
+                                </button>
+                                <div id="${solId}" class="hidden-solution mt-4 p-4 bg-green-50 border border-green-200 rounded text-gray-800 math-scroll">
+                                    <strong class="text-green-800 mb-2 block">Solution:</strong>
+                                    ${solText}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+
+            if (window.MathJax) {
+                MathJax.typesetPromise([container]).catch((err) => console.log('MathJax error:', err));
+            }
+        }
+
+        // Utility: Toggle Solution
+        function toggleSolution(id) {
+            const el = document.getElementById(id);
+            if (el.classList.contains('hidden-solution')) {
+                el.classList.remove('hidden-solution');
+                el.classList.add('visible-solution');
+            } else {
+                el.classList.add('hidden-solution');
+                el.classList.remove('visible-solution');
+            }
+        }
+
+        // Utility: Back to Catalog
+        function showCatalog() {
+            document.getElementById('paperScreen').classList.add('hidden');
+            document.getElementById('catalogScreen').classList.remove('hidden');
+            document.getElementById('backBtn').classList.add('hidden');
+            currentPaperData = null;
+        }
+
+        window.onload = loadCatalog;
+    </script>
 </body>
 </html>
