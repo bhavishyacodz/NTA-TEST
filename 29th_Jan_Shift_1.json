@@ -1,0 +1,1299 @@
+{
+  "metadata": {
+    "exam": "JEE Main",
+    "year": "2024",
+    "shift": 1
+  },
+  "questions": [
+    {
+      "question_number": 1,
+      "subject": "Physics",
+      "text": "If a radioactive element having half-life of 30 min is undergoing beta decay, the fraction of radioactive element remains undecayed after 90 min. will be",
+      "options": [
+        "\\frac{1}{4}",
+        "\\frac{1}{2}",
+        "\\frac{1}{8}",
+        "\\frac{1}{16}"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 2,
+      "subject": "Physics",
+      "text": "Given below are two statements: One is labelled as Assertion A and the other is labelled as Reason R.\nAssertion A: If $dQ$ and $dW$ represent the heat supplied to the system and the work done on the system respectively. Then according to the first law of thermodynamics $dQ = dU - dW$.\nReason R: First law of thermodynamics is based on law of conservation of energy.\nIn the light of the above statements, choose the correct answer from the options given below:",
+      "options": [
+        "Both A and R are correct and R is the correct explanation of A",
+        "A is correct but R is not correct",
+        "A is not correct but R is correct",
+        "Both A and R are correct but R is not the correct explanation of A"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 3,
+      "subject": "Physics",
+      "text": "In a Young's double slit experiment, two slits are illuminated with a light of wavelength $800\\text{ nm}$. The line joining $A_1 P$ is perpendicular to $A_1 A_2$ as shown in the figure. If the first minimum is detected at $P$, the value of slits separation 'a' will be:\nThe distance of screen from slits $D = 5\\text{ cm}$",
+      "options": [
+        "0.2 mm",
+        "0.1 mm",
+        "0.5 mm",
+        "0.4 mm"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 2,
+      "image": null
+    },
+    {
+      "question_number": 4,
+      "subject": "Physics",
+      "text": "A stone is projected at angle $30^\\circ$ to the horizontal. The ratio of kinetic energy of the stone at point of projection to its kinetic energy at the highest point of flight will be -",
+      "options": [
+        "4 : 1",
+        "1 : 2",
+        "1 : 4",
+        "4 : 3"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 5,
+      "subject": "Physics",
+      "text": "Surface tension of a soap bubble is $2.0 \\times 10^{-2}\\text{ Nm}^{-1}$. Work done to increase the radius of soap bubble from $3.5\\text{ cm}$ to $7\\text{ cm}$ will be:\nTake $\\left[\\pi = \\frac{22}{7}\\right]$",
+      "options": [
+        "18.48 \\times 10^{-4}\\text{ J}",
+        "0.72 \\times 10^{-4}\\text{ J}",
+        "5.76 \\times 10^{-4}\\text{ J}",
+        "9.24 \\times 10^{-4}\\text{ J}"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 6,
+      "subject": "Physics",
+      "text": "A bicycle tyre is filled with air having pressure of $270\\text{ kPa}$ at $27^\\circ\\text{C}$. The approximate pressure of the air in the tyre when the temperature increases to $36^\\circ\\text{C}$ is",
+      "options": [
+        "360 kPa",
+        "270 kPa",
+        "278 kPa",
+        "262 kPa"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 7,
+      "subject": "Physics",
+      "text": "A single current carrying loop of wire carrying current I flowing in anticlockwise direction seen from $+ve\\ z$ direction and lying in $xy$ plane is shown in figure. The plot of $\\hat{j}$ component of magnetic field ($B_y$) at a distance 'a' (less than radius of the coil) and on $yz$ plane vs $z$ coordinate looks like",
+      "options": [
+        "Graph 1",
+        "Graph 2",
+        "Graph 3",
+        "Graph 4"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 4,
+      "image": null
+    },
+    {
+      "question_number": 8,
+      "subject": "Physics",
+      "text": "If the height of transmitting and receiving antennas are $80\\text{ m}$ each, the maximum line of sight distance will be:\nGiven: Earth's radius $= 6.4 \\times 10^6\\text{ m}$",
+      "options": [
+        "28 km",
+        "64 km",
+        "36 km",
+        "32 km"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 9,
+      "subject": "Physics",
+      "text": "A car is moving on a horizontal curved road with radius $50\\text{ m}$. The approximate maximum speed of car will be, if friction between tyres and road is $0.34$. [take $g = 10\\text{ ms}^{-2}$]",
+      "options": [
+        "22.4 \\text{ ms}^{-1}",
+        "13 \\text{ ms}^{-1}",
+        "3.4 \\text{ ms}^{-1}",
+        "17 \\text{ ms}^{-1}"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 10,
+      "subject": "Physics",
+      "text": "Ratio of thermal energy released in two resistors R and 3R connected in parallel in an electric circuit is :",
+      "options": [
+        "1 : 3",
+        "1 : 1",
+        "3 : 1",
+        "1 : 27"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 11,
+      "subject": "Physics",
+      "text": "The threshold wavelength for photoelectric emission from a material is $5500\\ \\text{\\AA}$. Photoelectrons will be emitted, when this material is illuminated with monochromatic radiation from a\nA. 75 W infra-red lamp\nB. 10 W infra-red lamp\nC. 75 W ultra-violet lamp\nD. 10 W ultra-violet lamp\nChoose the correct answer from the options given below:",
+      "options": [
+        "C and D only",
+        "A and D only",
+        "B and C only",
+        "C only"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 12,
+      "subject": "Physics",
+      "text": "Two particles of equal mass 'm' move in a circle of radius 'r' under the action of their mutual gravitational attraction. The speed of each particle will be :",
+      "options": [
+        "\\sqrt{\\frac{Gm}{4r}}",
+        "\\sqrt{\\frac{Gm}{2r}}",
+        "\\sqrt{\\frac{Gm}{r}}",
+        "\\sqrt{\\frac{4Gm}{r}}"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 13,
+      "subject": "Physics",
+      "text": "The magnitude of magnetic induction at mid point O due to current arrangement as shown in Fig will be",
+      "options": [
+        "0",
+        "\\frac{\\mu_0 I}{2\\pi a}",
+        "\\frac{\\mu_0 I}{4\\pi a}",
+        "\\frac{\\mu_0 I}{\\pi a}"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 7,
+      "image": null
+    },
+    {
+      "question_number": 14,
+      "subject": "Physics",
+      "text": "Find the mutual inductance in the arrangement, when a small circular loop of wire of radius '$R$' is placed inside a large square loop of wire of side L ($L \\gg R$). The loops are coplanar and their centres coincide :",
+      "options": [
+        "M = \\frac{\\sqrt{2}\\mu_0 R^2}{L}",
+        "M = \\frac{2\\sqrt{2}\\mu_0 R^2}{L}",
+        "M = \\frac{\\sqrt{2}\\mu_0 R}{L^2}",
+        "M = \\frac{2\\sqrt{2}\\mu_0 R}{L^2}"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 8,
+      "image": null
+    },
+    {
+      "question_number": 15,
+      "subject": "Physics",
+      "text": "In a cuboid of dimension $2L \\times 2L \\times L$, a charge $q$ is placed at the center of the surface 'S' having area of $4L^2$. The flux through the opposite surface to 'S' is given by",
+      "options": [
+        "\\frac{q}{3\\epsilon_0}",
+        "\\frac{q}{12\\epsilon_0}",
+        "\\frac{q}{2\\epsilon_0}",
+        "\\frac{q}{6\\epsilon_0}"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 16,
+      "subject": "Physics",
+      "text": "Which one of the following statement is not correct in the case of light emitting diodes?\nA. It is a heavily doped p-n junction.\nB. It emits light only when it is forward biased.\nC. It emits light only when it is reverse biased.\nD. The energy of the light emitted is equal to or slightly less than the energy gap of the semiconductor used.\nChoose the correct answer from the options given below:",
+      "options": [
+        "C",
+        "C and D",
+        "B",
+        "A"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 17,
+      "subject": "Physics",
+      "text": "Which of the following are true?\nA. Speed of light in vacuum is dependent on the direction of propagation.\nB. Speed of light in a medium is independent of the wavelength of light.\nC. The speed of light is independent of the motion of the source.\nD. The speed of light in a medium is independent of intensity.\nChoose the correct answer from the options given below:",
+      "options": [
+        "B and D only",
+        "A and C only",
+        "B and C only",
+        "C and D only"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 18,
+      "subject": "Physics",
+      "text": "Match List I with List II:\nList I (Physical Quantity)\nA. Pressure gradient\nB. Energy density\nC. Electric Field\nD. Latent heat\nList II (Dimensional Formula)\nI. $[M^0 L^2 T^{-2}]$\nII. $[M^1 L^{-1} T^{-2}]$\nIII. $[M^1 L^1 T^{-3} A^{-1}]$\nIV. $[M^1 L^{-2} T^{-2}]$\nChoose the correct answer from the options given below:",
+      "options": [
+        "A-III, B-II, C-IV, D-I",
+        "A-III, B-II, C-I, D-IV",
+        "A-II, B-III, C-IV, D-I",
+        "A-II, B-III, C-I, D-IV"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 19,
+      "subject": "Physics",
+      "text": "A person observes two moving trains, 'A' reaching the station and 'B' leaving the station with equal speed of $30\\text{ m/s}$. If both trains emit sounds with frequency $300\\text{ Hz}$, (Speed of sound: $330\\text{ m/s}$) approximate difference of frequencies heard by the person will be:",
+      "options": [
+        "80 Hz",
+        "33 Hz",
+        "55 Hz",
+        "10 Hz"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 20,
+      "subject": "Physics",
+      "text": "A block of mass $m$ slides down the plane inclined at angle $30^\\circ$ with an acceleration $\\frac{g}{4}$. The value of coefficient of kinetic friction will be:",
+      "options": [
+        "\\frac{\\sqrt{3}}{2}",
+        "\\frac{2\\sqrt{3}-1}{2}",
+        "\\frac{1}{2\\sqrt{3}}",
+        "\\frac{2\\sqrt{3}+1}{2}"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 21,
+      "subject": "Physics",
+      "text": "A $0.4\\text{ kg}$ mass takes $8\\text{ s}$ to reach ground when dropped from a certain height 'P' above surface of earth. The loss of potential energy in the last second of fall is ______ J.\n(Take $g = 10\\text{ m/s}^2$)",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 22,
+      "subject": "Physics",
+      "text": "A body cools from $60^\\circ\\text{C}$ to $40^\\circ\\text{C}$ in $6\\text{ minutes}$. If, temperature of surroundings is $10^\\circ\\text{C}$. Then, after the next $6\\text{ minutes}$, its temperature will be ______ $^\\circ\\text{C}$.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 23,
+      "subject": "Physics",
+      "text": "In a metre bridge experiment the balance point is obtained if the gaps are closed by $2\\ \\Omega$ and $3\\ \\Omega$. A shunt of $X\\ \\Omega$ is added to $3\\ \\Omega$ resistor to shift the balancing point by $22.5\\text{ cm}$. The value of $X$ is ______.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 24,
+      "subject": "Physics",
+      "text": "A point charge $q_1 = 4q_0$ is placed at origin. Another point charge $q_2 = -q_0$ is placed at $x = 12\\text{ cm}$. Charge of proton is $q_0$. The proton is placed on $x$ axis so that the electrostatic force on the proton is zero. In this situation, the position of the proton from the origin is ______ cm.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 25,
+      "subject": "Physics",
+      "text": "Two simple harmonic waves having equal amplitudes of $8\\text{ cm}$ and equal frequency of $10\\text{ Hz}$ are moving along the same direction. The resultant amplitude is also $8\\text{ cm}$. The phase difference between the individual waves is ______ degree.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 26,
+      "subject": "Physics",
+      "text": "A certain elastic conducting material is stretched into a circular loop. It is placed with its plane perpendicular to a uniform magnetic field $B = 0.8\\text{ T}$. When released the radius of the loop starts shrinking at a constant rate of $2\\text{ cms}^{-1}$. The induced emf in the loop at an instant when the radius of the loop is $10\\text{ cm}$ will be ______ mV.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 27,
+      "subject": "Physics",
+      "text": "A tennis ball is dropped on to the floor from a height of $9.8\\text{ m}$. It rebounds to a height $5.0\\text{ m}$. Ball comes in contact with the floor for $0.2\\text{ s}$. The average acceleration during contact is ______ $\\text{ms}^{-2}$.\n(Given $g = 10\\text{ ms}^{-2}$)",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 28,
+      "subject": "Physics",
+      "text": "As shown in the figure, three identical polaroids $P_1, P_2$ and $P_3$ are placed one after another. The pass axis of $P_2$ and $P_3$ are inclined at angle of $60^\\circ$ and $90^\\circ$ with respect to axis of $P_1$. The source S has an intensity of $256\\ \\frac{\\text{W}}{\\text{m}^2}$. The intensity of light at point O is ______ $\\frac{\\text{W}}{\\text{m}^2}$.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": true,
+      "diagram_page": 13,
+      "image": null
+    },
+    {
+      "question_number": 29,
+      "subject": "Physics",
+      "text": "A radioactive element $^{242}_{92}\\text{X}$ emits two $\\alpha$-particles, one electron and two positrons. The product nucleus is represented by $^{234}_{\\text{P}}\\text{Y}$. The value of P is ______.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 30,
+      "subject": "Physics",
+      "text": "A solid sphere of mass $2\\text{ kg}$ is making pure rolling on a horizontal surface with kinetic energy $2240\\text{ J}$. The velocity of centre of mass of the sphere will be ______ $\\text{ms}^{-1}$.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 31,
+      "subject": "Chemistry",
+      "text": "Match List I with List II.\nList I (Reaction)\n(A) Hoffmann Degradation\n(B) Clemmensen reduction\n(C) Cannizzaro reaction\n(D) Reimer-Tiemann Reaction\nList II (Reagents)\n(I) Conc. KOH, $\\Delta$\n(II) $\\text{CHCl}_3, \\text{NaOH}/\\text{H}_3\\text{O}^+$\n(III) $\\text{Br}_2, \\text{NaOH}$\n(IV) $\\text{Zn-Hg}/\\text{HCl}$\nChoose the correct answer from the options given below:",
+      "options": [
+        "(A) - II, (B) - IV, (C) - I, (D) - III",
+        "(A) - III, (B) - IV, (C) - I, (D) - II",
+        "(A) - III, (B) - IV, (C) - II, (D) - I",
+        "(A) - II, (B) - I, (C) - III, (D) - IV"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 32,
+      "subject": "Chemistry",
+      "text": "The increasing order of $\\text{pK}_a$ for the following phenols is\n(A) 2, 4 - Dinitrophenol\n(B) 4 - Nitrophenol\n(C) 2, 4, 5 - Trimethylphenol\n(D) Phenol\n(E) 3-Chlorophenol\nChoose the correct answer from the option given below:",
+      "options": [
+        "(A), (E), (B), (D), (C)",
+        "(C), (D), (E), (B), (A)",
+        "(C), (E), (D), (B), (A)",
+        "(A), (B), (E), (D), (C)"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 33,
+      "subject": "Chemistry",
+      "text": "The magnetic behavior of $\\text{Li}_2\\text{O}$, $\\text{Na}_2\\text{O}_2$ and $\\text{KO}_2$, respectively, are",
+      "options": [
+        "paramagnetic, diamagnetic and paramagnetic",
+        "diamagnetic, diamagnetic and paramagnetic",
+        "diamagnetic, paramagnetic and diamagnetic",
+        "paramagnetic, paramagnetic and diamagnetic"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 34,
+      "subject": "Chemistry",
+      "text": "Identify the correct order for the given property for following compounds.\n(A) Boiling Point: 1-chloropropane < 2-chloropropane < 1-chlorobutane\n(B) Density: 1-bromopropane < 1-chloropropane < 1-iodopropane\n(C) Boiling Point: 1-bromopropane < 2-bromopropane < 1,2-dibromopropane\n(D) Density: 1-iodopropane < 1-bromopropane < 1,2-dibromopropane\n(E) Boiling Point: pentane > isopentane > neopentane\nChoose the correct answer from the option given below:",
+      "options": [
+        "(A), (C) and (D) only",
+        "(A), (B) and (E) only",
+        "(A), (C) and (E) only",
+        "(B), (C) and (D) only"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 15,
+      "image": "29th_Jan_Shift_1_img3.jpeg"
+    },
+    {
+      "question_number": 35,
+      "subject": "Chemistry",
+      "text": "The correct order of hydration enthalpies is\n(A) $\\text{K}^+$\n(B) $\\text{Rb}^+$\n(C) $\\text{Mg}^{2+}$\n(D) $\\text{Cs}^+$\n(E) $\\text{Ca}^{2+}$\nChoose the correct answer from the options given below:",
+      "options": [
+        "C > E > A > D > B",
+        "C > A > E > B > D",
+        "C > E > A > B > D",
+        "E > C > A > B > D"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 36,
+      "subject": "Chemistry",
+      "text": "Chiral complex from the following is:\nHere $\\text{en} = \\text{ethylene diamine}$",
+      "options": [
+        "cis-[PtCl_2(NH_3)_2]",
+        "cis-[PtCl_2(en)_2]^{2+}",
+        "trans-[PtCl_2(en)_2]^{2+}",
+        "trans-[Co(NH_3)_4 Cl_2]^+"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 37,
+      "subject": "Chemistry",
+      "text": "The standard electrode potential ($\\text{M}^{3+}/\\text{M}^{2+}$) for V, Cr, Mn & Co are $-0.26\\text{ V}$, $-0.41\\text{ V}$, $+1.57\\text{ V}$ and $+1.97\\text{ V}$, respectively. The metal ions which can liberate $\\text{H}_2$ from a dilute acid are",
+      "options": [
+        "Mn^{2+} and Co^{2+}",
+        "Cr^{2+} and Co^{2+}",
+        "V^{2+} and Cr^{2+}",
+        "V^{2+} and Mn^{2+}"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 38,
+      "subject": "Chemistry",
+      "text": "The reaction representing the Mond process for metal refining is ______.",
+      "options": [
+        "\\text{Ni} + 4\\text{CO} \\xrightarrow{\\Delta} \\text{Ni(CO)}_4",
+        "\\text{ZnO} + \\text{C} \\xrightarrow{\\Delta} \\text{Zn} + \\text{CO}",
+        "2\\text{K}[\\text{Au(CN)}_2] + \\text{Zn} \\xrightarrow{\\Delta} \\text{K}_2[\\text{Zn(CN)}_4] + 2\\text{Au}",
+        "\\text{Zr} + 2\\text{I}_2 \\xrightarrow{\\Delta} \\text{ZrI}_4"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 39,
+      "subject": "Chemistry",
+      "text": "The shortest wavelength of hydrogen atom in Lyman series is $\\lambda$. The longest wavelength in Balmer series of $\\text{He}^+$ is",
+      "options": [
+        "\\frac{36\\lambda}{5}",
+        "\\frac{9\\lambda}{5}",
+        "\\frac{5}{9\\lambda}",
+        "\\frac{5\\lambda}{9}"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 40,
+      "subject": "Chemistry",
+      "text": "The bond dissociation energy is highest for",
+      "options": [
+        "Br_2",
+        "F_2",
+        "I_2",
+        "Cl_2"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 41,
+      "subject": "Chemistry",
+      "text": "For 1 mol of gas, the plot of $pV$ vs. $p$ is shown below. $p$ is the pressure and $V$ is the volume of the gas.\nWhat is the value of compressibility factor at point A?",
+      "options": [
+        "1 + \\frac{a}{RTV}",
+        "1 + \\frac{b}{V}",
+        "1 - \\frac{a}{RTV}",
+        "1 - \\frac{b}{V}"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 19,
+      "image": null
+    },
+    {
+      "question_number": 42,
+      "subject": "Chemistry",
+      "text": "During the borax bead test with $\\text{CuSO}_4$, a blue green colour of the bead was observed in oxidising flame due to the formation of",
+      "options": [
+        "Cu_3 B_2",
+        "Cu(BO_2)_2",
+        "Cu",
+        "CuO"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 43,
+      "subject": "Chemistry",
+      "text": "\"A\" obtained by Ostwald's method involving air oxidation of $\\text{NH}_3$, upon further air oxidation produces \"B\". \"B\" on hydration forms an oxoacid of Nitrogen along with evolution of \"A\". The oxoacid also produces \"A\" and gives positive brown ring test.\nIdentify A and B, respectively.",
+      "options": [
+        "N_2 O_3, NO_2",
+        "NO_2, N_2 O_5",
+        "NO_2, N_2 O_4",
+        "NO, NO_2"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 44,
+      "subject": "Chemistry",
+      "text": "Match List I with List II.\nList I (Antimicrobials)\n(A) Narrow Spectrum Antibiotic\n(B) Antiseptic\n(C) Disinfectants\n(D) Broad spectrum antibiotic\nList II (Names)\n(I) Furacin\n(II) Sulphur dioxide\n(III) Penicillin G\n(IV) Chloramphenicol\nChoose the correct answer from the options given below:",
+      "options": [
+        "(A) - III, (B) - I, (C) - IV, (D) - II",
+        "(A) - I, (B) - II, (C) - IV, (D) - III",
+        "(A) - III, (B) - I, (C) - II, (D) - IV",
+        "(A) - II, (B) - I, (C) - IV, (D) - III"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 45,
+      "subject": "Chemistry",
+      "text": "Which of the following salt solutions would coagulate the colloid solution formed when $\\text{FeCl}_3$ is added to $\\text{NaOH}$ solution, at the fastest rate?",
+      "options": [
+        "10 mL of 0.2 mol dm^{-3} AlCl_3",
+        "10 mL of 0.15 mol dm^{-3} CaCl_2",
+        "10 mL of 0.1 mol dm^{-3} Na_2SO_4",
+        "10 mL of 0.1 mol dm^{-3} Ca_3(PO_4)_2"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 46,
+      "subject": "Chemistry",
+      "text": "Number of cyclic tripeptides formed with 2 amino acids A and B is:",
+      "options": [
+        "5",
+        "4",
+        "2",
+        "3"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 47,
+      "subject": "Chemistry",
+      "text": "Correct statement about smog is:",
+      "options": [
+        "NO_2 is present in classical smog",
+        "Photochemical smog has high concentration of oxidizing agents",
+        "Both NO_2 and SO_2 are present in classical smog",
+        "Classical smog also has high concentration of oxidizing agents"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 48,
+      "subject": "Chemistry",
+      "text": "Which of the given compounds can enhance the efficiency of hydrogen storage tank?",
+      "options": [
+        "NaNi_5",
+        "SiH_4",
+        "Di-isobutylaluminium hydride",
+        "Li/P_4"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 49,
+      "subject": "Chemistry",
+      "text": "Compound that will give positive Lassaigne's test for both nitrogen and halogen is:",
+      "options": [
+        "NH_4 Cl",
+        "CH_3 NH_2 \\cdot HCl",
+        "NH_2 OH \\cdot HCl",
+        "N_2 H_4 \\cdot HCl"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 50,
+      "subject": "Chemistry",
+      "text": "The major product 'P' for the following sequence of reactions is:\n$\\text{Ph}-\\text{C}(=\\text{O})-\\text{CH}_2-\\text{C}(=\\text{O})-\\text{NH}_2 \\xrightarrow[2)\\ \\text{LiAlH}_4,\\ 3)\\ \\text{H}_3\\text{O}^+]{1)\\ \\text{Zn/Hg, HCl}} \\text{'P'}$",
+      "options": [
+        "Ph-CH(OH)-CH_2-CH_2-OH",
+        "Ph-CH(OH)-CH_2-NH_2",
+        "Ph-CH(OH)-CH(OH)-NH_2",
+        "Ph-CH_2-CH_2-NH_2"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 23,
+      "image": null
+    },
+    {
+      "question_number": 51,
+      "subject": "Chemistry",
+      "text": "For certain chemical reaction $\\text{X} \\to \\text{Y}$, the rate of formation of product is plotted against the time as shown in the figure. The number of correct statement/s from the following is ______.\n(A) Over all order of this reaction is one\n(B) Order of this reaction can't be determined\n(C) In region I and III, the reaction is of first and zero order respectively\n(D) In region-II, the reaction is of first order\n(E) In region-II, the order of reaction is in the range of 0.1 to 0.9.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": true,
+      "diagram_page": 23,
+      "image": null
+    },
+    {
+      "question_number": 52,
+      "subject": "Chemistry",
+      "text": "Following figure shows dependence of molar conductance of two electrolytes on concentration. $\\Lambda_m^\\circ$ is the limiting molar conductivity.\nThe number of incorrect statement(s) from the following is ______\n(A) $\\Lambda_m^\\circ$ for electrolyte A is obtained by extrapolation\n(B) For electrolyte B, $\\Lambda_m$ vs $\\sqrt{c}$ graph is a straight line with intercept equal to $\\Lambda_m^\\circ$\n(C) At infinite dilution, the value of degree of dissociation approaches zero for electrolyte B.\n(D) $\\Lambda_m^\\circ$ for any electrolyte A or B can be calculated using $\\lambda^\\circ$ for individual ions.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": true,
+      "diagram_page": 24,
+      "image": null
+    },
+    {
+      "question_number": 53,
+      "subject": "Chemistry",
+      "text": "$17\\text{ mg}$ of a hydrocarbon (M.F. $\\text{C}_{10}\\text{H}_{16}$) takes up $8.40\\text{ mL}$ of the $\\text{H}_2$ gas measured at $0^\\circ\\text{C}$ and $760\\text{ mm of Hg}$. Ozonolysis of the same hydrocarbon yields $\\text{CH}_3-\\text{C}(=\\text{O})-\\text{CH}_3$, $\\text{H}-\\text{C}(=\\text{O})-\\text{H}$, $\\text{H}-\\text{C}(=\\text{O})-\\text{CH}_2-\\text{CH}_2-\\text{C}(=\\text{O})-\\text{C}(=\\text{O})-\\text{H}$. The number of double bond/s present in the hydrocarbon is ______.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 54,
+      "subject": "Chemistry",
+      "text": "Water decomposes at $2300\\text{ K}$\n$\\text{H}_2\\text{O}(g) \\to \\text{H}_2(g) + \\frac{1}{2}\\text{O}_2(g)$\nThe percent of water decomposing at $2300\\text{ K}$ and $1\\text{ bar}$ is ______ (Nearest integer).\nEquilibrium constant for the reaction is $2 \\times 10^{-3}$ at $2300\\text{ K}$.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 55,
+      "subject": "Chemistry",
+      "text": "Following chromatogram was developed by adsorption of compound 'A' on a $6\\text{ cm}$ TLC glass plate. Retardation factor of the compound 'A' is ______ $\\times 10^{-1}$.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": true,
+      "diagram_page": 25,
+      "image": null
+    },
+    {
+      "question_number": 56,
+      "subject": "Chemistry",
+      "text": "Solid Lead nitrate is dissolved in $1\\text{ litre}$ of water. The solution was found to boil at $100.15^\\circ\\text{C}$. When $0.2\\text{ mol}$ of $\\text{NaCl}$ is added to the resulting solution, it was observed that the solution froze at $-0.8^\\circ\\text{C}$. The solubility product of $\\text{PbCl}_2$ formed is ______ $\\times 10^{-6}$ at $298\\text{ K}$. (Nearest integer)\nGiven : $K_b = 0.5\\text{ K kg mol}^{-1}$ and $K_f = 1.8\\text{ K kg mol}^{-1}$. Assume molality to be equal to molarity in all cases.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 57,
+      "subject": "Chemistry",
+      "text": "The number of molecules or ions from the following, which do not have odd number of electrons are ______.\n(A) $\\text{NO}_2$\n(B) $\\text{ICl}_4^-$\n(C) $\\text{BrF}_3$\n(D) $\\text{ClO}_2$\n(E) $\\text{NO}_2^+$\n(F) $\\text{NO}$",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 58,
+      "subject": "Chemistry",
+      "text": "Consider the following reaction approaching equilibrium at $27^\\circ\\text{C}$ and $1\\text{ atm}$ pressure\n$\\text{A}+\\text{B} \\xrightleftharpoons[k_r = 10^2]{k_f = 10^3} \\text{C}+\\text{D}$\nThe standard Gibb's energy change ($\\Delta_r G^\\circ$) at $27^\\circ\\text{C}$ is $(-)$ ______ $\\text{kJ mol}^{-1}$ (Nearest integer).\n(Given: $R = 8.3\\text{ J K}^{-1}\\text{mol}^{-1}$ and $\\ln 10 = 2.3$)",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 59,
+      "subject": "Chemistry",
+      "text": "The sum of bridging carbonyls in $\\text{W(CO)}_6$ and $\\text{Mn}_2(\\text{CO})_{10}$ is ______.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 60,
+      "subject": "Chemistry",
+      "text": "Millimoles of calcium hydroxide required to produce $100\\text{ mL}$ of the aqueous solution of $\\text{pH } 12$ is $x \\times 10^{-1}$. The value of $x$ is ______ (Nearest integer).\nAssume complete dissociation.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 61,
+      "subject": "Mathematics",
+      "text": "Three rotten apples are mixed accidently with seven good apples and four apples are drawn one by one without replacement. Let the random variable X denote the number of rotten apples. If $\\mu$ and $\\sigma^2$ represent mean and variance of X, respectively, then $10(\\mu^2 + \\sigma^2)$ is equal to",
+      "options": [
+        "250",
+        "25",
+        "20",
+        "30"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 62,
+      "subject": "Mathematics",
+      "text": "Let $\\lambda \\neq 0$ be a real number. Let $\\alpha, \\beta$ be the roots of the equation $14x^2 - 31x + 3\\lambda = 0$ and $\\alpha, \\gamma$ be the roots of the equation $35x^2 - 53x + 4\\lambda = 0$.\nThen $\\frac{3\\alpha}{\\beta}$ and $\\frac{4\\alpha}{\\gamma}$ are the roots of the equation",
+      "options": [
+        "49x^2 - 245x + 250 = 0",
+        "7x^2 - 245x + 250 = 0",
+        "7x^2 + 245x - 250 = 0",
+        "49x^2 + 245x + 250 = 0"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 63,
+      "subject": "Mathematics",
+      "text": "Let the tangents at the points $A(4, -11)$ and $B(8, -5)$ on the circle $x^2 + y^2 - 3x + 10y - 15 = 0$, intersect at the point C. Then the radius of the circle, whose centre is C and the line joining A and B is its tangent, is equal to",
+      "options": [
+        "\\sqrt{13}",
+        "2\\sqrt{13}",
+        "\\frac{2\\sqrt{13}}{3}",
+        "\\frac{3\\sqrt{3}}{4}"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 64,
+      "subject": "Mathematics",
+      "text": "Let $f(x) = x + \\frac{a}{\\pi^2 - 4}\\sin x + \\frac{b}{\\pi^2 - 4}\\cos x$, $x \\in \\mathbb{R}$ be a function which satisfies $f(x) = x + \\int_0^{\\pi/2} \\sin(x + y) f(y) dy$. Then $(a + b)$ is equal to",
+      "options": [
+        "-2\\pi(\\pi - 2)",
+        "-\\pi(\\pi + 2)",
+        "-2\\pi(\\pi + 2)",
+        "-\\pi(\\pi - 2)"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 65,
+      "subject": "Mathematics",
+      "text": "Let $\\Delta$ be the area of the region $\\{(x, y) \\in \\mathbb{R}^2 : x^2 + y^2 \\le 21, y^2 \\le 4x, x \\ge 1\\}$. Then $\\frac{1}{2}\\left(\\Delta - 21\\sin^{-1}\\frac{2}{\\sqrt{7}}\\right)$ is equal to",
+      "options": [
+        "\\sqrt{3} - \\frac{4}{3}",
+        "\\sqrt{3} - \\frac{2}{3}",
+        "2\\sqrt{3} - \\frac{1}{3}",
+        "2\\sqrt{3} - \\frac{2}{3}"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 66,
+      "subject": "Mathematics",
+      "text": "Let $y = f(x)$ be the solution of the differential equation $y(x + 1)dx - x^2 dy = 0$, $y(1) = e$. Then $\\lim_{x \\to 0^+} f(x)$ is equal to",
+      "options": [
+        "0",
+        "\\frac{1}{e}",
+        "\\frac{1}{e^2}",
+        "e^2"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 67,
+      "subject": "Mathematics",
+      "text": "Let $[x]$ denote the greatest integer $\\le x$. Consider the function $f(x) = \\max\\{x^2, 1 + [x]\\}$. Then the value of the integral $\\int_0^2 f(x) dx$ is",
+      "options": [
+        "\\frac{1 + 5\\sqrt{2}}{3}",
+        "\\frac{8 + 4\\sqrt{2}}{3}",
+        "\\frac{5 + 4\\sqrt{2}}{3}",
+        "\\frac{4 + 5\\sqrt{2}}{3}"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 68,
+      "subject": "Mathematics",
+      "text": "Let $x = 2$ be a root of the equation $x^2 + px + q = 0$ and\n$f(x) = \\begin{cases} \\frac{1 - \\cos(x^2 - 4px + q^2 + 8q + 16)}{(x - 2p)^4}, & x \\neq 2p \\\\ 0, & x = 2p \\end{cases}$\nThen $\\lim_{x \\to 2p^+} [f(x)]$, where $[\\cdot]$ denotes greatest integer function, is",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "-1"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 69,
+      "subject": "Mathematics",
+      "text": "Consider the following system of equations\n$\\alpha x + 2y + z = 1$\n$2\\alpha x + 3y + z = 1$\n$3x + \\alpha y + 2z = \\beta$\nfor some $\\alpha, \\beta \\in \\mathbb{R}$. Then which of the following is NOT correct.",
+      "options": [
+        "It has no solution for \\alpha = -1 and for all \\beta \\in \\mathbb{R}",
+        "It has no solution if \\alpha = -1 and \\beta = 2",
+        "It has a solution for all \\alpha \\neq -1 and \\beta = 2",
+        "It has no solution for \\alpha = 3 and for all \\beta \\neq 2"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 70,
+      "subject": "Mathematics",
+      "text": "Let $A = \\left\\{(x, y) \\in \\mathbb{R}^2 : y \\ge 0, 2x \\le y \\le \\sqrt{4 - (x - 1)^2}\\right\\}$ and $B = \\left\\{(x, y) \\in \\mathbb{R} \\times \\mathbb{R} : 0 \\le y \\le \\min\\left\\{2x, \\sqrt{4 - (x - 1)^2}\\right\\}\\right\\}$. Then the ratio of the area of A to the area of B is",
+      "options": [
+        "\\frac{\\pi}{\\pi + 1}",
+        "\\frac{\\pi}{\\pi - 1}",
+        "\\frac{\\pi + 1}{\\pi - 1}",
+        "\\frac{\\pi - 1}{\\pi + 1}"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 71,
+      "subject": "Mathematics",
+      "text": "If $p, q$ and $r$ are three propositions, then which of the following combination of truth values of $p, q$ and $r$ makes the logical expression \\{$(p \\vee q) \\wedge (\\sim p \\vee r)$\\} $\\to ((\\sim q) \\vee r)$ false?",
+      "options": [
+        "p = T, q = T, r = F",
+        "p = F, q = T, r = F",
+        "p = T, q = F, r = T",
+        "p = T, q = F, r = F"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 72,
+      "subject": "Mathematics",
+      "text": "The domain of $f(x) = \\frac{\\log_{(x+1)}(x - 2)}{e^{2\\log_e x} - (2x + 3)}$, $x \\in \\mathbb{R}$ is",
+      "options": [
+        "\\mathbb{R} - \\{-1, 3\\}",
+        "(-1, \\infty) - \\{3\\}",
+        "\\mathbb{R} - \\{3\\}",
+        "(2, \\infty) - \\{3\\}"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 73,
+      "subject": "Mathematics",
+      "text": "Let $\\alpha$ and $\\beta$ be real numbers. Consider a $3 \\times 3$ matrix A such that $A^2 = 3A + \\alpha I$. If $A^4 = 21A + \\beta I$, then",
+      "options": [
+        "\\beta = -8",
+        "\\alpha = 1",
+        "\\alpha = 4",
+        "\\beta = 8"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 74,
+      "subject": "Mathematics",
+      "text": "Let $f : \\mathbb{R} \\to \\mathbb{R}$ be a function such that $f(x) = \\frac{x^2 + 2x + 1}{x^2 + 1}$. Then",
+      "options": [
+        "f(x) is one-one in (-\\infty, \\infty)",
+        "f(x) is many-one in (1, \\infty)",
+        "f(x) is many-one in (-\\infty, -1)",
+        "f(x) is one-one in [1, \\infty) but not in (-\\infty, \\infty)"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 75,
+      "subject": "Mathematics",
+      "text": "Let $f(\\theta) = 3\\sin^4\\left(\\frac{3\\pi}{2} - \\theta\\right) + \\sin^4(3\\pi + \\theta) - 2(1 - \\sin^2 2\\theta)$ and $S = \\left\\{\\theta \\in [0, \\pi] : f'(\\theta) = -\\frac{\\sqrt{3}}{2}\\right\\}$. If $4\\beta = \\sum_{\\theta \\in S} \\theta$, then $f(\\beta)$ is equal to",
+      "options": [
+        "\\frac{3}{2}",
+        "\\frac{5}{4}",
+        "\\frac{11}{8}",
+        "\\frac{9}{8}"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 76,
+      "subject": "Mathematics",
+      "text": "If the vectors $\\vec{a} = \\lambda\\hat{i} + \\mu\\hat{j} + 4\\hat{k}$, $\\vec{b} = -2\\hat{i} + 4\\hat{j} - 2\\hat{k}$ and $\\vec{c} = 2\\hat{i} + 3\\hat{j} + \\hat{k}$ are coplanar and the projection of $\\vec{a}$ on the vector $\\vec{b}$ is $\\sqrt{54}$ units, then the sum of all possible values of $\\lambda + \\mu$ is equal to",
+      "options": [
+        "6",
+        "18",
+        "24",
+        "0"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 77,
+      "subject": "Mathematics",
+      "text": "For two non-zero complex numbers $z_1$ and $z_2$, if $\\text{Re}(z_1 z_2) = 0$ and $\\text{Re}(z_1 + z_2) = 0$, then which of the following are possible?\nA. $\\text{Im}(z_1) > 0$ and $\\text{Im}(z_2) > 0$\nB. $\\text{Im}(z_1) < 0$ and $\\text{Im}(z_2) > 0$\nC. $\\text{Im}(z_1) > 0$ and $\\text{Im}(z_2) < 0$\nD. $\\text{Im}(z_1) < 0$ and $\\text{Im}(z_2) < 0$\nChoose the correct answer from the options given below:",
+      "options": [
+        "B and D",
+        "A and C",
+        "A and B",
+        "B and C"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 78,
+      "subject": "Mathematics",
+      "text": "A light ray emits from the origin making an angle $30^\\circ$ with the positive x-axis. After getting reflected by the line $x + y = 1$, if this ray intersects x-axis at Q, then the abscissa of Q is",
+      "options": [
+        "\\frac{\\sqrt{3}}{2(\\sqrt{3} + 1)}",
+        "\\frac{2}{3 - \\sqrt{3}}",
+        "\\frac{2}{3 + \\sqrt{3}}",
+        "\\frac{2}{\\sqrt{3} - 1}"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 79,
+      "subject": "Mathematics",
+      "text": "Fifteen football players of a club-team are given 15 T-shirts with their names written on the backside. If the players pick up the T-shirts randomly, then the probability that at least 3 players pick the correct T-shirt is",
+      "options": [
+        "\\frac{5}{24}",
+        "\\frac{1}{6}",
+        "\\frac{2}{15}",
+        "\\frac{5}{36}"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 80,
+      "subject": "Mathematics",
+      "text": "Let B and C be the two points on the line $y + x = 0$ such that B and C are symmetric with respect to the origin. Suppose A is a point on $y - 2x = 2$ such that $\\Delta ABC$ is an equilateral triangle. Then, the area of the $\\Delta ABC$ is",
+      "options": [
+        "2\\sqrt{3}",
+        "\\frac{8}{\\sqrt{3}}",
+        "\\frac{10}{\\sqrt{3}}",
+        "3\\sqrt{3}"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 81,
+      "subject": "Mathematics",
+      "text": "Let $\\vec{a}, \\vec{b}$ and $\\vec{c}$ be three non-zero non-coplanar vectors. Let the position vectors of four points A, B, C and D be $\\vec{a} - \\vec{b} + \\vec{c}$, $\\lambda\\vec{a} - 3\\vec{b} + 4\\vec{c}$, $-\\vec{a} + 2\\vec{b} - 3\\vec{c}$ and $2\\vec{a} - 4\\vec{b} + 6\\vec{c}$ respectively. If $\\vec{AB}, \\vec{AC}$ and $\\vec{AD}$ are coplanar, then $\\lambda$ is equal to ______.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 82,
+      "subject": "Mathematics",
+      "text": "Let the coefficients of three consecutive terms in the binomial expansion of $(1 + 2x)^n$ be in the ratio $2 : 5 : 8$. Then the coefficient of the term, which is in the middle of these three terms, is ______.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 83,
+      "subject": "Mathematics",
+      "text": "If all the six digit numbers $x_1 x_2 x_3 x_4 x_5 x_6$ with $0 < x_1 < x_2 < x_3 < x_4 < x_5 < x_6$ are arranged in the increasing order, then the sum of the digits in the $72^{\\text{nd}}$ number is ______.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 84,
+      "subject": "Mathematics",
+      "text": "Let $a_1, a_2, a_3, \\dots$ be a GP of increasing positive numbers. If the product of fourth and sixth terms is 9 and the sum of fifth and seventh terms is 24, then $a_1 a_9 + a_2 a_4 a_9 + a_5 + a_7$ is equal to ______.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 85,
+      "subject": "Mathematics",
+      "text": "Let the co-ordinates of one vertex of $\\Delta ABC$ be $A(0, 2, a)$ and the other two vertices lie on the line $\\frac{x+a}{5} = \\frac{y-1}{2} = \\frac{z+4}{3}$. For $a \\in \\mathbb{Z}$, if the area of $\\Delta ABC$ is $21\\text{ sq. units}$ and the line segment BC has length $2\\sqrt{21}\\text{ units}$, then $a^2$ is equal to ______.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 86,
+      "subject": "Mathematics",
+      "text": "Suppose $f$ is a function satisfying $f(x + y) = f(x) + f(y)$ for all $x, y \\in \\mathbb{N}$ and $f(1) = \\frac{1}{5}$. If $\\sum_{n=1}^m \\frac{f(n)}{n(n+1)(n+2)} = \\frac{1}{12}$, then $m$ is equal to ______.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 87,
+      "subject": "Mathematics",
+      "text": "Five digit numbers are formed using the digits 1, 2, 3, 5, 7 with repetitions and are written in descending order with serial numbers. For example, the number 77777 has serial number 1. Then the serial number of 35337 is ______.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 88,
+      "subject": "Mathematics",
+      "text": "If the co-efficient of $x^9$ in $\\left(ax^3 + \\frac{1}{\\beta x}\\right)^{11}$ and the co-efficient of $x^{-9}$ in $\\left(ax - \\frac{1}{\\beta x^3}\\right)^{11}$ are equal, then $(a\\beta)^2$ is equal to ______.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 89,
+      "subject": "Mathematics",
+      "text": "Let $f : \\mathbb{R} \\to \\mathbb{R}$ be a differentiable function that satisfies the relation $f(x+y) = f(x) + f(y) - 1, \\forall x, y \\in \\mathbb{R}$. If $f'(0) = 2$, then $|f(-2)|$ is equal to ______.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 90,
+      "subject": "Mathematics",
+      "text": "Let the equation of the plane P containing the line $x + 10 = \\frac{8 - y}{2} = z$ be $ax + by + 3z = 2(a + b)$ and the distance of the plane P from the point $(1, 27, 7)$ be $c$. Then $a^2 + b^2 + c^2$ is equal to ______.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    }
+  ]
+}

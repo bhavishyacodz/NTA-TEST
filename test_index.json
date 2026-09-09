@@ -2,47 +2,57 @@
   "JEE Main": {
     "2024": [
       {
-        "title": "30th Jan Shift 1",
+        "title": "JEE Main 2024 (Shift 1)",
         "file": "30th Jan Shift 1.json"
+      },
+      {
+        "title": "JEE Main 2024 (Shift 1)",
+        "file": "JEEMAIN_2024_2024-01-30_S1.json"
+      },
+      {
+        "title": "JEE Main 2024 (Shift 1)",
+        "file": "29th_Jan_Shift_1.json"
+      },
+      {
+        "title": "JEE Main 2024 (Shift 1)",
+        "file": "56-1-1_Chemistry.json"
       }
-    ]
-  },
-  "JEEMAIN": {
+    ],
     "2021": [
       {
-        "title": "JEEMAIN 2021 2021-07-25 S1",
+        "title": "JEE Main 2021 (Shift 1)",
         "file": "JEEMAIN_2021_2021-07-25_S1.json"
       }
     ],
-    "2024": [
+    "2023": [
       {
-        "title": "JEEMAIN 2024 2024-01-30 S1",
-        "file": "JEEMAIN_2024_2024-01-30_S1.json"
+        "title": "JEE Main 2023 (Shift 1)",
+        "file": "1st_Feb_Shift_1.json"
+      },
+      {
+        "title": "JEE Main 2023 (Shift 1)",
+        "file": "30th_Jan_Shift_1.json"
       }
     ]
   },
   "CBSE": {
     "2023": [
       {
-        "title": "CBSE 2023 2023-02-28 S1",
+        "title": "CBSE 2023 (Shift 1)",
         "file": "CBSE_2023_2023-02-28_S1.json"
       },
       {
-        "title": "CBSE 2023 2023-03-01 S1",
+        "title": "CBSE 2023 (Shift 1)",
         "file": "CBSE_2023_2023-03-01_S1.json"
       },
       {
-        "title": "CBSE 2023  S1",
+        "title": "CBSE 2023 (Shift 1)",
         "file": "CBSE_2023__S1.json"
       }
     ],
     "2024": [
       {
-        "title": "56-1-1 Chemistry",
-        "file": "56-1-1_Chemistry.json"
-      },
-      {
-        "title": "CBSE 2024  S1",
+        "title": "CBSE 2024 (Shift 1)",
         "file": "CBSE_2024__S1.json"
       }
     ]

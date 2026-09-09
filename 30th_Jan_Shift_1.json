@@ -1,0 +1,1299 @@
+{
+  "metadata": {
+    "exam": "JEE Main",
+    "year": "2023",
+    "shift": 1
+  },
+  "questions": [
+    {
+      "question_number": 1,
+      "subject": "Physics",
+      "text": "The figure represents the momentum time (p-t) curve for a particle moving along an axis under the influence of the force. Identify the regions on the graph where the magnitude of the force is maximum and minimum respectively ?\nIf $(t_3 - t_2) < t_1$",
+      "options": [
+        "b and c",
+        "a and b",
+        "c and a",
+        "c and b"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 1,
+      "image": null
+    },
+    {
+      "question_number": 2,
+      "subject": "Physics",
+      "text": "The charge flowing in a conductor changes with time as $Q(t) = \\alpha t - \\beta t^2 + \\gamma t^3$. Where $\\alpha, \\beta$ and $\\gamma$ are constants. Minimum value of current is :",
+      "options": [
+        "$\\alpha - \\frac{\\gamma^2}{3\\beta}$",
+        "$\\beta - \\frac{\\alpha^2}{3\\gamma}$",
+        "$\\alpha - \\frac{3\\beta^2}{\\gamma}$",
+        "$\\alpha - \\frac{\\beta^2}{3\\gamma}$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 3,
+      "subject": "Physics",
+      "text": "A massless square loop, of wire of resistance $10\\ \\Omega$, supporting a mass of $1\\text{ g}$, hangs vertically with one of its sides in a uniform magnetic field of $10^3\\text{ G}$, directed outwards in the shaded region. A dc voltage $V$ is applied to the loop. For what value of $V$, the magnetic force will exactly balance the weight of the supporting mass of $1\\text{ g}$ ?\n(If sides of the loop $= 10\\text{ cm}$, $g = 10\\text{ ms}^{-2}$)",
+      "options": [
+        "$\\frac{1}{10}\\text{ V}$",
+        "$100\\text{ V}$",
+        "$1\\text{ V}$",
+        "$10\\text{ V}$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 2,
+      "image": "30th_Jan_Shift_1_img1.jpeg"
+    },
+    {
+      "question_number": 4,
+      "subject": "Physics",
+      "text": "If the gravitational field in the space is given as $\\left(-\\frac{K}{r}\\right)$. Taking the reference point to be at $r = 2\\text{ cm}$ with gravitational potential $V = 10\\text{ J/kg}$. Find the gravitational potential at $r = 3\\text{ cm}$ in SI unit\n(Given, that $K = 6\\text{ Jcm/kg}$)",
+      "options": [
+        "$9$",
+        "$11$",
+        "$12$",
+        "$10$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 5,
+      "subject": "Physics",
+      "text": "Choose the correct relationship between Poisson ratio ($\\sigma$), bulk modulus ($K$) and modulus of rigidity ($\\eta$) of a given solid object :",
+      "options": [
+        "$\\sigma = \\frac{6K - 2\\eta}{3K - 2\\eta}$",
+        "$\\sigma = \\frac{3K + 2\\eta}{6K + 2\\eta}$",
+        "$\\sigma = \\frac{6K + 2\\eta}{3K - 2\\eta}$",
+        "$\\sigma = \\frac{3K - 2\\eta}{6K + 2\\eta}$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 6,
+      "subject": "Physics",
+      "text": "In a series LR circuit with $X_L = R$, power factor is $P_1$. If a capacitor of capacitance $C$ with $X_C = X_L$ is added to the circuit the power factor becomes $P_2$. The ratio of $P_1$ to $P_2$ will be :",
+      "options": [
+        "$1 : 1$",
+        "$1 : 2$",
+        "$1 : \\sqrt{2}$",
+        "$1 : 3$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 7,
+      "subject": "Physics",
+      "text": "A person has been using spectacles of power $-1.0\\text{ dioptre}$ for distant vision and a separate reading glass of power $2.0\\text{ dioptres}$. What is the least distance of distinct vision for this person :",
+      "options": [
+        "$10\\text{ cm}$",
+        "$30\\text{ cm}$",
+        "$50\\text{ cm}$",
+        "$40\\text{ cm}$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 8,
+      "subject": "Physics",
+      "text": "The magnetic moments associated with two closely wound circular coils A and B of radius $r_A = 10\\text{ cm}$ and $r_B = 20\\text{ cm}$ respectively are equal if : (Where $N_A, I_A$ and $N_B, I_B$ are number of turn and current of A and B respectively)",
+      "options": [
+        "$N_A I_A = 4 N_B I_B$",
+        "$2 N_A I_A = N_B I_B$",
+        "$4 N_A I_A = N_B I_B$",
+        "$N_A = 2 N_B$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 9,
+      "subject": "Physics",
+      "text": "The height of liquid column raised in a capillary tube of certain radius when dipped in liquid A vertically is, $5\\text{ cm}$. If the tube is dipped in a similar manner in another liquid B of surface tension and density double the values of liquid A, the height of liquid column raised in liquid B would be ________ $\\text{m}$.",
+      "options": [
+        "$0.20$",
+        "$0.5$",
+        "$0.05$",
+        "$0.10$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 10,
+      "subject": "Physics",
+      "text": "Speed of an electron in Bohr's $7^{\\text{th}}$ orbit for Hydrogen atom is $3.6 \\times 10^6\\text{ m/s}$. The corresponding speed of the electron in $3^{\\text{rd}}$ orbit, in $\\text{m/s}$ is :",
+      "options": [
+        "$(1.8 \\times 10^6)$",
+        "$(3.6 \\times 10^6)$",
+        "$(8.4 \\times 10^6)$",
+        "$(7.5 \\times 10^6)$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 11,
+      "subject": "Physics",
+      "text": "Heat is given to an ideal gas in an isothermal process.\nA. Internal energy of the gas will decrease.\nB. Internal energy of the gas will increase.\nC. Internal energy of the gas will not change.\nD. The gas will do positive work.\nE. The gas will do negative work.\nChoose the correct answer from the options given below :",
+      "options": [
+        "C and D only",
+        "C and E only",
+        "A and E only",
+        "B and D only"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 12,
+      "subject": "Physics",
+      "text": "A sinusoidal carrier voltage is amplitude modulated. The resultant amplitude modulated wave has maximum and minimum amplitude of $120\\text{ V}$ and $80\\text{ V}$ respectively. The amplitude of each sideband is :",
+      "options": [
+        "$15\\text{ V}$",
+        "$5\\text{ V}$",
+        "$20\\text{ V}$",
+        "$10\\text{ V}$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 13,
+      "subject": "Physics",
+      "text": "A ball of mass $200\\text{ g}$ rests on a vertical post of height $20\\text{ m}$. A bullet of mass $10\\text{ g}$, travelling in horizontal direction, hits the centre of the ball. After collision both travels independently. The ball hits the ground at a distance $30\\text{ m}$ and the bullet at a distance of $120\\text{ m}$ from the foot of the post. The value of initial velocity of the bullet will be (if $g = 10\\text{ m/s}^2$) :",
+      "options": [
+        "$120\\text{ m/s}$",
+        "$60\\text{ m/s}$",
+        "$360\\text{ m/s}$",
+        "$400\\text{ m/s}$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 14,
+      "subject": "Physics",
+      "text": "Match Column-I with Column-II :\nColumn-I (x-t graphs):\nA. x-t curve with increasing slope\nB. x-t curve decreasing from $x_0$\nC. x-t graph going up to peak and then down\nD. x-t straight line through origin with positive slope\nColumn-II (v-t graphs):\nI. v-t constant positive line\nII. v-t straight line from origin increasing\nIII. v-t positive constant then negative constant\nIV. v-t curve starting at zero asymptotic to $v_0$\n\nChoose the correct answer from the options given below:",
+      "options": [
+        "A-I, B-III, C-IV, D-II",
+        "A-I, B-II, C-III, D-IV",
+        "A-II, B-IV, C-III, D-I",
+        "A-II, B-III, C-IV, D-I"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 7,
+      "image": null
+    },
+    {
+      "question_number": 15,
+      "subject": "Physics",
+      "text": "The pressure (P) and temperature (T) relationship of an ideal gas obeys the equation $PT^2 = \\text{constant}$. The volume expansion coefficient of the gas will be :",
+      "options": [
+        "$\\frac{3}{T^2}$",
+        "$\\frac{3}{T^3}$",
+        "$\\frac{3}{T}$",
+        "$3T^2$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 16,
+      "subject": "Physics",
+      "text": "As per the given figure, a small ball P slides down the quadrant of a circle and hits the other ball Q of equal mass which is initially at rest. Neglecting the effect of friction and assume the collision to be elastic, the velocity of ball Q after collision will be :\n($g = 10\\text{ m/s}^2$)",
+      "options": [
+        "$2\\text{ m/s}$",
+        "$0.25\\text{ m/s}$",
+        "$4\\text{ m/s}$",
+        "$0$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 8,
+      "image": "30th_Jan_Shift_1_img3.jpeg"
+    },
+    {
+      "question_number": 17,
+      "subject": "Physics",
+      "text": "The output waveform of the given logical circuit for the following inputs A and B as shown below, is :",
+      "options": [
+        "Waveform Option 1",
+        "Waveform Option 2",
+        "Waveform Option 3",
+        "Waveform Option 4"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 9,
+      "image": null
+    },
+    {
+      "question_number": 18,
+      "subject": "Physics",
+      "text": "A small object at rest, absorbs a light pulse of power $20\\text{ mW}$ and duration $300\\text{ ns}$. Assuming speed of light as $3 \\times 10^8\\text{ m/s}$, the momentum of the object becomes equal to :",
+      "options": [
+        "$0.5 \\times 10^{-17}\\text{ kg m/s}$",
+        "$3 \\times 10^{-17}\\text{ kg m/s}$",
+        "$2 \\times 10^{-17}\\text{ kg m/s}$",
+        "$1 \\times 10^{-17}\\text{ kg m/s}$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 19,
+      "subject": "Physics",
+      "text": "Two isolated metallic solid spheres of radii R and 2R are charged such that both have same charge density $\\sigma$. The spheres are then connected by a thin conducting wire. If the new charge density of the bigger sphere is $\\sigma'$, The ratio $\\frac{\\sigma'}{\\sigma}$ is :",
+      "options": [
+        "$\\frac{4}{3}$",
+        "$\\frac{9}{4}$",
+        "$\\frac{5}{3}$",
+        "$\\frac{5}{6}$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 20,
+      "subject": "Physics",
+      "text": "Electric field in a certain region is given by $\\vec{E} = \\left(\\frac{A}{x^2}\\hat{i} + \\frac{B}{y^3}\\hat{j}\\right)$. The SI unit of A and B are :",
+      "options": [
+        "$\\text{Nm}^3\\text{C}^{-1}$; $\\text{Nm}^2\\text{C}^{-1}$",
+        "$\\text{Nm}^2\\text{C}$; $\\text{Nm}^3\\text{C}$",
+        "$\\text{Nm}^3\\text{C}$; $\\text{Nm}^2\\text{C}$",
+        "$\\text{Nm}^2\\text{C}^{-1}$; $\\text{Nm}^3\\text{C}^{-1}$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 21,
+      "subject": "Physics",
+      "text": "In the following circuit, the magnitude of current $I_1$, is ________ $\\text{A}$.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": true,
+      "diagram_page": 11,
+      "image": "30th_Jan_Shift_1_img4.jpeg"
+    },
+    {
+      "question_number": 22,
+      "subject": "Physics",
+      "text": "In Young's double slit experiment, two slits $S_1$ and $S_2$ are 'd' distance apart and the separation from slits to screen is D (as shown in figure). Now if two transparent slabs of equal thickness $0.1\\text{ mm}$ but refractive index $1.51$ and $1.55$ are introduced in the path of beam ($\\lambda = 4000\\text{\\AA}$) from $S_1$ and $S_2$ respectively. The central bright fringe spot will shift by ________ number of fringes.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": true,
+      "diagram_page": 12,
+      "image": "30th_Jan_Shift_1_img5.jpeg"
+    },
+    {
+      "question_number": 23,
+      "subject": "Physics",
+      "text": "A point source of light is placed at the centre of curvature of a hemispherical surface. The source emits a power of $24\\text{ W}$. The radius of curvature of hemisphere is $10\\text{ cm}$ and the inner surface is completely reflecting. The force on the hemisphere due to the light falling on it is ________ $\\times 10^{-8}\\text{ N}$.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 24,
+      "subject": "Physics",
+      "text": "As per the given figure, if $\\frac{dI}{dt} = -1\\text{ A/s}$ then the value of $V_{AB}$ at this instant will be ________ $\\text{V}$.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": true,
+      "diagram_page": 12,
+      "image": null
+    },
+    {
+      "question_number": 25,
+      "subject": "Physics",
+      "text": "In an experiment for estimating the value of focal length of converging mirror, image of an object placed at $40\\text{ cm}$ from the pole of the mirror is formed at distance $120\\text{ cm}$ from the pole of the mirror. These distances are measured with a modified scale in which there are 20 small divisions in $1\\text{ cm}$. The value of error in measurement of focal length of the mirror is $\\frac{1}{K}\\text{ cm}$. The value of K is ________.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 26,
+      "subject": "Physics",
+      "text": "A horse rider covers half the distance with $5\\text{ m/s}$ speed. The remaining part of the distance was travelled with speed $10\\text{ m/s}$ for half the time and with speed $15\\text{ m/s}$ for other half of the time. The mean speed of the rider averaged over the whole time of motion is $\\frac{x}{7}\\text{ m/s}$. The value of x is ________.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 27,
+      "subject": "Physics",
+      "text": "In a screw gauge, there are 100 divisions on the circular scale and the main scale moves by $0.5\\text{ mm}$ on a complete rotation of the circular scale. The zero of circular scale lies 6 divisions below the line of graduation when two studs are brought in contact with each other. When a wire is placed between the studs, 4 linear scale divisions are clearly visible while $46^{\\text{th}}$ division the circular scale coincide with the reference line. The diameter of the wire is ________ $\\times 10^{-2}\\text{ mm}$.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 28,
+      "subject": "Physics",
+      "text": "A capacitor of capacitance $900\\ \\mu\\text{F}$ is charged by a $100\\text{ V}$ battery. The capacitor is disconnected from the battery and connected to another uncharged identical capacitor such that one plate of uncharged capacitor connected to positive plate and another plate of uncharged capacitor connected to negative plate of the charged capacitor. The loss of energy in this process is measured as $x \\times 10^{-2}\\text{ J}$. The value of x is ________.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 29,
+      "subject": "Physics",
+      "text": "A thin uniform rod of length $2\\text{m}$, cross sectional area 'A' and density 'd' is rotated about an axis passing through the centre and perpendicular to its length with angular velocity $\\omega$. If value of $\\omega$ in terms of its rotational kinetic energy E is $\\sqrt{\\frac{\\alpha E}{A d}}$ then value of $\\alpha$ is ________.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 30,
+      "subject": "Physics",
+      "text": "The general displacement of a simple harmonic oscillator is $x = A \\sin \\omega t$. Let T be its time period. The slope of its potential energy (U) - time (t) curve will be maximum when $t = \\frac{T}{\\beta}$. The value of $\\beta$ is ________.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 31,
+      "subject": "Chemistry",
+      "text": "The alkaline earth metal sulphate(s) which are readily soluble in water is/are :\nA. $\\text{BeSO}_4$\nB. $\\text{MgSO}_4$\nC. $\\text{CaSO}_4$\nD. $\\text{SrSO}_4$\nE. $\\text{BaSO}_4$\n\nChoose the correct answer from the options given below :",
+      "options": [
+        "B only",
+        "B and C",
+        "A and B",
+        "A only"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 32,
+      "subject": "Chemistry",
+      "text": "Lithium aluminium hydride can be prepared from the reaction of",
+      "options": [
+        "$\\text{LiH}$ and $\\text{Al(OH)}_3$",
+        "$\\text{LiH}$ and $\\text{Al}_2\\text{Cl}_6$",
+        "$\\text{LiCl}$, $\\text{Al}$ and $\\text{H}_2$",
+        "$\\text{LiCl}$ and $\\text{Al}_2\\text{H}_6$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 33,
+      "subject": "Chemistry",
+      "text": "Amongst the following compounds, which one is an antacid ?",
+      "options": [
+        "Terfenadine",
+        "Ranitidine",
+        "Brompheniramine",
+        "Meprobamate"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 34,
+      "subject": "Chemistry",
+      "text": "Benzyl isocyanide can be obtained by :\nA. $\\text{PhCH}_2\\text{Br} \\xrightarrow{\\text{AgCN}}$\nB. $\\text{PhCH}_2\\text{NH}_2 \\xrightarrow[\\text{Aq.KOH}]{\\text{CHCl}_3}$\nC. $\\text{PhCH}_2\\text{NHCH}_3 \\xrightarrow[\\text{Aq.KOH}]{\\text{CHCl}_3}$\nD. $\\text{PhCH}_2\\text{OTs} \\xrightarrow{\\text{KCN}}$\n\nChoose the correct answer from the options given below :",
+      "options": [
+        "A and D",
+        "Only B",
+        "A and B",
+        "B and C"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 16,
+      "image": null
+    },
+    {
+      "question_number": 35,
+      "subject": "Chemistry",
+      "text": "Match List I with List II\nLIST I:\nA. $\\text{Ph-Cl} + \\text{CH}_3\\text{Cl} \\xrightarrow{\\text{Na}} \\text{Ph-CH}_3$\nB. $\\text{Ph-Cl} + 2\\text{Na} \\xrightarrow{} \\text{Ph-Ph}$\nC. $\\text{Ph-N}_2^+\\text{Cl}^- \\xrightarrow{\\text{Cu}_2\\text{Cl}_2} \\text{Ph-Cl} + \\text{N}_2$\nD. $\\text{C}_2\\text{H}_5\\text{Cl} + \\text{NaI} \\rightarrow \\text{C}_2\\text{H}_5\\text{I} + \\text{NaCl}$\n\nLIST II:\nI. Fittig reaction\nII. Wurtz Fittig reaction\nIII. Finkelstein reaction\nIV. Sandmeyer reaction\n\nChoose the correct answer from the options given below:",
+      "options": [
+        "A - III, B - II, C - IV, D - I",
+        "A - II, B - I, C - IV, D - III",
+        "A - II, B - I, C - III, D - IV",
+        "A - IV, B - II, C - III, D - I"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 17,
+      "image": null
+    },
+    {
+      "question_number": 36,
+      "subject": "Chemistry",
+      "text": "The major products 'A' and 'B', respectively, are\n$\\text{'A'} \\xleftarrow[\\text{H}_2\\text{SO}_4]{\\text{Cold}} \\text{H}_3\\text{C}-\\text{C}(\\text{CH}_3)=\\text{CH}_2 \\xrightarrow[80^\\circ\\text{C}]{\\text{H}_2\\text{SO}_4} \\text{'B'}$",
+      "options": [
+        "$\\text{CH}_3-\\text{CH}(\\text{CH}_3)-\\text{CH}_2\\text{CH}_2-\\text{CH}(\\text{CH}_3)_2$ & $\\text{H}_3\\text{C}-\\text{C}(\\text{CH}_3)_2-\\text{OSO}_3\\text{H}$",
+        "$\\text{CH}_3-\\text{C}(\\text{CH}_3)=\\text{CH}-\\text{C}(\\text{CH}_3)_3$ & $\\text{CH}_3-\\text{C}(\\text{CH}_3)_2-\\text{OSO}_3\\text{H}$",
+        "$\\text{H}_3\\text{C}-\\text{C}(\\text{CH}_3)_2-\\text{OSO}_3\\text{H}$ & $\\text{CH}_3-\\text{C}(\\text{CH}_3)=\\text{CH}-\\text{C}(\\text{CH}_3)_3$",
+        "$\\text{H}_3\\text{C}-\\text{C}(\\text{CH}_3)_2-\\text{OSO}_3\\text{H}$ & $\\text{CH}_3-\\text{CH}(\\text{CH}_3)-\\text{CH}_2\\text{CH}_2-\\text{CH}(\\text{CH}_3)_2$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 18,
+      "image": null
+    },
+    {
+      "question_number": 37,
+      "subject": "Chemistry",
+      "text": "To inhibit the growth of tumours, identify the compounds used from the following :\nA. EDTA\nB. Coordination Compounds of Pt\nC. D - Penicillamine\nD. Cis - Platin\n\nChoose the correct answer from the option given below:",
+      "options": [
+        "A and B Only",
+        "B and D Only",
+        "A and C Only",
+        "C and D Only"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 38,
+      "subject": "Chemistry",
+      "text": "What is the correct order of acidity of the protons marked A–D in the given compounds ?",
+      "options": [
+        "$\\text{H}_C > \\text{H}_D > \\text{H}_B > \\text{H}_A$",
+        "$\\text{H}_D > \\text{H}_C > \\text{H}_B > \\text{H}_A$",
+        "$\\text{H}_C > \\text{H}_A > \\text{H}_D > \\text{H}_B$",
+        "$\\text{H}_C > \\text{H}_D > \\text{H}_A > \\text{H}_B$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 19,
+      "image": "30th_Jan_Shift_1_img7.jpeg"
+    },
+    {
+      "question_number": 39,
+      "subject": "Chemistry",
+      "text": "For $\\text{OF}_2$ molecule consider the following :\nA. Number of lone pairs on oxygen is 2.\nB. FOF angle is less than $104.5^\\circ$.\nC. Oxidation state of O is $-2$.\nD. Molecule is bent 'V' shaped.\nE. Molecular geometry is linear.\n\ncorrect options are:",
+      "options": [
+        "B, E, A only",
+        "A, B, D only",
+        "C, D, E only",
+        "A, C, D only"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 40,
+      "subject": "Chemistry",
+      "text": "Match List I with List II\nLIST I (molecules/ions):\nA. $\\text{IF}_7$\nB. $\\text{ICl}_4^-$\nC. $\\text{XeF}_6$\nD. $\\text{XeF}_2$\n\nLIST II (No. of lone pairs of $e^-$ on central atom):\nI. Three\nII. One\nIII. Two\nIV. Zero\n\nChoose the correct answer from the options given below:",
+      "options": [
+        "A - IV, B - I, C - II, D - III",
+        "A - II, B - III, C - IV, D - I",
+        "A - IV, B - III, C - II, D - I",
+        "A - II, B - I, C - IV, D - III"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 41,
+      "subject": "Chemistry",
+      "text": "Match List I with List II\nLIST I (Atomic number):\nA. 37\nB. 78\nC. 52\nD. 65\n\nLIST II (Block of periodic table):\nI. p-block\nII. d-block\nIII. f-block\nIV. s-block\n\nChoose the correct answer from the options given below:",
+      "options": [
+        "A - IV, B - III, C - II, D - I",
+        "A - II, B - IV, C - I, D - III",
+        "A - IV, B - II, C - I, D - III",
+        "A - I, B - III, C - IV, D - II"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 42,
+      "subject": "Chemistry",
+      "text": "Given below are two statements : one is labelled as Assertion (A) and the other is labelled as Reason (R).\nAssertion (A) : In expensive scientific instruments, silica gel is kept in watch-glasses or in semipermeable membrane bags.\nReason (R) : Silica gel adsorbs moisture from air via adsorption, thus protects the instrument from water corrosion (rusting) and / or prevents malfunctioning.\nIn the light of the above statements, choose the correct answer from the options given below :",
+      "options": [
+        "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "(A) is true but (R) is false",
+        "(A) is false but (R) is true",
+        "Both (A) and (R) are true but (R) is not the correct explanation of (A)"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 43,
+      "subject": "Chemistry",
+      "text": "Formation of photochemical smog involves the following reaction in which A, B and C are respectively.\ni. $\\text{NO}_2 \\xrightarrow{h\\nu} \\text{A} + \\text{B}$\nii. $\\text{B} + \\text{O}_2 \\rightarrow \\text{C}$\niii. $\\text{A} + \\text{C} \\rightarrow \\text{NO}_2 + \\text{O}_2$\n\nChoose the correct answer from the options given below:",
+      "options": [
+        "$\\text{N}, \\text{O}_2\\ \\text{\\&}\\ \\text{O}_3$",
+        "$\\text{O}, \\text{N}_2\\text{O}\\ \\text{\\&}\\ \\text{NO}$",
+        "$\\text{NO}, \\text{O}\\ \\text{\\&}\\ \\text{O}_3$",
+        "$\\text{O}, \\text{NO}\\ \\text{\\&}\\ \\text{NO}_3$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 44,
+      "subject": "Chemistry",
+      "text": "Caprolactam when heated at high temperature in presence of water, gives",
+      "options": [
+        "Nylon 6, 6",
+        "Teflon",
+        "Nylon 6",
+        "Dacron"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 45,
+      "subject": "Chemistry",
+      "text": "Which of the following compounds would give the following set of qualitative analysis ?\n(i) Fehling's Test : Positive\n(ii) Na fusion extract upon treatment with sodium nitroprusside gives a blood red colour but not prussian blue.",
+      "options": [
+        "Thiazole derivative with -CHO",
+        "Oxazole derivative with -CHO",
+        "Thiazole derivative with -CH2-CH2-CHO",
+        "Imidazole derivative with -CHO"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 23,
+      "image": null
+    },
+    {
+      "question_number": 46,
+      "subject": "Chemistry",
+      "text": "Which of the following is correct order of ligand field strength ?",
+      "options": [
+        "$\\text{S}^{2-} < \\text{NH}_3 < \\text{en} < \\text{CO} < \\text{C}_2\\text{O}_4^{2-}$",
+        "$\\text{S}^{2-} < \\text{C}_2\\text{O}_4^{2-} < \\text{NH}_3 < \\text{en} < \\text{CO}$",
+        "$\\text{NH}_3 < \\text{en} < \\text{CO} < \\text{S}^{2-} < \\text{C}_2\\text{O}_4^{2-}$",
+        "$\\text{CO} < \\text{en} < \\text{NH}_3 < \\text{C}_2\\text{O}_4^{2-} < \\text{S}^{2-}$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 47,
+      "subject": "Chemistry",
+      "text": "During the qualitative analysis of $\\text{SO}_3^{2-}$ using dilute $\\text{H}_2\\text{SO}_4$, $\\text{SO}_2$ gas is evolved which turns $\\text{K}_2\\text{Cr}_2\\text{O}_7$ solution (acidified with dilute $\\text{H}_2\\text{SO}_4$) :",
+      "options": [
+        "green",
+        "blue",
+        "black",
+        "red"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 48,
+      "subject": "Chemistry",
+      "text": "In the extraction of copper, its sulphide ore is heated in a reverberatory furnace after mixing with silica to:",
+      "options": [
+        "remove $\\text{FeO}$ as $\\text{FeSiO}_3$",
+        "decrease the temperature needed for roasting of $\\text{Cu}_2\\text{S}$",
+        "remove calcium as $\\text{CaSiO}_3$",
+        "separate $\\text{CuO}$ as $\\text{CuSiO}_3$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 49,
+      "subject": "Chemistry",
+      "text": "Given below are two statements : one is labelled as Assertion (A) and the other is labelled as Reason (R).\nAssertion (A) : Ketoses give Seliwanoff's test faster than Aldoses.\nReason (R) : Ketoses undergo $\\beta$-elimination followed by formation of furfural.\nIn the light of the above statements, choose the correct answer from the options given below :",
+      "options": [
+        "(A) is false but (R) is true",
+        "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+        "(A) is true but (R) is false",
+        "Both (A) and (R) are true but (R) is not the correct explanation of (A)"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 50,
+      "subject": "Chemistry",
+      "text": "In the wet tests for identification of various cations by precipitation, which transition element cation doesn't belong to group IV in qualitative inorganic analysis ?",
+      "options": [
+        "$\\text{Zn}^{2+}$",
+        "$\\text{Co}^{2+}$",
+        "$\\text{Fe}^{3+}$",
+        "$\\text{Ni}^{2+}$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 51,
+      "subject": "Chemistry",
+      "text": "$600\\text{ mL}$ of $0.01\\text{M HCl}$ is mixed with $400\\text{ mL}$ of $0.01\\text{ M H}_2\\text{SO}_4$. The pH of the mixture is ________ $\\times 10^{-2}$. (Nearest integer)\n[Given $\\log 2 = 0.30$, $\\log 3 = 0.48$, $\\log 5 = 0.69$, $\\log 7 = 0.84$, $\\log 11 = 1.04$]",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 52,
+      "subject": "Chemistry",
+      "text": "When 2 litre of ideal gas expands isothermally into vacuum to a total volume of 6 litre, the change in internal energy is ________ $\\text{J}$. (Nearest integer)",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 53,
+      "subject": "Chemistry",
+      "text": "The number of electrons involved in the reduction of permanganate to manganese dioxide in acidic medium is ________.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 54,
+      "subject": "Chemistry",
+      "text": "A solution containing $2\\text{ g}$ of a non-volatile solute in $20\\text{ g}$ of water boils at $373.52\\text{ K}$. The molecular mass of the solute is ________ $\\text{g mol}^{-1}$. (Nearest integer)\nGiven, water boils at $373\\text{ K}$, $K_b$ for water $= 0.52\\text{ K kg mol}^{-1}$",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 55,
+      "subject": "Chemistry",
+      "text": "A trisubstituted compound 'A', $\\text{C}_{10}\\text{H}_{12}\\text{O}_2$ gives neutral $\\text{FeCl}_3$ test positive. Treatment of compound 'A' with $\\text{NaOH}$ and $\\text{CH}_3\\text{Br}$ gives $\\text{C}_{11}\\text{H}_{14}\\text{O}_2$, with hydroiodic acid gives methyl iodide and with hot conc. $\\text{NaOH}$ gives a compound B, $\\text{C}_{10}\\text{H}_{12}\\text{O}_2$. Compound 'A' also decolorises alkaline $\\text{KMnO}_4$. The number of $\\pi$ bond/s present in the compound 'A' is ________.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 56,
+      "subject": "Chemistry",
+      "text": "Consider the cell\n$\\text{Pt}_{(s)} | \\text{H}_2\\text{ (g, 1 atm)} | \\text{H}^+\\text{ (aq, 1M)} || \\text{Fe}^{3+}\\text{(aq)}, \\text{Fe}^{2+}\\text{(aq)} | \\text{Pt}_{(s)}$\nWhen the potential of the cell is $0.712\\text{ V}$ at $298\\text{ K}$, the ratio $[\\text{Fe}^{2+}] / [\\text{Fe}^{3+}]$ is ________. (Nearest integer)\nGiven : $\\text{Fe}^{3+} + e^- \\rightarrow \\text{Fe}^{2+}$, $E^\\circ_{\\text{Fe}^{3+}, \\text{Fe}^{2+}|\\text{Pt}} = 0.771\\text{ V}$, $\\frac{2.303 RT}{F} = 0.06\\text{ V}$",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 57,
+      "subject": "Chemistry",
+      "text": "The energy of one mole of photons of radiation of frequency $2 \\times 10^{12}\\text{ Hz}$ in $\\text{J mol}^{-1}$ is ________. (Nearest integer)\n[Given : $h = 6.626 \\times 10^{-34}\\text{ J s}$, $N_A = 6.022 \\times 10^{23}\\text{ mol}^{-1}$]",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 58,
+      "subject": "Chemistry",
+      "text": "A $300\\text{ mL}$ bottle of soft drink has $0.2\\text{ M CO}_2$ dissolved in it. Assuming $\\text{CO}_2$ behaves as an ideal gas, the volume of the dissolved $\\text{CO}_2$ at STP is ________ $\\text{mL}$. (Nearest integer)\nGiven : At STP, molar volume of an ideal gas is $22.7\\text{ L mol}^{-1}$",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 59,
+      "subject": "Chemistry",
+      "text": "If compound A reacts with B following first order kinetics with rate constant $2.011 \\times 10^{-3}\\text{ s}^{-1}$. The time taken by A (in seconds) to reduce from $7\\text{ g}$ to $2\\text{ g}$ will be ________. (Nearest Integer)\n[$\\log 5 = 0.698$, $\\log 7 = 0.845$, $\\log 2 = 0.301$]",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 60,
+      "subject": "Chemistry",
+      "text": "Some amount of dichloromethane ($\\text{CH}_2\\text{Cl}_2$) is added to $671.141\\text{ mL}$ of chloroform ($\\text{CHCl}_3$) to prepare $2.6 \\times 10^{-3}\\text{ M}$ solution of $\\text{CH}_2\\text{Cl}_2$ (DCM). The concentration of DCM is ________ $\\text{ppm}$ (by mass).\nGiven :\natomic mass : $\\text{C} = 12$, $\\text{H} = 1$, $\\text{Cl} = 35.5$\ndensity of $\\text{CHCl}_3 = 1.49\\text{ g cm}^{-3}$",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 61,
+      "subject": "Mathematics",
+      "text": "Let the solution curve $y = y(x)$ of the differential equation $\\frac{dy}{dx} - \\frac{3x^5 \\tan^{-1}(x^3)}{(1 + x^6)^{3/2}} y = 2x \\exp\\left\\{\\frac{x^3 - \\tan^{-1} x^3}{\\sqrt{1 + x^6}}\\right\\}$ pass through the origin. Then $y(1)$ is equal to :",
+      "options": [
+        "$\\exp\\left(\\frac{\\pi - 4}{4\\sqrt{2}}\\right)$",
+        "$\\exp\\left(\\frac{4 + \\pi}{4\\sqrt{2}}\\right)$",
+        "$\\exp\\left(\\frac{1 - \\pi}{4\\sqrt{2}}\\right)$",
+        "$\\exp\\left(\\frac{4 - \\pi}{4\\sqrt{2}}\\right)$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 62,
+      "subject": "Mathematics",
+      "text": "If the solution of the equation $\\log_{\\cos x} \\cot x + 4 \\log_{\\sin x} \\tan x = 1$, $x \\in \\left(0, \\frac{\\pi}{2}\\right)$, is $\\sin^{-1}\\left(\\frac{\\alpha + \\sqrt{\\beta}}{2}\\right)$ where $\\alpha, \\beta$ are integers, then $\\alpha + \\beta$ is equal to :",
+      "options": [
+        "$6$",
+        "$3$",
+        "$4$",
+        "$5$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 63,
+      "subject": "Mathematics",
+      "text": "Among the statements :\n(S1) $((p \\vee q) \\Rightarrow r) \\Leftrightarrow (p \\Rightarrow r)$\n(S2) $((p \\vee q) \\Rightarrow r) \\Leftrightarrow ((p \\Rightarrow r) \\vee (q \\Rightarrow r))$",
+      "options": [
+        "only (S2) is a tautology",
+        "neither (S1) nor (S2) is a tautology",
+        "both (S1) and (S2) are tautologies",
+        "only (S1) is a tautology"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 64,
+      "subject": "Mathematics",
+      "text": "Let a unit vector $\\vec{OP}$ make angles $\\alpha, \\beta, \\gamma$ with the positive directions of the co-ordinate axes OX, OY, OZ respectively, where $\\beta \\in \\left(0, \\frac{\\pi}{2}\\right)$. If $\\vec{OP}$ is perpendicular to the plane through points $(1, 2, 3)$, $(2, 3, 4)$ and $(1, 5, 7)$, then which one of the following is true ?",
+      "options": [
+        "$\\alpha \\in \\left(0, \\frac{\\pi}{2}\\right)$ and $\\gamma \\in \\left(\\frac{\\pi}{2}, \\pi\\right)$",
+        "$\\alpha \\in \\left(0, \\frac{\\pi}{2}\\right)$ and $\\gamma \\in \\left(0, \\frac{\\pi}{2}\\right)$",
+        "$\\alpha \\in \\left(\\frac{\\pi}{2}, \\pi\\right)$ and $\\gamma \\in \\left(\\frac{\\pi}{2}, \\pi\\right)$",
+        "$\\alpha \\in \\left(\\frac{\\pi}{2}, \\pi\\right)$ and $\\gamma \\in \\left(0, \\frac{\\pi}{2}\\right)$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 65,
+      "subject": "Mathematics",
+      "text": "If $\\tan 15^\\circ + \\frac{1}{\\tan 75^\\circ} + \\frac{1}{\\tan 105^\\circ} + \\tan 195^\\circ = 2a$, then the value of $\\left(a + \\frac{1}{a}\\right)$ is :",
+      "options": [
+        "$4 - 2\\sqrt{3}$",
+        "$4$",
+        "$2$",
+        "$5 - \\frac{3}{2}\\sqrt{3}$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 66,
+      "subject": "Mathematics",
+      "text": "Let $y = x + 2$, $4y = 3x + 6$ and $3y = 4x + 1$ be three tangent lines to the circle $(x - h)^2 + (y - k)^2 = r^2$. Then $h + k$ is equal to :",
+      "options": [
+        "$5\\sqrt{2}$",
+        "$5$",
+        "$6$",
+        "$5(1 + \\sqrt{2})$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 67,
+      "subject": "Mathematics",
+      "text": "The line $l_1$ passes through the point $(2, 6, 2)$ and is perpendicular to the plane $2x + y - 2z = 10$.\nThen the shortest distance between the line $l_1$ and the line $\\frac{x + 1}{2} = \\frac{y + 4}{-3} = \\frac{z}{2}$ is :",
+      "options": [
+        "$\\frac{19}{3}$",
+        "$7$",
+        "$9$",
+        "$\\frac{13}{3}$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 68,
+      "subject": "Mathematics",
+      "text": "If $[t]$ denotes the greatest integer $\\le t$, then the value of $\\frac{3(e - 1)}{e} \\int_1^2 x^2 e^{[x] + [x^3]} dx$ is :",
+      "options": [
+        "$e^8 - e$",
+        "$e^9 - e$",
+        "$e^8 - 1$",
+        "$e^7 - 1$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 69,
+      "subject": "Mathematics",
+      "text": "The number of points on the curve $y = 54x^5 - 135x^4 - 70x^3 + 180x^2 + 210x$ at which the normal lines are parallel to $x + 90y + 2 = 0$ is :",
+      "options": [
+        "$2$",
+        "$3$",
+        "$0$",
+        "$4$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 70,
+      "subject": "Mathematics",
+      "text": "A straight line cuts off the intercepts $\\text{OA} = a$ and $\\text{OB} = b$ on the positive directions of x-axis and y-axis respectively. If the perpendicular from origin O to this line makes an angle of $\\frac{\\pi}{6}$ with positive direction of y-axis and the area of $\\Delta\\text{OAB}$ is $\\frac{98}{3}\\sqrt{3}$, then $a^2 - b^2$ is equal to :",
+      "options": [
+        "$98$",
+        "$196$",
+        "$\\frac{196}{3}$",
+        "$\\frac{392}{3}$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 71,
+      "subject": "Mathematics",
+      "text": "If $\\vec{a}, \\vec{b}, \\vec{c}$ are three non-zero vectors and $\\hat{n}$ is a unit vector perpendicular to $\\vec{c}$ such that $\\vec{a} = \\alpha \\vec{b} - \\hat{n}, (\\alpha \\neq 0)$ and $\\vec{b} \\cdot \\vec{c} = 12$, then $|\\vec{c} \\times (\\vec{a} \\times \\vec{b})|$ is equal to :",
+      "options": [
+        "$9$",
+        "$15$",
+        "$6$",
+        "$12$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 72,
+      "subject": "Mathematics",
+      "text": "Suppose $f : \\mathbb{R} \\rightarrow (0, \\infty)$ be a differentiable function such that $5f(x + y) = f(x) \\cdot f(y), \\forall x, y \\in \\mathbb{R}$. If $f(3) = 320$, then $\\sum_{n=0}^5 f(n)$ is equal to :",
+      "options": [
+        "$6875$",
+        "$6525$",
+        "$6575$",
+        "$6825$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 73,
+      "subject": "Mathematics",
+      "text": "The minimum number of elements that must be added to the relation $R = \\{(a, b), (b, c)\\}$ on the set $\\{a, b, c\\}$ so that it becomes symmetric and transitive is :",
+      "options": [
+        "$7$",
+        "$4$",
+        "$5$",
+        "$3$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 74,
+      "subject": "Mathematics",
+      "text": "If an unbiased die, marked with $-2, -1, 0, 1, 2, 3$ on its faces, is thrown five times, then the probability that the product of the outcomes is positive, is :",
+      "options": [
+        "$\\frac{521}{2592}$",
+        "$\\frac{27}{288}$",
+        "$\\frac{881}{2592}$",
+        "$\\frac{440}{2592}$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 75,
+      "subject": "Mathematics",
+      "text": "If $P(h, k)$ be a point on the parabola $x = 4y^2$, which is nearest to the point $Q(0, 33)$, then the distance of P from the directrix of the parabola $y^2 = 4(x + y)$ is equal to :",
+      "options": [
+        "$6$",
+        "$2$",
+        "$8$",
+        "$4$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 76,
+      "subject": "Mathematics",
+      "text": "The coefficient of $x^{301}$ in $(1 + x)^{500} + x(1 + x)^{499} + x^2(1 + x)^{498} + \\dots + x^{500}$ is :",
+      "options": [
+        "$^{500}\\text{C}_{300}$",
+        "$^{501}\\text{C}_{200}$",
+        "$^{501}\\text{C}_{302}$",
+        "$^{500}\\text{C}_{301}$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 77,
+      "subject": "Mathematics",
+      "text": "Let the system of linear equations\n$x + y + kz = 2$\n$2x + 3y - z = 1$\n$3x + 4y + 2z = k$\nhave infinitely many solutions. Then the system\n$(k + 1)x + (2k - 1)y = 7$\n$(2k + 1)x + (k + 5)y = 10$\nhas :",
+      "options": [
+        "no solution",
+        "infinitely many solutions",
+        "unique solution satisfying $x + y = 1$",
+        "unique solution satisfying $x - y = 1$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 78,
+      "subject": "Mathematics",
+      "text": "If the coefficient of $x^{15}$ in the expansion of $\\left(ax^3 + \\frac{1}{bx^{1/3}}\\right)^{15}$ is equal to the coefficient of $x^{-15}$ in the expansion of $\\left(ax^{1/3} - \\frac{1}{bx^3}\\right)^{15}$, where a and b are positive real numbers, then for each such ordered pair $(a, b)$ :",
+      "options": [
+        "$ab = 1$",
+        "$ab = 3$",
+        "$a = b$",
+        "$a = 3b$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 79,
+      "subject": "Mathematics",
+      "text": "If $a_n = \\frac{-2}{4n^2 - 16n + 15}$, then $a_1 + a_2 + \\dots + a_{25}$ is equal to :",
+      "options": [
+        "$\\frac{52}{147}$",
+        "$\\frac{51}{144}$",
+        "$\\frac{50}{141}$",
+        "$\\frac{49}{138}$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 80,
+      "subject": "Mathematics",
+      "text": "Let $A = \\begin{pmatrix} m & n \\\\ p & q \\end{pmatrix}$, $d = |A| \\neq 0$ and $|A - d(\\text{Adj } A)| = 0$. Then",
+      "options": [
+        "$(1 + d)^2 = m^2 + q^2$",
+        "$(1 + d)^2 = (m + q)^2$",
+        "$1 + d^2 = (m + q)^2$",
+        "$1 + d^2 = m^2 + q^2$"
+      ],
+      "solution": null,
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 81,
+      "subject": "Mathematics",
+      "text": "If the equation of the plane passing through the point $(1, 1, 2)$ and perpendicular to the line $x - 3y + 2z - 1 = 0 = 4x - y + z$ is $Ax + By + Cz = 1$, then $140(C - B + A)$ is equal to ________.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 82,
+      "subject": "Mathematics",
+      "text": "Let $\\alpha$ be the area of the larger region bounded by the curve $y^2 = 8x$ and the lines $y = x$ and $x = 2$, which lies in the first quadrant. Then the value of $3\\alpha$ is equal to ________.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 83,
+      "subject": "Mathematics",
+      "text": "Let $z = 1 + i$ and $z_1 = \\frac{1 + i\\bar{z}}{\\bar{z}(1 - z) + \\frac{1}{z}}$. Then $\\frac{12}{\\pi} \\arg(z_1)$ is equal to ________.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 84,
+      "subject": "Mathematics",
+      "text": "Let $\\sum_{n=0}^\\infty \\frac{n^3 ((2n)!) + (2n - 1)(n!)}{(n!) ((2n)!)} = ae + \\frac{b}{e} + c$, where $a, b, c \\in \\mathbb{Z}$ and $e = \\sum_{n=0}^\\infty \\frac{1}{n!}$. Then $a^2 - b + c$ is equal to ________.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 85,
+      "subject": "Mathematics",
+      "text": "Number of 4-digit numbers (the repetition of digits is allowed) which are made using the digits 1, 2, 3 and 5, and are divisible by 15, is equal to ________.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 86,
+      "subject": "Mathematics",
+      "text": "If $\\lambda_1 < \\lambda_2$ are two values of $\\lambda$ such that the angle between the planes $P_1 : \\vec{r} \\cdot (3\\hat{i} - 5\\hat{j} + \\hat{k}) = 7$ and $P_2 : \\vec{r} \\cdot (\\lambda\\hat{i} + \\hat{j} - 3\\hat{k}) = 9$ is $\\sin^{-1}\\left(\\frac{2\\sqrt{6}}{5}\\right)$, then the square of the length of perpendicular from the point $(38\\lambda_1, 10\\lambda_2, 2)$ to the plane $P_1$ is ________.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 87,
+      "subject": "Mathematics",
+      "text": "Let $S = \\{1, 2, 3, 4, 5, 6\\}$. Then the number of one-one functions $f : S \\rightarrow P(S)$, where $P(S)$ denote the power set of S, such that $f(n) \\subset f(m)$ where $n < m$ is ________.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 88,
+      "subject": "Mathematics",
+      "text": "Let $f^1(x) = \\frac{3x + 2}{2x + 3}, x \\in \\mathbb{R} - \\left\\{-\\frac{3}{2}\\right\\}$.\nFor $n \\ge 2$, define $f^n(x) = f^1 \\circ f^{n-1}(x)$.\nIf $f^5(x) = \\frac{ax + b}{bx + a}$, $\\gcd(a, b) = 1$, then $a + b$ is equal to ________.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 89,
+      "subject": "Mathematics",
+      "text": "$\\lim_{x \\to 0} \\frac{48}{x^4} \\int_0^x \\frac{t^3}{t^6 + 1} dt$ is equal to ________.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 90,
+      "subject": "Mathematics",
+      "text": "The mean and variance of 7 observations are 8 and 16 respectively. If one observation 14 is omitted and a and b are respectively mean and variance of remaining 6 observation, then $a + 3b - 5$ is equal to ________.",
+      "options": [],
+      "solution": null,
+      "type": "subjective",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    }
+  ]
+}
