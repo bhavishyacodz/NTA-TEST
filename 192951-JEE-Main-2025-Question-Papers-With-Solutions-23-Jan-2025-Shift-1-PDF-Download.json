@@ -1,0 +1,303 @@
+{
+  "metadata": {
+    "exam": "JEE Main",
+    "year": "2025",
+    "original_title": "192951-JEE-Main-2025-Question-Papers-With-Solutions-23-Jan-2025-Shift-1-PDF-Download"
+  },
+  "questions": [
+    {
+      "question_number": 1,
+      "subject": "Physics",
+      "text": "Electric flux $\\phi$ is related with linear charge density $\\lambda$ and surface charge density $\\sigma$ as $\\phi = \\alpha\\lambda + \\beta\\sigma$ where $\\alpha$ and $\\beta$ are of appropriate dimensions. Dimension of $\\left(\\frac{\\beta}{\\alpha}\\right)$ is",
+      "options": [
+        "(1) Displacement",
+        "(2) Area",
+        "(3) Electric field",
+        "(4) Velocity"
+      ],
+      "solution": "$\\alpha\\lambda \\equiv \\beta\\sigma \\Rightarrow \\frac{\\beta}{\\alpha} = \\frac{\\lambda}{\\sigma} = \\frac{Q/L}{Q/L^2} \\equiv L$ (Displacement)",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 2,
+      "subject": "Physics",
+      "text": "For given velocity-time ($v - t$) graph, find distance travelled at 0.5 sec.",
+      "options": [
+        "(1) 125 m",
+        "(2) 112.5 m",
+        "(3) 137.5 m",
+        "(4) 150 m"
+      ],
+      "solution": "$a = \\frac{400 - 200}{2} = 100\\text{ m/s}^2$\n$S = ut + \\frac{1}{2}at^2 = 200 \\times 0.5 + \\frac{1}{2} \\times 100 \\times (0.5)^2 = 100 + 12.5 = 112.5\\text{ m}$",
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 2,
+      "image": "192951-JEE-Main-2025-Question-Papers-With-Solutions-23-Jan-2025-Shift-1-PDF-Download_img1.png"
+    },
+    {
+      "question_number": 3,
+      "subject": "Physics",
+      "text": "The displacement of a particle as function of time is $x(t) = A \\sin(t) + B \\cos^2(t) + C t^2 + D$. Find dimension of $\\left[\\frac{ABC}{D}\\right]$.",
+      "options": [
+        "(1) $L^2$",
+        "(2) $L^2T^{-2}$",
+        "(3) $LT^{-2}$",
+        "(4) $L^3T$"
+      ],
+      "solution": "$[D] = [L]$, $[C] = [LT^{-2}]$, $[B] = [L]$, $[A] = [L]$\nSo $\\left[\\frac{ABC}{D}\\right] = \\frac{L^3 T^{-2}}{L} = [L^2 T^{-2}]$",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 4,
+      "subject": "Physics",
+      "text": "The ratio of electric force to gravitational force between two particles having charges $q_1, q_2$ and masses $m_1$ and $m_2$ respectively is (where symbols have their usual meanings)",
+      "options": [
+        "(1) $\\frac{4\\pi\\varepsilon_0 m_1 m_2 G}{q_1 q_2}$",
+        "(2) $\\frac{4\\pi\\varepsilon_0 G m_1 m_2}{q_1 q_2 r^4}$",
+        "(3) $\\frac{q_1 q_2 r^4}{4\\pi\\varepsilon_0 G m_1 m_2}$",
+        "(4) $\\frac{q_1 q_2}{4\\pi\\varepsilon_0 G m_1 m_2}$"
+      ],
+      "solution": "$F_g = \\frac{G m_1 m_2}{r^2}$, $F_e = \\frac{q_1 q_2}{4\\pi\\varepsilon_0 r^2}$\n$\\frac{F_e}{F_g} = \\frac{q_1 q_2}{4\\pi\\varepsilon_0 G m_1 m_2}$",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 5,
+      "subject": "Physics",
+      "text": "Match the column appropriately regarding thermodynamic process.\n\nColumn-I:\n(P) When volume change is zero\n(Q) When pressure is constant\n(R) When no heat is exchanged\n(S) Work done by the gas is equal to heat given to the gas\n\nColumn-II:\n(i) $\\Delta W = 0$\n(ii) $\\Delta Q = 0$\n(iii) Isobaric\n(iv) Isothermal",
+      "options": [
+        "(1) P(iv), Q(iii), R(i), S(ii)",
+        "(2) P(i), Q(iii), R(ii), S(iv)",
+        "(3) P(ii), Q(iii), R(iv), S(i)",
+        "(4) P(ii), Q(iii), R(i), S(iv)"
+      ],
+      "solution": "Volume change is zero $\\rightarrow$ isochoric $\\rightarrow \\Delta W = 0$\nIsobaric $\\Rightarrow \\Delta P = 0$\nNo heat exchange (adiabatic) $\\Rightarrow \\Delta Q = 0$\nHeat given = $\\Delta W \\Rightarrow \\Delta U = 0 \\Rightarrow \\Delta T = 0$ (Isothermal)",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 6,
+      "subject": "Physics",
+      "text": "In given DC circuit, find current for $R = 12\\ \\Omega$ in steady state.",
+      "options": [
+        "(1) 2 A",
+        "(2) 1 A",
+        "(3) 3 A",
+        "(4) 4 A"
+      ],
+      "solution": "In steady state, inductor acts as zero resistance path.\n$i = \\frac{V}{R} = \\frac{12}{12} = 1\\text{ A}$",
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 3,
+      "image": "192951-JEE-Main-2025-Question-Papers-With-Solutions-23-Jan-2025-Shift-1-PDF-Download_img2.png"
+    },
+    {
+      "question_number": 7,
+      "subject": "Physics",
+      "text": "Statement-I : Hot water is less viscous than cold water.\nStatement-II : Surface tension of soap bubble is more than that of a drop of water.",
+      "options": [
+        "(1) Statement-I is true and statement-II true",
+        "(2) Statement-I is true and statement-II false",
+        "(3) Statement-I is false and statement-II true",
+        "(4) Statement-I is false and statement-II false"
+      ],
+      "solution": "Viscosity of liquids decreases with increase in temperature, so hot water is less viscous than cold water (Statement-I is true). Soap reduces surface tension of water, so surface tension of soap solution/bubble is less than pure water (Statement-II is false).",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 8,
+      "subject": "Physics",
+      "text": "The key shown in the circuit is closed at $t = 0$. Choose the incorrect option regarding the conditions at $t = 0$.",
+      "options": [
+        "(1) Current in the circuit is zero",
+        "(2) Voltage across the capacitor is minimum",
+        "(3) Current in the circuit is maximum",
+        "(4) Voltage across resistance is maximum"
+      ],
+      "solution": "Immediately after closing the key, the capacitor acts as a short circuit (zero resistance). Hence, current in the circuit is maximum at $t = 0$. Option (1) is incorrect.",
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 3,
+      "image": null
+    },
+    {
+      "question_number": 9,
+      "subject": "Physics",
+      "text": "A uniform solid sphere of mass $m$ rolls down from rest to achieve speed $v_1$ on an inclined plane of $30^\\circ$. Sphere achieves speed $v_2$ on an inclined plane of $45^\\circ$ when released from same height, then $\\frac{v_1^2}{v_2^2}$ is (assume no slipping)",
+      "options": [
+        "(1) 1",
+        "(2) $\\frac{5}{2}$",
+        "(3) $\\frac{2}{5}$",
+        "(4) $\\frac{\\sqrt{3}}{\\sqrt{2}}$"
+      ],
+      "solution": "|\\Delta U| = |\\Delta K| \\Rightarrow mgh = \\frac{1}{2}(\\gamma + 1)mv^2$, where $\\gamma = \\frac{2}{5}$ for a solid sphere.\nHere $v$ doesn't depend on $\\theta$, so $\\frac{v_1^2}{v_2^2} = 1$.",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 10,
+      "subject": "Physics",
+      "text": "Find the equation of magnetic field for the given equation of electric field (for EM wave): $\\vec{E} = E_0 (4\\hat{i} - 3\\hat{j}) \\cos(\\omega t - kz)$.",
+      "options": [
+        "(1) $\\vec{B} = \\frac{E_0}{C} (3\\hat{i} + 4\\hat{j}) \\cos(\\omega t - kz)$",
+        "(2) $\\vec{B} = \\frac{E_0}{C} (-3\\hat{i} - 4\\hat{j}) \\cos(\\omega t - kz)$",
+        "(3) $\\vec{B} = \\frac{E_0}{C} (3\\hat{i} - 4\\hat{j}) \\sin(\\omega t - kz)$",
+        "(4) $\\vec{B} = \\frac{E_0}{C} (-3\\hat{i} - 4\\hat{j}) \\sin(\\omega t - kz)$"
+      ],
+      "solution": "Phase difference of magnetic field with electric field is zero.\nAlso $|\\vec{B}| = \\frac{E_0}{C} \\times 5$.\nPropagation direction is along $+z$ axis. Since $\\vec{E} \\times \\vec{B}$ gives propagation direction $\\hat{k}$, unit vector along $\\vec{B}$ is $\\frac{3\\hat{i}+4\\hat{j}}{5}$.\nSo $\\vec{B} = \\frac{E_0}{C} (3\\hat{i} + 4\\hat{j}) \\cos(\\omega t - kz)$.",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 11,
+      "subject": "Physics",
+      "text": "Self-inductance depends on :",
+      "options": [
+        "(1) Only on geometry",
+        "(2) Only on medium property",
+        "(3) Geometry and medium property",
+        "(4) Value of current through inductor"
+      ],
+      "solution": "$L = \\mu_r \\mu_0 n^2 V$, where $\\mu_r$ is relative permeability (medium property) and $V$ is volume (geometry).",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 12,
+      "subject": "Physics",
+      "text": "For the circuit shown below:\n(A) Current in ammeter is 2 A\n(B) Net resistance is 8 $\\Omega$\n(C) Voltage across BC is 4 V\n(D) Current through diode is 1 A\nChoose the correct option.",
+      "options": [
+        "(1) Only ABC are correct",
+        "(2) Only ACD are correct",
+        "(3) Only ABD are correct",
+        "(4) Only AD are correct"
+      ],
+      "solution": "$R_{eq} = 6\\ \\Omega$\n$i = \\frac{12\\text{ V}}{6\\ \\Omega} = 2\\text{ A}$\n$i_{AB} = 1\\text{ A}$\n$V_{BC} = 4\\text{ V}$\nSo, ACD are correct.",
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 4,
+      "image": "192951-JEE-Main-2025-Question-Papers-With-Solutions-23-Jan-2025-Shift-1-PDF-Download_img3.png"
+    },
+    {
+      "question_number": 13,
+      "subject": "Physics",
+      "text": "Find the time period of a cube of side length 10 cm and mass 10 g oscillating in water. (density of water = $10^3\\text{ kg/m}^3$ and $g = 10\\text{ m/s}^2$)",
+      "options": [
+        "(1) $\\frac{\\pi}{25}\\text{ second}$",
+        "(2) $\\frac{\\pi}{50}\\text{ second}$",
+        "(3) $\\frac{\\pi}{100}\\text{ second}$",
+        "(4) $\\frac{2\\pi}{25}\\text{ second}$"
+      ],
+      "solution": "$a = -\\frac{F_B}{m} = -\\omega^2 x = -\\frac{(10\\text{ cm})^2 x (10^3\\text{ kg/m}^3)(10\\text{ m/s}^2)}{10\\text{ g}} = -10^4 x$\n$\\Rightarrow \\omega = 100\\text{ rad/s}$\n$T = \\frac{2\\pi}{\\omega} = \\frac{\\pi}{50}\\text{ s}$",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 14,
+      "subject": "Physics",
+      "text": "Adiabatic constant of a gas is $\\frac{3}{2}$. If volume of gas initially at 0°C is reduced to one fourth of the original volume then new temperature is",
+      "options": [
+        "(1) 0 K",
+        "(2) 273 K",
+        "(3) 546°C",
+        "(4) 546 K"
+      ],
+      "solution": "$T V^{\\gamma - 1} = \\text{constant}$\n$273 V^{1/2} = T \\left(\\frac{V}{4}\\right)^{1/2}$\n$\\Rightarrow T = 2 \\times 273 = 546\\text{ K}$",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 15,
+      "subject": "Physics",
+      "text": "Two objects are equal distances from sphere of radius $R$ & refractive index $\\mu$ such that the image of one object forms on other object. Find the object distance from the surface of sphere.",
+      "options": [
+        "(1) $\\frac{R}{\\mu}$",
+        "(2) $\\frac{R}{\\mu - 1}$",
+        "(3) $R$",
+        "(4) $\\frac{R}{\\mu + 1}$"
+      ],
+      "solution": "After first refraction the ray must become parallel to the line joining two objects, so $v = \\infty$.\n$\\frac{\\mu_2}{v} - \\frac{\\mu_1}{u} = \\frac{\\mu_2 - \\mu_1}{R}$\n$0 - \\frac{1}{-u} = \\frac{\\mu - 1}{R} \\Rightarrow |u| = \\frac{R}{\\mu - 1}$",
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 5,
+      "image": null
+    },
+    {
+      "question_number": 16,
+      "subject": "Physics",
+      "text": "There is force field $\\vec{F} = x^3 y \\hat{i} + y^2 \\hat{j}$ in which a particle moves along the line $x = y$. Find work done by the force as the particle moves from $(0, 0)$ to $(2, 2)$.",
+      "options": [
+        "(1) $\\frac{173}{15}$",
+        "(2) $\\frac{136}{15}$",
+        "(3) $\\frac{139}{17}$",
+        "(4) $\\frac{171}{17}$"
+      ],
+      "solution": "$W = \\int_0^2 x^4 dx + \\int_0^2 y^2 dy = \\frac{2^5}{5} + \\frac{2^3}{3} = \\frac{32}{5} + \\frac{8}{3} = \\frac{136}{15}$",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 17,
+      "subject": "Physics",
+      "text": "In a radioactive decay, decay constant of element $A_2$ is 3 times that of element $A_1$. Find the ratio of nuclei of element 1 to element 2 after one half life of $A_2$ (Assume initial number of nuclei are same for both elements).",
+      "options": [
+        "(1) $2^{1/3}$",
+        "(2) $2^{2/3}$",
+        "(3) $2$",
+        "(4) $2^{5/3}$"
+      ],
+      "solution": "$N_1 = N_0 e^{-\\lambda_1 t}$, $N_2 = N_0 e^{-\\lambda_2 t}$\n$\\frac{N_1}{N_2} = e^{(\\lambda_2 - \\lambda_1) t} = e^{(3\\lambda_1 - \\lambda_1)\\frac{\\ln 2}{3\\lambda_1}} = e^{\\frac{2}{3} \\ln 2} = 2^{2/3}$",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 21,
+      "subject": "Physics",
+      "text": "From a uniform circular disc of radius 20 cm a circular portion of radius 5 cm is removed. The shift in the position of centre of mass (in cm) is",
+      "options": [],
+      "solution": "$X_{\\text{com}} = \\frac{\\frac{M}{16} \\times 15\\text{ cm}}{M - \\frac{M}{16}} = \\frac{\\frac{M}{16} \\times 15}{\\frac{15M}{16}} = 1\\text{ cm}$",
+      "type": "integer",
+      "has_diagram": true,
+      "diagram_page": 6,
+      "image": "192951-JEE-Main-2025-Question-Papers-With-Solutions-23-Jan-2025-Shift-1-PDF-Download_img4.png"
+    },
+    {
+      "question_number": 22,
+      "subject": "Physics",
+      "text": "A bullet of kinetic energy of 125 J strikes a lead block where temperature rises by 50°C. If specific heat of lead is 0.1 J/g-°C then mass of lead block is $m$ gram (Assume half of kinetic energy of bullet is converted to heat), then $2m$ is",
+      "options": [],
+      "solution": "$Q = m s \\Delta T \\Rightarrow \\frac{125}{2} = m \\times 0.1 \\times 50 \\Rightarrow m = 12.5\\text{ gm}$\n$2m = 25$",
+      "type": "integer",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    }
+  ]
+}

@@ -1,0 +1,977 @@
+{
+  "metadata": {
+    "exam": "JEE Main",
+    "year": "2025",
+    "original_title": "12244-JEE-Main-2025-Question-Papers-With-Solutions-22-01-2025_Shift_1-PDF-Download"
+  },
+  "questions": [
+    {
+      "question_number": 1,
+      "subject": "Physics",
+      "text": "Find the dimensions of $\\frac{B}{\\mu_0}$",
+      "options": [
+        "[AL]",
+        "[AL^{-1}]",
+        "[MAL]",
+        "[MALT^{-1}]"
+      ],
+      "solution": "$\\oint B \\cdot dl = \\mu_0 i \\Rightarrow \\frac{B}{\\mu_0} = \\frac{i}{l} \\equiv [AL^{-1}]$",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 2,
+      "subject": "Physics",
+      "text": "Solid sphere of mass $M$, radius $R$ exerts force $F$ on a point mass. Now a concentric spherical mass $\\frac{M}{7}$ is removed. What is new force?",
+      "options": [
+        "$\\frac{F}{7}$",
+        "$\\frac{6}{7}F$",
+        "$\\frac{5}{7}F$",
+        "$\\frac{3}{7}F$"
+      ],
+      "solution": "$F = \\frac{GMm}{r^2}$, $F' = \\frac{G(M - \\frac{M}{7})m}{r^2} \\Rightarrow F' = \\frac{6}{7}F$",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 3,
+      "subject": "Physics",
+      "text": "Find out equivalent capacitance for the situation shown in figure.",
+      "options": [
+        "$C_{eq} = \\frac{A\\epsilon_0}{d} \\left(\\frac{K_1 K_2 + K_2 K_3 + K_3 K_1}{K_1 + K_2}\\right)$",
+        "$C_{eq} = \\frac{A\\epsilon_0}{d} \\left(\\frac{2K_1 K_2 + K_2 K_3 + K_3 K_1}{2(K_1 + K_2)}\\right)$",
+        "$C_{eq} = \\frac{A\\epsilon_0}{d} \\left(\\frac{K_1 K_2 + K_2 K_3 + K_3 K_1}{2(K_1 + K_2)}\\right)$",
+        "$C_{eq} = \\frac{A\\epsilon_0}{2d} \\left(\\frac{K_1 K_2 + K_2 K_3 + K_3 K_1}{K_1 + K_2}\\right)$"
+      ],
+      "solution": "$C_1 = \\frac{2 \\times A\\epsilon_0 K_1}{2d} = \\frac{A\\epsilon_0 K_1}{d}$, $C_2 = \\frac{A\\epsilon_0 K_2}{d}$, $C_3 = \\frac{A\\epsilon_0 K_3}{2d}$. $C_1$ and $C_2$ are in series, giving $C' = \\frac{A\\epsilon_0 K_1 K_2}{d(K_1 + K_2)}$. Then $C_{eq} = C' + C_3 = \\frac{A\\epsilon_0}{d} \\left(\\frac{2K_1 K_2 + K_2 K_3 + K_3 K_1}{2(K_1 + K_2)}\\right)$.",
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 2,
+      "image": "12244-JEE-Main-2025-Question-Papers-With-Solutions-22-01-2025_Shift_1-PDF-Download_img1.png"
+    },
+    {
+      "question_number": 4,
+      "subject": "Physics",
+      "text": "From a sphere of mass $M$ and radius $R$, a cavity of radius $\\frac{R}{2}$ is created. Find the moment of inertia about an axis passing through the centre of sphere and cavity.",
+      "options": [
+        "$\\frac{31}{48} MR^2$",
+        "$\\frac{31}{80} MR^2$",
+        "$\\frac{13}{32} MR^2$",
+        "$\\frac{21}{32} MR^2$"
+      ],
+      "solution": "$I = \\frac{2}{5} MR^2 - \\frac{2}{5} \\left(\\frac{M}{8}\\right) \\left(\\frac{R}{2}\\right)^2 = \\frac{31}{80} MR^2$",
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 3,
+      "image": "12244-JEE-Main-2025-Question-Papers-With-Solutions-22-01-2025_Shift_1-PDF-Download_img2.png"
+    },
+    {
+      "question_number": 5,
+      "subject": "Physics",
+      "text": "Find the radius of curvature of the common surface of two bubbles ($R_1 > R_2$)",
+      "options": [
+        "$R = \\frac{R_1 R_2}{R_1 + R_2}$",
+        "$R = \\frac{2 R_1 R_2}{R_1 - R_2}$",
+        "$R = \\frac{R_1 R_2}{R_1 - R_2}$",
+        "$R = \\frac{R_1 R_2}{(R_1 - R_2)}$"
+      ],
+      "solution": "$P_1 - P_0 = \\frac{4S}{R_1}$; $P_2 - P_0 = \\frac{4S}{R_2}$. So, $P_2 - P_1 = \\Delta P = \\frac{4S}{R} = 4S\\left[\\frac{1}{R_2} - \\frac{1}{R_1}\\right] \\Rightarrow R = \\frac{R_1 R_2}{R_1 - R_2}$.",
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 3,
+      "image": "12244-JEE-Main-2025-Question-Papers-With-Solutions-22-01-2025_Shift_1-PDF-Download_img3.png"
+    },
+    {
+      "question_number": 6,
+      "subject": "Physics",
+      "text": "From the given option, identify the diode connected in forward bias.",
+      "options": [
+        "Diode p-side connected to Ground and n-side to -15 V",
+        "Diode p-side connected to 2 V and n-side to 4 V",
+        "Diode p-side connected to -10 V and n-side to 15 V",
+        "Diode p-side connected to -3 V and n-side to ground/higher potential"
+      ],
+      "solution": "Only in option (1), the p-side is connected at higher potential (0 V) than the n-side (-15 V) of the diode.",
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 3,
+      "image": null
+    },
+    {
+      "question_number": 7,
+      "subject": "Physics",
+      "text": "Radius of electron in ground state for hydrogen is $a_0$, then radius of electron in $\\text{He}^+$ ion in $3^{\\text{rd}}$ excited state is $a$. Then $\\frac{a_0}{a}$ is",
+      "options": [
+        "$\\frac{1}{2}$",
+        "$\\frac{1}{4}$",
+        "$\\frac{1}{16}$",
+        "$\\frac{1}{8}$"
+      ],
+      "solution": "$r = \\frac{n^2}{Z} r_0 \\Rightarrow a_0 = \\frac{1^2}{1} r_0$, $a = \\frac{4^2}{2} r_0 = 8r_0 \\Rightarrow \\frac{a_0}{a} = \\frac{1}{8}$",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 8,
+      "subject": "Physics",
+      "text": "Ice at $-10^\\circ\\text{C}$ is to be converted into steam at $110^\\circ\\text{C}$. Mass of ice is $10^{-3}\\text{ kg}$. What amount of heat is required?",
+      "options": [
+        "$\\Delta Q = 730\\text{ cal}$",
+        "$\\Delta Q = 900\\text{ cal}$",
+        "$\\Delta Q = 1210\\text{ cal}$",
+        "$\\Delta Q = 870\\text{ cal}$"
+      ],
+      "solution": "$\\Delta Q = \\left(1 \\times \\frac{1}{2} \\times 10\\right) + (1 \\times 80) + (1 \\times 1 \\times 100) + (1 \\times 540) + \\left(1 \\times \\frac{1}{2} \\times 10\\right) = 730\\text{ cal}$",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 9,
+      "subject": "Physics",
+      "text": "A charge of value $q$ is placed at the edge of a imaginary cube of side $a$ as shown in figure. Find the net flux through the cube",
+      "options": [
+        "$\\frac{q}{6\\epsilon_0}$",
+        "$\\frac{q}{4\\epsilon_0}$",
+        "$\\frac{q}{8\\epsilon_0}$",
+        "$\\frac{q}{2\\epsilon_0}$"
+      ],
+      "solution": "Flux through 4 such cubes $= \\frac{q}{\\epsilon_0} \\Rightarrow \\phi_{\\text{cube}} = \\frac{q}{4\\epsilon_0}$",
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 4,
+      "image": "12244-JEE-Main-2025-Question-Papers-With-Solutions-22-01-2025_Shift_1-PDF-Download_img4.png"
+    },
+    {
+      "question_number": 10,
+      "subject": "Physics",
+      "text": "A closed organ pipe in $9^{\\text{th}}$ harmonic resonates with $4^{\\text{th}}$ harmonic of open organ pipe [$l_{\\text{closed}} = 10\\text{ cm}$]. Find length of open organ pipe.",
+      "options": [
+        "$L_0 = 15\\text{ cm}$",
+        "$L_0 = \\frac{100}{9}\\text{ cm}$",
+        "$L_0 = \\frac{110}{7}\\text{ cm}$",
+        "$L_0 = \\frac{80}{9}\\text{ cm}$"
+      ],
+      "solution": "$\\frac{9v}{4L_c} = \\frac{4v}{2L_0} \\Rightarrow L_0 = \\frac{8L_c}{9} = \\frac{80}{9}\\text{ cm}$",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 11,
+      "subject": "Physics",
+      "text": "Now the battery is disconnected and dielectric slab of dielectric constant $K$ is inserted between the gaps of the plates. Now charge on capacitor is $Q_2$. Find $\\frac{Q_1}{Q_2}$.",
+      "options": [
+        "1",
+        "$\\frac{1}{2}$",
+        "2",
+        "$\\frac{2}{3}$"
+      ],
+      "solution": "$\\frac{Q_1}{Q_2} = 1$ (No further charge is supplied)",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 12,
+      "subject": "Physics",
+      "text": "Which of the following graphs correctly represents the variation of resistivity ($\\rho$) with temperature ($T$).",
+      "options": [
+        "Graph showing non-linear increase of resistivity with temperature",
+        "Graph showing constant resistivity with temperature",
+        "Graph showing decreasing resistivity with temperature",
+        "Graph showing linear increase of resistivity with temperature"
+      ],
+      "solution": "The resistivity of conductors increases with increase in temperature non-linearly.",
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 5,
+      "image": null
+    },
+    {
+      "question_number": 13,
+      "subject": "Physics",
+      "text": "If whole YDSE apparatus is immersed in a liquid of refractive index $\\mu$, then what is the effect on fringe width?",
+      "options": [
+        "Fringe width increases",
+        "Fringe width decreases",
+        "Fringe width remains unchanged",
+        "It may increase on one side and decrease on other side"
+      ],
+      "solution": "$\\Delta w = \\frac{\\lambda D}{d}$. For refractive index $\\mu$, $\\Delta w' = \\frac{\\lambda D}{\\mu d}$, so fringe width decreases.",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 14,
+      "subject": "Physics",
+      "text": "Two spherical black bodies of radius $0.8\\text{ m}$ and $0.2\\text{ m}$ are at temperatures of $400\\text{ K}$ and $800\\text{ K}$ respectively. Find ratio of rate of heat loss.",
+      "options": [
+        "8",
+        "4",
+        "2",
+        "1"
+      ],
+      "solution": "$P_1 = \\sigma 4\\pi (0.8)^2 (400)^4$, $P_2 = \\sigma 4\\pi (0.2)^2 (800)^4 \\Rightarrow \\frac{P_1}{P_2} = \\frac{4^2 \\times 4^4}{2^4 \\times 8^4} = 1$",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 15,
+      "subject": "Physics",
+      "text": "The equiconvex lens shown in figure is silvered on one side. For what distance of object from the lens is the image formed on the object itself?",
+      "options": [
+        "$\\mu R$",
+        "$\\frac{R}{\\mu}$",
+        "$\\frac{R}{2\\mu - 1}$",
+        "$\\frac{R}{2\\mu - 2}$"
+      ],
+      "solution": "$\\frac{1}{F_{eq}} = \\frac{1}{f_m} - \\frac{2}{f_l} = \\frac{-2}{R} - \\frac{4(\\mu-1)}{R} = \\frac{-2(2\\mu-1)}{R} \\Rightarrow F = \\frac{-R}{2(2\\mu-1)}$. For object-image to coincide, distance should be $2f \\Rightarrow |u| = 2|F| = \\frac{R}{2\\mu - 1}$.",
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 6,
+      "image": "12244-JEE-Main-2025-Question-Papers-With-Solutions-22-01-2025_Shift_1-PDF-Download_img5.png"
+    },
+    {
+      "question_number": 16,
+      "subject": "Physics",
+      "text": "Light of wavelength $550\\text{ nm}$ is incident on surfaces of cerium and lithium. Work functions are respectively $1.9\\text{ eV}$ and $2.5\\text{ eV}$. Then electron will be ejected from",
+      "options": [
+        "Cerium only",
+        "Lithium only",
+        "From both of them",
+        "None of them"
+      ],
+      "solution": "$E(\\text{eV}) = \\frac{1240}{550} = 2.25\\text{ eV}$. Since $2.25\\text{ eV} > 1.9\\text{ eV}$, electrons will be ejected from Cerium only.",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 17,
+      "subject": "Physics",
+      "text": "The figure shows an electron entering the space between the plates of a parallel plate capacitor with an initial velocity, $v_x = 10^6\\text{ m/s}$ parallel to the plates. If the length of plates is $l = 10\\text{ cm}$ and the electric field in the region $E = 9.1\\text{ N/C}$, then the value of $v_y$ when the electron comes out of the plates is (Electronic mass = $9.1 \\times 10^{-31}\\text{ kg}$)",
+      "options": [
+        "$1.6 \\times 10^4\\text{ m/s}$",
+        "$1.6 \\times 10^5\\text{ m/s}$",
+        "$1.6 \\times 10^7\\text{ m/s}$",
+        "$1.6 \\times 10^3\\text{ m/s}$"
+      ],
+      "solution": "$t = \\frac{l}{v_x}$, $a = \\frac{eE}{m}$, $v_y = at = \\frac{eE}{m} \\cdot \\frac{l}{v_x} = \\frac{1.6 \\times 10^{-19} \\times 9.1 \\times 10^{-2}}{9.1 \\times 10^{-31} \\times 10^6} = 1.6 \\times 10^5\\text{ m/s}$",
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 6,
+      "image": "12244-JEE-Main-2025-Question-Papers-With-Solutions-22-01-2025_Shift_1-PDF-Download_img6.png"
+    },
+    {
+      "question_number": 18,
+      "subject": "Physics",
+      "text": "Find the equivalent power of the thin lens combination shown in the figure, where $\\mu_1 = 4/3$, $\\mu_2 = 3/2$, and $\\mu_3 = 4/3$.",
+      "options": [
+        "$+\\left(\\frac{R_1 + R_2}{R_1 + R_2}\\right)$",
+        "$-\\left(\\frac{R_1 + R_2}{R_1 R_2}\\right)$",
+        "$-\\left(\\frac{R_1 + R_2}{6R_1 R_2}\\right)$",
+        "$+\\left(\\frac{R_1 + R_2}{6R_1 R_2}\\right)$"
+      ],
+      "solution": "Net power $= P_1 + P_2 + P_3 = \\frac{\\mu_1 - 1}{R_1} + (\\mu_2 - 1)\\left(\\frac{1}{-R_1} + \\frac{1}{-R_2}\\right) + \\frac{\\mu_3 - 1}{R_2} = -\\left(\\frac{R_1 + R_2}{6R_1 R_2}\\right)$",
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 6,
+      "image": null
+    },
+    {
+      "question_number": 21,
+      "subject": "Physics",
+      "text": "The particle shown in figure is just able to complete the vertical circular motion. Find the ratio of kinetic energy at A to the kinetic energy at B.",
+      "options": [],
+      "solution": "$v = \\sqrt{5gR}$. $KE_A = \\frac{1}{2}mv^2 - mg\\frac{R}{2} = 2mgR$. $KE_B = \\frac{1}{2}mv^2 - mg\\left(\\frac{3R}{2}\\right) = mgR$. $\\frac{KE_A}{KE_B} = 2$.",
+      "type": "integer",
+      "has_diagram": true,
+      "diagram_page": 7,
+      "image": "12244-JEE-Main-2025-Question-Papers-With-Solutions-22-01-2025_Shift_1-PDF-Download_img7.png"
+    },
+    {
+      "question_number": 22,
+      "subject": "Physics",
+      "text": "The current drawn from battery in the circuit shown below is _____ A",
+      "options": [],
+      "solution": "$\\frac{1}{R'} = \\frac{1}{1} + \\frac{1}{2} + 2 = \\frac{5}{2} \\Rightarrow R' = \\frac{2}{5} \\Omega$. $R = \\frac{2}{5} + \\frac{1}{2} = \\frac{9}{10} \\Omega$. $I = \\frac{0.9 \\times 10}{9} = 1\\text{ A}$.",
+      "type": "integer",
+      "has_diagram": true,
+      "diagram_page": 7,
+      "image": "12244-JEE-Main-2025-Question-Papers-With-Solutions-22-01-2025_Shift_1-PDF-Download_img8.png"
+    },
+    {
+      "question_number": 1,
+      "subject": "Chemistry",
+      "text": "For complex ion $[\\text{NiCl}_4]^{2-}$ what is the charge on metal and shape of complex respectively?",
+      "options": [
+        "+2, Tetrahedral",
+        "+2, Square planar",
+        "+4, Tetrahedral",
+        "+4, Square Planar"
+      ],
+      "solution": "$[\\text{NiCl}_4]^{2-} \\Rightarrow \\text{Ni}^{2+} \\rightarrow 3d^8$. $\\text{Cl}^-$ ligand is weak field ligand and hybridisation is $sp^3$. Shape of complex is tetrahedral.",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 2,
+      "subject": "Chemistry",
+      "text": "Compare boiling point of given solutions\n(i) $10^{-4}\\text{ M NaCl}$\n(ii) $10^{-3}\\text{ M NaCl}$\n(iii) $10^{-2}\\text{ M NaCl}$\n(iv) $10^{-4}\\text{ M urea}$",
+      "options": [
+        "I > II > III > IV",
+        "III > II > I > IV",
+        "II > I > III > IV",
+        "III > I > II > IV"
+      ],
+      "solution": "$\\Delta T_b \\propto i \\times m$. For urea $i = 1$, for $\\text{NaCl } i = 2$. Boiling point order: III > II > I > IV.",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 3,
+      "subject": "Chemistry",
+      "text": "The correct decreasing order of electronegativity is",
+      "options": [
+        "F > Cl > I > Br",
+        "Cl > F > Br > I",
+        "F > Cl > Br > I",
+        "Br > F > I > Cl"
+      ],
+      "solution": "The correct order is F > Cl > Br > I.",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 4,
+      "subject": "Chemistry",
+      "text": "Which of the following has maximum size out of $\\text{Al}^{3+}$, $\\text{Mg}^{2+}$, $\\text{F}^-$, $\\text{Na}^+$?",
+      "options": [
+        "$\\text{Al}^{3+}$",
+        "$\\text{Mg}^{2+}$",
+        "$\\text{F}^-$",
+        "$\\text{Na}^+$"
+      ],
+      "solution": "For isoelectronic species, more the negative charge more will be the size, also more the positive charge smaller will be the size. Ionic size order: $\\text{Al}^{3+} < \\text{Mg}^{2+} < \\text{Na}^+ < \\text{F}^-$.",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 5,
+      "subject": "Chemistry",
+      "text": "The IUPAC name of given specie $\\text{HOOC}-\\text{CH}(\\text{CH}_3)-\\text{CH}(\\text{CH}_3)-\\text{COOCH}_3$ is",
+      "options": [
+        "2, 3-dimethyl methyl carboxy butanoic acid",
+        "4-methoxy carbonyl-2, 3-dimethyl propanoic acid",
+        "3-methoxycarbonyl-2-methyl butanoic acid",
+        "1-carboxy-2, 3-dimethyl methyl butanoate"
+      ],
+      "solution": "The correct IUPAC name is 3-methoxycarbonyl-2-methyl butanoic acid.",
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 8,
+      "image": null
+    },
+    {
+      "question_number": 6,
+      "subject": "Chemistry",
+      "text": "Compare crystal field splitting energy ($\\Delta$) for given complexes\n(i) $[\\text{Fe}(\\text{CN})_6]^{4-}$\n(ii) $[\\text{Cu}(\\text{NH}_3)_4]^{2+}$\n(iii) $[\\text{Fe}(\\text{SCN})_6]^{4-}$\n(iv) $[\\text{Fe}(\\text{en})_3]\\text{Cl}_3$",
+      "options": [
+        "I > II > III > IV",
+        "II > I > IV > III",
+        "IV > I > III > II",
+        "IV > III > I > II"
+      ],
+      "solution": "Splitting energy $\\propto$ Strength of ligand $\\propto$ Charge of CA. Square planar $\\Delta_{sp} > \\Delta_o$. Order: II > I > IV > III.",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 7,
+      "subject": "Chemistry",
+      "text": "Consider the given equilibrium reaction $\\text{CO}_2(g) + \\text{C}(s) \\rightleftharpoons 2\\text{CO}(g)$. If initial pressure of $\\text{CO}_2$ is $0.6\\text{ atm}$ and after equilibrium is established, total pressure is $0.8\\text{ atm}$. Then, find $K_p$.",
+      "options": [
+        "0.4",
+        "0.2",
+        "0.6",
+        "0.8"
+      ],
+      "solution": "$P_t \\text{ at equilibrium} = 0.8 = 0.6 + p \\Rightarrow p = 0.2$. $K_p = \\frac{(p_{\\text{CO}})^2}{p_{\\text{CO}_2}} = \\frac{(2p)^2}{0.6 - p} = \\frac{4 \\times 0.04}{0.4} = 0.4$.",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 8,
+      "subject": "Chemistry",
+      "text": "Statement-I: $\\text{CH}_3 - \\text{O} - \\text{CH}_2 - \\text{Cl}$ will show nucleophilic substitution by $S_N1$ mechanism in protic medium.\nStatement-II: $\\text{CH}_3 - \\text{C}(\\text{CH}_3)_2 - \\text{CH}_2 - \\text{Cl}$ will not undergo nucleophilic substitution via $S_N2$ mechanism easily.",
+      "options": [
+        "Statement-I and statement-II both are correct",
+        "Statement-I and statement-II both are incorrect",
+        "Statement-I is correct but statement-II is incorrect",
+        "Statement-I is incorrect but statement-II is correct"
+      ],
+      "solution": "$\\text{CH}_3 - \\text{O} - \\overset{\\oplus}{\\text{C}}\\text{H}_2$ is stabilised by resonance. Neopentyl chloride is sterically hindered for $S_N2$. Thus both statements are correct.",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 9,
+      "subject": "Chemistry",
+      "text": "Which of the following acids is also known as vitamin C?",
+      "options": [
+        "Adipic acid",
+        "Ascorbic acid",
+        "Saccharic acid",
+        "Aspartic acid"
+      ],
+      "solution": "Ascorbic acid is also known as vitamin C.",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 10,
+      "subject": "Chemistry",
+      "text": "An electron of $\\text{He}^+$ is present in $3^{\\text{rd}}$ excited state. Find its de-Broglie wavelength.",
+      "options": [
+        "$6.64\\text{ \\AA}$",
+        "$1.66\\text{ \\AA}$",
+        "$3.32\\text{ \\AA}$",
+        "$13.28\\text{ \\AA}$"
+      ],
+      "solution": "$n\\lambda = 2\\pi r$. For $3^{\\text{rd}}$ excited state, $n = 4$. $4\\lambda = 2 \\times \\pi \\times 0.529 \\times \\frac{16}{2} \\text{ \\AA} \\Rightarrow \\lambda = 6.64\\text{ \\AA}$.",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 11,
+      "subject": "Chemistry",
+      "text": "Which of the following will show positive Fehling test?",
+      "options": [
+        "Benzaldehyde",
+        "$\\text{H}_3\\text{C}-\\text{C}(=\\text{O})-\text{CHO}$",
+        "$\\text{C}_6\\text{H}_5-\\text{CH}_2-\\text{CHO}$",
+        "$\\text{C}_2\\text{H}_5-\\text{CH}(\\text{OH})-\\text{CH}(\\text{OH})-\\text{CH}_3$"
+      ],
+      "solution": "Fehling test is given by aliphatic aldehydes except benzaldehyde. $\\text{C}_6\\text{H}_5-\\text{CH}_2-\\text{CHO}$ will give +ve Fehling test.",
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 9,
+      "image": null
+    },
+    {
+      "question_number": 12,
+      "subject": "Chemistry",
+      "text": "$4f^7$ configuration is possible for\n(a) $\\text{Eu}^{3+}$, (b) $\\text{Eu}^{2+}$, (c) $\\text{Gd}^{3+}$, (d) $\\text{Tb}^{3+}$, (e) $\\text{Sm}^{2+}$",
+      "options": [
+        "(a) and (c)",
+        "(b) and (c)",
+        "(d) and (e)",
+        "Only (c)"
+      ],
+      "solution": "Electronic configuration of $\\text{Eu}^{2+} \\Rightarrow 4f^7$, $\\text{Gd}^{3+} \\Rightarrow 4f^7$.",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 13,
+      "subject": "Chemistry",
+      "text": "Given : $\\text{NH}_2\\text{COONH}_4(s) \\rightleftharpoons 2\\text{NH}_3(g) + \\text{CO}_2(g)$. If the partial pressure of $\\text{CO}_2$ gas at equilibrium is $0.4\\text{ atm}$ and the total pressure is $1\\text{ atm}$, then the value of $K_p$ at the same temperature is",
+      "options": [
+        "$0.027\\text{ atm}^3$",
+        "$0.064\\text{ atm}^3$",
+        "$0.144\\text{ atm}^3$",
+        "$0.216\\text{ atm}^3$"
+      ],
+      "solution": "Total pressure = $1.0\\text{ atm}$, $p_{\\text{CO}_2} = 0.4\\text{ atm} \\Rightarrow p_{\\text{NH}_3} = 0.6\\text{ atm}$. $K_p = (p_{\\text{NH}_3})^2 (p_{\\text{CO}_2}) = (0.6)^2(0.4) = 0.144\\text{ atm}^3$.",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 14,
+      "subject": "Chemistry",
+      "text": "Identify the product in the reaction of 1-chloro-2-bromo-3-methylcyclopentane with excess $\\text{NH}(\\text{CH}_3)_2$.",
+      "options": [
+        "1-N(CH3)2-3-methylcyclopentane derivative as shown in option (1)",
+        "Structure with Cl remaining and N(CH3)2 substituted",
+        "Structure with NH2 substituted",
+        "Structure with Br remaining"
+      ],
+      "solution": "Bromide is a better leaving group, leading to nucleophilic substitution at that position followed by intramolecular/intermolecular substitution as shown in option (1).",
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 10,
+      "image": "12244-JEE-Main-2025-Question-Papers-With-Solutions-22-01-2025_Shift_1-PDF-Download_img9.png"
+    },
+    {
+      "question_number": 15,
+      "subject": "Chemistry",
+      "text": "$\\text{CO}_2$ gas is taken at $1\\text{ atm}, 273\\text{K}$. Now it is allowed to pass through $0.1\\text{ M Ca(OH)}_2$ aq. solution. Excess amount of $\\text{Ca(OH)}_2$ is neutralised with $40\\text{ mL}$ of $0.1\\text{ M HCl}$. Then find volume of $\\text{Ca(OH)}_2$ initially taken if $50\\%$ $\\text{Ca(OH)}_2$ is react with $\\text{CO}_2$",
+      "options": [
+        "$40\\text{ mL}$",
+        "$20\\text{ mL}$",
+        "$80\\text{ mL}$",
+        "$50\\text{ mL}$"
+      ],
+      "solution": "$\\text{g meq of Ca(OH)}_2 = 2 \\times \\text{gm eq of HCl} \\Rightarrow 0.1 \\times \\frac{V_{\\text{mL}}}{1000} \\times 2 = 2 \\times 0.1 \\times \\frac{40}{1000} \\times 1 \\Rightarrow V_{\\text{mL}} = 40\\text{ mL}$.",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 16,
+      "subject": "Chemistry",
+      "text": "In a closed insulated container, a liquid is stirred with a paddle to increase the temperature, which of the following is true?",
+      "options": [
+        "$w = 0, \\Delta E = q \\neq 0$",
+        "$\\Delta E = w \\neq 0, q = 0$",
+        "$\\Delta E = w = 0, q \\neq 0$",
+        "$\\Delta E = 0, w = q \\neq 0$"
+      ],
+      "solution": "For closed insulated container, $q = 0$. From FLOT: $\\Delta U = q + w \\Rightarrow \\Delta E = w \\neq 0$.",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 17,
+      "subject": "Chemistry",
+      "text": "Match the column and choose the correct option:\nColumn-I (Properties):\n(A) Electronegativity\n(B) Cationic size\n(C) Metallic Character\n(D) Electron affinity\n\nColumn-II (Order):\n(1) B < C < N < O\n(2) Li > Mg > Be\n(3) K > Mg > Al\n(4) Cl > F > Br > I",
+      "options": [
+        "A–1, B–2, C–3, D–4",
+        "A–4, B–3, C–2, D–1",
+        "A–2, B–3, C–4, D–1",
+        "A–3, B–2, C–4, D–1"
+      ],
+      "solution": "Electronegativity: B < C < N < O (1); Cationic size: Li+ > Mg2+ > Be2+ (2); Metallic character: K > Mg > Al (3); Electron affinity: Cl > F > Br > I (4).",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 18,
+      "subject": "Chemistry",
+      "text": "Nitrobenzene $\\xrightarrow{\\text{Sn+HCl}} A \\xrightarrow{\\text{NaNO}_2 + \\text{HCl}} B \\xrightarrow{\\text{C}_2\\text{H}_5\\text{OH}} C$. Identify C.",
+      "options": [
+        "Benzene",
+        "Phenol",
+        "Ethoxybenzene",
+        "Ethylbenzene"
+      ],
+      "solution": "Nitrobenzene gives Aniline (A), which on diazotisation gives Benzene diazonium chloride (B). Reduction with ethanol gives Benzene (C).",
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 11,
+      "image": "12244-JEE-Main-2025-Question-Papers-With-Solutions-22-01-2025_Shift_1-PDF-Download_img10.png"
+    },
+    {
+      "question_number": 21,
+      "subject": "Chemistry",
+      "text": "Nitrobenzene $\\xrightarrow{\\text{(i) Sn/HCl, (ii) NaNO}_2/\\text{HCl}(0-5^\\circ\\text{C}), \\text{(iii) CuCl/HCl, (iv) Na/dry ether}} (A) \\text{ (major)}$. Find molecular weight of (A) in $\\text{g mol}^{-1}$.",
+      "options": [],
+      "solution": "The product (A) is Biphenyl ($\\text{C}_{12}\\text{H}_{10}$). Molecular weight $= 12 \\times 12 + 10 = 154\\text{ g mol}^{-1}$.",
+      "type": "integer",
+      "has_diagram": true,
+      "diagram_page": 11,
+      "image": null
+    },
+    {
+      "question_number": 22,
+      "subject": "Chemistry",
+      "text": "Calculate Number of stereoisomers of $\\text{CH}_3 - \\text{CH} = \\text{CH} - \\text{CH}(\\text{OH}) - \\text{CH}_3$",
+      "options": [],
+      "solution": "Number of stereocentres = 2 (1 double bond + 1 chiral carbon). Number of stereoisomers = $2^2 = 4$.",
+      "type": "integer",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 23,
+      "subject": "Chemistry",
+      "text": "How many compounds have linear shape: $\\text{SO}_2$, $\\text{BeCl}_2$, $\\text{N}_3^-$, $\\text{I}_3^-$, $\\text{NO}_2^+$, $\\text{NO}_2$?",
+      "options": [],
+      "solution": "Linear shapes are: $\\text{BeCl}_2$, $\\text{N}_3^-$, $\\text{I}_3^-$, $\\text{NO}_2^+$. Total $= 4$.",
+      "type": "integer",
+      "has_diagram": true,
+      "diagram_page": 12,
+      "image": "12244-JEE-Main-2025-Question-Papers-With-Solutions-22-01-2025_Shift_1-PDF-Download_img11.png"
+    },
+    {
+      "question_number": 24,
+      "subject": "Chemistry",
+      "text": "In Carius method $180\\text{ mg}$ of organic compound gives $143.5\\text{ mg}$ of $\\text{AgCl}$. Find the percentage of $\\text{Cl}$ in the organic compound. (Nearest integer)",
+      "options": [],
+      "solution": "Mass of $\\text{Cl} = \\frac{143.5}{143.5} \\times 35.5 = 35.5\\text{ mg}$. Percentage of $\\text{Cl} = \\frac{35.5 \\times 100}{180} = 19.72\\% \\approx 20\\%$.",
+      "type": "integer",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 25,
+      "subject": "Chemistry",
+      "text": "Two ampere current is allowed to pass through molten $\\text{AlCl}_3$ for $30\\text{ min}$. Find the mass (in mg) of aluminium deposited at cathode. (Nearest integer)",
+      "options": [],
+      "solution": "Total charge $= 2 \\times 30 \\times 60 = 3600\\text{ C}$. Number of Faradays $= \\frac{3600}{96500} = \\frac{36}{965}$. Mass of Al deposited $= \\frac{36 \\times 9}{965}\\text{ g} = 335.75\\text{ mg} \\approx 336\\text{ mg}$.",
+      "type": "integer",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 1,
+      "subject": "Mathematics",
+      "text": "The shortest distance between the lines $\\frac{x-1}{2} = \\frac{y-2}{3} = \\frac{z-1}{4}$ and $\\frac{x+2}{7} = \\frac{y-2}{8} = \\frac{z+1}{2}$ is",
+      "options": [
+        "$\\frac{88}{\\sqrt{1277}}$",
+        "$\\frac{78}{\\sqrt{1277}}$",
+        "$\\frac{66}{\\sqrt{1277}}$",
+        "$\\frac{55}{\\sqrt{1277}}$"
+      ],
+      "solution": "$d = \\frac{|(\\vec{a}_2 - \\vec{a}_1) \\cdot (\\vec{b}_1 \\times \\vec{b}_2)|}{|\\vec{b}_1 \\times \\vec{b}_2|}$. $\\vec{b}_1 \\times \\vec{b}_2 = -26\\hat{i} + 24\\hat{j} - 5\\hat{k}$, $\\vec{a}_2 - \\vec{a}_1 = -3\\hat{i} - 2\\hat{k}$. $d = \\frac{|-78 - 10|}{\\sqrt{26^2 + 24^2 + 5^2}} = \\frac{88}{\\sqrt{1277}}$.",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 2,
+      "subject": "Mathematics",
+      "text": "In a bag there are 6 white and 4 black balls two balls are drawn at random, then the probability that both ball are white are",
+      "options": [
+        "$\\frac{1}{2}$",
+        "$\\frac{1}{3}$",
+        "$\\frac{2}{3}$",
+        "$\\frac{1}{4}$"
+      ],
+      "solution": "$P(E) = \\frac{^6C_2}{^{10}C_2} = \\frac{15}{45} = \\frac{1}{3}$",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 3,
+      "subject": "Mathematics",
+      "text": "Let $A = \\{1, 2, 3\\}$ number of non-empty equivalence relations from $A$ to $A$ are",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "8"
+      ],
+      "solution": "The partitions for a set with 3 elements are 5. Therefore, total possible equivalence relations $= 5$.",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 4,
+      "subject": "Mathematics",
+      "text": "If $f(x) = 16(\\sec^{-1} x)^2 + (\\csc^{-1} x)^2$. Then the maximum and minimum value of $f(x)$ is",
+      "options": [
+        "$\\frac{1001\\pi^2}{33}$ and $\\frac{2\\pi^2}{9}$",
+        "$\\frac{1105\\pi^2}{68}$ and $\\frac{4\\pi^2}{17}$",
+        "$\\frac{1117\\pi^2}{59}$ and $\\frac{6\\pi^2}{19}$",
+        "$\\frac{1268\\pi^2}{27}$ and $\\frac{3\\pi^2}{16}$"
+      ],
+      "solution": "$f(x) = 17\\left(\\sec^{-1} x - \\frac{\\pi}{34}\\right)^2 + \\frac{4\\pi^2}{17}$. $\\text{Min} = \\frac{4\\pi^2}{17}$, $\\text{Max if } \\sec^{-1} x = \\pi \\Rightarrow 17\\left(\\pi - \\frac{\\pi}{34}\\right)^2 + \\frac{4\\pi^2}{17} = \\frac{1105\\pi^2}{68}$.",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 5,
+      "subject": "Mathematics",
+      "text": "If $8 = 3 + \\frac{1}{4}(3+p) + \\frac{1}{4^2}(3+p^2) + \\dots \\infty$ then the value of $p$ is",
+      "options": [
+        "$\\frac{14}{5}$",
+        "$\\frac{16}{5}$",
+        "$\\frac{3}{5}$",
+        "$\\frac{4}{5}$"
+      ],
+      "solution": "$8 = 3\\left(1 + \\frac{1}{4} + \\frac{1}{4^2} + \\dots\\right) + \\left(\\frac{p}{4} + \\frac{p^2}{4^2} + \\dots\\right) = 3\\left(\\frac{1}{1 - 1/4}\\right) + \\frac{p/4}{1 - p/4} = 4 + \\frac{p}{4-p} \\Rightarrow 4 = \\frac{p}{4-p} \\Rightarrow p = \\frac{16}{5}$.",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 6,
+      "subject": "Mathematics",
+      "text": "If $\\frac{dx}{dy} + \\frac{x}{y^2} = \\frac{1}{y^3}$, $x(1) = 1$. Then $x\\left(\\frac{1}{2}\\right)$ equals to",
+      "options": [
+        "$2 - e$",
+        "$3 - e$",
+        "$5 - e$",
+        "$7 - e$"
+      ],
+      "solution": "$\\text{I.F.} = e^{-1/y}$. $x e^{-1/y} = \\int e^{-1/y} \\frac{1}{y^3} dy$. Putting $\\frac{1}{y} = t$, $x = t + 1 - e^t e^{1-t} \\Rightarrow$ for $y = 1/2$, $x = 3 - e$.",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 7,
+      "subject": "Mathematics",
+      "text": "Let $T_r = \\frac{(2r-1)(2r+1)(2r+3)(2r+5)}{64}$, then $\\lim_{n \\to \\infty} \\sum_{r=1}^n \\frac{1}{T_r}$ is equal to",
+      "options": [
+        "$\\frac{22}{45}$",
+        "$\\frac{32}{35}$",
+        "$\\frac{27}{45}$",
+        "$\\frac{32}{45}$"
+      ],
+      "solution": "$\\frac{1}{T_r} = \\frac{4}{3} \\left[\\frac{1}{(r - 1/2)(r + 1/2)(r + 3/2)} - \\frac{1}{(r + 1/2)(r + 3/2)(r + 5/2)}\\right]$. Telescoping sum yields $\\lim_{n \\to \\infty} \\sum_{r=1}^n \\frac{1}{T_r} = \\frac{4}{3} \\cdot \\frac{8}{15} = \\frac{32}{45}$.",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 8,
+      "subject": "Mathematics",
+      "text": "Coefficient of $x^{2012}$ in $(1 - x)^{2008} (1 + x + x^2)^{2007}$",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "solution": "$(1-x)^{2008} (1+x+x^2)^{2007} = (1-x)(1-x^3)^{2007} = (1-x^3)^{2007} - x(1-x^3)^{2007}$. Exponents are $3\\lambda$ or $3\\lambda+1$. $2012$ is of form $3\\lambda + 2$, so its coefficient is 0.",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 9,
+      "subject": "Mathematics",
+      "text": "If the images of the points $A(1, 3)$, $B(3, 1)$ and $C(2, 4)$ in the line $x + 2y = 4$ are $D, E$ and $F$ respectively, then the centroid of the triangle $DEF$ is",
+      "options": [
+        "$(3, -1)$",
+        "$\\left(-\\frac{3}{5}, -\\frac{2}{5}\\right)$",
+        "$\\left(\\frac{2}{5}, -\\frac{1}{5}\\right)$",
+        "$\\left(\\frac{1}{5}, -\\frac{2}{5}\\right)$"
+      ],
+      "solution": "Centroid $G_1$ of $\\Delta ABC = (2, 3)$. Centroid $G_2$ of $\\Delta DEF$ is image of $G_1$ in $x + 2y = 4 \\Rightarrow G_2 = \\left(\\frac{2}{5}, -\\frac{1}{5}\\right)$.",
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 15,
+      "image": "12244-JEE-Main-2025-Question-Papers-With-Solutions-22-01-2025_Shift_1-PDF-Download_img12.png"
+    },
+    {
+      "question_number": 10,
+      "subject": "Mathematics",
+      "text": "If $A = \\{1, 2, 3, \\dots, 10\\}$, $B = \\left\\{\\frac{m}{n}, m, n \\in A \\text{ and } m < n \\text{ and } \\gcd(m, n) = 1\\right\\}$. Then number of elements in set $B$ is",
+      "options": [
+        "30",
+        "31",
+        "28",
+        "29"
+      ],
+      "solution": "Counting proper irreducible fractions $m/n$ with $n \\in \\{1, \\dots, 10\\}$ and $m < n$: total distinct values $= 31$.",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 11,
+      "subject": "Mathematics",
+      "text": "How many ways are there to pick 5 letters from English alphabets such that $M$ is the middle of the letters (repetition not allowed).",
+      "options": [
+        "$^{26}C_5 \\cdot 5!$",
+        "$^{25}C_4 \\cdot 4!$",
+        "$^{26}C_4 \\cdot 4!$",
+        "$^{25}C_5 \\cdot 5!$"
+      ],
+      "solution": "The middle position is fixed with $M$. We choose 4 letters from remaining 25 letters and arrange them in $4!$ ways: $^{25}C_4 \\times 4!$.",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 12,
+      "subject": "Mathematics",
+      "text": "Let $|Z_i| = 1$ for $i = 1, 2, 3$ satisfying $|Z_1 Z_2 + Z_2 Z_3 + Z_3 Z_1|^2 = a + b\\sqrt{2}$, where $a, b$ are rational numbers such that $\\arg(Z_1) = \\frac{\\pi}{4}$, $\\arg(Z_2) = 0$ and $\\arg(Z_3) = -\\frac{\\pi}{4}$, then find $(a, b)$",
+      "options": [
+        "$(5, 2)$",
+        "$(-5, -2)$",
+        "$(5, -2)$",
+        "$(-5, 2)$"
+      ],
+      "solution": "$|Z_1 Z_2 + Z_2 Z_3 + Z_3 Z_1|^2 = |(2 - \\sqrt{2}) + i|^2 = 5 - 2\\sqrt{2} \\Rightarrow (a, b) = (5, -2)$.",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 13,
+      "subject": "Mathematics",
+      "text": "Let a coin is tossed thrice. Let the random variable $x$ is tail follows head. Let the mean of $x$ is $\\mu$ and variance is $\\sigma^2$. Find $64 (\\mu + \\sigma^2)$.",
+      "options": [
+        "48",
+        "64",
+        "132",
+        "128"
+      ],
+      "solution": "Mean $\\mu = \\frac{1}{2}$, $\\sigma^2 = \\frac{1}{4}$. $64(\\mu + \\sigma^2) = 64\\left(\\frac{1}{2} + \\frac{1}{4}\\right) = 48$.",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 14,
+      "subject": "Mathematics",
+      "text": "Let $g(x) = 3f\\left(\\frac{x}{3}\\right) + f(3 - x) \\quad \\forall x \\in (0, 3)$ and $f''(x) > 0 \\quad \\forall x \\in (0, 3)$ then $g(x)$ decreases in interval $(0, \\alpha)$, then $\\alpha$ is",
+      "options": [
+        "$\\frac{7}{4}$",
+        "$\\frac{2}{3}$",
+        "$\\frac{9}{4}$",
+        "$\\frac{7}{3}$"
+      ],
+      "solution": "$g'(x) = f'\\left(\\frac{x}{3}\\right) - f'(3-x) < 0 \\Rightarrow \\frac{x}{3} < 3 - x \\Rightarrow x < \\frac{9}{4} \\Rightarrow \\alpha = \\frac{9}{4}$.",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 15,
+      "subject": "Mathematics",
+      "text": "Let $\\vec{b} = \\lambda\\hat{i} + 4\\hat{k}$, $\\lambda > 0$ and the projection vector of $\\vec{b}$ on $\\vec{a} = 2\\hat{i} + 2\\hat{j} - \\hat{k}$ is $\\vec{c}$. If $|\\vec{a} + \\vec{c}| = 7$, then the area of the parallelogram formed by vector $\\vec{b}$ and $\\vec{c}$ is (in square units)",
+      "options": [
+        "8",
+        "16",
+        "32",
+        "64"
+      ],
+      "solution": "$\\vec{c} = \\frac{2\\lambda - 4}{6}\\vec{a}$. $|\\vec{a} + \\vec{c}| = 7 \\Rightarrow \\lambda = 8$. $\\vec{b} \\times \\vec{c} = 32 \\Rightarrow$ Area $= 32$.",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 16,
+      "subject": "Mathematics",
+      "text": "Let the parabola $y = x^2 + px - 3$ cuts the coordinate axes at $P, Q$ and $R$. A circle with centre $(-1, -1)$ passes through $P, Q$ and $R$, then the area of triangle $PQR$.",
+      "options": [
+        "$\\frac{5}{2}$",
+        "$\\frac{3}{2}$",
+        "3",
+        "5"
+      ],
+      "solution": "Circle passes through $(0, -3)$ and cuts x-axis at $(-3, 0)$ and $(1, 0)$. Area of $\\Delta PQR = \\frac{1}{2} \\left| \\begin{matrix} -3 & 0 & 1 \\\\ 0 & -3 & 1 \\\\ 1 & 0 & 1 \\end{matrix} \\right| = \\frac{3}{2}$.",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 17,
+      "subject": "Mathematics",
+      "text": "If the circle $(x - 2\\sqrt{3})^2 + y^2 = 12$ and parabola $y^2 = 2\\sqrt{3}x$ intersects at $P, Q$ and $R$. Then the area of triangle $PQR$ is",
+      "options": [
+        "10 sq. units",
+        "12 sq. units",
+        "14 sq. units",
+        "16 sq. units"
+      ],
+      "solution": "Solving equations gives $x = 0, 2\\sqrt{3}$. Points are $P(0, 0)$, $Q(2\\sqrt{3}, 2\\sqrt{3})$, $R(2\\sqrt{3}, -2\\sqrt{3})$. Area $= \\frac{1}{2} \\times (4\\sqrt{3}) \\times (2\\sqrt{3}) = 12\\text{ sq. units}$.",
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 18,
+      "image": "12244-JEE-Main-2025-Question-Papers-With-Solutions-22-01-2025_Shift_1-PDF-Download_img13.png"
+    },
+    {
+      "question_number": 18,
+      "subject": "Mathematics",
+      "text": "A hyperbola with foci $(1, 14)$ and $(1, -12)$ passes through the point $(1, 6)$. The length of the latus rectum of the hyperbola is",
+      "options": [
+        "$\\frac{144}{5}$",
+        "50",
+        "$\\frac{288}{5}$",
+        "100"
+      ],
+      "solution": "$|sp - s'p| = 2a \\Rightarrow 2a = 10 \\Rightarrow a = 5$. $2ae = 26 \\Rightarrow ae = 13$. Length of latus rectum $= \\frac{2b^2}{a} = \\frac{2(169 - 25)}{5} = \\frac{288}{5}$.",
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 18,
+      "image": "12244-JEE-Main-2025-Question-Papers-With-Solutions-22-01-2025_Shift_1-PDF-Download_img14.jpeg"
+    },
+    {
+      "question_number": 21,
+      "subject": "Mathematics",
+      "text": "If $A$ be a $3 \\times 3$ square matrix such that $\\det(A) = -2$. If $\\det(3 \\text{ adj}(-6 \\text{ adj}(3A))) = 2^n \\cdot 3^m$, where $m \\ge n$, then $4m + 2n$ is equal to",
+      "options": [],
+      "solution": "$\\det(3 \\text{ adj}(-6 \\text{ adj}(3A))) = 3^3 (\\det(\\text{adj}(-6 \\text{ adj}(3A)))) = 3^{21} \\cdot 2^{10}$. Thus $n = 10, m = 21 \\Rightarrow 4m + 2n = 4(21) + 2(10) = 104$.",
+      "type": "integer",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 22,
+      "subject": "Mathematics",
+      "text": "If $a_1, a_2, a_3 \\dots, a_n$ are in geometric progression such that $a_1 a_5 = 28$, $a_2 + a_4 = 29$, then the value of $a_6$ is",
+      "options": [
+        "635",
+        "784",
+        "872",
+        "898"
+      ],
+      "solution": "$a_1 a_5 = a^2 r^4 = 28$. $a_2 + a_4 = ar + ar^3 = 29$. So $ar = 1, ar^3 = 28 \\Rightarrow r^2 = 28, a^2 = 1/28$. $a_6 = ar^5 \\Rightarrow a_6^2 = a^2 r^{10} = \\frac{1}{28} \\times 28^5 = 28^4 \\Rightarrow a_6 = 28^2 = 784$.",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    }
+  ]
+}
