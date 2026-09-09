@@ -500,7 +500,7 @@
                             if (String(res.ans).trim() === String(q.correct_integer).trim()) {
                                 score += 4; correct++; isCorrect = true;
                             } else {
-                                wrong++; // Standard JEE doesn't negative mark integers, adjust logic if needed (score -= 1)
+                                wrong++;
                             }
                         } else {
                             if (res.ans === q.correct_index) {
