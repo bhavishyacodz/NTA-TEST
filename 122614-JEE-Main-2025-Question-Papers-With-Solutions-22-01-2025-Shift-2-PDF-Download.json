@@ -1,0 +1,1011 @@
+{
+  "metadata": {
+    "exam": "JEE Main",
+    "year": "2025",
+    "original_title": "122614-JEE-Main-2025-Question-Papers-With-Solutions-22-01-2025-Shift-2-PDF-Download"
+  },
+  "questions": [
+    {
+      "question_number": 1,
+      "subject": "Physics",
+      "text": "An equiconvex lens of focal length $f$, is cut into four parts as shown in the diagram. The focal length of each part is",
+      "options": [
+        "$f$",
+        "$2f$",
+        "$f/2$",
+        "$4f$"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "Sol. $f = \\frac{R}{2(\\mu - 1)}$ (equiconvex lens)\n$f' = \\frac{R}{\\mu - 1}$ (plano convex lens)\n$f' = 2f$",
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 2,
+      "image": "122614-JEE-Main-2025-Question-Papers-With-Solutions-22-01-2025-Shift-2-PDF-Download_img1.jpeg"
+    },
+    {
+      "question_number": 2,
+      "subject": "Physics",
+      "text": "Radius of a tube decreases from $2R$ to $R$ in which ideal liquid is flowing at same level.\nSpeed at one end is $2\\text{ m/s}$ as shown, find speed $v$ at other end",
+      "options": [
+        "$4\\text{ m/s}$",
+        "$1\\text{ m/s}$",
+        "$2\\text{ m/s}$",
+        "$8\\text{ m/s}$"
+      ],
+      "correct_index": 3,
+      "correct_integer": null,
+      "solution": "Sol. $A_1 v_1 = A_2 v_2$ (equation of continuity)\n$\\pi(2R)^2 \\cdot 2 = \\pi R^2 v$\n$v = 8\\text{ m/s}$",
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 2,
+      "image": "122614-JEE-Main-2025-Question-Papers-With-Solutions-22-01-2025-Shift-2-PDF-Download_img2.jpeg"
+    },
+    {
+      "question_number": 3,
+      "subject": "Physics",
+      "text": "The dimensional formula of capacitance is",
+      "options": [
+        "$[M^{-1}L^{2}T^{2}A^{-3}]$",
+        "$[M^{-1}L^{-2}T^{4}A^{3}]$",
+        "$[M^{-1}L^{-2}T^{4}A^{2}]$",
+        "$[M^{-1}L^{-2}T^{2}A^{2}]$"
+      ],
+      "correct_index": 2,
+      "correct_integer": null,
+      "solution": "Sol. The energy stored in capacitor in term of charge\n$E = \\frac{Q^2}{2C} \\implies C = \\frac{Q^2}{2E}$\n$[C] = \\frac{[A^2 T^2]}{[M L^2 T^{-2}]} = [M^{-1}L^{-2}T^4A^2]$",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 4,
+      "subject": "Physics",
+      "text": "A proton is moving with uniform velocity of $2 \\times 10^8\\text{ m/s}$ in uniform magnetic and electric fields which are perpendicular to each other. If electric field is switched off then proton moves in circular path of radius $1.6 \\times 10^{-5}\\text{ m}$. Then magnetic field is $B$",
+      "options": [
+        "$5 \\times 10^{-5}\\text{ T}$",
+        "$1.2 \\times 10^5\\text{ T}$",
+        "$2.5 \\times 10^4\\text{ T}$",
+        "$2.5 \\times 10^2\\text{ T}$"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "Sol. $r = \\frac{mv}{qB} \\implies 1.6 \\times 10^{-5} = \\frac{1.6 \\times 10^{-27} \\times 2 \\times 10^8}{1.6 \\times 10^{-19} \\times B}$\n$B = \\frac{5}{4} \\times 10^5 = 1.25 \\times 10^5\\text{ T} \\approx 1.2 \\times 10^5\\text{ T}$",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 5,
+      "subject": "Physics",
+      "text": "A conducting circular ring is moving with a constant velocity in a uniform magnetic field as shown. Identify the correct graph between induced emf vs time",
+      "options": [
+        "Graph (1)",
+        "Graph (2)",
+        "Graph (3)",
+        "Graph (4)"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Sol. $\\delta = 2Bv\\sqrt{R^2 - x^2}$ (Equation of an ellipse)\n$x = R - vt$",
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 2,
+      "image": null
+    },
+    {
+      "question_number": 6,
+      "subject": "Physics",
+      "text": "The displacement of a particle moving under the action of a force $\\vec{F} = 2\\hat{i} + b\\hat{j} + \\hat{k}$ is $\\vec{d} = \\hat{i} + \\hat{j} + \\hat{k}$. Find the value of $b$ if the work done by the force is zero.",
+      "options": [
+        "$0$",
+        "$+3$",
+        "$-3$",
+        "$-1$"
+      ],
+      "correct_index": 2,
+      "correct_integer": null,
+      "solution": "Sol. $\\text{Work} = \\vec{F} \\cdot \\vec{s} = (2\\hat{i} + b\\hat{j} + \\hat{k}) \\cdot (\\hat{i} + \\hat{j} + \\hat{k}) = 2 + b + 1 = 3 + b = 0 \\implies b = -3$",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 7,
+      "subject": "Physics",
+      "text": "In a series LCR circuit the maximum amplitude of current is $I_0$ when the resistance is $R$. What is the maximum amplitude of current if the resistor is replaced by a resistor of resistance $\\frac{R}{2}$.",
+      "options": [
+        "$I_0$",
+        "$2I_0$",
+        "$\\frac{I_0}{2}$",
+        "$\\frac{2I_0}{3}$"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "Sol. Current has maximum amplitude at resonance.\n$I_0 = \\frac{\\xi_0}{R}$\n$\\implies I_0' = \\frac{\\xi_0}{R/2} = \\frac{2\\xi_0}{R} = 2I_0$",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 8,
+      "subject": "Physics",
+      "text": "Statement-I : Fringe width of red light is more than fringe width of violet light.\nStatement-II : Fringe width is directly proportional to the wavelength of light used.\nChoose the correct option.",
+      "options": [
+        "Statement-I is correct and statement-II is incorrect",
+        "Both statement-I and statement-II are correct",
+        "Statement-I is incorrect and statement-II is correct",
+        "Both statement-I and statement-II are incorrect"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "Sol. Fringe width $(\\beta) = \\frac{\\lambda D}{d}$",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 9,
+      "subject": "Physics",
+      "text": "For non-vibrating diatomic gas has adiabatic constant of $\\gamma_1$ & for vibrating diatomic gas has adiabatic constant of $\\gamma_2$ then",
+      "options": [
+        "$\\gamma_1 > \\gamma_2$",
+        "$\\gamma_1 < \\gamma_2$",
+        "$\\gamma_1 = \\gamma_2$",
+        "None of these"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Sol. $\\gamma_1 = 1 + \\frac{2}{5} = \\frac{7}{5} = 1.4$\n$\\gamma_2 = 1 + \\frac{2}{7} = \\frac{9}{7} = 1.28$\nTherefore $\\gamma_1 > \\gamma_2$",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 10,
+      "subject": "Physics",
+      "text": "A force $\\vec{F} = (\\hat{i} + 2\\hat{j} - 3\\hat{k})\\text{ N}$ acts on point whose position vector is given as $\\vec{r} = (2\\hat{i} - 3\\hat{j} + 7\\hat{k})\\text{ m}$. Find torque about origin.",
+      "options": [
+        "$(+5\\hat{i} - 12\\hat{j} + 7\\hat{k})\\text{ N}\\cdot\\text{m}$",
+        "$(-5\\hat{i} - 12\\hat{j} + 8\\hat{k})\\text{ N}\\cdot\\text{m}$",
+        "$(-5\\hat{i} + 13\\hat{j} + 7\\hat{k})\\text{ N}\\cdot\\text{m}$",
+        "$(-5\\hat{i} + 13\\hat{j} - 7\\hat{k})\\text{ N}\\cdot\\text{m}$"
+      ],
+      "correct_index": 2,
+      "correct_integer": null,
+      "solution": "Sol. $\\vec{\\tau} = \\vec{r} \\times \\vec{F} = \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 2 & -3 & 7 \\\\ 1 & 2 & -3 \\end{vmatrix}$\n$= \\hat{i}(9 - 14) - \\hat{j}(-6 - 7) + \\hat{k}(4 + 3) = (-5\\hat{i} + 13\\hat{j} + 7\\hat{k})\\text{ N}\\cdot\\text{m}$",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 11,
+      "subject": "Physics",
+      "text": "The net magnetic field at point O due to the two infinite current carrying wires shown in the figure is",
+      "options": [
+        "$1 \\times 10^{-5}\\text{ T}$",
+        "$1.2 \\times 10^{-5}\\text{ T}$",
+        "$1.5 \\times 10^{-5}\\text{ T}$",
+        "$2 \\times 10^{-5}\\text{ T}$"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Sol. $B_{\\text{net}} = \\left| \\frac{\\mu_0(5\\text{ A})}{2\\pi(10\\text{ cm})} - \\frac{\\mu_0(4\\text{ A})}{2\\pi(4\\text{ cm})} \\right| = \\frac{25\\mu_0}{\\pi} = 10^{-5}\\text{ T}$",
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 4,
+      "image": "122614-JEE-Main-2025-Question-Papers-With-Solutions-22-01-2025-Shift-2-PDF-Download_img4.jpeg"
+    },
+    {
+      "question_number": 12,
+      "subject": "Physics",
+      "text": "Read the statements and select the correct option.\nStatement I : A pendulum is taken from Earth to another planet having mass four times and radius double than earth, then time period of pendulum remain same as on earth.\nStatement II : The time period of pendulum only depends on the gravity of the planet.",
+      "options": [
+        "Statement I is true but statement II is false.",
+        "Statement II is true but statement I is false.",
+        "Both statements are false.",
+        "Both statements are true."
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Sol. On earth $T = 2\\pi \\sqrt{\\frac{l}{g}}$\nOn another planet, $g' = \\frac{G(4M)}{(2R)^2} = g$\nSo, time period will remain same and $T$ depends on $g$ as well as $l$.",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 13,
+      "subject": "Physics",
+      "text": "For a given logic circuit truth table is given identify the gate G.\nTruth table:\nA | B | Y\n0 | 0 | 1\n1 | 0 | 0\n0 | 1 | 0\n1 | 1 | 1",
+      "options": [
+        "AND",
+        "NOR",
+        "NAND",
+        "OR"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "Sol. From truth table we know its XNOR gate, i.e. $y = \\bar{A}\\bar{B} + AB$, therefore gate G must be NOR gate.",
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 5,
+      "image": "122614-JEE-Main-2025-Question-Papers-With-Solutions-22-01-2025-Shift-2-PDF-Download_img5.jpeg"
+    },
+    {
+      "question_number": 14,
+      "subject": "Physics",
+      "text": "Name the logic gate",
+      "options": [
+        "OR",
+        "AND",
+        "NOT",
+        "NAND"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "Sol. If both A and B are high only then Y is high, otherwise Y is low. $\\therefore$ AND Gate.",
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 5,
+      "image": null
+    },
+    {
+      "question_number": 15,
+      "subject": "Physics",
+      "text": "Displacement current in capacitor of area $16\\text{ cm}^2$ is $6\\text{ A}$ at an instant. Find displacement current across area $3.2\\text{ cm}^2$",
+      "options": [
+        "$1.2\\text{ A}$",
+        "$1.6\\text{ A}$",
+        "$2.1\\text{ A}$",
+        "$0.5\\text{ A}$"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Sol. $i_d = \\epsilon_0 \\frac{d\\phi_E}{dt} = \\epsilon_0 A \\frac{dE}{dt} \\implies i_d \\propto A$\n$\\implies i' = \\left(\\frac{3.2}{16}\\right) i_d = 1.2\\text{ A}$",
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 5,
+      "image": null
+    },
+    {
+      "question_number": 16,
+      "subject": "Physics",
+      "text": "In the RC circuit shown, find I.",
+      "options": [
+        "$\\frac{V}{5R}$",
+        "$\\frac{5V}{3R}$",
+        "$\\frac{8V}{13R}$",
+        "$\\frac{3V}{R}$"
+      ],
+      "correct_index": 2,
+      "correct_integer": null,
+      "solution": "Sol. At steady state, C behaves as open-circuit.\n$R_{\\text{eq}} = \\frac{13}{8} R$\n$I = \\frac{V}{R_{\\text{eq}}} = \\frac{8V}{13R}$",
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 5,
+      "image": null
+    },
+    {
+      "question_number": 17,
+      "subject": "Physics",
+      "text": "A glass slab of refractive index $\\mu_g = 1.44$ is coated with a thin film of refractive index $\\mu_f = 2$. The minimum thickness of the film so that maximum transmission of green light of wavelength $\\lambda = 5000\\text{ \\AA}$ (incident normally) takes place is",
+      "options": [
+        "$0.500\\text{ }\\mu\\text{m}$",
+        "$0.250\\text{ }\\mu\\text{m}$",
+        "$0.125\\text{ }\\mu\\text{m}$",
+        "$1.00\\text{ }\\mu\\text{m}$"
+      ],
+      "correct_index": 2,
+      "correct_integer": null,
+      "solution": "Sol. For maximum transmission of light incident normally:\n$2\\mu_f t = n\\lambda$ ($n = 1, 2, 3 \\ldots$)\n$t_{\\text{min}} = \\frac{\\lambda}{2\\mu_f} = \\frac{5000 \\times 10^{-10}}{2(2)}\\text{ m} = 0.125\\text{ }\\mu\\text{m}$",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 18,
+      "subject": "Physics",
+      "text": "For the electric dipole shown in the figure, the electric field and the electric potential are $E_0, V_0$ at a distance $r$ on the axis. Then what is the electric field and the electric potential at a point on the equatorial plane at a distance $2r$.",
+      "options": [
+        "$\\frac{E_0}{16}, 0$",
+        "$\\frac{E_0}{4}, 0$",
+        "$E_0, V_0$",
+        "$\\frac{E_0}{8}, 0$"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Sol. $E_{\\text{axis}} = \\frac{2kP}{r^3} = E_0$\n$E_{\\text{equatorial}} = \\frac{kP}{(2r)^3} = \\frac{kP}{8r^3} = \\frac{E_0}{16}$\n$V = \\frac{kP\\cos\\theta}{r^2}$\n$V_{\\text{axis}} = \\frac{kP\\cos 0^\\circ}{r^2} = \\frac{kP}{r^2}$\n$V_{\\text{equatorial}} = \\frac{kP\\cos 90^\\circ}{(2r)^3} = 0$",
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 6,
+      "image": "122614-JEE-Main-2025-Question-Papers-With-Solutions-22-01-2025-Shift-2-PDF-Download_img6.jpeg"
+    },
+    {
+      "question_number": 21,
+      "subject": "Physics",
+      "text": "A projectile is fired with speed of $20\\text{ m/s}$ at angle of $60^\\circ$ with horizontal. The speed at highest point of trajectory is $x\\text{ m/s}$ then $x$ is",
+      "options": [],
+      "correct_index": null,
+      "correct_integer": "10",
+      "solution": "Sol. $V_H = v\\cos\\theta = 20 \\cos 60^\\circ = 10\\text{ m/s}$",
+      "type": "integer",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 22,
+      "subject": "Physics",
+      "text": "If equivalent resistance across AB is $\\frac{NR}{2}$, find $N$",
+      "options": [],
+      "correct_index": null,
+      "correct_integer": "3",
+      "solution": "Sol. Line of symmetry problem\n$R_{\\text{eq}} = \\frac{3R}{4} \\times 2 = \\frac{3R}{2} \\implies N = 3$",
+      "type": "integer",
+      "has_diagram": true,
+      "diagram_page": 6,
+      "image": "122614-JEE-Main-2025-Question-Papers-With-Solutions-22-01-2025-Shift-2-PDF-Download_img7.jpeg"
+    },
+    {
+      "question_number": 1,
+      "subject": "Chemistry",
+      "text": "The reaction of toluene with $\\text{CrO}_2\\text{Cl}_2 / \\text{CH}_2\\text{Cl}_2$, followed by $\\text{H}_3\\text{O}^+$, and then $\\text{NaHSO}_3$ produces a product. Identify the product.",
+      "options": [
+        "Structure (1)",
+        "Structure (2)",
+        "Structure (3)",
+        "Structure (4)"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "Sol. Toluene $\\xrightarrow{\\text{CrO}_2\\text{Cl}_2 / \\text{CH}_2\\text{Cl}_2} A \\xrightarrow{\\text{H}_3\\text{O}^+} \\text{Benzaldehyde} \\xrightarrow{\\text{NaHSO}_3} \\text{CH(OH)SO}_3\\text{Na adduct}$",
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 7,
+      "image": "122614-JEE-Main-2025-Question-Papers-With-Solutions-22-01-2025-Shift-2-PDF-Download_img8.jpeg"
+    },
+    {
+      "question_number": 2,
+      "subject": "Chemistry",
+      "text": "Density of $3\\text{ M}$ $\\text{NaOH}$ is $1.25\\text{ g/ml}$. Molality of solution is",
+      "options": [
+        "2.65",
+        "2.5",
+        "2.8",
+        "3"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Sol. $m = \\frac{1000 M}{1000 d - M \\times M_0} = \\frac{3 \\times 1000}{1250 - 3 \\times 40} = \\frac{3 \\times 1000}{1130} = 2.65$",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 3,
+      "subject": "Chemistry",
+      "text": "Arrange according to CFSE.\n(i) $[Co(NH_3)_4]^{2+}$\n(ii) $[Co(NH_3)_6]^{3+}$\n(iii) $[Co(NH_3)_6]^{2+}$\n(iv) $[Co(en)_3]^{3+}$",
+      "options": [
+        "(iv) > (ii) > (iii) > (i)",
+        "(iv) > (iii) > (ii) > (i)",
+        "(i) > (iii) > (ii) > (iv)",
+        "(i) > (ii) > (iii) > (iv)"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Sol. Crystal Field Splitting Energy (CFSE) $\\propto$ Charge on central metal ion, $\\propto$ Ligand field strength.\nDecreasing order: $[Co(en)_3]^{3+} > [Co(NH_3)_6]^{3+} > [Co(NH_3)_6]^{2+} > [Co(NH_3)_4]^{2+}$",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 4,
+      "subject": "Chemistry",
+      "text": "What is correct order of stability of carbocation.\n(a) $p-\\text{methoxybenzyl carbocation}$\n(b) $p-\\text{methylbenzyl carbocation}$\n(c) $m-\\text{methoxybenzyl carbocation}$\n(d) $m-\\text{methylbenzyl carbocation}$",
+      "options": [
+        "a > b > c > d",
+        "c > a > d > b",
+        "a > c > d > b",
+        "c > b > a > d"
+      ],
+      "correct_index": 2,
+      "correct_integer": null,
+      "solution": "Sol. Solution stability of $C^+ \\propto +M, HC, +I \\propto \\frac{1}{-M, -I}$",
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 8,
+      "image": null
+    },
+    {
+      "question_number": 5,
+      "subject": "Chemistry",
+      "text": "Which of the following anion will not undergo disproportionation?",
+      "options": [
+        "$\\text{ClO}_4^-$",
+        "$\\text{ClO}_3^-$",
+        "$\\text{ClO}_2^-$",
+        "$\\text{ClO}^-$"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Sol. In $\\text{ClO}_4^-$, chlorine is in its highest oxidation state (+7). Chlorine can exhibit -1 to +7 oxidation state. Disproportionating oxidation states are 0, +1, +3, +5.",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 6,
+      "subject": "Chemistry",
+      "text": "Compare dipole moment of\n(I) $\\text{NF}_3$ (II) $\\text{CHCl}_3$\n(III) $\\text{H}_2\\text{S}$ (IV) $\\text{HBr}$",
+      "options": [
+        "I > II > III > IV",
+        "II > III > I > IV",
+        "II > III > IV > I",
+        "III > I > IV > II"
+      ],
+      "correct_index": 2,
+      "correct_integer": null,
+      "solution": "Sol. Dipole moment values: $\\text{NH}_3$ (1.04), $\\text{CHCl}_3$ (1.04), $\\text{H}_2\\text{S}$ (0.95), $\\text{HBr}$ (0.79), $\\text{NF}_3$ (0.230).\nOrder: $\\text{CHCl}_3 > \\text{H}_2\\text{S} > \\text{HBr} > \\text{NF}_3$",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 7,
+      "subject": "Chemistry",
+      "text": "Given below are two statements\nS-I: Lassaigne test is used for detection of Nitrogen, phosphorous, sulphur and Halogens.\nS-II: Lassaigne extract is made with magnesium metal.",
+      "options": [
+        "Both S-I and S-II are correct.",
+        "Both S-I and S-II are incorrect.",
+        "S-I is correct but S-II is incorrect.",
+        "S-I is incorrect but S-II is correct"
+      ],
+      "correct_index": 2,
+      "correct_integer": null,
+      "solution": "Sol. Lassaigne extract is made with sodium metal, and not with magnesium metal.",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 8,
+      "subject": "Chemistry",
+      "text": "Which one has two secondary Hydrogen atoms?",
+      "options": [
+        "2, 2, 4, 4-tetramethylheptane",
+        "2, 2, 3, 4-tetramethylheptane",
+        "2, 2, 3, 3-tetramethyloctane",
+        "3-ethyl-2, 2-dimethylpentane"
+      ],
+      "correct_index": 3,
+      "correct_integer": null,
+      "solution": "Sol. (1) Number of $2^\\circ\\text{H} = 6$\n(2) Number of $2^\\circ\\text{H} = 4$\n(3) Number of $2^\\circ\\text{H} = 8$\n(4) Number of $2^\\circ\\text{H} = 2$",
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 8,
+      "image": null
+    },
+    {
+      "question_number": 9,
+      "subject": "Chemistry",
+      "text": "Secondary butyl cyclohexane when reacts with $\\text{Br}_2$ in presence of sunlight produce",
+      "options": [
+        "Option (1)",
+        "Option (2)",
+        "Option (3)",
+        "Option (4)"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Sol. Bromination at $3^\\circ$ tertiary position gives major product.",
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 9,
+      "image": "122614-JEE-Main-2025-Question-Papers-With-Solutions-22-01-2025-Shift-2-PDF-Download_img9.jpeg"
+    },
+    {
+      "question_number": 10,
+      "subject": "Chemistry",
+      "text": "$200\\text{ mL}$ of $0.2\\text{ M}$ solution of $\\text{NaOH}$ is mixed with $400\\text{ mL}$ of $0.5\\text{ M}$ $\\text{NaOH}$ solution. Molarity of mixture is",
+      "options": [
+        "0.4",
+        "0.6",
+        "4 M",
+        "0.8 M"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Sol. Molarity of mixture $= \\frac{M_1 V_1 + M_2 V_2}{V_1 + V_2} = \\frac{0.2 \\times 200 + 0.5 \\times 400}{600} = \\frac{240}{600} = 0.4\\text{ M}$",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 11,
+      "subject": "Chemistry",
+      "text": "Correct structure of L-Glyceraldehyde is",
+      "options": [
+        "Option (1)",
+        "Option (2)",
+        "Option (3)",
+        "Option (4)"
+      ],
+      "correct_index": 2,
+      "correct_integer": null,
+      "solution": "Sol. In L-Glyceraldehyde, $-\\text{OH}$ group is on the left side in Fischer projection.",
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 9,
+      "image": null
+    },
+    {
+      "question_number": 12,
+      "subject": "Chemistry",
+      "text": "Identify the extensive and intensive property?",
+      "options": [
+        "Mass, volume, conductivity – Intensive property",
+        "Mass, temperature, heat, volume – Extensive property",
+        "Mass, volume, internal energy – Extensive property",
+        "Density, temperature, moles, internal energy – Intensive property"
+      ],
+      "correct_index": 2,
+      "correct_integer": null,
+      "solution": "Sol. Mass, volume and internal energy depend on amount of substance (extensive properties).",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 13,
+      "subject": "Chemistry",
+      "text": "Among Group-15 elements, what is the maximum covalency of an element having weakest E–E bond (E = element)",
+      "options": [
+        "4",
+        "3",
+        "5",
+        "2"
+      ],
+      "correct_index": 2,
+      "correct_integer": null,
+      "solution": "Sol. E–E bond energies: N-N ($167\\text{ kJ/mol}$), P-P ($201\\text{ kJ/mol}$), As-As ($146\\text{ kJ/mol}$), Sb-Sb ($121\\text{ kJ/mol}$). Antimony (Sb) has weakest E-E bond and maximum covalency of 5.",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 14,
+      "subject": "Chemistry",
+      "text": "What is the relation between $K_{sp}$ and $S$ of $\\text{Zr}_3(\\text{PO}_4)_4$",
+      "options": [
+        "$S = \\left(\\frac{K_{sp}}{6912}\\right)^{\\frac{1}{7}}$",
+        "$S = \\left(\\frac{K_{sp}}{144}\\right)^{\\frac{1}{7}}$",
+        "$S = \\frac{K_{sp}}{6912}$",
+        "None"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Sol. $K_{sp} = (3s)^3 (4s)^4 = 27 \\times 256 S^7 = 6912 S^7 \\implies S = \\left(\\frac{K_{sp}}{6912}\\right)^{1/7}$",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 15,
+      "subject": "Chemistry",
+      "text": "Match the column and choose the correct option\n(A) $\\left(\\frac{\\partial H}{\\partial T}\\right)_P$  --- (P) $C_P$\n(B) $\\left(\\frac{\\partial G}{\\partial P}\\right)_T$  --- (Q) $C_V$\n(C) $\\left(\\frac{\\partial U}{\\partial T}\\right)_V$  --- (R) $-S$\n(D) $\\left(\\frac{\\partial G}{\\partial T}\\right)_P$  --- (S) $V$",
+      "options": [
+        "(A) – (P), (B) – (S), (C) – (Q), (D) – (R)",
+        "(A) – (P), (B) – (S), (C) – (R), (D) – (Q)",
+        "(A) – (P), (B) – (R), (C) – (Q), (D) – (S)",
+        "(A) – (Q), (B) – (S), (C) – (P), (D) – (R)"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Sol. Heat exchanged at constant pressure is $\\Delta H$, at constant volume is $\\Delta U$. Differential relations give (A)-(P), (B)-(S), (C)-(Q), (D)-(R).",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 16,
+      "subject": "Chemistry",
+      "text": "Consider the following statements S-1 and S-2 and choose the correct option.\nS-1 : During corrosion pure metal acts as anode and impure metal acts as cathode.\nS-2 : Rate of corrosion is more in alkaline medium than in acidic medium.",
+      "options": [
+        "Both S-1 and S-2 are correct",
+        "Both S-1 and S-2 are incorrect",
+        "S-1 is correct but S-2 is incorrect",
+        "S-1 is incorrect but S-2 is correct"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "Sol. Impure metal site acts as anode where oxidation occurs. Rate of corrosion is higher in acidic medium than alkaline medium. Thus both statements are incorrect.",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 21,
+      "subject": "Chemistry",
+      "text": "In Ru and Nb, if in Ru, $4d$ electrons are $x$ and in Nb, $4d$ electrons are $y$ then find the sum of $x$ and $y$.",
+      "options": [],
+      "correct_index": null,
+      "correct_integer": "11",
+      "solution": "Sol. $_{44}\\text{Ru} \\Rightarrow [\\text{Kr}] 4d^7 5s^1 \\implies x = 7$\n$_{41}\\text{Nb} \\Rightarrow [\\text{Kr}] 4d^4 5s^1 \\implies y = 4$\n$x + y = 11$",
+      "type": "integer",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 22,
+      "subject": "Chemistry",
+      "text": "$\\text{Ni}^{2+} + 2\\text{DMG} \\rightarrow \\text{Complex}$\nHow many hydrogen bonds are present in a molecule of the complex?",
+      "options": [],
+      "correct_index": null,
+      "correct_integer": "2",
+      "solution": "Sol. Number of H-bonds in a molecule of $[\\text{Ni}(\\text{DMG})_2] = 2$",
+      "type": "integer",
+      "has_diagram": true,
+      "diagram_page": 11,
+      "image": "122614-JEE-Main-2025-Question-Papers-With-Solutions-22-01-2025-Shift-2-PDF-Download_img10.jpeg"
+    },
+    {
+      "question_number": 23,
+      "subject": "Chemistry",
+      "text": "$R - Br + Mg \\xrightarrow{\\text{dry ether}} A \\xrightarrow{H_2O} \\text{isopentane}$\nHow many $R - Br$ can form isopentane?",
+      "options": [],
+      "correct_index": null,
+      "correct_integer": "4",
+      "solution": "Sol. 4 different alkyl bromides (1-bromo-3-methylbutane, 2-bromo-3-methylbutane, 2-bromo-2-methylbutane, 1-bromo-2-methylbutane) give isopentane.",
+      "type": "integer",
+      "has_diagram": true,
+      "diagram_page": 11,
+      "image": "122614-JEE-Main-2025-Question-Papers-With-Solutions-22-01-2025-Shift-2-PDF-Download_img11.jpeg"
+    },
+    {
+      "question_number": 24,
+      "subject": "Chemistry",
+      "text": "$C_6H_6 \\xrightarrow{\\text{Monobromination}} \\text{Single product}$\n$C_6H_6 \\xrightarrow[\\text{Cat.}]{4\\text{ moles of } H_2} \\text{Completely hydrogenated product}$\nFind the number of $\\pi$-electrons in $C_6H_6$.",
+      "options": [],
+      "correct_index": null,
+      "correct_integer": "8",
+      "solution": "Sol. Degree of unsaturation $= 4$. Symmetrical dialkyne has $4$ $\\pi$-bonds $\\implies 8$ $\\pi$-electrons.",
+      "type": "integer",
+      "has_diagram": true,
+      "diagram_page": 11,
+      "image": "122614-JEE-Main-2025-Question-Papers-With-Solutions-22-01-2025-Shift-2-PDF-Download_img12.jpeg"
+    },
+    {
+      "question_number": 25,
+      "subject": "Chemistry",
+      "text": "Calculate the radius of first excited state of $\\text{He}^+$ ion (in \\AA)",
+      "options": [],
+      "correct_index": null,
+      "correct_integer": "1",
+      "solution": "Sol. $r = a_0 \\frac{n^2}{z}$. For $n = 2, z = 2 \\implies r = a_0 \\frac{4}{2} = 2a_0 = 2 \\times 0.529 = 1.058 \\approx 1$",
+      "type": "integer",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 1,
+      "subject": "Mathematics",
+      "text": "If $2x^2 + (\\cos\\theta)x - 1 = 0$, $\\theta \\in [0, 2\\pi]$ has roots $\\alpha$ and $\\beta$. Then the sum of maximum and minimum value of $\\alpha^4 + \\beta^4$.",
+      "options": [
+        "$\\frac{25}{16}$",
+        "$\\frac{9}{16}$",
+        "$\\frac{41}{16}$",
+        "$\\frac{8}{17}$"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Sol. $\\alpha + \\beta = \\frac{-\\cos\\theta}{2}$, $\\alpha\\beta = -\\frac{1}{2}$\n$\\alpha^2 + \\beta^2 = (\\alpha + \\beta)^2 - 2\\alpha\\beta = \\frac{\\cos^2\\theta + 1}{4}$\n$\\alpha^4 + \\beta^4 = (\\alpha^2 + \\beta^2)^2 - 2\\alpha^2\\beta^2 = \\left(\\frac{\\cos^2\\theta + 1}{4}\\right)^2 - \\frac{1}{2}$\nMinimum $= 1 - \\frac{1}{2} = \\frac{1}{2}$ for $\\cos\\theta = 0$\nMaximum $= \\frac{25}{16} - \\frac{1}{2} = \\frac{17}{16}$ for $\\cos\\theta = 1$\nSum $= \\frac{1}{2} + \\frac{17}{16} = \\frac{25}{16}$",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 2,
+      "subject": "Mathematics",
+      "text": "If $\\theta \\in [0, 2\\pi]$ satisfying the system of equations $2\\sin^2\\theta = \\cos 2\\theta$ and $2\\cos^2\\theta = 3\\sin\\theta$. Then the sum of all real values of $\\theta$ is",
+      "options": [
+        "$\\frac{3\\pi}{2}$",
+        "$\\pi$",
+        "$\\frac{\\pi}{2}$",
+        "$\\frac{5\\pi}{6}$"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "Sol. Adding equations: $2 = 1 - 2\\sin^2\\theta + 3\\sin\\theta \\implies 2\\sin^2\\theta - 3\\sin\\theta + 1 = 0$\n$(2\\sin\\theta - 1)(\\sin\\theta - 1) = 0 \\implies \\sin\\theta = \\frac{1}{2}$ ($\n\\sin\\theta = 1$ gives $2\\sin^2\\theta \\neq \\cos 2\\theta$)\n$\\theta = \\frac{\\pi}{6}, \\pi - \\frac{\\pi}{6} = \\frac{5\\pi}{6}$\nSum $= \\frac{\\pi}{6} + \\frac{5\\pi}{6} = \\pi$",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 3,
+      "subject": "Mathematics",
+      "text": "Let $A = \\{1, 2, 3, 4\\}$ and $B = \\{1, 4, 9, 16\\}$. If $f : A \\rightarrow B$, number of many-one functions from $A$ to $B$ are",
+      "options": [
+        "24",
+        "232",
+        "256",
+        "252"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "Sol. $n(A) = 4, n(B) = 4$\nNumber of many-one functions $=$ Total functions $-$ One-one functions $= 4^4 - 4! = 256 - 24 = 232$",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 4,
+      "subject": "Mathematics",
+      "text": "4 boys and 3 girls are to be seated in a row such that all girls seat together and two particular boys $B_1$ and $B_2$ are not adjacent to each other. Then the number of ways in which this arrangement can be done.",
+      "options": [
+        "432",
+        "430",
+        "516",
+        "1002"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Sol. Treat 3 girls as 1 block $G$. Then 3 girls and 2 other boys seated in $3! \\times 3!$ ways.\n$B_1$ and $B_2$ placed in 4 available gaps: $^4C_2 \\times 2! \\times 3! \\times 3! = 6 \\times 2 \\times 6 \\times 6 = 432$",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 5,
+      "subject": "Mathematics",
+      "text": "If the sum $\\sum_{r=0}^{30} \\frac{r^2 (^{30}C_r)^2}{^{30}C_{r-1}} = \\alpha \\cdot 2^{29}$, then $\\alpha$ is equal to",
+      "options": [
+        "225",
+        "465",
+        "345",
+        "425"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "Sol. $\\frac{r^2 (^{30}C_r)^2}{^{30}C_{r-1}} = 30(31 - r) ^{29}C_{30 - r}$\nSum $= 30 \\sum (30 - r + 1) ^{29}C_{30 - r} = 30 \\cdot 29 \\cdot 2^{28} + 30 \\cdot 2^{29} = 30 \\cdot 2^{28}(29 + 2) = (31 \\times 15) \\cdot 2^{29}$\n$\\implies \\alpha = 31 \\times 15 = 465$",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 6,
+      "subject": "Mathematics",
+      "text": "Consider a function $f(x) = \\int_0^{x^2} \\frac{t^2 - 8t + 15}{e^t} dt$. The number of points of extrema are",
+      "options": [
+        "3",
+        "5",
+        "7",
+        "9"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "Sol. $f'(x) = \\frac{2x(x^4 - 8x^2 + 15)}{e^{x^2}} = \\frac{2x(x^2 - 5)(x^2 - 3)}{e^{x^2}}$\nExtremum values are $x = 0, \\pm\\sqrt{5}, \\pm\\sqrt{3}$. Number of points is 5.",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 7,
+      "subject": "Mathematics",
+      "text": "Let $A$ and $B$ are two events such that $P(A \\cap B) = \\frac{1}{10}$ and $P(A/B)$ and $P(B/A)$ are the roots of the equation $12x^2 - 7x + 1 = 0$, then $\\frac{P(\\bar{A} \\cup \\bar{B})}{P(\\bar{A} \\cap \\bar{B})}$ is equal to",
+      "options": [
+        "$\\frac{4}{9}$",
+        "$\\frac{9}{4}$",
+        "$\\frac{3}{2}$",
+        "$\\frac{2}{3}$"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "Sol. $P(A/B) + P(B/A) = \\frac{7}{12}$ and $P(A/B) P(B/A) = \\frac{1}{12}$\n$\\implies P(A)P(B) = \\frac{12}{100}$, $P(A)+P(B) = \\frac{7}{10}$\n$P(A \\cup B) = P(A) + P(B) - P(A \\cap B) = \\frac{6}{10}$\n$\\frac{P(\\bar{A} \\cup \\bar{B})}{P(\\bar{A} \\cap \\bar{B})} = \\frac{1 - P(A \\cap B)}{1 - P(A \\cup B)} = \\frac{9/10}{4/10} = \\frac{9}{4}$",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 8,
+      "subject": "Mathematics",
+      "text": "Number of terms in an arithmetic progression is $2n$. Sum of terms occurring at even places is 40 and sum of terms occurring at odd places is 55. If the first term exceeds the last term by 27, then $n$ equals to",
+      "options": [
+        "3",
+        "5",
+        "7",
+        "4"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "Sol. $na + n^2 d = 40$, $na + dn(n - 1) = 55 \\implies n^2 d - dn(n - 1) = -15 \\implies n d = 15$\nAlso $a - (a + (2n - 1)d) = 27 \\implies -(2n - 1)d = 27 \\implies d = \\frac{-27}{2n - 1}$\nSubstituting gives $n = 5$.",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 9,
+      "subject": "Mathematics",
+      "text": "The perpendicular distance of point $P(3, 4, 5)$ from the line $\\vec{r} = 2\\hat{i} - \\hat{j} + \\hat{k} + \\lambda(4\\hat{i} - \\hat{j} + 5\\hat{k})$ is",
+      "options": [
+        "$\\sqrt{\\frac{19}{42}}$",
+        "$\\sqrt{\\frac{19}{21}}$",
+        "$\\sqrt{\\frac{42}{19}}$",
+        "$\\sqrt{\\frac{21}{19}}$"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Sol. $A = (2 + 4\\lambda, -1 - \\lambda, 1 + 5\\lambda)$\n$\\vec{AP} \\cdot (4\\hat{i} - \\hat{j} + 5\\hat{k}) = 0 \\implies 42\\lambda = 19 \\implies \\lambda = \\frac{19}{42}$\n$|AP| = \\sqrt{\\frac{19}{42}}$",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 10,
+      "subject": "Mathematics",
+      "text": "In the expansion of $\\left(x + \\sqrt{x^3-1}\\right)^5 + \\left(x - \\sqrt{x^3-1}\\right)^5$, where $\\alpha, \\beta, \\gamma$ and $\\delta$ are the coefficient of $x, x^3, x^5$ and $x^7$ respectively. If $\\alpha u - \\beta v = 18$, $\\gamma u + \\delta v = 20$ then $u + v$ equal to.",
+      "options": [
+        "$\\frac{-14}{15}$",
+        "$\\frac{-13}{15}$",
+        "$\\frac{-3}{5}$",
+        "$\\frac{-2}{3}$"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Sol. Expansion $= 10x^7 + 20x^6 + 2x^5 - 20x^4 - 20x^3 + 10x$\n$\\alpha = 10, \\beta = -20, \\gamma = 2, \\delta = 10$\nSolving $10u + 20v = 18$ and $2u + 10v = 20 \\implies u = \\frac{-11}{3}, v = \\frac{41}{15}$\n$u + v = \\frac{-14}{15}$",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 11,
+      "subject": "Mathematics",
+      "text": "Let $A(6, 8)$, $B(10\\cos\\alpha, -10\\sin\\alpha)$ and $C(-10\\sin\\alpha, -10\\cos\\alpha)$ be 3 points and if orthocentre of the triangle $ABC$ is $(0, 9)$ then $100\\sin^2\\alpha$ is equal to",
+      "options": [
+        "$\\frac{25}{4}$",
+        "25",
+        "$\\frac{15}{4}$",
+        "$\\frac{5}{4}$"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Sol. $(0,0)$ is circumcentre. Centroid divides orthocentre $(0,9)$ and circumcentre $(0,0)$ in $2:1$.\n$\\implies 10\\sin\\alpha = \\frac{5}{2} \\implies 100\\sin^2\\alpha = \\frac{25}{4}$",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 12,
+      "subject": "Mathematics",
+      "text": "If $z$ be a complex number such that $|z - 3| \\le 1$, then the equation of line with largest slope passing through origin and $z$",
+      "options": [
+        "$x - 2\\sqrt{2}y = 0$",
+        "$x + 2\\sqrt{2}y = 0$",
+        "$2\\sqrt{2}x + y = 0$",
+        "$2\\sqrt{2}x - y = 0$"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Sol. Tangent line from origin to circle $(x - 3)^2 + y^2 = 1$.\n$\\tan\\theta = \\frac{1}{2\\sqrt{2}} \\implies y = \\frac{x}{2\\sqrt{2}} \\implies x - 2\\sqrt{2}y = 0$",
+      "type": "mcq",
+      "has_diagram": true,
+      "diagram_page": 16,
+      "image": "122614-JEE-Main-2025-Question-Papers-With-Solutions-22-01-2025-Shift-2-PDF-Download_img13.jpeg"
+    },
+    {
+      "question_number": 13,
+      "subject": "Mathematics",
+      "text": "A relation $R$ is defined on set $A$, $A = \\{1, 2, 3\\}$ and $R = \\{(1, 2), (2, 3)\\}$. Elements are added such that $R$ becomes reflexive and transitive but not symmetric. Find the number of such relations.",
+      "options": [
+        "3",
+        "4",
+        "2",
+        "9"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Sol. Must add $(1, 1), (2, 2), (3, 3)$ for reflexive and $(1, 3)$ for transitive.\nOptions for remaining pairs $(2, 1), (3, 2)$ yield 3 valid non-symmetric relations.",
+      "type": "mcq",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 21,
+      "subject": "Mathematics",
+      "text": "Let $\\vec{a}$ and $\\vec{b}$ be two unit vectors such that angle between $\\vec{a}$ and $\\vec{b}$ is $\\frac{\\pi}{3}$. If $\\lambda\\vec{a} + 3\\vec{b}$ and $2\\vec{a} + \\lambda\\vec{b}$ are perpendicular to each other, then the product of all possible values of $\\lambda$ is ____",
+      "options": [],
+      "correct_index": null,
+      "correct_integer": "6",
+      "solution": "Sol. $(\\lambda\\vec{a} + 3\\vec{b}) \\cdot (2\\vec{a} + \\lambda\\vec{b}) = 0 \\implies 2\\lambda + 3\\lambda + (\\lambda^2 + 6)\\vec{a}\\cdot\\vec{b} = 0$\n$5\\lambda + (\\lambda^2 + 6)\\frac{1}{2} = 0 \\implies \\lambda^2 + 10\\lambda + 6 = 0$\nProduct of roots $= 6$",
+      "type": "integer",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 22,
+      "subject": "Mathematics",
+      "text": "If $A$ is the $3 \\times 3$ matrix of order $3 \\times 3$, such that $\\text{det}(A) = \\frac{1}{2}$, $\\text{tr}(A) = 10$ and $B$ be another matrix of order $3 \\times 3$ and defined as $B = \\text{adj}(\\text{adj}(2A))$, then $\\text{det}(B) + \\text{tr}(B)$ is equal to (where $\\text{tr}(A)$ denotes trace of matrix $A$)",
+      "options": [],
+      "correct_index": null,
+      "correct_integer": "336",
+      "solution": "Sol. $B = |2A|^{3-2} (2A) = 4(2A) = 8A$\n$\\text{det}(B) = 8^3 \\text{det}(A) = 512 \\times \\frac{1}{2} = 256$\n$\\text{tr}(B) = 8 \\text{tr}(A) = 80$\n$\\text{det}(B) + \\text{tr}(B) = 256 + 80 = 336$",
+      "type": "integer",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 23,
+      "subject": "Mathematics",
+      "text": "Consider two curves $E_1 : \\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1$ with eccentricity $e_1$ and $E_2 : \\frac{x^2}{A^2} + \\frac{y^2}{B^2} = 1$ with eccentricity $e_2$. If $\\frac{e_1}{e_2} = \\frac{1}{3}$ and distance between foci of both curves is $2\\sqrt{3}$ and $a - A = 4$, then the sum of lengths of latus rectum of both curves is",
+      "options": [],
+      "correct_index": null,
+      "correct_integer": "12",
+      "solution": "Sol. $a e_1 = A e_2 = \\sqrt{3} \\implies A = 2, a = 6 \\implies b^2 = 33, B^2 = 1$\nSum $= \\frac{2b^2}{a} + \\frac{2B^2}{A} = \\frac{66}{6} + \\frac{2}{2} = 11 + 1 = 12$",
+      "type": "integer",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    },
+    {
+      "question_number": 24,
+      "subject": "Mathematics",
+      "text": "The number of maximum number of common tangents to the curves $y = (x - 2)^2$ and $y^2 = 16 - 8x$ is",
+      "options": [],
+      "correct_index": null,
+      "correct_integer": "1",
+      "solution": "Sol. From the graphs of the parabolas, only 1 common tangent is possible.",
+      "type": "integer",
+      "has_diagram": true,
+      "diagram_page": 17,
+      "image": "122614-JEE-Main-2025-Question-Papers-With-Solutions-22-01-2025-Shift-2-PDF-Download_img14.jpeg"
+    },
+    {
+      "question_number": 25,
+      "subject": "Mathematics",
+      "text": "Let $P(10, -2, -1)$ and $Q$ be the point of perpendicular drawn from point $R(1, 7, 6)$ on the line joining the points $(2, -5, 11)$ and $(-6, 7, -5)$. Then the length $PQ$ is",
+      "options": [],
+      "correct_index": null,
+      "correct_integer": "13",
+      "solution": "Sol. $\\lambda = -2 \\implies Q = (-2, 1, 3)$\n$PQ = \\sqrt{(10 + 2)^2 + (-2 - 1)^2 + (-1 - 3)^2} = \\sqrt{144 + 9 + 16} = 13$",
+      "type": "integer",
+      "has_diagram": false,
+      "diagram_page": null,
+      "image": null
+    }
+  ]
+}
