@@ -6,128 +6,148 @@
     <title>NTA CBT Exam Simulator</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        MathJax = {
+        window.MathJax = {
             tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']] },
             svg: { fontCache: 'global' }
         };
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <style>
-        .nta-header { background-color: #2b70af; color: white; }
+        .nta-header { background-color: #1a56db; color: white; }
         .math-scroll { overflow-x: auto; overflow-y: hidden; }
-        /* Palette Colors mimicking NTA */
-        .q-not-visited { background-color: #e5e7eb; color: black; border-radius: 4px; }
-        .q-not-answered { background-color: #ef4444; color: white; border-radius: 4px 4px 50% 50%; }
-        .q-answered { background-color: #22c55e; color: white; border-radius: 50% 50% 4px 4px; }
-        .q-marked { background-color: #8b5cf6; color: white; border-radius: 50%; }
-        .q-answered-marked { background-color: #8b5cf6; color: white; border-radius: 50%; position: relative;}
-        .q-answered-marked::after { content: '✔'; color: #22c55e; font-size: 10px; position: absolute; bottom: 0; right: 2px;}
+        
+        /* Official NTA Question Palette Shapes & Colors */
+        .q-palette { display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 13px; cursor: pointer; transition: transform 0.1s; width: 38px; height: 38px; }
+        .q-palette:hover { transform: scale(1.05); }
+        
+        /* 0: Not Visited (Gray square) */
+        .st-0 { background-color: #e5e7eb; color: #374151; border: 1px solid #d1d5db; border-radius: 4px; }
+        /* 1: Not Answered (Red pill/inverted arch) */
+        .st-1 { background-color: #ef4444; color: white; border-radius: 4px 4px 18px 18px; }
+        /* 2: Answered (Green arch/rounded top) */
+        .st-2 { background-color: #22c55e; color: white; border-radius: 18px 18px 4px 4px; }
+        /* 3: Marked for Review (Purple circle) */
+        .st-3 { background-color: #9333ea; color: white; border-radius: 50%; }
+        /* 4: Answered & Marked for Review (Purple circle with green check indicator) */
+        .st-4 { background-color: #9333ea; color: white; border-radius: 50%; position: relative; }
+        .st-4::after { content: '✔'; position: absolute; bottom: -2px; right: -2px; background: #22c55e; color: white; font-size: 9px; width: 14px; height: 14px; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 1px solid white; }
     </style>
 </head>
-<body class="bg-gray-100 font-sans h-screen flex flex-col overflow-hidden">
+<body class="bg-gray-100 font-sans h-screen flex flex-col overflow-hidden select-none">
 
-    <!-- CATALOG SCREEN -->
-    <div id="catalogScreen" class="h-full overflow-auto bg-white">
+    <!-- 1. CATALOG SCREEN -->
+    <div id="catalogScreen" class="h-full overflow-auto bg-white flex flex-col">
         <div class="nta-header p-4 shadow-md flex justify-between items-center">
-            <h1 class="text-2xl font-bold">National Testing Agency Simulator</h1>
+            <h1 class="text-2xl font-bold tracking-wide">National Testing Agency — CBT Portal</h1>
+            <span class="text-sm bg-blue-700 px-3 py-1 rounded">Online Mock Test Engine</span>
         </div>
-        <div class="max-w-5xl mx-auto p-8">
-            <h2 class="text-3xl font-bold mb-6 text-gray-800">Available Mock Tests</h2>
-            <div id="catalogContainer" class="space-y-6">Loading...</div>
+        <div class="max-w-5xl mx-auto p-8 flex-1 w-full">
+            <h2 class="text-2xl font-extrabold mb-2 text-gray-800">Select Exam Paper</h2>
+            <p class="text-gray-500 mb-6">Choose a test below to start your timed NTA simulation exam.</p>
+            <div id="catalogContainer" class="space-y-6">
+                <div class="text-gray-500 py-10 text-center">Loading available papers...</div>
+            </div>
         </div>
     </div>
 
-    <!-- EXAM SCREEN -->
+    <!-- 2. EXAM SCREEN -->
     <div id="examScreen" class="hidden h-full flex flex-col">
-        <!-- Header -->
-        <div class="nta-header px-4 py-2 flex justify-between items-center shadow-md z-10">
-            <div class="text-lg font-bold" id="examHeaderTitle">JEE Main</div>
+        <!-- Top Bar -->
+        <div class="nta-header px-4 py-3 flex justify-between items-center shadow-md z-10">
+            <div class="text-lg font-bold truncate max-w-xl" id="examHeaderTitle">JEE Main Simulation</div>
             <div class="flex items-center space-x-6">
-                <div class="bg-white text-black px-4 py-1 rounded font-bold border-2 border-red-500">
-                    Time Left: <span id="timerDisplay">180:00</span>
+                <div class="bg-white text-gray-900 px-4 py-1.5 rounded font-mono font-bold border-2 border-red-500 shadow-inner">
+                    Time Left: <span id="timerDisplay" class="text-red-600">180:00</span>
                 </div>
-                <button onclick="submitExamConfirm()" class="bg-red-600 hover:bg-red-700 text-white px-4 py-1 rounded font-bold transition">SUBMIT</button>
+                <button onclick="submitExamConfirm()" class="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded font-bold transition shadow">SUBMIT EXAM</button>
             </div>
         </div>
 
         <!-- Subject Tabs -->
-        <div id="subjectTabs" class="bg-gray-200 border-b border-gray-300 flex overflow-x-auto p-1"></div>
+        <div id="subjectTabs" class="bg-gray-200 border-b border-gray-300 flex overflow-x-auto px-2 pt-2 space-x-1"></div>
 
         <!-- Main Workspace -->
         <div class="flex flex-1 overflow-hidden">
             <!-- Left: Question Area -->
             <div class="flex-1 flex flex-col bg-white border-r">
-                <div class="bg-blue-50 p-2 font-bold text-blue-900 border-b flex justify-between">
-                    <span id="qNumberDisplay">Question No. 1</span>
+                <div class="bg-blue-50 px-6 py-3 font-bold text-blue-900 border-b flex justify-between items-center">
+                    <span id="qNumberDisplay" class="text-lg">Question No. 1</span>
+                    <span class="text-xs uppercase bg-blue-200 text-blue-800 px-2.5 py-1 rounded font-semibold" id="qTypeBadge">MCQ</span>
                 </div>
-                <div class="p-6 overflow-y-auto flex-1 text-lg text-gray-800" id="questionContent">
-                    <!-- Dynamic Question Data -->
+                
+                <!-- Question Scroll Body -->
+                <div class="p-8 overflow-y-auto flex-1 text-lg text-gray-800 space-y-6" id="questionContent">
+                    <!-- Injected Question Text & Options -->
                 </div>
                 
                 <!-- Bottom Action Bar -->
-                <div class="bg-gray-100 p-3 border-t flex justify-between items-center">
-                    <div class="space-x-2">
-                        <button onclick="saveAndNext()" class="bg-green-600 text-white px-4 py-2 rounded font-semibold hover:bg-green-700">Save & Next</button>
-                        <button onclick="clearResponse()" class="bg-gray-400 text-white px-4 py-2 rounded font-semibold hover:bg-gray-500">Clear Response</button>
-                        <button onclick="markAndNext()" class="bg-yellow-500 text-white px-4 py-2 rounded font-semibold hover:bg-yellow-600">Save & Mark for Review</button>
+                <div class="bg-gray-50 p-4 border-t flex flex-wrap justify-between items-center gap-2">
+                    <div class="flex space-x-2">
+                        <button onclick="saveAndNext()" class="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded font-semibold shadow transition">Save & Next</button>
+                        <button onclick="clearResponse()" class="bg-gray-300 hover:bg-gray-400 text-gray-700 px-4 py-2 rounded font-semibold transition">Clear Response</button>
+                        <button onclick="markAndNext()" class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded font-semibold shadow transition">Save & Mark for Review</button>
                     </div>
-                    <div class="space-x-2">
-                        <button onclick="prevQuestion()" class="bg-gray-200 text-gray-700 px-4 py-2 border rounded font-semibold hover:bg-gray-300"><< Back</button>
-                        <button onclick="nextQuestion()" class="bg-gray-200 text-gray-700 px-4 py-2 border rounded font-semibold hover:bg-gray-300">Next >></button>
+                    <div class="flex space-x-2">
+                        <button onclick="prevQuestion()" class="bg-white hover:bg-gray-100 text-gray-700 border border-gray-300 px-4 py-2 rounded font-semibold shadow-sm">&larr; Back</button>
+                        <button onclick="nextQuestion()" class="bg-white hover:bg-gray-100 text-gray-700 border border-gray-300 px-4 py-2 rounded font-semibold shadow-sm">Next &rarr;</button>
                     </div>
                 </div>
             </div>
 
             <!-- Right: Palette Area -->
-            <div class="w-72 bg-blue-50 flex flex-col">
-                <div class="p-3 border-b flex items-center space-x-3 bg-white">
-                    <div class="h-12 w-12 bg-gray-300 rounded-full flex justify-center items-center font-bold text-gray-500">USER</div>
+            <div class="w-80 bg-slate-50 flex flex-col border-l">
+                <div class="p-3 border-b flex items-center space-x-3 bg-white shadow-sm">
+                    <div class="h-10 w-10 bg-blue-600 text-white rounded-full flex justify-center items-center font-bold text-sm">NTA</div>
                     <div>
-                        <div class="font-bold text-sm">Candidate Name</div>
-                        <div class="text-xs text-gray-500">Mock Test Student</div>
+                        <div class="font-bold text-sm text-gray-800">Candidate</div>
+                        <div class="text-xs text-green-600 font-medium">● Online Test Active</div>
                     </div>
                 </div>
-                <!-- Legend -->
-                <div class="p-3 grid grid-cols-2 gap-2 text-xs font-semibold bg-white border-b">
-                    <div class="flex items-center"><div class="w-6 h-6 q-not-visited flex justify-center items-center mr-1" id="c-nv">0</div> Not Visited</div>
-                    <div class="flex items-center"><div class="w-6 h-6 q-not-answered flex justify-center items-center mr-1" id="c-na">0</div> Not Answered</div>
-                    <div class="flex items-center"><div class="w-6 h-6 q-answered flex justify-center items-center mr-1" id="c-a">0</div> Answered</div>
-                    <div class="flex items-center"><div class="w-6 h-6 q-marked flex justify-center items-center mr-1" id="c-m">0</div> Marked for Review</div>
+                
+                <!-- Legend Grid -->
+                <div class="p-3 grid grid-cols-2 gap-2 text-xs font-medium bg-white border-b text-gray-700">
+                    <div class="flex items-center"><div class="q-palette st-0 mr-2 w-6 h-6 text-xs" id="c-nv">0</div>Not Visited</div>
+                    <div class="flex items-center"><div class="q-palette st-1 mr-2 w-6 h-6 text-xs" id="c-na">0</div>Not Answered</div>
+                    <div class="flex items-center"><div class="q-palette st-2 mr-2 w-6 h-6 text-xs" id="c-a">0</div>Answered</div>
+                    <div class="flex items-center"><div class="q-palette st-3 mr-2 w-6 h-6 text-xs" id="c-m">0</div>Marked for Review</div>
                 </div>
-                <!-- Palette Grid -->
-                <div class="p-3 bg-blue-100 font-bold text-sm text-center border-b">Question Palette</div>
-                <div class="p-4 flex-1 overflow-y-auto">
-                    <div id="questionPalette" class="grid grid-cols-4 gap-3"></div>
+
+                <div class="px-4 py-2.5 bg-blue-100 font-bold text-xs uppercase tracking-wider text-blue-900 border-b">Question Palette</div>
+                
+                <!-- Palette Grid Container -->
+                <div class="p-4 flex-1 overflow-y-auto bg-slate-100">
+                    <div id="questionPalette" class="grid grid-cols-4 gap-2.5"></div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- RESULT SCREEN -->
-    <div id="resultScreen" class="hidden h-full overflow-auto bg-gray-50">
+    <!-- 3. RESULT SCREEN -->
+    <div id="resultScreen" class="hidden h-full overflow-auto bg-gray-50 flex flex-col">
         <div class="nta-header p-4 shadow-md flex justify-between items-center sticky top-0 z-50">
-            <h1 class="text-2xl font-bold">Exam Results & Solutions</h1>
-            <button onclick="window.location.reload()" class="bg-white text-blue-800 px-4 py-1 rounded font-bold">Go to Home</button>
+            <h1 class="text-xl font-bold">Exam Performance & Detailed Solutions</h1>
+            <button onclick="window.location.reload()" class="bg-white text-blue-800 px-4 py-1.5 rounded font-bold shadow hover:bg-blue-50 transition">Back to Home</button>
         </div>
-        <div class="max-w-5xl mx-auto p-8">
-            <div class="bg-white p-8 rounded shadow-lg text-center mb-8 border-t-4 border-blue-600">
-                <h2 class="text-4xl font-extrabold mb-2">Total Score: <span id="finalScore" class="text-blue-600">0</span></h2>
-                <div class="flex justify-center space-x-8 mt-4 text-lg">
-                    <div class="text-green-600 font-bold">Correct: <span id="r-correct">0</span></div>
-                    <div class="text-red-600 font-bold">Incorrect: <span id="r-incorrect">0</span></div>
-                    <div class="text-gray-500 font-bold">Unattempted: <span id="r-unattempted">0</span></div>
+        <div class="max-w-4xl mx-auto p-8 w-full flex-1">
+            <!-- Score Card Summary -->
+            <div class="bg-white p-8 rounded-xl shadow-md text-center mb-8 border-t-8 border-blue-600">
+                <h2 class="text-4xl font-extrabold text-gray-900 mb-2">Final Score: <span id="finalScore" class="text-blue-600">0</span> / <span id="maxScore" class="text-gray-400">0</span></h2>
+                <div class="flex justify-center space-x-10 mt-6 text-base border-t pt-4">
+                    <div class="text-green-600 font-bold">Correct: <span id="r-correct" class="text-xl block">0</span></div>
+                    <div class="text-red-600 font-bold">Incorrect: <span id="r-incorrect" class="text-xl block">0</span></div>
+                    <div class="text-gray-500 font-bold">Unattempted: <span id="r-unattempted" class="text-xl block">0</span></div>
                 </div>
             </div>
-            <h3 class="text-2xl font-bold mb-4">Detailed Solutions</h3>
-            <div id="solutionsContainer" class="space-y-6"></div>
+            
+            <h3 class="text-2xl font-bold mb-6 text-gray-800 border-b pb-2">Question-wise Analysis & Solutions</h3>
+            <div id="solutionsContainer" class="space-y-6 pb-12"></div>
         </div>
     </div>
 
     <script>
-        let testData = [];
         let globalQuestions = [];
         let currentSubject = "";
-        let currentIndex = 0; // Index in globalQuestions
+        let currentIndex = 0;
         let timerInterval = null;
         let timeLeft = 180 * 60; // 3 hours
 
@@ -141,7 +161,7 @@
                 const catalog = await res.json();
                 renderCatalog(catalog);
             } catch (e) {
-                document.getElementById('catalogContainer').innerHTML = "<p class='text-red-500'>Error loading catalog.</p>";
+                document.getElementById('catalogContainer').innerHTML = "<p class='text-red-500 text-center'>Failed to load catalog. Please ensure test_index.json exists in your repository.</p>";
             }
         };
 
@@ -151,13 +171,19 @@
             for (const [exam, years] of Object.entries(catalog)) {
                 for (const [year, papers] of Object.entries(years)) {
                     let div = document.createElement('div');
-                    div.innerHTML = `<h3 class="text-xl font-bold text-gray-700 border-b pb-2 mb-4">${exam} ${year}</h3>`;
+                    div.innerHTML = `<h3 class="text-lg font-bold text-gray-700 border-b pb-2 mb-3">${exam} — ${year}</h3>`;
                     let grid = document.createElement('div');
-                    grid.className = "grid grid-cols-1 md:grid-cols-2 gap-4 mb-8";
+                    grid.className = "grid grid-cols-1 md:grid-cols-2 gap-4 mb-6";
                     papers.forEach(p => {
                         let btn = document.createElement('button');
-                        btn.className = "p-4 bg-white border rounded shadow hover:border-blue-500 text-left font-bold text-blue-900 transition";
-                        btn.innerText = p.title;
+                        btn.className = "p-4 bg-white border border-gray-200 rounded-lg shadow-sm hover:border-blue-500 hover:shadow transition text-left flex justify-between items-center group";
+                        btn.innerHTML = `
+                            <div>
+                                <div class="font-bold text-blue-900 group-hover:text-blue-600 text-base">${p.title}</div>
+                                <div class="text-xs text-gray-400 mt-1">Computer Based Test (CBT) Format</div>
+                            </div>
+                            <span class="text-blue-500 font-bold text-xl">&rarr;</span>
+                        `;
                         btn.onclick = () => startTest(p.file, p.title);
                         grid.appendChild(btn);
                     });
@@ -172,13 +198,19 @@
             document.getElementById('examScreen').classList.remove('hidden');
             document.getElementById('examHeaderTitle').innerText = title;
             
-            const res = await fetch(file);
-            const data = await res.json();
-            globalQuestions = data.questions || [];
+            try {
+                const res = await fetch(file);
+                const data = await res.json();
+                globalQuestions = data.questions || [];
+            } catch (err) {
+                alert("Failed to load paper json file.");
+                window.location.reload();
+                return;
+            }
             
             qStatus = new Array(globalQuestions.length).fill(0);
             userAnswers = new Array(globalQuestions.length).fill(null);
-            qStatus[0] = 1; // First is visited but not answered
+            qStatus[0] = 1; // First question initialized as visited (Not Answered)
             
             setupTabs();
             startTimer();
@@ -186,21 +218,20 @@
 
         function setupTabs() {
             let subjects = [...new Set(globalQuestions.map(q => q.subject).filter(Boolean))];
-            if(subjects.length === 0) subjects = ["All Questions"];
+            if(subjects.length === 0) subjects = ["General Section"];
             
             let tabs = document.getElementById('subjectTabs');
             tabs.innerHTML = '';
             
             subjects.forEach((sub, i) => {
                 let btn = document.createElement('button');
-                btn.className = `px-6 py-2 font-bold rounded-t mx-1 ${i===0 ? 'bg-white text-blue-600 border-t-4 border-blue-600' : 'bg-gray-300 text-gray-700'}`;
+                btn.className = `px-6 py-2.5 font-bold rounded-t-lg transition ${i===0 ? 'bg-white text-blue-700 border-t-4 border-blue-600 shadow-sm' : 'bg-gray-200 text-gray-600 hover:bg-gray-300'}`;
                 btn.innerText = sub;
                 btn.onclick = (e) => {
-                    Array.from(tabs.children).forEach(c => c.className = 'px-6 py-2 font-bold rounded-t mx-1 bg-gray-300 text-gray-700');
-                    e.target.className = 'px-6 py-2 font-bold rounded-t mx-1 bg-white text-blue-600 border-t-4 border-blue-600';
+                    Array.from(tabs.children).forEach(c => c.className = 'px-6 py-2.5 font-bold rounded-t-lg transition bg-gray-200 text-gray-600 hover:bg-gray-300');
+                    e.target.className = 'px-6 py-2.5 font-bold rounded-t-lg transition bg-white text-blue-700 border-t-4 border-blue-600 shadow-sm';
                     currentSubject = sub;
-                    // Jump to first question of this subject
-                    let subIdx = globalQuestions.findIndex(q => (q.subject || "All Questions") === sub);
+                    let subIdx = globalQuestions.findIndex(q => (q.subject || "General Section") === sub);
                     if(subIdx !== -1) loadQuestion(subIdx);
                 };
                 tabs.appendChild(btn);
@@ -209,66 +240,50 @@
             loadQuestion(0);
         }
 
-        function persistCurrentAnswer() {
-            // Captures whatever is currently selected/typed for the question on screen
-            // without requiring the user to click "Save & Next" first.
-            if (document.getElementById('intAnswer') || document.querySelector('input[name="mcq"]')) {
-                let ans = getSelectedAnswer();
-                userAnswers[currentIndex] = ans;
-                let wasMarked = (qStatus[currentIndex] === 3 || qStatus[currentIndex] === 4);
-                qStatus[currentIndex] = wasMarked ? (ans !== null ? 4 : 3) : (ans !== null ? 2 : 1);
-            }
-        }
-
         function loadQuestion(index) {
-            if (index !== currentIndex) persistCurrentAnswer();
             currentIndex = index;
-            if(qStatus[currentIndex] === 0) qStatus[currentIndex] = 1; 
+            if(qStatus[currentIndex] === 0) qStatus[currentIndex] = 1; // Mark visited
             
             let q = globalQuestions[currentIndex];
-
-            // Keep the subject tab highlighting in sync with whichever question is on screen
-            // (matters when jumping via the palette instead of the tabs themselves)
-            let subj = q.subject || "All Questions";
-            if (subj !== currentSubject) {
-                currentSubject = subj;
-                let tabs = document.getElementById('subjectTabs');
-                Array.from(tabs.children).forEach(tabBtn => {
-                    tabBtn.className = (tabBtn.innerText === subj)
-                        ? 'px-6 py-2 font-bold rounded-t mx-1 bg-white text-blue-600 border-t-4 border-blue-600'
-                        : 'px-6 py-2 font-bold rounded-t mx-1 bg-gray-300 text-gray-700';
-                });
-            }
-
             document.getElementById('qNumberDisplay').innerText = `Question No. ${currentIndex + 1}`;
+            document.getElementById('qTypeBadge').innerText = (q.type || 'mcq').toUpperCase();
             
-            let html = `<div class="math-scroll mb-4">${(q.text||'').replace(/\n/g, '<br>')}</div>`;
+            let html = `<div class="math-scroll text-gray-800 text-lg leading-relaxed">${(q.text || '').replace(/\n/g, '<br>')}</div>`;
+            
             if (q.has_diagram && q.image) {
-                html += `<img src="images/${q.image}" class="max-w-full mb-6 border p-1 rounded">`;
+                html += `<div class="my-4"><img src="images/${q.image}" class="max-w-md h-auto border rounded p-1 bg-white shadow-sm" alt="Question Diagram"></div>`;
             }
             
             if (q.type === 'integer') {
-                html += `<input type="text" id="intAnswer" placeholder="Type answer here" class="border-2 border-gray-400 p-2 rounded w-64" value="${userAnswers[currentIndex] || ''}">`;
+                html += `
+                <div class="mt-6">
+                    <label class="block text-sm font-bold text-gray-600 mb-2">Enter Integer Answer:</label>
+                    <input type="text" id="intAnswer" placeholder="Type numerical answer..." class="border-2 border-gray-300 focus:border-blue-500 focus:outline-none p-3 rounded-lg w-72 text-lg font-medium" value="${userAnswers[currentIndex] !== null ? userAnswers[currentIndex] : ''}">
+                </div>`;
             } else {
+                html += `<div class="space-y-3 mt-6">`;
                 (q.options || []).forEach((opt, i) => {
                     let checked = (userAnswers[currentIndex] === i) ? 'checked' : '';
                     html += `
-                    <label class="flex items-start mb-3 p-3 border rounded hover:bg-gray-50 cursor-pointer">
-                        <input type="radio" name="mcq" value="${i}" ${checked} class="mt-1 mr-3 h-5 w-5">
-                        <span class="math-scroll">${opt.replace(/\n/g, '<br>')}</span>
+                    <label class="flex items-start p-3.5 border border-gray-200 rounded-lg hover:bg-blue-50/50 cursor-pointer transition">
+                        <input type="radio" name="mcq" value="${i}" ${checked} class="mt-1 mr-3.5 h-4 w-4 text-blue-600 focus:ring-blue-500">
+                        <span class="math-scroll text-base text-gray-700">${opt.replace(/\n/g, '<br>')}</span>
                     </label>`;
                 });
+                html += `</div>`;
             }
             
             document.getElementById('questionContent').innerHTML = html;
-            if(window.MathJax && window.MathJax.typesetPromise) MathJax.typesetPromise();
+            if(window.MathJax) MathJax.typesetPromise();
             renderPalette();
         }
 
         function getSelectedAnswer() {
             let q = globalQuestions[currentIndex];
             if (q.type === 'integer') {
-                let val = document.getElementById('intAnswer').value.trim();
+                let el = document.getElementById('intAnswer');
+                if(!el) return null;
+                let val = el.value.trim();
                 return val === '' ? null : val;
             } else {
                 let sel = document.querySelector('input[name="mcq"]:checked');
@@ -279,14 +294,14 @@
         function saveAndNext() {
             let ans = getSelectedAnswer();
             userAnswers[currentIndex] = ans;
-            qStatus[currentIndex] = (ans !== null) ? 2 : 1;
+            qStatus[currentIndex] = (ans !== null) ? 2 : 1; // Answered (2) or Not Answered (1)
             nextQuestion();
         }
 
         function markAndNext() {
             let ans = getSelectedAnswer();
             userAnswers[currentIndex] = ans;
-            qStatus[currentIndex] = (ans !== null) ? 4 : 3;
+            qStatus[currentIndex] = (ans !== null) ? 4 : 3; // Answered & Marked (4) or Marked for Review (3)
             nextQuestion();
         }
 
@@ -297,15 +312,21 @@
         }
 
         function nextQuestion() {
-            if (currentIndex < globalQuestions.length - 1) loadQuestion(currentIndex + 1);
-            else { persistCurrentAnswer(); renderPalette(); } // At last question: still save before refreshing UI
+            if (currentIndex < globalQuestions.length - 1) {
+                loadQuestion(currentIndex + 1);
+            } else {
+                renderPalette();
+            }
         }
+
         function prevQuestion() {
-            if (currentIndex > 0) loadQuestion(currentIndex - 1);
+            if (currentIndex > 0) {
+                loadQuestion(currentIndex - 1);
+            }
         }
 
         function renderPalette() {
-            let counts = [0,0,0,0,0];
+            let counts = [0, 0, 0, 0, 0];
             let pal = document.getElementById('questionPalette');
             pal.innerHTML = '';
             
@@ -315,15 +336,11 @@
                 
                 let btn = document.createElement('button');
                 btn.innerText = i + 1;
-                // Assign NTA Colors
-                if(st === 0) btn.className = "q-not-visited h-10 w-10 text-sm font-bold shadow-sm";
-                else if(st === 1) btn.className = "q-not-answered h-10 w-10 text-sm font-bold shadow-sm";
-                else if(st === 2) btn.className = "q-answered h-10 w-10 text-sm font-bold shadow-sm";
-                else if(st === 3) btn.className = "q-marked h-10 w-10 text-sm font-bold shadow-sm";
-                else if(st === 4) btn.className = "q-answered-marked h-10 w-10 text-sm font-bold shadow-sm";
+                btn.className = `q-palette st-${st}`;
                 
-                // Highlight current
-                if (i === currentIndex) btn.classList.add('ring-2', 'ring-black', 'ring-offset-1');
+                if (i === currentIndex) {
+                    btn.classList.add('ring-2', 'ring-blue-600', 'ring-offset-2');
+                }
                 
                 btn.onclick = () => loadQuestion(i);
                 pal.appendChild(btn);
@@ -341,12 +358,16 @@
                 let m = Math.floor(timeLeft / 60);
                 let s = timeLeft % 60;
                 document.getElementById('timerDisplay').innerText = `${m}:${s < 10 ? '0':''}${s}`;
-                if(timeLeft <= 0) { clearInterval(timerInterval); submitExam(); }
+                if(timeLeft <= 0) { 
+                    clearInterval(timerInterval); 
+                    alert("Time is up! Your exam will be submitted automatically.");
+                    submitExam(); 
+                }
             }, 1000);
         }
 
         function submitExamConfirm() {
-            if(confirm("Are you sure you want to submit the exam?")) {
+            if(confirm("Are you sure you want to submit your exam? You cannot change answers after submission.")) {
                 clearInterval(timerInterval);
                 submitExam();
             }
@@ -357,6 +378,7 @@
             document.getElementById('resultScreen').classList.remove('hidden');
             
             let score = 0, correct = 0, incorrect = 0, unattempted = 0;
+            let maxPossible = globalQuestions.length * 4;
             let solHtml = '';
             
             globalQuestions.forEach((q, i) => {
@@ -367,38 +389,55 @@
                     unattempted++;
                 } else {
                     if (q.type === 'integer') {
-                        if(String(uAns).trim() === String(q.correct_integer).trim()) { score += 4; correct++; isCorrect = true; }
-                        else { incorrect++; } // Usually 0 or -1 for integer, assuming 0 negative for integer for now
+                        if (String(uAns).trim() === String(q.correct_integer).trim()) {
+                            score += 4; correct++; isCorrect = true;
+                        } else {
+                            incorrect++; // Standard JEE integer rule: 0 negative marking
+                        }
                     } else {
-                        if(uAns === q.correct_index) { score += 4; correct++; isCorrect = true; }
-                        else { score -= 1; incorrect++; }
+                        if (uAns === q.correct_index) {
+                            score += 4; correct++; isCorrect = true;
+                        } else {
+                            score -= 1; incorrect++; // MCQ negative marking
+                        }
                     }
                 }
                 
-                // Build Solution Card
-                let bgColors = uAns === null ? 'border-gray-300' : (isCorrect ? 'border-green-500' : 'border-red-500');
+                let borderCol = uAns === null ? 'border-gray-300' : (isCorrect ? 'border-green-500' : 'border-red-500');
+                let badgeCol = uAns === null ? 'bg-gray-100 text-gray-600' : (isCorrect ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700');
+                let badgeText = uAns === null ? 'Unattempted' : (isCorrect ? 'Correct (+4)' : 'Incorrect (-1)');
                 
-                let imgHtml = (q.has_diagram && q.image) ? `<img src="images/${q.image}" class="max-w-full my-2 border">` : '';
+                let imgHtml = (q.has_diagram && q.image) ? `<div class="my-3"><img src="images/${q.image}" class="max-w-sm border rounded p-1 bg-white"></div>` : '';
                 
+                let correctDisplay = "";
+                if (q.type === 'integer') {
+                    correctDisplay = q.correct_integer;
+                } else {
+                    correctDisplay = (q.options && q.correct_index !== undefined) ? q.options[q.correct_index] : 'N/A';
+                }
+
                 solHtml += `
-                <div class="bg-white p-6 border-l-4 ${bgColors} rounded shadow mb-4">
-                    <div class="font-bold text-lg mb-2">Q${i+1}: ${(isCorrect?'✅ Correct':(uAns===null?'⚪ Unattempted':'❌ Incorrect'))}</div>
-                    <div class="math-scroll text-gray-700">${(q.text||'').replace(/\n/g, '<br>')}</div>
+                <div class="bg-white p-6 border-l-8 ${borderCol} rounded-lg shadow-sm space-y-4">
+                    <div class="flex justify-between items-center border-b pb-3">
+                        <span class="font-bold text-lg text-gray-900">Question No. ${i + 1}</span>
+                        <span class="text-xs font-bold px-3 py-1 rounded-full ${badgeCol}">${badgeText}</span>
+                    </div>
+                    <div class="math-scroll text-gray-800 text-base">${(q.text || '').replace(/\n/g, '<br>')}</div>
                     ${imgHtml}
-                    <div class="mt-4 bg-gray-50 p-4 rounded text-gray-800 math-scroll">
-                        <span class="font-bold">Correct Answer:</span> ${q.type === 'integer' ? q.correct_integer : ((q.options && q.correct_index !== undefined) ? q.options[q.correct_index] : 'N/A')}<br><br>
-                        <span class="font-bold">Solution:</span><br>
-                        ${(q.solution||'No solution.').replace(/\n/g, '<br>')}
+                    <div class="bg-blue-50/50 p-4 rounded-md border border-blue-100 text-sm space-y-2">
+                        <div><strong class="text-blue-900">Correct Answer:</strong> <span class="text-gray-700 font-medium">${correctDisplay}</span></div>
+                        <div><strong class="text-blue-900">Detailed Solution:</strong><div class="math-scroll mt-1 text-gray-700">${(q.solution || 'No detailed solution provided.').replace(/\n/g, '<br>')}</div></div>
                     </div>
                 </div>`;
             });
             
             document.getElementById('finalScore').innerText = score;
+            document.getElementById('maxScore').innerText = maxPossible;
             document.getElementById('r-correct').innerText = correct;
             document.getElementById('r-incorrect').innerText = incorrect;
             document.getElementById('r-unattempted').innerText = unattempted;
             document.getElementById('solutionsContainer').innerHTML = solHtml;
-            if(window.MathJax && window.MathJax.typesetPromise) MathJax.typesetPromise();
+            if(window.MathJax) MathJax.typesetPromise();
         }
     </script>
 </body>
