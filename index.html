@@ -86,17 +86,16 @@
                 <!-- Question Scroll Container -->
                 <div class="flex-1 overflow-y-auto p-8 min-h-0 text-lg text-slate-800 space-y-6" id="questionContent"></div>
                 
-                <!-- Fixed Bottom Action Bar -->
+                <!-- Fixed Bottom Action Bar (Custom Layout: Save, Clean, Mark as Read, Previous, Next) -->
                 <div class="h-16 flex-none bg-slate-100 px-6 border-t border-slate-200 flex justify-between items-center shadow-lg z-20">
                     <div class="flex space-x-2">
-                        <button onclick="saveAndNext()" class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded text-xs font-bold uppercase tracking-wider transition shadow-sm">Save & Next</button>
-                        <button onclick="clearResponse()" class="bg-white hover:bg-slate-50 text-slate-700 px-3 py-2 rounded text-xs font-bold uppercase tracking-wider border border-slate-300 transition shadow-sm">Clear Response</button>
-                        <button onclick="markForReview()" class="bg-amber-500 hover:bg-amber-600 text-white px-3 py-2 rounded text-xs font-bold uppercase tracking-wider transition shadow-sm">Save & Mark Review</button>
-                        <button onclick="markAndNext()" class="bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 rounded text-xs font-bold uppercase tracking-wider transition shadow-sm">Mark Review & Next</button>
+                        <button onclick="saveAndNext()" class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded text-xs font-bold uppercase tracking-wider transition shadow-sm">Save</button>
+                        <button onclick="clearResponse()" class="bg-white hover:bg-slate-50 text-slate-700 px-3 py-2 rounded text-xs font-bold uppercase tracking-wider border border-slate-300 transition shadow-sm">Clean</button>
+                        <button onclick="markForReview()" class="bg-amber-500 hover:bg-amber-600 text-white px-3 py-2 rounded text-xs font-bold uppercase tracking-wider transition shadow-sm">Mark as Read</button>
                     </div>
                     <div class="flex space-x-2">
-                        <button onclick="prevQuestion()" class="bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 px-4 py-2 rounded text-xs font-bold shadow-sm">&lt;&lt; Back</button>
-                        <button onclick="nextQuestion()" class="bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 px-4 py-2 rounded text-xs font-bold shadow-sm">Next &gt;&gt;</button>
+                        <button onclick="prevQuestion()" class="bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 px-4 py-2 rounded text-xs font-bold shadow-sm">Previous</button>
+                        <button onclick="nextQuestion()" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded text-xs font-bold shadow-sm">Next</button>
                     </div>
                 </div>
             </div>
@@ -127,7 +126,7 @@
                     <span class="text-blue-300 text-[10px]">Palette</span>
                 </div>
                 
-                <!-- Palette Question Number Grid (Dynamic length per subject) -->
+                <!-- Palette Question Number Grid -->
                 <div class="p-4 flex-1 overflow-y-auto min-h-0 bg-slate-100">
                     <div id="questionPalette" class="grid grid-cols-5 gap-2"></div>
                 </div>
@@ -231,7 +230,7 @@
                 return;
             }
             
-            subjectData[subjectList[0]][0].nta_status = 1; // Mark first question visited
+            subjectData[subjectList[0]][0].nta_status = 1; 
             currentSubject = subjectList[0];
             currentIndex = 0;
             setupTabs();
@@ -247,13 +246,11 @@
                 btn.className = `tab-btn ${sub === currentSubject ? 'active' : ''}`;
                 btn.innerText = `${sub} (${subjectData[sub].length})`;
                 btn.onclick = () => {
-                    // Save response of current question before switching subjects
                     let currentAns = readCurrentInput();
                     if (currentAns !== null) {
                         subjectData[currentSubject][currentIndex].nta_answer = currentAns;
                     }
                     
-                    // Switch subject and reset to index 0 of the new subject
                     currentSubject = sub;
                     currentIndex = 0;
                     
@@ -273,7 +270,7 @@
             let currentQArr = subjectData[currentSubject];
             let q = currentQArr[currentIndex];
             
-            if(q.nta_status === 0) q.nta_status = 1; // Not Answered if visited
+            if(q.nta_status === 0) q.nta_status = 1; 
             
             document.getElementById('qNumberDisplay').innerText = `Question No. ${currentIndex + 1}`;
             document.getElementById('qTypeBadge').innerText = (q.type || 'mcq').toUpperCase();
@@ -335,11 +332,9 @@
 
             q.nta_answer = inputVal;
 
-            if (actionType === 'saveNext') {
+            if (actionType === 'save') {
                 q.nta_status = (inputVal !== null) ? 2 : 1; 
-            } else if (actionType === 'saveMark') {
-                q.nta_status = (inputVal !== null) ? 4 : 3;
-            } else if (actionType === 'markNext') {
+            } else if (actionType === 'mark') {
                 q.nta_status = (inputVal !== null) ? 4 : 3;
             }
             
@@ -351,9 +346,8 @@
             }
         }
 
-        function saveAndNext() { processAction('saveNext'); }
-        function markAndNext() { processAction('markNext'); }
-        function markForReview() { processAction('saveMark'); }
+        function saveAndNext() { processAction('save'); }
+        function markForReview() { processAction('mark'); }
         function clearResponse() { processAction('clear'); }
         
         function nextQuestion() {
@@ -419,7 +413,7 @@
                 document.getElementById('timerDisplay').innerText = formatTime(timeLeft);
                 if(timeLeft <= 0) { 
                     clearInterval(timerInterval); 
-                    alert("Time is up! Submitting your exam automatically.");
+                    alert("Time is up! Submitting exam automatically.");
                     submitExam(); 
                 }
             }, 1000);
