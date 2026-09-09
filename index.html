@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NTA CBT Exam Simulator</title>
-    <!-- Tailwind CSS for Modern Styling -->
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- MathJax for LaTeX Equations -->
     <script>
@@ -16,27 +16,28 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <style>
         * { box-sizing: border-box; }
-        body { background-color: #f1f5f9; font-family: system-ui, -apple-system, sans-serif; user-select: none; height: 100vh; margin: 0; display: flex; flex-direction: column; overflow: hidden; }
+        /* USING 100dvh to fix the mobile bottom-bar hiding issue */
+        body { background-color: #f1f5f9; font-family: system-ui, -apple-system, sans-serif; user-select: none; height: 100dvh; margin: 0; display: flex; flex-direction: column; overflow: hidden; }
         .nta-header { background-color: #1e40af; color: white; }
         .math-scroll { overflow-x: auto; overflow-y: hidden; }
 
-        /* Official NTA / TCS iON Palette Shapes & Colors */
+        /* Official NTA Shapes */
         .q-btn { width: 38px; height: 36px; margin: 3px; display: inline-flex; justify-content: center; align-items: center; font-weight: bold; font-size: 13px; cursor: pointer; transition: transform 0.1s; position: relative; }
         .q-btn:hover { transform: scale(1.05); }
         
-        .status-0 { background: #e2e8f0; color: #475569; border: 1px solid #cbd5e1; border-radius: 4px; } /* Not Visited */
-        .status-1 { background: #ef4444; color: white; border-radius: 4px 4px 16px 16px; border: 1px solid #dc2626; } /* Not Answered */
-        .status-2 { background: #10b981; color: white; border-radius: 16px 16px 4px 4px; border: 1px solid #059669; } /* Answered */
-        .status-3 { background: #8b5cf6; color: white; border-radius: 50%; border: 1px solid #7c3aed; } /* Marked for Review */
-        .status-4 { background: #8b5cf6; color: white; border-radius: 50%; border: 1px solid #7c3aed; position: relative; } /* Answered & Marked */
+        .status-0 { background: #e2e8f0; color: #475569; border: 1px solid #cbd5e1; border-radius: 4px; } 
+        .status-1 { background: #ef4444; color: white; border-radius: 4px 4px 16px 16px; border: 1px solid #dc2626; } 
+        .status-2 { background: #10b981; color: white; border-radius: 16px 16px 4px 4px; border: 1px solid #059669; } 
+        .status-3 { background: #8b5cf6; color: white; border-radius: 50%; border: 1px solid #7c3aed; } 
+        .status-4 { background: #8b5cf6; color: white; border-radius: 50%; border: 1px solid #7c3aed; position: relative; } 
         .status-4::after { content: '✔'; position: absolute; bottom: -2px; right: -2px; width: 13px; height: 13px; background: #10b981; color: white; font-size: 9px; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 1px solid white; }
         
         .active-q { outline: 2px solid #000; outline-offset: 1px; }
-        .tab-btn { background: #e2e8f0; color: #475569; padding: 10px 24px; font-weight: bold; font-size: 14px; border-radius: 6px 6px 0 0; margin-right: 4px; cursor: pointer; border-top: 3px solid transparent; }
+        .tab-btn { background: #e2e8f0; color: #475569; padding: 10px 16px; font-weight: bold; font-size: 13px; border-radius: 6px 6px 0 0; margin-right: 4px; cursor: pointer; border-top: 3px solid transparent; white-space: nowrap; }
         .tab-btn.active { background: #ffffff; color: #1e40af; border-top: 3px solid #2563eb; box-shadow: 0 -2px 4px rgba(0,0,0,0.05); }
     </style>
 </head>
-<body class="flex flex-col h-screen w-screen overflow-hidden">
+<body class="flex flex-col h-[100dvh] w-screen overflow-hidden">
 
     <!-- 1. CATALOG SCREEN -->
     <div id="catalogScreen" class="h-full w-full overflow-y-auto bg-slate-50 flex flex-col">
@@ -44,7 +45,7 @@
             <h1 class="text-xl font-bold tracking-wide">National Testing Agency — Mock Test Portal</h1>
             <span class="text-xs bg-blue-700 px-3 py-1 rounded font-semibold uppercase tracking-wider">CBT Engine</span>
         </div>
-        <div class="max-w-5xl mx-auto p-8 w-full flex-1">
+        <div class="max-w-5xl mx-auto p-6 lg:p-8 w-full flex-1">
             <h2 class="text-2xl font-extrabold mb-1 text-slate-800">Available Question Papers</h2>
             <p class="text-slate-500 mb-6 text-sm">Select an exam paper below to launch the simulated testing interface.</p>
             <div id="catalogContainer" class="space-y-4">
@@ -57,14 +58,14 @@
     <div id="examScreen" class="hidden h-full w-full flex flex-col overflow-hidden">
         
         <!-- Top Navigation Header -->
-        <div class="nta-header px-5 h-14 flex-none flex justify-between items-center shadow z-20">
-            <div class="text-base font-bold truncate max-w-xl" id="examTitleHeader">JEE Main Simulation</div>
-            <div class="flex items-center space-x-4">
-                <div class="bg-white text-slate-900 px-4 py-1.5 rounded-md font-mono font-bold text-sm border-2 border-red-500 shadow-inner flex items-center space-x-2">
-                    <span class="text-slate-500 text-xs uppercase">Time Left:</span>
-                    <span id="timerDisplay" class="text-red-600 text-base">180:00</span>
+        <div class="nta-header px-4 lg:px-5 h-14 flex-none flex justify-between items-center shadow z-20">
+            <div class="text-sm lg:text-base font-bold truncate max-w-[50%]" id="examTitleHeader">JEE Main Simulation</div>
+            <div class="flex items-center space-x-2 lg:space-x-4">
+                <div class="bg-white text-slate-900 px-2 lg:px-4 py-1 rounded-md font-mono font-bold text-xs lg:text-sm border-2 border-red-500 shadow-inner flex items-center space-x-1 lg:space-x-2">
+                    <span class="text-slate-500 text-[10px] lg:text-xs uppercase hidden sm:inline">Time Left:</span>
+                    <span id="timerDisplay" class="text-red-600">180:00</span>
                 </div>
-                <button onclick="submitExamConfirm()" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded font-bold text-xs uppercase tracking-wide transition shadow">Submit Exam</button>
+                <button onclick="submitExamConfirm()" class="bg-red-600 hover:bg-red-700 text-white px-3 lg:px-4 py-1.5 lg:py-2 rounded font-bold text-[10px] lg:text-xs uppercase tracking-wide transition shadow">Submit</button>
             </div>
         </div>
 
@@ -75,60 +76,62 @@
             <div class="flex-1 flex flex-col min-w-0 bg-white border-r border-slate-200">
                 
                 <!-- Subject Tabs -->
-                <div class="bg-slate-100 px-3 pt-3 border-b border-slate-200 flex-none flex items-end overflow-x-auto" id="subjectTabs"></div>
+                <div class="bg-slate-100 px-2 lg:px-3 pt-2 lg:pt-3 border-b border-slate-200 flex-none flex items-end overflow-x-auto" id="subjectTabs"></div>
 
                 <!-- Question Subheader -->
-                <div class="h-11 px-6 border-b border-slate-200 bg-slate-50 flex-none flex justify-between items-center font-bold text-sm">
-                    <span class="text-blue-900 text-base" id="qNumberDisplay">Question No. 1</span>
-                    <span class="text-xs bg-blue-100 text-blue-800 px-2.5 py-1 rounded font-semibold uppercase" id="qTypeBadge">MCQ</span>
+                <div class="h-10 lg:h-11 px-4 lg:px-6 border-b border-slate-200 bg-slate-50 flex-none flex justify-between items-center font-bold text-xs lg:text-sm">
+                    <span class="text-blue-900 text-sm lg:text-base" id="qNumberDisplay">Question No. 1</span>
+                    <span class="text-[10px] lg:text-xs bg-blue-100 text-blue-800 px-2 py-0.5 lg:py-1 rounded font-semibold uppercase" id="qTypeBadge">MCQ</span>
                 </div>
                 
                 <!-- Question Scroll Container -->
-                <div class="flex-1 overflow-y-auto p-8 min-h-0 text-lg text-slate-800 space-y-6" id="questionContent"></div>
+                <div class="flex-1 overflow-y-auto p-4 lg:p-8 min-h-0 text-base lg:text-lg text-slate-800 space-y-6" id="questionContent"></div>
                 
-                <!-- Fixed Bottom Action Bar (Custom Layout: Save, Clean, Mark as Read, Previous, Next) -->
-                <div class="h-16 flex-none bg-slate-100 px-6 border-t border-slate-200 flex justify-between items-center shadow-lg z-20">
-                    <div class="flex space-x-2">
-                        <button onclick="saveAndNext()" class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded text-xs font-bold uppercase tracking-wider transition shadow-sm">Save</button>
-                        <button onclick="clearResponse()" class="bg-white hover:bg-slate-50 text-slate-700 px-3 py-2 rounded text-xs font-bold uppercase tracking-wider border border-slate-300 transition shadow-sm">Clean</button>
-                        <button onclick="markForReview()" class="bg-amber-500 hover:bg-amber-600 text-white px-3 py-2 rounded text-xs font-bold uppercase tracking-wider transition shadow-sm">Mark as Read</button>
-                    </div>
-                    <div class="flex space-x-2">
-                        <button onclick="prevQuestion()" class="bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 px-4 py-2 rounded text-xs font-bold shadow-sm">Previous</button>
-                        <button onclick="nextQuestion()" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded text-xs font-bold shadow-sm">Next</button>
+                <!-- FIXED BOTTOM ACTION BAR (Custom: Save, Clean, Mark as Read, Prev, Next) -->
+                <div class="flex-none bg-slate-100 p-2 lg:p-3 border-t border-slate-200 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] z-20">
+                    <div class="flex flex-wrap justify-between items-center gap-2">
+                        <div class="flex flex-wrap gap-2">
+                            <button onclick="saveAndNext()" class="bg-emerald-600 hover:bg-emerald-700 text-white px-3 lg:px-4 py-2 rounded text-[10px] lg:text-xs font-bold uppercase tracking-wider transition shadow-sm">Save</button>
+                            <button onclick="clearResponse()" class="bg-white hover:bg-slate-50 text-slate-700 px-2 lg:px-3 py-2 rounded text-[10px] lg:text-xs font-bold uppercase tracking-wider border border-slate-300 transition shadow-sm">Clean</button>
+                            <button onclick="markForReview()" class="bg-amber-500 hover:bg-amber-600 text-white px-2 lg:px-3 py-2 rounded text-[10px] lg:text-xs font-bold uppercase tracking-wider transition shadow-sm">Mark as Read</button>
+                        </div>
+                        <div class="flex gap-2">
+                            <button onclick="prevQuestion()" class="bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 px-3 lg:px-4 py-2 rounded text-[10px] lg:text-xs font-bold shadow-sm">Previous</button>
+                            <button onclick="nextQuestion()" class="bg-blue-600 hover:bg-blue-700 text-white px-3 lg:px-4 py-2 rounded text-[10px] lg:text-xs font-bold shadow-sm">Next</button>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Right Pane: Candidate Profile & Palette -->
-            <div class="w-80 flex-none bg-slate-50 flex flex-col overflow-hidden border-l border-slate-200">
+            <div class="w-64 lg:w-80 flex-none bg-slate-50 flex flex-col overflow-hidden border-l border-slate-200 hidden md:flex">
                 
                 <!-- Profile Block -->
                 <div class="p-3 border-b border-slate-200 flex items-center bg-white space-x-3 flex-none">
-                    <div class="w-12 h-12 bg-blue-900 text-white rounded flex items-center justify-center font-bold text-xs tracking-wider">NTA</div>
-                    <div class="text-xs">
+                    <div class="w-10 h-10 lg:w-12 lg:h-12 bg-blue-900 text-white rounded flex items-center justify-center font-bold text-xs tracking-wider">NTA</div>
+                    <div class="text-[10px] lg:text-xs">
                         <div class="text-slate-500">Candidate: <span class="font-bold text-slate-800">Student</span></div>
                         <div class="text-slate-500 mt-0.5">Section: <span class="font-bold text-blue-900" id="profileSubject">Physics</span></div>
                     </div>
                 </div>
                 
                 <!-- Legend Grid -->
-                <div class="p-3 grid grid-cols-2 gap-y-2 gap-x-1 text-[11px] font-medium bg-white border-b border-slate-200 text-slate-700 flex-none">
-                    <div class="flex items-center"><div class="q-btn status-0 w-5 h-5 mr-1.5 text-[10px]" id="c-0">0</div>Not Visited</div>
-                    <div class="flex items-center"><div class="q-btn status-1 w-5 h-5 mr-1.5 text-[10px]" id="c-1">0</div>Not Answered</div>
-                    <div class="flex items-center"><div class="q-btn status-2 w-5 h-5 mr-1.5 text-[10px]" id="c-2">0</div>Answered</div>
-                    <div class="flex items-center"><div class="q-btn status-3 w-5 h-5 mr-1.5 text-[10px]" id="c-3">0</div>Marked</div>
-                    <div class="flex items-center col-span-2 mt-0.5"><div class="q-btn status-4 w-5 h-5 mr-1.5 text-[10px]" id="c-4">0</div>Answered & Marked for Review</div>
+                <div class="p-2 lg:p-3 grid grid-cols-2 gap-y-2 gap-x-1 text-[9px] lg:text-[11px] font-medium bg-white border-b border-slate-200 text-slate-700 flex-none">
+                    <div class="flex items-center"><div class="q-btn status-0 w-4 h-4 lg:w-5 lg:h-5 mr-1.5 text-[8px] lg:text-[10px]" id="c-0">0</div>Not Visited</div>
+                    <div class="flex items-center"><div class="q-btn status-1 w-4 h-4 lg:w-5 lg:h-5 mr-1.5 text-[8px] lg:text-[10px]" id="c-1">0</div>Not Answered</div>
+                    <div class="flex items-center"><div class="q-btn status-2 w-4 h-4 lg:w-5 lg:h-5 mr-1.5 text-[8px] lg:text-[10px]" id="c-2">0</div>Answered</div>
+                    <div class="flex items-center"><div class="q-btn status-3 w-4 h-4 lg:w-5 lg:h-5 mr-1.5 text-[8px] lg:text-[10px]" id="c-3">0</div>Marked</div>
+                    <div class="flex items-center col-span-2 mt-0.5"><div class="q-btn status-4 w-4 h-4 lg:w-5 lg:h-5 mr-1.5 text-[8px] lg:text-[10px]" id="c-4">0</div>Answered & Marked</div>
                 </div>
 
-                <div class="bg-blue-900 text-white px-4 py-2 text-xs font-bold uppercase tracking-wider flex-none flex justify-between items-center">
+                <div class="bg-blue-900 text-white px-3 lg:px-4 py-1.5 lg:py-2 text-[10px] lg:text-xs font-bold uppercase tracking-wider flex-none flex justify-between items-center">
                     <span id="paletteSubjectTitle">Physics</span>
-                    <span class="text-blue-300 text-[10px]">Palette</span>
+                    <span class="text-blue-300 text-[8px] lg:text-[10px]">Palette</span>
                 </div>
                 
                 <!-- Palette Question Number Grid -->
-                <div class="p-4 flex-1 overflow-y-auto min-h-0 bg-slate-100">
-                    <div id="questionPalette" class="grid grid-cols-5 gap-2"></div>
+                <div class="p-2 lg:p-4 flex-1 overflow-y-auto min-h-0 bg-slate-100">
+                    <div id="questionPalette" class="flex flex-wrap justify-center gap-1 lg:gap-2"></div>
                 </div>
             </div>
         </div>
@@ -137,19 +140,19 @@
     <!-- 3. RESULT SCREEN -->
     <div id="resultScreen" class="hidden h-full w-full overflow-y-auto bg-slate-50 flex flex-col">
         <div class="nta-header p-4 shadow flex justify-between items-center sticky top-0 z-50 flex-none">
-            <h1 class="text-xl font-bold">Exam Performance & Detailed Solutions</h1>
-            <button onclick="window.location.reload()" class="bg-white text-blue-900 px-4 py-1.5 rounded font-bold text-sm shadow hover:bg-slate-100 transition">Back to Home</button>
+            <h1 class="text-lg lg:text-xl font-bold">Performance & Solutions</h1>
+            <button onclick="window.location.reload()" class="bg-white text-blue-900 px-3 py-1.5 rounded font-bold text-xs lg:text-sm shadow hover:bg-slate-100 transition">Home</button>
         </div>
-        <div class="max-w-4xl mx-auto p-8 w-full flex-1">
-            <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200 text-center mb-8 border-t-8 border-blue-600">
-                <h2 class="text-4xl font-black text-slate-800 mb-2">Final Score: <span id="finalScore" class="text-blue-600">0</span> / <span id="maxScore" class="text-slate-400">0</span></h2>
-                <div class="flex justify-center space-x-10 mt-6 text-base border-t border-slate-100 pt-4">
-                    <div class="text-emerald-600 font-bold">Correct: <span id="r-correct" class="text-xl block">0</span></div>
-                    <div class="text-rose-600 font-bold">Incorrect: <span id="r-incorrect" class="text-xl block">0</span></div>
-                    <div class="text-slate-500 font-bold">Unattempted: <span id="r-unattempted" class="text-xl block">0</span></div>
+        <div class="max-w-4xl mx-auto p-4 lg:p-8 w-full flex-1">
+            <div class="bg-white p-6 lg:p-8 rounded-xl shadow-sm border border-slate-200 text-center mb-8 border-t-8 border-blue-600">
+                <h2 class="text-3xl lg:text-4xl font-black text-slate-800 mb-2">Final Score: <span id="finalScore" class="text-blue-600">0</span> / <span id="maxScore" class="text-slate-400">0</span></h2>
+                <div class="flex justify-center space-x-6 lg:space-x-10 mt-6 text-sm lg:text-base border-t border-slate-100 pt-4">
+                    <div class="text-emerald-600 font-bold">Correct: <span id="r-correct" class="text-lg lg:text-xl block">0</span></div>
+                    <div class="text-rose-600 font-bold">Incorrect: <span id="r-incorrect" class="text-lg lg:text-xl block">0</span></div>
+                    <div class="text-slate-500 font-bold">Unattempted: <span id="r-unattempted" class="text-lg lg:text-xl block">0</span></div>
                 </div>
             </div>
-            <h3 class="text-2xl font-bold mb-6 text-slate-800 border-b border-slate-200 pb-2">Question-wise Solutions</h3>
+            <h3 class="text-xl lg:text-2xl font-bold mb-6 text-slate-800 border-b border-slate-200 pb-2">Solutions</h3>
             <div id="solutionsContainer" class="space-y-6 pb-12"></div>
         </div>
     </div>
@@ -159,7 +162,6 @@
         let subjectList = [];
         let currentSubject = "";
         let currentIndex = 0; 
-        
         let timerInterval = null;
         let timeLeft = 180 * 60; // 3 hours
 
@@ -183,8 +185,8 @@
                         div.className = "p-4 bg-white border border-slate-200 rounded-lg shadow-sm hover:border-blue-500 hover:shadow transition cursor-pointer flex justify-between items-center group";
                         div.innerHTML = `
                             <div>
-                                <div class="font-bold text-slate-800 group-hover:text-blue-600 text-base">${p.title}</div>
-                                <div class="text-xs text-slate-400 mt-1">${exam} • ${year} • CBT Mode</div>
+                                <div class="font-bold text-slate-800 group-hover:text-blue-600 text-sm lg:text-base">${p.title}</div>
+                                <div class="text-[10px] lg:text-xs text-slate-400 mt-1">${exam} • ${year} • CBT Mode</div>
                             </div>
                             <span class="text-blue-600 font-bold text-xl group-hover:translate-x-1 transition-transform">&rarr;</span>
                         `;
@@ -210,7 +212,7 @@
                 rawQuestions.forEach(q => {
                     let sub = q.subject || "General";
                     if(!subjectData[sub]) subjectData[sub] = [];
-                    q.nta_status = 0; // 0: Not Visited, 1: Not Answered, 2: Answered, 3: Marked, 4: Answered & Marked
+                    q.nta_status = 0; 
                     q.nta_answer = null; 
                     subjectData[sub].push(q);
                 });
@@ -250,14 +252,11 @@
                     if (currentAns !== null) {
                         subjectData[currentSubject][currentIndex].nta_answer = currentAns;
                     }
-                    
                     currentSubject = sub;
                     currentIndex = 0;
-                    
                     if(subjectData[currentSubject][currentIndex].nta_status === 0) {
                         subjectData[currentSubject][currentIndex].nta_status = 1;
                     }
-                    
                     setupTabs();
                     loadQuestion(currentIndex);
                 };
@@ -279,23 +278,23 @@
             let html = `<div class="math-scroll leading-relaxed text-slate-800">${(q.text || '').replace(/\n/g, '<br>')}</div>`;
             
             if (q.has_diagram && q.image) {
-                html += `<div class="my-4"><img src="images/${q.image}" class="max-w-md border border-slate-200 rounded p-1 bg-white shadow-sm" alt="Diagram"></div>`;
+                html += `<div class="my-4"><img src="images/${q.image}" class="max-w-full lg:max-w-md border border-slate-200 rounded p-1 bg-white shadow-sm" alt="Diagram"></div>`;
             }
             
             if (q.type === 'integer' || q.type === 'numerical') {
                 html += `
                 <div class="mt-6">
-                    <label class="block text-xs font-bold text-slate-500 uppercase tracking-wide mb-2">Enter Numerical Answer:</label>
-                    <input type="text" id="intAnswer" placeholder="Type value..." class="border-2 border-slate-300 focus:border-blue-600 focus:outline-none p-3 rounded-lg w-72 text-lg font-medium text-slate-800 shadow-inner" value="${q.nta_answer !== null ? q.nta_answer : ''}">
+                    <label class="block text-[10px] lg:text-xs font-bold text-slate-500 uppercase tracking-wide mb-2">Enter Numerical Answer:</label>
+                    <input type="text" id="intAnswer" placeholder="Type value..." class="border-2 border-slate-300 focus:border-blue-600 focus:outline-none p-2 lg:p-3 rounded-lg w-full max-w-xs text-base lg:text-lg font-medium text-slate-800 shadow-inner" value="${q.nta_answer !== null ? q.nta_answer : ''}">
                 </div>`;
             } else {
-                html += `<div class="space-y-3 mt-6">`;
+                html += `<div class="space-y-2 lg:space-y-3 mt-6">`;
                 (q.options || []).forEach((opt, i) => {
                     let checked = (q.nta_answer === i) ? 'checked' : '';
                     html += `
-                    <label class="flex items-start p-3.5 border border-slate-200 rounded-lg hover:bg-blue-50/40 cursor-pointer transition bg-white shadow-sm">
-                        <input type="radio" name="mcq" value="${i}" ${checked} class="mt-1 mr-3.5 h-4 w-4 text-blue-600 focus:ring-blue-500">
-                        <span class="math-scroll text-base text-slate-700">${opt.replace(/\n/g, '<br>')}</span>
+                    <label class="flex items-start p-2.5 lg:p-3.5 border border-slate-200 rounded-lg hover:bg-blue-50/40 cursor-pointer transition bg-white shadow-sm">
+                        <input type="radio" name="mcq" value="${i}" ${checked} class="mt-1 mr-3 h-4 w-4 text-blue-600 focus:ring-blue-500">
+                        <span class="math-scroll text-sm lg:text-base text-slate-700">${opt.replace(/\n/g, '<br>')}</span>
                     </label>`;
                 });
                 html += `</div>`;
@@ -465,20 +464,20 @@
                     
                     let borderCol = (uAns === null || uAns === "") ? 'border-slate-300' : (isCorrect ? 'border-emerald-500' : 'border-rose-500');
                     let badgeCol = (uAns === null || uAns === "") ? 'bg-slate-100 text-slate-600' : (isCorrect ? 'bg-emerald-100 text-emerald-700' : 'bg-rose-100 text-rose-700');
-                    let badgeText = (uAns === null || uAns === "") ? '⚪ Unattempted' : (isCorrect ? '✅ Correct (+4)' : '❌ Incorrect (-1)');
+                    let badgeText = (uAns === null || uAns === "") ? '⚪ Unattempted' : (is;Correct ? '✅ Correct (+4)' : '❌ Incorrect (-1)');
                     
-                    let imgHtml = (q.has_diagram && q.image) ? `<div class="my-3"><img src="images/${q.image}" class="max-w-md border border-slate-200 rounded p-1 bg-white shadow-sm"></div>` : '';
+                    let imgHtml = (q.has_diagram && q.image) ? `<div class="my-3"><img src="images/${q.image}" class="max-w-full lg:max-w-md border border-slate-200 rounded p-1 bg-white shadow-sm"></div>` : '';
                     let correctDisplay = (q.type === 'integer' || q.type === 'numerical') ? q.correct_integer : ((q.options && q.correct_index !== undefined && q.options[q.correct_index] !== undefined) ? q.options[q.correct_index] : 'N/A');
 
                     solHtml += `
-                    <div class="bg-white p-6 border-l-8 ${borderCol} rounded-xl shadow-sm space-y-4 border border-slate-200">
+                    <div class="bg-white p-4 lg:p-6 border-l-8 ${borderCol} rounded-xl shadow-sm space-y-4 border border-slate-200">
                         <div class="flex justify-between items-center border-b border-slate-100 pb-3">
-                            <span class="font-bold text-lg text-slate-900">Question No. ${i + 1}</span>
-                            <span class="text-xs font-bold px-3 py-1 rounded-full ${badgeCol}">${badgeText}</span>
+                            <span class="font-bold text-base lg:text-lg text-slate-900">Question No. ${i + 1}</span>
+                            <span class="text-[10px] lg:text-xs font-bold px-2 lg:px-3 py-1 rounded-full ${badgeCol}">${badgeText}</span>
                         </div>
-                        <div class="math-scroll text-slate-800 text-base">${(q.text || '').replace(/\n/g, '<br>')}</div>
+                        <div class="math-scroll text-slate-800 text-sm lg:text-base">${(q.text || '').replace(/\n/g, '<br>')}</div>
                         ${imgHtml}
-                        <div class="bg-slate-50 p-4 rounded-lg border border-slate-200 text-sm space-y-2">
+                        <div class="bg-slate-50 p-3 lg:p-4 rounded-lg border border-slate-200 text-xs lg:text-sm space-y-2">
                             <div><strong class="text-blue-900">Correct Answer:</strong> <span class="text-slate-700 font-medium">${correctDisplay}</span></div>
                             <div><strong class="text-blue-900">Detailed Solution:</strong><div class="math-scroll mt-1 text-slate-700">${(q.solution || 'No detailed solution provided.').replace(/\n/g, '<br>')}</div></div>
                         </div>
