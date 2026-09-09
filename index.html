@@ -464,7 +464,7 @@
                     
                     let borderCol = (uAns === null || uAns === "") ? 'border-slate-300' : (isCorrect ? 'border-emerald-500' : 'border-rose-500');
                     let badgeCol = (uAns === null || uAns === "") ? 'bg-slate-100 text-slate-600' : (isCorrect ? 'bg-emerald-100 text-emerald-700' : 'bg-rose-100 text-rose-700');
-                    let badgeText = (uAns === null || uAns === "") ? '⚪ Unattempted' : (is;Correct ? '✅ Correct (+4)' : '❌ Incorrect (-1)');
+                    let badgeText = (uAns === null || uAns === "") ? '⚪ Unattempted' : (isCorrect ? '✅ Correct (+4)' : '❌ Incorrect (-1)');
                     
                     let imgHtml = (q.has_diagram && q.image) ? `<div class="my-3"><img src="images/${q.image}" class="max-w-full lg:max-w-md border border-slate-200 rounded p-1 bg-white shadow-sm"></div>` : '';
                     let correctDisplay = (q.type === 'integer' || q.type === 'numerical') ? q.correct_integer : ((q.options && q.correct_index !== undefined && q.options[q.correct_index] !== undefined) ? q.options[q.correct_index] : 'N/A');
