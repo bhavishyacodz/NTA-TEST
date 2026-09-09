@@ -93,8 +93,24 @@
                 </div>
                 
                 <!-- Question Content -->
-                <div class="p-6 overflow-y-auto flex-1 text-base text-gray-800" id="questionContent"></div>
-                
+                <!-- Question Scroll Area -->
+<div class="flex-1 overflow-y-auto p-6 min-h-0 text-base text-gray-800" id="questionContent"></div>
+
+<!-- Fixed Bottom Bar -->
+<div class="h-16 flex-none bg-gray-100 px-4 border-t-2 border-gray-300 flex justify-between items-center shadow-lg z-20">
+    <div class="flex space-x-2">
+        <button onclick="saveAndNext()" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded text-xs font-bold uppercase border border-green-800 shadow">Save & Next</button>
+        <button onclick="clearResponse()" class="bg-white hover:bg-gray-100 text-gray-800 px-3 py-2 rounded text-xs font-bold uppercase border border-gray-400 shadow">Clear Response</button>
+        <button onclick="markForReview()" class="bg-amber-500 hover:bg-amber-600 text-white px-3 py-2 rounded text-xs font-bold uppercase border border-amber-700 shadow">Save & Mark for Review</button>
+        <button onclick="markAndNext()" class="bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 rounded text-xs font-bold uppercase border border-blue-800 shadow">Mark for Review & Next</button>
+    </div>
+    <div class="flex space-x-2">
+        <button onclick="prevQuestion()" class="bg-gray-200 hover:bg-gray-300 text-gray-800 px-4 py-2 rounded text-xs font-bold border border-gray-400 shadow">&lt;&lt; Back</button>
+        <button onclick="nextQuestion()" class="bg-gray-200 hover:bg-gray-300 text-gray-800 px-4 py-2 rounded text-xs font-bold border border-gray-400 shadow">Next &gt;&gt;</button>
+        <button onclick="submitExamConfirm()" class="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded text-xs font-bold uppercase border border-red-800 ml-2 shadow">Submit</button>
+    </div>
+</div>
+
                 <!-- Bottom Action Bar (Exact NTA Buttons) -->
                 <div class="bg-gray-100 p-3 border-t flex justify-between items-center">
                     <div class="flex space-x-2">
@@ -325,44 +341,51 @@
         }
 
         function processAction(actionType) {
-            let q = subjectData[currentSubject][currentIndex];
-            let inputVal = readCurrentInput();
-            
-            if (actionType === 'clear') {
-                q.nta_answer = null;
-                q.nta_status = 1; // Not Answered
-                loadQuestion(currentIndex);
-                return;
-            }
+    let q = subjectData[currentSubject][currentIndex];
+    let inputVal = readCurrentInput();
+    
+    if (actionType === 'clear') {
+        q.nta_answer = null;
+        q.nta_status = 1;
+        loadQuestion(currentIndex);
+        return;
+    }
 
-            // Save the value
-            q.nta_answer = inputVal;
+    q.nta_answer = inputVal;
 
-            if (actionType === 'saveNext') {
-                q.nta_status = (inputVal !== null) ? 2 : 1; 
-            } 
-            else if (actionType === 'saveMark') {
-                q.nta_status = (inputVal !== null) ? 4 : 3;
-            }
-            else if (actionType === 'markNext') {
-                // Classic NTA behaviour: Mark for Review & Next strictly sets status to Marked (3) if empty, or Answered & Marked (4) if filled.
-                q.nta_status = (inputVal !== null) ? 4 : 3;
-            }
-            
-            // Move to next question if available in current subject
-            let currentQArr = subjectData[currentSubject];
-            if (currentIndex < currentQArr.length - 1) {
-                loadQuestion(currentIndex + 1);
-            } else {
-                renderPalette();
-            }
-        }
+    if (actionType === 'saveNext') {
+        q.nta_status = (inputVal !== null) ? 2 : 1; 
+    } else if (actionType === 'saveMark') {
+        q.nta_status = (inputVal !== null) ? 4 : 3;
+    } else if (actionType === 'markNext') {
+        q.nta_status = (inputVal !== null) ? 4 : 3;
+    }
+    
+    let currentQArr = subjectData[currentSubject];
+    if (currentIndex < currentQArr.length - 1) {
+        loadQuestion(currentIndex + 1);
+    } else {
+        renderPalette();
+    }
+}
 
-        function saveAndNext() { processAction('saveNext'); }
-        function markAndNext() { processAction('markNext'); }
-        function markForReview() { processAction('saveMark'); }
-        function clearResponse() { processAction('clear'); }
-        
+
+        function saveAndNext() { 
+    processAction('saveNext'); 
+}
+
+function markAndNext() { 
+    processAction('markNext'); 
+}
+
+function markForReview() { 
+    processAction('saveMark'); 
+}
+
+function clearResponse() { 
+    processAction('clear'); 
+}
+
         function nextQuestion() {
             let inputVal = readCurrentInput();
             subjectData[currentSubject][currentIndex].nta_answer = inputVal;
