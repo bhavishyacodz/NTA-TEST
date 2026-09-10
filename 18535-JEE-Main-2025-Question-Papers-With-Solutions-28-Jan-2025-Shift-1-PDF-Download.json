@@ -4,7 +4,838 @@
     "year": "2025",
     "clean_title": "18535 JEE Main 2025 Question Papers With Solutions 28 Jan 2025 Shift 1 PDF Download",
     "original_title": "18535-JEE-Main-2025-Question-Papers-With-Solutions-28-Jan-2025-Shift-1-PDF-Download",
-    "total_questions": 0
+    "total_questions": 58
   },
-  "questions": []
+  "questions": [
+    {
+      "question_number": 1,
+      "text": "Find the equivalent resistance across A & B.",
+      "options": [
+        "(1) $R$",
+        "(2) $R/6$",
+        "(3) $R/3$",
+        "(4) $R/9$"
+      ],
+      "correct_index": 3,
+      "correct_integer": null,
+      "solution": "Equivalent circuit can be redrawn as three parallel branches of $R/3$ in parallel with each other: $R_{eq} = \\frac{R/3}{3} = \\frac{R}{9}$.",
+      "type": "mcq",
+      "subject": "Physics"
+    },
+    {
+      "question_number": 2,
+      "text": "A uniform wire of linear charge density $\\lambda$ is placed along y-axis. The locus of equipotential surface is",
+      "options": [
+        "(1) $x^2 + y^2 + z^2 = \\text{constant}$",
+        "(2) $x^2 + z^2 = \\text{constant}$",
+        "(3) $xyz = \\text{constant}$",
+        "(4) $xy + yz + zx = \\text{constant}$"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "Concentric cylinders around the y-axis form the equipotential surfaces, which are given by $x^2 + z^2 = \\text{constant}$.",
+      "type": "mcq",
+      "subject": "Physics"
+    },
+    {
+      "question_number": 3,
+      "text": "Which of following reaction is correct?\n(Where symbols have their usual meanings)",
+      "options": [
+        "(1) $n \\rightarrow p + e^- + \\nu$",
+        "(2) $n \\rightarrow p + e^+ + \\nu$",
+        "(3) $n \\rightarrow p + e^+ + \\bar{\\nu}$",
+        "(4) $n \\rightarrow p + e^- + \\bar{\\nu}$"
+      ],
+      "correct_index": 3,
+      "correct_integer": null,
+      "solution": "In reactions (2) and (3) charge conservation does not hold. In neutron decay, an electron ($e^-$) and an antineutrino ($\\bar{\\nu}$) are released.",
+      "type": "mcq",
+      "subject": "Physics"
+    },
+    {
+      "question_number": 4,
+      "text": "The graph of root mean square velocity $v_{rms}$ v/s temperature $T$ is",
+      "options": [
+        "(1)",
+        "(2)",
+        "(3)",
+        "(4)"
+      ],
+      "correct_index": 3,
+      "correct_integer": null,
+      "solution": "We know $v_{rms} = \\sqrt{\\frac{3RT}{M}} \\Rightarrow v_{rms}^2 \\propto T$, which represents a parabolic curve.",
+      "type": "mcq",
+      "subject": "Physics"
+    },
+    {
+      "question_number": 5,
+      "text": "A coin is placed at the bottom of a hemispherical container filled with a liquid of refractive index $\\mu$. Find the least refractive index if the coin is visible to an observer at E.",
+      "options": [
+        "(1) $\\sqrt{3}$",
+        "(2) $\\sqrt{2}$",
+        "(3) $\\frac{3}{2}$",
+        "(4) $3\\sqrt{2}$"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "For total internal reflection at boundary, $\\theta_c = 45^\\circ$. $\\sin 45^\\circ = \\frac{1}{\\mu} \\Rightarrow \\mu = \\sqrt{2}$.",
+      "type": "mcq",
+      "subject": "Physics"
+    },
+    {
+      "question_number": 6,
+      "text": "In the given figure, the square and the triangle have same resistance per unit length. Find the ratio of their resistances about adjacent corners.",
+      "options": [
+        "(1) $\\frac{8}{9}$",
+        "(2) $\\frac{27}{32}$",
+        "(3) $\\frac{9}{8}$",
+        "(4) $\\frac{32}{27}$"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "Let the resistance per unit length be $\\lambda$.\nFor square: $R_{\\text{Square}} = \\frac{(3a\\lambda)(a\\lambda)}{3a\\lambda + a\\lambda} = \\frac{3}{4}a\\lambda$.\nFor triangle: $R_{\\text{Triangle}} = \\frac{(2a\\lambda)(a\\lambda)}{2a\\lambda + a\\lambda} = \\frac{2}{3}a\\lambda$.\nRatio $\\frac{R_{\\text{Square}}}{R_{\\text{Triangle}}} = \\frac{3/4}{8/9...} = \\frac{27}{32}$.",
+      "type": "mcq",
+      "subject": "Physics"
+    },
+    {
+      "question_number": 7,
+      "text": "Assertion : Work done by central force is independent of path.\nReason : Potential energy is associated with every force.",
+      "options": [
+        "(1) Both Assertion and Reason are correct",
+        "(2) Assertion is correct, Reason is incorrect",
+        "(3) Assertion is incorrect, Reason is correct",
+        "(4) Both Assertion and Reason are incorrect"
+      ],
+      "correct_index": 3,
+      "correct_integer": null,
+      "solution": "Not all central forces are conservative, so work done by a central force might depend on path. Also, potential energy is defined only for conservative forces, not every force.",
+      "type": "mcq",
+      "subject": "Physics"
+    },
+    {
+      "question_number": 8,
+      "text": "There is a smooth ring of radius $R$ in a vertical plane. A spring of natural length $R$ & elastic constant $K$ is vertical along a diameter. The free end is connected to a bead of mass $m$ & when slightly disturbed it reaches point C with speed $v$ where $v$ is",
+      "options": [
+        "(1) $\\sqrt{\\frac{2}{m}\\left(mgR + \\frac{1}{2}KR^2(\\sqrt{2}-1)\\right)}$",
+        "(2) $\\sqrt{\\frac{2}{m}\\left(mgR + KR^2(\\sqrt{2}-1)\\right)}$",
+        "(3) $\\sqrt{\\frac{2}{m}\\left(mgR + \\frac{1}{2}KR^2(2-\\sqrt{2})\\right)}$",
+        "(4) $\\sqrt{\\frac{2}{m}\\left(mgR + KR^2(2-\\sqrt{2})\\right)}$"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "Loss in PE = Gain in KE\n$mgR + \\frac{1}{2}K(2R-R)^2 - \\frac{1}{2}K(\\sqrt{2}R-R)^2 = \\frac{1}{2}mv^2$\n$\\Rightarrow v = \\sqrt{\\frac{2}{m}\\left(mgR + KR^2(\\sqrt{2}-1)\\right)}$.",
+      "type": "mcq",
+      "subject": "Physics"
+    },
+    {
+      "question_number": 9,
+      "text": "The equivalent logic gate for the circuit shown below is",
+      "options": [
+        "(1)",
+        "(2)",
+        "(3)",
+        "(4)"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "Boolean expression simplifies to $Y = A\\bar{B} + AB = A(B + \\bar{B}) = A$.",
+      "type": "mcq",
+      "subject": "Physics"
+    },
+    {
+      "question_number": 10,
+      "text": "Surface mass density varies as $\\sigma = \\sigma_0 \\frac{x}{ab}$ for the given plane sheet. Find the position of centre of mass for the distribution given.",
+      "options": [
+        "(1) $\\left(\\frac{2a}{3}, \\frac{b}{2}\\right)$",
+        "(2) $\\left(\\frac{2a}{3}, \\frac{b}{2}\\right)$",
+        "(3) $\\left(\\frac{a}{3}, \\frac{b}{2}\\right)$",
+        "(4) $\\left(\\frac{2a}{3}, b\\right)$"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "There is no variation of mass density in the y-direction, so $y_{cm} = \\frac{b}{2}$.\nFor the x-direction: $x_{cm} = \\frac{\\int x dm}{\\int dm} = \\frac{\\int_0^a x \\cdot \\left(\\sigma_0 \\frac{x}{ab} b dx\\right)}{\\int_0^a \\sigma_0 \\frac{x}{ab} b dx} = \\frac{2a}{3}$.\nSo, $(x_{cm}, y_{cm}) = \\left(\\frac{2a}{3}, \\frac{b}{2}\\right)$.",
+      "type": "mcq",
+      "subject": "Physics"
+    },
+    {
+      "question_number": 11,
+      "text": "$\n\\eta_1, \\eta_2$ and $\\eta_3$ are the efficiencies of three Carnot engines $E_1, E_2$ and $E_3$ operating between temperatures shown in the figure. Choose the correct option relating the efficiencies.",
+      "options": [
+        "(1) $\\eta_1 < \\eta_2 + \\eta_3$",
+        "(2) $\\eta_1 > \\eta_2 + \\eta_3$",
+        "(3) $\\eta_1 = \\eta_2 + \\eta_3$",
+        "(4) $\\eta_1 - \\eta_2 > \\eta_3$"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "$\\eta_1 = 1 - \\frac{273}{473} = \\frac{200}{473}$, $\\eta_2 = 1 - \\frac{373}{473} = \\frac{100}{473}$, $\\eta_3 = 1 - \\frac{273}{373} = \\frac{100}{373}$. Since $\\eta_2 + \\eta_3 > \\eta_1$, option (1) is correct.",
+      "type": "mcq",
+      "subject": "Physics"
+    },
+    {
+      "question_number": 12,
+      "text": "A simple pendulum of length $l$ and bob of mass $m$ is placed on a smooth horizontal surface as shown. When electric field of strength $E$ is switched on, the bob passes the x-axis with speed $v$, then:",
+      "options": [
+        "(1) $v = \\sqrt{\\frac{qEl}{2m}}$",
+        "(2) $v = \\sqrt{\\frac{qEl}{m}}$",
+        "(3) $v = \\sqrt{\\frac{2qEl}{m}}$",
+        "(4) $v = 2\\sqrt{\\frac{qEl}{m}}$"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "By Work-Energy Theorem: $W = \\Delta K \\implies qE l (1 - \\cos 60^\\circ) = \\frac{1}{2} m v^2 \\implies \\frac{1}{2} qE l = \\frac{1}{2} m v^2 \\implies v = \\sqrt{\\frac{qEl}{m}}$.",
+      "type": "mcq",
+      "subject": "Physics"
+    },
+    {
+      "question_number": 13,
+      "text": "Statement-I : Velocity of sound in solids is more compared to that in gases.\nStatement-II : Bulk modulus of gas is more than that of solids.",
+      "options": [
+        "(1) Both Statement-I and Statement-II are correct",
+        "(2) Statement-I is correct and Statement-II is incorrect",
+        "(3) Statement-I is incorrect and Statement-II is correct",
+        "(4) Both Statement-I and Statement-II are incorrect"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "Speed of sound depends on elastic property and density. Elasticity of solids is much greater than that of gases, so velocity of sound in solids is greater. Statement-II is incorrect as bulk modulus of solids is higher than that of gases.",
+      "type": "mcq",
+      "subject": "Physics"
+    },
+    {
+      "question_number": 14,
+      "text": "Two capacitors $C_1$ and $C_2$ are connected across same battery and store energies $U_1$ and $U_2$ respectively at steady state. Choose the correct option by observing the graph of charge vs time shown below.",
+      "options": [
+        "(1) $U_1 > U_2$ and $C_1 > C_2$",
+        "(2) $U_1 < U_2$ and $C_1 < C_2$",
+        "(3) $U_1 < U_2$ and $C_1 > C_2$",
+        "(4) $U_1 > U_2$ and $C_1 < C_2$"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "From graph, $Q_1 < Q_2$. Since potential difference $V$ is same, $Q = CV \\implies C_1 < C_2$. Energy $U = \\frac{1}{2}CV^2$, hence $U_1 < U_2$.",
+      "type": "mcq",
+      "subject": "Physics"
+    },
+    {
+      "question_number": 15,
+      "text": "Energy of photon of wavelength $\\lambda$ is $E_0$ which is equal to kinetic energy of proton of mass $m_p$. The ratio of de Broglie wavelengths of proton and photon is:",
+      "options": [
+        "(1) $\\frac{1}{c} \\left(\\frac{E_0}{m_p}\\right)^{1/2}$",
+        "(2) $\\frac{1}{c} \\left(\\frac{E_0}{2m_p}\\right)^{1/2}$",
+        "(3) $c \\left(\\frac{2m_p}{E_0}\\right)^{1/2}$",
+        "(4) $\\frac{1}{2c} \\left(\\frac{E_0}{m_p}\\right)^{1/2}$"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "For photon: $\\lambda_{\\text{ph}} = \\frac{hc}{E_0}$. For proton: $\\lambda_p = \\frac{h}{\\sqrt{2m_p E_0}}$. Ratio $\\frac{\\lambda_p}{\\lambda_{\\text{ph}}} = \\frac{1}{c} \\sqrt{\\frac{E_0}{2m_p}}$.",
+      "type": "mcq",
+      "subject": "Physics"
+    },
+    {
+      "question_number": 16,
+      "text": "The length and breadth of a rectangular sheet are measured using a screw gauge of pitch $0.75\\text{ mm}$ and number of divisions on circular scale = $15$. If measured length $l = 5\\text{ mm}$ and breadth $b = 2.5\\text{ mm}$, find the maximum possible error in measurement of area.",
+      "options": [
+        "(1) $0.225\\text{ mm}^2$",
+        "(2) $0.375\\text{ mm}^2$",
+        "(3) $0.75\\text{ mm}^2$",
+        "(4) $0.30\\text{ mm}^2$"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "Least count $\\text{LC} = \\frac{0.75}{15} = 0.05\\text{ mm}$. $\\frac{\\Delta S}{S} = \\frac{\\Delta l}{l} + \\frac{\\Delta b}{b} = \\frac{0.05}{5} + \\frac{0.05}{2.5} = 0.01 + 0.02 = 0.03$. $\\Delta S = 0.03 \\times (5 \\times 2.5) = 0.375\\text{ mm}^2$.",
+      "type": "mcq",
+      "subject": "Physics"
+    },
+    {
+      "question_number": 17,
+      "text": "There are two prisms of refractive indices $1.54$ and $1.72$ respectively. If a ray is not deviating after passing through two prisms, then find the prism angle of the second prism if the prism angle of the first prism is $4^\\circ$.",
+      "options": [
+        "(1) $2^\\circ$",
+        "(2) $3^\\circ$",
+        "(3) $4^\\circ$",
+        "(4) $3.5^\\circ$"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "For no net deviation: $\\delta_1 = \\delta_2 \\implies (\\mu_1 - 1) A_1 = (\\mu_2 - 1) A_2 \\implies (1.54 - 1) 4^\\circ = (1.72 - 1) A_2 \\implies 0.54 \\times 4^\\circ = 0.72 \\times A_2 \\implies A_2 = 3^\\circ$.",
+      "type": "mcq",
+      "subject": "Physics"
+    },
+    {
+      "question_number": 18,
+      "text": "The energy associated with a cylindrical region due to an EM wave $E = 100\\sin(kx - \\omega t)$ is $U_0$. Find the equation of EM wave for which a cylinder of same length and half the diameter (as previous one) contains same energy $U_0$.",
+      "options": [
+        "(1) $200\\sin(kx - \\omega t)$",
+        "(2) $25\\sin(\\omega t - kx)$",
+        "(3) $50\\sin(kx - \\omega t)$",
+        "(4) $400\\sin(\\omega t - kx)$"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Energy $U = u \\cdot V = \\frac{1}{2} \\epsilon_0 E_0^2 \\cdot (\\pi R^2 l)$. For half diameter, $V_2 = \\frac{V_1}{4}$. For $U$ to remain $U_0$, $E_0^2$ must become $4 \\times (100)^2 \\implies E_{0, \\text{new}} = 200\\text{ V/m}$. Thus, $E = 200\\sin(kx - \\omega t)$.",
+      "type": "mcq",
+      "subject": "Physics"
+    },
+    {
+      "question_number": 19,
+      "text": "The dimensions of Young's modulus of elasticity per unit length is $M^a L^b T^c$, then find the value of $|a + b + c|$.",
+      "options": [],
+      "correct_index": null,
+      "correct_integer": 3,
+      "solution": "Young's modulus $Y = M^1 L^{-1} T^{-2}$. $Y/L = M^1 L^{-2} T^{-2}$. So $a = 1, b = -2, c = -2$. $|a + b + c| = |1 - 2 - 2| = 3$.",
+      "type": "numerical",
+      "subject": "Physics"
+    },
+    {
+      "question_number": 20,
+      "text": "In a YDSE, the distance of the 10th bright fringe from the central maxima is $10\\text{ mm}$ when light of wavelength used is $600\\text{ nm}$. Find the distance (in mm) of the 10th bright fringe from the central maxima if light of wavelength $660\\text{ nm}$ is used instead.",
+      "options": [],
+      "correct_index": null,
+      "correct_integer": 11,
+      "solution": "$y = \\frac{10 \\lambda D}{d} \\propto \\lambda$. $\\frac{y_2}{y_1} = \\frac{\\lambda_2}{\\lambda_1} \\implies \\frac{y_2}{10} = \\frac{660}{600} \\implies y_2 = 11\\text{ mm}$.",
+      "type": "numerical",
+      "subject": "Physics"
+    },
+    {
+      "question_number": 21,
+      "text": "What is the rate of reaction for releasing $\\text{CO}_2(\\text{g})$ with aq. $\\text{NaHCO}_3$ among the following compounds?\n(1) Benzoic acid\n(2) $o$-Toluic acid\n(3) Picric acid",
+      "options": [
+        "(1) (1) > (2) > (3)",
+        "(2) (3) > (2) > (1)",
+        "(3) (1) > (3) > (2)",
+        "(4) (2) > (3) > (1)"
+      ],
+      "correct_index": 2,
+      "correct_integer": null,
+      "solution": "pKa (Benzoic acid) = 4.27, pKa (o-Toluic acid) = 3.91 (due to ortho effect), pKa (Picric acid) = 0.3.",
+      "type": "mcq",
+      "subject": "Chemistry"
+    },
+    {
+      "question_number": 22,
+      "text": "Consider the given carbocations (i), (ii), (iii), (iv). The correct increasing order of stability of these carbocations is:",
+      "options": [
+        "(1) (i) < (ii) < (iii) < (iv)",
+        "(2) (iv) < (iii) < (ii) < (i)",
+        "(3) (ii) < (iii) < (iv) < (i)",
+        "(4) (iv) < (iii) < (i) < (ii)"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "Tropylium carbocation is most stable due to aromaticity. Correct order: (i) > (ii) > (iii) > (iv).",
+      "type": "mcq",
+      "subject": "Chemistry"
+    },
+    {
+      "question_number": 23,
+      "text": "In the given reaction sequence, find the compound R.",
+      "options": [
+        "(1) Option 1",
+        "(2) Option 2",
+        "(3) Option 3",
+        "(4) Option 4"
+      ],
+      "correct_index": 3,
+      "correct_integer": null,
+      "solution": "Compound R is formed via the given reaction sequence.",
+      "type": "mcq",
+      "subject": "Chemistry"
+    },
+    {
+      "question_number": 24,
+      "text": "Which of the following pair have square pyramidal shape?",
+      "options": [
+        "(1) $\\text{BrF}_5$, $\\text{XeOF}_4$",
+        "(2) $\\text{SbF}_5$, $\\text{BrF}_5$",
+        "(3) $\\text{PCl}_5$, $\\text{XeOF}_4$",
+        "(4) $\\text{PCl}_5$, $\\text{SbF}_5$"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Both $\\text{BrF}_5$ and $\\text{XeOF}_4$ have square pyramidal geometry.",
+      "type": "mcq",
+      "subject": "Chemistry"
+    },
+    {
+      "question_number": 25,
+      "text": "Which of the following set of quantum numbers have same energy?\n(a) $n = 2, l = 2, m = +1$\n(b) $n = 2, l = 1, m = -1$\n(c) $n = 3, l = 2, m = 0$\n(d) $n = 3, l = 2, m = 1$",
+      "options": [
+        "(1) a, b",
+        "(2) b, c",
+        "(3) c, d",
+        "(4) a, c"
+      ],
+      "correct_index": 2,
+      "correct_integer": null,
+      "solution": "Both (c) and (d) represent 3d orbitals which have the same energy (same $n+l$ value).",
+      "type": "mcq",
+      "subject": "Chemistry"
+    },
+    {
+      "question_number": 26,
+      "text": "Consider the given reaction. The major product $x$ and $y$ respectively are:",
+      "options": [
+        "(1) $\\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{ONO}$ & $\\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{CN}$",
+        "(2) $\\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{NO}_2$ & $\\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{CN}$",
+        "(3) $\\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{NO}_2$ & $\\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{NC}$",
+        "(4) $\\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{ONO}$ & $\\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{CN}$"
+      ],
+      "correct_index": 2,
+      "correct_integer": null,
+      "solution": "$\\text{CN}^-$ and $\\text{NO}_2^-$ are ambidentate nucleophiles. Since $\\text{AgCN}$ and $\\text{AgNO}_2$ are covalent, nitrogen donates electrons.",
+      "type": "mcq",
+      "subject": "Chemistry"
+    },
+    {
+      "question_number": 27,
+      "text": "Match the following column and choose the correct option.\n\nColumn-I\n(A) $\\text{H}_2\\text{O}_2 \\rightarrow \\text{H}_2\\text{O} + \\text{O}_2$\n(B) $\\text{NaH} \\rightarrow \\text{Na} + \\text{H}_2$\n(C) $\\text{CH}_4 + \\text{O}_2 \\rightarrow \\text{CO}_2 + \\text{H}_2\\text{O}$\n(D) $\\text{Fe} + \\text{CuSO}_4 \\rightarrow \\text{FeSO}_4 + \\text{Cu}$\n\nColumn-II\n(P) Combustion reaction\n(Q) Disproportionation reaction\n(R) Decomposition reaction\n(S) Displacement reaction",
+      "options": [
+        "(1) A–(Q), B–(P), C–(R), D–(S)",
+        "(2) A–(R), B–(Q), C–(S), D–(P)",
+        "(3) A–(Q), B–(R), C–(P), D–(S)",
+        "(4) A–(R), B–(Q), C–(P), D–(S)"
+      ],
+      "correct_index": 2,
+      "correct_integer": null,
+      "solution": "A–(Q), B–(R), C–(P), D–(S)",
+      "type": "mcq",
+      "subject": "Chemistry"
+    },
+    {
+      "question_number": 28,
+      "text": "Among the following the incorrect order of atomic radius is",
+      "options": [
+        "(1) $\\text{B} > \\text{Al} > \\text{Mg} > \\text{F}$",
+        "(2) $\\text{Al} > \\text{B} > \\text{N} > \\text{F}$",
+        "(3) $\\text{Mg} > \\text{Al} > \\text{Be} > \\text{O}$",
+        "(4) $\\text{Mg} > \\text{Be} > \\text{N} > \\text{F}$"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "As we move down the group size increases, whereas moving left to right across a period size decreases.",
+      "type": "mcq",
+      "subject": "Chemistry"
+    },
+    {
+      "question_number": 29,
+      "text": "In the reaction sequence:\n$\\text{A} \\xrightarrow{\\text{Conc. H}_2\\text{SO}_4, \\text{Heat}} \\text{B} \\xrightarrow{\\text{Reductive Ozonolysis}} \\text{C} \\xrightarrow{\\text{Aldol Condensation}}$\nIdentify Compound A.",
+      "options": [
+        "(1) Option 1",
+        "(2) Option 2",
+        "(3) Option 3",
+        "(4) Option 4"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Identify compound A based on dehydration followed by reductive ozonolysis and aldol condensation.",
+      "type": "mcq",
+      "subject": "Chemistry"
+    },
+    {
+      "question_number": 30,
+      "text": "Statement-I: Compound (2) shows faster alkaline hydrolysis compared to (1).\nStatement-II: Compound (1) shows substitution via neighbouring group participation.",
+      "options": [
+        "(1) Statement-I is correct and statement-II is incorrect",
+        "(2) Statement-I is incorrect and statement-II is correct",
+        "(3) Statement-I and statement-II both are correct",
+        "(4) Statement-I and statement-II both are incorrect"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "Statement-I is incorrect and Statement-II is correct.",
+      "type": "mcq",
+      "subject": "Chemistry"
+    },
+    {
+      "question_number": 31,
+      "text": "Which of the following has same energy in absence of electric and magnetic field for hydrogen atom?",
+      "options": [
+        "(1) 2s, 3p",
+        "(2) 3s, 2p",
+        "(3) 2s, 2p",
+        "(4) 3s, 4f"
+      ],
+      "correct_index": 2,
+      "correct_integer": null,
+      "solution": "For hydrogen atom, energy depends only on principal quantum number ($n$). Therefore, 2s and 2p have the same energy.",
+      "type": "mcq",
+      "subject": "Chemistry"
+    },
+    {
+      "question_number": 32,
+      "text": "Which of the following reaction(s)/test(s) can be used to distinguish acetaldehyde and acetone?\n(A) Iodoform Test\n(B) Cannizzaro\n(C) Aldol Condensation\n(D) Fehling’s Test\n(E) Tollen’s Test\n(F) Clemmensen’s Reduction",
+      "options": [
+        "(1) (D), (E) Only",
+        "(2) (A), (B), (C), (F) only",
+        "(3) (B), (C), (F) only",
+        "(4) (B), (C), (D), (E) only"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Acetaldehyde gives positive Fehling's and Tollen's test while acetone does not.",
+      "type": "mcq",
+      "subject": "Chemistry"
+    },
+    {
+      "question_number": 33,
+      "text": "Which of the following give violet colour in Borax bead test?",
+      "options": [
+        "(1) $\\text{Cr}^{3+}$",
+        "(2) $\\text{Mn}^{2+}$",
+        "(3) $\\text{Co}^{3+}$",
+        "(4) $\\text{Fe}^{2+}$"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "Colour of Borax bead in oxidising flame is violet for $\\text{Mn}^{2+}$.",
+      "type": "mcq",
+      "subject": "Chemistry"
+    },
+    {
+      "question_number": 34,
+      "text": "Which of the following compounds have the same number of lone pair on central atom as $\\text{ClF}_3$?",
+      "options": [
+        "(1) $\\text{I}_3^+$",
+        "(2) $\\text{XeF}_2$",
+        "(3) $\\text{BrF}_5$",
+        "(4) $\\text{I}_3^-$"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Number of lone pairs on central atom in $\\text{ClF}_3$ is 2. $\\text{I}_3^+$ also has 2 lone pairs on its central atom.",
+      "type": "mcq",
+      "subject": "Chemistry"
+    },
+    {
+      "question_number": 35,
+      "text": "Statement 1: For titration of oxalic acid using $\\text{KMnO}_4$, warming of acid solution is required whereas in case of Ferrous Ammonium Sulphate, it is done at room temperature.\n\nStatement 2: $\\text{Fe}^{2+}$ converts to $\\text{Fe}^{3+}$ during titration.",
+      "options": [
+        "(1) Both Statement 1 and statement 2 are correct",
+        "(2) Statement 1 is correct and statement 2 is incorrect",
+        "(3) Statement 1 is incorrect and statement 2 is correct",
+        "(4) Both Statement 1 and statement 2 both are incorrect"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "In case of oxalic acid warming of solution ($50^\\circ\\text{C}-60^\\circ\\text{C}$) is done as rate of reaction is very slow at room temperature. Also, $\\text{Fe}^{2+}$ oxidizes to $\\text{Fe}^{3+}$ during titration.",
+      "type": "mcq",
+      "subject": "Chemistry"
+    },
+    {
+      "question_number": 36,
+      "text": "$\\Delta_f H$ of $\\text{H}(g)$ is $222\\text{ kJ/mol}$, $\\Delta_f H$ of $\\text{O}(g)$ is $250\\text{ kJ/mol}$, $\\Delta_f H$ of $\\text{H}_2\\text{O}(g)$ is $-248\\text{ kJ/mol}$. What is the value of Bond Energy of $\\text{O}-\\text{H}$ bond in $\\text{H}_2\\text{O}$ in $\\text{kJ/mol}$?",
+      "options": [],
+      "correct_index": null,
+      "correct_integer": 471,
+      "solution": "$2\\text{B.E.}_{(\\text{O}-\\text{H})} = 2\\Delta_f H(\\text{H}, g) + \\Delta_f H(\\text{O}, g) - \\Delta_f H(\\text{H}_2\\text{O}, g) = 2(222) + 250 - (-248) = 942\\text{ kJ/mol}$. $\\text{B.E.}_{(\\text{O}-\\text{H})} = \\frac{942}{2} = 471\\text{ kJ/mol}$.",
+      "type": "numerical",
+      "subject": "Chemistry"
+    },
+    {
+      "question_number": 37,
+      "text": "$70\\%$ by mass solution of $\\text{HNO}_3$ is taken having density $1.41\\text{ g/mL}$. Calculate the molarity of solution.",
+      "options": [],
+      "correct_index": null,
+      "correct_integer": 16,
+      "solution": "$\\text{Molarity} = \\frac{10 \\times d \\times \\%}{M_w} = \\frac{10 \\times 1.41 \\times 70}{63} = 15.66\\text{ M} \\approx 16\\text{ M}$.",
+      "type": "numerical",
+      "subject": "Chemistry"
+    },
+    {
+      "question_number": 38,
+      "text": "$1\\text{ g}$ of a non-electrolyte solute ($\\text{MW} = 256\\text{ g/mol}$) is dissolved in $50\\text{ g}$ of solvent, freezing point of solution is lowered by $0.40\\text{ K}$. Calculate the Molal depression constant of solvent.",
+      "options": [],
+      "correct_index": null,
+      "correct_integer": 5,
+      "solution": "$\\Delta T_f = i \\cdot K_f \\cdot m \\implies 0.40 = 1 \\cdot K_f \\cdot \\frac{1 / 256}{50 / 1000} \\implies K_f = 5.12 \\approx 5\\text{ K kg mol}^{-1}$.",
+      "type": "numerical",
+      "subject": "Chemistry"
+    },
+    {
+      "question_number": 39,
+      "text": "A compound contains $14.4\\%$ carbon, $1.2\\%$ hydrogen and $84.4\\%$ chlorine, calculate empirical formula mass of compound.\n\n[Molar mass of $\\text{C} = 12$, $\\text{H} = 1$, $\\text{Cl} = 35.5$]",
+      "options": [],
+      "correct_index": null,
+      "correct_integer": 84,
+      "solution": "Moles ratio: $\\text{C} = \\frac{14.4}{12} = 1.2$, $\\text{H} = \\frac{1.2}{1} = 1.2$, $\\text{Cl} = \\frac{84.4}{35.5} = 2.38 \\approx 2.4$. Simplest molar ratio is $1:1:2$, giving empirical formula $\\text{CHCl}_2$. Empirical formula mass $= 12 + 1 + 2(35.5) = 84$.",
+      "type": "numerical",
+      "subject": "Chemistry"
+    },
+    {
+      "question_number": 40,
+      "text": "How many of the following ions have same value of spin only magnetic moment?\n\n$\\text{Ni}^{2+}$, $\\text{V}^{2+}$, $\\text{Ti}^{2+}$, $\\text{Sc}^{3+}$, $\\text{Ti}^{3+}$",
+      "options": [],
+      "correct_index": null,
+      "correct_integer": 2,
+      "solution": "$\\text{Ni}^{2+}$ ($3d^8$, $n = 2$) and $\\text{Ti}^{2+}$ ($3d^2$, $n = 2$) both have 2 unpaired electrons, so 2 ions have the same value of spin-only magnetic moment.",
+      "type": "numerical",
+      "subject": "Chemistry"
+    },
+    {
+      "question_number": 41,
+      "text": "If $\\int_{-\\pi/2}^{\\pi/2} \\frac{96}{\\pi^2} \\frac{x^2 \\cos^2 x}{1 + e^x} dx = \\alpha \\pi + \\frac{\\beta}{\\pi}$, then $(\\alpha + \\beta)^2$ is",
+      "options": [
+        "(1) 100",
+        "(2) 144",
+        "(3) 169",
+        "(4) 196"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Using $\\int_a^b f(x) dx = \\int_a^b f(a+b-x) dx$, $I = \\frac{48}{\\pi^2} \\int_0^{\\pi/2} x^2(1 + \\cos 2x) dx = 2\\pi - \\frac{12}{\\pi}$. Thus $\\alpha = 2, \\beta = -12$, giving $(\\alpha + \\beta)^2 = (2 - 12)^2 = 100$.",
+      "type": "mcq",
+      "subject": "Mathematics"
+    },
+    {
+      "question_number": 42,
+      "text": "Number of ways to form 5 digit numbers greater than 50000 with the use of digits 0, 1, 2, 3, 4, 5, 6, 7 such that sum of first and last digit is not more than 8, is equal to",
+      "options": [
+        "(1) 5119",
+        "(2) 5120",
+        "(3) 4607",
+        "(4) 4608"
+      ],
+      "correct_index": 2,
+      "correct_integer": null,
+      "solution": "Total ways $= 8^3(2 + 3 + 4) - 1 = 4608 - 1 = 4607$.",
+      "type": "mcq",
+      "subject": "Mathematics"
+    },
+    {
+      "question_number": 43,
+      "text": "If the image of the point $P(4, 4, 3)$ in the line $\\frac{x-1}{2} = \\frac{y-2}{1} = \\frac{z-1}{1}$ is $Q(\\alpha, \\beta, \\gamma)$, then $(\\alpha + \\beta + \\gamma)$ is equal to",
+      "options": [
+        "(1) 7",
+        "(2) \\frac{31}{3}",
+        "(3) \\frac{10}{3}",
+        "(4) 8"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "Foot of perpendicular $R\\left(\\frac{13}{3}, \\frac{11}{3}, \\frac{8}{3}\\right)$. Thus $Q\\left(\\frac{14}{3}, \\frac{10}{3}, \\frac{7}{3}\\right)$, and $\\alpha + \\beta + \\gamma = \\frac{31}{3}$.",
+      "type": "mcq",
+      "subject": "Mathematics"
+    },
+    {
+      "question_number": 44,
+      "text": "If $\\int_0^x t f(t) dt = x^2 f(x)$ and $f(2) = 3$, then $f(6)$ equals to",
+      "options": [
+        "(1) 1",
+        "(2) 6",
+        "(3) 3",
+        "(4) 2"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Differentiating both sides with respect to $x$: $x f(x) = x^2 f'(x) + 2x f(x) \\Rightarrow y x = c$. Given $f(2) = 3$, we find $c = 6$. So $y(6) = 1$.",
+      "type": "mcq",
+      "subject": "Mathematics"
+    },
+    {
+      "question_number": 45,
+      "text": "Let $R$ be a relation such that $R = \\{(x, y) : x, y \\in \\mathbb{Z} \\text{ and } (x + y) \\text{ is even}\\}$, then the relation $R$ is",
+      "options": [
+        "(1) Reflexive and symmetric but not transitive",
+        "(2) Reflexive and transitive but not symmetric",
+        "(3) Transitive only",
+        "(4) Equivalence relation"
+      ],
+      "correct_index": 3,
+      "correct_integer": null,
+      "solution": "$R$ is reflexive since $x+x = 2x$ is even, symmetric since $x+y = y+x$, and transitive since $x+y$ even and $y+z$ even implies $x+z$ even. Thus, $R$ is an equivalence relation.",
+      "type": "mcq",
+      "subject": "Mathematics"
+    },
+    {
+      "question_number": 46,
+      "text": "Evaluate $\\cos\\left(\\cos^{-1}\\left(-\\frac{1}{5}\\right) + \\sin^{-1}\\left(-\\frac{3}{5}\\right) + \\sin^{-1}\\left(-\\frac{5}{13}\\right) + \\sin^{-1}\\left(-\\frac{33}{65}\\right)\\right)$",
+      "options": [
+        "(1) 0",
+        "(2) 1",
+        "(3) \\frac{1}{2}",
+        "(4) 2"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Combining the inverse trigonometric terms yields an angle of $\\frac{\\pi}{2}$, so $\\cos\\left(\\frac{\\pi}{2}\\right) = 0$.",
+      "type": "mcq",
+      "subject": "Mathematics"
+    },
+    {
+      "question_number": 47,
+      "text": "The sum of squares of real roots of the equation $x^2 + |2x - 3| - 4 = 0$ is",
+      "options": [
+        "(1) 12 - 6\\sqrt{2}",
+        "(2) 3 - 2\\sqrt{2}",
+        "(3) 3 + 2\\sqrt{2}",
+        "(4) 6 + 2\\sqrt{2}"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Case (i) $x \\ge 3/2$: $x = 2\\sqrt{2} - 1$. Case (ii) $x < 3/2$: $x = 1 - \\sqrt{2}$. Sum of squares $= (2\\sqrt{2}-1)^2 + (1-\\sqrt{2})^2 = (9-4\\sqrt{2}) + (3-2\\sqrt{2}) = 12 - 6\\sqrt{2}$.",
+      "type": "mcq",
+      "subject": "Mathematics"
+    },
+    {
+      "question_number": 48,
+      "text": "Area enclosed by $\\{(x, y) : 0 \\le y \\le x^2 + 2|x| + 1, 0 \\le y \\le 2|x| + 1, |x| \\le 3\\}$ is equal to",
+      "options": [
+        "(1) 12",
+        "(2) 16",
+        "(3) 24",
+        "(4) 32"
+      ],
+      "correct_index": 2,
+      "correct_integer": null,
+      "solution": "Since $2|x|+1 \\le x^2+2|x|+1$, the required area is $2 \\int_0^3 (2x + 1) dx = 2 [x^2 + x]_0^3 = 24$.",
+      "type": "mcq",
+      "subject": "Mathematics"
+    },
+    {
+      "question_number": 49,
+      "text": "There are 2 bad oranges mixed with 7 good oranges and 2 oranges are drawn at random. Let $X$ be the number of bad oranges. The variance of $X$ is",
+      "options": [
+        "(1) $\\frac{91}{206}$",
+        "(2) $\\frac{49}{162}$",
+        "(3) $\\frac{108}{63}$",
+        "(4) $\\frac{268}{51}$"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "Variance of $X = E(X^2) - (E(X))^2 = \\frac{49}{162}$.",
+      "type": "mcq",
+      "subject": "Mathematics"
+    },
+    {
+      "question_number": 50,
+      "text": "Let $f(x) = \\frac{x^2}{1+x^2}$, then $\\sum_{k=1}^{81} f\\left(\\frac{k}{82}\\right)$ is equal to",
+      "options": [
+        "(1) $\\frac{81}{2}$",
+        "(2) $41$",
+        "(3) $41\\sqrt{2}$",
+        "(4) $81$"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "$f(x) + f(1-x) = 1$. Combining terms $f\\left(\\frac{k}{82}\\right) + f\\left(\\frac{82-k}{82}\\right) = 1$ for $k=1, \\dots, 40$ and $f\\left(\\frac{41}{82}\\right) = \\frac{1}{2}$. Sum = $40 + \\frac{1}{2} = \\frac{81}{2}$.",
+      "type": "mcq",
+      "subject": "Mathematics"
+    },
+    {
+      "question_number": 51,
+      "text": "If $2a_{n+2} = 5a_{n+1} - 3a_n$, where $n = 0, 1, 2, \\dots$. If $a_0 = 3$ and $a_1 = 4$, then the value of $\\sum_{k=1}^{100} a_k$ is equal to",
+      "options": [
+        "(1) $3a_{100} - 91$",
+        "(2) $3a_{99} - 91$",
+        "(3) $3a_{100} + 91$",
+        "(4) $3a_{99} + 91$"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Solving the characteristic equation $2t^2 - 5t + 3 = 0 \\implies t = 1, \\frac{3}{2}$. $a_n = 1 + 2\\left(\\frac{3}{2}\\right)^n$. $\\sum_{k=1}^{100} a_k = 3a_{100} - 91$.",
+      "type": "mcq",
+      "subject": "Mathematics"
+    },
+    {
+      "question_number": 52,
+      "text": "Let $k_1$ and $k_2$ be two randomly selected natural numbers. The probability that $(i)^{k_1} + (i)^{k_2}$ is non-zero is (where $i = \\sqrt{-1}$)",
+      "options": [
+        "(1) $\\frac{1}{4}$",
+        "(2) $\\frac{3}{4}$",
+        "(3) $\\frac{1}{2}$",
+        "(4) $\\frac{5}{8}$"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "The sum $(i)^{k_1} + (i)^{k_2}$ is zero when $(r_1, r_2) \\in \\{(2,0), (0,2), (1,3), (3,1)\\}$, which has 4 pairs out of 16. Probability of zero is $\\frac{4}{16} = \\frac{1}{4}$, so non-zero probability is $1 - \\frac{1}{4} = \\frac{3}{4}$.",
+      "type": "mcq",
+      "subject": "Mathematics"
+    },
+    {
+      "question_number": 53,
+      "text": "In $\\Delta ABC$, $A(4\\sin\\theta, 4\\cos\\theta)$, $B(-2\\cos\\theta, 0)$ and $C(2, 2\\sin\\theta)$. If locus of centroid is $(3x - 2)^2 + (3y)^2 = \\alpha$, then $\\alpha$ is",
+      "options": [
+        "(1) $20$",
+        "(2) $4$",
+        "(3) $16$",
+        "(4) $12$"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "$3h - 2 = 4\\sin\\theta - 2\\cos\\theta$ and $3k = 4\\cos\\theta + 2\\sin\\theta$. Squaring and adding gives $(3h - 2)^2 + (3k)^2 = 20$. Hence $\\alpha = 20$.",
+      "type": "mcq",
+      "subject": "Mathematics"
+    },
+    {
+      "question_number": 54,
+      "text": "Let $E_1: \\frac{x^2}{9} + \\frac{y^2}{4} = 1$ be an ellipse and a series of ellipses $E_i$ are drawn such that $E_{i+1}$ has same centre, eccentricity as $E_i$ and $E_{i+1}$'s major axis is minor axis of $E_i$. If $S_i$ be the area of $E_i$, then $\\frac{5}{\\pi} \\sum_{i=1}^{\\infty} S_i$ is equal to",
+      "options": [
+        "(1) $63$",
+        "(2) $54$",
+        "(3) $45$",
+        "(4) $72$"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "$S_1 = 6\\pi$. $S_{i+1} / S_i = \\frac{4}{9}$. $\\sum_{i=1}^{\\infty} S_i = \\frac{6\\pi}{1 - 4/9} = \\frac{54\\pi}{5}$. Therefore, $\\frac{5}{\\pi} \\sum_{i=1}^{\\infty} S_i = 54$.",
+      "type": "mcq",
+      "subject": "Mathematics"
+    },
+    {
+      "question_number": 55,
+      "text": "Let $3|z_1| = |z_2| = 12$ and $\\arg(z_1) - \\arg(z_2) = \\frac{\\pi}{6}$, then the area of triangle with vertices $z_1, z_2$ and origin is (in sq. units)",
+      "options": [
+        "(1) $12$",
+        "(2) $6$",
+        "(3) $6\\sqrt{3}$",
+        "(4) $12\\sqrt{3}$"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Area of $\\Delta OAB = \\frac{1}{2} |z_1| |z_2| \\sin\\left(\\frac{\\pi}{6}\\right) = \\frac{1}{2} \\times 4 \\times 12 \\times \\frac{1}{2} = 12$.",
+      "type": "mcq",
+      "subject": "Mathematics"
+    },
+    {
+      "question_number": 56,
+      "text": "Let $f(x) = \\begin{cases} 2x^2 + 5, & x \\ge 2 \\\\ \\min(1 + x + [x], 1 + 2[x]), & 0 \\le x < 2 \\\\ x, & x < 0 \\end{cases}$. If $\\alpha$ is the number of points of discontinuity and $\\beta$ is the number of points of non-differentiability, then $(\\alpha + \\beta)$ is equal to (where $[.]$ denotes greatest integer function)",
+      "options": [
+        "(1) $6$",
+        "(2) $5$",
+        "(3) $4$",
+        "(4) $8$"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Number of points of discontinuity $\\alpha = 3$ and number of points of non-differentiability $\\beta = 3$. Thus $\\alpha + \\beta = 6$.",
+      "type": "mcq",
+      "subject": "Mathematics"
+    },
+    {
+      "question_number": 57,
+      "text": "If $\\alpha = \\sum_{n=1}^{100} \\frac{n}{n^4 + n^2 + 1}$, then distance of point $(12, 3)$ from the line $x - y + \\alpha = 0$ is",
+      "options": [
+        "(1) $\\frac{109}{2\\sqrt{2}}$",
+        "(2) $55$",
+        "(3) $54$",
+        "(4) $109$"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Calculating $\\alpha = \\frac{1}{2} \\sum_{n=1}^{100} \\left(\\frac{1}{n^2-n+1} - \\frac{1}{n^2+n+1}\\right)$. The perpendicular distance from $(12, 3)$ gives $\\frac{109}{2\\sqrt{2}}$.",
+      "type": "mcq",
+      "subject": "Mathematics"
+    },
+    {
+      "question_number": 58,
+      "text": "In an AP, $T_{25} = \\frac{1}{20}$ and $T_{20} = \\frac{1}{25}$, then $\\sum_{r=1}^{m} T_r$ equals",
+      "options": [],
+      "correct_index": null,
+      "correct_integer": 126,
+      "solution": "From $T_{25} = a + 24d = \\frac{1}{20}$ and $T_{20} = a + 19d = \\frac{1}{25}$, solving simultaneously gives $a = \\frac{1}{500}$ and $d = \\frac{1}{500}$, yielding $m = 20$. Evaluating the summation gives $126$.",
+      "type": "numerical",
+      "subject": "Mathematics"
+    }
+  ]
 }
