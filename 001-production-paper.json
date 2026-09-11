@@ -1,0 +1,4529 @@
+{
+  "schema_version": "3.0.0",
+  "pipeline": {
+    "stage": "stage1",
+    "mode": "spatial_column_aware",
+    "latex_source": "raw_pdf_text",
+    "latex_repair": "stage2_vlm"
+  },
+  "paper": {
+    "paper_id": "001-production-paper",
+    "filename": "001.pdf",
+    "sha256": "68244d2e8e84a4d245fdfa5125d6a93028ed5df8a8ca97dde1cbe0eecd3d9e7a",
+    "page_count": 8
+  },
+  "questions": [
+    {
+      "question_id": "001-production-paper-Q01",
+      "number": 1,
+      "subject": "Mathematics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "1. Let [•] denote the greatest integer function. If the domain\nof the function\nis\n, then\nis equal to:\n(A) 6\n(B) 8\n(C) 9\n(D) 4\nf(x) = cos\n\n−1 (\n3\n4x+2[x])\n[α, β]\n12(α + β)",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q01.png",
+        "page": 1,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          109.88720703125,
+          294.44,
+          197.30294799804688
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 1,
+        "start_bbox": [
+          31.374862670898438,
+          121.88720703125,
+          293.4207763671875,
+          134.99285888671875
+        ],
+        "question_crop": "question_crops/Q01.png"
+      },
+      "raw": {
+        "text": "1. Let [•] denote the greatest integer function. If the domain\nof the function\nis\n, then\nis equal to:\n(A) 6\n(B) 8\n(C) 9\n(D) 4\nf(x) = cos\n​\n−1 (\n3\n4x+2[x])\n[α, β]\n12(α + β)",
+        "normalized_text": "1. Let [•] denote the greatest integer function. If the domain\nof the function\nis\n, then\nis equal to:\n(A) 6\n(B) 8\n(C) 9\n(D) 4\nf(x) = cos\n\n−1 (\n3\n4x+2[x])\n[α, β]\n12(α + β)"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q02",
+      "number": 2,
+      "subject": "Mathematics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "2. If the set of all solutions of\nis\n, then (\n) is equal to:\n(A) 9\n(B) 18\n(C) 36\n(D) 72\nx + x −9\n =\n2\n∣x∣+\nx −9\n\n2\n[α, β] ∪[γ, ∞)\nα +\n2\nβ +\n2\nγ2",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q02.png",
+        "page": 1,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          178.73939514160156,
+          294.44,
+          249.0504608154297
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 1,
+        "start_bbox": [
+          31.374862670898438,
+          192.3213348388672,
+          157.08648681640625,
+          205.42697143554688
+        ],
+        "question_crop": "question_crops/Q02.png"
+      },
+      "raw": {
+        "text": "2. If the set of all solutions of\nis\n, then (\n) is equal to:\n(A) 9\n(B) 18\n(C) 36\n(D) 72\n​x + x −9\n​ =\n2\n∣x∣+\n​x −9\n​\n2\n[α, β] ∪[γ, ∞)\nα +\n2\nβ +\n2\nγ2",
+        "normalized_text": "2. If the set of all solutions of\nis\n, then (\n) is equal to:\n(A) 9\n(B) 18\n(C) 36\n(D) 72\nx + x −9\n =\n2\n∣x∣+\nx −9\n\n2\n[α, β] ∪[γ, ∞)\nα +\n2\nβ +\n2\nγ2"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q03",
+      "number": 3,
+      "subject": "Mathematics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "3. Let be a complex number such that\nand\narg\n. Then\nis equal to:\n(A) 9\n(B) 4\n(C) 5\n(D) 1\nz\n∣z + 2∣= ∣z −2∣\n =\n( z−i\nz+3)\n4\nπ\n∣z∣2",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q03.png",
+        "page": 1,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          231.943603515625,
+          294.44,
+          301.5166931152344
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 1,
+        "start_bbox": [
+          31.374862670898438,
+          244.06884765625,
+          200.78118896484375,
+          257.17449951171875
+        ],
+        "question_crop": "question_crops/Q03.png"
+      },
+      "raw": {
+        "text": "3. Let be a complex number such that\nand\narg\n. Then\nis equal to:\n(A) 9\n(B) 4\n(C) 5\n(D) 1\nz\n∣z + 2∣= ∣z −2∣\n​ =\n( z−i\nz+3)\n​4\nπ\n∣z∣2",
+        "normalized_text": "3. Let be a complex number such that\nand\narg\n. Then\nis equal to:\n(A) 9\n(B) 4\n(C) 5\n(D) 1\nz\n∣z + 2∣= ∣z −2∣\n =\n( z−i\nz+3)\n4\nπ\n∣z∣2"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q04",
+      "number": 4,
+      "subject": "Mathematics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "4. The number of functions\n, which\nare not onto, is:\n(A) 48\n(B) 45\n(C) 51\n(D) 35\nf : {1, 2, 3, 4} →{a, b, c}",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q04.png",
+        "page": 1,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          284.4098205566406,
+          294.44,
+          352.5455017089844
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 1,
+        "start_bbox": [
+          31.374862670898438,
+          296.5350646972656,
+          148.79957580566406,
+          309.6407165527344
+        ],
+        "question_crop": "question_crops/Q04.png"
+      },
+      "raw": {
+        "text": "4. The number of functions\n, which\nare not onto, is:\n(A) 48\n(B) 45\n(C) 51\n(D) 35\nf : {1, 2, 3, 4} →{a, b, c}",
+        "normalized_text": "4. The number of functions\n, which\nare not onto, is:\n(A) 48\n(B) 45\n(C) 51\n(D) 35\nf : {1, 2, 3, 4} →{a, b, c}"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q05",
+      "number": 5,
+      "subject": "Mathematics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "5. Let\nand\n(A) 20\n(B) 17\n(C) 21\n(D) 19\nS = A =\n\n\n: a, b, c, d ∈{0, 1, 2, 3, 4}\n{\n[ a\nc\nb\nd ]\nA −4 A + 3I = 0\n2\n}",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q05.png",
+        "page": 1,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          335.6132507324219,
+          294.44,
+          415.7924499511719
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 1,
+        "start_bbox": [
+          31.374862670898438,
+          349.0013122558594,
+          57.35396194458008,
+          364.4540100097656
+        ],
+        "question_crop": "question_crops/Q05.png"
+      },
+      "raw": {
+        "text": "5. Let\nand\n(A) 20\n(B) 17\n(C) 21\n(D) 19\nS = A =\n​\n​\n: a, b, c, d ∈{0, 1, 2, 3, 4}\n{\n[ a\nc\nb\nd ]\nA −4 A + 3I = 0\n2\n}",
+        "normalized_text": "5. Let\nand\n(A) 20\n(B) 17\n(C) 21\n(D) 19\nS = A =\n\n\n: a, b, c, d ∈{0, 1, 2, 3, 4}\n{\n[ a\nc\nb\nd ]\nA −4 A + 3I = 0\n2\n}"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q06",
+      "number": 6,
+      "subject": "Mathematics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "6.\nLet\n. Then the sum of all elements of\nthe matrix\n(A) 3\n(B) 4\n(C) -4\n(D) -3\nA =\n\n\n\n\n\n1\n−2\n1\n1\n0\n3\n2\n1\n5",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q06.png",
+        "page": 1,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          397.2481689453125,
+          294.44,
+          491.257568359375
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 1,
+        "start_bbox": [
+          31.374862670898438,
+          412.2482604980469,
+          39.287017822265625,
+          423.9164733886719
+        ],
+        "question_crop": "question_crops/Q06.png"
+      },
+      "raw": {
+        "text": "6.\nLet\n. Then the sum of all elements of\nthe matrix\n(A) 3\n(B) 4\n(C) -4\n(D) -3\nA =\n​\n​\n​\n​\n​\n1\n−2\n1\n1\n0\n3\n2\n1\n5",
+        "normalized_text": "6.\nLet\n. Then the sum of all elements of\nthe matrix\n(A) 3\n(B) 4\n(C) -4\n(D) -3\nA =\n\n\n\n\n\n1\n−2\n1\n1\n0\n3\n2\n1\n5"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q07",
+      "number": 7,
+      "subject": "Mathematics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "7. The first term of an A.P. of 30 non-negative terms is\n. If\nthe sum of this A.P. is the cube of its last term, then its\ncommon difference is:\n(A)\n(B)\n(C)\n(D)\n\n3\n10\n\n87\n5\n\n83\n25\n\n29\n15\n\n29\n5",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q07.png",
+        "page": 1,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          472.69403076171875,
+          294.44,
+          579.38623046875
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 1,
+        "start_bbox": [
+          31.374862670898438,
+          486.2759704589844,
+          267.63031005859375,
+          499.3816223144531
+        ],
+        "question_crop": "question_crops/Q07.png"
+      },
+      "raw": {
+        "text": "7. The first term of an A.P. of 30 non-negative terms is\n. If\nthe sum of this A.P. is the cube of its last term, then its\ncommon difference is:\n(A)\n(B)\n(C)\n(D)\n​\n3\n10\n​\n87\n5\n​\n83\n25\n​\n29\n15\n​\n29\n5",
+        "normalized_text": "7. The first term of an A.P. of 30 non-negative terms is\n. If\nthe sum of this A.P. is the cube of its last term, then its\ncommon difference is:\n(A)\n(B)\n(C)\n(D)\n\n3\n10\n\n87\n5\n\n83\n25\n\n29\n15\n\n29\n5"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q08",
+      "number": 8,
+      "subject": "Mathematics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "8. The number of ways, of forming a queue of 4 boys and 3\ngirls such that all the girls are not together, is:\n(A) 5040\n(B) 3050\n(C) 3410\n(D) 4320",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q08.png",
+        "page": 1,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          563.3966674804688,
+          294.44,
+          630.6883544921875
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 1,
+        "start_bbox": [
+          31.374862670898438,
+          575.3966674804688,
+          293.42144775390625,
+          588.5023193359375
+        ],
+        "question_crop": "question_crops/Q08.png"
+      },
+      "raw": {
+        "text": "8. The number of ways, of forming a queue of 4 boys and 3\ngirls such that all the girls are not together, is:\n(A) 5040\n(B) 3050\n(C) 3410\n(D) 4320",
+        "normalized_text": "8. The number of ways, of forming a queue of 4 boys and 3\ngirls such that all the girls are not together, is:\n(A) 5040\n(B) 3050\n(C) 3410\n(D) 4320"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q09",
+      "number": 9,
+      "subject": "Mathematics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "9. Let the smallest value of\n, for which the coefficient\nof\nin\n, is\nfor some\n, be . Then the value\nof\nis:\n(A) 10\n(B) 11\n(C) 12\n(D) 13\nk ∈N\nx3\n(1 + x) +\n3\n(1 + x) +\n4\n(1 + x) +\n5\n… + (1 + x)\n+\n99\n(1 +\nkx)\n, x =\n100\n0\n43n +\n\nC\n\n(\n4\n101) (100\n3)\nn ∈ N\np\np + n",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q09.png",
+        "page": 1,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          613.58154296875,
+          294.44,
+          737.0582885742188
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 1,
+        "start_bbox": [
+          31.374862670898438,
+          625.706787109375,
+          150.8932342529297,
+          638.8124389648438
+        ],
+        "question_crop": "question_crops/Q09.png"
+      },
+      "raw": {
+        "text": "9. Let the smallest value of\n, for which the coefficient\nof\nin\n, is\nfor some\n, be . Then the value\nof\nis:\n(A) 10\n(B) 11\n(C) 12\n(D) 13\nk ∈N\nx3\n(1 + x) +\n3\n(1 + x) +\n4\n(1 + x) +\n5\n… + (1 + x)\n+\n99\n(1 +\nkx)\n, x =\n100\n0\n43n +\n​\nC\n​\n(\n4\n101) (100\n3)\nn ∈ N\np\np + n",
+        "normalized_text": "9. Let the smallest value of\n, for which the coefficient\nof\nin\n, is\nfor some\n, be . Then the value\nof\nis:\n(A) 10\n(B) 11\n(C) 12\n(D) 13\nk ∈N\nx3\n(1 + x) +\n3\n(1 + x) +\n4\n(1 + x) +\n5\n… + (1 + x)\n+\n99\n(1 +\nkx)\n, x =\n100\n0\n43n +\n\nC\n\n(\n4\n101) (100\n3)\nn ∈ N\np\np + n"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q10",
+      "number": 10,
+      "subject": "Mathematics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "10. Suppose that the mean and median of the non-negative\nnumbers\n, are 40 and 21 , re-\nspectively. If the\nmean deviation about the median is 26 , then\nis equal\nto:\n21, 8, 17, a, 51, 103, b, 13, 67, (a > b)\n2a",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q10.png",
+        "page": 1,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          720.07666015625,
+          294.44,
+          821.86669921875
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 1,
+        "start_bbox": [
+          31.374862670898438,
+          732.07666015625,
+          293.41644287109375,
+          745.1823120117188
+        ],
+        "question_crop": "question_crops/Q10.png"
+      },
+      "raw": {
+        "text": "10. Suppose that the mean and median of the non-negative\nnumbers\n, are 40 and 21 , re‐\nspectively. If the\nmean deviation about the median is 26 , then\nis equal\nto:\n21, 8, 17, a, 51, 103, b, 13, 67, (a > b)\n2a",
+        "normalized_text": "10. Suppose that the mean and median of the non-negative\nnumbers\n, are 40 and 21 , re-\nspectively. If the\nmean deviation about the median is 26 , then\nis equal\nto:\n21, 8, 17, a, 51, 103, b, 13, 67, (a > b)\n2a"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q11",
+      "number": 11,
+      "subject": "Mathematics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "11. Let the line\nintersect the lines\nand\nat\nthe points A and B , respectively. Let the bisector of th\nobtuse angle between the\nlines\nand\nintersect the line\nat the point C . Then\nis equal to:\n(A)\n(B)\n(C)\n(D)\nL\n :\n1\nx + 3 = 0\nL\n :\n2\nx −\ny = 0\nL\n :\n3\n3x + y = 0\nL\n2\nL\n3\nL\n1\nBC :\n2\nAC2\n5 : 1\n1 : 5\n2 : 3\n3 : 2",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q11.png",
+        "page": 1,
+        "column": 1,
+        "bbox": [
+          306.44,
+          128.44857788085938,
+          582.9599609375,
+          251.0746612548828
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 1,
+        "start_bbox": [
+          309.71990966796875,
+          140.57382202148438,
+          379.04425048828125,
+          153.67945861816406
+        ],
+        "question_crop": "question_crops/Q11.png"
+      },
+      "raw": {
+        "text": "11. Let the line\nintersect the lines\nand\nat\nthe points A and B , respectively. Let the bisector of th\nobtuse angle between the\nlines\nand\nintersect the line\nat the point C . Then\nis equal to:\n(A)\n(B)\n(C)\n(D)\nL\n​ :\n1\nx + 3 = 0\nL\n​ :\n2\nx −\ny = 0\nL\n​ :\n3\n3x + y = 0\nL\n​2\nL\n​3\nL\n​1\nBC :\n2\nAC2\n5 : 1\n1 : 5\n2 : 3\n3 : 2",
+        "normalized_text": "11. Let the line\nintersect the lines\nand\nat\nthe points A and B , respectively. Let the bisector of th\nobtuse angle between the\nlines\nand\nintersect the line\nat the point C . Then\nis equal to:\n(A)\n(B)\n(C)\n(D)\nL\n :\n1\nx + 3 = 0\nL\n :\n2\nx −\ny = 0\nL\n :\n3\n3x + y = 0\nL\n2\nL\n3\nL\n1\nBC :\n2\nAC2\n5 : 1\n1 : 5\n2 : 3\n3 : 2"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q12",
+      "number": 12,
+      "subject": "Mathematics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "12. Let the vertex\nof a triangle\nbe\n, and th\nmid-point of the side\nbe\n. If the centroid of this triangle is\nand it\ncircumcenter is\n, then\nis equal to:\n(A) 309\n(B) 403\n(C) 497\n(D) 524\nA\nABC\n(1, 2)\nAB\n(5, −1)\n(3, 4)\n(α, β)\n21(α + β)",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q12.png",
+        "page": 1,
+        "column": 1,
+        "bbox": [
+          306.44,
+          234.09974670410156,
+          579.6594848632812,
+          343.9208984375
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 1,
+        "start_bbox": [
+          309.71990966796875,
+          246.22499084472656,
+          389.3357238769531,
+          259.33062744140625
+        ],
+        "question_crop": "question_crops/Q12.png"
+      },
+      "raw": {
+        "text": "12. Let the vertex\nof a triangle\nbe\n, and th\nmid-point of the side\nbe\n. If the centroid of this triangle is\nand it\ncircumcenter is\n, then\nis equal to:\n(A) 309\n(B) 403\n(C) 497\n(D) 524\nA\nABC\n(1, 2)\nAB\n(5, −1)\n(3, 4)\n(α, β)\n21(α + β)",
+        "normalized_text": "12. Let the vertex\nof a triangle\nbe\n, and th\nmid-point of the side\nbe\n. If the centroid of this triangle is\nand it\ncircumcenter is\n, then\nis equal to:\n(A) 309\n(B) 403\n(C) 497\n(D) 524\nA\nABC\n(1, 2)\nAB\n(5, −1)\n(3, 4)\n(α, β)\n21(α + β)"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q13",
+      "number": 13,
+      "subject": "Mathematics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "13. Suppose that two chords, drawn from the point\non\nthe circle\nare bisected by the -axis. If th\nother ends of these chords\nare and , and the mid point of the line segment\ni\n, then\nis equal to:\n(A) 1\n(B) 3\n(C) 4\n(D) 6\n(1, 2)\nx +\n2\ny +\n2\nx −3y = 0\ny\nR\nS\nRS\n(α, β)\n6(α + β)",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q13.png",
+        "page": 1,
+        "column": 1,
+        "bbox": [
+          306.44,
+          326.8140563964844,
+          582.9599609375,
+          448.8533630371094
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 1,
+        "start_bbox": [
+          309.71990966796875,
+          338.9393005371094,
+          530.7977905273438,
+          352.0449523925781
+        ],
+        "question_crop": "question_crops/Q13.png"
+      },
+      "raw": {
+        "text": "13. Suppose that two chords, drawn from the point\non\nthe circle\nare bisected by the -axis. If th\nother ends of these chords\nare and , and the mid point of the line segment\ni\n, then\nis equal to:\n(A) 1\n(B) 3\n(C) 4\n(D) 6\n(1, 2)\nx +\n2\ny +\n2\nx −3y = 0\ny\nR\nS\nRS\n(α, β)\n6(α + β)",
+        "normalized_text": "13. Suppose that two chords, drawn from the point\non\nthe circle\nare bisected by the -axis. If th\nother ends of these chords\nare and , and the mid point of the line segment\ni\n, then\nis equal to:\n(A) 1\n(B) 3\n(C) 4\n(D) 6\n(1, 2)\nx +\n2\ny +\n2\nx −3y = 0\ny\nR\nS\nRS\n(α, β)\n6(α + β)"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q14",
+      "number": 14,
+      "subject": "Mathematics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "14. A line with direction ratios\nintersects the line\nan\nat the points P and Q , respectively. If th\nlength of the line\nsegment PQ is , then\nis equal to:\n(A) 1024\n(B) 1014\n(C) 1104\n(D) 1204\n1, −1, 2\n =\n2\nx\n =\n3\ny\n\n3\nz+1\n =\n−1\nx+1\n =\n1\ny−2\n4\nz\nα\n225α2",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q14.png",
+        "page": 1,
+        "column": 1,
+        "bbox": [
+          306.44,
+          431.74652099609375,
+          579.6583251953125,
+          541.5676879882812
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 1,
+        "start_bbox": [
+          309.71990966796875,
+          443.87176513671875,
+          447.56683349609375,
+          456.9773864746094
+        ],
+        "question_crop": "question_crops/Q14.png"
+      },
+      "raw": {
+        "text": "14. A line with direction ratios\nintersects the line\nan\nat the points P and Q , respectively. If th\nlength of the line\nsegment PQ is , then\nis equal to:\n(A) 1024\n(B) 1014\n(C) 1104\n(D) 1204\n1, −1, 2\n​ =\n2\nx\n​ =\n3\ny\n​\n3\nz+1\n​ =\n−1\nx+1\n​ =\n1\ny−2\n​4\nz\nα\n225α2",
+        "normalized_text": "14. A line with direction ratios\nintersects the line\nan\nat the points P and Q , respectively. If th\nlength of the line\nsegment PQ is , then\nis equal to:\n(A) 1024\n(B) 1014\n(C) 1104\n(D) 1204\n1, −1, 2\n =\n2\nx\n =\n3\ny\n\n3\nz+1\n =\n−1\nx+1\n =\n1\ny−2\n4\nz\nα\n225α2"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q15",
+      "number": 15,
+      "subject": "Mathematics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "15. The square of the distance of the point\nfrom\nthe line\nalong the line\nis equa\nto:\n(A) 3\n(B) 6\n(C) 8\n(D) 12\n(−2, −8, 6)\n =\n1\nx−1\n =\n2\ny−1\n\n−1\nz\n =\n1\nx+5\n =\n−1\ny+5\n2\nz",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q15.png",
+        "page": 1,
+        "column": 1,
+        "bbox": [
+          306.44,
+          524.4608154296875,
+          582.9599609375,
+          619.9076538085938
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 1,
+        "start_bbox": [
+          309.71990966796875,
+          536.5860595703125,
+          494.5474548339844,
+          549.6917114257812
+        ],
+        "question_crop": "question_crops/Q15.png"
+      },
+      "raw": {
+        "text": "15. The square of the distance of the point\nfrom\nthe line\nalong the line\nis equa\nto:\n(A) 3\n(B) 6\n(C) 8\n(D) 12\n(−2, −8, 6)\n​ =\n1\nx−1\n​ =\n2\ny−1\n​\n−1\nz\n​ =\n1\nx+5\n​ =\n−1\ny+5\n​2\nz",
+        "normalized_text": "15. The square of the distance of the point\nfrom\nthe line\nalong the line\nis equa\nto:\n(A) 3\n(B) 6\n(C) 8\n(D) 12\n(−2, −8, 6)\n =\n1\nx−1\n =\n2\ny−1\n\n−1\nz\n =\n1\nx+5\n =\n−1\ny+5\n2\nz"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q16",
+      "number": 16,
+      "subject": "Mathematics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "16. If\n, then\nat\nis equal to:\n(A) 3\n(B) -1\n(C) 1\n(D) 2\ny = tan\n +\n−1 ( 4 cos x+3 sin x\n3 cos x−4 sin x)\n2 tan\n\n−1 ( 1+\n\n1−x2\nx\n)\nd\nd\nx =\n\n2\n3",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q16.png",
+        "page": 1,
+        "column": 1,
+        "bbox": [
+          306.44,
+          603.500244140625,
+          578.868896484375,
+          691.0604858398438
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 1,
+        "start_bbox": [
+          309.71990966796875,
+          616.3634643554688,
+          333.9414367675781,
+          628.6493530273438
+        ],
+        "question_crop": "question_crops/Q16.png"
+      },
+      "raw": {
+        "text": "16. If\n, then\nat\nis equal to:\n(A) 3\n(B) -1\n(C) 1\n(D) 2\ny = tan\n​ +\n−1 ( 4 cos x+3 sin x\n3 cos x−4 sin x)\n2 tan\n​\n−1 ( 1+\n​\n1−x2\nx\n)\nd\nd\nx =\n​\n2\n​3",
+        "normalized_text": "16. If\n, then\nat\nis equal to:\n(A) 3\n(B) -1\n(C) 1\n(D) 2\ny = tan\n +\n−1 ( 4 cos x+3 sin x\n3 cos x−4 sin x)\n2 tan\n\n−1 ( 1+\n\n1−x2\nx\n)\nd\nd\nx =\n\n2\n3"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q17",
+      "number": 17,
+      "subject": "Mathematics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "17. Let be a real polynomial of degree such that\n, for all\n. If\n, then\ni\nequal to:\n(A) 42\n(B) 46\n(C) 56\n(D) 66\nf\nn\nf(x) =\nf (x)f (x)\n′\n′′\nx ∈R\nf(0) = 0\n36 f (2) + f (2) +\nf(x)dx\n( ′\n′′\n∫0\n2\n)",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q17.png",
+        "page": 1,
+        "column": 1,
+        "bbox": [
+          306.44,
+          673.95361328125,
+          580.8499755859375,
+          774.4314575195312
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 1,
+        "start_bbox": [
+          309.71990966796875,
+          686.078857421875,
+          536.7418823242188,
+          699.1845092773438
+        ],
+        "question_crop": "question_crops/Q17.png"
+      },
+      "raw": {
+        "text": "17. Let be a real polynomial of degree such that\n, for all\n. If\n, then\ni\nequal to:\n(A) 42\n(B) 46\n(C) 56\n(D) 66\nf\nn\nf(x) =\nf (x)f (x)\n′\n′′\nx ∈R\nf(0) = 0\n36 f (2) + f (2) +\n​f(x)dx\n( ′\n′′\n∫0\n2\n)",
+        "normalized_text": "17. Let be a real polynomial of degree such that\n, for all\n. If\n, then\ni\nequal to:\n(A) 42\n(B) 46\n(C) 56\n(D) 66\nf\nn\nf(x) =\nf (x)f (x)\n′\n′′\nx ∈R\nf(0) = 0\n36 f (2) + f (2) +\nf(x)dx\n( ′\n′′\n∫0\n2\n)"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q18",
+      "number": 18,
+      "subject": "Mathematics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "18. The area of the region\nis:\n{(x, y) : y ≤π −∣x∣, y ≤\n∣x sin x∣, y ≥0}",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q18.png",
+        "page": 1,
+        "column": 1,
+        "bbox": [
+          306.44,
+          757.3246459960938,
+          580.8499755859375,
+          807.3604736328125
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 1,
+        "start_bbox": [
+          309.71990966796875,
+          769.4498901367188,
+          451.0209655761719,
+          782.5555419921875
+        ],
+        "question_crop": "question_crops/Q18.png"
+      },
+      "raw": {
+        "text": "18. The area of the region\nis:\n{(x, y) : y ≤π −∣x∣, y ≤\n∣x sin x∣, y ≥0}",
+        "normalized_text": "18. The area of the region\nis:\n{(x, y) : y ≤π −∣x∣, y ≤\n∣x sin x∣, y ≥0}"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q19",
+      "number": 19,
+      "subject": "Mathematics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "19. Let\n, where\nis the greatest integer function. Then\nequals:\n(A) 1\n(B) 2\n(C) 4\n(D) 8\n(∣sin x∣+\n∫−2\n2\n[x sin x])dx = 2(3 −cos 2) + β\n[⋅]\nβ sin\n\n( 2\nβ )",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q19.png",
+        "page": 2,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          93.21223449707031,
+          297.305,
+          171.42919921875
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 2,
+        "start_bbox": [
+          31.374862670898438,
+          108.08563232421875,
+          62.62080001831055,
+          120.61852264404297
+        ],
+        "question_crop": "question_crops/Q19.png"
+      },
+      "raw": {
+        "text": "19. Let\n, where\nis the greatest integer function. Then\nequals:\n(A) 1\n(B) 2\n(C) 4\n(D) 8\n​(∣sin x∣+\n∫−2\n2\n[x sin x])dx = 2(3 −cos 2) + β\n[⋅]\nβ sin\n​\n( 2\nβ )",
+        "normalized_text": "19. Let\n, where\nis the greatest integer function. Then\nequals:\n(A) 1\n(B) 2\n(C) 4\n(D) 8\n(∣sin x∣+\n∫−2\n2\n[x sin x])dx = 2(3 −cos 2) + β\n[⋅]\nβ sin\n\n( 2\nβ )"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q20",
+      "number": 20,
+      "subject": "Mathematics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "20. Let\nbe the solution of the differential equation\n.\nThen\nis equal to\nMathematics Section B\ny = y(x)\n =\ndx\ndy\n1 + x + x\n1 −y + y\n, y(0) =\n(\n2) (\n2)\n2\n1\n(2y(1) −1)",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q20.png",
+        "page": 2,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          154.32232666015625,
+          297.305,
+          249.97747802734375
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 2,
+        "start_bbox": [
+          31.374862670898438,
+          166.44757080078125,
+          62.62080001831055,
+          179.55322265625
+        ],
+        "question_crop": "question_crops/Q20.png"
+      },
+      "raw": {
+        "text": "20. Let\nbe the solution of the differential equation\n.\nThen\nis equal to\nMathematics Section B\ny = y(x)\n​ =\ndx\ndy\n1 + x + x\n1 −y + y\n, y(0) =\n(\n2) (\n2)\n​2\n1\n(2y(1) −1)",
+        "normalized_text": "20. Let\nbe the solution of the differential equation\n.\nThen\nis equal to\nMathematics Section B\ny = y(x)\n =\ndx\ndy\n1 + x + x\n1 −y + y\n, y(0) =\n(\n2) (\n2)\n2\n1\n(2y(1) −1)"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q21",
+      "number": 21,
+      "subject": "Mathematics",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "21. A coin is tossed 8 times. If the probability that exactly 4\nheads appear in the first six tosses and exactly 3 heads\nappear in the last five tosses is , then\nis equal to\n.\np\n96p\n____",
+      "options": {},
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q21.png",
+        "page": 2,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          239.2559814453125,
+          297.305,
+          315.04034423828125
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 2,
+        "start_bbox": [
+          31.374862670898438,
+          251.2559814453125,
+          293.4168701171875,
+          264.36163330078125
+        ],
+        "question_crop": "question_crops/Q21.png"
+      },
+      "raw": {
+        "text": "21. A coin is tossed 8 times. If the probability that exactly 4\nheads appear in the first six tosses and exactly 3 heads\nappear in the last five tosses is , then\nis equal to\n.\np\n96p\n____",
+        "normalized_text": "21. A coin is tossed 8 times. If the probability that exactly 4\nheads appear in the first six tosses and exactly 3 heads\nappear in the last five tosses is , then\nis equal to\n.\np\n96p\n____"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q22",
+      "number": 22,
+      "subject": "Mathematics",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "22. Consider the parabola\nand the ellipse\n. Let the line segment joining the points of in-\ntersection of P and E , be their latus rectums. If the eccen-\ntricity of E is , then\nis equal to\n.\nP : y =\n2\n4kx\nE :\n +\na2\nx2\n =\nb2\ny2\n1\ne\ne +\n2\n2\n2\n____",
+      "options": {},
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q22.png",
+        "page": 2,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          303.07720947265625,
+          297.305,
+          381.88092041015625
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 2,
+        "start_bbox": [
+          31.374862670898438,
+          315.94036865234375,
+          144.64581298828125,
+          329.04608154296875
+        ],
+        "question_crop": "question_crops/Q22.png"
+      },
+      "raw": {
+        "text": "22. Consider the parabola\nand the ellipse\n. Let the line segment joining the points of in‐\ntersection of P and E , be their latus rectums. If the eccen‐\ntricity of E is , then\nis equal to\n.\nP : y =\n2\n4kx\nE :\n​ +\na2\nx2\n​ =\nb2\ny2\n1\ne\ne +\n2\n2\n​2\n____",
+        "normalized_text": "22. Consider the parabola\nand the ellipse\n. Let the line segment joining the points of in-\ntersection of P and E , be their latus rectums. If the eccen-\ntricity of E is , then\nis equal to\n.\nP : y =\n2\n4kx\nE :\n +\na2\nx2\n =\nb2\ny2\n1\ne\ne +\n2\n2\n2\n____"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q23",
+      "number": 23,
+      "subject": "Mathematics",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "23. If\nand\n,\nthen is equal to\n.\nPhysics Section A\nA =\n +\ncos 9∘\nsin 3∘\n +\ncos 27∘\nsin 9∘\n\ncos 81∘\nsin 27∘\nB = tan 81 −\n∘\ntan 3∘\n\nA\nB\n____",
+      "options": {},
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q23.png",
+        "page": 2,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          368.2257385253906,
+          297.305,
+          452.6552734375
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 2,
+        "start_bbox": [
+          31.374862670898438,
+          382.78094482421875,
+          55.59640884399414,
+          395.88653564453125
+        ],
+        "question_crop": "question_crops/Q23.png"
+      },
+      "raw": {
+        "text": "23. If\nand\n,\nthen is equal to\n.\nPhysics Section A\nA =\n​ +\ncos 9∘\nsin 3∘\n​ +\ncos 27∘\nsin 9∘\n​\ncos 81∘\nsin 27∘\nB = tan 81 −\n∘\ntan 3∘\n​\nA\nB\n____",
+        "normalized_text": "23. If\nand\n,\nthen is equal to\n.\nPhysics Section A\nA =\n +\ncos 9∘\nsin 3∘\n +\ncos 27∘\nsin 9∘\n\ncos 81∘\nsin 27∘\nB = tan 81 −\n∘\ntan 3∘\n\nA\nB\n____"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q24",
+      "number": 24,
+      "subject": "Mathematics",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "24. Let\nand\n, wher\n, for some\n. Then the value of\nis\n =\na\nk\ntan θ\n\n+\n(\nk) i^\nj^\n =\nb\nk\n−\ni^\ncot θ\n\n\n(\nk) j^\nθ\n =\nk\n\n2 +1\nn\n2\nπ\nk−1\nn ∈N, n > 5\n\n\n\n\n\n∑k=1\nn\nb\nk\n2\n\n\n∑k=1\nn ∣a\nk∣\n2",
+      "options": {},
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q24.png",
+        "page": 2,
+        "column": 1,
+        "bbox": [
+          309.305,
+          245.59918212890625,
+          579.0978393554688,
+          328.7004089355469
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 2,
+        "start_bbox": [
+          309.71990966796875,
+          258.44317626953125,
+          340.9658203125,
+          271.43646240234375
+        ],
+        "question_crop": "question_crops/Q24.png"
+      },
+      "raw": {
+        "text": "24. Let\nand\n, wher\n, for some\n. Then the value of\nis\n​ =\na\n​k\ntan θ\n​\n+\n(\nk) i^\n​j^\n​ =\nb\n​k\n−\ni^\ncot θ\n​\n​\n(\nk) j^\nθ\n​ =\nk\n​\n2 +1\nn\n2\nπ\nk−1\nn ∈N, n > 5\n​\n​\n​\n​\n​\n∑k=1\nn\nb\n​k\n2\n​\n​\n∑k=1\nn ∣a\n​k∣\n2",
+        "normalized_text": "24. Let\nand\n, wher\n, for some\n. Then the value of\nis\n =\na\nk\ntan θ\n\n+\n(\nk) i^\nj^\n =\nb\nk\n−\ni^\ncot θ\n\n\n(\nk) j^\nθ\n =\nk\n\n2 +1\nn\n2\nπ\nk−1\nn ∈N, n > 5\n\n\n\n\n\n∑k=1\nn\nb\nk\n2\n\n\n∑k=1\nn ∣a\nk∣\n2"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q25",
+      "number": 25,
+      "subject": "Mathematics",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "25. The number of points, at which the function\n, i\nnot differentiable, is\n.\nf(x) =\nmax 6x, 2 + 3x\n+\n{\n2}\n∣x −1∣cos\nx −\n\n, x ∈\n2\n4\n1\n(−π, π)\n____",
+      "options": {},
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q25.png",
+        "page": 2,
+        "column": 1,
+        "bbox": [
+          309.305,
+          320.34564208984375,
+          580.8499755859375,
+          384.03704833984375
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 2,
+        "start_bbox": [
+          309.71990966796875,
+          332.47088623046875,
+          534.4671630859375,
+          345.57647705078125
+        ],
+        "question_crop": "question_crops/Q25.png"
+      },
+      "raw": {
+        "text": "25. The number of points, at which the function\n, i\nnot differentiable, is\n.\nf(x) =\nmax 6x, 2 + 3x\n+\n{\n2}\n∣x −1∣cos\n​x −\n​\n​, x ∈\n2\n4\n1\n(−π, π)\n____",
+        "normalized_text": "25. The number of points, at which the function\n, i\nnot differentiable, is\n.\nf(x) =\nmax 6x, 2 + 3x\n+\n{\n2}\n∣x −1∣cos\nx −\n\n, x ∈\n2\n4\n1\n(−π, π)\n____"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q26",
+      "number": 26,
+      "subject": "Physics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "26. In a screw gauge when the circular scale is given five\ncomplete rotations it moves linearly by 2.5 mm . If the\ncircular scale has 100 divisions, the least count of screw\ngauge is\nmm.\n(A)\n(B)\n(C)\n(D)\n____\n1 × 10−2\n1 × 10−3\n5 × 10−2\n5 × 10−3",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q26.png",
+        "page": 2,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          441.93377685546875,
+          297.305,
+          557.2474975585938
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 2,
+        "start_bbox": [
+          31.374862670898438,
+          453.93377685546875,
+          293.4266357421875,
+          467.03936767578125
+        ],
+        "question_crop": "question_crops/Q26.png"
+      },
+      "raw": {
+        "text": "26. In a screw gauge when the circular scale is given five\ncomplete rotations it moves linearly by 2.5 mm . If the\ncircular scale has 100 divisions, the least count of screw\ngauge is\nmm.\n(A)\n(B)\n(C)\n(D)\n____\n1 × 10−2\n1 × 10−3\n5 × 10−2\n5 × 10−3",
+        "normalized_text": "26. In a screw gauge when the circular scale is given five\ncomplete rotations it moves linearly by 2.5 mm . If the\ncircular scale has 100 divisions, the least count of screw\ngauge is\nmm.\n(A)\n(B)\n(C)\n(D)\n____\n1 × 10−2\n1 × 10−3\n5 × 10−2\n5 × 10−3"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q27",
+      "number": 27,
+      "subject": "Physics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "27. The increase in the pressure required to decrease the vol-\nume\nof water is\n. The percentage\ndecrease in the volume is\n. (Bulk modulus of water\n.)\n(A)\n(B)\n(C)\n(D)\n(ΔV )\n6.3 × 10 N/m\n7\n2\n____\n= 2.1 × 10 N/m\n9\n2\n2%\n3%\n6%\n4%",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q27.png",
+        "page": 2,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          543.9913940429688,
+          297.305,
+          639.8997192382812
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 2,
+        "start_bbox": [
+          31.374862670898438,
+          555.9913940429688,
+          293.4189147949219,
+          569.0969848632812
+        ],
+        "question_crop": "question_crops/Q27.png"
+      },
+      "raw": {
+        "text": "27. The increase in the pressure required to decrease the vol‐\nume\nof water is\n. The percentage\ndecrease in the volume is\n. (Bulk modulus of water\n.)\n(A)\n(B)\n(C)\n(D)\n(ΔV )\n6.3 × 10 N/m\n7\n2\n____\n= 2.1 × 10 N/m\n9\n2\n2%\n3%\n6%\n4%",
+        "normalized_text": "27. The increase in the pressure required to decrease the vol-\nume\nof water is\n. The percentage\ndecrease in the volume is\n. (Bulk modulus of water\n.)\n(A)\n(B)\n(C)\n(D)\n(ΔV )\n6.3 × 10 N/m\n7\n2\n____\n= 2.1 × 10 N/m\n9\n2\n2%\n3%\n6%\n4%"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q28",
+      "number": 28,
+      "subject": "Physics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "28. The time taken by a block of mass\nto slide down from\nthe highest point to the\nlowest point on a rough inclined plane is\nmore com-\npared to the time taken\nby the same block on identical inclined smooth plane.\nBoth inclined planes are at\nwith the horizontal. The coefficient of kinetic friction\nbetween the rough inclined surface and block is\n.\n(A)\n(B)\n(C)\n(D)\nm\n50%\n45∘\n____\n3/4\n2/3\n5/9\n4/9",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q28.png",
+        "page": 2,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          623.0501098632812,
+          297.305,
+          771.4247436523438
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 2,
+        "start_bbox": [
+          31.374862670898438,
+          635.0501098632812,
+          197.04026794433594,
+          648.1557006835938
+        ],
+        "question_crop": "question_crops/Q28.png"
+      },
+      "raw": {
+        "text": "28. The time taken by a block of mass\nto slide down from\nthe highest point to the\nlowest point on a rough inclined plane is\nmore com‐\npared to the time taken\nby the same block on identical inclined smooth plane.\nBoth inclined planes are at\nwith the horizontal. The coefficient of kinetic friction\nbetween the rough inclined surface and block is\n.\n(A)\n(B)\n(C)\n(D)\nm\n50%\n45∘\n____\n3/4\n2/3\n5/9\n4/9",
+        "normalized_text": "28. The time taken by a block of mass\nto slide down from\nthe highest point to the\nlowest point on a rough inclined plane is\nmore com-\npared to the time taken\nby the same block on identical inclined smooth plane.\nBoth inclined planes are at\nwith the horizontal. The coefficient of kinetic friction\nbetween the rough inclined surface and block is\n.\n(A)\n(B)\n(C)\n(D)\nm\n50%\n45∘\n____\n3/4\n2/3\n5/9\n4/9"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q29",
+      "number": 29,
+      "subject": "Physics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "29. Two nuclei of mass number 3 combine with another nu\ncleus of mass number 4 to yield a nucleus of mass num\nber 10. If the binding energy per nucleon for the mas\nnumbers 3, 4 and 10 are\nand 6.1 MeV\nrespectively, then in the process,\nMeV .\n(A) 6.9\n(B) 7.9\n(C) 2.2\n(D) 4.3\n5.6MeV, 7.4MeV\nΔMc =\n2\n____",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q29.png",
+        "page": 2,
+        "column": 1,
+        "bbox": [
+          309.305,
+          441.93377685546875,
+          580.2509765625,
+          549.4735717773438
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 2,
+        "start_bbox": [
+          309.71990966796875,
+          453.93377685546875,
+          568.2470092773438,
+          467.03936767578125
+        ],
+        "question_crop": "question_crops/Q29.png"
+      },
+      "raw": {
+        "text": "29. Two nuclei of mass number 3 combine with another nu\ncleus of mass number 4 to yield a nucleus of mass num\nber 10. If the binding energy per nucleon for the mas\nnumbers 3, 4 and 10 are\nand 6.1 MeV\nrespectively, then in the process,\nMeV .\n(A) 6.9\n(B) 7.9\n(C) 2.2\n(D) 4.3\n5.6MeV, 7.4MeV\nΔMc =\n2\n____",
+        "normalized_text": "29. Two nuclei of mass number 3 combine with another nu\ncleus of mass number 4 to yield a nucleus of mass num\nber 10. If the binding energy per nucleon for the mas\nnumbers 3, 4 and 10 are\nand 6.1 MeV\nrespectively, then in the process,\nMeV .\n(A) 6.9\n(B) 7.9\n(C) 2.2\n(D) 4.3\n5.6MeV, 7.4MeV\nΔMc =\n2\n____"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q30",
+      "number": 30,
+      "subject": "Physics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "30. A solid sphere of mass\nand radius\nis divided into\ntwo unequal parts. The smaller part having mass\ni\nconverted into a sphere of radius and the larger part i\nconverted into a circular disc of thickness and radius\n. If\nis moment of inertia of a sphere having radius\nabout an axis through its centre and\nis the moment o\ninertia of a disc about its diameter, the ratio of their mo\nment of inertia\n.\n(A) 35\n(B) 70\n(C) 140\n(D) 210\nM\nR\nM/8\nr\nt\n2R\nI\n1\nI\n2\nI\n/I\n =\n2\n1\n____",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q30.png",
+        "page": 2,
+        "column": 1,
+        "bbox": [
+          309.305,
+          532.4918823242188,
+          582.9599609375,
+          682.4358520507812
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 2,
+        "start_bbox": [
+          309.71990966796875,
+          544.4918823242188,
+          428.3736572265625,
+          557.5975952148438
+        ],
+        "question_crop": "question_crops/Q30.png"
+      },
+      "raw": {
+        "text": "30. A solid sphere of mass\nand radius\nis divided into\ntwo unequal parts. The smaller part having mass\ni\nconverted into a sphere of radius and the larger part i\nconverted into a circular disc of thickness and radius\n. If\nis moment of inertia of a sphere having radius\nabout an axis through its centre and\nis the moment o\ninertia of a disc about its diameter, the ratio of their mo\nment of inertia\n.\n(A) 35\n(B) 70\n(C) 140\n(D) 210\nM\nR\nM/8\nr\nt\n2R\nI\n​1\nI\n​2\nI\n​/I\n​ =\n2\n1\n____",
+        "normalized_text": "30. A solid sphere of mass\nand radius\nis divided into\ntwo unequal parts. The smaller part having mass\ni\nconverted into a sphere of radius and the larger part i\nconverted into a circular disc of thickness and radius\n. If\nis moment of inertia of a sphere having radius\nabout an axis through its centre and\nis the moment o\ninertia of a disc about its diameter, the ratio of their mo\nment of inertia\n.\n(A) 35\n(B) 70\n(C) 140\n(D) 210\nM\nR\nM/8\nr\nt\n2R\nI\n1\nI\n2\nI\n/I\n =\n2\n1\n____"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q31",
+      "number": 31,
+      "subject": "Physics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "31. The two projectiles are projected with the same initial ve\nlocities at the\nand\nwith respect to the horizontal\nThe ratio of their ranges is\n. The value of is\n(A)\n(B)\n(C)\n(D)\n15∘\n30∘\n1 : x\nx\n2\n3\n2\n3\n\n2\n1",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q31.png",
+        "page": 2,
+        "column": 1,
+        "bbox": [
+          309.305,
+          665.4542846679688,
+          581.1365966796875,
+          772.720703125
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 2,
+        "start_bbox": [
+          309.71990966796875,
+          677.4542846679688,
+          568.2473754882812,
+          690.5598754882812
+        ],
+        "question_crop": "question_crops/Q31.png"
+      },
+      "raw": {
+        "text": "31. The two projectiles are projected with the same initial ve\nlocities at the\nand\nwith respect to the horizontal\nThe ratio of their ranges is\n. The value of is\n(A)\n(B)\n(C)\n(D)\n15∘\n30∘\n1 : x\nx\n​2\n​3\n2\n​3\n​\n​2\n1",
+        "normalized_text": "31. The two projectiles are projected with the same initial ve\nlocities at the\nand\nwith respect to the horizontal\nThe ratio of their ranges is\n. The value of is\n(A)\n(B)\n(C)\n(D)\n15∘\n30∘\n1 : x\nx\n2\n3\n2\n3\n\n2\n1"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q32",
+      "number": 32,
+      "subject": "Physics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "32. The graph shows variation of stopping potential\nwith\nthe frequency of the incident radiation for three photo-\nsensitive metals\nand\n. Which metal will give\nout electrons with greater kinetic energy, for the same\nwavelength of incident radiation?\n(A)\n(B)\n(C)\n(D) All the metals will give out photo electrons with\nsame kinetic energies.\nV\n0\nv\nX\n, X\n\n1\n2\nX\n3\nX\n1\nX\n2\nX\n3",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [
+        {
+          "asset_id": "p03_20318d62225f",
+          "role": "question_figure",
+          "path": "images/p03_20318d62225f.png",
+          "page": 3,
+          "bbox": [
+            48.6240348815918,
+            129.1202392578125,
+            231.89649963378906,
+            244.11471557617188
+          ],
+          "width": 462,
+          "height": 290,
+          "mapped_question": 32
+        }
+      ],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q32.png",
+        "page": 3,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          50.95257568359375,
+          298.21000000000004,
+          349.67059326171875
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 3,
+        "start_bbox": [
+          31.374862670898438,
+          62.95257568359375,
+          255.64447021484375,
+          76.05815887451172
+        ],
+        "question_crop": "question_crops/Q32.png"
+      },
+      "raw": {
+        "text": "32. The graph shows variation of stopping potential\nwith\nthe frequency of the incident radiation for three photo‐\nsensitive metals\nand\n. Which metal will give\nout electrons with greater kinetic energy, for the same\nwavelength of incident radiation?\n(A)\n(B)\n(C)\n(D) All the metals will give out photo electrons with\nsame kinetic energies.\nV\n​0\nv\nX\n​, X\n​\n1\n2\nX\n​3\nX\n​1\nX\n​2\nX\n​3",
+        "normalized_text": "32. The graph shows variation of stopping potential\nwith\nthe frequency of the incident radiation for three photo-\nsensitive metals\nand\n. Which metal will give\nout electrons with greater kinetic energy, for the same\nwavelength of incident radiation?\n(A)\n(B)\n(C)\n(D) All the metals will give out photo electrons with\nsame kinetic energies.\nV\n0\nv\nX\n, X\n\n1\n2\nX\n3\nX\n1\nX\n2\nX\n3"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 1,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q33",
+      "number": 33,
+      "subject": "Physics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "33. A slit of width is illuminated by light of wavelength .\nThe linear separation between\nand\nminima in the\ndiffraction pattern produced on a screen placed at a dis-\ntance from the slit system is\n.\n(A)\n(B)\n(C)\n(D)\na\nλ\n1st\n3rd\nD\n____\n\na\nDλ\n1.5\n\na\nDλ\n2\n\na\nDλ\n3\n\na\nDλ",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q33.png",
+        "page": 3,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          339.87615966796875,
+          298.21000000000004,
+          467.1043701171875
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 3,
+        "start_bbox": [
+          31.374862670898438,
+          351.87615966796875,
+          293.4203186035156,
+          364.98187255859375
+        ],
+        "question_crop": "question_crops/Q33.png"
+      },
+      "raw": {
+        "text": "33. A slit of width is illuminated by light of wavelength .\nThe linear separation between\nand\nminima in the\ndiffraction pattern produced on a screen placed at a dis‐\ntance from the slit system is\n.\n(A)\n(B)\n(C)\n(D)\na\nλ\n1st\n3rd\nD\n____\n​\na\nDλ\n1.5\n​\na\nDλ\n2\n​\na\nDλ\n3\n​\na\nDλ",
+        "normalized_text": "33. A slit of width is illuminated by light of wavelength .\nThe linear separation between\nand\nminima in the\ndiffraction pattern produced on a screen placed at a dis-\ntance from the slit system is\n.\n(A)\n(B)\n(C)\n(D)\na\nλ\n1st\n3rd\nD\n____\n\na\nDλ\n1.5\n\na\nDλ\n2\n\na\nDλ\n3\n\na\nDλ"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q34",
+      "number": 34,
+      "subject": "Physics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "34. A string\nof length 0.314 m and Young's modulus\nis connected to another string of length and\nYoung's modulus both twice of those of\n. This series\ncombination of strings is then suspended from a rigid\nsupport and its free end is fixed to a load of mass 0.8 kg .\nThe net change in length of the combination is\nmm.\n(radius of both the strings is 0.2 mm and acceleration due\nto gravity\n) (Mass of both strings is to be ne-\nglected as compared to the mass of load)\n(A) 3\n(B) 2\n(C) 1.9\n(D) 1\nA\n2 ×\n10 N/m\n10\n2\nB\nA\n____\n= 10 m/s2",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q34.png",
+        "page": 3,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          451.15179443359375,
+          298.21000000000004,
+          612.7205200195312
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 3,
+        "start_bbox": [
+          31.374862670898438,
+          463.27703857421875,
+          83.21231079101562,
+          476.38275146484375
+        ],
+        "question_crop": "question_crops/Q34.png"
+      },
+      "raw": {
+        "text": "34. A string\nof length 0.314 m and Young's modulus\nis connected to another string of length and\nYoung's modulus both twice of those of\n. This series\ncombination of strings is then suspended from a rigid\nsupport and its free end is fixed to a load of mass 0.8 kg .\nThe net change in length of the combination is\nmm.\n(radius of both the strings is 0.2 mm and acceleration due\nto gravity\n) (Mass of both strings is to be ne‐\nglected as compared to the mass of load)\n(A) 3\n(B) 2\n(C) 1.9\n(D) 1\nA\n2 ×\n10 N/m\n10\n2\nB\nA\n____\n= 10 m/s2",
+        "normalized_text": "34. A string\nof length 0.314 m and Young's modulus\nis connected to another string of length and\nYoung's modulus both twice of those of\n. This series\ncombination of strings is then suspended from a rigid\nsupport and its free end is fixed to a load of mass 0.8 kg .\nThe net change in length of the combination is\nmm.\n(radius of both the strings is 0.2 mm and acceleration due\nto gravity\n) (Mass of both strings is to be ne-\nglected as compared to the mass of load)\n(A) 3\n(B) 2\n(C) 1.9\n(D) 1\nA\n2 ×\n10 N/m\n10\n2\nB\nA\n____\n= 10 m/s2"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q35",
+      "number": 35,
+      "subject": "Physics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "35. One gas of\nmole of molecules at temperature\n, vol-\nume\n, and pressure\n, and another gas of\nmole of\nmolecules at temperature\n, volume\n, and pressure\n, are mixed resulting in pressure\nand volume\nof the\nmixture. The temperature of the mixture is\n.\n(A)\n(B)\n(C)\n(D)\nn\n1\nT\n1\nV\n1\nP\n1\nn\n2\nT\n2\nV\n2\nP\n2\nP\nV\n____\nT\n + T\n /2\n(\n1\n2)\nT\n T\nPV/ T\nP\n V\n + T\nP\n V\n\n1\n2\n(\n2\n1\n1\n1\n2\n2)\nT\nP\n V\n + T\nP\n V\n / T\n T\nPV\n(\n2\n1\n1\n1\n2\n2)\n(\n1\n2\n)\nT\n −T\n /2\n∣\n1\n2∣",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q35.png",
+        "page": 3,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          595.7388305664062,
+          298.21000000000004,
+          769.1270751953125
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 3,
+        "start_bbox": [
+          31.374862670898438,
+          607.7388305664062,
+          95.4469223022461,
+          620.8445434570312
+        ],
+        "question_crop": "question_crops/Q35.png"
+      },
+      "raw": {
+        "text": "35. One gas of\nmole of molecules at temperature\n, vol‐\nume\n, and pressure\n, and another gas of\nmole of\nmolecules at temperature\n, volume\n, and pressure\n, are mixed resulting in pressure\nand volume\nof the\nmixture. The temperature of the mixture is\n.\n(A)\n(B)\n(C)\n(D)\nn\n​1\nT\n​1\nV\n​1\nP\n​1\nn\n​2\nT\n​2\nV\n​2\nP\n​2\nP\nV\n____\nT\n​ + T\n​ /2\n(\n1\n2)\nT\n​ T\n​PV/ T\n​P\n​ V\n​ + T\n​P\n​ V\n​\n1\n2\n(\n2\n1\n1\n1\n2\n2)\nT\n​P\n​ V\n​ + T\n​P\n​ V\n​ / T\n​ T\n​PV\n(\n2\n1\n1\n1\n2\n2)\n(\n1\n2\n)\nT\n​ −T\n​ /2\n∣\n1\n2∣",
+        "normalized_text": "35. One gas of\nmole of molecules at temperature\n, vol-\nume\n, and pressure\n, and another gas of\nmole of\nmolecules at temperature\n, volume\n, and pressure\n, are mixed resulting in pressure\nand volume\nof the\nmixture. The temperature of the mixture is\n.\n(A)\n(B)\n(C)\n(D)\nn\n1\nT\n1\nV\n1\nP\n1\nn\n2\nT\n2\nV\n2\nP\n2\nP\nV\n____\nT\n + T\n /2\n(\n1\n2)\nT\n T\nPV/ T\nP\n V\n + T\nP\n V\n\n1\n2\n(\n2\n1\n1\n1\n2\n2)\nT\nP\n V\n + T\nP\n V\n / T\n T\nPV\n(\n2\n1\n1\n1\n2\n2)\n(\n1\n2\n)\nT\n −T\n /2\n∣\n1\n2∣"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q36",
+      "number": 36,
+      "subject": "Physics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "36. An ideal gas undergoes a process maintaining relation be\ntween pressure\nand volume\nas\n, where\nand\nare constants. If two\nsamples\nand\n(two moles each) with initial volume\nand\nrespectively undergo above mentioned\nprocess and attain same pressure, then the difference a\nthe temperatures of these samples,\nis\ngas constant)\n(A)\n(B)\n(C)\n(D)\n(P)\n(V )\nP =\nP\n 1 +\n\no (\n( V\nV\no )\n2)\n−1\nP\no\nVo\nA\nB\nV\no\n3V\no\nT\n −\nB\nT\n\nA\n____\nR =\n\n8R\n9P\nV\n\no\no\n\n10R\n11P\nV\n\no\no\n\n6R\n7P\nV\n\no\no\n\n11R\n13P\nV\n\n0\n0",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q36.png",
+        "page": 3,
+        "column": 1,
+        "bbox": [
+          310.21000000000004,
+          50.95257568359375,
+          582.9599609375,
+          273.21337890625
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 3,
+        "start_bbox": [
+          309.71990966796875,
+          62.95257568359375,
+          568.2506713867188,
+          76.05815887451172
+        ],
+        "question_crop": "question_crops/Q36.png"
+      },
+      "raw": {
+        "text": "36. An ideal gas undergoes a process maintaining relation be\ntween pressure\nand volume\nas\n, where\nand\nare constants. If two\nsamples\nand\n(two moles each) with initial volume\nand\nrespectively undergo above mentioned\nprocess and attain same pressure, then the difference a\nthe temperatures of these samples,\nis\ngas constant)\n(A)\n(B)\n(C)\n(D)\n(P)\n(V )\nP =\nP\n​ 1 +\n​\no (\n( V\nV\n​o )\n2)\n−1\nP\n​o\nVo\nA\nB\nV\n​o\n3V\n​o\nT\n​ −\nB\nT\n​\nA\n____\nR =\n​\n8R\n9P\n​V\n​\no\no\n​\n10R\n11P\n​V\n​\no\no\n​\n6R\n7P\n​V\n​\no\no\n​\n11R\n13P\n​V\n​\n0\n0",
+        "normalized_text": "36. An ideal gas undergoes a process maintaining relation be\ntween pressure\nand volume\nas\n, where\nand\nare constants. If two\nsamples\nand\n(two moles each) with initial volume\nand\nrespectively undergo above mentioned\nprocess and attain same pressure, then the difference a\nthe temperatures of these samples,\nis\ngas constant)\n(A)\n(B)\n(C)\n(D)\n(P)\n(V )\nP =\nP\n 1 +\n\no (\n( V\nV\no )\n2)\n−1\nP\no\nVo\nA\nB\nV\no\n3V\no\nT\n −\nB\nT\n\nA\n____\nR =\n\n8R\n9P\nV\n\no\no\n\n10R\n11P\nV\n\no\no\n\n6R\n7P\nV\n\no\no\n\n11R\n13P\nV\n\n0\n0"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q37",
+      "number": 37,
+      "subject": "Physics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "37. A voltmeter with internal resistance of\ncan be used to\nmeasure upto 20 V.\nIn order to increase its measuring range to 30 V , the re\nquired modification is to\n.\n(A) connect resistor of\n, in series with voltmeter.\n(B) connect resistor of\n, in parallel to voltmeter.\n(C) connect a resistor of\nin series with voltmeter.\n(D) connect resistor of\nin parallel to voltmeter.\nxΩ\n____\nΩ\n2\nx\nΩ\n2\nx\nxΩ\n2xΩ",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q37.png",
+        "page": 3,
+        "column": 1,
+        "bbox": [
+          310.21000000000004,
+          260.69219970703125,
+          582.9599609375,
+          418.53533935546875
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 3,
+        "start_bbox": [
+          309.71990966796875,
+          272.81744384765625,
+          491.3641357421875,
+          285.92315673828125
+        ],
+        "question_crop": "question_crops/Q37.png"
+      },
+      "raw": {
+        "text": "37. A voltmeter with internal resistance of\ncan be used to\nmeasure upto 20 V.\nIn order to increase its measuring range to 30 V , the re\nquired modification is to\n.\n(A) connect resistor of\n, in series with voltmeter.\n(B) connect resistor of\n, in parallel to voltmeter.\n(C) connect a resistor of\nin series with voltmeter.\n(D) connect resistor of\nin parallel to voltmeter.\nxΩ\n____\n​Ω\n2\nx\n​Ω\n2\nx\nxΩ\n2xΩ",
+        "normalized_text": "37. A voltmeter with internal resistance of\ncan be used to\nmeasure upto 20 V.\nIn order to increase its measuring range to 30 V , the re\nquired modification is to\n.\n(A) connect resistor of\n, in series with voltmeter.\n(B) connect resistor of\n, in parallel to voltmeter.\n(C) connect a resistor of\nin series with voltmeter.\n(D) connect resistor of\nin parallel to voltmeter.\nxΩ\n____\nΩ\n2\nx\nΩ\n2\nx\nxΩ\n2xΩ"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q38",
+      "number": 38,
+      "subject": "Physics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "38. Two 4 bits binary numbers,\nand\nar\ngiven in the inputs of a\nlogic circuit shown in figure below. The output\nwil\nbe :\n(A)\n(B)\n(C)\n(D)\nA = 1101\nB = 1010\n(Y )\nY =\n1101\nY =\n0010\nY =\n0111\nY =\n1000",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [
+        {
+          "asset_id": "p03_968c17ba2e3b",
+          "role": "question_figure",
+          "path": "images/p03_968c17ba2e3b.png",
+          "page": 3,
+          "bbox": [
+            326.7669372558594,
+            473.3848876953125,
+            494.2276611328125,
+            506.44580078125
+          ],
+          "width": 460,
+          "height": 91,
+          "mapped_question": 38
+        }
+      ],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q38.png",
+        "page": 3,
+        "column": 1,
+        "bbox": [
+          310.21000000000004,
+          408.74761962890625,
+          580.8264770507812,
+          550.7789916992188
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 3,
+        "start_bbox": [
+          309.71990966796875,
+          420.87286376953125,
+          444.74700927734375,
+          433.97845458984375
+        ],
+        "question_crop": "question_crops/Q38.png"
+      },
+      "raw": {
+        "text": "38. Two 4 bits binary numbers,\nand\nar\ngiven in the inputs of a\nlogic circuit shown in figure below. The output\nwil\nbe :\n(A)\n(B)\n(C)\n(D)\nA = 1101\nB = 1010\n(Y )\nY =\n1101\nY =\n0010\nY =\n0111\nY =\n1000",
+        "normalized_text": "38. Two 4 bits binary numbers,\nand\nar\ngiven in the inputs of a\nlogic circuit shown in figure below. The output\nwil\nbe :\n(A)\n(B)\n(C)\n(D)\nA = 1101\nB = 1010\n(Y )\nY =\n1101\nY =\n0010\nY =\n0111\nY =\n1000"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 1,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q39",
+      "number": 39,
+      "subject": "Physics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "39. A rod of length 10 cm lies along the principle axis of\nconcave mirror of focal length 10 cm as shown in figure\nThe length of the image is\ncm.\n(A) 2.5\n(B) 5\n(C) 7.5\n(D) 7\n____",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [
+        {
+          "asset_id": "p03_1a5b084b7746",
+          "role": "question_figure",
+          "path": "images/p03_1a5b084b7746.png",
+          "page": 3,
+          "bbox": [
+            326.7669372558594,
+            584.785888671875,
+            522.257568359375,
+            722.779296875
+          ],
+          "width": 545,
+          "height": 385,
+          "mapped_question": 39
+        }
+      ],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q39.png",
+        "page": 3,
+        "column": 1,
+        "bbox": [
+          310.21000000000004,
+          533.9292602539062,
+          581.1272583007812,
+          752.8699340820312
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 3,
+        "start_bbox": [
+          309.71990966796875,
+          545.9292602539062,
+          563.2213134765625,
+          559.0349731445312
+        ],
+        "question_crop": "question_crops/Q39.png"
+      },
+      "raw": {
+        "text": "39. A rod of length 10 cm lies along the principle axis of\nconcave mirror of focal length 10 cm as shown in figure\nThe length of the image is\ncm.\n(A) 2.5\n(B) 5\n(C) 7.5\n(D) 7\n____",
+        "normalized_text": "39. A rod of length 10 cm lies along the principle axis of\nconcave mirror of focal length 10 cm as shown in figure\nThe length of the image is\ncm.\n(A) 2.5\n(B) 5\n(C) 7.5\n(D) 7\n____"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 1,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q40",
+      "number": 40,
+      "subject": "Physics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "40. A parallel plate air capacitor is connected to a battery\nThe plates are pulled apart at uniform speed . If is th\nseparation between the plates at any instant, then the tim\nrate of change of electrostatic energy of the capacitor i\nproportional to\n, where is\n.\nv\nx\nxα\nα\n____",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q40.png",
+        "page": 3,
+        "column": 1,
+        "bbox": [
+          310.21000000000004,
+          735.8884887695312,
+          581.818359375,
+          824.6095581054688
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 3,
+        "start_bbox": [
+          309.71990966796875,
+          747.8884887695312,
+          569.818359375,
+          760.9939575195312
+        ],
+        "question_crop": "question_crops/Q40.png"
+      },
+      "raw": {
+        "text": "40. A parallel plate air capacitor is connected to a battery\nThe plates are pulled apart at uniform speed . If is th\nseparation between the plates at any instant, then the tim\nrate of change of electrostatic energy of the capacitor i\nproportional to\n, where is\n.\nv\nx\nxα\nα\n____",
+        "normalized_text": "40. A parallel plate air capacitor is connected to a battery\nThe plates are pulled apart at uniform speed . If is th\nseparation between the plates at any instant, then the tim\nrate of change of electrostatic energy of the capacitor i\nproportional to\n, where is\n.\nv\nx\nxα\nα\n____"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q41",
+      "number": 41,
+      "subject": "Physics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "41. An insulated wire is wound so that it forms a flat coil\nwith\nturns. The radius of the innermost turn is\n, and of the outermost turn\n. If 20\nmA current flows in it then the magnetic moment will be\n. The value of is\n(A) 4.4\n(B) 2.64\n(C) 3.25\n(D) 1.2\nN = 200\nr\n =\n1\n3 cm\nr\n =\n2\n6 cm\nα × 10\nA ⋅\n−2\nm2\nα",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q41.png",
+        "page": 4,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          69.63897705078125,
+          296.20500000000004,
+          177.89752197265625
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 4,
+        "start_bbox": [
+          31.374862670898438,
+          81.63897705078125,
+          293.4172668457031,
+          94.74468231201172
+        ],
+        "question_crop": "question_crops/Q41.png"
+      },
+      "raw": {
+        "text": "41. An insulated wire is wound so that it forms a flat coil\nwith\nturns. The radius of the innermost turn is\n, and of the outermost turn\n. If 20\nmA current flows in it then the magnetic moment will be\n. The value of is\n(A) 4.4\n(B) 2.64\n(C) 3.25\n(D) 1.2\nN = 200\nr\n​ =\n1\n3 cm\nr\n​ =\n2\n6 cm\nα × 10\nA ⋅\n−2\nm2\nα",
+        "normalized_text": "41. An insulated wire is wound so that it forms a flat coil\nwith\nturns. The radius of the innermost turn is\n, and of the outermost turn\n. If 20\nmA current flows in it then the magnetic moment will be\n. The value of is\n(A) 4.4\n(B) 2.64\n(C) 3.25\n(D) 1.2\nN = 200\nr\n =\n1\n3 cm\nr\n =\n2\n6 cm\nα × 10\nA ⋅\n−2\nm2\nα"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q42",
+      "number": 42,
+      "subject": "Physics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "42. Consider a circuit consisting of a capacitor\n, resis-\ntor\nand two identical diodes as shown in figure.\nThe resistance of diode under forward biasing condition\nis\n. The time constant of the circuit is\n. The\nvalue of is\n(A) 2.2\n(B) 2.0\n(C) 2.1\n(D) 2.4\n(20μ F)\n(100Ω)\n10Ω\nα × 10\ns\n−3\nα\n____",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [
+        {
+          "asset_id": "p04_703dc3cebc8e",
+          "role": "question_figure",
+          "path": "images/p04_703dc3cebc8e.png",
+          "page": 4,
+          "bbox": [
+            48.6240348815918,
+            239.8021697998047,
+            239.80235290527344,
+            379.9516906738281
+          ],
+          "width": 795,
+          "height": 584,
+          "mapped_question": 42
+        }
+      ],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q42.png",
+        "page": 4,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          160.79058837890625,
+          296.20500000000004,
+          410.04254150390625
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 4,
+        "start_bbox": [
+          31.374862670898438,
+          172.91583251953125,
+          229.0525665283203,
+          186.02154541015625
+        ],
+        "question_crop": "question_crops/Q42.png"
+      },
+      "raw": {
+        "text": "42. Consider a circuit consisting of a capacitor\n, resis‐\ntor\nand two identical diodes as shown in figure.\nThe resistance of diode under forward biasing condition\nis\n. The time constant of the circuit is\n. The\nvalue of is\n(A) 2.2\n(B) 2.0\n(C) 2.1\n(D) 2.4\n(20μ F)\n(100Ω)\n10Ω\nα × 10\ns\n−3\nα\n____",
+        "normalized_text": "42. Consider a circuit consisting of a capacitor\n, resis-\ntor\nand two identical diodes as shown in figure.\nThe resistance of diode under forward biasing condition\nis\n. The time constant of the circuit is\n. The\nvalue of is\n(A) 2.2\n(B) 2.0\n(C) 2.1\n(D) 2.4\n(20μ F)\n(100Ω)\n10Ω\nα × 10\ns\n−3\nα\n____"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 1,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q43",
+      "number": 43,
+      "subject": "Physics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "43. The voltage and the current between\nand\npoints\nshown in the circuit are\n.\nPhysics Section B\nA\nB\n____",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [
+        {
+          "asset_id": "p04_746b121b19b6",
+          "role": "question_figure",
+          "path": "images/p04_746b121b19b6.png",
+          "page": 4,
+          "bbox": [
+            48.6240348815918,
+            431.69927978515625,
+            207.4601593017578,
+            611.378173828125
+          ],
+          "width": 492,
+          "height": 557,
+          "mapped_question": 43
+        }
+      ],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q43.png",
+        "page": 4,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          393.06109619140625,
+          296.20500000000004,
+          654.6141357421875
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 4,
+        "start_bbox": [
+          31.374862670898438,
+          405.06109619140625,
+          215.4714813232422,
+          418.16656494140625
+        ],
+        "question_crop": "question_crops/Q43.png"
+      },
+      "raw": {
+        "text": "43. The voltage and the current between\nand\npoints\nshown in the circuit are\n.\nPhysics Section B\nA\nB\n____",
+        "normalized_text": "43. The voltage and the current between\nand\npoints\nshown in the circuit are\n.\nPhysics Section B\nA\nB\n____"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 1,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q44",
+      "number": 44,
+      "subject": "Physics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "44. A telescope with objective diameter is used to observ\na distant star emitting light of wavelength 500 nm , at\nresolution of\nradian. The value of is\ncm\n.\n(A) 61\n(B) 122\n(C) 244\n(D) 305\nR\n5 × 10−7\nR\n____",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q44.png",
+        "page": 4,
+        "column": 1,
+        "bbox": [
+          308.20500000000004,
+          94.79400634765625,
+          582.9599609375,
+          189.39703369140625
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 4,
+        "start_bbox": [
+          309.71990966796875,
+          106.79400634765625,
+          567.0884399414062,
+          119.89971160888672
+        ],
+        "question_crop": "question_crops/Q44.png"
+      },
+      "raw": {
+        "text": "44. A telescope with objective diameter is used to observ\na distant star emitting light of wavelength 500 nm , at\nresolution of\nradian. The value of is\ncm\n.\n(A) 61\n(B) 122\n(C) 244\n(D) 305\nR\n5 × 10−7\nR\n____",
+        "normalized_text": "44. A telescope with objective diameter is used to observ\na distant star emitting light of wavelength 500 nm , at\nresolution of\nradian. The value of is\ncm\n.\n(A) 61\n(B) 122\n(C) 244\n(D) 305\nR\n5 × 10−7\nR\n____"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q45",
+      "number": 45,
+      "subject": "Physics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "45. An unpolarized light is incident on the plane interface o\nair-dielectric medium shown in figure. If the incident an\ngle is equal to Brewster angle, identify the expression\nrepresenting reflected wave. incident\n(A)\n(B)\n(C)\n(D)\nE\n + E\n\n sin(kx −\n(\nxi^\nyj^)\nkz −ωt)\nE\n + E\n\nsin(kx +\n(\nxi^\nzk^)\nky −ωt)\nE\n\n+ E\n\nsin(ky +\n(\nxj^\nyk^)\nkz −ωt)\nE\n + E\n\n+ E\n\nsin(kx +\n(\nxi^\nyj^\nzk^)\nky −kz −ωt)",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [
+        {
+          "asset_id": "p04_e7b48b6ce434",
+          "role": "question_figure",
+          "path": "images/p04_e7b48b6ce434.png",
+          "page": 4,
+          "bbox": [
+            326.7669372558594,
+            235.48989868164062,
+            478.4158935546875,
+            336.1100769042969
+          ],
+          "width": 462,
+          "height": 307,
+          "mapped_question": 45
+        }
+      ],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q45.png",
+        "page": 4,
+        "column": 1,
+        "bbox": [
+          308.20500000000004,
+          172.41534423828125,
+          582.9599609375,
+          447.698974609375
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 4,
+        "start_bbox": [
+          309.71990966796875,
+          184.41534423828125,
+          568.257080078125,
+          197.52105712890625
+        ],
+        "question_crop": "question_crops/Q45.png"
+      },
+      "raw": {
+        "text": "45. An unpolarized light is incident on the plane interface o\nair-dielectric medium shown in figure. If the incident an\ngle is equal to Brewster angle, identify the expression\nrepresenting reflected wave. incident\n(A)\n(B)\n(C)\n(D)\nE\n​ + E\n​\n​ sin(kx −\n(\nxi^\nyj^)\nkz −ωt)\nE\n​ + E\n​\nsin(kx +\n(\nxi^\nzk^)\nky −ωt)\nE\n​\n​+ E\n​\nsin(ky +\n(\nxj^\nyk^)\nkz −ωt)\nE\n​ + E\n​\n​+ E\n​\nsin(kx +\n(\nxi^\nyj^\nzk^)\nky −kz −ωt)",
+        "normalized_text": "45. An unpolarized light is incident on the plane interface o\nair-dielectric medium shown in figure. If the incident an\ngle is equal to Brewster angle, identify the expression\nrepresenting reflected wave. incident\n(A)\n(B)\n(C)\n(D)\nE\n + E\n\n sin(kx −\n(\nxi^\nyj^)\nkz −ωt)\nE\n + E\n\nsin(kx +\n(\nxi^\nzk^)\nky −ωt)\nE\n\n+ E\n\nsin(ky +\n(\nxj^\nyk^)\nkz −ωt)\nE\n + E\n\n+ E\n\nsin(kx +\n(\nxi^\nyj^\nzk^)\nky −kz −ωt)"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 1,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q46",
+      "number": 46,
+      "subject": "Physics",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "46. A 1 kg block subjected to two simultaneous forces\nand\nis moved a distance of 25\nm along\ndirection. The work done in this\nprocess is\nJ.\n(2 +\ni^\n3\n+\nj^\n4 )N\nk^\n(3 −\ni^\n−\nj^\n2 )N\nk^\n(3 −\ni^\n4\n)j^\n____",
+      "options": {},
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q46.png",
+        "page": 4,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          640.8926391601562,
+          296.20500000000004,
+          721.1144409179688
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 4,
+        "start_bbox": [
+          31.374862670898438,
+          655.8926391601562,
+          265.0955810546875,
+          668.9983520507812
+        ],
+        "question_crop": "question_crops/Q46.png"
+      },
+      "raw": {
+        "text": "46. A 1 kg block subjected to two simultaneous forces\nand\nis moved a distance of 25\nm along\ndirection. The work done in this\nprocess is\nJ.\n(2 +\ni^\n3\n​+\nj^\n4 )N\nk^\n(3 −\ni^\n​−\nj^\n2 )N\nk^\n(3 −\ni^\n4\n​)j^\n____",
+        "normalized_text": "46. A 1 kg block subjected to two simultaneous forces\nand\nis moved a distance of 25\nm along\ndirection. The work done in this\nprocess is\nJ.\n(2 +\ni^\n3\n+\nj^\n4 )N\nk^\n(3 −\ni^\n−\nj^\n2 )N\nk^\n(3 −\ni^\n4\n)j^\n____"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q47",
+      "number": 47,
+      "subject": "Physics",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "47. The surface tension of a soap solution is\n. The work required to increase the radius of a soap bub-\nble from 1 cm to 2 cm is\n. The value of is\n.\n3.5 × 10\nN/m\n−2\nα × 10\nJ\n−6\nα\n____\n(π = 22/7)",
+      "options": {},
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q47.png",
+        "page": 4,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          708.4325561523438,
+          296.20500000000004,
+          800.1732788085938
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 4,
+        "start_bbox": [
+          31.374862670898438,
+          722.0144653320312,
+          219.15716552734375,
+          735.1201782226562
+        ],
+        "question_crop": "question_crops/Q47.png"
+      },
+      "raw": {
+        "text": "47. The surface tension of a soap solution is\n. The work required to increase the radius of a soap bub‐\nble from 1 cm to 2 cm is\n. The value of is\n.\n3.5 × 10\nN/m\n−2\nα × 10\nJ\n−6\nα\n____\n(π = 22/7)",
+        "normalized_text": "47. The surface tension of a soap solution is\n. The work required to increase the radius of a soap bub-\nble from 1 cm to 2 cm is\n. The value of is\n.\n3.5 × 10\nN/m\n−2\nα × 10\nJ\n−6\nα\n____\n(π = 22/7)"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q48",
+      "number": 48,
+      "subject": "Physics",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "48. The velocity of a particle executing simple harmonic mo\ntion along -axis is described as\n, where\nrepresents displacement. If the time period of motion i\n, the value of is\n.\nx\nv =\n2\n50 −x2\n s\n7\nx\nx\n____",
+      "options": {},
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q48.png",
+        "page": 4,
+        "column": 1,
+        "bbox": [
+          308.20500000000004,
+          643.8926391601562,
+          580.2470092773438,
+          722.4105224609375
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 4,
+        "start_bbox": [
+          309.71990966796875,
+          655.8926391601562,
+          568.2470092773438,
+          668.9983520507812
+        ],
+        "question_crop": "question_crops/Q48.png"
+      },
+      "raw": {
+        "text": "48. The velocity of a particle executing simple harmonic mo\ntion along -axis is described as\n, where\nrepresents displacement. If the time period of motion i\n, the value of is\n.\nx\nv =\n2\n50 −x2\n​ s\n7\nx\nx\n____",
+        "normalized_text": "48. The velocity of a particle executing simple harmonic mo\ntion along -axis is described as\n, where\nrepresents displacement. If the time period of motion i\n, the value of is\n.\nx\nv =\n2\n50 −x2\n s\n7\nx\nx\n____"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q49",
+      "number": 49,
+      "subject": "Physics",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "49. A body of mass 2 kg begins to move under the influenc\nof time dependent force\n, where and\nare unit vectors along and y -axis respectively. Th\npower produced by the force at\nis\nW.\n=\nF\n2t + 6t\n N\n(\ni^\n2j^)\ni^\nj^\nx\nt = 2 s\n____",
+      "options": {},
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q49.png",
+        "page": 4,
+        "column": 1,
+        "bbox": [
+          308.20500000000004,
+          708.5772094726562,
+          582.9599609375,
+          790.8297729492188
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 4,
+        "start_bbox": [
+          309.71990966796875,
+          720.5772094726562,
+          567.0905151367188,
+          733.6826782226562
+        ],
+        "question_crop": "question_crops/Q49.png"
+      },
+      "raw": {
+        "text": "49. A body of mass 2 kg begins to move under the influenc\nof time dependent force\n, where and\nare unit vectors along and y -axis respectively. Th\npower produced by the force at\nis\nW.\n=\nF\n2t + 6t\n​ N\n(\ni^\n2j^)\ni^\n​j^\nx\nt = 2 s\n____",
+        "normalized_text": "49. A body of mass 2 kg begins to move under the influenc\nof time dependent force\n, where and\nare unit vectors along and y -axis respectively. Th\npower produced by the force at\nis\nW.\n=\nF\n2t + 6t\n N\n(\ni^\n2j^)\ni^\nj^\nx\nt = 2 s\n____"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q50",
+      "number": 50,
+      "subject": "Physics",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "50. An inductor of 10 mH , capacitor of\nand a resistor\nof\nare connected in series across an\npower sup-\nply\n. The power factor of the given circuit is\n0.5 . The difference in the inductive reactance and capaci-\ntance reactance is\n. The value of is\n.\nChemistry Section A\n0.1μ F\n100Ω\na.c\n220 V, 70 Hz\nαΩ\n3\nα\n____",
+      "options": {},
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q50.png",
+        "page": 5,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          50.82720947265625,
+          297.255,
+          173.0748291015625
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 5,
+        "start_bbox": [
+          31.374862670898438,
+          62.95245361328125,
+          202.40020751953125,
+          76.05815887451172
+        ],
+        "question_crop": "question_crops/Q50.png"
+      },
+      "raw": {
+        "text": "50. An inductor of 10 mH , capacitor of\nand a resistor\nof\nare connected in series across an\npower sup‐\nply\n. The power factor of the given circuit is\n0.5 . The difference in the inductive reactance and capaci‐\ntance reactance is\n. The value of is\n.\nChemistry Section A\n0.1μ F\n100Ω\na.c\n220 V, 70 Hz\n​αΩ\n3\nα\n____",
+        "normalized_text": "50. An inductor of 10 mH , capacitor of\nand a resistor\nof\nare connected in series across an\npower sup-\nply\n. The power factor of the given circuit is\n0.5 . The difference in the inductive reactance and capaci-\ntance reactance is\n. The value of is\n.\nChemistry Section A\n0.1μ F\n100Ω\na.c\n220 V, 70 Hz\nαΩ\n3\nα\n____"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q51",
+      "number": 51,
+      "subject": "Chemistry",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "51. Number of moles and number of molecules in 1.4187 L\nof\nat STP respectively are\n(A)\n(B)\n(C)\n(D)\nSO\n2\n0.1266; 3.812 × 1022\n0.0633; 3.812 × 1022\n0.1266; 7.6238 × 1022\n0.0633; 7.6238 × 1022",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q51.png",
+        "page": 5,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          162.35333251953125,
+          297.255,
+          251.7933807373047
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 5,
+        "start_bbox": [
+          31.374862670898438,
+          174.35333251953125,
+          293.4195861816406,
+          187.45904541015625
+        ],
+        "question_crop": "question_crops/Q51.png"
+      },
+      "raw": {
+        "text": "51. Number of moles and number of molecules in 1.4187 L\nof\nat STP respectively are\n(A)\n(B)\n(C)\n(D)\nSO\n​2\n0.1266; 3.812 × 1022\n0.0633; 3.812 × 1022\n0.1266; 7.6238 × 1022\n0.0633; 7.6238 × 1022",
+        "normalized_text": "51. Number of moles and number of molecules in 1.4187 L\nof\nat STP respectively are\n(A)\n(B)\n(C)\n(D)\nSO\n2\n0.1266; 3.812 × 1022\n0.0633; 3.812 × 1022\n0.1266; 7.6238 × 1022\n0.0633; 7.6238 × 1022"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q52",
+      "number": 52,
+      "subject": "Chemistry",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "52. What is the ratio of wave number of first line (lowest en-\nergy line) of Balmer series of H atomic spectrum to first\nline of its Brackett series?\n(A) 5: 1\n(B) 5:0.81\n(C) 5:1.75\n(D) 5:27",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q52.png",
+        "page": 5,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          238.53717041015625,
+          297.255,
+          318.76593017578125
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 5,
+        "start_bbox": [
+          31.374862670898438,
+          250.53717041015625,
+          293.4189147949219,
+          263.64288330078125
+        ],
+        "question_crop": "question_crops/Q52.png"
+      },
+      "raw": {
+        "text": "52. What is the ratio of wave number of first line (lowest en‐\nergy line) of Balmer series of H atomic spectrum to first\nline of its Brackett series?\n(A) 5: 1\n(B) 5:0.81\n(C) 5:1.75\n(D) 5:27",
+        "normalized_text": "52. What is the ratio of wave number of first line (lowest en-\nergy line) of Balmer series of H atomic spectrum to first\nline of its Brackett series?\n(A) 5: 1\n(B) 5:0.81\n(C) 5:1.75\n(D) 5:27"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q53",
+      "number": 53,
+      "subject": "Chemistry",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "53. Which of the following is correct set of 4 quantum num-\nbers of\nelectron in Chromium (Atomic number\n) in accordance with Aufbau principle?\n(A)\n(B)\n(C)\n(D)\n19th\n= 24\nn = 3, l = 2, m =\n+2, s = +\n2\n1\nn = 3, l = 2, m =\n−2, s = +\n2\n1\nn = 4, l = 1, m =\n0, s = +\n2\n1\nn = 4, l = 0, m =\n0, s = +\n2\n1",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q53.png",
+        "page": 5,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          301.78424072265625,
+          297.255,
+          434.2056884765625
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 5,
+        "start_bbox": [
+          31.374862670898438,
+          313.78424072265625,
+          293.4189147949219,
+          326.88995361328125
+        ],
+        "question_crop": "question_crops/Q53.png"
+      },
+      "raw": {
+        "text": "53. Which of the following is correct set of 4 quantum num‐\nbers of\nelectron in Chromium (Atomic number\n) in accordance with Aufbau principle?\n(A)\n(B)\n(C)\n(D)\n19th\n= 24\nn = 3, l = 2, m =\n+2, s = +\n​2\n1\nn = 3, l = 2, m =\n−2, s = +\n​2\n1\nn = 4, l = 1, m =\n0, s = +\n​2\n1\nn = 4, l = 0, m =\n0, s = +\n​2\n1",
+        "normalized_text": "53. Which of the following is correct set of 4 quantum num-\nbers of\nelectron in Chromium (Atomic number\n) in accordance with Aufbau principle?\n(A)\n(B)\n(C)\n(D)\n19th\n= 24\nn = 3, l = 2, m =\n+2, s = +\n2\n1\nn = 3, l = 2, m =\n−2, s = +\n2\n1\nn = 4, l = 1, m =\n0, s = +\n2\n1\nn = 4, l = 0, m =\n0, s = +\n2\n1"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q54",
+      "number": 54,
+      "subject": "Chemistry",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "54. Given below are two statements: Statement I:For an\nideal gas, heat capacity at constant volume is always\ngreater than the heat capacity at constant pressure.\nStatement II: In a constant volume process, no work is\nproduced and all the heat withdrawn goes into the chaotic\nmotion and is reflected by a temperature increase of the\nideal gas.\nIn the light of the above statements, choose the correct\nanswer from the options given below\n(A) Both Statement I and Statement II are true\n(B) Both Statement I and Statement II are false\n(C) Statement I is true but Statement II is false\n(D) Statement I is false but Statement II is true",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q54.png",
+        "page": 5,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          418.21612548828125,
+          297.255,
+          636.4380493164062
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 5,
+        "start_bbox": [
+          31.374862670898438,
+          430.21612548828125,
+          293.4077453613281,
+          443.32183837890625
+        ],
+        "question_crop": "question_crops/Q54.png"
+      },
+      "raw": {
+        "text": "54. Given below are two statements: Statement I:For an\nideal gas, heat capacity at constant volume is always\ngreater than the heat capacity at constant pressure.\nStatement II: In a constant volume process, no work is\nproduced and all the heat withdrawn goes into the chaotic\nmotion and is reflected by a temperature increase of the\nideal gas.\nIn the light of the above statements, choose the correct\nanswer from the options given below\n(A) Both Statement I and Statement II are true\n(B) Both Statement I and Statement II are false\n(C) Statement I is true but Statement II is false\n(D) Statement I is false but Statement II is true",
+        "normalized_text": "54. Given below are two statements: Statement I:For an\nideal gas, heat capacity at constant volume is always\ngreater than the heat capacity at constant pressure.\nStatement II: In a constant volume process, no work is\nproduced and all the heat withdrawn goes into the chaotic\nmotion and is reflected by a temperature increase of the\nideal gas.\nIn the light of the above statements, choose the correct\nanswer from the options given below\n(A) Both Statement I and Statement II are true\n(B) Both Statement I and Statement II are false\n(C) Statement I is true but Statement II is false\n(D) Statement I is false but Statement II is true"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q55",
+      "number": 55,
+      "subject": "Chemistry",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "55. At\n, the equilibrium constant of\nis\n. What is the equilibrium constant for\nat the same temperature?\n(A)\n(B)\n(C)\n(D)\nT(K)\nA\n(g) +\n2\nB\n(g) ⇌\n2\nC(g)\n2.7 × 10−5\n A\n(g) +\n3\n1\n2\n B\n(g) ⇌\n3\n1\n2\nC(g)\n3\n1\n2.7 × 10\n(\n−5)\n3\n6 × 10−2\n\n2.7 × 10−5\n3 × 10−2",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q55.png",
+        "page": 5,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          626.5183715820312,
+          297.255,
+          731.1766967773438
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 5,
+        "start_bbox": [
+          31.374862670898438,
+          638.6436157226562,
+          59.11724853515625,
+          651.7493286132812
+        ],
+        "question_crop": "question_crops/Q55.png"
+      },
+      "raw": {
+        "text": "55. At\n, the equilibrium constant of\nis\n. What is the equilibrium constant for\nat the same temperature?\n(A)\n(B)\n(C)\n(D)\nT(K)\nA\n​(g) +\n2\nB\n​(g) ⇌\n2\nC(g)\n2.7 × 10−5\n​ A\n​(g) +\n3\n1\n2\n​ B\n​(g) ⇌\n3\n1\n2\n​C(g)\n3\n1\n2.7 × 10\n(\n−5)\n3\n6 × 10−2\n​\n2.7 × 10−5\n3 × 10−2",
+        "normalized_text": "55. At\n, the equilibrium constant of\nis\n. What is the equilibrium constant for\nat the same temperature?\n(A)\n(B)\n(C)\n(D)\nT(K)\nA\n(g) +\n2\nB\n(g) ⇌\n2\nC(g)\n2.7 × 10−5\n A\n(g) +\n3\n1\n2\n B\n(g) ⇌\n3\n1\n2\nC(g)\n3\n1\n2.7 × 10\n(\n−5)\n3\n6 × 10−2\n\n2.7 × 10−5\n3 × 10−2"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q56",
+      "number": 56,
+      "subject": "Chemistry",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "56. In order to oxidise a mixture of 1 mole each of\nand\nin acidic\nmedium, the number of moles of\nrequired is\n(A) 3\n(B) 2\n(C) 5\n(D) 7\nFeC\nO\n, Fe\n C\nO\n\n, FeSO\n\n2\n4\n2 (\n2\n4)3\n4\nFe\n SO\n\n\n2 (\n4)3\nKMnO\n4",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q56.png",
+        "page": 5,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          717.9204711914062,
+          297.255,
+          799.5864868164062
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 5,
+        "start_bbox": [
+          31.374862670898438,
+          729.9204711914062,
+          293.41552734375,
+          743.0261840820312
+        ],
+        "question_crop": "question_crops/Q56.png"
+      },
+      "raw": {
+        "text": "56. In order to oxidise a mixture of 1 mole each of\nand\nin acidic\nmedium, the number of moles of\nrequired is\n(A) 3\n(B) 2\n(C) 5\n(D) 7\nFeC\n​O\n​, Fe\n​ C\n​O\n​\n​, FeSO\n​\n2\n4\n2 (\n2\n4)3\n4\nFe\n​ SO\n​\n​\n2 (\n4)3\nKMnO\n​4",
+        "normalized_text": "56. In order to oxidise a mixture of 1 mole each of\nand\nin acidic\nmedium, the number of moles of\nrequired is\n(A) 3\n(B) 2\n(C) 5\n(D) 7\nFeC\nO\n, Fe\n C\nO\n\n, FeSO\n\n2\n4\n2 (\n2\n4)3\n4\nFe\n SO\n\n\n2 (\n4)3\nKMnO\n4"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q57",
+      "number": 57,
+      "subject": "Chemistry",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "57. Consider the first order reaction\n. The fraction o\nmolecules decomposed in the given first order reaction\ncan be expressed as\n(A)\n(B)\n(C)\n(D)\nR →P\n1 −ek\nt\n1\n1 + ek\nt\n1\n1 + e−k\nt\n1\n1 −e−k\nt\n1",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q57.png",
+        "page": 5,
+        "column": 1,
+        "bbox": [
+          309.255,
+          162.22808837890625,
+          582.9599609375,
+          264.7301483154297
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 5,
+        "start_bbox": [
+          309.71990966796875,
+          174.35333251953125,
+          465.5243225097656,
+          187.45904541015625
+        ],
+        "question_crop": "question_crops/Q57.png"
+      },
+      "raw": {
+        "text": "57. Consider the first order reaction\n. The fraction o\nmolecules decomposed in the given first order reaction\ncan be expressed as\n(A)\n(B)\n(C)\n(D)\nR →P\n1 −ek\n​t\n1\n1 + ek\n​t\n1\n1 + e−k\n​t\n1\n1 −e−k\n​t\n1",
+        "normalized_text": "57. Consider the first order reaction\n. The fraction o\nmolecules decomposed in the given first order reaction\ncan be expressed as\n(A)\n(B)\n(C)\n(D)\nR →P\n1 −ek\nt\n1\n1 + ek\nt\n1\n1 + e−k\nt\n1\n1 −e−k\nt\n1"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q58",
+      "number": 58,
+      "subject": "Chemistry",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "58. A monoatomic anion (\n) has 45 neutrons and 36 elec\ntrons. Atomic mass, group in the periodic table and physi\ncal state at room temperature of the element (A) respec\ntively are\n(A) 80,17 , liquid\n(B) 81,16 , solid\n(C) 80, 16, gas\n(D) 81,15 , gas\nA⊤",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q58.png",
+        "page": 5,
+        "column": 1,
+        "bbox": [
+          309.255,
+          249.89227294921875,
+          580.25390625,
+          365.48248291015625
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 5,
+        "start_bbox": [
+          309.71990966796875,
+          263.47418212890625,
+          422.66455078125,
+          276.57989501953125
+        ],
+        "question_crop": "question_crops/Q58.png"
+      },
+      "raw": {
+        "text": "58. A monoatomic anion (\n) has 45 neutrons and 36 elec\ntrons. Atomic mass, group in the periodic table and physi\ncal state at room temperature of the element (A) respec\ntively are\n(A) 80,17 , liquid\n(B) 81,16 , solid\n(C) 80, 16, gas\n(D) 81,15 , gas\nA⊤",
+        "normalized_text": "58. A monoatomic anion (\n) has 45 neutrons and 36 elec\ntrons. Atomic mass, group in the periodic table and physi\ncal state at room temperature of the element (A) respec\ntively are\n(A) 80,17 , liquid\n(B) 81,16 , solid\n(C) 80, 16, gas\n(D) 81,15 , gas\nA⊤"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q59",
+      "number": 59,
+      "subject": "Chemistry",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "59. Given below are two statements: Statement I:The cova\nlency of oxygen is generally two but it can exceed upto\nfour. The oxidation state of oxygen in\nis -2 and in\nit is +2 .\nStatement II: The anomalous behaviour of oxygen when\ncompared to the other elements of group 16 is due to it\nsmall size and high electronegativity.\nIn the light of the above statements, choose the correc\nanswer from the options given below\n(A) Both Statement I and Statement II are true\n(B) Both Statement I and Statement II are false\n(C) Statement I is true but Statement II is false\n(D) Statement I is false but Statement II is true\nSO\n2\nOF\n2",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q59.png",
+        "page": 5,
+        "column": 1,
+        "bbox": [
+          309.255,
+          352.09429931640625,
+          582.9599609375,
+          571.7537231445312
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 5,
+        "start_bbox": [
+          309.71990966796875,
+          364.09429931640625,
+          568.2559814453125,
+          377.20001220703125
+        ],
+        "question_crop": "question_crops/Q59.png"
+      },
+      "raw": {
+        "text": "59. Given below are two statements: Statement I:The cova\nlency of oxygen is generally two but it can exceed upto\nfour. The oxidation state of oxygen in\nis -2 and in\nit is +2 .\nStatement II: The anomalous behaviour of oxygen when\ncompared to the other elements of group 16 is due to it\nsmall size and high electronegativity.\nIn the light of the above statements, choose the correc\nanswer from the options given below\n(A) Both Statement I and Statement II are true\n(B) Both Statement I and Statement II are false\n(C) Statement I is true but Statement II is false\n(D) Statement I is false but Statement II is true\nSO\n​2\nOF\n​2",
+        "normalized_text": "59. Given below are two statements: Statement I:The cova\nlency of oxygen is generally two but it can exceed upto\nfour. The oxidation state of oxygen in\nis -2 and in\nit is +2 .\nStatement II: The anomalous behaviour of oxygen when\ncompared to the other elements of group 16 is due to it\nsmall size and high electronegativity.\nIn the light of the above statements, choose the correc\nanswer from the options given below\n(A) Both Statement I and Statement II are true\n(B) Both Statement I and Statement II are false\n(C) Statement I is true but Statement II is false\n(D) Statement I is false but Statement II is true\nSO\n2\nOF\n2"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q60",
+      "number": 60,
+      "subject": "Chemistry",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "60. The correct statements among the following are,\nA.\nand\nare less stable than\n.\nB.\nand\nare oxidant while\nand\nar\nreductant.\nC. Cm and Am have seven unpaired electrons.\nD. Actinoid contraction is greater from element to ele\nment than lanthanoid contraction.\nChoose the correct answer from the options given below:\n(A) A and B Only\n(B) C and D Only\n(C) B and D Only\n(D) A and C Only\nMo(VI)\nW(VI)\nCr(VI)\nCe4+\nTb4+\nEu2+\nYb2+",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q60.png",
+        "page": 5,
+        "column": 1,
+        "bbox": [
+          309.255,
+          561.9592895507812,
+          580.2559814453125,
+          728.4336547851562
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 5,
+        "start_bbox": [
+          309.71990966796875,
+          573.9592895507812,
+          530.8447265625,
+          587.0650024414062
+        ],
+        "question_crop": "question_crops/Q60.png"
+      },
+      "raw": {
+        "text": "60. The correct statements among the following are,\nA.\nand\nare less stable than\n.\nB.\nand\nare oxidant while\nand\nar\nreductant.\nC. Cm and Am have seven unpaired electrons.\nD. Actinoid contraction is greater from element to ele\nment than lanthanoid contraction.\nChoose the correct answer from the options given below:\n(A) A and B Only\n(B) C and D Only\n(C) B and D Only\n(D) A and C Only\nMo(VI)\nW(VI)\nCr(VI)\nCe4+\nTb4+\nEu2+\nYb2+",
+        "normalized_text": "60. The correct statements among the following are,\nA.\nand\nare less stable than\n.\nB.\nand\nare oxidant while\nand\nar\nreductant.\nC. Cm and Am have seven unpaired electrons.\nD. Actinoid contraction is greater from element to ele\nment than lanthanoid contraction.\nChoose the correct answer from the options given below:\n(A) A and B Only\n(B) C and D Only\n(C) B and D Only\n(D) A and C Only\nMo(VI)\nW(VI)\nCr(VI)\nCe4+\nTb4+\nEu2+\nYb2+"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q61",
+      "number": 61,
+      "subject": "Chemistry",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "61. Correct statements from the following are\nA. Potassium dichromate is an oxidising agent and it oxi\ndises\nto\nin acidic medium.\nB. Sodium dichromate can be used as primary standard in\nvolumetric estimation.\nFeSO\n4\nFe\n SO\n\n\n2 (\n4)3",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q61.png",
+        "page": 5,
+        "column": 1,
+        "bbox": [
+          309.255,
+          715.0457153320312,
+          582.9599609375,
+          803.1799926757812
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 5,
+        "start_bbox": [
+          309.71990966796875,
+          727.0457153320312,
+          503.3529968261719,
+          740.1511840820312
+        ],
+        "question_crop": "question_crops/Q61.png"
+      },
+      "raw": {
+        "text": "61. Correct statements from the following are\nA. Potassium dichromate is an oxidising agent and it oxi\ndises\nto\nin acidic medium.\nB. Sodium dichromate can be used as primary standard in\nvolumetric estimation.\nFeSO\n​4\nFe\n​ SO\n​\n​\n2 (\n4)3",
+        "normalized_text": "61. Correct statements from the following are\nA. Potassium dichromate is an oxidising agent and it oxi\ndises\nto\nin acidic medium.\nB. Sodium dichromate can be used as primary standard in\nvolumetric estimation.\nFeSO\n4\nFe\n SO\n\n\n2 (\n4)3"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q62",
+      "number": 62,
+      "subject": "Chemistry",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "62. Match the LIST-I with LIST-II\nList-I Complex ion\nList-II Calculated\nspin only mag-\nnetic moment\n(BM)\nA.\nI.\n3.87\nB.\nII.\n5.92\nC.\nIII.\n4.90\nD.\nIV.\n1.73\nChoose the correct answer from the options given below:\n(A) A-I, B-III, C-IV, D-II\n(B) A-II, B-I, C-III, D-IV\n(C) A-IV, B-II, C-I, D-III\n(D) A-III, B-I, C-IV, D-II\nCr H\nO\n\n[\n(\n2\n)6]2+\nCo H\nO\n\n[\n(\n2\n)6]2+\nCu H\nO\n\n[\n(\n2\n)6]2+\nMn H\nO\n\n[\n(\n2\n)6]2+",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q62.png",
+        "page": 6,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          152.29132080078125,
+          297.86,
+          484.78887939453125
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 6,
+        "start_bbox": [
+          31.374862670898438,
+          164.29132080078125,
+          183.06805419921875,
+          177.39703369140625
+        ],
+        "question_crop": "question_crops/Q62.png"
+      },
+      "raw": {
+        "text": "62. Match the LIST-I with LIST-II\nList-I Complex ion\nList-II Calculated\nspin only mag‐\nnetic moment\n(BM)\nA.\nI.\n3.87\nB.\nII.\n5.92\nC.\nIII.\n4.90\nD.\nIV.\n1.73\nChoose the correct answer from the options given below:\n(A) A-I, B-III, C-IV, D-II\n(B) A-II, B-I, C-III, D-IV\n(C) A-IV, B-II, C-I, D-III\n(D) A-III, B-I, C-IV, D-II\nCr H\n​O\n​\n[\n(\n2\n)6]2+\nCo H\n​O\n​\n[\n(\n2\n)6]2+\nCu H\n​O\n​\n[\n(\n2\n)6]2+\nMn H\n​O\n​\n[\n(\n2\n)6]2+",
+        "normalized_text": "62. Match the LIST-I with LIST-II\nList-I Complex ion\nList-II Calculated\nspin only mag-\nnetic moment\n(BM)\nA.\nI.\n3.87\nB.\nII.\n5.92\nC.\nIII.\n4.90\nD.\nIV.\n1.73\nChoose the correct answer from the options given below:\n(A) A-I, B-III, C-IV, D-II\n(B) A-II, B-I, C-III, D-IV\n(C) A-IV, B-II, C-I, D-III\n(D) A-III, B-I, C-IV, D-II\nCr H\nO\n\n[\n(\n2\n)6]2+\nCo H\nO\n\n[\n(\n2\n)6]2+\nCu H\nO\n\n[\n(\n2\n)6]2+\nMn H\nO\n\n[\n(\n2\n)6]2+"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q63",
+      "number": 63,
+      "subject": "Chemistry",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "63. Increasing order of electron withdrawing power of fol-\nlowing functional groups is: a. -CN b. -COOH c.\nd. - I\n(A)\n(B)\n(C)\n(D)\n−NO\n2\nc < b < d < a\nc < a < b < d\nd < b < a < c\na < b < c < d",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q63.png",
+        "page": 6,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          471.40093994140625,
+          297.86,
+          615.4630737304688
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 6,
+        "start_bbox": [
+          31.374862670898438,
+          483.40093994140625,
+          293.4189147949219,
+          496.50665283203125
+        ],
+        "question_crop": "question_crops/Q63.png"
+      },
+      "raw": {
+        "text": "63. Increasing order of electron withdrawing power of fol‐\nlowing functional groups is: a. -CN b. -COOH c.\nd. - I\n(A)\n(B)\n(C)\n(D)\n−NO\n​2\nc < b < d < a\nc < a < b < d\nd < b < a < c\na < b < c < d",
+        "normalized_text": "63. Increasing order of electron withdrawing power of fol-\nlowing functional groups is: a. -CN b. -COOH c.\nd. - I\n(A)\n(B)\n(C)\n(D)\n−NO\n2\nc < b < d < a\nc < a < b < d\nd < b < a < c\na < b < c < d"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q64",
+      "number": 64,
+      "subject": "Chemistry",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "64. An alkene\non ozonolysis followed by reduction gives\nfollowing products.\n(A)\n(B)\n(C)\n(D)\n(X)",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [
+        {
+          "asset_id": "p06_79a81d626774",
+          "role": "question_figure",
+          "path": "images/p06_79a81d626774.png",
+          "page": 6,
+          "bbox": [
+            48.6240348815918,
+            643.7203369140625,
+            293.70599365234375,
+            710.5609130859375
+          ],
+          "width": 1103,
+          "height": 181,
+          "mapped_question": 64
+        },
+        {
+          "asset_id": "p06_e3a94ea40782",
+          "role": "question_figure",
+          "path": "images/p06_e3a94ea40782.png",
+          "page": 6,
+          "bbox": [
+            66.5919189453125,
+            716.3104858398438,
+            109.71484375,
+            769.4954223632812
+          ],
+          "width": 171,
+          "height": 155,
+          "mapped_question": 64
+        },
+        {
+          "asset_id": "p06_09d331157b85",
+          "role": "question_figure",
+          "path": "images/p06_09d331157b85.png",
+          "page": 6,
+          "bbox": [
+            127.6827392578125,
+            716.3104858398438,
+            170.8056640625,
+            773.0889892578125
+          ],
+          "width": 143,
+          "height": 177,
+          "mapped_question": 64
+        },
+        {
+          "asset_id": "p06_e263b3c66ec8",
+          "role": "question_figure",
+          "path": "images/p06_e263b3c66ec8.png",
+          "page": 6,
+          "bbox": [
+            188.7735595703125,
+            716.3104858398438,
+            231.896484375,
+            767.3392944335938
+          ],
+          "width": 181,
+          "height": 169,
+          "mapped_question": 64
+        },
+        {
+          "asset_id": "p06_106d86ea7b36",
+          "role": "question_figure",
+          "path": "images/p06_106d86ea7b36.png",
+          "page": 6,
+          "bbox": [
+            250.5830841064453,
+            716.3104248046875,
+            293.70599365234375,
+            770.214111328125
+          ],
+          "width": 172,
+          "height": 173,
+          "mapped_question": 64
+        }
+      ],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q64.png",
+        "page": 6,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          605.6755981445312,
+          297.86,
+          785.0889892578125
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 6,
+        "start_bbox": [
+          31.374862670898438,
+          617.8008422851562,
+          91.79167175292969,
+          630.9065551757812
+        ],
+        "question_crop": "question_crops/Q64.png"
+      },
+      "raw": {
+        "text": "64. An alkene\non ozonolysis followed by reduction gives\nfollowing products.\n(A)\n(B)\n(C)\n(D)\n(X)",
+        "normalized_text": "64. An alkene\non ozonolysis followed by reduction gives\nfollowing products.\n(A)\n(B)\n(C)\n(D)\n(X)"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 5,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q65",
+      "number": 65,
+      "subject": "Chemistry",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "65.\nMatch the LIST-I with LIST-II",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q65.png",
+        "page": 6,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          767.5117797851562,
+          250.24072265625,
+          804.6174926757812
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 6,
+        "start_bbox": [
+          31.374862670898438,
+          780.9492797851562,
+          44.553855895996094,
+          792.6174926757812
+        ],
+        "question_crop": "question_crops/Q65.png"
+      },
+      "raw": {
+        "text": "65.\nMatch the LIST-I with LIST-II",
+        "normalized_text": "65.\nMatch the LIST-I with LIST-II"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q66",
+      "number": 66,
+      "subject": "Chemistry",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "66. Amongst the following, the total number of compound\nsoluble in aqueous NaOH at room temperature is:\n(A) 5\n(B) 4\n(C) 6\n(D) 3",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [
+        {
+          "asset_id": "p06_af6c217b8df1",
+          "role": "question_figure",
+          "path": "images/p06_af6c217b8df1.png",
+          "page": 6,
+          "bbox": [
+            326.7669372558594,
+            314.548583984375,
+            567.15234375,
+            398.6383056640625
+          ],
+          "width": 1139,
+          "height": 336,
+          "mapped_question": 66
+        },
+        {
+          "asset_id": "p06_a2983cdd1348",
+          "role": "question_figure",
+          "path": "images/p06_a2983cdd1348.png",
+          "page": 6,
+          "bbox": [
+            326.7669372558594,
+            398.63812255859375,
+            567.15234375,
+            487.0401306152344
+          ],
+          "width": 951,
+          "height": 342,
+          "mapped_question": 66
+        }
+      ],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q66.png",
+        "page": 6,
+        "column": 1,
+        "bbox": [
+          309.86,
+          277.34771728515625,
+          579.66064453125,
+          517.1311645507812
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 6,
+        "start_bbox": [
+          309.71990966796875,
+          289.34771728515625,
+          567.66064453125,
+          302.45343017578125
+        ],
+        "question_crop": "question_crops/Q66.png"
+      },
+      "raw": {
+        "text": "66. Amongst the following, the total number of compound\nsoluble in aqueous NaOH at room temperature is:\n(A) 5\n(B) 4\n(C) 6\n(D) 3",
+        "normalized_text": "66. Amongst the following, the total number of compound\nsoluble in aqueous NaOH at room temperature is:\n(A) 5\n(B) 4\n(C) 6\n(D) 3"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 2,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q67",
+      "number": 67,
+      "subject": "Chemistry",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "67. Product C of the following reaction sequence will be\n(A) 1-Bromo-4-\nnitrobenzene\n(B) 1,3,5-Tribromo-2-\nnitrobenzene\n(C) 4-Bromo-1-\nnitrobenzene\n(D) 1,3,5-Tribromobenzene",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [
+        {
+          "asset_id": "p06_7aba5199497c",
+          "role": "question_figure",
+          "path": "images/p06_7aba5199497c.png",
+          "page": 6,
+          "bbox": [
+            326.7669372558594,
+            524.4136352539062,
+            567.15234375,
+            614.2530517578125
+          ],
+          "width": 933,
+          "height": 218,
+          "mapped_question": 67
+        }
+      ],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q67.png",
+        "page": 6,
+        "column": 1,
+        "bbox": [
+          309.86,
+          500.14947509765625,
+          580.4686889648438,
+          690.3416137695312
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 6,
+        "start_bbox": [
+          309.71990966796875,
+          512.1494750976562,
+          549.30029296875,
+          525.2551879882812
+        ],
+        "question_crop": "question_crops/Q67.png"
+      },
+      "raw": {
+        "text": "67. Product C of the following reaction sequence will be\n(A) 1-Bromo-4-\nnitrobenzene\n(B) 1,3,5-Tribromo-2-\nnitrobenzene\n(C) 4-Bromo-1-\nnitrobenzene\n(D) 1,3,5-Tribromobenzene",
+        "normalized_text": "67. Product C of the following reaction sequence will be\n(A) 1-Bromo-4-\nnitrobenzene\n(B) 1,3,5-Tribromo-2-\nnitrobenzene\n(C) 4-Bromo-1-\nnitrobenzene\n(D) 1,3,5-Tribromobenzene"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 1,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q68",
+      "number": 68,
+      "subject": "Chemistry",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "68. Given below are two statements:\nStatement I: The structure of Maltose is given below:",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [
+        {
+          "asset_id": "p06_d1e304cef1ab",
+          "role": "question_figure",
+          "path": "images/p06_d1e304cef1ab.png",
+          "page": 6,
+          "bbox": [
+            326.7669372558594,
+            714.1541748046875,
+            508.60198974609375,
+            806.8684692382812
+          ],
+          "width": 455,
+          "height": 232,
+          "mapped_question": 68
+        }
+      ],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q68.png",
+        "page": 6,
+        "column": 1,
+        "bbox": [
+          309.86,
+          676.9536743164062,
+          568.3375854492188,
+          818.8684692382812
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 6,
+        "start_bbox": [
+          309.71990966796875,
+          688.9536743164062,
+          465.0302734375,
+          702.0593872070312
+        ],
+        "question_crop": "question_crops/Q68.png"
+      },
+      "raw": {
+        "text": "68. Given below are two statements:\nStatement I: The structure of Maltose is given below:",
+        "normalized_text": "68. Given below are two statements:\nStatement I: The structure of Maltose is given below:"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 1,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q69",
+      "number": 69,
+      "subject": "Chemistry",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "69. Match the LIST-I with LIST-II\nList-I\nName of amino acid\nList-II\nOne letter symbol/type\nA.\nArginine\nI.\nD/Non-\nessential\nB.\nAspartic\nacid\nII.\nR/Essential\nC.\nLysine\nIII.\nE/Non-\nessential\nChemistry Section B",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q69.png",
+        "page": 7,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          326.22027587890625,
+          296.675,
+          525.2452392578125
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 7,
+        "start_bbox": [
+          31.374862670898438,
+          338.22027587890625,
+          183.06805419921875,
+          351.32598876953125
+        ],
+        "question_crop": "question_crops/Q69.png"
+      },
+      "raw": {
+        "text": "69. Match the LIST-I with LIST-II\nList-I\nName of amino acid\nList-II\nOne letter symbol/type\nA.\nArginine\nI.\nD/Non-\nessential\nB.\nAspartic\nacid\nII.\nR/Essential\nC.\nLysine\nIII.\nE/Non-\nessential\nChemistry Section B",
+        "normalized_text": "69. Match the LIST-I with LIST-II\nList-I\nName of amino acid\nList-II\nOne letter symbol/type\nA.\nArginine\nI.\nD/Non-\nessential\nB.\nAspartic\nacid\nII.\nR/Essential\nC.\nLysine\nIII.\nE/Non-\nessential\nChemistry Section B"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q70",
+      "number": 70,
+      "subject": "Chemistry",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "70. Identify the colour of compound ' X ' in the sequence o\nthe reaction.\n(A) Violet\n(B) Green\n(C) Red\n(D) Colourless",
+      "options": {
+        "A": {
+          "text": null,
+          "latex": null
+        },
+        "B": {
+          "text": null,
+          "latex": null
+        },
+        "C": {
+          "text": null,
+          "latex": null
+        },
+        "D": {
+          "text": null,
+          "latex": null
+        }
+      },
+      "images": [
+        {
+          "asset_id": "p07_2720c0ba7aab",
+          "role": "question_figure",
+          "path": "images/p07_2720c0ba7aab.png",
+          "page": 7,
+          "bbox": [
+            326.7669372558594,
+            182.30484008789062,
+            567.15234375,
+            422.3558044433594
+          ],
+          "width": 934,
+          "height": 726,
+          "mapped_question": 70
+        }
+      ],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q70.png",
+        "page": 7,
+        "column": 1,
+        "bbox": [
+          308.675,
+          145.10406494140625,
+          580.2533569335938,
+          472.57061767578125
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 7,
+        "start_bbox": [
+          309.71990966796875,
+          157.10406494140625,
+          568.2533569335938,
+          170.20977783203125
+        ],
+        "question_crop": "question_crops/Q70.png"
+      },
+      "raw": {
+        "text": "70. Identify the colour of compound ' X ' in the sequence o\nthe reaction.\n(A) Violet\n(B) Green\n(C) Red\n(D) Colourless",
+        "normalized_text": "70. Identify the colour of compound ' X ' in the sequence o\nthe reaction.\n(A) Violet\n(B) Green\n(C) Red\n(D) Colourless"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 1,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q71",
+      "number": 71,
+      "subject": "Chemistry",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "71. According to Lewis theory, the total number of bond-\npairs and lone pair of electrons around the central atom of\nion is\n.\nσ\nXeO\n64−\n____",
+      "options": {},
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q71.png",
+        "page": 7,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          514.5239868164062,
+          296.675,
+          577.9486083984375
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 7,
+        "start_bbox": [
+          31.374862670898438,
+          526.5239868164062,
+          293.4206237792969,
+          539.6292114257812
+        ],
+        "question_crop": "question_crops/Q71.png"
+      },
+      "raw": {
+        "text": "71. According to Lewis theory, the total number of bond-\npairs and lone pair of electrons around the central atom of\nion is\n.\nσ\nXeO\n​64−\n____",
+        "normalized_text": "71. According to Lewis theory, the total number of bond-\npairs and lone pair of electrons around the central atom of\nion is\n.\nσ\nXeO\n64−\n____"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q72",
+      "number": 72,
+      "subject": "Chemistry",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "72. Consider the following sequence of reactions to give the\nmajor product (X)\nPg of the major product\nformed is reacted with\nsolution to liberate a gas which occupied\nat STP.\n(Given molar mass in\n)\n(X)\nNaHCO\n3\n11.2dm3\nP =\ng.\ngmol\nH :\n−1\n1, C : 12, O : 16, Cl :\n35.5",
+      "options": {},
+      "images": [
+        {
+          "asset_id": "p07_18e42e4c2ee6",
+          "role": "question_figure",
+          "path": "images/p07_18e42e4c2ee6.png",
+          "page": 7,
+          "bbox": [
+            48.6240348815918,
+            603.4720458984375,
+            293.70599365234375,
+            663.8441162109375
+          ],
+          "width": 900,
+          "height": 221,
+          "mapped_question": 72
+        }
+      ],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q72.png",
+        "page": 7,
+        "column": 0,
+        "bbox": [
+          19.374862670898438,
+          566.2715454101562,
+          296.675,
+          757.0499877929688
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 7,
+        "start_bbox": [
+          31.374862670898438,
+          578.2715454101562,
+          293.4228210449219,
+          591.3767700195312
+        ],
+        "question_crop": "question_crops/Q72.png"
+      },
+      "raw": {
+        "text": "72. Consider the following sequence of reactions to give the\nmajor product (X)\nPg of the major product\nformed is reacted with\nsolution to liberate a gas which occupied\nat STP.\n(Given molar mass in\n)\n(X)\nNaHCO\n​3\n11.2dm3\nP =\ng.\ngmol\nH :\n−1\n1, C : 12, O : 16, Cl :\n35.5",
+        "normalized_text": "72. Consider the following sequence of reactions to give the\nmajor product (X)\nPg of the major product\nformed is reacted with\nsolution to liberate a gas which occupied\nat STP.\n(Given molar mass in\n)\n(X)\nNaHCO\n3\n11.2dm3\nP =\ng.\ngmol\nH :\n−1\n1, C : 12, O : 16, Cl :\n35.5"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 1,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q73",
+      "number": 73,
+      "subject": "Chemistry",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "73. 2.0 g of a bromo hydrocarbon\nwas subjected to\nCarius analysis, gave 3.36 g of AgBr . The percentage o\ncarbon in the compound\nis\n. Total number o\ncarbon atoms in the empirical formula for compound\nis\n.\n(Given molar mass in\n)\n(X)\n(X)\n26.7%\n(X\n____\ngmol\nH :\n−1\n1, C : 12, Br : 80, Ag :\n108",
+      "options": {},
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q73.png",
+        "page": 7,
+        "column": 1,
+        "bbox": [
+          308.675,
+          514.3987426757812,
+          582.9599609375,
+          631.9938354492188
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 7,
+        "start_bbox": [
+          309.71990966796875,
+          526.5239868164062,
+          468.30267333984375,
+          539.6292114257812
+        ],
+        "question_crop": "question_crops/Q73.png"
+      },
+      "raw": {
+        "text": "73. 2.0 g of a bromo hydrocarbon\nwas subjected to\nCarius analysis, gave 3.36 g of AgBr . The percentage o\ncarbon in the compound\nis\n. Total number o\ncarbon atoms in the empirical formula for compound\nis\n.\n(Given molar mass in\n)\n(X)\n(X)\n26.7%\n(X\n____\ngmol\nH :\n−1\n1, C : 12, Br : 80, Ag :\n108",
+        "normalized_text": "73. 2.0 g of a bromo hydrocarbon\nwas subjected to\nCarius analysis, gave 3.36 g of AgBr . The percentage o\ncarbon in the compound\nis\n. Total number o\ncarbon atoms in the empirical formula for compound\nis\n.\n(Given molar mass in\n)\n(X)\n(X)\n26.7%\n(X\n____\ngmol\nH :\n−1\n1, C : 12, Br : 80, Ag :\n108"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q74",
+      "number": 74,
+      "subject": "Chemistry",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "74. The pH of a solution obtained by mixing 5 mL o\nsolution with 250 mL of\nsolu\ntion is\n.(Nearest integer)\nGiven:\nlog 2=0.30\nlog 3=0.48\nlog 5=0.70\n0.1MNH\nOH\n4\n0.1MNH\nCl\n4\n____ ×10−2\npK\n NH\nOH =\nb (\n4\n)\n4.74",
+      "options": {},
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q74.png",
+        "page": 7,
+        "column": 1,
+        "bbox": [
+          308.675,
+          620.8936157226562,
+          580.2588500976562,
+          736.3391723632812
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 7,
+        "start_bbox": [
+          309.71990966796875,
+          632.8936157226562,
+          568.2588500976562,
+          645.9993286132812
+        ],
+        "question_crop": "question_crops/Q74.png"
+      },
+      "raw": {
+        "text": "74. The pH of a solution obtained by mixing 5 mL o\nsolution with 250 mL of\nsolu\ntion is\n.(Nearest integer)\nGiven:\nlog 2=0.30\nlog 3=0.48\nlog 5=0.70\n0.1MNH\n​OH\n4\n0.1MNH\n​Cl\n4\n____ ×10−2\npK\n​ NH\n​OH =\nb (\n4\n)\n4.74",
+        "normalized_text": "74. The pH of a solution obtained by mixing 5 mL o\nsolution with 250 mL of\nsolu\ntion is\n.(Nearest integer)\nGiven:\nlog 2=0.30\nlog 3=0.48\nlog 5=0.70\n0.1MNH\nOH\n4\n0.1MNH\nCl\n4\n____ ×10−2\npK\n NH\nOH =\nb (\n4\n)\n4.74"
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    },
+    {
+      "question_id": "001-production-paper-Q75",
+      "number": 75,
+      "subject": "Chemistry",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "75. A non-volatile, non-electrolyte solid solute when dis\nsolved in 40 g of a solvent,\nthe vapour pressure of the solvent decreased from 760\nmm Hg to 750 mm Hg.",
+      "options": {},
+      "images": [],
+      "visual": {
+        "type": "question_page_crop",
+        "path": "question_crops/Q75.png",
+        "page": 7,
+        "column": 1,
+        "bbox": [
+          308.675,
+          725.1074829101562,
+          582.9599609375,
+          799.5862426757812
+        ]
+      },
+      "source": {
+        "pdf": "001.pdf",
+        "page": 7,
+        "start_bbox": [
+          309.71990966796875,
+          737.1074829101562,
+          568.2448120117188,
+          750.2131958007812
+        ],
+        "question_crop": "question_crops/Q75.png"
+      },
+      "raw": {
+        "text": "75. A non-volatile, non-electrolyte solid solute when dis\nsolved in 40 g of a solvent,\nthe vapour pressure of the solvent decreased from 760\nmm Hg to 750 mm Hg.",
+        "normalized_text": "75. A non-volatile, non-electrolyte solid solute when dis\nsolved in 40 g of a solvent,\nthe vapour pressure of the solvent decreased from 760\nmm Hg to 750 mm Hg."
+      },
+      "quality": {
+        "needs_review": false,
+        "image_count": 0,
+        "visual_crop": true,
+        "latex_repair_required": true
+      }
+    }
+  ]
+}
