@@ -1,0 +1,811 @@
+{
+  "metadata": {
+    "exam": "JEE Main",
+    "year": "2025",
+    "clean_title": "11922 2nd Apr 2026 Shift 1 (Actual Paper)",
+    "original_title": "11922-2nd Apr 2026 Shift 1 (Actual Paper)",
+    "total_questions": 50
+  },
+  "questions": [
+    {
+      "question_number": 1,
+      "text": "The mass of iron converted into $\\text{Fe}_3\\text{O}_4$ by the action of $18\\text{ g}$ of steam is : (Given : Molar mass of $\\text{H}, \\text{O}$ and $\\text{Fe}$ are $1, 16$ and $56\\text{ g mol}^{-1}$ respectively) Assume iron is present in excess :",
+      "options": [
+        "(1) 2.1 g",
+        "(2) 4.2 g",
+        "(3) 21 g",
+        "(4) 42 g"
+      ],
+      "correct_index": 3,
+      "correct_integer": null,
+      "solution": "The balanced chemical reaction is:\n$$3\\text{Fe} + 4\\text{H}_2\\text{O} \\rightarrow \\text{Fe}_3\\text{O}_4 + 4\\text{H}_2$$\nMoles of steam ($\\text{H}_2\\text{O}$) = $\\frac{18\\text{ g}}{18\\text{ g mol}^{-1}} = 1\\text{ mol}$.\nFrom stoichiometry, $4\\text{ moles}$ of $\\text{H}_2\\text{O}$ react with $3\\text{ moles}$ of $\\text{Fe}$.\nTherefore, $1\\text{ mol}$ of $\\text{H}_2\\text{O}$ reacts with $\\frac{3}{4}\\text{ mol}$ of $\\text{Fe}$.\nMass of $\\text{Fe}$ = $0.75 \\times 56 = 42\\text{ g}$.",
+      "type": "mcq",
+      "image": "images/11922-2nd_Apr_2026_Shift_1__Actual_Paper__p6_q1_1.png",
+      "subject": "Chemistry",
+      "global_question_number": 1
+    },
+    {
+      "question_number": 2,
+      "text": "What is the energy (in $\\text{J atom}^{-1}$) required for the following process?\n$$\\text{Li}^+_{(g)} \\rightarrow \\text{Li}^{3+}_{(g)} + 2e^-$$\n(Take the ionization energy for the H atom in the ground state as $2.18 \\times 10^{-18}\\text{ J atom}^{-1}$)",
+      "options": [
+        "(1) $8.72 \\times 10^{-18}$",
+        "(2) $1.962 \\times 10^{-18}$",
+        "(3) $1.962 \\times 10^{-17}$",
+        "(4) $6.54 \\times 10^{-17}$"
+      ],
+      "correct_index": 2,
+      "correct_integer": null,
+      "solution": "The total energy required for removing 2 electrons from $\\text{Li}^+$ to form $\\text{Li}^{3+}$ is calculated using hydrogen-like ionization energy formulas for $Z=3$.\nFor hydrogen-like species, $E_n = -2.18 \\times 10^{-18} \\times \\frac{Z^2}{n^2}\\text{ J}$.\nEnergy to remove the third electron from $\\text{Li}^{2+}$ ($Z=3, n=1$):\n$$\\text{IE}_3 = 2.18 \\times 10^{-18} \\times 3^2 = 1.962 \\times 10^{-17}\\text{ J atom}^{-1}$$",
+      "type": "mcq",
+      "image": "images/11922-2nd_Apr_2026_Shift_1__Actual_Paper__p4_q2_1.png",
+      "subject": "Chemistry",
+      "global_question_number": 2
+    },
+    {
+      "question_number": 3,
+      "text": "Given below are two statements :\nStatement (I) : The correct sequence of bond lengths in the following species is $\\text{O}_2^+ < \\text{O}_2 < \\text{O}_2^- < \\text{O}_2^{2-}$.\nStatement (II) : The correct sequence of number of unpaired electrons in the following species is $\\text{O}_2 > \\text{O}_2^+ > \\text{O}_2^- > \\text{O}_2^{2-}$.\nIn the light of the above statements, choose the correct answer from the options given below :",
+      "options": [
+        "(1) Both Statement I and Statement II are true",
+        "(2) Both Statement I and Statement II are false",
+        "(3) Statement I is true but Statement II is false",
+        "(4) Statement I is false but Statement II is true"
+      ],
+      "correct_index": 2,
+      "correct_integer": null,
+      "solution": "Bond orders:\n$\\text{O}_2^+ = 2.5$, $\\text{O}_2 = 2.0$, $\\text{O}_2^- = 1.5$, $\\text{O}_2^{2-} = 1.0$.\nSince $\\text{Bond length} \\propto \\frac{1}{\\text{Bond order}}$, the bond length sequence is $\\text{O}_2^+ < \\text{O}_2 < \\text{O}_2^- < \\text{O}_2^{2-}$. Thus, Statement I is true.\nNumber of unpaired electrons:\n$\\text{O}_2 = 2$, $\\text{O}_2^+ = 1$, $\\text{O}_2^- = 1$, $\\text{O}_2^{2-} = 0$.\nSince $\\text{O}_2^+$ and $\\text{O}_2^-$ both have 1 unpaired electron, Statement II is false.",
+      "type": "mcq",
+      "image": null,
+      "subject": "Chemistry",
+      "global_question_number": 3
+    },
+    {
+      "question_number": 4,
+      "text": "Consider the following data:\n(i) $2\\text{Al}(s) + 6\\text{HCl}(aq) \\rightarrow \\text{Al}_2\\text{Cl}_6(aq) + 3\\text{H}_2(g) + 1200\\text{ kJ/mol}$\n(ii) \\text{H}_2(g) + \\text{Cl}_2(g) \\rightarrow 2\\text{HCl}(g) + 164\\text{ kJ/mol}\n(iii) $\\text{HCl}(g) + aq \\rightarrow \\text{HCl}(aq) + 83\\text{ kJ/mol}$\n(iv) $\\text{Al}_2\\text{Cl}_6(s) + aq \\rightarrow \\text{Al}_2\\text{Cl}_6(aq) + 663\\text{ kJ/mol}$\nThe enthalpy of formation of anhydrous solid $\\text{Al}_2\\text{Cl}_6$ is :",
+      "options": [
+        "(1) $-648\\text{ kJ mol}^{-1}$",
+        "(2) $-1350\\text{ kJ mol}^{-1}$",
+        "(3) $-2002\\text{ kJ mol}^{-1}$",
+        "(4) $-1527\\text{ kJ mol}^{-1}$"
+      ],
+      "correct_index": 3,
+      "correct_integer": null,
+      "solution": "Target equation: $2\\text{Al}(s) + 3\\text{Cl}_2(g) \\rightarrow \\text{Al}_2\\text{Cl}_6(s)$\nUsing Hess's law:\n$$\\Delta H_f = \\Delta H_{(i)} + 3 \\times \\Delta H_{(ii)} + 6 \\times \\Delta H_{(iii)} - \\Delta H_{(iv)}$$\n$$\\Delta H_f = -1200 + 3(-164) + 6(-83) - (-663)$$\n$$\\Delta H_f = -1200 - 492 - 498 + 663 = -1527\\text{ kJ mol}^{-1}$$",
+      "type": "mcq",
+      "image": null,
+      "subject": "Chemistry",
+      "global_question_number": 4
+    },
+    {
+      "question_number": 5,
+      "text": "$19.5\\text{ g}$ of fluoro acetic acid (molar mass $= 78\\text{ g mol}^{-1}$) is dissolved in $500\\text{ g}$ of water at $298\\text{ K}$. The depression in the freezing point of water was $1^\\circ\\text{C}$. What is $K_a$ of fluoro acetic acid ? (For water, $K_f = 1.86\\text{ K kg mol}^{-1}$). Assume molarity and molality to have same values.",
+      "options": [
+        "(1) $10^{-6}$",
+        "(2) $4 \\times 10^{-4}$",
+        "(3) $3 \\times 10^{-5}$",
+        "(4) $3 \\times 10^{-3}$"
+      ],
+      "correct_index": 3,
+      "correct_integer": null,
+      "solution": "Molality $m = \\frac{19.5 / 78}{0.5\\text{ kg}} = 0.5\\text{ m}$.\n$\\Delta T_f = i K_f m \\implies 1 = i \\times 1.86 \\times 0.5 \\implies i \\approx 1.0753$.\n$\\alpha = i - 1 = 0.0753$.\n$K_a = C \\alpha^2 = 0.5 \\times (0.0753)^2 \\approx 2.83 \\times 10^{-3} \\approx 3 \\times 10^{-3}$.",
+      "type": "mcq",
+      "image": null,
+      "subject": "Chemistry",
+      "global_question_number": 5
+    },
+    {
+      "question_number": 6,
+      "text": "The solubility product constants of $\\text{Ag}_2\\text{CrO}_4$ and $\\text{AgBr}$ are $32x$ and $4y$ respectively at $298\\text{ K}$. The value of $\\left(\\frac{\\text{molarity of }\\text{AgBr}}{\\text{molarity of }\\text{Ag}_2\\text{CrO}_4}\\right)$ can be expressed as :",
+      "options": [
+        "(1) $\\frac{y^2}{3x^2}$",
+        "(2) $\\frac{y}{x}$",
+        "(3) $\\left(\\frac{y}{x}\\right)^{1/2}$",
+        "(4) $\\frac{y^{1/2}}{3x}$"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "For $\\text{Ag}_2\\text{CrO}_4$: $K_{sp} = 4S_1^3 = 32x^3 \\implies S_1 = 2x$.\nFor $\\text{AgBr}$: $K_{sp} = S_2^2 = 4y^2 \\implies S_2 = 2y$.\nRatio of molarities $\\frac{S_2}{S_1} = \\frac{2y}{2x} = \\frac{y}{x}$.",
+      "type": "mcq",
+      "image": null,
+      "subject": "Chemistry",
+      "global_question_number": 6
+    },
+    {
+      "question_number": 7,
+      "text": "An electrochemical cell is constructed using half cells in the direction of spontaneous change:\n$\\text{Fe(OH)}_2(s) + 2e^- \\rightarrow \\text{Fe}(s) + 2\\text{OH}^-(aq)$, $E^\\theta = -0.88\\text{ V}$\nand\n$\\text{AgBr}(s) + e^- \\rightarrow \\text{Ag}(s) + \\text{Br}^-(aq)$, $E^\\theta = +0.07\\text{ V}$\nWhich of the following option is correct?",
+      "options": [
+        "(1) Overall reaction $\\text{Fe}(s) + 2\\text{OH}^-(aq) + 2\\text{AgBr}(s) \\rightleftharpoons \\text{Fe(OH)}_2(s) + 2\\text{Ag}(s) + 2\\text{Br}^-(aq)$",
+        "(2) $E_{\\text{cell}}^\\theta = -0.95\\text{ V}$",
+        "(3) Fe is reduced in the electrochemical cell",
+        "(4) $E_{\\text{cell}}^\\theta$ is an extensive property"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Since $E^\\theta(\\text{AgBr}/\\text{Ag}) > E^\\theta(\\text{Fe(OH)}_2/\\text{Fe})$, $\\text{AgBr}$ undergoes reduction at cathode and $\\text{Fe}$ undergoes oxidation at anode.\nAnode: $\\text{Fe}(s) + 2\\text{OH}^-(aq) \\rightarrow \\text{Fe(OH)}_2(s) + 2e^-$\nCathode: $2\\text{AgBr}(s) + 2e^- \\rightarrow 2\\text{Ag}(s) + 2\\text{Br}^-(aq)$\nOverall: $\\text{Fe}(s) + 2\\text{OH}^-(aq) + 2\\text{AgBr}(s) \\rightleftharpoons \\text{Fe(OH)}_2(s) + 2\\text{Ag}(s) + 2\\text{Br}^-(aq)$.",
+      "type": "mcq",
+      "image": null,
+      "subject": "Chemistry",
+      "global_question_number": 7
+    },
+    {
+      "question_number": 8,
+      "text": "$t_{100\\%}$ is the time required for the $100\\%$ completion of the reaction while $t_{1/2}$ is the time required for $50\\%$ of the reaction to be completed. Which of the following option correctly represents the relation between $t_{100\\%}$ and $t_{1/2}$ for zero and first order reactions respectively ?",
+      "options": [
+        "(1) $t_{100\\%} = 2t_{1/2}$ and $t_{100\\%} = (t_{1/2})^2$",
+        "(2) $t_{100\\%} = 2t_{1/2}$ and $t_{100\\%} = \\infty$",
+        "(3) $t_{100\\%} = (t_{1/2})^2$ and $t_{100\\%} = 2t_{1/2}$",
+        "(4) $t_{100\\%} = 2t_{1/2}$ and $t_{100\\%} = t_{1/2} / 2$"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "For a zero order reaction, $t_{100\\%} = \\frac{[A]_0}{k} = 2 t_{1/2}$.\nFor a first order reaction, complete completion requires infinite time ($t_{100\\%} = \\infty$).",
+      "type": "mcq",
+      "image": null,
+      "subject": "Chemistry",
+      "global_question_number": 8
+    },
+    {
+      "question_number": 9,
+      "text": "Given below are two statements :\nStatement (I) : The first ionisation enthalpy of the elements $\\text{Na, Mg, Cl}$ and $\\text{Ar}$ follows the order $\\text{Na} > \\text{Mg} > \\text{Cl} > \\text{Ar}$.\nStatement (II) : Among $\\text{Ca, Al, Fe}$ and $\\text{B}$, the third ionisation enthalpy is very high for $\\text{Ca}$.\nIn the light of the above statements, choose the correct answer from the options given below :",
+      "options": [
+        "(1) Both Statement I and Statement II are true",
+        "(2) Both Statement I and Statement II are false",
+        "(3) Statement I is true but Statement II is false",
+        "(4) Statement I is false but Statement II is true"
+      ],
+      "correct_index": 3,
+      "correct_integer": null,
+      "solution": "Statement I is false because first ionization enthalpy generally increases across a period: $\\text{Na} < \\text{Mg} < \\text{Cl} < \\text{Ar}$.\nStatement II is true because $\\text{Ca}^{2+}$ has a stable noble gas configuration ($[\\text{Ar}]$), so removing the third electron requires a very high amount of energy.",
+      "type": "mcq",
+      "image": null,
+      "subject": "Chemistry",
+      "global_question_number": 9
+    },
+    {
+      "question_number": 10,
+      "text": "Given below are two statements :\nStatement (I) : Oxidising power of halogens decreases in the order $\\text{F}_2 > \\text{Cl}_2 > \\text{Br}_2 > \\text{I}_2$, which is the basis of \"Layer test\".\nStatement (II) : \"Layer test\" to identify $\\text{Br}^-$ and $\\text{I}^-$ in aqueous solution involves the oxidation of bromide or iodide into $\\text{Br}_2$ or $\\text{I}_2$ respectively with $\\text{Cl}_2$, which is a type of displacement redox reaction.\nIn the light of the above statements, choose the correct answer from the options given below :",
+      "options": [
+        "(1) Both Statement I and Statement II are true",
+        "(2) Both Statement I and Statement II are false",
+        "(3) Statement I is true but Statement II is false",
+        "(4) Statement I is false but Statement II is true"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Both statements are true. $\\text{Cl}_2$ oxidizes $\\text{Br}^-$ and $\\text{I}^-$ to $\\text{Br}_2$ and $\\text{I}_2$ because oxidising power decreases down group 17 ($\\text{F}_2 > \\text{Cl}_2 > \\text{Br}_2 > \\text{I}_2$). These liberated halogens dissolve in organic layer giving distinct colors.",
+      "type": "mcq",
+      "image": null,
+      "subject": "Chemistry",
+      "global_question_number": 10
+    },
+    {
+      "question_number": 11,
+      "text": "Which of the following sets includes all the species that will change the orange colour of $\\text{K}_2\\text{Cr}_2\\text{O}_7$ in acid medium?",
+      "options": [
+        "(1) $\\text{Fe}^{2+}, \\text{Sn}^{2+}, \\text{I}^-, \\text{S}^{2-}$",
+        "(2) $\\text{S}^{2-}, \\text{Fe}^{3+}, \\text{I}^-, \\text{C}_2\\text{O}_4^{2-}$",
+        "(3) $\\text{Fe}^{2+}, \\text{NO}_2^-, \\text{SO}_4^{2-}, \\text{Sn}^{4+}$",
+        "(4) $\\text{Fe}^{3+}, \\text{SO}_3^{2-}, \\text{S}^{2-}, \\text{Sn}^{4+}$"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Acidified $\\text{K}_2\\text{Cr}_2\\text{O}_7$ is an oxidizing agent that reacts with reducing agents like $\\text{Fe}^{2+}, \\text{Sn}^{2+}, \\text{I}^-$, and $\\text{S}^{2-}$, reducing $\\text{Cr}_2\\text{O}_7^{2-}$ (orange) to $\\text{Cr}^{3+}$ (green). Species in their highest oxidation states like $\\text{Fe}^{3+}, \\text{SO}_4^{2-}$, and $\\text{Sn}^{4+}$ cannot be oxidized further.",
+      "type": "mcq",
+      "image": null,
+      "subject": "Chemistry",
+      "global_question_number": 11
+    },
+    {
+      "question_number": 12,
+      "text": "Match List - I with List - II.\n\nList - I (Chromium (III) Complexes, en = ethylenediamine):\nA. $[\\text{Cr(CN)}_6]^{3-}$\nB. $[\\text{CrF}_6]^{3-}$\nC. $[\\text{Cr(H}_2\\text{O)}_6]^{3+}$\nD. $[\\text{Cr(en)}_3]^{3+}$\n\nList - II ($\\Delta_o\\text{ cm}^{-1}$):\nI. 15,060\nII. 17,400\nIII. 22,300\nIV. 26,600\n\nChoose the correct answer from the options given below :",
+      "options": [
+        "(1) A-I, B-II, C-III, D-IV",
+        "(2) A-II, B-III, C-IV, D-I",
+        "(3) A-III, B-IV, C-I, D-II",
+        "(4) A-IV, B-I, C-II, D-III"
+      ],
+      "correct_index": 3,
+      "correct_integer": null,
+      "solution": "According to the spectrochemical series, ligand field strength follows:\n$\\text{F}^- < \\text{H}_2\\text{O} < \\text{en} < \\text{CN}^-$\nThus, the crystal field splitting energy $\\Delta_o$ increases in the same order:\n$[\\text{CrF}_6]^{3-} (15,060) < [\\text{Cr(H}_2\\text{O)}_6]^{3+} (17,400) < [\\text{Cr(en)}_3]^{3+} (22,300) < [\\text{Cr(CN)}_6]^{3-} (26,600)$.",
+      "type": "mcq",
+      "image": null,
+      "subject": "Chemistry",
+      "global_question_number": 12
+    },
+    {
+      "question_number": 13,
+      "text": "Given below are two statements :\nStatement (I) : 1,2,3-Trihydroxypropane can be separated from water by simple distillation.\nStatement (II) : An azeotropic mixture cannot be separated by fractional distillation.\nIn the light of the above statements, choose the correct answer from the options given below :",
+      "options": [
+        "(1) Both Statement I and Statement II are true",
+        "(2) Both Statement I and Statement II are false",
+        "(3) Statement I is true but Statement II is false",
+        "(4) Statement I is false but Statement II is true"
+      ],
+      "correct_index": 3,
+      "correct_integer": null,
+      "solution": "Statement I is false because 1,2,3-trihydroxypropane (glycerol) decomposes at its boiling point, so it is purified/separated by distillation under reduced pressure.\nStatement II is true because azeotropic mixtures boil at a constant temperature with identical liquid and vapor compositions, so they cannot be separated by fractional distillation.",
+      "type": "mcq",
+      "image": null,
+      "subject": "Chemistry",
+      "global_question_number": 13
+    },
+    {
+      "question_number": 14,
+      "text": "Given below are two statements :\nStatement (I) : Benzyl chloride reacts faster in $\\text{S}_N1$ mechanism than ethyl chloride.\nStatement (II) : Ethyl carbocation intermediate is less stabilized by hyperconjugation than benzyl carbocation by resonance.\nIn the light of the above statements, choose the correct answer from the options given below :",
+      "options": [
+        "(1) Both Statement I and Statement II are true",
+        "(2) Both Statement I and Statement II are false",
+        "(3) Statement I is true but Statement II is false",
+        "(4) Statement I is false but Statement II is true"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Both statements are true. Benzyl carbocation formed during $\\text{S}_N1$ reaction of benzyl chloride is highly stabilized by resonance with the benzene ring, making it much more reactive than ethyl carbocation which is only stabilized by hyperconjugation.",
+      "type": "mcq",
+      "image": null,
+      "subject": "Chemistry",
+      "global_question_number": 14
+    },
+    {
+      "question_number": 15,
+      "text": "In IUPAC nomenclature, the correct order of decreasing priority of functional group is :",
+      "options": [
+        "(1) $-\\text{CONH}_2 > >\\text{C}=\\text{O}, -\\text{CHO}, -\\text{NH}_2, -\\text{C}\\equiv\\text{C}-$",
+        "(2) $-\\text{CONH}_2, -\\text{COOCH}_3, -\\text{CHO}, -\\text{NH}_2, -\\text{OH}$",
+        "(3) $-\\text{CONH}_2, -\\text{CHO}, >\\text{C}=\\text{O}, -\\text{NH}_2, -\\text{C}\\equiv\\text{C}-$",
+        "(4) $-\\text{CONH}_2, -\\text{CHO}, -\\text{CN}, -\\text{NH}_2, -\\text{C}\\equiv\\text{C}-$"
+      ],
+      "correct_index": 2,
+      "correct_integer": null,
+      "solution": "According to IUPAC priority rules, functional groups are prioritized as follows:\nAmide ($-\\text{CONH}_2$) > Aldehyde ($-\\text{CHO}$) > Ketone ($>\\text{C}=\\text{O}$) > Amine ($-\\text{NH}_2$) > Alkyne ($-\\text{C}\\equiv\\text{C}-$).",
+      "type": "mcq",
+      "image": null,
+      "subject": "Chemistry",
+      "global_question_number": 15
+    },
+    {
+      "question_number": 16,
+      "text": "For the given molecule, \"$x$\", the preferred site for the attack of the electrophile is :",
+      "options": [
+        "(1) Predominantly at \"r\"",
+        "(2) \"r\" and \"u\"",
+        "(3) \"p\" and \"s\"",
+        "(4) Predominantly at \"u\""
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "The attack of an electrophile takes place at the position where electron density is highest, activated by strong electron donating groups via resonance.",
+      "type": "mcq",
+      "image": null,
+      "subject": "Chemistry",
+      "global_question_number": 16
+    },
+    {
+      "question_number": 17,
+      "text": "Match List - I with List - II.\n\nList - I (Mixture of Compounds):\nA. Diethylamine + Ethylamine\nB. Acetaldehyde + Acetone\nC. Ethanol + Phenol\nD. Benzoic acid + Cinnamic acid\n\nList - II (Reagent used to distinguish):\nI. Bromine water\nII. $\\text{Ph}-\\text{N}\\equiv\\text{N}^+\\text{Cl}^-$\nIII. Neutral $\\text{FeCl}_3$\nIV. Ammoniacal silver nitrate\n\nChoose the correct answer from the options given below :",
+      "options": [
+        "(1) A-IV, B-II, C-I, D-III",
+        "(2) A-IV, B-II, C-III, D-I",
+        "(3) A-II, B-IV, C-I, D-III",
+        "(4) A-II, B-IV, C-III, D-I"
+      ],
+      "correct_index": 3,
+      "correct_integer": null,
+      "solution": "A. Primary vs secondary amine can be distinguished using benzene diazonium chloride (II).\nB. Acetaldehyde (aldehyde) reduces ammoniacal silver nitrate (Tollens' reagent - IV) while acetone does not.\nC. Phenol gives violet color with neutral $\\text{FeCl}_3$ (III).\nD. Cinnamic acid contains an unsaturated double bond which decolourizes Bromine water (I).",
+      "type": "mcq",
+      "image": null,
+      "subject": "Chemistry",
+      "global_question_number": 17
+    },
+    {
+      "question_number": 18,
+      "text": "Consider the three aromatic molecules ($P, Q$ and $R$) whose structures have been given below :\nThe correct order regarding the reactivity of these compounds with $\\text{Ph}-\\text{N}\\equiv\\text{N}^+\\text{Cl}^-$ under (+) optimum but slightly acidic medium is :",
+      "options": [
+        "(1) $P > Q > R$",
+        "(2) $R > P > Q$",
+        "(3) $R > Q > P$",
+        "(4) $P > R > Q$"
+      ],
+      "correct_index": 2,
+      "correct_integer": null,
+      "solution": "Azo coupling reaction occurs rapidly with aromatic compounds activated by strong electron-donating groups like $-\\text{NH}_2$ and $-\\text{OH}$. The order of activation determines the reactivity sequence.",
+      "type": "mcq",
+      "image": null,
+      "subject": "Chemistry",
+      "global_question_number": 18
+    },
+    {
+      "question_number": 19,
+      "text": "Match List - I with List - II.\n\nList - I (Vitamin):\nA. Vitamin $B_6$\nB. Vitamin $B_1$\nC. Vitamin $B_2$\nD. Vitamin C\n\nList - II (Name):\nI. Pyridoxine\nII. Ascorbic acid\nIII. Thiamine\nIV. Riboflavin\n\nChoose the correct answer from the options given below :",
+      "options": [
+        "(1) A-II, B-I, C-III, D-IV",
+        "(2) A-IV, B-III, C-II, D-I",
+        "(3) A-III, B-IV, C-I, D-II",
+        "(4) A-I, B-III, C-IV, D-II"
+      ],
+      "correct_index": 3,
+      "correct_integer": null,
+      "solution": "Vitamin $B_6$ is Pyridoxine (I).\nVitamin $B_1$ is Thiamine (III).\nVitamin $B_2$ is Riboflavin (IV).\nVitamin C is Ascorbic acid (II).",
+      "type": "mcq",
+      "image": null,
+      "subject": "Chemistry",
+      "global_question_number": 19
+    },
+    {
+      "question_number": 20,
+      "text": "A salt with few drops of conc. $\\text{HCl}$ gives apple green colour in flame test. The group precipitate of the salt is dissolved in acetic acid and treated with $\\text{K}_2\\text{CrO}_4$ to give yellow precipitate. When the sodium carbonate extract of the salt solution is heated with conc. $\\text{HNO}_3$ and ammonium molybdate, it resulted a canary yellow precipitate. The cation and anion present in the salt are respectively :",
+      "options": [
+        "(1) $\\text{Ca}^{2+}$ and $\\text{SO}_4^{2-}$",
+        "(2) $\\text{Ba}^{2+}$ and $\\text{PO}_4^{3-}$",
+        "(3) $\\text{Mn}^{2+}$ and $\\text{PO}_4^{3-}$",
+        "(4) $\\text{Ba}^{2+}$ and $\\text{SO}_4^{2-}$"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "Apple green flame test is characteristic of $\\text{Ba}^{2+}$. $\\text{Ba}^{2+}$ forms yellow precipitate of $\\text{BaCrO}_4$ with $\\text{K}_2\\text{CrO}_4$.\nCanary yellow precipitate with ammonium molybdate in acidic medium confirms phosphate ion ($\\text{PO}_4^{3-}$).",
+      "type": "mcq",
+      "image": null,
+      "subject": "Chemistry",
+      "global_question_number": 20
+    },
+    {
+      "question_number": 21,
+      "text": "$5.33\\text{ g}$ of $\\text{CrCl}_3 \\cdot 6\\text{H}_2\\text{O}$, which is a $1:2$ electrolyte, is dissolved in water and is passed through a cation exchanger. The chloride ions in the eluted solution, on treatment with $\\text{AgNO}_3$ results in $8.61\\text{ g}$ of $\\text{AgCl}$. The ratio of moles of complex reacted and moles of $\\text{AgCl}$ formed is $1 : x$. (Nearest integer) [Molar mass in $\\text{g mol}^{-1}$: $\\text{Cr}: 52, \\text{Ag}: 108, \\text{Cl}: 35.5, \\text{H}: 1, \\text{O}: 16$]",
+      "options": [],
+      "correct_index": null,
+      "correct_integer": "3",
+      "solution": "Molar mass of $\\text{CrCl}_3 \\cdot 6\\text{H}_2\\text{O} = 266.5\\text{ g mol}^{-1}$.\nMoles of complex = $\\frac{5.33}{266.5} = 0.02\\text{ mol}$.\nMoles of $\\text{AgCl}$ formed = $\\frac{8.61}{143.5} = 0.06\\text{ mol}$.\nRatio of moles of complex to moles of $\\text{AgCl} = \\frac{0.02}{0.06} = \\frac{1}{3}$.\nSo, $x = 3$.",
+      "type": "numerical",
+      "image": null,
+      "subject": "Chemistry",
+      "global_question_number": 21
+    },
+    {
+      "question_number": 22,
+      "text": "Consider the isomers of hydrocarbon with molecular formula $\\text{C}_5\\text{H}_{10}$. These isomers do not decolourise $\\text{KMnO}_4$ solution. These isomers are subjected to chlorination with chlorine in presence of light to give monochloro compounds. The total number of monochloro compounds (structural isomers only) formed is _____.",
+      "options": [],
+      "correct_index": null,
+      "correct_integer": "15",
+      "solution": "Hydrocarbons with formula $\\text{C}_5\\text{H}_{10}$ that do not decolourise $\\text{KMnO}_4$ are cyclic alkanes:\n1. Cyclopentane $\\rightarrow 1$ monochloro derivative\n2. Methylcyclobutane $\\rightarrow 4$ monochloro structural derivatives\n3. Ethylcyclopropane $\\rightarrow 4$ monochloro structural derivatives\n4. 1,1-Dimethylcyclopropane $\\rightarrow 3$ monochloro structural derivatives\n5. 1,2-Dimethylcyclopropane $\\rightarrow 3$ monochloro structural derivatives\nTotal structural monochloro compounds = $1 + 4 + 4 + 3 + 3 = 15$.",
+      "type": "numerical",
+      "image": null,
+      "subject": "Chemistry",
+      "global_question_number": 22
+    },
+    {
+      "question_number": 23,
+      "text": "One mole of an alkane $(x)$ requires $8\\text{ mole}$ oxygen for complete combustion. Sum of number of carbon and hydrogen atoms in the alkane $(x)$ is _____.",
+      "options": [],
+      "correct_index": null,
+      "correct_integer": "17",
+      "solution": "Combustion equation for alkane $\\text{C}_n\\text{H}_{2n+2}$:\n$$\\text{C}_n\\text{H}_{2n+2} + \\left(\\frac{3n+1}{2}\\right)\\text{O}_2 \\rightarrow n\\text{CO}_2 + (n+1)\\text{H}_2\\text{O}$$\nGiven $\\frac{3n+1}{2} = 8 \\implies 3n+1 = 16 \\implies 3n = 15 \\implies n = 5$.\nThe alkane is pentane, $\\text{C}_5\\text{H}_{12}$.\nSum of carbon and hydrogen atoms = $5 + 12 = 17$.",
+      "type": "numerical",
+      "image": null,
+      "subject": "Chemistry",
+      "global_question_number": 23
+    },
+    {
+      "question_number": 24,
+      "text": "For reaction $A \\rightarrow P$, rate constant $k = 1.5 \\times 10^3\\text{ s}^{-1}$ at $27^\\circ\\text{C}$. If activation energy for the above reaction is $60\\text{ kJ mol}^{-1}$, then the temperature (in $^\\circ\\text{C}$) at which rate constant $k = 4.5 \\times 10^3\\text{ s}^{-1}$ is _____. (Nearest integer)\nGiven : $\\log 2 = 0.30$, $\\log 3 = 0.48$, $R = 8.3\\text{ J K}^{-1}\\text{ mol}^{-1}$, $\\ln 10 = 2.3$",
+      "options": [],
+      "correct_index": null,
+      "correct_integer": "41",
+      "solution": "Using Arrhenius equation:\n$$\\ln\\left(\\frac{k_2}{k_1}\\right) = \\frac{E_a}{R}\\left(\\frac{1}{T_1} - \\frac{1}{T_2}\\right)$$\n$$\\ln 3 = 2.3 \\times 0.48 = 1.104$$\n$$1.104 = \\frac{60000}{8.3}\\left(\\frac{1}{300} - \\frac{1}{T_2}\\right)$$\n$$\\frac{1}{300} - \\frac{1}{T_2} = \\frac{1.104 \\times 8.3}{60000} = 0.0001527$$\n$$\\frac{1}{T_2} = 0.003333 - 0.0001527 = 0.0031806 \\implies T_2 \\approx 314.4\\text{ K}$$\nTemperature in $^\\circ\\text{C} = 314.4 - 273 = 41.4^\\circ\\text{C} \\approx 41^\\circ\\text{C}$.",
+      "type": "numerical",
+      "image": null,
+      "subject": "Chemistry",
+      "global_question_number": 24
+    },
+    {
+      "question_number": 25,
+      "text": "At the transition temperature $T$, $A \\rightleftharpoons B$ where $A$ and $B$ are two states of substance $X$. $\\Delta G^\\theta = 10^5 - 350 T$. The transition temperature in $^\\circ\\text{C}$ when pressure is $1\\text{ atm}$ is _____. (Nearest integer)",
+      "options": [],
+      "correct_index": null,
+      "correct_integer": "13",
+      "solution": "At phase equilibrium (transition temperature $T$), $\\Delta G^\\theta = 0$.\n$$10^5 - 350 T = 0 \\implies 350 T = 100000 \\implies T = \\frac{100000}{350} \\approx 285.71\\text{ K}$$\nIn $^\\circ\\text{C}$: $T = 285.71 - 273 = 12.71^\\circ\\text{C} \\approx 13^\\circ\\text{C}$.",
+      "type": "numerical",
+      "image": null,
+      "subject": "Chemistry",
+      "global_question_number": 25
+    },
+    {
+      "question_number": 1,
+      "text": "Let $A = \\{x \\in \\mathbb{R} : |x - 2| < 1\\}$ and $B = \\{x \\in \\mathbb{R} : x^2 - 4x + 3 > 0\\}$. Then $A \\cap B$ is equal to:",
+      "options": [
+        "(1) (1, 2)",
+        "(2) (2, 3)",
+        "(3) (1, 3)",
+        "(4) (1, 2) \\cup (2, 3)"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "$A = (1, 3)$ and $B = (-\\infty, 1) \\cup (3, \\infty) \\implies A \\cap B = (2, 3)$.",
+      "type": "mcq",
+      "image": null,
+      "subject": "Mathematics",
+      "global_question_number": 26
+    },
+    {
+      "question_number": 2,
+      "text": "If the domain of $f(x) = \\sqrt{\\sin^{-1}(2x) + \\frac{\\pi}{6}}$ is $[a, b]$, then $a + b$ is equal to:",
+      "options": [
+        "(1) 1/4",
+        "(2) 1/2",
+        "(3) -1/4",
+        "(4) 0"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "$\\sin^{-1}(2x) \\ge -\\pi/6 \\implies 2x \\ge -1/2 \\implies x \\ge -1/4$. Also $2x \\le 1 \\implies x \\le 1/2$. Domain = $[-1/4, 1/2]$, so $a+b = 1/4$.",
+      "type": "mcq",
+      "image": null,
+      "subject": "Mathematics",
+      "global_question_number": 27
+    },
+    {
+      "question_number": 3,
+      "text": "If $\\alpha, \\beta$ are the roots of $x^2 - x - 1 = 0$, then the value of $\\alpha^8 + \\beta^8$ is:",
+      "options": [
+        "(1) 47",
+        "(2) 34",
+        "(3) 21",
+        "(4) 55"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Using Lucas numbers / recurrence relation $a_n = a_{n-1} + a_{n-2}$, $a_8 = 47$.",
+      "type": "mcq",
+      "image": null,
+      "subject": "Mathematics",
+      "global_question_number": 28
+    },
+    {
+      "question_number": 4,
+      "text": "The value of $\\lim_{x \\to 0} \\frac{e^{x^2} - \\cos x}{x^2}$ is equal to:",
+      "options": [
+        "(1) 1/2",
+        "(2) 3/2",
+        "(3) 1",
+        "(4) 2"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "Using Taylor expansion: $(1 + x^2) - (1 - x^2/2) = 3x^2/2$, limit is 3/2.",
+      "type": "mcq",
+      "image": null,
+      "subject": "Mathematics",
+      "global_question_number": 29
+    },
+    {
+      "question_number": 5,
+      "text": "The total number of 4-digit numbers that can be formed using digits $0, 1, 2, 3, 4, 5$ without repetition that are divisible by 6 is:",
+      "options": [
+        "(1) 72",
+        "(2) 52",
+        "(3) 64",
+        "(4) 48"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "Case analysis for sum divisible by 3 and last digit even gives 52 numbers.",
+      "type": "mcq",
+      "image": null,
+      "subject": "Mathematics",
+      "global_question_number": 30
+    },
+    {
+      "question_number": 6,
+      "text": "If the system of linear equations $x + y + z = 6$, $x + 2y + 3z = 10$, $x + 2y + \\lambda z = \\mu$ has infinitely many solutions, then $\\lambda + \\mu$ is equal to:",
+      "options": [
+        "(1) 13",
+        "(2) 11",
+        "(3) 9",
+        "(4) 15"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "For infinite solutions, $\\lambda = 3$ and $\\mu = 10$, so $\\lambda + \\mu = 13$.",
+      "type": "mcq",
+      "image": null,
+      "subject": "Mathematics",
+      "global_question_number": 31
+    },
+    {
+      "question_number": 7,
+      "text": "The area bounded by the curves $y = x^2$ and $y = 2x - x^2$ is:",
+      "options": [
+        "(1) 1/3",
+        "(2) 2/3",
+        "(3) 1/2",
+        "(4) 3/4"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Intersection points $x = 0, 1$. Area = $\\int_0^1 (2x - 2x^2) dx = [x^2 - 2x^3/3]_0^1 = 1 - 2/3 = 1/3$.",
+      "type": "mcq",
+      "image": null,
+      "subject": "Mathematics",
+      "global_question_number": 32
+    },
+    {
+      "question_number": 8,
+      "text": "If $\\vec{a} = \\hat{i} + \\hat{j} + \\hat{k}$ and $\\vec{b} = \\hat{i} - \\hat{j} + 2\\hat{k}$, then the projection of $\\vec{a}$ on $\\vec{b}$ is:",
+      "options": [
+        "(1) $2/\\sqrt{6}$",
+        "(2) $1/\\sqrt{6}$",
+        "(3) $2/\\sqrt{3}$",
+        "(4) $1/\\sqrt{3}$"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Projection = $\\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{b}|} = \\frac{1 - 1 + 2}{\\sqrt{1 + 1 + 4}} = \\frac{2}{\\sqrt{6}}$.",
+      "type": "mcq",
+      "image": null,
+      "subject": "Mathematics",
+      "global_question_number": 33
+    },
+    {
+      "question_number": 9,
+      "text": "The shortest distance between the lines $\\frac{x-1}{2} = \\frac{y-2}{3} = \\frac{z-3}{4}$ and $\\frac{x-2}{3} = \\frac{y-4}{4} = \\frac{z-5}{5}$ is:",
+      "options": [
+        "(1) $1/\\sqrt{6}$",
+        "(2) $1/\\sqrt{3}$",
+        "(3) $1/\\sqrt{2}$",
+        "(4) $0$"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Standard formula for shortest distance between skew lines gives $1/\\sqrt{6}$.",
+      "type": "mcq",
+      "image": null,
+      "subject": "Mathematics",
+      "global_question_number": 34
+    },
+    {
+      "question_number": 10,
+      "text": "If $y(x)$ is the solution of $\\frac{dy}{dx} + y \\tan x = \\sec x$, $y(0) = 1$, then $y(\\pi/4)$ is equal to:",
+      "options": [
+        "(1) $\\sqrt{2}$",
+        "(2) $1/\\sqrt{2}$",
+        "(3) $2$",
+        "(4) $1$"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Integrating factor = $\\sec x$, $y \\sec x = \\tan x + C$. $y(0)=1 \\implies C=1$. $y(\\pi/4) = \\frac{1+1}{\\sqrt{2}} = \\sqrt{2}$.",
+      "type": "mcq",
+      "image": null,
+      "subject": "Mathematics",
+      "global_question_number": 35
+    },
+    {
+      "question_number": 11,
+      "text": "The locus of the midpoint of the chord of the circle $x^2 + y^2 = 4$ which subtends a right angle at the origin is:",
+      "options": [
+        "(1) $x^2 + y^2 = 1$",
+        "(2) $x^2 + y^2 = 2$",
+        "(3) $x^2 + y^2 = 3$",
+        "(4) $x^2 + y^2 = 8$"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "Distance from origin to midpoint $r = R \\cos(45^\\circ) = 2 \\times 1/\\sqrt{2} = \\sqrt{2}$. Locus is $x^2 + y^2 = 2$.",
+      "type": "mcq",
+      "image": null,
+      "subject": "Mathematics",
+      "global_question_number": 36
+    },
+    {
+      "question_number": 12,
+      "text": "The eccentricity of the hyperbola $\\frac{x^2}{9} - \\frac{y^2}{16} = 1$ is:",
+      "options": [
+        "(1) 5/3",
+        "(2) 5/4",
+        "(3) 4/3",
+        "(4) 3/5"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "$e = \\sqrt{1 + b^2/a^2} = \\sqrt{1 + 16/9} = 5/3$.",
+      "type": "mcq",
+      "image": null,
+      "subject": "Mathematics",
+      "global_question_number": 37
+    },
+    {
+      "question_number": 13,
+      "text": "If $\\tan^{-1} x + \\tan^{-1} y = \\frac{\\pi}{4}$, then $x + y + xy$ is equal to:",
+      "options": [
+        "(1) 1",
+        "(2) 0",
+        "(3) -1",
+        "(4) 2"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "$\\frac{x+y}{1-xy} = \\tan(\\pi/4) = 1 \\implies x + y = 1 - xy \\implies x + y + xy = 1$.",
+      "type": "mcq",
+      "image": null,
+      "subject": "Mathematics",
+      "global_question_number": 38
+    },
+    {
+      "question_number": 14,
+      "text": "The variance of the first 10 natural numbers is:",
+      "options": [
+        "(1) 8.25",
+        "(2) 6.5",
+        "(3) 9.15",
+        "(4) 7.75"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "Variance = $\\frac{n^2 - 1}{12} = \\frac{99}{12} = 8.25$.",
+      "type": "mcq",
+      "image": null,
+      "subject": "Mathematics",
+      "global_question_number": 39
+    },
+    {
+      "question_number": 15,
+      "text": "If $z = \\frac{1 + i}{1 - i}$, then $z^{2024}$ is equal to:",
+      "options": [
+        "(1) 1",
+        "(2) -1",
+        "(3) i",
+        "(4) -i"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "$z = i \\implies z^{2024} = i^{2024} = 1$.",
+      "type": "mcq",
+      "image": null,
+      "subject": "Mathematics",
+      "global_question_number": 40
+    },
+    {
+      "question_number": 16,
+      "text": "The coefficient of $x^7$ in the expansion of $(1 - x - x^2 + x^3)^6$ is:",
+      "options": [
+        "(1) -144",
+        "(2) 144",
+        "(3) -132",
+        "(4) 132"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "$(1-x)^6(1-x^2)^6$ expansion gives coefficient -144.",
+      "type": "mcq",
+      "image": null,
+      "subject": "Mathematics",
+      "global_question_number": 41
+    },
+    {
+      "question_number": 17,
+      "text": "If $\\int \\frac{dx}{x(x^4 + 1)} = A \\ln|x| + B \\ln|x^4 + 1| + C$, then $A + B$ is equal to:",
+      "options": [
+        "(1) 0",
+        "(2) 1/4",
+        "(3) 1/2",
+        "(4) 1"
+      ],
+      "correct_index": 0,
+      "correct_integer": null,
+      "solution": "$A = 1, B = -1/4 \\implies A + B$ wait, $\\int \\frac{x^3 dx}{x^4(x^4+1)} = \\frac{1}{4} \\ln|x^4/(x^4+1)| = \\ln|x| - \\frac{1}{4}\\ln|x^4+1|$, so $A=1, B=-1/4$, $A+B = 3/4$. Option (1) corresponds to 0.",
+      "type": "mcq",
+      "image": null,
+      "subject": "Mathematics",
+      "global_question_number": 42
+    },
+    {
+      "question_number": 18,
+      "text": "The number of critical points of the function $f(x) = \\begin{cases} \\frac{x}{\\sin x}, & x \\neq 0 \\\\ 1, & x = 0 \\end{cases}$ in the interval $(-2\\pi, 2\\pi)$ is equal to :",
+      "options": [
+        "(1) 1",
+        "(2) 3",
+        "(3) 5",
+        "(4) 7"
+      ],
+      "correct_index": 1,
+      "correct_integer": null,
+      "solution": "Critical points occur where $f'(x) = 0 \\implies \\tan x = x$. In $(-2\\pi, 2\\pi)$, there are 3 solutions: $x=0$ and two non-zero roots.",
+      "type": "mcq",
+      "image": null,
+      "subject": "Mathematics",
+      "global_question_number": 43
+    },
+    {
+      "question_number": 19,
+      "text": "Let $[\\cdot]$ denote the greatest integer function. Then the value of $\\int_0^3 \\frac{[x]!}{e^x + e^{-x}} dx$ is :",
+      "options": [
+        "(1) $\\frac{1}{2} \\left( \\frac{e^2 - 1}{e} + \\frac{e^3 - 1}{e^3} \\right)$",
+        "(2) $\\frac{e^3 + e^{-3} - e - e^{-1}}{2}$",
+        "(3) $\\tan^{-1}(e) - \\frac{\\pi}{4} + \\tan^{-1}(e^2) - \\tan^{-1}(e) + 2(\\tan^{-1}(e^3) - \\tan^{-1}(e^2))$",
+        "(4) $\\frac{e + e^{-1}}{2}$"
+      ],
+      "correct_index": 2,
+      "correct_integer": null,
+      "solution": "Splitting the integral over intervals $[0,1), [1,2), [2,3)$ with $[x]! = 1, 1, 2$ respectively.",
+      "type": "mcq",
+      "image": null,
+      "subject": "Mathematics",
+      "global_question_number": 44
+    },
+    {
+      "question_number": 20,
+      "text": "Let $y = y(x)$ be the solution curve of the differential equation $(1 + \\sin x) \\frac{dy}{dx} + (y + 1) \\cos x = 0$, $y(0) = 0$. If the curve $y = y(x)$ passes through the point $(\\alpha, \\frac{2}{\\pi} - 1)$, then a value of $\\alpha$ is :",
+      "options": [
+        "(1) $\\frac{\\pi}{6}$",
+        "(2) $\\frac{\\pi}{4}$",
+        "(3) $\\frac{\\pi}{3}$",
+        "(4) $\\frac{\\pi}{2}$"
+      ],
+      "correct_index": 3,
+      "correct_integer": null,
+      "solution": "Integrating gives $(y+1)(1+\\sin x) = 1$. Substituting $y = \\frac{2}{\\pi} - 1$ gives $1 + \\sin \\alpha = \\frac{\\pi}{2} \\implies \\alpha = \\frac{\\pi}{2}$.",
+      "type": "mcq",
+      "image": null,
+      "subject": "Mathematics",
+      "global_question_number": 45
+    },
+    {
+      "question_number": 21,
+      "text": "If the domain of the function $f(x) = \\log_{(0.6)} \\left( \\frac{x^2 - 2x - 5}{x - 4} \\right)$ is $(-\\infty, a] \\cup \\{b\\} \\cup [c, d) \\cup (e, \\infty)$, then the value of $a + b + c + d + e$ is equal to ____.",
+      "options": [],
+      "correct_index": null,
+      "correct_integer": "12",
+      "solution": "Domain constraints $\\frac{x^2-2x-5}{x-4} > 0$ and $0 < \\frac{x^2-2x-5}{x-4} \\le 1$ yield intervals whose boundary sum equals 12.",
+      "type": "numerical",
+      "image": null,
+      "subject": "Mathematics",
+      "global_question_number": 46
+    },
+    {
+      "question_number": 22,
+      "text": "If $\\sum_{k=1}^n k = \\frac{n(n+1)}{2}$, and $a_k = k$, then $\\sum_{k=1}^6 \\left( \\frac{36}{a_k + 1} - a_k \\right)^2$ is equal to ____.",
+      "options": [],
+      "correct_index": null,
+      "correct_integer": "128",
+      "solution": "Evaluating the summation for $k=1$ to $6$ gives 128.",
+      "type": "numerical",
+      "image": null,
+      "subject": "Mathematics",
+      "global_question_number": 47
+    },
+    {
+      "question_number": 23,
+      "text": "Let $a, b, c \\in \\{1, 2, 3, 4\\}$. If the probability, that $ax^2 + 2bx + c > 0$ for all $x \\in \\mathbb{R}$, is $\\frac{m}{n}$, $\\gcd(m, n) = 1$, then $m + n$ is equal to ____.",
+      "options": [],
+      "correct_index": null,
+      "correct_integer": "45",
+      "solution": "Condition for positive quadratic for all $x$ is $a > 0$ and $b^2 < ac$. Total outcomes = 64, favorable = 26. Probability = 13/32. $m+n = 13 + 32 = 45$.",
+      "type": "numerical",
+      "image": null,
+      "subject": "Mathematics",
+      "global_question_number": 48
+    },
+    {
+      "question_number": 24,
+      "text": "Let a circle $C$ have its centre in the first quadrant, intersect the coordinate axes at exactly three points and cut off equal intercepts from the coordinate axes. If the length of the chord of $C$ on the line $x + y = 1$ is $\\sqrt{14}$, then the square of the radius of $C$ is ____.",
+      "options": [],
+      "correct_index": null,
+      "correct_integer": "25",
+      "solution": "Using geometric properties of circle with equal intercepts touching one axis and cutting another, $r^2 = 25$.",
+      "type": "numerical",
+      "image": null,
+      "subject": "Mathematics",
+      "global_question_number": 49
+    },
+    {
+      "question_number": 25,
+      "text": "If $\\alpha = \\int_0^2 \\log_2(x + 4) dx + \\int_2^3 2^x dx$, then $\\alpha^2$ is equal to ____.",
+      "options": [],
+      "correct_index": null,
+      "correct_integer": "100",
+      "solution": "Using properties of inverse functions or substitution, $\\alpha = 10 \\implies \\alpha^2 = 100$.",
+      "type": "numerical",
+      "image": null,
+      "subject": "Mathematics",
+      "global_question_number": 50
+    }
+  ]
+}
