@@ -12,7 +12,7 @@
       "subject": "Physics",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 1 (Physics) - Refer to visual view below.",
+      "question_latex": "Question 1 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -35,14 +35,14 @@
       "images": [
         {
           "asset_id": "crop_Q01",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q01.png",
+          "path": "question_crops/Q01.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 1,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q01.png"
+        "question_crop": "question_crops/Q01.png"
       },
       "raw": {
         "text": "Question 1",
@@ -58,7 +58,7 @@
       "subject": "Physics",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 2 (Physics) - Refer to visual view below.",
+      "question_latex": "Question 2 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -81,14 +81,14 @@
       "images": [
         {
           "asset_id": "crop_Q02",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q02.png",
+          "path": "question_crops/Q02.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 1,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q02.png"
+        "question_crop": "question_crops/Q02.png"
       },
       "raw": {
         "text": "Question 2",
@@ -104,7 +104,7 @@
       "subject": "Physics",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 3 (Physics) - Refer to visual view below.",
+      "question_latex": "Question 3 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -127,14 +127,14 @@
       "images": [
         {
           "asset_id": "crop_Q03",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q03.png",
+          "path": "question_crops/Q03.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 1,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q03.png"
+        "question_crop": "question_crops/Q03.png"
       },
       "raw": {
         "text": "Question 3",
@@ -150,7 +150,7 @@
       "subject": "Physics",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 4 (Physics) - Refer to visual view below.",
+      "question_latex": "Question 4 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -173,14 +173,14 @@
       "images": [
         {
           "asset_id": "crop_Q04",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q04.png",
+          "path": "question_crops/Q04.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 1,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q04.png"
+        "question_crop": "question_crops/Q04.png"
       },
       "raw": {
         "text": "Question 4",
@@ -196,7 +196,7 @@
       "subject": "Physics",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 5 (Physics) - Refer to visual view below.",
+      "question_latex": "Question 5 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -219,14 +219,14 @@
       "images": [
         {
           "asset_id": "crop_Q05",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q05.png",
+          "path": "question_crops/Q05.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 1,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q05.png"
+        "question_crop": "question_crops/Q05.png"
       },
       "raw": {
         "text": "Question 5",
@@ -242,7 +242,7 @@
       "subject": "Physics",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 6 (Physics) - Refer to visual view below.",
+      "question_latex": "Question 6 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -265,14 +265,14 @@
       "images": [
         {
           "asset_id": "crop_Q06",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q06.png",
+          "path": "question_crops/Q06.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 1,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q06.png"
+        "question_crop": "question_crops/Q06.png"
       },
       "raw": {
         "text": "Question 6",
@@ -288,7 +288,7 @@
       "subject": "Physics",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 7 (Physics) - Refer to visual view below.",
+      "question_latex": "Question 7 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -311,14 +311,14 @@
       "images": [
         {
           "asset_id": "crop_Q07",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q07.png",
+          "path": "question_crops/Q07.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 1,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q07.png"
+        "question_crop": "question_crops/Q07.png"
       },
       "raw": {
         "text": "Question 7",
@@ -334,7 +334,7 @@
       "subject": "Physics",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 8 (Physics) - Refer to visual view below.",
+      "question_latex": "Question 8 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -357,14 +357,14 @@
       "images": [
         {
           "asset_id": "crop_Q08",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q08.png",
+          "path": "question_crops/Q08.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 1,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q08.png"
+        "question_crop": "question_crops/Q08.png"
       },
       "raw": {
         "text": "Question 8",
@@ -380,7 +380,7 @@
       "subject": "Physics",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 9 (Physics) - Refer to visual view below.",
+      "question_latex": "Question 9 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -403,14 +403,14 @@
       "images": [
         {
           "asset_id": "crop_Q09",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q09.png",
+          "path": "question_crops/Q09.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 1,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q09.png"
+        "question_crop": "question_crops/Q09.png"
       },
       "raw": {
         "text": "Question 9",
@@ -426,7 +426,7 @@
       "subject": "Physics",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 10 (Physics) - Refer to visual view below.",
+      "question_latex": "Question 10 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -449,14 +449,14 @@
       "images": [
         {
           "asset_id": "crop_Q10",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q10.png",
+          "path": "question_crops/Q10.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 1,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q10.png"
+        "question_crop": "question_crops/Q10.png"
       },
       "raw": {
         "text": "Question 10",
@@ -472,7 +472,7 @@
       "subject": "Physics",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 11 (Physics) - Refer to visual view below.",
+      "question_latex": "Question 11 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -495,14 +495,14 @@
       "images": [
         {
           "asset_id": "crop_Q11",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q11.png",
+          "path": "question_crops/Q11.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 2,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q11.png"
+        "question_crop": "question_crops/Q11.png"
       },
       "raw": {
         "text": "Question 11",
@@ -518,7 +518,7 @@
       "subject": "Physics",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 12 (Physics) - Refer to visual view below.",
+      "question_latex": "Question 12 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -541,14 +541,14 @@
       "images": [
         {
           "asset_id": "crop_Q12",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q12.png",
+          "path": "question_crops/Q12.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 2,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q12.png"
+        "question_crop": "question_crops/Q12.png"
       },
       "raw": {
         "text": "Question 12",
@@ -564,7 +564,7 @@
       "subject": "Physics",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 13 (Physics) - Refer to visual view below.",
+      "question_latex": "Question 13 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -587,14 +587,14 @@
       "images": [
         {
           "asset_id": "crop_Q13",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q13.png",
+          "path": "question_crops/Q13.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 2,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q13.png"
+        "question_crop": "question_crops/Q13.png"
       },
       "raw": {
         "text": "Question 13",
@@ -610,7 +610,7 @@
       "subject": "Physics",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 14 (Physics) - Refer to visual view below.",
+      "question_latex": "Question 14 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -633,14 +633,14 @@
       "images": [
         {
           "asset_id": "crop_Q14",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q14.png",
+          "path": "question_crops/Q14.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 2,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q14.png"
+        "question_crop": "question_crops/Q14.png"
       },
       "raw": {
         "text": "Question 14",
@@ -656,7 +656,7 @@
       "subject": "Physics",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 15 (Physics) - Refer to visual view below.",
+      "question_latex": "Question 15 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -679,14 +679,14 @@
       "images": [
         {
           "asset_id": "crop_Q15",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q15.png",
+          "path": "question_crops/Q15.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 2,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q15.png"
+        "question_crop": "question_crops/Q15.png"
       },
       "raw": {
         "text": "Question 15",
@@ -702,7 +702,7 @@
       "subject": "Physics",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 16 (Physics) - Refer to visual view below.",
+      "question_latex": "Question 16 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -725,14 +725,14 @@
       "images": [
         {
           "asset_id": "crop_Q16",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q16.png",
+          "path": "question_crops/Q16.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 2,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q16.png"
+        "question_crop": "question_crops/Q16.png"
       },
       "raw": {
         "text": "Question 16",
@@ -748,7 +748,7 @@
       "subject": "Physics",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 17 (Physics) - Refer to visual view below.",
+      "question_latex": "Question 17 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -771,14 +771,14 @@
       "images": [
         {
           "asset_id": "crop_Q17",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q17.png",
+          "path": "question_crops/Q17.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 2,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q17.png"
+        "question_crop": "question_crops/Q17.png"
       },
       "raw": {
         "text": "Question 17",
@@ -794,7 +794,7 @@
       "subject": "Physics",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 18 (Physics) - Refer to visual view below.",
+      "question_latex": "Question 18 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -817,14 +817,14 @@
       "images": [
         {
           "asset_id": "crop_Q18",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q18.png",
+          "path": "question_crops/Q18.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 2,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q18.png"
+        "question_crop": "question_crops/Q18.png"
       },
       "raw": {
         "text": "Question 18",
@@ -840,7 +840,7 @@
       "subject": "Physics",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 19 (Physics) - Refer to visual view below.",
+      "question_latex": "Question 19 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -863,14 +863,14 @@
       "images": [
         {
           "asset_id": "crop_Q19",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q19.png",
+          "path": "question_crops/Q19.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 2,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q19.png"
+        "question_crop": "question_crops/Q19.png"
       },
       "raw": {
         "text": "Question 19",
@@ -886,7 +886,7 @@
       "subject": "Physics",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 20 (Physics) - Refer to visual view below.",
+      "question_latex": "Question 20 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -909,14 +909,14 @@
       "images": [
         {
           "asset_id": "crop_Q20",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q20.png",
+          "path": "question_crops/Q20.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 2,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q20.png"
+        "question_crop": "question_crops/Q20.png"
       },
       "raw": {
         "text": "Question 20",
@@ -932,7 +932,7 @@
       "subject": "Physics",
       "section": "B",
       "type": "MCQ",
-      "question_latex": "Question 21 (Physics) - Refer to visual view below.",
+      "question_latex": "Question 21 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -955,14 +955,14 @@
       "images": [
         {
           "asset_id": "crop_Q21",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q21.png",
+          "path": "question_crops/Q21.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 3,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q21.png"
+        "question_crop": "question_crops/Q21.png"
       },
       "raw": {
         "text": "Question 21",
@@ -978,7 +978,7 @@
       "subject": "Physics",
       "section": "B",
       "type": "MCQ",
-      "question_latex": "Question 22 (Physics) - Refer to visual view below.",
+      "question_latex": "Question 22 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -1001,14 +1001,14 @@
       "images": [
         {
           "asset_id": "crop_Q22",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q22.png",
+          "path": "question_crops/Q22.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 3,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q22.png"
+        "question_crop": "question_crops/Q22.png"
       },
       "raw": {
         "text": "Question 22",
@@ -1024,7 +1024,7 @@
       "subject": "Physics",
       "section": "B",
       "type": "MCQ",
-      "question_latex": "Question 23 (Physics) - Refer to visual view below.",
+      "question_latex": "Question 23 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -1047,14 +1047,14 @@
       "images": [
         {
           "asset_id": "crop_Q23",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q23.png",
+          "path": "question_crops/Q23.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 3,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q23.png"
+        "question_crop": "question_crops/Q23.png"
       },
       "raw": {
         "text": "Question 23",
@@ -1070,7 +1070,7 @@
       "subject": "Physics",
       "section": "B",
       "type": "MCQ",
-      "question_latex": "Question 24 (Physics) - Refer to visual view below.",
+      "question_latex": "Question 24 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -1093,14 +1093,14 @@
       "images": [
         {
           "asset_id": "crop_Q24",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q24.png",
+          "path": "question_crops/Q24.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 3,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q24.png"
+        "question_crop": "question_crops/Q24.png"
       },
       "raw": {
         "text": "Question 24",
@@ -1116,7 +1116,7 @@
       "subject": "Physics",
       "section": "B",
       "type": "MCQ",
-      "question_latex": "Question 25 (Physics) - Refer to visual view below.",
+      "question_latex": "Question 25 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -1139,14 +1139,14 @@
       "images": [
         {
           "asset_id": "crop_Q25",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q25.png",
+          "path": "question_crops/Q25.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 3,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q25.png"
+        "question_crop": "question_crops/Q25.png"
       },
       "raw": {
         "text": "Question 25",
@@ -1162,7 +1162,7 @@
       "subject": "Chemistry",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 26 (Chemistry) - Refer to visual view below.",
+      "question_latex": "Question 26 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -1185,14 +1185,14 @@
       "images": [
         {
           "asset_id": "crop_Q26",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q26.png",
+          "path": "question_crops/Q26.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 3,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q26.png"
+        "question_crop": "question_crops/Q26.png"
       },
       "raw": {
         "text": "Question 26",
@@ -1208,7 +1208,7 @@
       "subject": "Chemistry",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 27 (Chemistry) - Refer to visual view below.",
+      "question_latex": "Question 27 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -1231,14 +1231,14 @@
       "images": [
         {
           "asset_id": "crop_Q27",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q27.png",
+          "path": "question_crops/Q27.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 3,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q27.png"
+        "question_crop": "question_crops/Q27.png"
       },
       "raw": {
         "text": "Question 27",
@@ -1254,7 +1254,7 @@
       "subject": "Chemistry",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 28 (Chemistry) - Refer to visual view below.",
+      "question_latex": "Question 28 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -1277,14 +1277,14 @@
       "images": [
         {
           "asset_id": "crop_Q28",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q28.png",
+          "path": "question_crops/Q28.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 3,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q28.png"
+        "question_crop": "question_crops/Q28.png"
       },
       "raw": {
         "text": "Question 28",
@@ -1300,7 +1300,7 @@
       "subject": "Chemistry",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 29 (Chemistry) - Refer to visual view below.",
+      "question_latex": "Question 29 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -1323,14 +1323,14 @@
       "images": [
         {
           "asset_id": "crop_Q29",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q29.png",
+          "path": "question_crops/Q29.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 3,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q29.png"
+        "question_crop": "question_crops/Q29.png"
       },
       "raw": {
         "text": "Question 29",
@@ -1346,7 +1346,7 @@
       "subject": "Chemistry",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 30 (Chemistry) - Refer to visual view below.",
+      "question_latex": "Question 30 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -1369,14 +1369,14 @@
       "images": [
         {
           "asset_id": "crop_Q30",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q30.png",
+          "path": "question_crops/Q30.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 3,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q30.png"
+        "question_crop": "question_crops/Q30.png"
       },
       "raw": {
         "text": "Question 30",
@@ -1392,7 +1392,7 @@
       "subject": "Chemistry",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 31 (Chemistry) - Refer to visual view below.",
+      "question_latex": "Question 31 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -1415,14 +1415,14 @@
       "images": [
         {
           "asset_id": "crop_Q31",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q31.png",
+          "path": "question_crops/Q31.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 4,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q31.png"
+        "question_crop": "question_crops/Q31.png"
       },
       "raw": {
         "text": "Question 31",
@@ -1438,7 +1438,7 @@
       "subject": "Chemistry",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 32 (Chemistry) - Refer to visual view below.",
+      "question_latex": "Question 32 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -1461,14 +1461,14 @@
       "images": [
         {
           "asset_id": "crop_Q32",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q32.png",
+          "path": "question_crops/Q32.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 4,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q32.png"
+        "question_crop": "question_crops/Q32.png"
       },
       "raw": {
         "text": "Question 32",
@@ -1484,7 +1484,7 @@
       "subject": "Chemistry",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 33 (Chemistry) - Refer to visual view below.",
+      "question_latex": "Question 33 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -1507,14 +1507,14 @@
       "images": [
         {
           "asset_id": "crop_Q33",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q33.png",
+          "path": "question_crops/Q33.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 4,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q33.png"
+        "question_crop": "question_crops/Q33.png"
       },
       "raw": {
         "text": "Question 33",
@@ -1530,7 +1530,7 @@
       "subject": "Chemistry",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 34 (Chemistry) - Refer to visual view below.",
+      "question_latex": "Question 34 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -1553,14 +1553,14 @@
       "images": [
         {
           "asset_id": "crop_Q34",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q34.png",
+          "path": "question_crops/Q34.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 4,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q34.png"
+        "question_crop": "question_crops/Q34.png"
       },
       "raw": {
         "text": "Question 34",
@@ -1576,7 +1576,7 @@
       "subject": "Chemistry",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 35 (Chemistry) - Refer to visual view below.",
+      "question_latex": "Question 35 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -1599,14 +1599,14 @@
       "images": [
         {
           "asset_id": "crop_Q35",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q35.png",
+          "path": "question_crops/Q35.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 4,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q35.png"
+        "question_crop": "question_crops/Q35.png"
       },
       "raw": {
         "text": "Question 35",
@@ -1622,7 +1622,7 @@
       "subject": "Chemistry",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 36 (Chemistry) - Refer to visual view below.",
+      "question_latex": "Question 36 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -1645,14 +1645,14 @@
       "images": [
         {
           "asset_id": "crop_Q36",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q36.png",
+          "path": "question_crops/Q36.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 4,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q36.png"
+        "question_crop": "question_crops/Q36.png"
       },
       "raw": {
         "text": "Question 36",
@@ -1668,7 +1668,7 @@
       "subject": "Chemistry",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 37 (Chemistry) - Refer to visual view below.",
+      "question_latex": "Question 37 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -1691,14 +1691,14 @@
       "images": [
         {
           "asset_id": "crop_Q37",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q37.png",
+          "path": "question_crops/Q37.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 4,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q37.png"
+        "question_crop": "question_crops/Q37.png"
       },
       "raw": {
         "text": "Question 37",
@@ -1714,7 +1714,7 @@
       "subject": "Chemistry",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 38 (Chemistry) - Refer to visual view below.",
+      "question_latex": "Question 38 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -1737,14 +1737,14 @@
       "images": [
         {
           "asset_id": "crop_Q38",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q38.png",
+          "path": "question_crops/Q38.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 4,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q38.png"
+        "question_crop": "question_crops/Q38.png"
       },
       "raw": {
         "text": "Question 38",
@@ -1760,7 +1760,7 @@
       "subject": "Chemistry",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 39 (Chemistry) - Refer to visual view below.",
+      "question_latex": "Question 39 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -1783,14 +1783,14 @@
       "images": [
         {
           "asset_id": "crop_Q39",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q39.png",
+          "path": "question_crops/Q39.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 4,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q39.png"
+        "question_crop": "question_crops/Q39.png"
       },
       "raw": {
         "text": "Question 39",
@@ -1806,7 +1806,7 @@
       "subject": "Chemistry",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 40 (Chemistry) - Refer to visual view below.",
+      "question_latex": "Question 40 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -1829,14 +1829,14 @@
       "images": [
         {
           "asset_id": "crop_Q40",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q40.png",
+          "path": "question_crops/Q40.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 4,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q40.png"
+        "question_crop": "question_crops/Q40.png"
       },
       "raw": {
         "text": "Question 40",
@@ -1852,7 +1852,7 @@
       "subject": "Chemistry",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 41 (Chemistry) - Refer to visual view below.",
+      "question_latex": "Question 41 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -1875,14 +1875,14 @@
       "images": [
         {
           "asset_id": "crop_Q41",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q41.png",
+          "path": "question_crops/Q41.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 5,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q41.png"
+        "question_crop": "question_crops/Q41.png"
       },
       "raw": {
         "text": "Question 41",
@@ -1898,7 +1898,7 @@
       "subject": "Chemistry",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 42 (Chemistry) - Refer to visual view below.",
+      "question_latex": "Question 42 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -1921,14 +1921,14 @@
       "images": [
         {
           "asset_id": "crop_Q42",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q42.png",
+          "path": "question_crops/Q42.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 5,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q42.png"
+        "question_crop": "question_crops/Q42.png"
       },
       "raw": {
         "text": "Question 42",
@@ -1944,7 +1944,7 @@
       "subject": "Chemistry",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 43 (Chemistry) - Refer to visual view below.",
+      "question_latex": "Question 43 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -1967,14 +1967,14 @@
       "images": [
         {
           "asset_id": "crop_Q43",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q43.png",
+          "path": "question_crops/Q43.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 5,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q43.png"
+        "question_crop": "question_crops/Q43.png"
       },
       "raw": {
         "text": "Question 43",
@@ -1990,7 +1990,7 @@
       "subject": "Chemistry",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 44 (Chemistry) - Refer to visual view below.",
+      "question_latex": "Question 44 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -2013,14 +2013,14 @@
       "images": [
         {
           "asset_id": "crop_Q44",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q44.png",
+          "path": "question_crops/Q44.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 5,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q44.png"
+        "question_crop": "question_crops/Q44.png"
       },
       "raw": {
         "text": "Question 44",
@@ -2036,7 +2036,7 @@
       "subject": "Chemistry",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 45 (Chemistry) - Refer to visual view below.",
+      "question_latex": "Question 45 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -2059,14 +2059,14 @@
       "images": [
         {
           "asset_id": "crop_Q45",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q45.png",
+          "path": "question_crops/Q45.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 5,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q45.png"
+        "question_crop": "question_crops/Q45.png"
       },
       "raw": {
         "text": "Question 45",
@@ -2082,7 +2082,7 @@
       "subject": "Chemistry",
       "section": "B",
       "type": "MCQ",
-      "question_latex": "Question 46 (Chemistry) - Refer to visual view below.",
+      "question_latex": "Question 46 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -2105,14 +2105,14 @@
       "images": [
         {
           "asset_id": "crop_Q46",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q46.png",
+          "path": "question_crops/Q46.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 5,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q46.png"
+        "question_crop": "question_crops/Q46.png"
       },
       "raw": {
         "text": "Question 46",
@@ -2128,7 +2128,7 @@
       "subject": "Chemistry",
       "section": "B",
       "type": "MCQ",
-      "question_latex": "Question 47 (Chemistry) - Refer to visual view below.",
+      "question_latex": "Question 47 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -2151,14 +2151,14 @@
       "images": [
         {
           "asset_id": "crop_Q47",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q47.png",
+          "path": "question_crops/Q47.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 5,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q47.png"
+        "question_crop": "question_crops/Q47.png"
       },
       "raw": {
         "text": "Question 47",
@@ -2174,7 +2174,7 @@
       "subject": "Chemistry",
       "section": "B",
       "type": "MCQ",
-      "question_latex": "Question 48 (Chemistry) - Refer to visual view below.",
+      "question_latex": "Question 48 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -2197,14 +2197,14 @@
       "images": [
         {
           "asset_id": "crop_Q48",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q48.png",
+          "path": "question_crops/Q48.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 5,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q48.png"
+        "question_crop": "question_crops/Q48.png"
       },
       "raw": {
         "text": "Question 48",
@@ -2220,7 +2220,7 @@
       "subject": "Chemistry",
       "section": "B",
       "type": "MCQ",
-      "question_latex": "Question 49 (Chemistry) - Refer to visual view below.",
+      "question_latex": "Question 49 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -2243,14 +2243,14 @@
       "images": [
         {
           "asset_id": "crop_Q49",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q49.png",
+          "path": "question_crops/Q49.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 5,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q49.png"
+        "question_crop": "question_crops/Q49.png"
       },
       "raw": {
         "text": "Question 49",
@@ -2266,7 +2266,7 @@
       "subject": "Chemistry",
       "section": "B",
       "type": "MCQ",
-      "question_latex": "Question 50 (Chemistry) - Refer to visual view below.",
+      "question_latex": "Question 50 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -2289,14 +2289,14 @@
       "images": [
         {
           "asset_id": "crop_Q50",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q50.png",
+          "path": "question_crops/Q50.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 5,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q50.png"
+        "question_crop": "question_crops/Q50.png"
       },
       "raw": {
         "text": "Question 50",
@@ -2312,7 +2312,7 @@
       "subject": "Mathematics",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 51 (Mathematics) - Refer to visual view below.",
+      "question_latex": "Question 51 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -2335,14 +2335,14 @@
       "images": [
         {
           "asset_id": "crop_Q51",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q51.png",
+          "path": "question_crops/Q51.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 6,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q51.png"
+        "question_crop": "question_crops/Q51.png"
       },
       "raw": {
         "text": "Question 51",
@@ -2358,7 +2358,7 @@
       "subject": "Mathematics",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 52 (Mathematics) - Refer to visual view below.",
+      "question_latex": "Question 52 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -2381,14 +2381,14 @@
       "images": [
         {
           "asset_id": "crop_Q52",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q52.png",
+          "path": "question_crops/Q52.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 6,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q52.png"
+        "question_crop": "question_crops/Q52.png"
       },
       "raw": {
         "text": "Question 52",
@@ -2404,7 +2404,7 @@
       "subject": "Mathematics",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 53 (Mathematics) - Refer to visual view below.",
+      "question_latex": "Question 53 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -2427,14 +2427,14 @@
       "images": [
         {
           "asset_id": "crop_Q53",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q53.png",
+          "path": "question_crops/Q53.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 6,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q53.png"
+        "question_crop": "question_crops/Q53.png"
       },
       "raw": {
         "text": "Question 53",
@@ -2450,7 +2450,7 @@
       "subject": "Mathematics",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 54 (Mathematics) - Refer to visual view below.",
+      "question_latex": "Question 54 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -2473,14 +2473,14 @@
       "images": [
         {
           "asset_id": "crop_Q54",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q54.png",
+          "path": "question_crops/Q54.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 6,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q54.png"
+        "question_crop": "question_crops/Q54.png"
       },
       "raw": {
         "text": "Question 54",
@@ -2496,7 +2496,7 @@
       "subject": "Mathematics",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 55 (Mathematics) - Refer to visual view below.",
+      "question_latex": "Question 55 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -2519,14 +2519,14 @@
       "images": [
         {
           "asset_id": "crop_Q55",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q55.png",
+          "path": "question_crops/Q55.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 6,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q55.png"
+        "question_crop": "question_crops/Q55.png"
       },
       "raw": {
         "text": "Question 55",
@@ -2542,7 +2542,7 @@
       "subject": "Mathematics",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 56 (Mathematics) - Refer to visual view below.",
+      "question_latex": "Question 56 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -2565,14 +2565,14 @@
       "images": [
         {
           "asset_id": "crop_Q56",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q56.png",
+          "path": "question_crops/Q56.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 6,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q56.png"
+        "question_crop": "question_crops/Q56.png"
       },
       "raw": {
         "text": "Question 56",
@@ -2588,7 +2588,7 @@
       "subject": "Mathematics",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 57 (Mathematics) - Refer to visual view below.",
+      "question_latex": "Question 57 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -2611,14 +2611,14 @@
       "images": [
         {
           "asset_id": "crop_Q57",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q57.png",
+          "path": "question_crops/Q57.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 6,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q57.png"
+        "question_crop": "question_crops/Q57.png"
       },
       "raw": {
         "text": "Question 57",
@@ -2634,7 +2634,7 @@
       "subject": "Mathematics",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 58 (Mathematics) - Refer to visual view below.",
+      "question_latex": "Question 58 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -2657,14 +2657,14 @@
       "images": [
         {
           "asset_id": "crop_Q58",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q58.png",
+          "path": "question_crops/Q58.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 6,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q58.png"
+        "question_crop": "question_crops/Q58.png"
       },
       "raw": {
         "text": "Question 58",
@@ -2680,7 +2680,7 @@
       "subject": "Mathematics",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 59 (Mathematics) - Refer to visual view below.",
+      "question_latex": "Question 59 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -2703,14 +2703,14 @@
       "images": [
         {
           "asset_id": "crop_Q59",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q59.png",
+          "path": "question_crops/Q59.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 6,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q59.png"
+        "question_crop": "question_crops/Q59.png"
       },
       "raw": {
         "text": "Question 59",
@@ -2726,7 +2726,7 @@
       "subject": "Mathematics",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 60 (Mathematics) - Refer to visual view below.",
+      "question_latex": "Question 60 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -2749,14 +2749,14 @@
       "images": [
         {
           "asset_id": "crop_Q60",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q60.png",
+          "path": "question_crops/Q60.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 6,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q60.png"
+        "question_crop": "question_crops/Q60.png"
       },
       "raw": {
         "text": "Question 60",
@@ -2772,7 +2772,7 @@
       "subject": "Mathematics",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 61 (Mathematics) - Refer to visual view below.",
+      "question_latex": "Question 61 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -2795,14 +2795,14 @@
       "images": [
         {
           "asset_id": "crop_Q61",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q61.png",
+          "path": "question_crops/Q61.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 7,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q61.png"
+        "question_crop": "question_crops/Q61.png"
       },
       "raw": {
         "text": "Question 61",
@@ -2818,7 +2818,7 @@
       "subject": "Mathematics",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 62 (Mathematics) - Refer to visual view below.",
+      "question_latex": "Question 62 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -2841,14 +2841,14 @@
       "images": [
         {
           "asset_id": "crop_Q62",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q62.png",
+          "path": "question_crops/Q62.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 7,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q62.png"
+        "question_crop": "question_crops/Q62.png"
       },
       "raw": {
         "text": "Question 62",
@@ -2864,7 +2864,7 @@
       "subject": "Mathematics",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 63 (Mathematics) - Refer to visual view below.",
+      "question_latex": "Question 63 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -2887,14 +2887,14 @@
       "images": [
         {
           "asset_id": "crop_Q63",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q63.png",
+          "path": "question_crops/Q63.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 7,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q63.png"
+        "question_crop": "question_crops/Q63.png"
       },
       "raw": {
         "text": "Question 63",
@@ -2910,7 +2910,7 @@
       "subject": "Mathematics",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 64 (Mathematics) - Refer to visual view below.",
+      "question_latex": "Question 64 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -2933,14 +2933,14 @@
       "images": [
         {
           "asset_id": "crop_Q64",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q64.png",
+          "path": "question_crops/Q64.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 7,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q64.png"
+        "question_crop": "question_crops/Q64.png"
       },
       "raw": {
         "text": "Question 64",
@@ -2956,7 +2956,7 @@
       "subject": "Mathematics",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 65 (Mathematics) - Refer to visual view below.",
+      "question_latex": "Question 65 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -2979,14 +2979,14 @@
       "images": [
         {
           "asset_id": "crop_Q65",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q65.png",
+          "path": "question_crops/Q65.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 7,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q65.png"
+        "question_crop": "question_crops/Q65.png"
       },
       "raw": {
         "text": "Question 65",
@@ -3002,7 +3002,7 @@
       "subject": "Mathematics",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 66 (Mathematics) - Refer to visual view below.",
+      "question_latex": "Question 66 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -3025,14 +3025,14 @@
       "images": [
         {
           "asset_id": "crop_Q66",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q66.png",
+          "path": "question_crops/Q66.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 7,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q66.png"
+        "question_crop": "question_crops/Q66.png"
       },
       "raw": {
         "text": "Question 66",
@@ -3048,7 +3048,7 @@
       "subject": "Mathematics",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 67 (Mathematics) - Refer to visual view below.",
+      "question_latex": "Question 67 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -3071,14 +3071,14 @@
       "images": [
         {
           "asset_id": "crop_Q67",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q67.png",
+          "path": "question_crops/Q67.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 7,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q67.png"
+        "question_crop": "question_crops/Q67.png"
       },
       "raw": {
         "text": "Question 67",
@@ -3094,7 +3094,7 @@
       "subject": "Mathematics",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 68 (Mathematics) - Refer to visual view below.",
+      "question_latex": "Question 68 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -3117,14 +3117,14 @@
       "images": [
         {
           "asset_id": "crop_Q68",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q68.png",
+          "path": "question_crops/Q68.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 7,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q68.png"
+        "question_crop": "question_crops/Q68.png"
       },
       "raw": {
         "text": "Question 68",
@@ -3140,7 +3140,7 @@
       "subject": "Mathematics",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 69 (Mathematics) - Refer to visual view below.",
+      "question_latex": "Question 69 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -3163,14 +3163,14 @@
       "images": [
         {
           "asset_id": "crop_Q69",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q69.png",
+          "path": "question_crops/Q69.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 7,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q69.png"
+        "question_crop": "question_crops/Q69.png"
       },
       "raw": {
         "text": "Question 69",
@@ -3186,7 +3186,7 @@
       "subject": "Mathematics",
       "section": "A",
       "type": "MCQ",
-      "question_latex": "Question 70 (Mathematics) - Refer to visual view below.",
+      "question_latex": "Question 70 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -3209,14 +3209,14 @@
       "images": [
         {
           "asset_id": "crop_Q70",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q70.png",
+          "path": "question_crops/Q70.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 7,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q70.png"
+        "question_crop": "question_crops/Q70.png"
       },
       "raw": {
         "text": "Question 70",
@@ -3232,7 +3232,7 @@
       "subject": "Mathematics",
       "section": "B",
       "type": "MCQ",
-      "question_latex": "Question 71 (Mathematics) - Refer to visual view below.",
+      "question_latex": "Question 71 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -3255,14 +3255,14 @@
       "images": [
         {
           "asset_id": "crop_Q71",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q71.png",
+          "path": "question_crops/Q71.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 8,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q71.png"
+        "question_crop": "question_crops/Q71.png"
       },
       "raw": {
         "text": "Question 71",
@@ -3278,7 +3278,7 @@
       "subject": "Mathematics",
       "section": "B",
       "type": "MCQ",
-      "question_latex": "Question 72 (Mathematics) - Refer to visual view below.",
+      "question_latex": "Question 72 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -3301,14 +3301,14 @@
       "images": [
         {
           "asset_id": "crop_Q72",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q72.png",
+          "path": "question_crops/Q72.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 8,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q72.png"
+        "question_crop": "question_crops/Q72.png"
       },
       "raw": {
         "text": "Question 72",
@@ -3324,7 +3324,7 @@
       "subject": "Mathematics",
       "section": "B",
       "type": "MCQ",
-      "question_latex": "Question 73 (Mathematics) - Refer to visual view below.",
+      "question_latex": "Question 73 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -3347,14 +3347,14 @@
       "images": [
         {
           "asset_id": "crop_Q73",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q73.png",
+          "path": "question_crops/Q73.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 8,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q73.png"
+        "question_crop": "question_crops/Q73.png"
       },
       "raw": {
         "text": "Question 73",
@@ -3370,7 +3370,7 @@
       "subject": "Mathematics",
       "section": "B",
       "type": "MCQ",
-      "question_latex": "Question 74 (Mathematics) - Refer to visual view below.",
+      "question_latex": "Question 74 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -3393,14 +3393,14 @@
       "images": [
         {
           "asset_id": "crop_Q74",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q74.png",
+          "path": "question_crops/Q74.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 8,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q74.png"
+        "question_crop": "question_crops/Q74.png"
       },
       "raw": {
         "text": "Question 74",
@@ -3416,7 +3416,7 @@
       "subject": "Mathematics",
       "section": "B",
       "type": "MCQ",
-      "question_latex": "Question 75 (Mathematics) - Refer to visual view below.",
+      "question_latex": "Question 75 - Please refer to the visual diagram/text crop below.",
       "options": {
         "A": {
           "text": "Option A",
@@ -3439,14 +3439,14 @@
       "images": [
         {
           "asset_id": "crop_Q75",
-          "path": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q75.png",
+          "path": "question_crops/Q75.png",
           "role": "question_crop_view"
         }
       ],
       "source": {
         "pdf": "105014-4th Apr 2026 Shift 1 (Actual Paper).pdf",
         "start_page": 8,
-        "question_crop": "question_crops/105014-4th-Apr-2026-Shift-1-Actual-Paper_Q75.png"
+        "question_crop": "question_crops/Q75.png"
       },
       "raw": {
         "text": "Question 75",
