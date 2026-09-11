@@ -1,0 +1,2883 @@
+{
+  "schema_version": "2.0.0",
+  "paper": {
+    "paper_id": "001",
+    "filename": "001.pdf",
+    "sha256": "68244d2e8e84a4d245fdfa5125d6a93028ed5df8a8ca97dde1cbe0eecd3d9e7a",
+    "page_count": 8
+  },
+  "subjects": {
+    "Mathematics": {
+      "questions": "1-25",
+      "section_A": "1-20",
+      "section_B": "21-25"
+    },
+    "Physics": {
+      "questions": "26-50",
+      "section_A": "26-45",
+      "section_B": "46-50"
+    },
+    "Chemistry": {
+      "questions": "51-75",
+      "section_A": "51-70",
+      "section_B": "71-75"
+    }
+  },
+  "questions": [
+    {
+      "question_id": "001-Q01",
+      "number": 1,
+      "subject": "Mathematics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "Question 1 (Mathematics - Sec A) - Refer to visual view below.",
+      "options": {
+        "A": {
+          "text": "Option A",
+          "latex": "Option A"
+        },
+        "B": {
+          "text": "Option B",
+          "latex": "Option B"
+        },
+        "C": {
+          "text": "Option C",
+          "latex": "Option C"
+        },
+        "D": {
+          "text": "Option D",
+          "latex": "Option D"
+        }
+      },
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q01",
+          "path": "question_crops/Q01.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 1,
+        "question_crop": "question_crops/Q01.png"
+      },
+      "raw": {
+        "text": "Question 1",
+        "normalized_text": "Question 1"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q02",
+      "number": 2,
+      "subject": "Mathematics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "Question 2 (Mathematics - Sec A) - Refer to visual view below.",
+      "options": {
+        "A": {
+          "text": "Option A",
+          "latex": "Option A"
+        },
+        "B": {
+          "text": "Option B",
+          "latex": "Option B"
+        },
+        "C": {
+          "text": "Option C",
+          "latex": "Option C"
+        },
+        "D": {
+          "text": "Option D",
+          "latex": "Option D"
+        }
+      },
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q02",
+          "path": "question_crops/Q02.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 1,
+        "question_crop": "question_crops/Q02.png"
+      },
+      "raw": {
+        "text": "Question 2",
+        "normalized_text": "Question 2"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q03",
+      "number": 3,
+      "subject": "Mathematics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "Question 3 (Mathematics - Sec A) - Refer to visual view below.",
+      "options": {
+        "A": {
+          "text": "Option A",
+          "latex": "Option A"
+        },
+        "B": {
+          "text": "Option B",
+          "latex": "Option B"
+        },
+        "C": {
+          "text": "Option C",
+          "latex": "Option C"
+        },
+        "D": {
+          "text": "Option D",
+          "latex": "Option D"
+        }
+      },
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q03",
+          "path": "question_crops/Q03.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 1,
+        "question_crop": "question_crops/Q03.png"
+      },
+      "raw": {
+        "text": "Question 3",
+        "normalized_text": "Question 3"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q04",
+      "number": 4,
+      "subject": "Mathematics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "Question 4 (Mathematics - Sec A) - Refer to visual view below.",
+      "options": {
+        "A": {
+          "text": "Option A",
+          "latex": "Option A"
+        },
+        "B": {
+          "text": "Option B",
+          "latex": "Option B"
+        },
+        "C": {
+          "text": "Option C",
+          "latex": "Option C"
+        },
+        "D": {
+          "text": "Option D",
+          "latex": "Option D"
+        }
+      },
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q04",
+          "path": "question_crops/Q04.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 1,
+        "question_crop": "question_crops/Q04.png"
+      },
+      "raw": {
+        "text": "Question 4",
+        "normalized_text": "Question 4"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q05",
+      "number": 5,
+      "subject": "Mathematics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "Question 5 (Mathematics - Sec A) - Refer to visual view below.",
+      "options": {
+        "A": {
+          "text": "Option A",
+          "latex": "Option A"
+        },
+        "B": {
+          "text": "Option B",
+          "latex": "Option B"
+        },
+        "C": {
+          "text": "Option C",
+          "latex": "Option C"
+        },
+        "D": {
+          "text": "Option D",
+          "latex": "Option D"
+        }
+      },
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q05",
+          "path": "question_crops/Q05.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 1,
+        "question_crop": "question_crops/Q05.png"
+      },
+      "raw": {
+        "text": "Question 5",
+        "normalized_text": "Question 5"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q06",
+      "number": 6,
+      "subject": "Mathematics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "Question 6 (Mathematics - Sec A) - Refer to visual view below.",
+      "options": {
+        "A": {
+          "text": "Option A",
+          "latex": "Option A"
+        },
+        "B": {
+          "text": "Option B",
+          "latex": "Option B"
+        },
+        "C": {
+          "text": "Option C",
+          "latex": "Option C"
+        },
+        "D": {
+          "text": "Option D",
+          "latex": "Option D"
+        }
+      },
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q06",
+          "path": "question_crops/Q06.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 1,
+        "question_crop": "question_crops/Q06.png"
+      },
+      "raw": {
+        "text": "Question 6",
+        "normalized_text": "Question 6"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q07",
+      "number": 7,
+      "subject": "Mathematics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "Question 7 (Mathematics - Sec A) - Refer to visual view below.",
+      "options": {
+        "A": {
+          "text": "Option A",
+          "latex": "Option A"
+        },
+        "B": {
+          "text": "Option B",
+          "latex": "Option B"
+        },
+        "C": {
+          "text": "Option C",
+          "latex": "Option C"
+        },
+        "D": {
+          "text": "Option D",
+          "latex": "Option D"
+        }
+      },
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q07",
+          "path": "question_crops/Q07.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 1,
+        "question_crop": "question_crops/Q07.png"
+      },
+      "raw": {
+        "text": "Question 7",
+        "normalized_text": "Question 7"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q08",
+      "number": 8,
+      "subject": "Mathematics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "Question 8 (Mathematics - Sec A) - Refer to visual view below.",
+      "options": {
+        "A": {
+          "text": "Option A",
+          "latex": "Option A"
+        },
+        "B": {
+          "text": "Option B",
+          "latex": "Option B"
+        },
+        "C": {
+          "text": "Option C",
+          "latex": "Option C"
+        },
+        "D": {
+          "text": "Option D",
+          "latex": "Option D"
+        }
+      },
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q08",
+          "path": "question_crops/Q08.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 1,
+        "question_crop": "question_crops/Q08.png"
+      },
+      "raw": {
+        "text": "Question 8",
+        "normalized_text": "Question 8"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q09",
+      "number": 9,
+      "subject": "Mathematics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "Question 9 (Mathematics - Sec A) - Refer to visual view below.",
+      "options": {
+        "A": {
+          "text": "Option A",
+          "latex": "Option A"
+        },
+        "B": {
+          "text": "Option B",
+          "latex": "Option B"
+        },
+        "C": {
+          "text": "Option C",
+          "latex": "Option C"
+        },
+        "D": {
+          "text": "Option D",
+          "latex": "Option D"
+        }
+      },
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q09",
+          "path": "question_crops/Q09.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 1,
+        "question_crop": "question_crops/Q09.png"
+      },
+      "raw": {
+        "text": "Question 9",
+        "normalized_text": "Question 9"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q10",
+      "number": 10,
+      "subject": "Mathematics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "Question 10 (Mathematics - Sec A) - Refer to visual view below.",
+      "options": {
+        "A": {
+          "text": "Option A",
+          "latex": "Option A"
+        },
+        "B": {
+          "text": "Option B",
+          "latex": "Option B"
+        },
+        "C": {
+          "text": "Option C",
+          "latex": "Option C"
+        },
+        "D": {
+          "text": "Option D",
+          "latex": "Option D"
+        }
+      },
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q10",
+          "path": "question_crops/Q10.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 1,
+        "question_crop": "question_crops/Q10.png"
+      },
+      "raw": {
+        "text": "Question 10",
+        "normalized_text": "Question 10"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q11",
+      "number": 11,
+      "subject": "Mathematics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "Question 11 (Mathematics - Sec A) - Refer to visual view below.",
+      "options": {
+        "A": {
+          "text": "Option A",
+          "latex": "Option A"
+        },
+        "B": {
+          "text": "Option B",
+          "latex": "Option B"
+        },
+        "C": {
+          "text": "Option C",
+          "latex": "Option C"
+        },
+        "D": {
+          "text": "Option D",
+          "latex": "Option D"
+        }
+      },
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q11",
+          "path": "question_crops/Q11.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 1,
+        "question_crop": "question_crops/Q11.png"
+      },
+      "raw": {
+        "text": "Question 11",
+        "normalized_text": "Question 11"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q12",
+      "number": 12,
+      "subject": "Mathematics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "Question 12 (Mathematics - Sec A) - Refer to visual view below.",
+      "options": {
+        "A": {
+          "text": "Option A",
+          "latex": "Option A"
+        },
+        "B": {
+          "text": "Option B",
+          "latex": "Option B"
+        },
+        "C": {
+          "text": "Option C",
+          "latex": "Option C"
+        },
+        "D": {
+          "text": "Option D",
+          "latex": "Option D"
+        }
+      },
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q12",
+          "path": "question_crops/Q12.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 2,
+        "question_crop": "question_crops/Q12.png"
+      },
+      "raw": {
+        "text": "Question 12",
+        "normalized_text": "Question 12"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q13",
+      "number": 13,
+      "subject": "Mathematics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "Question 13 (Mathematics - Sec A) - Refer to visual view below.",
+      "options": {
+        "A": {
+          "text": "Option A",
+          "latex": "Option A"
+        },
+        "B": {
+          "text": "Option B",
+          "latex": "Option B"
+        },
+        "C": {
+          "text": "Option C",
+          "latex": "Option C"
+        },
+        "D": {
+          "text": "Option D",
+          "latex": "Option D"
+        }
+      },
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q13",
+          "path": "question_crops/Q13.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 2,
+        "question_crop": "question_crops/Q13.png"
+      },
+      "raw": {
+        "text": "Question 13",
+        "normalized_text": "Question 13"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q14",
+      "number": 14,
+      "subject": "Mathematics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "Question 14 (Mathematics - Sec A) - Refer to visual view below.",
+      "options": {
+        "A": {
+          "text": "Option A",
+          "latex": "Option A"
+        },
+        "B": {
+          "text": "Option B",
+          "latex": "Option B"
+        },
+        "C": {
+          "text": "Option C",
+          "latex": "Option C"
+        },
+        "D": {
+          "text": "Option D",
+          "latex": "Option D"
+        }
+      },
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q14",
+          "path": "question_crops/Q14.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 2,
+        "question_crop": "question_crops/Q14.png"
+      },
+      "raw": {
+        "text": "Question 14",
+        "normalized_text": "Question 14"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q15",
+      "number": 15,
+      "subject": "Mathematics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "Question 15 (Mathematics - Sec A) - Refer to visual view below.",
+      "options": {
+        "A": {
+          "text": "Option A",
+          "latex": "Option A"
+        },
+        "B": {
+          "text": "Option B",
+          "latex": "Option B"
+        },
+        "C": {
+          "text": "Option C",
+          "latex": "Option C"
+        },
+        "D": {
+          "text": "Option D",
+          "latex": "Option D"
+        }
+      },
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q15",
+          "path": "question_crops/Q15.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 2,
+        "question_crop": "question_crops/Q15.png"
+      },
+      "raw": {
+        "text": "Question 15",
+        "normalized_text": "Question 15"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q16",
+      "number": 16,
+      "subject": "Mathematics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "Question 16 (Mathematics - Sec A) - Refer to visual view below.",
+      "options": {
+        "A": {
+          "text": "Option A",
+          "latex": "Option A"
+        },
+        "B": {
+          "text": "Option B",
+          "latex": "Option B"
+        },
+        "C": {
+          "text": "Option C",
+          "latex": "Option C"
+        },
+        "D": {
+          "text": "Option D",
+          "latex": "Option D"
+        }
+      },
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q16",
+          "path": "question_crops/Q16.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 2,
+        "question_crop": "question_crops/Q16.png"
+      },
+      "raw": {
+        "text": "Question 16",
+        "normalized_text": "Question 16"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q17",
+      "number": 17,
+      "subject": "Mathematics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "Question 17 (Mathematics - Sec A) - Refer to visual view below.",
+      "options": {
+        "A": {
+          "text": "Option A",
+          "latex": "Option A"
+        },
+        "B": {
+          "text": "Option B",
+          "latex": "Option B"
+        },
+        "C": {
+          "text": "Option C",
+          "latex": "Option C"
+        },
+        "D": {
+          "text": "Option D",
+          "latex": "Option D"
+        }
+      },
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q17",
+          "path": "question_crops/Q17.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 2,
+        "question_crop": "question_crops/Q17.png"
+      },
+      "raw": {
+        "text": "Question 17",
+        "normalized_text": "Question 17"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q18",
+      "number": 18,
+      "subject": "Mathematics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "Question 18 (Mathematics - Sec A) - Refer to visual view below.",
+      "options": {
+        "A": {
+          "text": "Option A",
+          "latex": "Option A"
+        },
+        "B": {
+          "text": "Option B",
+          "latex": "Option B"
+        },
+        "C": {
+          "text": "Option C",
+          "latex": "Option C"
+        },
+        "D": {
+          "text": "Option D",
+          "latex": "Option D"
+        }
+      },
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q18",
+          "path": "question_crops/Q18.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 2,
+        "question_crop": "question_crops/Q18.png"
+      },
+      "raw": {
+        "text": "Question 18",
+        "normalized_text": "Question 18"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q19",
+      "number": 19,
+      "subject": "Mathematics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "Question 19 (Mathematics - Sec A) - Refer to visual view below.",
+      "options": {
+        "A": {
+          "text": "Option A",
+          "latex": "Option A"
+        },
+        "B": {
+          "text": "Option B",
+          "latex": "Option B"
+        },
+        "C": {
+          "text": "Option C",
+          "latex": "Option C"
+        },
+        "D": {
+          "text": "Option D",
+          "latex": "Option D"
+        }
+      },
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q19",
+          "path": "question_crops/Q19.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 2,
+        "question_crop": "question_crops/Q19.png"
+      },
+      "raw": {
+        "text": "Question 19",
+        "normalized_text": "Question 19"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q20",
+      "number": 20,
+      "subject": "Mathematics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "Question 20 (Mathematics - Sec A) - Refer to visual view below.",
+      "options": {
+        "A": {
+          "text": "Option A",
+          "latex": "Option A"
+        },
+        "B": {
+          "text": "Option B",
+          "latex": "Option B"
+        },
+        "C": {
+          "text": "Option C",
+          "latex": "Option C"
+        },
+        "D": {
+          "text": "Option D",
+          "latex": "Option D"
+        }
+      },
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q20",
+          "path": "question_crops/Q20.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 2,
+        "question_crop": "question_crops/Q20.png"
+      },
+      "raw": {
+        "text": "Question 20",
+        "normalized_text": "Question 20"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q21",
+      "number": 21,
+      "subject": "Mathematics",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "Question 21 (Mathematics - Sec B) - Refer to visual view below.",
+      "options": {},
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q21",
+          "path": "question_crops/Q21.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 2,
+        "question_crop": "question_crops/Q21.png"
+      },
+      "raw": {
+        "text": "Question 21",
+        "normalized_text": "Question 21"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q22",
+      "number": 22,
+      "subject": "Mathematics",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "Question 22 (Mathematics - Sec B) - Refer to visual view below.",
+      "options": {},
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q22",
+          "path": "question_crops/Q22.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 2,
+        "question_crop": "question_crops/Q22.png"
+      },
+      "raw": {
+        "text": "Question 22",
+        "normalized_text": "Question 22"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q23",
+      "number": 23,
+      "subject": "Mathematics",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "Question 23 (Mathematics - Sec B) - Refer to visual view below.",
+      "options": {},
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q23",
+          "path": "question_crops/Q23.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 3,
+        "question_crop": "question_crops/Q23.png"
+      },
+      "raw": {
+        "text": "Question 23",
+        "normalized_text": "Question 23"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q24",
+      "number": 24,
+      "subject": "Mathematics",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "Question 24 (Mathematics - Sec B) - Refer to visual view below.",
+      "options": {},
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q24",
+          "path": "question_crops/Q24.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 3,
+        "question_crop": "question_crops/Q24.png"
+      },
+      "raw": {
+        "text": "Question 24",
+        "normalized_text": "Question 24"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q25",
+      "number": 25,
+      "subject": "Mathematics",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "Question 25 (Mathematics - Sec B) - Refer to visual view below.",
+      "options": {},
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q25",
+          "path": "question_crops/Q25.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 3,
+        "question_crop": "question_crops/Q25.png"
+      },
+      "raw": {
+        "text": "Question 25",
+        "normalized_text": "Question 25"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q26",
+      "number": 26,
+      "subject": "Physics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "Question 26 (Physics - Sec A) - Refer to visual view below.",
+      "options": {
+        "A": {
+          "text": "Option A",
+          "latex": "Option A"
+        },
+        "B": {
+          "text": "Option B",
+          "latex": "Option B"
+        },
+        "C": {
+          "text": "Option C",
+          "latex": "Option C"
+        },
+        "D": {
+          "text": "Option D",
+          "latex": "Option D"
+        }
+      },
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q26",
+          "path": "question_crops/Q26.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 3,
+        "question_crop": "question_crops/Q26.png"
+      },
+      "raw": {
+        "text": "Question 26",
+        "normalized_text": "Question 26"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q27",
+      "number": 27,
+      "subject": "Physics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "Question 27 (Physics - Sec A) - Refer to visual view below.",
+      "options": {
+        "A": {
+          "text": "Option A",
+          "latex": "Option A"
+        },
+        "B": {
+          "text": "Option B",
+          "latex": "Option B"
+        },
+        "C": {
+          "text": "Option C",
+          "latex": "Option C"
+        },
+        "D": {
+          "text": "Option D",
+          "latex": "Option D"
+        }
+      },
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q27",
+          "path": "question_crops/Q27.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 3,
+        "question_crop": "question_crops/Q27.png"
+      },
+      "raw": {
+        "text": "Question 27",
+        "normalized_text": "Question 27"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q28",
+      "number": 28,
+      "subject": "Physics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "Question 28 (Physics - Sec A) - Refer to visual view below.",
+      "options": {
+        "A": {
+          "text": "Option A",
+          "latex": "Option A"
+        },
+        "B": {
+          "text": "Option B",
+          "latex": "Option B"
+        },
+        "C": {
+          "text": "Option C",
+          "latex": "Option C"
+        },
+        "D": {
+          "text": "Option D",
+          "latex": "Option D"
+        }
+      },
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q28",
+          "path": "question_crops/Q28.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 3,
+        "question_crop": "question_crops/Q28.png"
+      },
+      "raw": {
+        "text": "Question 28",
+        "normalized_text": "Question 28"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q29",
+      "number": 29,
+      "subject": "Physics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "Question 29 (Physics - Sec A) - Refer to visual view below.",
+      "options": {
+        "A": {
+          "text": "Option A",
+          "latex": "Option A"
+        },
+        "B": {
+          "text": "Option B",
+          "latex": "Option B"
+        },
+        "C": {
+          "text": "Option C",
+          "latex": "Option C"
+        },
+        "D": {
+          "text": "Option D",
+          "latex": "Option D"
+        }
+      },
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q29",
+          "path": "question_crops/Q29.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 3,
+        "question_crop": "question_crops/Q29.png"
+      },
+      "raw": {
+        "text": "Question 29",
+        "normalized_text": "Question 29"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q30",
+      "number": 30,
+      "subject": "Physics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "Question 30 (Physics - Sec A) - Refer to visual view below.",
+      "options": {
+        "A": {
+          "text": "Option A",
+          "latex": "Option A"
+        },
+        "B": {
+          "text": "Option B",
+          "latex": "Option B"
+        },
+        "C": {
+          "text": "Option C",
+          "latex": "Option C"
+        },
+        "D": {
+          "text": "Option D",
+          "latex": "Option D"
+        }
+      },
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q30",
+          "path": "question_crops/Q30.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 3,
+        "question_crop": "question_crops/Q30.png"
+      },
+      "raw": {
+        "text": "Question 30",
+        "normalized_text": "Question 30"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q31",
+      "number": 31,
+      "subject": "Physics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "Question 31 (Physics - Sec A) - Refer to visual view below.",
+      "options": {
+        "A": {
+          "text": "Option A",
+          "latex": "Option A"
+        },
+        "B": {
+          "text": "Option B",
+          "latex": "Option B"
+        },
+        "C": {
+          "text": "Option C",
+          "latex": "Option C"
+        },
+        "D": {
+          "text": "Option D",
+          "latex": "Option D"
+        }
+      },
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q31",
+          "path": "question_crops/Q31.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 3,
+        "question_crop": "question_crops/Q31.png"
+      },
+      "raw": {
+        "text": "Question 31",
+        "normalized_text": "Question 31"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q32",
+      "number": 32,
+      "subject": "Physics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "Question 32 (Physics - Sec A) - Refer to visual view below.",
+      "options": {
+        "A": {
+          "text": "Option A",
+          "latex": "Option A"
+        },
+        "B": {
+          "text": "Option B",
+          "latex": "Option B"
+        },
+        "C": {
+          "text": "Option C",
+          "latex": "Option C"
+        },
+        "D": {
+          "text": "Option D",
+          "latex": "Option D"
+        }
+      },
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q32",
+          "path": "question_crops/Q32.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 3,
+        "question_crop": "question_crops/Q32.png"
+      },
+      "raw": {
+        "text": "Question 32",
+        "normalized_text": "Question 32"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q33",
+      "number": 33,
+      "subject": "Physics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "Question 33 (Physics - Sec A) - Refer to visual view below.",
+      "options": {
+        "A": {
+          "text": "Option A",
+          "latex": "Option A"
+        },
+        "B": {
+          "text": "Option B",
+          "latex": "Option B"
+        },
+        "C": {
+          "text": "Option C",
+          "latex": "Option C"
+        },
+        "D": {
+          "text": "Option D",
+          "latex": "Option D"
+        }
+      },
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q33",
+          "path": "question_crops/Q33.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 3,
+        "question_crop": "question_crops/Q33.png"
+      },
+      "raw": {
+        "text": "Question 33",
+        "normalized_text": "Question 33"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q34",
+      "number": 34,
+      "subject": "Physics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "Question 34 (Physics - Sec A) - Refer to visual view below.",
+      "options": {
+        "A": {
+          "text": "Option A",
+          "latex": "Option A"
+        },
+        "B": {
+          "text": "Option B",
+          "latex": "Option B"
+        },
+        "C": {
+          "text": "Option C",
+          "latex": "Option C"
+        },
+        "D": {
+          "text": "Option D",
+          "latex": "Option D"
+        }
+      },
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q34",
+          "path": "question_crops/Q34.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 4,
+        "question_crop": "question_crops/Q34.png"
+      },
+      "raw": {
+        "text": "Question 34",
+        "normalized_text": "Question 34"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q35",
+      "number": 35,
+      "subject": "Physics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "Question 35 (Physics - Sec A) - Refer to visual view below.",
+      "options": {
+        "A": {
+          "text": "Option A",
+          "latex": "Option A"
+        },
+        "B": {
+          "text": "Option B",
+          "latex": "Option B"
+        },
+        "C": {
+          "text": "Option C",
+          "latex": "Option C"
+        },
+        "D": {
+          "text": "Option D",
+          "latex": "Option D"
+        }
+      },
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q35",
+          "path": "question_crops/Q35.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 4,
+        "question_crop": "question_crops/Q35.png"
+      },
+      "raw": {
+        "text": "Question 35",
+        "normalized_text": "Question 35"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q36",
+      "number": 36,
+      "subject": "Physics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "Question 36 (Physics - Sec A) - Refer to visual view below.",
+      "options": {
+        "A": {
+          "text": "Option A",
+          "latex": "Option A"
+        },
+        "B": {
+          "text": "Option B",
+          "latex": "Option B"
+        },
+        "C": {
+          "text": "Option C",
+          "latex": "Option C"
+        },
+        "D": {
+          "text": "Option D",
+          "latex": "Option D"
+        }
+      },
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q36",
+          "path": "question_crops/Q36.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 4,
+        "question_crop": "question_crops/Q36.png"
+      },
+      "raw": {
+        "text": "Question 36",
+        "normalized_text": "Question 36"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q37",
+      "number": 37,
+      "subject": "Physics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "Question 37 (Physics - Sec A) - Refer to visual view below.",
+      "options": {
+        "A": {
+          "text": "Option A",
+          "latex": "Option A"
+        },
+        "B": {
+          "text": "Option B",
+          "latex": "Option B"
+        },
+        "C": {
+          "text": "Option C",
+          "latex": "Option C"
+        },
+        "D": {
+          "text": "Option D",
+          "latex": "Option D"
+        }
+      },
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q37",
+          "path": "question_crops/Q37.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 4,
+        "question_crop": "question_crops/Q37.png"
+      },
+      "raw": {
+        "text": "Question 37",
+        "normalized_text": "Question 37"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q38",
+      "number": 38,
+      "subject": "Physics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "Question 38 (Physics - Sec A) - Refer to visual view below.",
+      "options": {
+        "A": {
+          "text": "Option A",
+          "latex": "Option A"
+        },
+        "B": {
+          "text": "Option B",
+          "latex": "Option B"
+        },
+        "C": {
+          "text": "Option C",
+          "latex": "Option C"
+        },
+        "D": {
+          "text": "Option D",
+          "latex": "Option D"
+        }
+      },
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q38",
+          "path": "question_crops/Q38.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 4,
+        "question_crop": "question_crops/Q38.png"
+      },
+      "raw": {
+        "text": "Question 38",
+        "normalized_text": "Question 38"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q39",
+      "number": 39,
+      "subject": "Physics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "Question 39 (Physics - Sec A) - Refer to visual view below.",
+      "options": {
+        "A": {
+          "text": "Option A",
+          "latex": "Option A"
+        },
+        "B": {
+          "text": "Option B",
+          "latex": "Option B"
+        },
+        "C": {
+          "text": "Option C",
+          "latex": "Option C"
+        },
+        "D": {
+          "text": "Option D",
+          "latex": "Option D"
+        }
+      },
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q39",
+          "path": "question_crops/Q39.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 4,
+        "question_crop": "question_crops/Q39.png"
+      },
+      "raw": {
+        "text": "Question 39",
+        "normalized_text": "Question 39"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q40",
+      "number": 40,
+      "subject": "Physics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "Question 40 (Physics - Sec A) - Refer to visual view below.",
+      "options": {
+        "A": {
+          "text": "Option A",
+          "latex": "Option A"
+        },
+        "B": {
+          "text": "Option B",
+          "latex": "Option B"
+        },
+        "C": {
+          "text": "Option C",
+          "latex": "Option C"
+        },
+        "D": {
+          "text": "Option D",
+          "latex": "Option D"
+        }
+      },
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q40",
+          "path": "question_crops/Q40.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 4,
+        "question_crop": "question_crops/Q40.png"
+      },
+      "raw": {
+        "text": "Question 40",
+        "normalized_text": "Question 40"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q41",
+      "number": 41,
+      "subject": "Physics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "Question 41 (Physics - Sec A) - Refer to visual view below.",
+      "options": {
+        "A": {
+          "text": "Option A",
+          "latex": "Option A"
+        },
+        "B": {
+          "text": "Option B",
+          "latex": "Option B"
+        },
+        "C": {
+          "text": "Option C",
+          "latex": "Option C"
+        },
+        "D": {
+          "text": "Option D",
+          "latex": "Option D"
+        }
+      },
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q41",
+          "path": "question_crops/Q41.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 4,
+        "question_crop": "question_crops/Q41.png"
+      },
+      "raw": {
+        "text": "Question 41",
+        "normalized_text": "Question 41"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q42",
+      "number": 42,
+      "subject": "Physics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "Question 42 (Physics - Sec A) - Refer to visual view below.",
+      "options": {
+        "A": {
+          "text": "Option A",
+          "latex": "Option A"
+        },
+        "B": {
+          "text": "Option B",
+          "latex": "Option B"
+        },
+        "C": {
+          "text": "Option C",
+          "latex": "Option C"
+        },
+        "D": {
+          "text": "Option D",
+          "latex": "Option D"
+        }
+      },
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q42",
+          "path": "question_crops/Q42.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 4,
+        "question_crop": "question_crops/Q42.png"
+      },
+      "raw": {
+        "text": "Question 42",
+        "normalized_text": "Question 42"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q43",
+      "number": 43,
+      "subject": "Physics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "Question 43 (Physics - Sec A) - Refer to visual view below.",
+      "options": {
+        "A": {
+          "text": "Option A",
+          "latex": "Option A"
+        },
+        "B": {
+          "text": "Option B",
+          "latex": "Option B"
+        },
+        "C": {
+          "text": "Option C",
+          "latex": "Option C"
+        },
+        "D": {
+          "text": "Option D",
+          "latex": "Option D"
+        }
+      },
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q43",
+          "path": "question_crops/Q43.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 4,
+        "question_crop": "question_crops/Q43.png"
+      },
+      "raw": {
+        "text": "Question 43",
+        "normalized_text": "Question 43"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q44",
+      "number": 44,
+      "subject": "Physics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "Question 44 (Physics - Sec A) - Refer to visual view below.",
+      "options": {
+        "A": {
+          "text": "Option A",
+          "latex": "Option A"
+        },
+        "B": {
+          "text": "Option B",
+          "latex": "Option B"
+        },
+        "C": {
+          "text": "Option C",
+          "latex": "Option C"
+        },
+        "D": {
+          "text": "Option D",
+          "latex": "Option D"
+        }
+      },
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q44",
+          "path": "question_crops/Q44.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 4,
+        "question_crop": "question_crops/Q44.png"
+      },
+      "raw": {
+        "text": "Question 44",
+        "normalized_text": "Question 44"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q45",
+      "number": 45,
+      "subject": "Physics",
+      "section": "A",
+      "type": "MCQ",
+      "question_latex": "Question 45 (Physics - Sec A) - Refer to visual view below.",
+      "options": {
+        "A": {
+          "text": "Option A",
+          "latex": "Option A"
+        },
+        "B": {
+          "text": "Option B",
+          "latex": "Option B"
+        },
+        "C": {
+          "text": "Option C",
+          "latex": "Option C"
+        },
+        "D": {
+          "text": "Option D",
+          "latex": "Option D"
+        }
+      },
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q45",
+          "path": "question_crops/Q45.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 5,
+        "question_crop": "question_crops/Q45.png"
+      },
+      "raw": {
+        "text": "Question 45",
+        "normalized_text": "Question 45"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q46",
+      "number": 46,
+      "subject": "Physics",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "Question 46 (Physics - Sec B) - Refer to visual view below.",
+      "options": {},
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q46",
+          "path": "question_crops/Q46.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 5,
+        "question_crop": "question_crops/Q46.png"
+      },
+      "raw": {
+        "text": "Question 46",
+        "normalized_text": "Question 46"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q47",
+      "number": 47,
+      "subject": "Physics",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "Question 47 (Physics - Sec B) - Refer to visual view below.",
+      "options": {},
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q47",
+          "path": "question_crops/Q47.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 5,
+        "question_crop": "question_crops/Q47.png"
+      },
+      "raw": {
+        "text": "Question 47",
+        "normalized_text": "Question 47"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q48",
+      "number": 48,
+      "subject": "Physics",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "Question 48 (Physics - Sec B) - Refer to visual view below.",
+      "options": {},
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q48",
+          "path": "question_crops/Q48.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 5,
+        "question_crop": "question_crops/Q48.png"
+      },
+      "raw": {
+        "text": "Question 48",
+        "normalized_text": "Question 48"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q49",
+      "number": 49,
+      "subject": "Physics",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "Question 49 (Physics - Sec B) - Refer to visual view below.",
+      "options": {},
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q49",
+          "path": "question_crops/Q49.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 5,
+        "question_crop": "question_crops/Q49.png"
+      },
+      "raw": {
+        "text": "Question 49",
+        "normalized_text": "Question 49"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q50",
+      "number": 50,
+      "subject": "Physics",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "Question 50 (Physics - Sec B) - Refer to visual view below.",
+      "options": {},
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q50",
+          "path": "question_crops/Q50.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 5,
+        "question_crop": "question_crops/Q50.png"
+      },
+      "raw": {
+        "text": "Question 50",
+        "normalized_text": "Question 50"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q51",
+      "number": 51,
+      "subject": "Chemistry",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "Question 51 (Chemistry - Sec B) - Refer to visual view below.",
+      "options": {},
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q51",
+          "path": "question_crops/Q51.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 5,
+        "question_crop": "question_crops/Q51.png"
+      },
+      "raw": {
+        "text": "Question 51",
+        "normalized_text": "Question 51"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q52",
+      "number": 52,
+      "subject": "Chemistry",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "Question 52 (Chemistry - Sec B) - Refer to visual view below.",
+      "options": {},
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q52",
+          "path": "question_crops/Q52.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 5,
+        "question_crop": "question_crops/Q52.png"
+      },
+      "raw": {
+        "text": "Question 52",
+        "normalized_text": "Question 52"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q53",
+      "number": 53,
+      "subject": "Chemistry",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "Question 53 (Chemistry - Sec B) - Refer to visual view below.",
+      "options": {},
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q53",
+          "path": "question_crops/Q53.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 5,
+        "question_crop": "question_crops/Q53.png"
+      },
+      "raw": {
+        "text": "Question 53",
+        "normalized_text": "Question 53"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q54",
+      "number": 54,
+      "subject": "Chemistry",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "Question 54 (Chemistry - Sec B) - Refer to visual view below.",
+      "options": {},
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q54",
+          "path": "question_crops/Q54.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 5,
+        "question_crop": "question_crops/Q54.png"
+      },
+      "raw": {
+        "text": "Question 54",
+        "normalized_text": "Question 54"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q55",
+      "number": 55,
+      "subject": "Chemistry",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "Question 55 (Chemistry - Sec B) - Refer to visual view below.",
+      "options": {},
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q55",
+          "path": "question_crops/Q55.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 5,
+        "question_crop": "question_crops/Q55.png"
+      },
+      "raw": {
+        "text": "Question 55",
+        "normalized_text": "Question 55"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q56",
+      "number": 56,
+      "subject": "Chemistry",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "Question 56 (Chemistry - Sec B) - Refer to visual view below.",
+      "options": {},
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q56",
+          "path": "question_crops/Q56.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 6,
+        "question_crop": "question_crops/Q56.png"
+      },
+      "raw": {
+        "text": "Question 56",
+        "normalized_text": "Question 56"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q57",
+      "number": 57,
+      "subject": "Chemistry",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "Question 57 (Chemistry - Sec B) - Refer to visual view below.",
+      "options": {},
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q57",
+          "path": "question_crops/Q57.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 6,
+        "question_crop": "question_crops/Q57.png"
+      },
+      "raw": {
+        "text": "Question 57",
+        "normalized_text": "Question 57"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q58",
+      "number": 58,
+      "subject": "Chemistry",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "Question 58 (Chemistry - Sec B) - Refer to visual view below.",
+      "options": {},
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q58",
+          "path": "question_crops/Q58.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 6,
+        "question_crop": "question_crops/Q58.png"
+      },
+      "raw": {
+        "text": "Question 58",
+        "normalized_text": "Question 58"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q59",
+      "number": 59,
+      "subject": "Chemistry",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "Question 59 (Chemistry - Sec B) - Refer to visual view below.",
+      "options": {},
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q59",
+          "path": "question_crops/Q59.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 6,
+        "question_crop": "question_crops/Q59.png"
+      },
+      "raw": {
+        "text": "Question 59",
+        "normalized_text": "Question 59"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q60",
+      "number": 60,
+      "subject": "Chemistry",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "Question 60 (Chemistry - Sec B) - Refer to visual view below.",
+      "options": {},
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q60",
+          "path": "question_crops/Q60.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 6,
+        "question_crop": "question_crops/Q60.png"
+      },
+      "raw": {
+        "text": "Question 60",
+        "normalized_text": "Question 60"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q61",
+      "number": 61,
+      "subject": "Chemistry",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "Question 61 (Chemistry - Sec B) - Refer to visual view below.",
+      "options": {},
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q61",
+          "path": "question_crops/Q61.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 6,
+        "question_crop": "question_crops/Q61.png"
+      },
+      "raw": {
+        "text": "Question 61",
+        "normalized_text": "Question 61"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q62",
+      "number": 62,
+      "subject": "Chemistry",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "Question 62 (Chemistry - Sec B) - Refer to visual view below.",
+      "options": {},
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q62",
+          "path": "question_crops/Q62.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 6,
+        "question_crop": "question_crops/Q62.png"
+      },
+      "raw": {
+        "text": "Question 62",
+        "normalized_text": "Question 62"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q63",
+      "number": 63,
+      "subject": "Chemistry",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "Question 63 (Chemistry - Sec B) - Refer to visual view below.",
+      "options": {},
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q63",
+          "path": "question_crops/Q63.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 6,
+        "question_crop": "question_crops/Q63.png"
+      },
+      "raw": {
+        "text": "Question 63",
+        "normalized_text": "Question 63"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q64",
+      "number": 64,
+      "subject": "Chemistry",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "Question 64 (Chemistry - Sec B) - Refer to visual view below.",
+      "options": {},
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q64",
+          "path": "question_crops/Q64.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 6,
+        "question_crop": "question_crops/Q64.png"
+      },
+      "raw": {
+        "text": "Question 64",
+        "normalized_text": "Question 64"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q65",
+      "number": 65,
+      "subject": "Chemistry",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "Question 65 (Chemistry - Sec B) - Refer to visual view below.",
+      "options": {},
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q65",
+          "path": "question_crops/Q65.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 6,
+        "question_crop": "question_crops/Q65.png"
+      },
+      "raw": {
+        "text": "Question 65",
+        "normalized_text": "Question 65"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q66",
+      "number": 66,
+      "subject": "Chemistry",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "Question 66 (Chemistry - Sec B) - Refer to visual view below.",
+      "options": {},
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q66",
+          "path": "question_crops/Q66.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 6,
+        "question_crop": "question_crops/Q66.png"
+      },
+      "raw": {
+        "text": "Question 66",
+        "normalized_text": "Question 66"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q67",
+      "number": 67,
+      "subject": "Chemistry",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "Question 67 (Chemistry - Sec B) - Refer to visual view below.",
+      "options": {},
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q67",
+          "path": "question_crops/Q67.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 7,
+        "question_crop": "question_crops/Q67.png"
+      },
+      "raw": {
+        "text": "Question 67",
+        "normalized_text": "Question 67"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q68",
+      "number": 68,
+      "subject": "Chemistry",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "Question 68 (Chemistry - Sec B) - Refer to visual view below.",
+      "options": {},
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q68",
+          "path": "question_crops/Q68.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 7,
+        "question_crop": "question_crops/Q68.png"
+      },
+      "raw": {
+        "text": "Question 68",
+        "normalized_text": "Question 68"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q69",
+      "number": 69,
+      "subject": "Chemistry",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "Question 69 (Chemistry - Sec B) - Refer to visual view below.",
+      "options": {},
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q69",
+          "path": "question_crops/Q69.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 7,
+        "question_crop": "question_crops/Q69.png"
+      },
+      "raw": {
+        "text": "Question 69",
+        "normalized_text": "Question 69"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q70",
+      "number": 70,
+      "subject": "Chemistry",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "Question 70 (Chemistry - Sec B) - Refer to visual view below.",
+      "options": {},
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q70",
+          "path": "question_crops/Q70.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 7,
+        "question_crop": "question_crops/Q70.png"
+      },
+      "raw": {
+        "text": "Question 70",
+        "normalized_text": "Question 70"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q71",
+      "number": 71,
+      "subject": "Chemistry",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "Question 71 (Chemistry - Sec B) - Refer to visual view below.",
+      "options": {},
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q71",
+          "path": "question_crops/Q71.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 7,
+        "question_crop": "question_crops/Q71.png"
+      },
+      "raw": {
+        "text": "Question 71",
+        "normalized_text": "Question 71"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q72",
+      "number": 72,
+      "subject": "Chemistry",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "Question 72 (Chemistry - Sec B) - Refer to visual view below.",
+      "options": {},
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q72",
+          "path": "question_crops/Q72.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 7,
+        "question_crop": "question_crops/Q72.png"
+      },
+      "raw": {
+        "text": "Question 72",
+        "normalized_text": "Question 72"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q73",
+      "number": 73,
+      "subject": "Chemistry",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "Question 73 (Chemistry - Sec B) - Refer to visual view below.",
+      "options": {},
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q73",
+          "path": "question_crops/Q73.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 7,
+        "question_crop": "question_crops/Q73.png"
+      },
+      "raw": {
+        "text": "Question 73",
+        "normalized_text": "Question 73"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q74",
+      "number": 74,
+      "subject": "Chemistry",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "Question 74 (Chemistry - Sec B) - Refer to visual view below.",
+      "options": {},
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q74",
+          "path": "question_crops/Q74.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 7,
+        "question_crop": "question_crops/Q74.png"
+      },
+      "raw": {
+        "text": "Question 74",
+        "normalized_text": "Question 74"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    },
+    {
+      "question_id": "001-Q75",
+      "number": 75,
+      "subject": "Chemistry",
+      "section": "B",
+      "type": "numerical",
+      "question_latex": "Question 75 (Chemistry - Sec B) - Refer to visual view below.",
+      "options": {},
+      "correct_answer": null,
+      "images": [
+        {
+          "asset_id": "crop_Q75",
+          "path": "question_crops/Q75.png",
+          "role": "question_crop_view"
+        }
+      ],
+      "source": {
+        "pdf": "001.pdf",
+        "start_page": 7,
+        "question_crop": "question_crops/Q75.png"
+      },
+      "raw": {
+        "text": "Question 75",
+        "normalized_text": "Question 75"
+      },
+      "quality": {
+        "needs_review": false
+      }
+    }
+  ]
+}
